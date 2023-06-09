@@ -19,7 +19,7 @@ function App() {
   }
 
   const handleInputChange = (e) => {
-    setFormData({...formData, [e.target.name]: Ae });
+    setFormData({...formData, [e.target.name]: e });
   };
 
   const handleSubmit = (e) => {
