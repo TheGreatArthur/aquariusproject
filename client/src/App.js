@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useForm } from "react-hook-form";
 
 function App() {
+
   const [data, setData] = useState([{}]);
   const [showForm, setShowForm] = useState(false);
-  const [formData, setFormData] = useState({});
+
+  const { register, handleSubmit } = useForm();
 
   useEffect(() => {
     fetch("/members")
@@ -18,15 +21,9 @@ function App() {
     setShowForm(true);
   }
 
-  const handleInputChange = (e) => {
-    setFormData({...formData, [e.target.name]: e });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Traitement des données du formulaire ici
-    console.log(formData);
-  };
+  const doSimulation = (data) => {
+    console.log(data);
+  }
 
   return (
     <div>
@@ -37,14 +34,12 @@ function App() {
       <button>Liste du vivant</button>
 
       {showForm ? (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit(doSimulation)}>
           <label>
             Litrage de l'aquarium (en L):
             <input
               type="text"
-              name="litrage"
-              value={formData.litrage || ''}
-              onChange={handleInputChange}
+              {...register('litrage')}              
             />
           </label>
           <br />
@@ -52,39 +47,33 @@ function App() {
             Longueur de l'aquarium (en cm):
             <input
               type="text"
-              name="longueur"
-              value={formData.longueur || ''}
-              onChange={handleInputChange}
-            />
+              {...register('longueur')}              
+           />
           </label>
           <br />
           <label>
             pH moyen de l'aquarium:
             <input
               type="text"
-              name="pH"
-              value={formData.pH || ''}
-              onChange={handleInputChange}
+              {...register('pH')}              
+
             />
           </label>
           <br />
           <label>
-            température moyenne de l'aquarium:
+            gH moyen de l'aquarium: 
             <input
               type="text"
-              name="température"
-              value={formData.temperature || ''}
-              onChange={handleInputChange}
+              {...register('gH')}              
+
             />
           </label>
           <br />
           <label>
-            gH moyen de l'aquarium:
+            température moyenne de l'aquarium
             <input
               type="text"
-              name="gH"
-              value={formData.gH || ''}
-              onChange={handleInputChange}
+              {...register('°C')}      
             />
           </label>
           <br />
