@@ -1,0 +1,5 @@
+openpyxl
+SQLAlchemy
+Flask
+Flask-SQLAlchemy
+mysqlclient
