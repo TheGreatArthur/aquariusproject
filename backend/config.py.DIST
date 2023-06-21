@@ -3,3 +3,4 @@ Variables de configuration
 """
 
 DSN = 'mysql+mysqldb://(user):(password)@localhost/aquarius'
+EXCEL_FILE = 'db.xlsx'
