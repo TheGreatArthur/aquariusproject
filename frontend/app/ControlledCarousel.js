@@ -1,4 +1,6 @@
 "use client";
+
+"use client";
 import { useState, useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -8,7 +10,7 @@ export function ControlledCarousel(props) {
 
   useEffect(() => {
     // Obtenir la liste d'images aléatoires
-    const randomImages = getRandomImages(31); // Nombre total d'images à afficher
+    const randomImages = getRandomImages(14); // Nombre total d'images à afficher
     setImages(randomImages);
   }, []);
 
@@ -48,13 +50,26 @@ export function ControlledCarousel(props) {
   const imageHeight = '400px'; // Hauteur de base des images
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect} className='col-6 offset-3'>
+    <Carousel
+      activeIndex={index}
+      onSelect={handleSelect}
+      className='col-6 offset-3'
+      style={{ marginTop: '50px', border: "5px solid black" }}
+    >
       {images.map((image, i) => (
         <Carousel.Item key={i}>
-          <img
-            style={{ width: imageWidth, height: imageHeight, objectFit: 'cover' }}
-            src={image.src}
-            alt={`Slide ${i + 1}`} />
+          <div style={{ width: imageWidth, height: imageHeight }}>
+            <img
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                objectPosition: 'center',
+              }}
+              src={image.src}
+              alt={`Slide ${i + 1}`}
+            />
+          </div>
 
           <Carousel.Caption>
             <h3>{image.caption}</h3>

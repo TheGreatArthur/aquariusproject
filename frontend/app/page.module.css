@@ -7,6 +7,16 @@
   min-height: 100vh;
 }
 
+
+.header {
+  width: 100%;
+  height: 20%; /* Ajustez la hauteur selon vos besoins */
+  background-image: url('/backgroundheader.jpg'); 
+  background-size: cover;
+  background-position: top;
+}
+
+
 .description {
   display: inherit;
   justify-content: inherit;

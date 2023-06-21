@@ -6,7 +6,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import or_
 
 from config import DSN
-from models import Poisson, Genre, Famille
+from models import Poisson, Genre, Famille, Comportement
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = DSN
@@ -24,14 +24,15 @@ def poissons():
 
     rq = db.select(Poisson)
     if q := request.args.get('q'):
-        rq = rq.join(Famille).join(Genre).where(
+        rq = rq.join(Famille).join(Genre).join(Comportement).where(
             or_(
             Poisson.nom_commun.ilike(q + '%'),
             Poisson.nom_scientifique.ilike(q + '%'),
             Famille.nom.ilike(q + '%'),
             Genre.nom.ilike(q + '%'),
+            Comportement.nom.ilike(q + '%'),
             ))
-        
+    print(rq)    
     return {'poissons': [p.as_dict() for p in db.session.scalars(rq)]}
 
 

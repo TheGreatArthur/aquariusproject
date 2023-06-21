@@ -1,0 +1,88 @@
+'use client';
+
+import React, { useState, useEffect } from 'react';
+import { useForm } from 'react-hook-form';
+import useSWR from 'swr';
+import TablePoissons from './results';
+
+export default function App() {
+    const { register, handleSubmit, formState: { errors }, reset, watch } = useForm();
+    const [poissonsCompatibles, setPoissonsCompatibles] = useState([]);
+    const { data: poissonsData, error: poissonsError } = useSWR(`/api/poissons`);
+    const litrage = watch('litrage');
+    const pH = watch('pH');
+    const gH = watch('gH');
+    const tempMoyenne = watch('tempMoyenne');
+
+    const onSubmit = data => {
+        // Pas besoin de cette fonction pour la mise à jour automatique du tableau
+    };
+
+    const handleReset = () => {
+        reset();
+        setPoissonsCompatibles([]);
+    };
+
+    console.log(errors);
+
+    const handleGoBack = () => {
+        window.history.back();
+    };
+
+    useEffect(() => {
+        if (poissonsData && poissonsData.poissons) {
+            const poissonsFiltres = poissonsData.poissons.filter(poisson =>
+                poisson.litrage_mini <= litrage &&
+                (!pH || (pH >= poisson.ph_mini && pH <= poisson.ph_maxi)) &&
+                (!gH || (gH >= poisson.gh_mini && gH <= poisson.gh_maxi)) &&
+                (!tempMoyenne || (tempMoyenne >= poisson.temp_mini && tempMoyenne <= poisson.temp_maxi))
+            );
+
+            setPoissonsCompatibles(poissonsFiltres);
+        }
+    }, [poissonsData, litrage, pH, gH, tempMoyenne]);
+
+    useEffect(() => {
+        // Récupérer les valeurs des champs du formulaire depuis le cache du navigateur
+        const cachedFormData = JSON.parse(localStorage.getItem('form_data'));
+        if (cachedFormData) {
+            reset(cachedFormData);
+        }
+    }, []);
+
+    useEffect(() => {
+        // Sauvegarder les valeurs des champs du formulaire dans le cache du navigateur
+        const formData = { litrage, pH, gH, tempMoyenne };
+        localStorage.setItem('form_data', JSON.stringify(formData));
+    }, [litrage, pH, gH, tempMoyenne]);
+
+    return (
+        <form onSubmit={handleSubmit(onSubmit)}>
+            <div>
+                <label htmlFor="litrage">Litrage de votre aquarium:</label>
+                <input type="number" id="litrage" {...register("litrage", {})} />
+            </div>
+            <div>
+                <label htmlFor="pH">pH moyen de votre aquarium:</label>
+                <input type="text" id="pH" {...register("pH", { pattern: /^\d*\.?\d*$/, min: 0, max: 14 })} />
+            </div>
+            <div>
+                <label htmlFor="gH">gH moyen de votre aquarium:</label>
+                <input type="text" id="gH" {...register("gH", { pattern: /^\d*\.?\d*$/ })} />
+            </div>
+            <div>
+                <label htmlFor="tempMoyenne">Température moyenne de votre aquarium:</label>
+                <input type="text" id="tempMoyenne" {...register("tempMoyenne", { pattern: /^-?\d*\.?\d*$/ })} />
+            </div>
+
+
+            {poissonsError ? (
+                <h1>Une erreur est survenue lors du chargement des poissons.</h1>
+            ) : poissonsCompatibles.length > 0 ? (
+                <TablePoissons poissons={poissonsCompatibles} />
+            ) : null}
+
+            <button type="button" onClick={handleGoBack}>Retour à la page précédente</button>
+        </form>
+    );
+}

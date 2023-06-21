@@ -1,0 +1,35 @@
+{
+    "gh_maxi": 12.0,
+    "gh_mini": 3.0,
+    "id": 1,
+    "id_comportement": 4,
+    "id_courant": 1,
+    "id_dispo": 5,
+    "id_famille": 3,
+    "id_genre": 16,
+    "id_mode_vie": 4,
+    "id_robustesse": 3,
+    "id_type_eau": 2,
+    "id_zone_geo": 3,
+    "images": [
+      "1.jpg",
+      "1.1.jpg",
+      "1.2.jpg"
+    ],
+    "kh": null,
+    "litrage_mini": {"value":100, "error": true}
+    "longevite": 5,
+    "nb_individus": 10,
+    "nom_commun": "Cardinalis",
+    "nom_comportement": "pacifique",
+    "nom_famille": "Characidae",
+    "nom_genre": "Paracheirodon",
+    "nom_scientifique": "Paracheirodon axelrodi",
+    "ph_maxi": 6.5,
+    "ph_mini": 4.0,
+    "points": 5,
+    "regime": "omnivore",
+    "taille": 4.0,
+    "temp_maxi": 29,
+    "temp_mini": 25
+  }

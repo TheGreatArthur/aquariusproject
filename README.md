@@ -1,5 +1,19 @@
 ## Tutoriel React + Flask
 
+Démarrage :
+
+```shell
+# Aller dans le répertoire du backend Flask
+cd backend
+
+# Lancer l'appli "app.py" en mode debug
+flask --app app run --debug
+
+# Importation depuis Excel de la base de données
+python import_excel.py
+```
+
+
 https://www.youtube.com/watch?v=7LNl2JlZKHA
 
 ## Getting Started with Create React App

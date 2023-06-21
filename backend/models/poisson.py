@@ -3,7 +3,6 @@ from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from models.meta import Base
 
-
 class Poisson(Base):
     __tablename__ = 'poisson'
 
@@ -37,7 +36,9 @@ class Poisson(Base):
     # Relations
     famille: Mapped['Famille'] = relationship()
     genre: Mapped['Genre'] = relationship()
-
+    comportement: Mapped['Comportement'] = relationship()
+    
+    
     def __str__(self) -> str:
         return f'<{self.__class__.__name__} {self.id} {self.nom_scientifique!r}>'
 
@@ -49,5 +50,6 @@ class Poisson(Base):
         out.update(
             nom_famille=self.famille.nom,
             nom_genre=self.genre.nom,
+            nom_comportement=self.comportement.nom, 
             )
         return out

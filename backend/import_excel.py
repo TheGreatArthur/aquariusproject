@@ -4,13 +4,13 @@ Script de création et d'initialisation de la base
 
 from openpyxl import load_workbook
 from sqlalchemy.orm import Session
+from sqlalchemy import select
 
-from config import DSN
-from models import Poisson, Famille, Genre, ZoneGeo, Robustesse, Comportement, Dispo, Base, TypeEau, ModeVie
+from config import DSN, EXCEL_FILE
+from models import Poisson, Famille, Genre, ZoneGeo, Robustesse, Comportement, Dispo, Base, TypeEau, ModeVie, Courant
 from models.meta import get_engine
-from utils import get_or_create_id
+from utils import get_or_create_id, get_or_create
 
-EXCEL_FILE = 'db.xlsx'
 engine = get_engine(DSN)
 
 if __name__ == '__main__':
@@ -21,12 +21,20 @@ if __name__ == '__main__':
     except:
         pass
 
-    wb = load_workbook(filename=EXCEL_FILE)
+    try:
+        wb = load_workbook(filename=EXCEL_FILE)
+    except PermissionError:
+        print("Vous devez fermer Excel d'abord")
+        exit()
+    except FileNotFoundError:
+        print("Classeur Excel non trouvé !")
+        exit()
+
     ws = wb.active
 
     with Session(engine) as db:
         for row in ws.iter_rows(min_row=2):
-            db.add(Poisson(
+            params = dict(
                 nom_scientifique=row[1].value,
                 nom_commun=row[2].value,
                 id_famille=get_or_create_id(db, Famille, nom=row[3].value),
@@ -49,7 +57,18 @@ if __name__ == '__main__':
                 id_dispo=get_or_create_id(db, Dispo, nom=row[19].value.strip()),
                 longevite=int(row[20].value.replace('ans', '')),
                 litrage_mini=int(row[21].value.replace('L', '')),
-                points=row[22].value,
-                id_courant=get_or_create_id(db, Dispo, nom=row[23].value.strip()) if row[23].value else None,
-            ))
+                id_courant=get_or_create_id(db, Courant, nom=row[22].value.strip()) if row[23].value else None,
+                points=row[23].value,
+            )
+            poisson = db.scalar(select(Poisson).filter_by(nom_scientifique=params['nom_scientifique']))
+            if poisson:
+                print('Edition poisson', poisson)
+                for k,v in params.items():
+                    if getattr(poisson, k) != v:
+                        print(k, ':', getattr(poisson, k), '->', v )
+                        setattr(poisson, k, v)
+            else:
+                db.add(Poisson(**params))
+                print('Création poisson', params['nom_scientifique'])
+
         db.commit()
