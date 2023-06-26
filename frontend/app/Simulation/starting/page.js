@@ -3,25 +3,39 @@
 import React, { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import useSWR from 'swr';
+
 import TablePoissons from './results';
+import Panier from './panier';
+import { validation } from './validation';
+
 
 export default function App() {
-    const { register, handleSubmit, formState: { errors }, reset, watch } = useForm();
+
     const [poissonsCompatibles, setPoissonsCompatibles] = useState([]);
+    const [listePoissons, setListePoissons] = useState(() => {
+        const savedListePoissons = localStorage.getItem('listePoissons');
+        return savedListePoissons ? JSON.parse(savedListePoissons) : [];
+    });
+
     const { data: poissonsData, error: poissonsError } = useSWR(`/api/poissons`);
+
+    const { register, formState: { errors }, reset, watch } = useForm();
+
     const litrage = watch('litrage');
     const pH = watch('pH');
     const gH = watch('gH');
     const tempMoyenne = watch('tempMoyenne');
 
-    const onSubmit = data => {
-        // Pas besoin de cette fonction pour la mise à jour automatique du tableau
-    };
+    useEffect(() => {
+        localStorage.setItem('listePoissons', JSON.stringify(listePoissons));
+    }, [listePoissons]);
 
-    const handleReset = () => {
+    /*
+        const handleReset = () => {
         reset();
         setPoissonsCompatibles([]);
     };
+    */
 
     console.log(errors);
 
@@ -37,8 +51,13 @@ export default function App() {
                 (!gH || (gH >= poisson.gh_mini && gH <= poisson.gh_maxi)) &&
                 (!tempMoyenne || (tempMoyenne >= poisson.temp_mini && tempMoyenne <= poisson.temp_maxi))
             );
-
             setPoissonsCompatibles(poissonsFiltres);
+            
+            const idsPoissonsFiltres = poissonsFiltres.map(x => x.id);
+            const newListePoissons = listePoissons.filter(
+                x => idsPoissonsFiltres.indexOf(x.id) >= 0);
+            setListePoissons(newListePoissons);
+
         }
     }, [poissonsData, litrage, pH, gH, tempMoyenne]);
 
@@ -56,8 +75,10 @@ export default function App() {
         localStorage.setItem('form_data', JSON.stringify(formData));
     }, [litrage, pH, gH, tempMoyenne]);
 
+    const isFishIncompatible = p => validation(p, listePoissons);        
+
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form>
             <div>
                 <label htmlFor="litrage">Litrage de votre aquarium:</label>
                 <input type="number" id="litrage" {...register("litrage", {})} />
@@ -78,11 +99,20 @@ export default function App() {
 
             {poissonsError ? (
                 <h1>Une erreur est survenue lors du chargement des poissons.</h1>
-            ) : poissonsCompatibles.length > 0 ? (
-                <TablePoissons poissons={poissonsCompatibles} />
-            ) : null}
+            ) : poissonsCompatibles.length > 0 ? <>
+
+                <Panier listePoissons={listePoissons} 
+                        setListePoissons={setListePoissons}
+                        isFishIncompatible={isFishIncompatible}/>  
+  
+                <TablePoissons poissons={poissonsCompatibles}
+                               listePoissons={listePoissons}
+                               setListePoissons={setListePoissons}
+                               isFishIncompatible={isFishIncompatible}/>
+            </> : null}
 
             <button type="button" onClick={handleGoBack}>Retour à la page précédente</button>
         </form>
     );
 }
+

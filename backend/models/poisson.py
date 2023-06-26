@@ -8,7 +8,7 @@ class Poisson(Base):
 
     id: Mapped[int] = mapped_column(primary_key=True)
     nom_scientifique: Mapped[str] = mapped_column(String(100), unique=True, index=True)
-    nom_commun: Mapped[str] = mapped_column(String(50), unique=True, index=True)
+    nom_commun: Mapped[str] = mapped_column(String(50), index=True)
     id_famille: Mapped[int] = mapped_column(ForeignKey('famille.id'), index=True)
     id_genre: Mapped[int] = mapped_column(ForeignKey('genre.id'), index=True)
     ph_mini: Mapped[float]
@@ -51,5 +51,6 @@ class Poisson(Base):
             nom_famille=self.famille.nom,
             nom_genre=self.genre.nom,
             nom_comportement=self.comportement.nom, 
+
             )
         return out

@@ -85,7 +85,9 @@ export default function Poisson({ params }) {
                 <th>Température maximum</th>
                 <td>{data.temp_maxi} °C</td>
               </tr>
+             
               
+
             
 
 
