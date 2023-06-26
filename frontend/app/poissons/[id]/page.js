@@ -100,6 +100,8 @@ export default function Poisson({ params }) {
         </>
       )}
 
+      
+
       <style jsx>{`
         .carousel-container {
           width: 50%;
