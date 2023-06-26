@@ -1,36 +1,35 @@
-"use client"
+/**
+ *  Page d'accueil
+ */
 
+'use client';
 
 import Link from 'next/link';
 import styles from './page.module.css';
 import { ControlledCarousel } from './ControlledCarousel';
 
-export default function Home() {
-  return (
-    <main className={`${styles.main} ${styles.header}`}>
+export default function HomePage () {
+
+  return <main className={`${styles.main} ${styles.header}`}>
+
       <div className={styles.description}>
-        <ControlledCarousel />
+        <ControlledCarousel/>
       </div>
 
       <div className={styles.grid}>
+
         <Link href="/poissons" className={styles.card}>
-          <h2>
-            Poissons <span>-&gt;</span>
-          </h2>
+          <h2>Poissons <span>-&gt;</span></h2>
           <p>La liste des poissons d&apos;aquarium.</p>
         </Link>
 
-        <Link href="/Simulation" className={styles.card}>
-          <h2>
-            Simulation <span>-&gt;</span>
-          </h2>
+        <Link href="/simulation" className={styles.card}>
+          <h2>Simulation <span>-&gt;</span></h2>
           <p>Simulez l&apos;environnement de votre propre aquarium.</p>
         </Link>
 
-        <Link href="/Contact" className={styles.card}>
-          <h2>
-            Contact <span>-&gt;</span>
-          </h2>
+        <Link href="/contact" className={styles.card}>
+          <h2>Contact <span>-&gt;</span></h2>
           <p>Remplissez ce formulaire pour nous contacter.</p>
         </Link>
 
@@ -40,12 +39,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2>
-            A propos <span>-&gt;</span>
-          </h2>
+          <h2>A propos <span>-&gt;</span></h2>
           <p>A propos de nous et de nos objectifs.</p>
         </a>
       </div>
-    </main>
-  );
+
+    </main>;
 }

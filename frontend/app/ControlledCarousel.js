@@ -1,10 +1,15 @@
-"use client";
+/**
+ *  Carrousel de la page d'accueil
+ */
 
-"use client";
-import { useState, useEffect } from 'react';
+'use client';
+
+import { useEffect, useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
-export function ControlledCarousel(props) {
+
+export function ControlledCarousel (props) {
+
   const [index, setIndex] = useState(0);
   const [images, setImages] = useState([]);
 
@@ -25,8 +30,8 @@ export function ControlledCarousel(props) {
     for (let i = 0; i < numImages; i++) {
       const imageIndex = imageIndexes[i];
       const image = {
-        src: `/${imageIndex}.jpg`,
-        caption: `Slide ${i + 1} label`,
+        src:         `/${imageIndex}.jpg`,
+        caption:     `Slide ${i + 1} label`,
         description: `Description de la slide ${i + 1}`,
       };
       images.push(image);
@@ -54,16 +59,16 @@ export function ControlledCarousel(props) {
       activeIndex={index}
       onSelect={handleSelect}
       className='col-6 offset-3'
-      style={{ marginTop: '50px', border: "5px solid black" }}
+      style={{ marginTop: '50px', border: '5px solid black' }}
     >
       {images.map((image, i) => (
         <Carousel.Item key={i}>
           <div style={{ width: imageWidth, height: imageHeight }}>
             <img
               style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
+                width:          '100%',
+                height:         '100%',
+                objectFit:      'cover',
                 objectPosition: 'center',
               }}
               src={image.src}
