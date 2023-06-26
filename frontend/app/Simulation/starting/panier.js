@@ -63,6 +63,8 @@ export default function Panier({ listePoissons, setListePoissons, isFishIncompat
     return totalPoints;
   };
 
+  const hasIncompatibleSpecies = listePoissons.some((poisson) => isFishIncompatible(poisson));
+
   return (
     <>
       <h2>Liste des poissons ajoutés :</h2>
@@ -72,7 +74,7 @@ export default function Panier({ listePoissons, setListePoissons, isFishIncompat
           <li key={poisson.id}>
             <span style={{ color: isFishIncompatible(poisson) ? 'red' : 'inherit' }}>
               {poisson.nom_commun} (Quantité: {poisson.quantite}) - {countPoints(poisson.id)} points
-              {isFishIncompatible(poisson) && ' - Espece trop agressive'}
+              {isFishIncompatible(poisson) && ' - Veuillez retirer ce ou ces poissons de la liste'}
             </span>
             <XCircleFill
               className="ml-2"
@@ -93,7 +95,9 @@ export default function Panier({ listePoissons, setListePoissons, isFishIncompat
         ))}
       </ul>
 
-      <p>Nombre de points total : {calculateTotalPoints()}</p>
+      {hasIncompatibleSpecies && <p>Il y a des poissons incompatibles dans le panier.</p>}
+
+      <p>Total des points : {calculateTotalPoints()}</p>
     </>
   );
 }
