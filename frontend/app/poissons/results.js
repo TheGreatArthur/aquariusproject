@@ -1,12 +1,20 @@
+/**
+ * Liste des poissons correspondant aux critères de filtrage
+ */
+
+import Image from 'next/image';
 import Link from 'next/link';
 import BasicExample from '@/app/nav';
 
 
-export default function TablePoissons({ poissons }) {
+export default function TablePoissons ({ poissons }) {
 
-  return (
-    <table class="table table-hover table-dark">
-      <BasicExample />
+  return <>
+
+    <BasicExample/>
+
+    <Table>
+
       <thead>
         <tr>
           <th>Nom commun</th>
@@ -15,12 +23,13 @@ export default function TablePoissons({ poissons }) {
           <th>Comportement</th>
         </tr>
       </thead>
+
       <tbody>
         {poissons.map((p) => (
           <tr key={p.id}>
             <td>
-              <img src={`/images/${p.id}.jpg`} alt={p.nom_commun}
-                width="90" height="70" />{' '}
+              <Image src={`/images/${p.id}.jpg`} alt={p.nom_commun}
+                     width="90" height="70"/>{' '}
               <Link href={`/poissons/${p.id}`}>{p.nom_commun}</Link>
             </td>
             <td>{p.nom_scientifique}</td>
@@ -29,7 +38,8 @@ export default function TablePoissons({ poissons }) {
           </tr>
         ))}
       </tbody>
-      </table>
 
-  );
+    </Table>
+
+  </>;
 }

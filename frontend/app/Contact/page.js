@@ -1,19 +1,14 @@
-'use client'
+'use client';
 
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
-import BasicExample from '@/app/nav';
-import styles from './Formulaire.module.css';
+import { useForm } from 'react-hook-form';
+import Button from 'react-bootstrap/Button';
+import emailjs from '@emailjs/browser';
 
-function Formulaire() {
-  const [nom, setNom] = useState('');
-  const [prenom, setPrenom] = useState('');
-  const [email, setEmail] = useState('');
-  const [sujet, setSujet] = useState('');
-  const [message, setMessage] = useState('');
+function Formulaire () {
 
-  const envoyerFormulaire = (e) => {
-    e.preventDefault();
+  const { register, handleSubmit, formState: { errors } } = useForm();
+
+  const envoyerFormulaire = ({ nom, prenom, email, sujet, message }) => {
 
     const emailContent = `Nom : ${nom}\nPrénom : ${prenom}\nEmail : ${email}\nSujet : ${sujet}\nMessage : ${message}`;
 
@@ -22,11 +17,11 @@ function Formulaire() {
       'aquarius.service',
       'template_x2ip0k9',
       {
-        to_email: 'projet.aquarius.pro@gmail.com',
-        from_name: `${nom} ${prenom}`,
+        to_email:   'projet.aquarius.pro@gmail.com',
+        from_name:  `${nom} ${prenom}`,
         from_email: email,
-        subject: sujet,
-        message: emailContent
+        subject:    sujet,
+        message:    emailContent
       },
       process.env.NEXT_PUBLIC_EMAIL_JS_KEY
     )
@@ -44,59 +39,37 @@ function Formulaire() {
       });
   };
 
-  return (
-    <div className={styles.container}>
-      <BasicExample />
-      <h1>Nous contacter</h1>
-      <form onSubmit={envoyerFormulaire} className={styles.form}>
-        <div className={styles.formGroup}>
-          <label htmlFor="nom" className={styles.label}>Nom:</label>
-          <input
-            type="text"
-            id="nom"
-            value={nom}
-            onChange={(e) => setNom(e.target.value)}
-            required
-          />
-        </div>
+  return <>
 
-        <div className={styles.formGroup}>
-          <label htmlFor="prenom" className={styles.label}>Prénom :</label>
-          <input
-            type="text"
-            id="prenom"
-            value={prenom}
-            onChange={(e) => setPrenom(e.target.value)}
-            required
-          />
-        </div>
+    <h1>Nous contacter</h1>
 
-        <div className={styles.formGroup}>
-          <label htmlFor="email" className={styles.label}>Email :</label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
+    <form onSubmit={handleSubmit(envoyerFormulaire)}>
 
-        <div className={styles.formGroup}>
-          <label htmlFor="message" className={styles.label}>Votre texte :</label>
-          <textarea
-            id="message"
-            rows="4"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
-          />
-        </div>
+      <label htmlFor="nom">Nom :</label>
+      <input type="text" required{...register('nom')}/>
+      <br/><br/>
 
-        <button type="submit" className={styles.submitButton}>Envoyer</button>
-      </form>
-    </div>
-  );
+      <label htmlFor="prenom">Prénom :</label>
+      <input type="text" required{...register('nom')}/>
+      <br/><br/>
+
+      <label htmlFor="email">Email :</label>
+      <input type="email" required{...register('email')}/>
+      <br/><br/>
+
+      <label htmlFor="sujet">Sujet :</label>
+      <input type="text" required{...register('sujet')}/>
+      <br/><br/>
+
+      <label htmlFor="message">Message :</label><br/>
+      <textarea rows="4" required{...register('message')}/>
+      <br/><br/>
+
+      <Button type="submit">Envoyer</Button>
+
+    </form>
+
+  </>;
 }
 
 export default Formulaire;

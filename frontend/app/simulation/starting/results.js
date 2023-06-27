@@ -1,14 +1,19 @@
-import React, { useState, useEffect } from 'react';
+/**
+ * Résultats
+ */
+
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import useSWR from 'swr';
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import { validation } from './validation';
 
-export default function TablePoissons({ poissons, listePoissons, setListePoissons }) {
+export default function TablePoissons ({ poissons, listePoissons, setListePoissons }) {
+
   const [scrollLocked, setScrollLocked] = useState(false);
 
   const isFishIncompatible = (poisson) => {
+
     const familleOsphronemidae = 'Osphronemidae';
     const famillePoeciliidae = 'Poeciliidae';
 
@@ -27,6 +32,7 @@ export default function TablePoissons({ poissons, listePoissons, setListePoisson
   };
 
   const handleAddToCart = (p) => {
+
     const ajoutOk = validation(p, listePoissons);
 
     setListePoissons((prevListePoissons) => {
@@ -63,58 +69,59 @@ export default function TablePoissons({ poissons, listePoissons, setListePoisson
     setListePoissons([]);
   };
 
-  return (
-    <>
-      <Table className={scrollLocked ? 'scroll-locked' : ''}>
-        <thead>
-          <tr>
-            <th>Nom commun</th>
-            <th>Famille</th>
-            <th>Litrage Minimum</th>
-            <th>pH Minimum</th>
-            <th>pH Maximum</th>
-            <th>gH Minimum</th>
-            <th>gH Maximum</th>
-            <th>°C minimum</th>
-            <th>°C maximum</th>
-            <th>Comportement</th>
-            <th></th> {/* Colonne vide pour le bouton Ajouter */}
-          </tr>
-        </thead>
-        <tbody>
-          {poissons.map((p) => (
-            <tr key={p.id} style={{ color: isFishIncompatible(p) ? 'red' : 'inherit' }}>
-              <td>
-                <img src={`/images/${p.id}.jpg`} alt={p.nom_commun} width="90" height="70" />{' '}
-                <Link href={`/poissons/${p.id}`}>{p.nom_commun}</Link>
-              </td>
-              <td>{p.nom_famille}</td>
-              <td>{p.litrage_mini} L</td>
-              <td>{p.ph_mini}</td>
-              <td>{p.ph_maxi}</td>
-              <td>{p.gh_mini}</td>
-              <td>{p.gh_maxi}</td>
-              <td>{p.temp_mini} °C</td>
-              <td>{p.temp_maxi} °C</td>
-              <td>{p.nom_comportement}</td>
-              <td>
-                <Button
-                  variant="outline-primary"
-                  size="sm"
-                  className="ml-2"
-                  onClick={() => handleAddToCart(p)}
-                >
-                  Ajouter
-                </Button>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </Table>
+  return <>
 
-      <Button variant="danger" onClick={handleClearCache}>
-        Vider le cache
-      </Button>
-    </>
-  );
+    <Table className={scrollLocked ? 'scroll-locked' : ''}>
+      <thead>
+        <tr>
+          <th>Nom commun</th>
+          <th>Famille</th>
+          <th>Litrage Minimum</th>
+          <th>pH Minimum</th>
+          <th>pH Maximum</th>
+          <th>gH Minimum</th>
+          <th>gH Maximum</th>
+          <th>°C minimum</th>
+          <th>°C maximum</th>
+          <th>Comportement</th>
+          <th></th>
+          {/* Colonne vide pour le bouton Ajouter */}
+        </tr>
+      </thead>
+      <tbody>
+        {poissons.map((p) => (
+          <tr key={p.id} style={{ color: isFishIncompatible(p) ? 'red' : 'inherit' }}>
+            <td>
+              <img src={`/images/${p.id}.jpg`} alt={p.nom_commun} width="90" height="70"/>{' '}
+              <Link href={`/poissons/${p.id}`}>{p.nom_commun}</Link>
+            </td>
+            <td>{p.nom_famille}</td>
+            <td>{p.litrage_mini} L</td>
+            <td>{p.ph_mini}</td>
+            <td>{p.ph_maxi}</td>
+            <td>{p.gh_mini}</td>
+            <td>{p.gh_maxi}</td>
+            <td>{p.temp_mini} °C</td>
+            <td>{p.temp_maxi} °C</td>
+            <td>{p.nom_comportement}</td>
+            <td>
+              <Button
+                variant="outline-primary"
+                size="sm"
+                className="ml-2"
+                onClick={() => handleAddToCart(p)}
+              >
+                Ajouter
+              </Button>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </Table>
+
+    <Button variant="danger" onClick={handleClearCache}>
+      Vider le cache
+    </Button>
+
+  </>;
 }

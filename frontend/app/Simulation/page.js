@@ -1,33 +1,26 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
+import Button from 'react-bootstrap/Button';
 
+export default function SimulationHomePage () {
 
-import React from 'react';
-import BasicExample from '@/app/nav';
+  const router = useRouter();
 
-
-
-
-export default function App() {
   const handleAquariumZero = () => {
-    // Redirection vers la page "Aquarium de zéro"
-    window.location.href = "/Simulation/starting";
-   
+    router.push('./starting');  // Redirection vers la page "Aquarium de zéro"
   };
 
   const handleAquariumFonctionnement = () => {
-    // Redirection vers la page "Aquarium en fonctionnement"
-    window.location.href = "/aquarium-fonctionnement";
+    router.push('/aquarium-fonctionnement');  // Redirection vers la page "Aquarium en fonctionnement"
   };
 
-  return (
-    
-    <div>
-      <BasicExample />
-      <h1>Choisissez une option :</h1>
-      <button onClick={handleAquariumZero}>Aquarium de zéro</button>
-      <button onClick={handleAquariumFonctionnement}>Aquarium en fonctionnement</button>
-      
-    </div>
-  );
+  return <>
+
+    <h1>Choisissez une option :</h1>
+
+    <Button onClick={handleAquariumZero}>Aquarium de zéro</Button>
+    <Button onClick={handleAquariumFonctionnement}>Aquarium en fonctionnement</Button>
+
+  </>;
 }
