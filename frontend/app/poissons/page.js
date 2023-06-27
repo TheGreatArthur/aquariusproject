@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import useSWR from 'swr';
-import styles from '@/app/page.module.css';
+import styles from '@/app/page.module.scss';
 import TablePoissons from './results';
 
 

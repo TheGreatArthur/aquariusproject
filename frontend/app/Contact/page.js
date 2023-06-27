@@ -3,7 +3,7 @@
 import { useForm } from 'react-hook-form';
 import Button from 'react-bootstrap/Button';
 import emailjs from '@emailjs/browser';
-import styles from './Formulaire.module.css';
+import styles from './Formulaire.module.scss';
 
 
 export default function Formulaire() {
@@ -38,37 +38,41 @@ export default function Formulaire() {
 
   return <div className={styles.container}>
 
-    <h1>Nous contacter</h1>
+    <div className='shade'>
 
-    <form onSubmit={handleSubmit(envoyerFormulaire)}>
+      <h1>Nous contacter</h1>
 
-      <div className={styles.formGroup}>
-        <label htmlFor="nom">Nom :</label>
-        <input type="text" required {...register('nom')} />
-      </div>
+      <form onSubmit={handleSubmit(envoyerFormulaire)}>
 
-      <div className={styles.formGroup}>
-        <label htmlFor="prenom">Prénom :</label>
-        <input type="text" required {...register('prenom')} />
-      </div>
+        <div className={styles.formGroup}>
+          <label htmlFor="nom">Nom :</label>
+          <input type="text" required {...register('nom')} />
+        </div>
 
-      <div className={styles.formGroup}>
-        <label htmlFor="email">Email :</label>
-        <input type="email" required {...register('email')} />
-      </div>
+        <div className={styles.formGroup}>
+          <label htmlFor="prenom">Prénom :</label>
+          <input type="text" required {...register('prenom')} />
+        </div>
 
-      <div className={styles.formGroup}>
-        <label htmlFor="sujet">Sujet :</label>
-        <input type="text" required {...register('sujet')} />
-      </div>
+        <div className={styles.formGroup}>
+          <label htmlFor="email">Email :</label>
+          <input type="email" required {...register('email')} />
+        </div>
 
-      <div className={styles.formGroup}>
-        <label htmlFor="message">Message :</label>
-        <textarea rows="4" required {...register('message')} />
-      </div>
+        <div className={styles.formGroup}>
+          <label htmlFor="sujet">Sujet :</label>
+          <input type="text" required {...register('sujet')} />
+        </div>
 
-      <Button type="submit" className={styles.submitButton}>Envoyer</Button>
+        <div className={styles.formGroup}>
+          <label htmlFor="message">Message :</label>
+          <textarea rows="4" required {...register('message')} />
+        </div>
 
-    </form>
+        <Button type="submit" className={styles.submitButton}>Envoyer</Button>
+
+      </form>
+    </div>
+
   </div>;
 }

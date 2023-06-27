@@ -6,7 +6,7 @@ import useSWR from 'swr';
 import Carousel from 'react-bootstrap/Carousel';
 
 import Results from './results';
-import styles from '@/app/page.module.css';
+import styles from '@/app/page.module.scss';
 import './style.css';
 
 
