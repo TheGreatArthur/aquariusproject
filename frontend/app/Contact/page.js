@@ -4,9 +4,10 @@ import { useForm } from 'react-hook-form';
 import Button from 'react-bootstrap/Button';
 import emailjs from '@emailjs/browser';
 
-function Formulaire () {
 
-  const { register, handleSubmit, formState: { errors } } = useForm();
+export default function Formulaire () {
+
+  const { register, reset handleSubmit, formState: { errors } } = useForm();
 
   const envoyerFormulaire = ({ nom, prenom, email, sujet, message }) => {
 
@@ -14,25 +15,20 @@ function Formulaire () {
 
     // Envoyer l'e-mail via EmailJS
     emailjs.send(
-      'aquarius.service',
-      'template_x2ip0k9',
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
       {
-        to_email:   'projet.aquarius.pro@gmail.com',
+        to_email:   process.env.NEXT_PUBLIC_EMAILJS_TO,
         from_name:  `${nom} ${prenom}`,
         from_email: email,
         subject:    sujet,
         message:    emailContent
       },
-      process.env.NEXT_PUBLIC_EMAIL_JS_KEY
+      process.env.NEXT_PUBLIC_EMAILJS_KEY
     )
       .then((response) => {
         console.log('E-mail envoyé avec succès !', response);
-        // Réinitialiser le formulaire
-        setNom('');
-        setPrenom('');
-        setEmail('');
-        setSujet('');
-        setMessage('');
+        reset(); // Réinitialiser le formulaire
       })
       .catch((error) => {
         console.error('Erreur lors de l\'envoi de l\'e-mail :', error);
@@ -72,4 +68,3 @@ function Formulaire () {
   </>;
 }
 
-export default Formulaire;

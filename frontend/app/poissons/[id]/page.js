@@ -4,10 +4,9 @@ import React from 'react';
 import Link from 'next/link';
 import useSWR from 'swr';
 import Carousel from 'react-bootstrap/Carousel';
-import BasicExample from '@/app/nav';
 
-import styles from '@/app/page.module.css';
 import Results from './results';
+import styles from '@/app/page.module.css';
 import './style.css';
 
 
@@ -21,8 +20,7 @@ export default function Poisson ({ params }) {
 
     {data && <>
 
-           <BasicExample />
-          <h1>{data.nom_commun}</h1>
+      <h1>{data.nom_commun}</h1>
 
       {/* Carousel des photos du poisson */}
       <Carousel className="carousel-container">

@@ -5,8 +5,8 @@
 import { CaretDownFill, CaretUpFill, XCircleFill } from 'react-bootstrap-icons';
 import { validation } from '@/lib/simulation/starting/validation';
 
-export default function Panier ({ selectionPoissons, setSelectionPoissons }) {
 
+export default function Panier ({ selectionPoissons, setSelectionPoissons }) {
 
   const countPoints = (id) => {
 
