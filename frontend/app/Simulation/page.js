@@ -1,11 +1,18 @@
 'use client';
 
+
+
 import React from 'react';
+import BasicExample from '@/app/nav';
+
+
+
 
 export default function App() {
   const handleAquariumZero = () => {
     // Redirection vers la page "Aquarium de zéro"
     window.location.href = "/Simulation/starting";
+   
   };
 
   const handleAquariumFonctionnement = () => {
@@ -14,7 +21,9 @@ export default function App() {
   };
 
   return (
+    
     <div>
+      <BasicExample />
       <h1>Choisissez une option :</h1>
       <button onClick={handleAquariumZero}>Aquarium de zéro</button>
       <button onClick={handleAquariumFonctionnement}>Aquarium en fonctionnement</button>

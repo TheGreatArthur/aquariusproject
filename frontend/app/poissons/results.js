@@ -1,11 +1,12 @@
 import Link from 'next/link';
-import Table from 'react-bootstrap/Table';
+import BasicExample from '@/app/nav';
 
 
 export default function TablePoissons({ poissons }) {
 
   return (
-    <Table>
+    <table class="table table-hover table-dark">
+      <BasicExample />
       <thead>
         <tr>
           <th>Nom commun</th>
@@ -28,7 +29,7 @@ export default function TablePoissons({ poissons }) {
           </tr>
         ))}
       </tbody>
-    </Table>
+      </table>
 
   );
 }

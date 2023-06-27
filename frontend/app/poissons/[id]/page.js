@@ -1,10 +1,12 @@
 'use client'
 
+import React from 'react';
 import Link from 'next/link';
 import useSWR from 'swr';
 import styles from '@/app/page.module.css';
 import Table from 'react-bootstrap/Table';
 import Carousel from 'react-bootstrap/Carousel';
+import BasicExample from '@/app/nav';
 
 export default function Poisson({ params }) {
   const id = params.id;
@@ -14,6 +16,7 @@ export default function Poisson({ params }) {
     <main className={styles.main}>
       {data && (
         <>
+           <BasicExample />
           <h1>{data.nom_commun}</h1>
 
           {/* Carousel of Images */}
@@ -27,7 +30,7 @@ export default function Poisson({ params }) {
             ))}
           </Carousel>
 
-          <Table>
+          <Table bordered variant="dark">
             <tbody>
               <tr>
                 <th>Nom scientifique</th>
@@ -85,22 +88,12 @@ export default function Poisson({ params }) {
                 <th>Température maximum</th>
                 <td>{data.temp_maxi} °C</td>
               </tr>
-             
-              
-
-            
-
-
-
-              {/* Autres lignes de la table */}
             </tbody>
           </Table>
 
           <Link href="/poissons">Retour à la liste</Link>
         </>
       )}
-
-      
 
       <style jsx>{`
         .carousel-container {

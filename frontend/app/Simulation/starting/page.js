@@ -3,14 +3,15 @@
 import React, { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import useSWR from 'swr';
-
+import BasicExample from '@/app/nav';
 import TablePoissons from './results';
 import Panier from './panier';
 import { validation } from './validation';
 
 
 export default function App() {
-
+    
+    
     const [poissonsCompatibles, setPoissonsCompatibles] = useState([]);
     const [listePoissons, setListePoissons] = useState(() => {
         const savedListePoissons = localStorage.getItem('listePoissons');
@@ -79,6 +80,11 @@ export default function App() {
 
     return (
         <form>
+            <br>
+            </br>
+            <br>
+            </br>
+            <br></br>
             <div>
                 <label htmlFor="litrage">Litrage de votre aquarium:</label>
                 <input type="number" id="litrage" {...register("litrage", {})} />
@@ -100,6 +106,7 @@ export default function App() {
             {poissonsError ? (
                 <h1>Une erreur est survenue lors du chargement des poissons.</h1>
             ) : poissonsCompatibles.length > 0 ? <>
+                <BasicExample/>
 
                 <Panier listePoissons={listePoissons} 
                         setListePoissons={setListePoissons}

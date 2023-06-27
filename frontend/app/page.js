@@ -4,12 +4,15 @@
 import Link from 'next/link';
 import styles from './page.module.css';
 import { ControlledCarousel } from './ControlledCarousel';
+import BasicExample from './nav';
 
 export default function Home() {
   return (
     <main className={`${styles.main} ${styles.header}`}>
       <div className={styles.description}>
+        <BasicExample />
         <ControlledCarousel />
+        
       </div>
 
       <div className={styles.grid}>
@@ -45,7 +48,9 @@ export default function Home() {
           </h2>
           <p>A propos de nous et de nos objectifs.</p>
         </a>
+        
       </div>
+      
     </main>
   );
 }
