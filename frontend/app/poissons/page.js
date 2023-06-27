@@ -6,6 +6,7 @@ import styles from '@/app/page.module.css';
 import TablePoissons from './results';
 
 
+
 export default function Poissons() {
 
   const [terme, setTerme] = useState('');
@@ -24,5 +25,6 @@ export default function Poissons() {
 
       {data && <TablePoissons poissons={data.poissons}/>}
     </main>
+    
   );
 }
