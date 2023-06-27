@@ -3,11 +3,12 @@
 import { useForm } from 'react-hook-form';
 import Button from 'react-bootstrap/Button';
 import emailjs from '@emailjs/browser';
+import styles from './Formulaire.module.css';
 
 
-export default function Formulaire () {
+export default function Formulaire() {
 
-  const { register, reset handleSubmit, formState: { errors } } = useForm();
+  const { register, reset, handleSubmit } = useForm();
 
   const envoyerFormulaire = ({ nom, prenom, email, sujet, message }) => {
 
@@ -18,11 +19,11 @@ export default function Formulaire () {
       process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
       process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
       {
-        to_email:   process.env.NEXT_PUBLIC_EMAILJS_TO,
-        from_name:  `${nom} ${prenom}`,
+        to_email: process.env.NEXT_PUBLIC_EMAILJS_TO,
+        from_name: `${nom} ${prenom}`,
         from_email: email,
-        subject:    sujet,
-        message:    emailContent
+        subject: sujet,
+        message: emailContent
       },
       process.env.NEXT_PUBLIC_EMAILJS_KEY
     )
@@ -35,36 +36,39 @@ export default function Formulaire () {
       });
   };
 
-  return <>
+  return <div className={styles.container}>
 
     <h1>Nous contacter</h1>
 
     <form onSubmit={handleSubmit(envoyerFormulaire)}>
 
-      <label htmlFor="nom">Nom :</label>
-      <input type="text" required{...register('nom')}/>
-      <br/><br/>
+      <div className={styles.formGroup}>
+        <label htmlFor="nom">Nom :</label>
+        <input type="text" required {...register('nom')} />
+      </div>
 
-      <label htmlFor="prenom">Prénom :</label>
-      <input type="text" required{...register('nom')}/>
-      <br/><br/>
+      <div className={styles.formGroup}>
+        <label htmlFor="prenom">Prénom :</label>
+        <input type="text" required {...register('prenom')} />
+      </div>
 
-      <label htmlFor="email">Email :</label>
-      <input type="email" required{...register('email')}/>
-      <br/><br/>
+      <div className={styles.formGroup}>
+        <label htmlFor="email">Email :</label>
+        <input type="email" required {...register('email')} />
+      </div>
 
-      <label htmlFor="sujet">Sujet :</label>
-      <input type="text" required{...register('sujet')}/>
-      <br/><br/>
+      <div className={styles.formGroup}>
+        <label htmlFor="sujet">Sujet :</label>
+        <input type="text" required {...register('sujet')} />
+      </div>
 
-      <label htmlFor="message">Message :</label><br/>
-      <textarea rows="4" required{...register('message')}/>
-      <br/><br/>
+      <div className={styles.formGroup}>
+        <label htmlFor="message">Message :</label>
+        <textarea rows="4" required {...register('message')} />
+      </div>
 
-      <Button type="submit">Envoyer</Button>
+      <Button type="submit" className={styles.submitButton}>Envoyer</Button>
 
     </form>
-
-  </>;
+  </div>;
 }
-

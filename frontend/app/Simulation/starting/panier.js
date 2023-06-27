@@ -3,17 +3,17 @@
  */
 
 import { CaretDownFill, CaretUpFill, XCircleFill } from 'react-bootstrap-icons';
-import { validation } from '@/lib/simulation/starting/validation';
+import { validation } from '@/lib/validation';
 
 
-export default function Panier ({ selectionPoissons, setSelectionPoissons }) {
+export default function Panier ({ listePoissons, setListePoissons }) {
 
   const countPoints = (id) => {
 
-    const poisson = selectionPoissons.find((p) => p.id === id);
+    const poisson = listePoissons.find((p) => p.id === id);
     if (!poisson) return 0;
 
-    const nombreExemplaires = selectionPoissons.reduce((total, p) => {
+    const nombreExemplaires = listePoissons.reduce((total, p) => {
       if (p.id === id)
         return total + p.quantite;
       return total;
@@ -22,16 +22,16 @@ export default function Panier ({ selectionPoissons, setSelectionPoissons }) {
     return poisson.points * nombreExemplaires;
   };
 
-  const isFishIncompatible = p => validation(p, selectionPoissons);
+  const isFishIncompatible = p => validation(p, listePoissons);
 
   const handleRemoveFromList = (poissonId) => {
-    setSelectionPoissons((prevSelection) =>
+    setListePoissons((prevSelection) =>
       prevSelection.filter((poisson) => poisson.id !== poissonId)
     );
   };
 
   const handleIncreaseQuantity = (poissonId) => {
-    setSelectionPoissons((prevSelection) =>
+    setListePoissons((prevSelection) =>
       prevSelection.map((poisson) => {
         if (poisson.id === poissonId) {
           return {
@@ -45,7 +45,7 @@ export default function Panier ({ selectionPoissons, setSelectionPoissons }) {
   };
 
   const handleDecreaseQuantity = (poissonId) => {
-    setSelectionPoissons((prevSelection) =>
+    setListePoissons((prevSelection) =>
       prevSelection.map((poisson) => {
         if (poisson.id === poissonId) {
           const newQuantite = poisson.quantite - 1;
@@ -65,20 +65,20 @@ export default function Panier ({ selectionPoissons, setSelectionPoissons }) {
 
   const calculateTotalPoints = () => {
     let totalPoints = 0;
-    selectionPoissons.forEach((poisson) => {
+    listePoissons.forEach((poisson) => {
       totalPoints += countPoints(poisson.id);
     });
     return totalPoints;
   };
 
-  const hasIncompatibleSpecies = selectionPoissons.some((poisson) => isFishIncompatible(poisson));
+  const hasIncompatibleSpecies = listePoissons.some((poisson) => isFishIncompatible(poisson));
 
   return <>
 
     <h2>Liste des poissons ajoutés :</h2>
 
     <ul>
-      {selectionPoissons.map(poisson => (
+      {listePoissons.map(poisson => (
         <li key={poisson.id}>
             <span style={{ color: isFishIncompatible(poisson) ? 'red' : 'inherit' }}>
               {poisson.nom_commun} (Quantité: {poisson.quantite}) - {countPoints(poisson.id)} points

@@ -6,7 +6,7 @@ import Table from 'react-bootstrap/Table';
 
 export default function Results ({ data }) {
 
-  return <Table>
+  return <Table className='table-dark'>
     <tbody>
       <tr>
         <th>Nom scientifique</th>

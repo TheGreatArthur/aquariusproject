@@ -8,11 +8,11 @@ export default function SimulationHomePage () {
   const router = useRouter();
 
   const handleAquariumZero = () => {
-    router.push('./starting');  // Redirection vers la page "Aquarium de zéro"
+    router.push('/simulation/starting');  // Redirection vers la page "Aquarium de zéro"
   };
 
   const handleAquariumFonctionnement = () => {
-    router.push('/aquarium-fonctionnement');  // Redirection vers la page "Aquarium en fonctionnement"
+    router.push('/simulation/aquarium-fonctionnement');  // Redirection vers la page "Aquarium en fonctionnement"
   };
 
   return <>

@@ -38,8 +38,10 @@
   }
 
 
-.container{
-    background-image: url('./wallpaper2.jpg');
-
+  .container {
+    background-image: url('./wallpaper4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
   

@@ -9,7 +9,7 @@ import Table from 'react-bootstrap/Table';
 
 export default function TablePoissons ({ poissons }) {
 
-  return <Table>
+  return <Table hover className='table-dark'>
 
     <thead>
       <tr>

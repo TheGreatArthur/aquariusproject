@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
-import { validation } from './validation';
+import { validation } from '@/lib/validation';
 
 export default function TablePoissons ({ poissons, listePoissons, setListePoissons }) {
 
@@ -71,7 +71,7 @@ export default function TablePoissons ({ poissons, listePoissons, setListePoisso
 
   return <>
 
-    <Table className={scrollLocked ? 'scroll-locked' : ''}>
+    <Table hover className={scrollLocked ? 'scroll-locked table-dark' : 'table-dark'}>
       <thead>
         <tr>
           <th>Nom commun</th>
