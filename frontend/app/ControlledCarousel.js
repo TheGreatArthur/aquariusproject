@@ -5,11 +5,10 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import Carousel from 'react-bootstrap/Carousel';
 
-
-export function ControlledCarousel (props) {
-
+export function ControlledCarousel(props) {
   const [index, setIndex] = useState(0);
   const [images, setImages] = useState([]);
 
@@ -30,8 +29,8 @@ export function ControlledCarousel (props) {
     for (let i = 0; i < numImages; i++) {
       const imageIndex = imageIndexes[i];
       const image = {
-        src:         `/${imageIndex}.jpg`,
-        caption:     `Slide ${i + 1} label`,
+        src: `/${imageIndex}.jpg`,
+        caption: `Slide ${i + 1} label`,
         description: `Description de la slide ${i + 1}`,
       };
       images.push(image);
@@ -51,14 +50,69 @@ export function ControlledCarousel (props) {
     return indexes;
   };
 
-  const imageWidth = '600px'; // Largeur de base des images
+  const imageWidth = '700px'; // Largeur de base des images
   const imageHeight = '400px'; // Hauteur de base des images
+
+  const getSlideName = (src) => {
+    const slideNumber = parseInt(src.substring(1, src.indexOf('.jpg')));
+    let slideName = '';
+
+    switch (slideNumber) {
+      case 1:
+        slideName = 'Cyprinidae';
+        break;
+      case 2:
+        slideName = 'Characidae';
+        break;
+      case 3:
+        slideName = 'Siluridae';
+        break;
+      case 4:
+        slideName = 'Callichthyidae';
+        break;
+      case 5:
+        slideName = 'Loricariidae';
+        break;
+      case 6:
+        slideName = 'Poeciliidae';
+        break;
+      case 7:
+        slideName = 'Nothobranchiidae';
+        break;
+      case 8:
+        slideName = 'Cichlidae Américain';
+        break;
+      case 9:
+        slideName = 'Cichlidae Africain';
+        break;
+      case 10:
+        slideName = 'Osphronemidae';
+        break;
+      case 11:
+        slideName = 'Osphronemidae';
+        break;
+      case 12:
+        slideName = 'Tetraodontidae';
+        break;
+      case 13:
+        slideName = 'Crustacés';
+        break;
+      case 14:
+        slideName = 'Mollusques';
+        break;
+      default:
+        slideName = 'Unknown';
+        break;
+    }
+
+    return slideName;
+  };
 
   return (
     <Carousel
       activeIndex={index}
       onSelect={handleSelect}
-      className='col-6 offset-3'
+      className="col-6 offset-3"
       style={{ marginTop: '50px', border: '5px solid black' }}
     >
       {images.map((image, i) => (
@@ -66,9 +120,9 @@ export function ControlledCarousel (props) {
           <div style={{ width: imageWidth, height: imageHeight }}>
             <img
               style={{
-                width:          '100%',
-                height:         '100%',
-                objectFit:      'cover',
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
                 objectPosition: 'center',
               }}
               src={image.src}
@@ -77,7 +131,7 @@ export function ControlledCarousel (props) {
           </div>
 
           <Carousel.Caption>
-            <h3>{image.caption}</h3>
+            <h3><Link href={`/poissons?famille=${getSlideName(image.src)}`}>{getSlideName(image.src)}</Link></h3>
             <p>{image.description}</p>
           </Carousel.Caption>
         </Carousel.Item>

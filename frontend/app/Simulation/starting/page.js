@@ -3,18 +3,14 @@
 import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import useSWR from 'swr';
+
+import { lsGet, lsSet } from '@/lib/localstorage';
 import TablePoissons from './results';
 import Panier from './panier';
 
-
 export default function App() {
-
-
   const [poissonsCompatibles, setPoissonsCompatibles] = useState([]);
-  const [listePoissons, setListePoissons] = useState(() => {
-    const savedListePoissons = localStorage.getItem('listePoissons');
-    return savedListePoissons ? JSON.parse(savedListePoissons) : [];
-  });
+  const [listePoissons, setListePoissons] = useState(() => lsGet('listePoissons') || []);
 
   const { data: poissonsData, error: poissonsError } = useSWR(`/api/poissons`);
 
@@ -26,15 +22,8 @@ export default function App() {
   const tempMoyenne = watch('tempMoyenne');
 
   useEffect(() => {
-    localStorage.setItem('listePoissons', JSON.stringify(listePoissons));
+    lsSet('listePoissons', listePoissons);
   }, [listePoissons]);
-
-  /*
-    const handleReset = () => {
-    reset();
-    setPoissonsCompatibles([]);
-  };
-  */
 
   console.log(errors);
 
@@ -61,56 +50,51 @@ export default function App() {
   }, [poissonsData, litrage, pH, gH, tempMoyenne]);
 
   useEffect(() => {
-    // Récupérer les valeurs des champs du formulaire depuis le cache du navigateur
-    const cachedFormData = JSON.parse(localStorage.getItem('form_data'));
+    const cachedFormData = lsGet('form_data');
     if (cachedFormData) {
       reset(cachedFormData);
     }
   }, []);
 
   useEffect(() => {
-    // Sauvegarder les valeurs des champs du formulaire dans le cache du navigateur
     const formData = { litrage, pH, gH, tempMoyenne };
-    localStorage.setItem('form_data', JSON.stringify(formData));
+    lsSet('form_data', formData);
   }, [litrage, pH, gH, tempMoyenne]);
 
-  return <form>
-    <br>
-    </br>
-    <br>
-    </br>
-    <br></br>
-    <div>
-      <label htmlFor="litrage">Litrage de votre aquarium:</label>
-      <input type="number" id="litrage" {...register("litrage", {})} />
-    </div>
-    <div>
-      <label htmlFor="pH">pH moyen de votre aquarium:</label>
-      <input type="text" id="pH" {...register("pH", { pattern: /^\d*\.?\d*$/, min: 0, max: 14 })} />
-    </div>
-    <div>
-      <label htmlFor="gH">gH moyen de votre aquarium:</label>
-      <input type="text" id="gH" {...register("gH", { pattern: /^\d*\.?\d*$/ })} />
-    </div>
-    <div>
-      <label htmlFor="tempMoyenne">Température moyenne de votre aquarium:</label>
-      <input type="text" id="tempMoyenne" {...register("tempMoyenne", { pattern: /^-?\d*\.?\d*$/ })} />
-    </div>
+  return (
+    <form>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div>
+        <label htmlFor="litrage">Litrage de votre aquarium:</label>
+        <input type="number" id="litrage" {...register("litrage", {})} />
+      </div>
+      <div>
+        <label htmlFor="pH">pH moyen de votre aquarium:</label>
+        <input type="text" id="pH" {...register("pH", { pattern: /^\d*\.?\d*$/, min: 0, max: 14 })} />
+      </div>
+      <div>
+        <label htmlFor="gH">gH moyen de votre aquarium:</label>
+        <input type="text" id="gH" {...register("gH", { pattern: /^\d*\.?\d*$/ })} />
+      </div>
+      <div>
+        <label htmlFor="tempMoyenne">Température moyenne de votre aquarium:</label>
+        <input type="text" id="tempMoyenne" {...register("tempMoyenne", { pattern: /^-?\d*\.?\d*$/ })} />
+      </div>
 
-    {poissonsError ? (
-      <h1>Une erreur est survenue lors du chargement des poissons.</h1>
-    ) : poissonsCompatibles.length > 0 ? <>
+      {poissonsError ? (
+        <h1>Une erreur est survenue lors du chargement des poissons.</h1>
+      ) : poissonsCompatibles.length > 0 ? (
+        <>
+          <Panier listePoissons={listePoissons} setListePoissons={setListePoissons} />
+          <TablePoissons poissons={poissonsCompatibles} listePoissons={listePoissons} setListePoissons={setListePoissons} />
+        </>
+      ) : null}
 
-      <Panier listePoissons={listePoissons}
-        setListePoissons={setListePoissons} />
-
-      <TablePoissons poissons={poissonsCompatibles}
-        listePoissons={listePoissons}
-        setListePoissons={setListePoissons} />
-
-    </> : null}
-
-    <button type="button" onClick={handleGoBack}>Retour à la page précédente</button>
-
-  </form>;
+      <button type="button" onClick={handleGoBack}>Retour à la page précédente</button>
+    </form>
+  
+  );
 }

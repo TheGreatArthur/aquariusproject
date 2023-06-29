@@ -1,0 +1,48 @@
+.poisson-background {
+  background-image: url('./wallpaper5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.carousel {
+  margin: 0 auto;
+  max-width: 700px;
+  /* Ajustez cette valeur selon vos besoins */
+  width: 100%;
+}
+
+.carousel-image-container {
+  width: 100%;
+  height: 0;
+  padding-top: 66.66%;
+  /* Ratio 3:2 */
+  position: relative;
+}
+
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+  left: -40px;
+}
+
+.carousel-control-next {
+  right: -40px;
+}
+

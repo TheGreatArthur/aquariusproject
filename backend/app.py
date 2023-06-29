@@ -24,6 +24,7 @@ def poissons():
 
     rq = db.select(Poisson)
     if q := request.args.get('q'):
+        # Filtrage rapide
         rq = rq.join(Famille).join(Genre).join(Comportement).where(
             or_(
             Poisson.nom_commun.ilike(q + '%'),
@@ -32,6 +33,10 @@ def poissons():
             Genre.nom.ilike(q + '%'),
             Comportement.nom.ilike(q + '%'),
             ))
+    elif fam := request.args.get('famille'):
+        # Filtrage exact sur le nom de la famille, pour le carrousel
+        rq = rq.join(Famille).where(Famille.nom.ilike(fam))
+
     print(rq)    
     return {'poissons': [p.as_dict() for p in db.session.scalars(rq)]}
 
@@ -44,3 +49,10 @@ def get_poisson(id: int):
         return 'Fish not found', 404
     
     return poisson.as_dict()
+
+@app.route('/poissons/familles')
+def get_familles():
+
+    familles: Famille = db.session.scalars(db.select(Famille).order_by(Famille.nom))
+    
+    return {'familles': [f.as_dict() for f in familles]}
