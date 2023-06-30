@@ -4,23 +4,10 @@
 
 import { CaretDownFill, CaretUpFill, XCircleFill } from 'react-bootstrap-icons';
 import { validation } from '@/lib/validation';
+import { totalPoints } from '@/lib/panier';
 
 
 export default function Panier ({ listePoissons, setListePoissons }) {
-
-  const countPoints = (id) => {
-
-    const poisson = listePoissons.find((p) => p.id === id);
-    if (!poisson) return 0;
-
-    const nombreExemplaires = listePoissons.reduce((total, p) => {
-      if (p.id === id)
-        return total + p.quantite;
-      return total;
-    }, 0);
-
-    return poisson.points * nombreExemplaires;
-  };
 
   const isFishIncompatible = p => validation(p, listePoissons);
 
@@ -63,14 +50,6 @@ export default function Panier ({ listePoissons, setListePoissons }) {
     );
   };
 
-  const calculateTotalPoints = () => {
-    let totalPoints = 0;
-    listePoissons.forEach((poisson) => {
-      totalPoints += countPoints(poisson.id);
-    });
-    return totalPoints;
-  };
-
   const hasIncompatibleSpecies = listePoissons.some((poisson) => isFishIncompatible(poisson));
 
   return <>
@@ -78,26 +57,26 @@ export default function Panier ({ listePoissons, setListePoissons }) {
     <h2>Liste des poissons ajoutés :</h2>
 
     <ul>
-      {listePoissons.map(poisson => (
-        <li key={poisson.id}>
-            <span style={{ color: isFishIncompatible(poisson) ? 'red' : 'inherit' }}>
-              {poisson.nom_commun} (Quantité: {poisson.quantite}) - {countPoints(poisson.id)} points
-              {isFishIncompatible(poisson) && ' - Veuillez retirer ce ou ces poissons de la liste'}
+      {listePoissons.map(p => (
+        <li key={p.id}>
+            <span style={{ color: isFishIncompatible(p) ? 'red' : 'inherit' }}>
+              {p.nom_commun} (Quantité: {p.quantite}) - {p.quantite * p.points} points
+              {isFishIncompatible(p) && ' - Veuillez retirer ce ou ces poissons de la liste'}
             </span>
           <XCircleFill
             className="ml-2"
             style={{ cursor: 'pointer' }}
-            onClick={() => handleRemoveFromList(poisson.id)}
+            onClick={() => handleRemoveFromList(p.id)}
           />
           <CaretUpFill
             className="ml-2"
             style={{ cursor: 'pointer' }}
-            onClick={() => handleIncreaseQuantity(poisson.id)}
+            onClick={() => handleIncreaseQuantity(p.id)}
           />
           <CaretDownFill
             className="ml-2"
             style={{ cursor: 'pointer' }}
-            onClick={() => handleDecreaseQuantity(poisson.id)}
+            onClick={() => handleDecreaseQuantity(p.id)}
           />
         </li>
       ))}
@@ -105,7 +84,7 @@ export default function Panier ({ listePoissons, setListePoissons }) {
 
     {hasIncompatibleSpecies && <p>Il y a des poissons incompatibles dans le panier.</p>}
 
-    <p>Total des points : {calculateTotalPoints()}</p>
+    <p>Total des points : {totalPoints(listePoissons)}</p>
 
   </>;
 }
