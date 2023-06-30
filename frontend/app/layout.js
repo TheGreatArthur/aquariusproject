@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import NavBar from '@/app/nav';
 import './globals.css';
+import './svg-with-js.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
