@@ -1,18 +1,33 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
 import useSWR from 'swr';
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import RangeSlider from 'react-range-slider-input';
+import 'react-range-slider-input/dist/style.css';
 
 import { lsGet, lsSet } from '@/lib/localstorage';
 import TablePoissons from './results';
 import Panier from './panier';
+import { validation } from '@/lib/validation';
 
-export default function App() {
+const FORM_LABEL_WIDTH = 7;  // Largeur des labels (1 à 12)
+
+export default function SimulationStart () {
+
+  const router = useRouter();
+
   const [poissonsCompatibles, setPoissonsCompatibles] = useState([]);
   const [listePoissons, setListePoissons] = useState(() => lsGet('listePoissons') || []);
+  const [range, setRange] = useState([4, 12]);
+  console.log('range=', range);
 
-  const { data: poissonsData, error: poissonsError } = useSWR(`/api/poissons`);
+  const { data: poissonsData, error: poissonsError } = useSWR('/api/poissons');
 
   const { register, formState: { errors }, reset, watch } = useForm();
 
@@ -21,15 +36,11 @@ export default function App() {
   const gH = watch('gH');
   const tempMoyenne = watch('tempMoyenne');
 
+  const environnement = { litrage, pH, gH, tempMoyenne };
+
   useEffect(() => {
     lsSet('listePoissons', listePoissons);
   }, [listePoissons]);
-
-  console.log(errors);
-
-  const handleGoBack = () => {
-    window.history.back();
-  };
 
   useEffect(() => {
     if (poissonsData && poissonsData.poissons) {
@@ -45,7 +56,6 @@ export default function App() {
       const newListePoissons = listePoissons.filter(
         x => idsPoissonsFiltres.indexOf(x.id) >= 0);
       setListePoissons(newListePoissons);
-
     }
   }, [poissonsData, litrage, pH, gH, tempMoyenne]);
 
@@ -61,40 +71,70 @@ export default function App() {
     lsSet('form_data', formData);
   }, [litrage, pH, gH, tempMoyenne]);
 
-  return (
-    <form>
-      <br />
-      <br />
-      <br />
-      <br />
-      <div>
-        <label htmlFor="litrage">Litrage de votre aquarium:</label>
-        <input type="number" id="litrage" {...register("litrage", {})} />
-      </div>
-      <div>
-        <label htmlFor="pH">pH moyen de votre aquarium:</label>
-        <input type="text" id="pH" {...register("pH", { pattern: /^\d*\.?\d*$/, min: 0, max: 14 })} />
-      </div>
-      <div>
-        <label htmlFor="gH">gH moyen de votre aquarium:</label>
-        <input type="text" id="gH" {...register("gH", { pattern: /^\d*\.?\d*$/ })} />
-      </div>
-      <div>
-        <label htmlFor="tempMoyenne">Température moyenne de votre aquarium:</label>
-        <input type="text" id="tempMoyenne" {...register("tempMoyenne", { pattern: /^-?\d*\.?\d*$/ })} />
-      </div>
+  const { ok, messages } = validation(listePoissons, environnement);
 
-      {poissonsError ? (
-        <h1>Une erreur est survenue lors du chargement des poissons.</h1>
-      ) : poissonsCompatibles.length > 0 ? (
-        <>
-          <Panier listePoissons={listePoissons} setListePoissons={setListePoissons} />
-          <TablePoissons poissons={poissonsCompatibles} listePoissons={listePoissons} setListePoissons={setListePoissons} />
-        </>
-      ) : null}
+  return <>
 
-      <button type="button" onClick={handleGoBack}>Retour à la page précédente</button>
-    </form>
-  
-  );
+    <Row style={{ marginTop: 70 }}>
+      <Col sm={4} className='ms-3'>
+        <Form>
+          <Form.Group as={Row} className="mb-3" controlId="litrage">
+            <Form.Label column sm={FORM_LABEL_WIDTH}>Litrage de votre aquarium:</Form.Label>
+            <Col sm={12 - FORM_LABEL_WIDTH}>
+              <Form.Control type="number" {...register('litrage', {})} />
+            </Col>
+          </Form.Group>
+          <Form.Group as={Row} className="mb-3" controlId="pH">
+            <Form.Label column sm={FORM_LABEL_WIDTH}>pH moyen de votre aquarium:</Form.Label>
+            <Col sm={12 - FORM_LABEL_WIDTH}>
+              <Form.Control type="text" {...register('pH', { pattern: /^\d*\.?\d*$/, min: 0, max: 14 })} />
+            </Col>
+          </Form.Group>
+          <Form.Group as={Row} className="mb-3" controlId="gH">
+            <Form.Label column sm={FORM_LABEL_WIDTH}>gH moyen de votre aquarium:</Form.Label>
+            <Col sm={12 - FORM_LABEL_WIDTH}>
+              <Form.Control type="text" {...register('gH', { pattern: /^\d*\.?\d*$/ })} />
+            </Col>
+          </Form.Group>
+          <Form.Group as={Row} className="mb-3" controlId="tempMoyenne">
+            <Form.Label column sm={FORM_LABEL_WIDTH}>Température moyenne de votre aquarium:</Form.Label>
+            <Col sm={12 - FORM_LABEL_WIDTH}>
+              <Form.Control type="text" {...register('tempMoyenne', { pattern: /^-?\d*\.?\d*$/ })} />
+            </Col>
+          </Form.Group>
+          <RangeSlider min={4} max={12} step={0.1} value={range} onInput={setRange}/>
+          <Row className="mt-3">
+            <Col>
+              Valeur minimale: {range[0]}
+            </Col>
+            <Col>
+              Valeur maximale: {range[1]}
+            </Col>
+          </Row>
+        </Form>
+      </Col>
+      <Col>
+        <h2>Résultats : {ok ? 'OK' : 'Pas OK'}</h2>
+        <ul>
+          {messages.map((m, index) => <li key={index}>{m}</li>)}
+        </ul>
+      </Col>
+    </Row>
+
+    {poissonsError ? (
+      <h1>Une erreur est survenue lors du chargement des poissons.</h1>
+    ) : poissonsCompatibles.length > 0 ? (
+      <>
+        <Panier listePoissons={listePoissons}
+                setListePoissons={setListePoissons}
+                environnement={environnement}/>
+        <TablePoissons poissons={poissonsCompatibles}
+                       listePoissons={listePoissons}
+                       setListePoissons={setListePoissons}/>
+      </>
+    ) : null}
+
+    <Button onClick={() => router.back()}>Retour à la page précédente</Button>
+
+  </>;
 }

@@ -33,8 +33,6 @@ export default function TablePoissons ({ poissons, listePoissons, setListePoisso
 
   const handleAddToCart = (p) => {
 
-    const ajoutOk = validation(p, listePoissons);
-
     setListePoissons((prevListePoissons) => {
       const index = prevListePoissons.findIndex((poisson) => poisson.id === p.id);
       if (index !== -1) {

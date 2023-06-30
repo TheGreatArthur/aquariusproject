@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import useSWR from 'swr';
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -9,8 +9,10 @@ import Results from './results';
 import styles from '@/app/page.module.scss';
 import './style.scss';
 
-export default function Poisson({ params }) {
+export default function Poisson ({ params }) {
+
   const id = params.id;
+  const router = useRouter();
 
   const [index, setIndex] = useState(0);
 
@@ -47,9 +49,9 @@ export default function Poisson({ params }) {
           </Carousel>
 
           {/* Fiche technique */}
-          <Results data={data} />
+          <Results data={data}/>
 
-          <Link href="/poissons">Retour à la liste</Link>
+          <p onClick={() => router.back()}>Retour à la liste</p>
         </>
       )}
     </main>
