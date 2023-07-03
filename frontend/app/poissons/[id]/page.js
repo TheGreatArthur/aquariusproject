@@ -9,7 +9,7 @@ import Results from './results';
 import styles from '@/app/page.module.scss';
 import './style.scss';
 
-export default function Poisson ({ params }) {
+export default function Poisson({ params }) {
 
   const id = params.id;
   const router = useRouter();
