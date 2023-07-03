@@ -71,11 +71,12 @@ export default function SimulationStart () {
     lsSet('form_data', formData);
   }, [litrage, pH, gH, tempMoyenne]);
 
-  const { ok, messages } = validation(listePoissons, environnement);
+  const { ok, messages, ids } = validation(listePoissons, environnement);
 
   return <>
 
     <Row style={{ marginTop: 70 }}>
+
       <Col sm={4} className='ms-3'>
         <Form>
           <Form.Group as={Row} className="mb-3" controlId="litrage">
@@ -103,6 +104,7 @@ export default function SimulationStart () {
             </Col>
           </Form.Group>
           <RangeSlider min={4} max={12} step={0.1} value={range} onInput={setRange}/>
+
           <Row className="mt-3">
             <Col>
               Valeur minimale: {range[0]}
@@ -115,9 +117,10 @@ export default function SimulationStart () {
       </Col>
       <Col>
         <h2>Résultats : {ok ? 'OK' : 'Pas OK'}</h2>
-        <ul>
+        {messages && <ul>
           {messages.map((m, index) => <li key={index}>{m}</li>)}
-        </ul>
+        </ul>}
+        Les ids concernés sont {ids.join(', ')}
       </Col>
     </Row>
 

@@ -1,8 +1,6 @@
 /**
- *  Carrousel de la page d'accueil
+ * Carrousel de la page d'accueil
  */
-
-'use client';
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -11,11 +9,33 @@ import Carousel from 'react-bootstrap/Carousel';
 export function ControlledCarousel(props) {
   const [index, setIndex] = useState(0);
   const [images, setImages] = useState([]);
+  const [imageWidth, setImageWidth] = useState('700px');
+  const [imageHeight, setImageHeight] = useState('400px');
 
   useEffect(() => {
     // Obtenir la liste d'images aléatoires
     const randomImages = getRandomImages(14); // Nombre total d'images à afficher
     setImages(randomImages);
+
+    // Mettre à jour la taille des images en fonction de la largeur de l'écran
+    const updateImageSize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth < 700) {
+        setImageWidth('100%');
+        setImageHeight('300px');
+      } else {
+        setImageWidth('700px');
+        setImageHeight('400px');
+      }
+    };
+
+    // Écouter les changements de taille d'écran
+    window.addEventListener('resize', updateImageSize);
+
+    // Désinscrire l'écouteur lors du démontage du composant
+    return () => {
+      window.removeEventListener('resize', updateImageSize);
+    };
   }, []);
 
   const handleSelect = (selectedIndex) => {
@@ -49,9 +69,6 @@ export function ControlledCarousel(props) {
     }
     return indexes;
   };
-
-  const imageWidth = '700px'; // Largeur de base des images
-  const imageHeight = '400px'; // Hauteur de base des images
 
   const getSlideName = (src) => {
     const slideNumber = parseInt(src.substring(1, src.indexOf('.jpg')));
@@ -89,7 +106,7 @@ export function ControlledCarousel(props) {
         slideName = 'Osphronemidae';
         break;
       case 11:
-        slideName = 'Osphronemidae';
+        slideName = 'Melanotaeniidae';
         break;
       case 12:
         slideName = 'Tetraodontidae';
@@ -112,7 +129,6 @@ export function ControlledCarousel(props) {
     <Carousel
       activeIndex={index}
       onSelect={handleSelect}
-      className="col-6 offset-3"
       style={{ marginTop: '50px', border: '5px solid black' }}
     >
       {images.map((image, i) => (
@@ -131,7 +147,11 @@ export function ControlledCarousel(props) {
           </div>
 
           <Carousel.Caption>
-            <h3><Link href={`/poissons?famille=${getSlideName(image.src)}`}>{getSlideName(image.src)}</Link></h3>
+            <h3>
+              <Link href={`/poissons?famille=${getSlideName(image.src)}`}>
+                {getSlideName(image.src)}
+              </Link>
+            </h3>
             <p>{image.description}</p>
           </Carousel.Caption>
         </Carousel.Item>

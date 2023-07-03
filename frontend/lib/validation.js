@@ -1,30 +1,46 @@
-import surpopulation from './validation/surpopulation';
+/**
+ * Validation d'une liste de poissons
+ */
+
+import souspopulation from './validations/souspopulation';
+import surpopulation from './validations/surpopulation';
+import cohabitation from './validations/cohabitation';
 
 /**
  * Fonction de validation de l'ajout d'un poisson à une liste.
- * Note : c'est une fonction JS pure, pas un composant React.
  *
  * @param {*} panier Liste de poissons
  * @param {*} environnement Environnement (litrage, pH, etc.)
- * @returns {boolean}
+ * @returns {{ok: boolean}|{ok: boolean, messages: string[], ids: number[]}}
  */
-export function validation (panier, environnement) {
+export function validation(panier, environnement) {
 
-  let ok = true,
-    messages = [];
+  let ok = true;      // Succès ou non de la vaidation globale
+  let messages = [];  // Messages d'erreur
+  let ids = [];       // Ids des poissons concernés
+  let out;
 
-  // Risque de surpopulation ?
-  const out = surpopulation(panier, environnement);
-  ok &&= out.ok;
-  if (out.msg)
-    messages.push(out.msg);
+  // Liste des tests de validation individuels
+  const validations = [
+    surpopulation,  // Risque de surpopulation ?
+    souspopulation, // Sous-population d'une ou plusieurs espèces ?
+    cohabitation,   // Cohabitation agressifs/non-agressifs ?
+  ];
 
-  //
+  // Exécution des tests de validation
+  for (let v of validations) {
+    out = v(panier, environnement);
+    ok &&= out.ok;
+    if (out.messages)
+      messages = [...messages, ...out.messages];
+    if (out.ids)
+      ids = [...ids, ...out.ids];
+  }
 
-  return { ok, messages };
+  return { ok, messages, ids };
 }
 
-export function validationOld (p, listePoissons) {
+export function validationOld(p, listePoissons) {
 
   console.log(listePoissons);
 

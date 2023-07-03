@@ -3,13 +3,10 @@
  */
 
 import { CaretDownFill, CaretUpFill, XCircleFill } from 'react-bootstrap-icons';
-import { validation } from '@/lib/validation';
 import { totalPoints } from '@/lib/panier';
 
 
 export default function Panier ({ listePoissons, setListePoissons }) {
-
-  const isFishIncompatible = p => validation(p, listePoissons);
 
   const handleRemoveFromList = (poissonId) => {
     setListePoissons((prevSelection) =>
@@ -50,8 +47,6 @@ export default function Panier ({ listePoissons, setListePoissons }) {
     );
   };
 
-  const hasIncompatibleSpecies = listePoissons.some((poisson) => isFishIncompatible(poisson));
-
   return <>
 
     <h2>Liste des poissons ajoutés :</h2>
@@ -59,9 +54,8 @@ export default function Panier ({ listePoissons, setListePoissons }) {
     <ul>
       {listePoissons.map(p => (
         <li key={p.id}>
-            <span style={{ color: isFishIncompatible(p) ? 'red' : 'inherit' }}>
+            <span>
               {p.nom_commun} (Quantité: {p.quantite}) - {p.quantite * p.points} points
-              {isFishIncompatible(p) && ' - Veuillez retirer ce ou ces poissons de la liste'}
             </span>
           <XCircleFill
             className="ml-2"
@@ -81,8 +75,6 @@ export default function Panier ({ listePoissons, setListePoissons }) {
         </li>
       ))}
     </ul>
-
-    {hasIncompatibleSpecies && <p>Il y a des poissons incompatibles dans le panier.</p>}
 
     <p>Total des points : {totalPoints(listePoissons)}</p>
 
