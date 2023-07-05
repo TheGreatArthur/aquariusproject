@@ -10,7 +10,6 @@ import styles from '@/app/page.module.scss';
 import './style.scss';
 
 export default function Poisson({ params }) {
-
   const id = params.id;
   const router = useRouter();
 
@@ -23,10 +22,10 @@ export default function Poisson({ params }) {
   const { data } = useSWR(`/api/poissons/${id}`);
 
   return (
-    <main className={`${styles.main} poisson-background`}>
+    <main className={`${styles.main} poisson-background page-container`}>
       {data && (
         <>
-          <h1>{data.nom_commun}</h1>
+          <h1 className={`${styles.pageTitle} page-title`}>{data.nom_commun}</h1>
 
           {/* Carousel des photos du poisson */}
           <Carousel
@@ -38,18 +37,14 @@ export default function Poisson({ params }) {
             {data.images.map((img, i) => (
               <Carousel.Item key={i}>
                 <div className="carousel-image-container">
-                  <img
-                    className="carousel-image"
-                    src={`/images/${img}`}
-                    alt={`Slide ${i + 1}`}
-                  />
+                  <img className="carousel-image" src={`/images/${img}`} alt={`Slide ${i + 1}`} />
                 </div>
               </Carousel.Item>
             ))}
           </Carousel>
 
           {/* Fiche technique */}
-          <Results data={data}/>
+          <Results data={data} />
 
           <p onClick={() => router.back()}>Retour à la liste</p>
         </>

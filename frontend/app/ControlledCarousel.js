@@ -14,7 +14,7 @@ export function ControlledCarousel(props) {
 
   useEffect(() => {
     // Obtenir la liste d'images aléatoires
-    const randomImages = getRandomImages(14); // Nombre total d'images à afficher
+    const randomImages = getRandomImages(8); // Nombre total d'images à afficher
     setImages(randomImages);
 
     // Mettre à jour la taille des images en fonction de la largeur de l'écran
@@ -76,49 +76,28 @@ export function ControlledCarousel(props) {
 
     switch (slideNumber) {
       case 1:
-        slideName = 'Cyprinidae';
+        slideName = 'Danionidae';
         break;
       case 2:
         slideName = 'Characidae';
         break;
       case 3:
-        slideName = 'Siluridae';
-        break;
-      case 4:
         slideName = 'Callichthyidae';
         break;
-      case 5:
+      case 4:
         slideName = 'Loricariidae';
         break;
-      case 6:
+      case 5:
         slideName = 'Poeciliidae';
         break;
-      case 7:
-        slideName = 'Nothobranchiidae';
-        break;
-      case 8:
+      case 6:
         slideName = 'Cichlidae Américain';
         break;
-      case 9:
+      case 7:
         slideName = 'Cichlidae Africain';
         break;
-      case 10:
+      case 8:
         slideName = 'Osphronemidae';
-        break;
-      case 11:
-        slideName = 'Melanotaeniidae';
-        break;
-      case 12:
-        slideName = 'Tetraodontidae';
-        break;
-      case 13:
-        slideName = 'Crustacés';
-        break;
-      case 14:
-        slideName = 'Mollusques';
-        break;
-      default:
-        slideName = 'Unknown';
         break;
     }
 
