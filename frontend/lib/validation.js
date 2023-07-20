@@ -5,6 +5,11 @@
 import souspopulation from './validations/souspopulation';
 import surpopulation from './validations/surpopulation';
 import cohabitation from './validations/cohabitation';
+import cohabitation1 from './validations/cohabitation1';
+import predationcm from './validations/predationcm'; 
+
+
+
 
 /**
  * Fonction de validation de l'ajout d'un poisson à une liste.
@@ -25,6 +30,8 @@ export function validation(panier, environnement) {
     surpopulation,  // Risque de surpopulation ?
     souspopulation, // Sous-population d'une ou plusieurs espèces ?
     cohabitation,   // Cohabitation agressifs/non-agressifs ?
+    cohabitation1, // Cohabitation entre Poecillidae et Osphronemidae
+    predationcm, // Cohabitation entre des poissons de différentes tailles...
   ];
 
   // Exécution des tests de validation

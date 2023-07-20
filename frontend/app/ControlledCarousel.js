@@ -1,46 +1,46 @@
-/**
- * Carrousel de la page d'accueil
- */
-
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
 import Carousel from 'react-bootstrap/Carousel';
 
 export function ControlledCarousel(props) {
   const [index, setIndex] = useState(0);
   const [images, setImages] = useState([]);
-  const [imageWidth, setImageWidth] = useState('700px');
-  const [imageHeight, setImageHeight] = useState('400px');
+  const [imageWidth, setImageWidth] = useState('790px');
+  const [imageHeight, setImageHeight] = useState('500px');
+
+  const carouselRef = useRef(null);
 
   useEffect(() => {
-    // Obtenir la liste d'images aléatoires
-    const randomImages = getRandomImages(8); // Nombre total d'images à afficher
+    const randomImages = getRandomImages(8);
     setImages(randomImages);
 
-    // Mettre à jour la taille des images en fonction de la largeur de l'écran
     const updateImageSize = () => {
       const screenWidth = window.innerWidth;
-      if (screenWidth < 700) {
+      if (screenWidth < 800) {
         setImageWidth('100%');
         setImageHeight('300px');
       } else {
-        setImageWidth('700px');
-        setImageHeight('400px');
+        setImageWidth('790px');
+        setImageHeight('500px');
       }
     };
 
-    // Écouter les changements de taille d'écran
-    window.addEventListener('resize', updateImageSize);
+    const resizeObserver = new ResizeObserver(updateImageSize);
+    if (carouselRef.current) {
+      resizeObserver.observe(carouselRef.current);
+    }
 
-    // Désinscrire l'écouteur lors du démontage du composant
     return () => {
-      window.removeEventListener('resize', updateImageSize);
+      if (carouselRef.current) {
+        resizeObserver.unobserve(carouselRef.current);
+      }
     };
   }, []);
 
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
   };
+
 
   const getRandomImages = (numImages) => {
     const images = [];
@@ -104,11 +104,51 @@ export function ControlledCarousel(props) {
     return slideName;
   };
 
+  const getSlideDescription = (src) => {
+    const slideNumber = parseInt(src.substring(1, src.indexOf('.jpg')));
+    let slideDescription = '';
+
+    switch (slideNumber) {
+      case 1:
+        slideDescription = 'Danionidae';
+        break;
+      case 2:
+        slideDescription = 'Characidae';
+        break;
+      case 3:
+        slideDescription = 'Callichthyidae';
+        break;
+      case 4:
+        slideDescription = 'Loricariidae';
+        break;
+      case 5:
+        slideDescription = 'Poeciliidae';
+        break;
+      case 6:
+        slideDescription = 'Cichlidae Américain';
+        break;
+      case 7:
+        slideDescription = 'Cichlidae Africain';
+        break;
+      case 8:
+        slideDescription = 'Osphronemidae';
+        break;
+    }
+
+    return `Découvrez les poissons de la famille des ${slideDescription}`;
+  };
+
   return (
     <Carousel
       activeIndex={index}
       onSelect={handleSelect}
-      style={{ marginTop: '50px', border: '5px solid black' }}
+      style={{
+        marginTop: '50px',
+        border: '5px solid black',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        maxWidth: '800px',
+      }}
     >
       {images.map((image, i) => (
         <Carousel.Item key={i}>
@@ -131,7 +171,7 @@ export function ControlledCarousel(props) {
                 {getSlideName(image.src)}
               </Link>
             </h3>
-            <p>{image.description}</p>
+            <p>{getSlideDescription(image.src)}</p>
           </Carousel.Caption>
         </Carousel.Item>
       ))}

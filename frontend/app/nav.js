@@ -20,7 +20,7 @@ export default function NavBar() {
             <NavDropdown title="Menu" id="basic-nav-dropdown">
               <NavDropdown.Item href="/poissons">Poissons</NavDropdown.Item>
               <NavDropdown.Item href="/simulation">Simulation</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Guide pratique</NavDropdown.Item>
+              <NavDropdown.Item href="/cours">Guide pratique</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">Liens et références</NavDropdown.Item>
             </NavDropdown>

@@ -41,6 +41,10 @@ export default function Results ({ data }) {
         <td>{data.nb_individus}</td>
       </tr>
       <tr>
+        <th>Mode de vie</th>
+        <td>{data.nom_mode_vie}</td>
+      </tr>
+      <tr>
         <th>pH minimum</th>
         <td>{data.ph_mini}</td>
       </tr>

@@ -37,7 +37,7 @@ class Poisson(Base):
     famille: Mapped['Famille'] = relationship()
     genre: Mapped['Genre'] = relationship()
     comportement: Mapped['Comportement'] = relationship()
-    
+    mode_vie: Mapped['ModeVie'] = relationship()
     
     def __str__(self) -> str:
         return f'<{self.__class__.__name__} {self.id} {self.nom_scientifique!r}>'
@@ -51,6 +51,9 @@ class Poisson(Base):
             nom_famille=self.famille.nom,
             nom_genre=self.genre.nom,
             nom_comportement=self.comportement.nom, 
+            nom_mode_vie=self.mode_vie.nom 
+ 
+            
 
             )
         return out

@@ -1,13 +1,12 @@
 .fixed-navbar {
-    height: 64px !important; /* Ajustez la hauteur selon vos besoins */
-  }
-  
-  .instagram-icon {
-    font-size: 1.1em; /* Ajustez la taille du logo selon vos besoins */
-  }
-  
-  .instagram-text {
-    font-size: 0.9em; /* Ajustez la taille du texte selon vos besoins */
-    margin-left: 0.3em; /* Ajustez la marge gauche selon vos besoins */
-  }
-  
+  height: 64px !important; /* Ajustez la hauteur selon vos besoins */
+}
+
+.instagram-icon {
+  font-size: 1.1em; /* Ajustez la taille du logo selon vos besoins */
+}
+
+.instagram-text {
+  font-size: 0.9em; /* Ajustez la taille du texte selon vos besoins */
+  margin-left: 0.3em; /* Ajustez la marge gauche selon vos besoins */
+}
