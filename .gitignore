@@ -4,3 +4,4 @@ venv/
 
 alembic.ini
 config.py
+.DS_Store
