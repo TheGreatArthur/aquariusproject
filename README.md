@@ -1,88 +1,105 @@
-## Tutoriel React + Flask
+# Aquarius
 
-Démarrage :
+> Browse 135 freshwater aquarium fish and check whether the species you pick can live together in your tank.
 
-```shell
-# Aller dans le répertoire du backend Flask
-cd backend
+[![CI](https://github.com/TheGreatArthur/aquariusproject/actions/workflows/ci.yml/badge.svg)](https://github.com/TheGreatArthur/aquariusproject/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-# Lancer l'appli "app.py" en mode debug
-flask --app app run --debug
+![Home page](docs/screenshots/home.png)
 
-# Importation depuis Excel de la base de données
-python import_excel.py
+**Live demo:** not deployed yet · **Portfolio page:** coming soon
+
+## Features
+
+- **Fish catalogue** — 135 species with water parameters (pH, GH, temperature), size, behaviour, lifespan and photos.
+- **Instant search** by common name, scientific name, family, genus or behaviour, plus a filter by family.
+- **Family carousel** on the home page linking to each family's fish.
+- **Tank simulator** — enter your tank volume, pH, GH and temperature, build a basket of fish and get warnings on
+  overpopulation, under-sized schools, aggressive/peaceful cohabitation and predation.
+- **Contact form** sent through EmailJS.
+
+| Fish list | Fish detail | Simulator |
+|---|---|---|
+| ![Fish list](docs/screenshots/fish-list.png) | ![Fish detail](docs/screenshots/fish-detail.png) | ![Simulator](docs/screenshots/simulation.png) |
+
+## Architecture
+
+```mermaid
+flowchart LR
+    Browser["Browser<br/>React + SWR"] -->|"/api/*"| Next["Next.js 13<br/>App Router"]
+    Next -->|"rewrite to BACKEND_URL"| Flask["Flask API<br/>Flask-SQLAlchemy"]
+    Flask --> DB[("SQLite (default)<br/>or MySQL / PostgreSQL")]
+    Excel["db.xlsx<br/>(source of truth)"] -->|"import_excel.py"| DB
+    Next -->|"static"| Images["public/images<br/>&lt;code&gt;.jpg"]
 ```
 
+The browser only talks to Next.js; Next.js proxies `/api/*` to Flask, which serves JSON from the database.
+The data is maintained in an Excel workbook and loaded with `make import`. See the [ADRs](docs/adr/) for the reasoning.
 
-https://www.youtube.com/watch?v=7LNl2JlZKHA
+| Endpoint | Description |
+|---|---|
+| `GET /poissons?q=<prefix>` | Quick search (common/scientific name, family, genus, behaviour) |
+| `GET /poissons?famille=<name>` | Fish of one family |
+| `GET /poissons/<id>` | One fish, including its images |
+| `GET /poissons/familles` | All families, sorted |
 
-## Getting Started with Create React App
+## Tech stack
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- **Front end:** Next.js 13, React 18, React-Bootstrap, Sass, SWR, react-hook-form, EmailJS
+- **Back end:** Python 3.11, Flask, SQLAlchemy 2, Alembic, openpyxl
+- **Quality:** pytest + pytest-cov, ruff, ESLint, GitHub Actions
 
-## Available Scripts
+## Quick start
 
-In the project directory, you can run:
+Prerequisites: **Python 3.11+**, **Node.js 20+**, `make`.
 
-### `npm start`
+```bash
+make dev
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This installs the dependencies, creates `backend/config.py` and `frontend/.env.local` from their templates, and
+starts the API on <http://localhost:5001> (not 5000, which macOS reserves for AirPlay) and the site on
+<http://localhost:3000>.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To load the fish data, put the workbook at `backend/db.xlsx`, then:
 
-### `npm test`
+```bash
+make import
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Run `make help` for all commands. Configuration:
 
-### `npm run build`
+| Variable | Where | Default |
+|---|---|---|
+| `AQUARIUS_DSN` | backend | `sqlite:///backend/aquarius.db` |
+| `AQUARIUS_EXCEL_FILE` | backend | `backend/db.xlsx` |
+| `BACKEND_URL` | `frontend/.env.local` | `http://localhost:5001` |
+| `NEXT_PUBLIC_EMAILJS_*` | `frontend/.env.local` | empty (contact form disabled) |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tests
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+make test   # backend tests with coverage
+make lint   # ruff + ESLint
+make build  # production build of the front end
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+CI runs the same checks on every pull request and on pushes to `main`.
 
-### `npm run eject`
+## Architecture decisions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [0001 — Next.js front end + Flask API](docs/adr/0001-tech-stack.md)
+- [0002 — SQL database fed from an Excel workbook, SQLite by default](docs/adr/0002-database-and-excel-import.md)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Roadmap & known limitations
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [ ] Deploy a public demo
+- [ ] "Guide pratique" page (`/cours`) is a placeholder
+- [ ] Import the `Plantes` sheet (plants) from the workbook
+- [ ] Front-end tests (validation rules, Cypress end-to-end)
+- The UI is in French only.
+- Compatibility rules run in the browser and are indicative, not expert advice.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Credits & license
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Built by Arthur Litschig, with guidance from Laurent Daverio. Released under the [MIT License](LICENSE).
