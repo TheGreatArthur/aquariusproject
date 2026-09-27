@@ -13,7 +13,9 @@
 
 - **Fish catalogue** — 135 species with water parameters (pH, GH, temperature), size, behaviour, lifespan and photos.
 - **Instant search** by common name, scientific name, family, genus or behaviour, plus a filter by family.
-- **Family carousel** on the home page linking to each family's fish.
+- **Modern, responsive UI** — dark theme with Tailwind CSS, scroll animations and a lightweight 3D hero,
+  respecting *reduced motion* and working without WebGL.
+- **Family showcase** on the home page linking to each family's fish.
 - **Tank simulator** — enter your tank volume, pH, GH and temperature, build a basket of fish and get warnings on
   overpopulation, under-sized schools, aggressive/peaceful cohabitation and predation.
 - **Contact form** sent through EmailJS.
@@ -45,7 +47,8 @@ The data is maintained in an Excel workbook and loaded with `make import`. See t
 
 ## Tech stack
 
-- **Front end:** Next.js 13, React 18, React-Bootstrap, Sass, SWR, react-hook-form, EmailJS
+- **Front end:** Next.js 13, React 18, Tailwind CSS, Framer Motion, React Three Fiber, lucide-react, SWR,
+  react-hook-form, EmailJS
 - **Back end:** Python 3.11, Flask, SQLAlchemy 2, Alembic, openpyxl
 - **Quality:** pytest + pytest-cov, ruff, ESLint, GitHub Actions
 
@@ -90,6 +93,7 @@ CI runs the same checks on every pull request and on pushes to `main`.
 
 - [0001 — Next.js front end + Flask API](docs/adr/0001-tech-stack.md)
 - [0002 — SQL database fed from an Excel workbook, SQLite by default](docs/adr/0002-database-and-excel-import.md)
+- [0003 — UI redesign: Tailwind CSS, Framer Motion and a lightweight 3D hero](docs/adr/0003-ui-redesign-tailwind.md)
 
 ## Roadmap & known limitations
 
@@ -97,7 +101,7 @@ CI runs the same checks on every pull request and on pushes to `main`.
 - [ ] "Guide pratique" page (`/cours`) is a placeholder
 - [ ] Import the `Plantes` sheet (plants) from the workbook
 - [ ] Front-end tests (validation rules, Cypress end-to-end)
-- The UI is in French only.
+- The UI is in French only, dark theme only.
 - Compatibility rules run in the browser and are indicative, not expert advice.
 
 ## Credits & license
