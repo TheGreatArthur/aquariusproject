@@ -3,7 +3,7 @@
 PY_VENV := backend/venv
 PY      := $(PY_VENV)/bin/python
 PIP     := $(PY_VENV)/bin/pip
-BACKEND_PORT  ?= 5000
+BACKEND_PORT  ?= 5001
 FRONTEND_PORT ?= 3000
 
 .DEFAULT_GOAL := help
