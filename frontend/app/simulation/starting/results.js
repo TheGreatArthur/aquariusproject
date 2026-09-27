@@ -1,12 +1,12 @@
-import { useEffect, useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
-import Table from 'react-bootstrap/Table';
-import Button from 'react-bootstrap/Button';
-import { validation } from '@/lib/validation';
+import clsx from 'clsx';
+import { AlertTriangle, Plus } from 'lucide-react';
+
+import BehaviourBadge from '@/components/fish/BehaviourBadge';
+import { fishImage } from '@/lib/fish';
 
 export default function TablePoissons ({ poissons, listePoissons, setListePoissons }) {
-
-  const [scrollLocked, setScrollLocked] = useState(false);
 
   const isFishIncompatible = (poisson) => {
     const familleOsphronemidae = 'Osphronemidae';
@@ -45,71 +45,56 @@ export default function TablePoissons ({ poissons, listePoissons, setListePoisso
     });
   };
 
-  const handleScroll = () => {
-    const scrollThreshold = 200; // Modifier cette valeur si nécessaire
-    setScrollLocked(window.pageYOffset > scrollThreshold);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const handleClearCache = () => {
-    setListePoissons([]);
-  };
+  const quantite = (p) => listePoissons.find((x) => x.id === p.id)?.quantite ?? 0;
 
   return (
-    <>
-      <Table hover className={scrollLocked ? 'scroll-locked table-dark' : 'table-dark'}>
-        <thead>
-          <tr>
-            <th>Nom commun</th>
-            <th>Famille</th>
-            <th>Litrage Minimum</th>
-            <th>pH</th>
-            <th>gH</th>
-            <th>Température</th>
-            <th>Comportement</th>
-            <th></th>
-            {/* Colonne vide pour le bouton Ajouter */}
-          </tr>
-        </thead>
-        <tbody>
-          {poissons.map((p) => (
-            <tr key={p.id} style={{ color: isFishIncompatible(p) ? 'red' : 'inherit' }}>
-              <td>
-                <img src={`/images/${p.id}.jpg`} alt={p.nom_commun} width="90" height="70" />{' '}
-                <Link href={`/poissons/${p.id}`}>{p.nom_commun}</Link>
-              </td>
-              <td>{p.nom_famille}</td>
-              <td>{p.litrage_mini} L</td>
-              <td>{`${p.ph_mini} - ${p.ph_maxi}`}</td>
-              <td>{`${p.gh_mini} - ${p.gh_maxi}`}</td>
-              <td>{`${p.temp_mini} °C - ${p.temp_maxi} °C`}</td>
-              <td>{p.nom_comportement}</td>
-              <td>
-                <Button
-                  variant="outline-primary"
-                  size="sm"
-                  className="ml-2"
-                  onClick={() => handleAddToCart(p)}
-                >
-                  Ajouter
-                </Button>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </Table>
+    <ul className="mt-5 space-y-3">
+      {poissons.map((p) => {
+        const incompatible = isFishIncompatible(p);
+        return (
+          <li key={p.id}
+              className={clsx('card flex flex-col gap-4 p-3 sm:flex-row sm:items-center', incompatible && '!border-danger/50')}>
+            <div className="flex flex-1 items-center gap-4">
+              <div className="relative h-16 w-20 shrink-0 overflow-hidden rounded-xl bg-surface-elevated">
+                <Image src={fishImage(p)} alt="" fill sizes="80px" className="object-cover"/>
+              </div>
+              <div className="min-w-0">
+                <Link href={`/poissons/${p.id}`} className="font-medium hover:text-accent-glow">{p.nom_commun}</Link>
+                <p className="text-xs text-muted">{p.nom_famille}</p>
+                {incompatible && (
+                  <p className="mt-1 flex items-center gap-1 text-xs text-danger">
+                    <AlertTriangle className="h-3.5 w-3.5"/> Incompatible avec votre bac
+                  </p>
+                )}
+              </div>
+            </div>
 
-      <Button variant="danger" onClick={handleClearCache}>
-        Vider le cache
-      </Button>
-    </>
+            <dl className="grid grid-cols-4 gap-3 text-xs sm:w-[22rem]">
+              {[
+                ['Volume', `${p.litrage_mini} L`],
+                ['pH', `${p.ph_mini}–${p.ph_maxi}`],
+                ['GH', `${p.gh_mini}–${p.gh_maxi}`],
+                ['Temp.', `${p.temp_mini}–${p.temp_maxi}°`],
+              ].map(([label, value]) => (
+                <div key={label}>
+                  <dt className="text-muted">{label}</dt>
+                  <dd className="font-medium tabular-nums">{value}</dd>
+                </div>
+              ))}
+            </dl>
+
+            <div className="flex items-center justify-between gap-3 sm:w-auto sm:justify-end">
+              <BehaviourBadge comportement={p.nom_comportement} className="hidden xl:inline-block"/>
+              <button type="button" className="btn-ghost !px-3.5 !py-1.5" onClick={() => handleAddToCart(p)}>
+                <Plus className="h-4 w-4"/> Ajouter
+                {quantite(p) > 0 && (
+                  <span className="rounded-full bg-accent px-1.5 text-xs font-semibold text-background">{quantite(p)}</span>
+                )}
+              </button>
+            </div>
+          </li>
+        );
+      })}
+    </ul>
   );
-
-  
 }
