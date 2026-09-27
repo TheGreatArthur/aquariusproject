@@ -1,4 +1,4 @@
-# 0003. UI redesign: Tailwind CSS, Framer Motion and a lightweight 3D hero
+# 0003. UI redesign: Tailwind CSS and Framer Motion
 Date: 2026-09-27
 Status: Accepted
 
@@ -19,9 +19,6 @@ simulator (tracked separately).
 - **Motion:** Framer Motion for scroll reveals (`components/Reveal.js`), run once per element.
   When the user asks for reduced motion, the duration is set to 0 but the initial/final states stay the
   same as the server render, which avoids both hydration mismatches and content stuck at `opacity: 0`.
-- **3D accent:** one React Three Fiber scene on the home page (rising bubbles, a single `InstancedMesh`).
-  It is loaded with `next/dynamic` (`ssr: false`), mounted after hydration, capped at `dpr` 1.5,
-  paused when off-screen, skipped with reduced motion, and skipped/caught when WebGL is unavailable.
 - **Icons:** `lucide-react` only, pinned below v1: v1 creates a React context at import time, which breaks
   Server Components on Next.js 13.4.
 - **Components:** shared UI in `frontend/components/` (header, footer, page header, fish card, gallery,
@@ -35,15 +32,15 @@ simulator (tracked separately).
   spacing and colours consistent across pages.
 - **shadcn/ui + Radix:** good accessible primitives, but it targets TypeScript and a newer Next.js/React;
   worth revisiting after the framework upgrade.
-- **GSAP + drei for motion/3D:** more powerful than needed for simple reveals and one scene; adds weight.
+- **GSAP for motion:** more powerful than needed for simple reveals; adds weight.
+- **A 3D accent in the hero** (React Three Fiber bubbles rising over the photo): prototyped, then removed
+  after review — it distracted from the content and pulled in three.js for a purely decorative effect.
 
 ## Consequences
 - ✅ One consistent visual language, responsive by default, visible focus states and labelled controls.
 - ✅ 11 dependencies removed (Bootstrap, React-Bootstrap, Font Awesome ×4, react-icons,
-  react-bootstrap-icons, two sliders, Sass); 8 added (framer-motion, three, @react-three/fiber, lucide-react,
-  clsx, and the tailwindcss / postcss / autoprefixer dev toolchain).
-- ✅ The 3D scene is decorative only: no WebGL, reduced motion or a render error simply hides it.
-- ❌ First Load JS grows from ~78–114 kB to ~114–142 kB per route (Framer Motion, lucide); the three.js
-  chunk is only loaded on the home page, after hydration.
+  react-bootstrap-icons, two sliders, Sass); 6 added (framer-motion, lucide-react, clsx, and the
+  tailwindcss / postcss / autoprefixer dev toolchain).
+- ❌ First Load JS grows from ~78–114 kB to ~114–142 kB per route (Framer Motion, lucide).
 - ❌ Dark theme only for now.
 - ⚠️ Still on Next.js 13.4 / JavaScript: upgrading Next.js and moving to TypeScript are separate changes.

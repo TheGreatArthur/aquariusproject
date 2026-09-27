@@ -14,13 +14,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 - **UI redesign** ([ADR 0003](docs/adr/0003-ui-redesign-tailwind.md)): Tailwind CSS design system (dark theme,
-  teal accent, Space Grotesk / Inter), new header with mobile menu, footer, home page with a 3D bubbles hero,
+  teal accent, Space Grotesk / Inter), new header with mobile menu, footer, home page with a photo hero,
   "how it works" steps and family showcase, fish cards with search and family chips, fish detail page with
   photo gallery and water-parameter ranges, restyled simulator (water form, verdict, tank load bar) and
   contact form with sending status, "Guide pratique" preview and a custom 404 page.
 - Routes renamed to lowercase: `/simulation`, `/contact`, matching the navigation links.
 - Replaced React-Bootstrap, Sass, Font Awesome, react-icons and the range sliders with Tailwind CSS,
-  Framer Motion, React Three Fiber and lucide-react.
+  Framer Motion and lucide-react.
 - SQLite is now the default database, so a fresh clone runs without a MySQL server.
 - README rewritten in English with architecture diagram and quick start.
 

@@ -1,7 +1,5 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion, useReducedMotion } from 'framer-motion';
@@ -9,17 +7,10 @@ import { ArrowRight, Fish } from 'lucide-react';
 
 import HomeStats from '@/components/home/HomeStats';
 
-// Le canvas 3D est chargé côté client uniquement, après le rendu initial
-const BubblesScene = dynamic(() => import('@/components/home/BubblesScene'), { ssr: false });
-
 const EASE = [0.22, 1, 0.36, 1];
 
 export default function Hero () {
   const reduce = useReducedMotion();
-  // La préférence « animations réduites » n'est connue que côté client : la scène 3D est montée après
-  // l'hydratation pour que le HTML serveur et le premier rendu client restent identiques
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
 
   // Mêmes états avec ou sans animations réduites, pour ne pas rester bloqué sur l'opacité 0 du rendu serveur
   const item = (delay) => ({
@@ -49,10 +40,6 @@ export default function Hero () {
         aria-hidden="true"
         className="absolute -left-32 top-1/3 -z-10 h-[30rem] w-[30rem] rounded-full bg-accent/15 blur-[120px]"
       />
-
-      <div className="absolute inset-0 -z-10" aria-hidden="true">
-        {mounted && !reduce && <BubblesScene/>}
-      </div>
 
       <div className="container">
         <div className="max-w-3xl">
