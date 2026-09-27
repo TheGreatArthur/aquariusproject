@@ -1,6 +1,15 @@
 """
 Variables de configuration
+
+Copy this file to config.py (``make setup`` does it). Values can be overridden with environment variables.
 """
 
-DSN = 'mysql+mysqldb://(user):(password)@localhost/aquarius'
-EXCEL_FILE = 'db.xlsx'
+import os
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+
+# SQLAlchemy URL. Defaults to a local SQLite file; for MySQL use e.g.
+# mysql+mysqldb://user:password@localhost/aquarius
+DSN = os.environ.get('AQUARIUS_DSN', f'sqlite:///{BASE_DIR / "aquarius.db"}')
+EXCEL_FILE = os.environ.get('AQUARIUS_EXCEL_FILE', str(BASE_DIR / 'db.xlsx'))
