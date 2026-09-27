@@ -11,7 +11,7 @@ export default function surpopulation(panier, environnement) {
   const agressifs = panier.filter((p) => p.nom_comportement === 'agressif');
   const nonAgressifs = panier.filter((p) => p.nom_comportement !== 'agressif');
   console.log('A=', agressifs);
-  console.log('NA=', nonAgressifs)
+  console.log('NA=', nonAgressifs);
 
   return agressifs.length && nonAgressifs.length
     ? {
