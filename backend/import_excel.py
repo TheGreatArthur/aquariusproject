@@ -2,6 +2,8 @@
 Script de création et d'initialisation de la base
 """
 
+from pathlib import Path
+
 from openpyxl import load_workbook
 from sqlalchemy.orm import Session
 from sqlalchemy import select
@@ -12,6 +14,15 @@ from models.meta import get_engine
 from utils import get_or_create_id, get_or_create
 
 engine = get_engine(DSN)
+
+IMAGES_DIR = Path(__file__).resolve().parent.parent / 'frontend' / 'public' / 'images'
+
+
+def get_images(code) -> list[str]:
+    """ Liste des images d'un poisson (ex. : 1.jpg, 1.1.jpg, 1.2.jpg), image principale en premier
+    """
+    files = [f.name for f in IMAGES_DIR.glob(f'{code}.*') if f.stem == str(code) or f.stem.startswith(f'{code}.')]
+    return sorted(files, key=lambda name: (name.count('.'), name))
 
 if __name__ == '__main__':
     # Création
@@ -57,8 +68,9 @@ if __name__ == '__main__':
                 id_dispo=get_or_create_id(db, Dispo, nom=row[19].value.strip()),
                 longevite=int(row[20].value.replace('ans', '')),
                 litrage_mini=int(row[21].value.replace('L', '')),
-                id_courant=get_or_create_id(db, Courant, nom=row[22].value.strip()) if row[23].value else None,
+                id_courant=get_or_create_id(db, Courant, nom=row[22].value.strip()) if row[22].value else None,
                 points=row[23].value,
+                images=get_images(row[0].value),
             )
             poisson = db.scalar(select(Poisson).filter_by(nom_scientifique=params['nom_scientifique']))
             if poisson:
