@@ -11,7 +11,7 @@ from sqlalchemy import select
 from config import DSN, EXCEL_FILE
 from models import Poisson, Famille, Genre, ZoneGeo, Robustesse, Comportement, Dispo, Base, TypeEau, ModeVie, Courant
 from models.meta import get_engine
-from utils import get_or_create_id, get_or_create
+from utils import get_or_create_id
 
 engine = get_engine(DSN)
 
@@ -25,12 +25,8 @@ def get_images(code) -> list[str]:
     return sorted(files, key=lambda name: (name.count('.'), name))
 
 if __name__ == '__main__':
-    # Création
-    try:
-        Base.metadata.create_all(bind=engine)
-        exit()
-    except:
-        pass
+    # Création des tables manquantes
+    Base.metadata.create_all(bind=engine)
 
     try:
         wb = load_workbook(filename=EXCEL_FILE)

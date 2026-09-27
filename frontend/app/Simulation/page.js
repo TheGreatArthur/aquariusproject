@@ -19,7 +19,7 @@ export default function SimulationHomePage() {
 
   return (
     <main className="d-flex flex-column align-items-center justify-content-center vh-100 text-center">
-      <h1>Choisissez l'une  des options :</h1>
+      <h1>Choisissez l&apos;une des options :</h1>
 
       <div className="row justify-content-center mt-4">
         <div className="col-md-6">

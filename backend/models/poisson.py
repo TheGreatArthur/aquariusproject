@@ -1,7 +1,12 @@
+from typing import TYPE_CHECKING
+
 from sqlalchemy import ForeignKey, String, JSON
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from models.meta import Base
+
+if TYPE_CHECKING:
+    from models.nomenclatures import Comportement, Famille, Genre, ModeVie
 
 class Poisson(Base):
     __tablename__ = 'poisson'
@@ -38,7 +43,7 @@ class Poisson(Base):
     genre: Mapped['Genre'] = relationship()
     comportement: Mapped['Comportement'] = relationship()
     mode_vie: Mapped['ModeVie'] = relationship()
-    
+
     def __str__(self) -> str:
         return f'<{self.__class__.__name__} {self.id} {self.nom_scientifique!r}>'
 
@@ -50,10 +55,10 @@ class Poisson(Base):
         out.update(
             nom_famille=self.famille.nom,
             nom_genre=self.genre.nom,
-            nom_comportement=self.comportement.nom, 
-            nom_mode_vie=self.mode_vie.nom 
- 
-            
+            nom_comportement=self.comportement.nom,
+            nom_mode_vie=self.mode_vie.nom
+
+
 
             )
         return out
