@@ -1,6 +1,6 @@
 # 0001. Next.js front end + Flask API
 Date: 2026-09-27
-Status: Accepted
+Status: Accepted (UI library choice superseded by [0003](0003-ui-redesign-tailwind.md))
 
 > Documented retroactively: the decision was taken when the project started (2023).
 

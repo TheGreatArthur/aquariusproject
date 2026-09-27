@@ -1,150 +1,151 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import useSWR from 'swr';
-import TablePoissons from './results';
+import clsx from 'clsx';
+import { Search, X } from 'lucide-react';
 
-import Pagination from 'react-bootstrap/Pagination';
-import styles from '@/app/page.module.scss';
-import './style.scss';
+import FishCard from '@/components/fish/FishCard';
+import PageHeader from '@/components/PageHeader';
+import Pagination from '@/components/Pagination';
 
-const localStorage = typeof window !== 'undefined' ? window.localStorage : null;
+const POISSONS_PER_PAGE = 12;
 
-function PagePagination({ totalPages, currentPage, onPageChange }) {
-  const pageNumbers = [];
-
-  // Créer la liste des numéros de page
-  for (let i = 1; i <= totalPages; i++) {
-    pageNumbers.push(
-      <Pagination.Item key={i} active={i === currentPage} onClick={() => onPageChange(i)}>
-        {i}
-      </Pagination.Item>
-    );
-  }
-
-  return (
-    <Pagination>
-      <Pagination.First onClick={() => onPageChange(1)} />
-      <Pagination.Prev onClick={() => onPageChange(currentPage - 1)} />
-      {pageNumbers}
-      <Pagination.Next onClick={() => onPageChange(currentPage + 1)} />
-      <Pagination.Last onClick={() => onPageChange(totalPages)} />
-    </Pagination>
-  );
-}
-
-export default function Poissons() {
+export default function Poissons () {
   const params = useSearchParams(); // Paramètres d'URL
+  const router = useRouter();
+  const pathname = usePathname();
 
   const [terme, setTerme] = useState('');
-  const [famille, setFamille] = useState('');
-  const [currentPage, setCurrentPage] = useState(() => {
-    if (localStorage) {
-      const storedPage = localStorage.getItem('currentPage');
-      return storedPage ? parseInt(storedPage) : 1;
-    }
-    return 1;
-  });
-  const [isMobile, setIsMobile] = useState(false); // État pour détecter le mode portable
+  const [famille, setFamille] = useState(() => params.get('famille') ?? '');
+  const [currentPage, setCurrentPage] = useState(1);
 
-  const url = params.get('famille')
-    ? `/api/poissons?famille=${params.get('famille')}`
-    : `/api/poissons?q=${terme}`;
-  const { data, error } = useSWR(url);
-
-  const { data: data2 } = useSWR('/api/poissons/familles');
-
+  // Suit les liens externes vers /poissons?famille=... (accueil, fiches)
   useEffect(() => {
-    setCurrentPage(1); // Réinitialiser la page à la première page lors d'une recherche
+    setFamille(params.get('famille') ?? '');
+  }, [params]);
+
+  const url = famille
+    ? `/api/poissons?famille=${encodeURIComponent(famille)}`
+    : `/api/poissons?q=${encodeURIComponent(terme)}`;
+  const { data, error, isLoading } = useSWR(url, { keepPreviousData: true });
+  const { data: dataFamilles } = useSWR('/api/poissons/familles');
+
+  // Réinitialise la pagination à chaque recherche
+  useEffect(() => {
+    setCurrentPage(1);
   }, [terme, famille]);
 
-  // Effect pour la recherche instantanée lors du choix d'une famille
-  useEffect(() => {
-    if (famille) {
-      setTerme(famille);
-    }
-  }, [famille]);
+  const chooseFamille = (nom) => {
+    setFamille(nom);
+    setTerme('');
+    router.replace(nom ? `${pathname}?famille=${encodeURIComponent(nom)}` : pathname, { scroll: false });
+  };
 
-  useEffect(() => {
-    if (localStorage) {
-      localStorage.setItem('currentPage', currentPage.toString());
-    }
-  }, [currentPage]);
+  const onSearch = (value) => {
+    setTerme(value);
+    if (famille)
+      chooseFamille('');
+  };
+
+  const changePage = (page) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   // Pagination
-  const poissonsPerPage = 15;
-  const totalPages = Math.ceil(data?.poissons.length / poissonsPerPage);
-  const indexOfLastPoisson = currentPage * poissonsPerPage;
-  const indexOfFirstPoisson = indexOfLastPoisson - poissonsPerPage;
-  const currentPoissons = data?.poissons.slice(indexOfFirstPoisson, indexOfLastPoisson);
-
-  const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  };
-
-  const handleFamilleChange = (event) => {
-    setFamille(event.target.value);
-    setTerme('');
-  };
-
-  useEffect(() => {
-    // Fonction pour détecter si on est en mode portable
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // Mettre à jour l'état en fonction de la taille de la fenêtre
-    };
-
-    window.addEventListener('resize', handleResize); // Écouter l'événement de redimensionnement de la fenêtre
-
-    // Vérifier la taille de la fenêtre au chargement de la page
-    setIsMobile(window.innerWidth < 768);
-
-    // Nettoyer l'écouteur d'événement lorsque le composant est démonté
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (localStorage) {
-      const storedPage = localStorage.getItem('currentPage');
-      setCurrentPage(storedPage ? parseInt(storedPage) : 1);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (localStorage) {
-      localStorage.setItem('currentPage', currentPage.toString());
-    }
-  }, [currentPage]);
+  const poissons = data?.poissons ?? [];
+  const totalPages = Math.ceil(poissons.length / POISSONS_PER_PAGE);
+  const currentPoissons = poissons.slice((currentPage - 1) * POISSONS_PER_PAGE, currentPage * POISSONS_PER_PAGE);
 
   return (
-    <main className={`${styles.main} liste-background page-container`}>
+    <>
+      <PageHeader
+        eyebrow="Catalogue"
+        title="Les poissons"
+        aside={data && (
+          <p className="text-sm text-muted">
+            <span className="font-display text-2xl font-semibold text-foreground">{poissons.length}</span> espèces
+          </p>
+        )}
+      >
+        Recherchez par nom commun, nom scientifique, famille, genre ou comportement.
+      </PageHeader>
 
-      <h1>Liste des poissons</h1>
+      <section className="container">
+        {/* Filtres */}
+        <div className="sticky top-16 z-30 -mx-4 border-b border-border/60 bg-background/85 px-4 py-4 backdrop-blur-xl sm:mx-0 sm:rounded-2xl sm:border sm:px-5">
+          <label className="relative block">
+            <span className="sr-only">Rechercher un poisson</span>
+            <Search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted"/>
+            <input
+              type="search"
+              className="input !rounded-full !pl-11"
+              placeholder="Néon, Corydoras, Cichlidae, pacifique…"
+              value={terme}
+              onChange={(e) => onSearch(e.target.value)}
+            />
+          </label>
 
-      {/* Champ de filtrage rapide */}
-      <input type="text" value={terme} onChange={(e) => setTerme(e.target.value)} />
+          <div className="mt-3 flex gap-2 overflow-x-auto pb-1 [scrollbar-width:thin]" role="group" aria-label="Filtrer par famille">
+            <button
+              type="button"
+              className={clsx('chip shrink-0', !famille && 'chip-active')}
+              onClick={() => chooseFamille('')}
+            >
+              Toutes
+            </button>
+            {dataFamilles?.familles.map((f) => (
+              <button
+                key={f.id}
+                type="button"
+                className={clsx('chip shrink-0', famille.toLowerCase() === f.nom.toLowerCase() && 'chip-active')}
+                onClick={() => chooseFamille(f.nom)}
+              >
+                {f.nom}
+              </button>
+            ))}
+          </div>
+        </div>
 
-      {/* Choix de la famille */}
-      <select value={famille} onChange={handleFamilleChange}>
-        <option value="">-------------</option>
-        {data2 && data2.familles.map((f) => <option key={f.id} value={f.nom}>{f.nom}</option>)}
-      </select>
+        {famille && (
+          <p className="mt-6 flex items-center gap-2 text-sm text-muted">
+            Famille : <span className="text-foreground">{famille}</span>
+            <button type="button" onClick={() => chooseFamille('')} className="rounded-full p-1 hover:text-foreground"
+                    aria-label="Retirer le filtre de famille">
+              <X className="h-4 w-4"/>
+            </button>
+          </p>
+        )}
 
-      {/* Table des résultats */}
-      {data && (
-        <TablePoissons poissons={currentPoissons} hideFamille={isMobile} isMobile={isMobile} />
-      )}
+        {/* Résultats */}
+        {error ? (
+          <p className="card mt-10 p-8 text-center text-danger">
+            Impossible de charger les poissons. Vérifiez que l&apos;API est démarrée.
+          </p>
+        ) : isLoading && !data ? (
+          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {Array.from({ length: 8 }, (_, i) => (
+              <div key={i} className="card aspect-[3/4] animate-pulse bg-surface-elevated/60"/>
+            ))}
+          </div>
+        ) : poissons.length === 0 ? (
+          <div className="card mt-10 p-10 text-center">
+            <p className="font-display text-xl">Aucun poisson trouvé</p>
+            <p className="mt-2 text-sm text-muted">Essayez un autre terme ou retirez le filtre de famille.</p>
+          </div>
+        ) : (
+          <div className={clsx('mt-8 grid gap-5 transition-opacity sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4',
+            isLoading && 'opacity-60')}>
+            {currentPoissons.map((p, i) => <FishCard key={p.id} poisson={p} priority={i < 4}/>)}
+          </div>
+        )}
 
-      {/* Pagination */}
-      <div>
-        <PagePagination
-          totalPages={totalPages}
-          currentPage={currentPage}
-          onPageChange={handlePageChange}
-        />
-      </div>
-    </main>
+        <div className="mt-12">
+          <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={changePage}/>
+        </div>
+      </section>
+    </>
   );
 }

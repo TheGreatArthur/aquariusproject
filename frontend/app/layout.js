@@ -2,27 +2,35 @@
  * Mise en page par défaut
  */
 
-'use client';
+import { Inter, Space_Grotesk } from 'next/font/google';
 
-import { Inter } from 'next/font/google';
-import { SWRConfig } from 'swr';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-import NavBar from '@/app/nav';
+import Providers from '@/components/Providers';
+import SiteFooter from '@/components/SiteFooter';
+import SiteHeader from '@/components/SiteHeader';
 import './globals.css';
-import './svg-with-js.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
+const display = Space_Grotesk({ subsets: ['latin'], variable: '--font-display', display: 'swap' });
+
+export const metadata = {
+  title: {
+    default: 'Aquarius — composez un aquarium en harmonie',
+    template: '%s · Aquarius',
+  },
+  description: 'Catalogue de poissons d\'aquarium d\'eau douce et simulateur de compatibilité : '
+    + 'paramètres d\'eau, population et cohabitation.',
+};
 
 export default function RootLayout ({ children }) {
   return (
-    <SWRConfig value={{ fetcher: (resource, init) => fetch(resource, init).then(res => res.json()) }}>
-      <html lang="fr">
-        <body className={inter.className}>
-          <NavBar/>
-          {children}
-        </body>
-      </html>
-    </SWRConfig>
+    <html lang="fr" className={`${inter.variable} ${display.variable}`}>
+      <body className="grain flex min-h-screen flex-col">
+        <Providers>
+          <SiteHeader/>
+          <main className="flex-1">{children}</main>
+          <SiteFooter/>
+        </Providers>
+      </body>
+    </html>
   );
 }
