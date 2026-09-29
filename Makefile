@@ -46,8 +46,9 @@ import: setup ## Load backend/db.xlsx into the database
 audit: setup ## Write the data audit report to docs/data-audit.md
 	cd backend && venv/bin/python audit_data.py > ../docs/data-audit.md
 
-test: setup ## Run backend tests with coverage
+test: setup ## Run backend (pytest) and front-end (Vitest) tests
 	cd backend && venv/bin/python -m pytest --cov=. --cov-report=term-missing
+	cd frontend && npm test
 
 lint: setup ## Lint backend (ruff) and front end (ESLint)
 	cd backend && venv/bin/ruff check .

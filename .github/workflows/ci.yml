@@ -32,7 +32,7 @@ jobs:
           python -m pytest --cov=. --cov-report=term-missing
 
   frontend:
-    name: Front end (ESLint + build)
+    name: Front end (ESLint + tests + build)
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -50,5 +50,7 @@ jobs:
       - run: npm ci
       - name: Lint
         run: npx next lint
+      - name: Test
+        run: npm test
       - name: Build
         run: npx next build

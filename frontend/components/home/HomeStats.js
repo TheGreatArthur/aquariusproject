@@ -2,7 +2,7 @@
 
 import useSWR from 'swr';
 
-import { VALIDATIONS } from '@/lib/validation';
+import { RULES } from '@/lib/compat';
 
 export default function HomeStats () {
   const { data: poissons } = useSWR('/api/poissons');
@@ -11,7 +11,7 @@ export default function HomeStats () {
   const stats = [
     { value: poissons?.poissons.length, label: 'espèces référencées' },
     { value: familles?.familles.length, label: 'familles' },
-    { value: VALIDATIONS.length, label: 'règles de compatibilité' },
+    { value: RULES.length, label: 'règles de compatibilité' },
   ];
 
   return (

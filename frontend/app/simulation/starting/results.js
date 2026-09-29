@@ -1,30 +1,18 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import clsx from 'clsx';
-import { AlertTriangle, Plus } from 'lucide-react';
+import { AlertOctagon, AlertTriangle, Plus } from 'lucide-react';
 
 import BehaviourBadge from '@/components/fish/BehaviourBadge';
+import { issuesIfAdded } from '@/lib/compat';
 import { fishImage } from '@/lib/fish';
 
-export default function TablePoissons ({ poissons, listePoissons, setListePoissons }) {
+const PREVIEW = {
+  error: { icon: AlertOctagon, label: 'Incompatible avec votre bac', text: 'text-danger', border: '!border-danger/50' },
+  warning: { icon: AlertTriangle, label: 'À surveiller', text: 'text-warning', border: '!border-warning/40' },
+};
 
-  const isFishIncompatible = (poisson) => {
-    const familleOsphronemidae = 'Osphronemidae';
-    const famillePoeciliidae = 'Poeciliidae';
-
-    const hasOsphronemidae = listePoissons.some((p) => p.nom_famille === familleOsphronemidae);
-    const hasPoeciliidae = listePoissons.some((p) => p.nom_famille === famillePoeciliidae);
-
-    if (poisson.nom_famille === familleOsphronemidae && hasPoeciliidae) {
-      return true;
-    }
-
-    if (poisson.nom_famille === famillePoeciliidae && hasOsphronemidae) {
-      return true;
-    }
-
-    return false;
-  };
+export default function TablePoissons ({ poissons, listePoissons, setListePoissons, environnement }) {
 
   const handleAddToCart = (p) => {
     setListePoissons((prevListePoissons) => {
@@ -40,7 +28,7 @@ export default function TablePoissons ({ poissons, listePoissons, setListePoisso
         return updatedListePoissons;
       } else {
         // Le poisson n'existe pas dans la liste, on l'ajoute avec une quantité de 1
-        return [...prevListePoissons, { ...p, quantite: 1 }];
+        return [...prevListePoissons, { ...p, quantite: Math.max(1, p.nb_individus) }];
       }
     });
   };
@@ -50,10 +38,12 @@ export default function TablePoissons ({ poissons, listePoissons, setListePoisso
   return (
     <ul className="mt-5 space-y-3">
       {poissons.map((p) => {
-        const incompatible = isFishIncompatible(p);
+        // Ce que l'ajout de cette espèce déclencherait dans le bac actuel
+        const { severity, messages } = issuesIfAdded(listePoissons, p, environnement);
+        const preview = PREVIEW[severity];
         return (
           <li key={p.id}
-              className={clsx('card flex flex-col gap-4 p-3 sm:flex-row sm:items-center', incompatible && '!border-danger/50')}>
+              className={clsx('card flex flex-col gap-4 p-3 sm:flex-row sm:items-center', preview?.border)}>
             <div className="flex flex-1 items-center gap-4">
               <div className="relative h-16 w-20 shrink-0 overflow-hidden rounded-xl bg-surface-elevated">
                 <Image src={fishImage(p)} alt="" fill sizes="80px" className="object-cover"/>
@@ -61,9 +51,10 @@ export default function TablePoissons ({ poissons, listePoissons, setListePoisso
               <div className="min-w-0">
                 <Link href={`/poissons/${p.id}`} className="font-medium hover:text-accent-glow">{p.nom_commun}</Link>
                 <p className="text-xs text-muted">{p.nom_famille}</p>
-                {incompatible && (
-                  <p className="mt-1 flex items-center gap-1 text-xs text-danger">
-                    <AlertTriangle className="h-3.5 w-3.5"/> Incompatible avec votre bac
+                {preview && (
+                  <p className={clsx('mt-1 flex items-start gap-1 text-xs', preview.text)} title={messages.join('\n')}>
+                    <preview.icon className="mt-px h-3.5 w-3.5 shrink-0"/>
+                    <span><span className="font-medium">{preview.label} :</span> {messages[0]}</span>
                   </p>
                 )}
               </div>
