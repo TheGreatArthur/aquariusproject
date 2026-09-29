@@ -16,8 +16,9 @@
 - **Modern, responsive UI** — dark theme with Tailwind CSS, subtle scroll animations,
   respecting *reduced motion*.
 - **Family showcase** on the home page linking to each family's fish.
-- **Tank simulator** — enter your tank volume, pH, GH and temperature, build a basket of fish and get warnings on
-  overpopulation, under-sized schools, aggressive/peaceful cohabitation and predation.
+- **Tank simulator** — enter your tank volume, pH, GH and temperature and build a population checked by
+  [14 compatibility rules](docs/compatibility-rules.md) (shared water, predation, temperament, current, group
+  size, overpopulation…) with blocking / warning / info levels; each species shows its risks before you add it.
 - **Contact form** sent through EmailJS.
 
 | Fish list | Fish detail | Simulator |
@@ -83,7 +84,7 @@ The import cleans and normalizes the workbook's labels; run `make audit` to list
 ## Tests
 
 ```bash
-make test   # backend tests with coverage
+make test   # backend (pytest) and front-end (Vitest) tests
 make lint   # ruff + ESLint
 make build  # production build of the front end
 ```
@@ -96,6 +97,7 @@ CI runs the same checks on every pull request and on pushes to `main`.
 - [0002 — SQL database fed from an Excel workbook, SQLite by default](docs/adr/0002-database-and-excel-import.md)
 - [0003 — UI redesign: Tailwind CSS and Framer Motion](docs/adr/0003-ui-redesign-tailwind.md)
 - [0004 — Data normalization, reviewed corrections and audit](docs/adr/0004-data-normalization-and-audit.md)
+- [0005 — Compatibility rules engine with severities](docs/adr/0005-compatibility-rules-engine.md)
 
 ## Roadmap & known limitations
 

@@ -6,6 +6,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Simulator: new compatibility engine ([ADR 0005](docs/adr/0005-compatibility-rules-engine.md),
+  [rules](docs/compatibility-rules.md)) with 14 rules and three levels (blocking, to watch, good to know):
+  shared water range across species, declared predators, mouth size, temperament gap, water current, biotope,
+  solitary / aggressive / pair / harem species, delicate species, overpopulation, under-sized groups and
+  incompatible families. All conflicts are reported, the shared water range is shown, and each species
+  previews its risks before being added.
+- Front-end unit tests with Vitest (26 tests), run by `make test` and in CI.
 - Data quality ([ADR 0004](docs/adr/0004-data-normalization-and-audit.md)): the Excel import now normalizes
   labels into fixed categories (behaviour 9 → 6, way of life 15 → 5, water current 16 → 9 combinations,
   hardiness, availability, diet, region), applies reviewed corrections from `backend/corrections.py`
@@ -31,6 +38,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - README rewritten in English with architecture diagram and quick start.
 
 ### Fixed
+- Simulator: an empty volume field no longer empties the tank, and saved tanks are refreshed with the latest
+  fish data; adding a species adds its minimum group.
 - Mariposa (*Cichla ocellaris*), a 60 cm piscivore, was labelled "peu agressif"; it is now "prédateur".
 - Simulator: the external hot-linked images are replaced by local ones; the unused pH range slider and
   debug logs are removed.
