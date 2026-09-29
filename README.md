@@ -70,7 +70,8 @@ To load the fish data, put the workbook at `backend/db.xlsx`, then:
 make import
 ```
 
-Run `make help` for all commands. Configuration:
+The import cleans and normalizes the workbook's labels; run `make audit` to list values that look wrong
+([docs/data-audit.md](docs/data-audit.md)). Run `make help` for all commands. Configuration:
 
 | Variable | Where | Default |
 |---|---|---|
@@ -94,6 +95,7 @@ CI runs the same checks on every pull request and on pushes to `main`.
 - [0001 — Next.js front end + Flask API](docs/adr/0001-tech-stack.md)
 - [0002 — SQL database fed from an Excel workbook, SQLite by default](docs/adr/0002-database-and-excel-import.md)
 - [0003 — UI redesign: Tailwind CSS and Framer Motion](docs/adr/0003-ui-redesign-tailwind.md)
+- [0004 — Data normalization, reviewed corrections and audit](docs/adr/0004-data-normalization-and-audit.md)
 
 ## Roadmap & known limitations
 
