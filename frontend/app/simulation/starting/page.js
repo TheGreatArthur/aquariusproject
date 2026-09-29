@@ -3,14 +3,13 @@
 import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import useSWR from 'swr';
-import clsx from 'clsx';
-import { AlertTriangle, CheckCircle2 } from 'lucide-react';
 
 import PageHeader from '@/components/PageHeader';
+import { evaluate } from '@/lib/compat';
 import { lsGet, lsSet } from '@/lib/localstorage';
-import { validation } from '@/lib/validation';
 import TablePoissons from './results';
 import Panier from './panier';
+import Verdict from './verdict';
 
 const FIELDS = [
   { name: 'litrage', label: 'Volume', unit: 'L', placeholder: '120', rules: {} },
@@ -18,6 +17,9 @@ const FIELDS = [
   { name: 'gH', label: 'GH moyen', unit: '°', placeholder: '10', rules: { pattern: /^\d*\.?\d*$/ } },
   { name: 'tempMoyenne', label: 'Température', unit: '°C', placeholder: '25', rules: { pattern: /^-?\d*\.?\d*$/ } },
 ];
+
+/** Valeur numérique d'un champ du formulaire ; undefined si vide ou invalide */
+const nombre = (value) => (value === '' || value == null || Number.isNaN(Number(value)) ? undefined : Number(value));
 
 export default function SimulationStart () {
 
@@ -33,42 +35,55 @@ export default function SimulationStart () {
   const gH = watch('gH');
   const tempMoyenne = watch('tempMoyenne');
 
-  const environnement = { litrage, pH, gH, tempMoyenne };
+  const environnement = {
+    litrage: nombre(litrage), pH: nombre(pH), gH: nombre(gH), tempMoyenne: nombre(tempMoyenne),
+  };
+  const { litrage: l, pH: ph, gH: gh, tempMoyenne: temp } = environnement;
 
   useEffect(() => {
     lsSet('listePoissons', listePoissons);
   }, [listePoissons]);
 
   useEffect(() => {
-    if (poissonsData && poissonsData.poissons) {
-      const poissonsFiltres = poissonsData.poissons.filter(poisson =>
-        poisson.litrage_mini <= litrage &&
-        (!pH || (pH >= poisson.ph_mini && pH <= poisson.ph_maxi)) &&
-        (!gH || (gH >= poisson.gh_mini && gH <= poisson.gh_maxi)) &&
-        (!tempMoyenne || (tempMoyenne >= poisson.temp_mini && tempMoyenne <= poisson.temp_maxi))
-      );
-      setPoissonsCompatibles(poissonsFiltres);
-
-      const idsPoissonsFiltres = poissonsFiltres.map(x => x.id);
-      const newListePoissons = listePoissons.filter(
-        x => idsPoissonsFiltres.indexOf(x.id) >= 0);
-      setListePoissons(newListePoissons);
+    // Sans volume, on n'affiche aucune espèce mais on garde le bac tel quel
+    if (!poissonsData?.poissons || !l) {
+      setPoissonsCompatibles([]);
+      return;
     }
-  }, [poissonsData, litrage, pH, gH, tempMoyenne]);
+    const poissonsFiltres = poissonsData.poissons.filter(poisson =>
+      poisson.litrage_mini <= l &&
+      (ph === undefined || (ph >= poisson.ph_mini && ph <= poisson.ph_maxi)) &&
+      (gh === undefined || (gh >= poisson.gh_mini && gh <= poisson.gh_maxi)) &&
+      (temp === undefined || (temp >= poisson.temp_mini && temp <= poisson.temp_maxi))
+    );
+    setPoissonsCompatibles(poissonsFiltres);
+
+    // Retire du bac les espèces devenues incompatibles et rafraîchit les fiches enregistrées (données à jour)
+    const parId = new Map(poissonsFiltres.map((p) => [p.id, p]));
+    setListePoissons((liste) => liste
+      .filter((p) => parId.has(p.id))
+      .map((p) => ({ ...parId.get(p.id), quantite: p.quantite })));
+  }, [poissonsData, l, ph, gh, temp]);
 
   useEffect(() => {
     const cachedFormData = lsGet('form_data');
     if (cachedFormData) {
       reset(cachedFormData);
     }
-  }, []);
+  }, [reset]);
 
   useEffect(() => {
     const formData = { litrage, pH, gH, tempMoyenne };
     lsSet('form_data', formData);
   }, [litrage, pH, gH, tempMoyenne]);
 
-  const { ok, messages, ids } = validation(listePoissons, environnement);
+  const { verdict, issues, ranges } = evaluate(listePoissons, environnement);
+
+  // Gravité la plus haute par poisson, pour colorer le bac
+  const severites = {};
+  for (const i of [...issues].reverse())
+    for (const id of i.ids)
+      severites[id] = i.severity;
 
   return <>
     <PageHeader eyebrow="Simulateur" title="Aquarium de zéro">
@@ -95,31 +110,12 @@ export default function SimulationStart () {
           </div>
         </form>
 
-        {listePoissons.length > 0 && (
-          <div
-            role="status"
-            className={clsx('card p-5', ok ? 'border-success/40' : 'border-danger/40')}
-          >
-            <p className={clsx('flex items-center gap-2 font-display font-semibold', ok ? 'text-success' : 'text-danger')}>
-              {ok ? <CheckCircle2 className="h-5 w-5"/> : <AlertTriangle className="h-5 w-5"/>}
-              {ok ? 'Population compatible' : 'Attention'}
-            </p>
-            {messages.length > 0 && (
-              <ul className="mt-3 space-y-1.5 text-sm text-foreground/85">
-                {messages.map((m, index) => (
-                  <li key={index} className="flex gap-2">
-                    <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-danger"/>{m}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
-        )}
+        {listePoissons.length > 0 && <Verdict verdict={verdict} issues={issues} ranges={ranges}/>}
 
         <Panier listePoissons={listePoissons}
                 setListePoissons={setListePoissons}
-                idsConcernes={ids}
-                litrage={litrage}/>
+                severites={severites}
+                litrage={environnement.litrage}/>
       </aside>
 
       {/* Espèces compatibles */}
@@ -136,7 +132,8 @@ export default function SimulationStart () {
         ) : poissonsCompatibles.length > 0 ? (
           <TablePoissons poissons={poissonsCompatibles}
                          listePoissons={listePoissons}
-                         setListePoissons={setListePoissons}/>
+                         setListePoissons={setListePoissons}
+                         environnement={environnement}/>
         ) : (
           <div className="card mt-5 p-10 text-center">
             <p className="font-display text-lg">

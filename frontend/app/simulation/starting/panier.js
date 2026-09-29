@@ -5,10 +5,10 @@
 import clsx from 'clsx';
 import { Minus, Plus, Trash2 } from 'lucide-react';
 
-import { totalPoints } from '@/lib/panier';
+import { totalPoints } from '@/lib/compat';
 
 
-export default function Panier ({ listePoissons, setListePoissons, idsConcernes = [], litrage }) {
+export default function Panier ({ listePoissons, setListePoissons, severites = {}, litrage }) {
 
   const handleRemoveFromList = (poissonId) => {
     setListePoissons((prevSelection) =>
@@ -88,7 +88,8 @@ export default function Panier ({ listePoissons, setListePoissons, idsConcernes 
           {listePoissons.map(p => (
             <li key={p.id} className="flex items-center gap-3 py-2.5">
               <div className="min-w-0 flex-1">
-                <p className={clsx('truncate text-sm font-medium', idsConcernes.includes(p.id) && 'text-danger')}>
+                <p className={clsx('truncate text-sm font-medium', severites[p.id] === 'error' && 'text-danger',
+                  severites[p.id] === 'warning' && 'text-warning')}>
                   {p.nom_commun}
                 </p>
                 <p className="text-xs text-muted">{p.quantite * p.points} points</p>
