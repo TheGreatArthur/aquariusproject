@@ -6,6 +6,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Data quality ([ADR 0004](docs/adr/0004-data-normalization-and-audit.md)): the Excel import now normalizes
+  labels into fixed categories (behaviour 9 → 6, way of life 15 → 5, water current 16 → 9 combinations,
+  hardiness, availability, diet, region), applies reviewed corrections from `backend/corrections.py`
+  and removes unused label variants.
+- `make audit` writes `docs/data-audit.md`, the list of suspicious values to check by hand.
+- API: each fish now exposes `nom_robustesse`, `nom_zone_geo` and `nom_courant`.
 - Accessibility: labelled icon buttons, visible focus rings, `prefers-reduced-motion` support.
 - One-command developer workflow: `make dev`, `make test`, `make lint`, `make build`, `make import`.
 - Backend test suite (pytest, 11 tests) and GitHub Actions CI (ruff, pytest with coverage, ESLint, Next.js build).
@@ -25,6 +31,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - README rewritten in English with architecture diagram and quick start.
 
 ### Fixed
+- Mariposa (*Cichla ocellaris*), a 60 cm piscivore, was labelled "peu agressif"; it is now "prédateur".
 - Simulator: the external hot-linked images are replaced by local ones; the unused pH range slider and
   debug logs are removed.
 - Fish detail page crashed on a freshly imported database: the Excel import now fills `poisson.images`.
