@@ -6,7 +6,7 @@ from sqlalchemy.orm import Mapped, mapped_column, relationship
 from models.meta import Base
 
 if TYPE_CHECKING:
-    from models.nomenclatures import Comportement, Famille, Genre, ModeVie
+    from models.nomenclatures import Comportement, Courant, Famille, Genre, ModeVie, Robustesse, ZoneGeo
 
 class Poisson(Base):
     __tablename__ = 'poisson'
@@ -43,6 +43,9 @@ class Poisson(Base):
     genre: Mapped['Genre'] = relationship()
     comportement: Mapped['Comportement'] = relationship()
     mode_vie: Mapped['ModeVie'] = relationship()
+    robustesse: Mapped['Robustesse'] = relationship()
+    zone_geo: Mapped['ZoneGeo'] = relationship()
+    courant: Mapped['Courant | None'] = relationship()
 
     def __str__(self) -> str:
         return f'<{self.__class__.__name__} {self.id} {self.nom_scientifique!r}>'
@@ -56,9 +59,9 @@ class Poisson(Base):
             nom_famille=self.famille.nom,
             nom_genre=self.genre.nom,
             nom_comportement=self.comportement.nom,
-            nom_mode_vie=self.mode_vie.nom
-
-
-
-            )
+            nom_mode_vie=self.mode_vie.nom,
+            nom_robustesse=self.robustesse.nom,
+            nom_zone_geo=self.zone_geo.nom,
+            nom_courant=self.courant.nom if self.courant else None,
+        )
         return out

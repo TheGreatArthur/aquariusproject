@@ -13,6 +13,9 @@ def test_list_includes_related_names(client):
     assert poisson['nom_genre'] == 'Paracheirodon'
     assert poisson['nom_comportement'] == 'pacifique'
     assert poisson['nom_mode_vie'] == 'banc'
+    assert poisson['nom_robustesse'] == 'robuste'
+    assert poisson['nom_zone_geo'] == 'Amérique du Sud'
+    assert poisson['nom_courant'] is None
 
 
 def test_quick_search_is_case_insensitive_prefix(client):
