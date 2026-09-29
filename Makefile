@@ -7,7 +7,7 @@ BACKEND_PORT  ?= 5001
 FRONTEND_PORT ?= 3000
 
 .DEFAULT_GOAL := help
-.PHONY: help setup install dev backend frontend import test lint build clean
+.PHONY: help setup install dev backend frontend import audit test lint build clean
 
 help: ## Show available commands
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  make %-10s %s\n", $$1, $$2}'
@@ -42,6 +42,9 @@ frontend:
 
 import: setup ## Load backend/db.xlsx into the database
 	cd backend && venv/bin/python import_excel.py
+
+audit: setup ## Write the data audit report to docs/data-audit.md
+	cd backend && venv/bin/python audit_data.py > ../docs/data-audit.md
 
 test: setup ## Run backend tests with coverage
 	cd backend && venv/bin/python -m pytest --cov=. --cov-report=term-missing
