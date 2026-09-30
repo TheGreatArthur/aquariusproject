@@ -34,8 +34,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 - Fish and family photos downscaled to 2000 px at most and re-encoded (progressive JPEG, quality 82):
-  `public/images` and `public/families` go from 112 MB to 49 MB and the first display of a large photo is
-  about twice as fast. `make images` runs `frontend/scripts/optimize-images.py` on new photos.
+  `public/images` and `public/families` go from 112 MB to 42 MB (largest file 0.42 MB instead of 5.5 MB)
+  and the first display of a large photo is about twice as fast. `make images` runs
+  `frontend/scripts/optimize-images.py` on new photos.
 - **UI redesign** ([ADR 0003](docs/adr/0003-ui-redesign-tailwind.md)): Tailwind CSS design system (dark theme,
   teal accent, Space Grotesk / Inter), new header with mobile menu, footer, home page with a photo hero,
   "how it works" steps and family showcase, fish cards with search and family chips, fish detail page with

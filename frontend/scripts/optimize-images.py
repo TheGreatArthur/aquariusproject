@@ -5,7 +5,8 @@ qualité 82, orientation EXIF appliquée et profil de couleur conservé.
 next/image redimensionne déjà les photos à l'affichage, mais il doit d'abord décoder l'original : des JPEG
 de 4 000 px et 5 Mo ralentissent le premier affichage de chaque photo et alourdissent le dépôt.
 Un fichier n'est remplacé que s'il gagne au moins 20 %, si bien qu'un second passage ne change rien.
-Les fichiers qui ne sont pas des JPEG RVB (PNG, transparence) sont laissés tels quels.
+Certains « .jpg » sont en fait des PNG ou des WebP : ils sont convertis en JPEG s'ils sont opaques,
+laissés tels quels s'ils ont de la transparence.
 
 Usage (Pillow requis, installé par backend/requirements-dev.txt) :
     backend/venv/bin/python frontend/scripts/optimize-images.py [--dry-run]
@@ -27,8 +28,10 @@ MIN_GAIN = 0.2
 def optimize(path: Path) -> bytes | None:
     """ Contenu optimisé de la photo, ou None si elle doit rester telle quelle """
     with Image.open(path) as im:
-        if im.format != 'JPEG' or im.mode != 'RGB':
-            return None
+        if im.mode != 'RGB':
+            if im.convert('RGBA').getchannel('A').getextrema()[0] < 255:
+                return None
+            im = im.convert('RGB')
         icc = im.info.get('icc_profile')
         im = ImageOps.exif_transpose(im)
         im.thumbnail((MAX_SIDE, MAX_SIDE), Image.LANCZOS)
