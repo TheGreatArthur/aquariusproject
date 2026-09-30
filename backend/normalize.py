@@ -21,6 +21,9 @@ COURANT_SYNONYMES = {'lent': 'doux'}
 # Zones géographiques ramenées au continent
 ZONE_SYNONYMES = {'Indonésie': 'Asie'}
 
+# Familles écrites en français au lieu du nom scientifique
+FAMILLE_SYNONYMES = {'Cyprinidé': 'Cyprinidae'}
+
 REGIME_CORRECTIONS = {'détrivore': 'détritivore'}
 
 
@@ -101,3 +104,10 @@ def normalize_zone(value: str) -> str:
     """
     value = clean(value)
     return ZONE_SYNONYMES.get(value, value)
+
+
+def normalize_famille(value: str) -> str:
+    """ Nom de famille scientifique (variantes francisées corrigées)
+    """
+    value = clean(value)
+    return FAMILLE_SYNONYMES.get(value, value)
