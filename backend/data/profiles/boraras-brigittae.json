@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Boraras brigittae",
+  "nom_valide": null,
+  "auteur": "(Vogt, 1978)",
+  "classification": "Cypriniformes › Danionidae",
+  "uicn": "DD",
+  "repartition": "Sud de Bornéo, Kalimantan (Indonésie)",
+  "pays": [
+    "IDN"
+  ],
+  "emprise": [108, -5, 117, 0],
+  "presentation": "Décrit en 1978 par Dieter Vogt, qui l'a dédié à son épouse Brigitte, le « rasbora chili » ne dépasse guère 2 cm. Le genre *Boraras*, créé en 1993, est l'anagramme de *Rasbora* : il fait allusion au rapport inversé entre vertèbres abdominales et caudales de ces poissons.\n\nIl est souvent confondu avec *B. urophthalmoides*, parfois vendu sous son nom. *B. brigittae* s'en distingue par une taille adulte un peu plus grande, une bande latérale courte et souvent interrompue et une coloration rouge plus uniforme. L'UICN le classe en « données insuffisantes ».",
+  "habitat": "Il vit dans le sud de Bornéo, dans les ruisseaux et mares d'eaux noires des anciennes forêts marécageuses de tourbe. L'eau, brune et très acide (pH jusqu'à 4), est quasiment dépourvue de dureté ; le fond est jonché de feuilles, de brindilles et de branches, et la lumière filtrée par la canopée.\n\nDans toute l'Asie du Sud-Est, ces biotopes sont menacés par les plantations d'hévéas et de palmiers à huile et par l'urbanisation.",
+  "comportement": "Très paisible mais minuscule et timide, il se plaît seul ou avec d'autres espèces naines (microrasboras, petits corydoras, *Otocinclus*), des anabantoïdes discrets ou des crevettes dans un bac planté. Il vit en banc : un groupe d'au moins 8 à 10 individus le rend moins craintif et pousse les mâles dominants à montrer leurs plus belles couleurs.\n\nMicro-prédateur, il chasse petits insectes, vers et zooplancton. Il pond en continu quelques œufs par jour, sans soins parentaux ; des alevins peuvent apparaître spontanément dans un bac bien planté.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Boraras-brigittae.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/boraras-brigittae/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2366587"
+    }
+  ]
+}

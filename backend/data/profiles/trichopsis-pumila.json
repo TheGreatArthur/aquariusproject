@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Trichopsis pumila",
+  "nom_valide": null,
+  "auteur": "(Arnold, 1936)",
+  "classification": "Anabantiformes › Osphronemidae",
+  "uicn": "LC",
+  "repartition": "Bas Mékong (Laos, Cambodge, Vietnam) et centre et sud de la Thaïlande",
+  "pays": [
+    "KHM",
+    "LAO",
+    "THA",
+    "VNM"
+  ],
+  "presentation": "Décrit en 1936 par l'aquariophile allemand Johann Paul Arnold, le gourami grogneur nain (*pumila*, « nain ») mesure à peine 4 cm. Comme ses cousins, il produit des sons audibles avec un mécanisme de tendons des nageoires pectorales propre aux *Trichopsis*.\n\nOn le reconnaît à sa bande latérale sombre continue, surmontée d'une rangée de taches formant une seconde bande, et à ses yeux bleu irisé. La plupart des poissons vendus proviennent d'élevages.",
+  "habitat": "Il est répandu dans le bas bassin du Mékong, au Laos, au Vietnam, au Cambodge et en Thaïlande, ainsi que dans le centre et le sud de la Thaïlande ; la localité type est Saïgon.\n\nIl vit dans les fossés, petites mares, tourbières, rizières et canaux, le plus souvent dans une eau stagnante couverte de plantes flottantes, parfois pauvre en oxygène, qu'il compense en respirant l'air en surface. Il y côtoie le gourami grogneur, le gourami bleu ou l'anabas.",
+  "comportement": "Paisible et discret, il se maintient en couple ou en petit groupe, seul ou avec de très petites espèces calmes (*Boraras*, arlequins, microrasboras, petites loches). Des poissons plus gros ou plus vifs l'intimident et lui volent sa nourriture.\n\nIl chasse zooplancton et insectes aquatiques et peut s'attaquer aux jeunes crevettes naines. Le mâle construit un nid de bulles, souvent sous une feuille ; un couvercle bien ajusté garde l'air chaud et humide dont les alevins ont besoin.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Trichopsis-pumila.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/trichopsis-pumila/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5211204"
+    }
+  ]
+}

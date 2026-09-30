@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Symphysodon aequifasciatus",
+  "nom_valide": null,
+  "auteur": "Pellegrin, 1904",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Amazone et Solimões, du río Putumayo (Colombie, Pérou) jusqu'au bassin du Tocantins (Brésil)",
+  "pays": [
+    "BRA",
+    "COL",
+    "PER"
+  ],
+  "presentation": "Décrit en 1904 par Jacques Pellegrin, le discus est souvent appelé le « roi de l'aquarium ». Sa classification est débattue : selon les auteurs, le genre *Symphysodon* compte de deux à quatre espèces, et *S. aequifasciatus* regroupe les discus bruns et bleus, aux neuf bandes verticales de même intensité (d'où *aequifasciatus*).\n\nIl est célèbre pour son mode de reproduction : pendant leurs premiers jours, les alevins se nourrissent d'un mucus sécrété par la peau de leurs deux parents. Des décennies de sélection ont produit une multitude de variétés d'élevage.",
+  "habitat": "Il vit le long du Solimões et du cours principal de l'Amazone, du río Putumayo jusqu'au bassin du Tocantins. Des populations introduites existent au Guyana et au Suriname.\n\nIl fréquente rarement les chenaux principaux et préfère les affluents lents et les lacs forestiers, où il se tient en bancs dans des zones profondes et abritées, parmi les racines, les troncs et les rochers. L'eau y est chaude (26 à 30 °C), douce et acide.",
+  "comportement": "Paisible et grégaire, il vit en groupe et devient territorial en période de reproduction. Il est sensible à la qualité de l'eau et au stress : un bac haut et calme, une eau très propre et des compagnons paisibles supportant la chaleur (petits tétras, corydoras sterbai, plécos) lui conviennent.\n\nDans la nature, il se nourrit de larves d'insectes, d'insectes et d'invertébrés planctoniques. Le couple pond sur une surface verticale et garde les œufs puis les alevins, qu'il nourrit de son mucus.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Symphysodon-aequifasciatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/symphysodon-aequifasciatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5208133"
+    }
+  ]
+}

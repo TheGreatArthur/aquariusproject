@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Paracheirodon innesi",
+  "nom_valide": null,
+  "auteur": "(Myers, 1936)",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Haut Amazone (rio Solimões) : régions de Leticia–Tabatinga, Codajás et rio Purus (Pérou, Colombie, Brésil)",
+  "pays": [
+    "BRA",
+    "COL",
+    "PER"
+  ],
+  "emprise": [-75, -8, -60, 0],
+  "presentation": "Le néon bleu a été décrit en 1936 par l'ichtyologiste américain George S. Myers, à partir de poissons arrivés par le commerce aquariophile. Son nom honore William T. Innes, aquariophile, photographe et éditeur américain qui a largement contribué à populariser l'aquarium d'eau douce.\n\nC'est l'un des poissons d'aquarium les plus vendus au monde ; la grande majorité provient aujourd'hui de fermes d'élevage. Il est particulièrement sensible à la « maladie du néon », causée par une microsporidie (*Pleistophora hyphessobryconis*) qui peut toucher d'autres espèces et reste quasiment incurable à un stade avancé.",
+  "habitat": "La localité type indiquée à l'origine, « près d'Iquitos » au Pérou, reposait sur des poissons importés, et l'étendue réelle de sa répartition reste mal connue. Les observations confirmées se concentrent autour de Leticia et Tabatinga (la « triple frontière », avec le bas rio Putumayo), puis plus à l'est autour de Codajás et du rio Purus.\n\nIl vit dans des ruisseaux forestiers et petits affluents plutôt que dans les grands chenaux d'eau blanche. L'eau y est acide, très douce, noire ou claire, sur un fond de branches, de racines et de litière de feuilles, parfois avec des plantes aquatiques.",
+  "comportement": "Pacifique et grégaire, il vit en bancs dans la couche d'eau moyenne et se nourrit de vers, de petits insectes, de crustacés et de matière végétale. Il se maintient en groupe d'au moins 8 à 10 individus, avec des poissons de taille comparable.\n\nIl apprécie une eau un peu plus fraîche que le cardinalis (20 à 26 °C). En aquarium, la femelle pond un nombre d'œufs assez réduit dans la végétation fine, de préférence dans une lumière très tamisée ; les œufs éclosent en une journée environ.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Paracheirodon-innesi.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/paracheirodon-innesi/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2353909"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "nom_scientifique": "Panaque nigrolineatus",
+  "nom_valide": null,
+  "auteur": "(Peters, 1877)",
+  "classification": "Siluriformes › Loricariidae",
+  "uicn": "LC",
+  "repartition": "Bassin de l'Orénoque et affluents sud du moyen et bas Amazone (Venezuela, Colombie, Brésil)",
+  "pays": [
+    "BRA",
+    "COL",
+    "VEN"
+  ],
+  "presentation": "Décrit en 1877 par Wilhelm Peters, le pléco royal (L190 et formes voisines) se reconnaît à ses lignes noires sur fond gris-vert, à ses yeux rouges et à ses fortes dents en cuillère. Il dépasse 40 cm.\n\nIl est célèbre pour « manger du bois » : il râpe en permanence les racines et troncs immergés. Des études ont toutefois montré qu'il ne digère pratiquement pas la cellulose du bois, qui traverse son intestin très vite ; il se nourrit en réalité surtout du biofilm, des algues et des détritus qui le recouvrent. Le bois reste indispensable à son équilibre en aquarium.",
+  "habitat": "Il vit dans le bassin de l'Orénoque, au Venezuela et en Colombie, et dans les affluents du sud du moyen et du bas Amazone, au Brésil.\n\nIl fréquente les rivières où s'accumulent troncs et branches immergés, dans une eau tropicale de dureté faible à moyenne, proche de la neutralité (22 à 26 °C selon FishBase).",
+  "comportement": "Solitaire et territorial envers les autres grands plécos, il défend son abri de bois avec ses épines ; il tolère les poissons de pleine eau robustes. Un seul individu par bac est la règle.\n\nSa taille adulte, sa longévité et l'abondante sciure qu'il produit imposent un grand aquarium (plus de 400 litres) très bien filtré. On le nourrit de légumes, de pastilles végétales et de bois tendre à racler en permanence.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Panaque-nigrolineatus.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2339870"
+    }
+  ]
+}

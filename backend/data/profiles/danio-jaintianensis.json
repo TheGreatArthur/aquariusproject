@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Danio jaintianensis",
+  "nom_valide": null,
+  "auteur": "(Sen, 2007)",
+  "classification": "Cypriniformes › Danionidae",
+  "uicn": "VU",
+  "repartition": "Collines de Jaintia, État du Meghalaya (nord-est de l'Inde)",
+  "pays": [
+    "IND"
+  ],
+  "localites": [
+    [92.2, 25.45]
+  ],
+  "presentation": "Décrit en 2007 par l'ichtyologiste indienne Nibedita Sen, ce danio porte le nom du district des collines de Jaintia, dans le Meghalaya, d'où provient la série type. Certains auteurs le rangent dans le genre *Brachydanio*, avec le danio rerio.\n\nComme ses cousins, il se reconnaît à ses bandes horizontales sombres sur le corps et les nageoires ; il est classé « vulnérable » par l'UICN et reste rare en aquariophilie.",
+  "habitat": "Le Meghalaya est une région de collines boisées parmi les plus arrosées du monde, où beaucoup de cours d'eau d'altitude sont très rapides. Cette espèce semble cantonnée aux petits ruisseaux de colline plus calmes, sur fond de graviers et de pierres, bordés d'une végétation dense qui surplombe l'eau.\n\nSon climat de moyenne altitude explique qu'il préfère une eau fraîche, entre 18 et 23 °C.",
+  "comportement": "Paisible, il vit en banc et doit être maintenu en groupe d'au moins 8 à 10 individus. Ses besoins en eau fraîche le rendent peu adapté à l'aquarium communautaire tropical classique : un bac spécifique, ou partagé avec des espèces d'eau fraîche (petits cyprinidés, loches, gobies *Rhinogobius*, crevettes), lui convient mieux.\n\nIl se nourrit surtout d'insectes et de leurs larves. Sa reproduction en aquarium n'est pas documentée, mais elle devrait ressembler à celle des autres danios : ponte dispersée, sans soins parentaux.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Danio-jaintianensis.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/danio-jaintianensis/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2362692"
+    }
+  ]
+}

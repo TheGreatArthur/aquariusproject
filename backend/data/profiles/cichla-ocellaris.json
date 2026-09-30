@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Cichla ocellaris",
+  "nom_valide": null,
+  "auteur": "Bloch & Schneider, 1801",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Plateau des Guyanes : du Maroni (Suriname, Guyane) à l'Essequibo (Guyana)",
+  "pays": [
+    "GUF",
+    "GUY",
+    "SUR"
+  ],
+  "presentation": "Décrit en 1801 par Marcus Elieser Bloch et Johann Gottlob Schneider, le mariposa (« papillon » en espagnol) ou « peacock bass » est un grand cichlidé prédateur qui dépasse 70 cm et près de 7 kg. Il porte trois barres sombres et un ocelle noir cerclé d'or à la base de la queue, d'où son nom *ocellaris*.\n\nUne révision du genre en 2006 a restreint *C. ocellaris* au plateau des Guyanes ; les poissons du bassin amazonien appartiennent à d'autres espèces. Très prisé en pêche sportive, il a été introduit en Floride, à Hawaï, à Porto Rico, au Panama, à Singapour et en Malaisie.",
+  "habitat": "Son aire naturelle va du bassin du Maroni, entre le Suriname et la Guyane, jusqu'à celui de l'Essequibo au Guyana.\n\nLes adultes vivent dans les rapides et dans les eaux calmes de profondeur moyenne à fond rocheux, où ils forment des bancs. L'eau est chaude (24 à 27 °C), douce et proche de la neutralité.",
+  "comportement": "C'est un prédateur exclusif de poissons : il mange tout compagnon qui tient dans sa bouche. Territorial et assez agressif, il ne peut cohabiter qu'avec de très grands poissons (arowanas, raies, grands poissons-chats) dans un aquarium de plusieurs milliers de litres.\n\nIl se reproduit toute l'année, avec un pic au début de la saison des pluies : le couple pond sur une pierre plate en eau peu profonde, puis garde œufs et alevins ; les œufs éclosent en trois jours environ. Le mâle adulte développe une bosse nucale.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Cichla-ocellaris.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/cichla-ocellaris/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5208153"
+    }
+  ]
+}

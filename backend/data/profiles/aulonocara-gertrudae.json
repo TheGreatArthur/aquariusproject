@@ -1,0 +1,26 @@
+{
+  "nom_scientifique": "Aulonocara gertrudae",
+  "nom_valide": null,
+  "auteur": "Konings, 1995",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Lac Malawi : rives ouest et est (Malawi, Tanzanie)",
+  "pays": [
+    "MWI",
+    "TZA"
+  ],
+  "emprise": [33.8, -15.8, 35.4, -9.3],
+  "presentation": "Décrit en 1995 par le spécialiste néerlandais des cichlidés Ad Konings, *Aulonocara gertrudae* est un « paon » du lac Malawi. Le mâle adulte porte une robe bleue avec une gorge et un ventre jaune orangé, et des nageoires ponctuées de taches claires ; il atteint environ 11 cm sans la queue.\n\nComme les autres *Aulonocara*, il repère ses proies dans le sable grâce aux grands pores sensoriels de sa tête.",
+  "habitat": "Il est présent sur les rives ouest et est du lac Malawi.\n\nIl vit au-dessus des fonds sableux, entre 3 et 30 m de profondeur, le plus souvent au-delà de 15 m. L'eau est chaude, dure et alcaline.",
+  "comportement": "Assez paisible pour un cichlidé du lac Malawi, il convient à un bac d'haplochrominés calmes, sans mbunas turbulents. Les mâles se montrent agressifs envers les poissons de couleurs semblables : un mâle pour plusieurs femelles est recommandé.\n\nIl chasse de petits invertébrés dans le sable. Incubatrice buccale, la femelle garde œufs et alevins dans sa bouche. Il s'hybride facilement avec les autres *Aulonocara*.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Aulonocara-gertrudae.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2370490"
+    }
+  ]
+}

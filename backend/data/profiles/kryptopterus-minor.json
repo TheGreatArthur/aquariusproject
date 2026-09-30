@@ -1,0 +1,24 @@
+{
+  "nom_scientifique": "Kryptopterus minor",
+  "nom_valide": null,
+  "auteur": "Roberts, 1989",
+  "classification": "Siluriformes › Siluridae",
+  "uicn": "NT",
+  "repartition": "Ouest de Bornéo (Kalimantan occidental, Indonésie)",
+  "pays": [
+    "IDN"
+  ],
+  "presentation": "Décrit en 1989 par Tyson Roberts, *Kryptopterus minor* est un petit silure translucide d'environ 7 cm. Le nom a longtemps été utilisé à tort dans le commerce pour désigner le silure de verre, qui est en réalité *K. vitreolus*, décrit en 2013.\n\nIl appartient au « groupe *bicirrhis* » des *Kryptopterus*, des poissons-chats au corps comprimé, à la dorsale réduite et aux deux longs barbillons. L'UICN le classe « quasi menacé ».",
+  "habitat": "Il est connu de l'ouest de Bornéo, dans la province indonésienne du Kalimantan occidental, qui draine notamment le bassin du Kapuas.\n\nLes sources de référence donnent peu de détails sur son biotope ; FishBase indique une eau tropicale (24 à 28 °C) de dureté faible à moyenne.",
+  "comportement": "Comme ses proches, c'est un poisson de banc qui se tient en pleine eau et doit vivre en groupe d'au moins 6 à 10 individus pour ne pas dépérir.\n\nPaisible et plutôt timide, il se nourrit de petits invertébrés et de zooplancton. Sa reproduction en aquarium n'est pas documentée.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Kryptopterus-minor.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2337916"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Otocinclus macrospilus",
+  "nom_valide": null,
+  "auteur": "Eigenmann & Allen, 1942",
+  "classification": "Siluriformes › Loricariidae",
+  "uicn": "LC",
+  "repartition": "Haut Amazone au Pérou (bassins du Morona, du Nanay et du Marañón) ; signalé en Colombie et en Équateur",
+  "pays": [
+    "COL",
+    "ECU",
+    "PER"
+  ],
+  "presentation": "Décrit en 1942 par Carl Eigenmann et William Ray Allen, *Otocinclus macrospilus* (« à grande tache ») porte une grosse tache noire arrondie à la base de la queue. C'est probablement l'otocinclus le plus vendu en aquariophilie, souvent sous le nom générique d'« oto ».\n\nPresque tous les poissons du commerce sont capturés dans la nature. Délicats à l'arrivée, ils meurent souvent de faim pendant le transport : ce petit brouteur doit manger presque en continu.",
+  "habitat": "Il est originaire du haut Amazone péruvien ; sa localité type est le río Morona, dans le département de Loreto. Il est aussi cité dans les bassins du Nanay et du Marañón, en Colombie et en Équateur.\n\nIl vit dans la végétation dense des berges des ruisseaux, criques et rivières, et en grand nombre dans les « prairies flottantes », ces radeaux de plantes qui servent de refuge à de nombreux poissons.",
+  "comportement": "Très timide, il se fait devancer par les espèces plus vives : on l'associe à de petits characidés paisibles, des *Apistogramma* et de petits corydoras. Il recherche la compagnie de ses congénères, en groupe d'au moins 6.\n\nIl se nourrit surtout d'algues et de micro-organismes : aquarium planté et mûr, légumes frais et pastilles végétales. Sa reproduction a été obtenue : le couple prend la « position en T » des corydoras, puis les œufs sont dispersés dans le bac. Vues de dessus, les femelles sont plus larges.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Otocinclus-macrospilus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/otocinclus-macrospilus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2340471"
+    }
+  ]
+}

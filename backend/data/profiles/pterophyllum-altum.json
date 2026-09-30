@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Pterophyllum altum",
+  "nom_valide": null,
+  "auteur": "Pellegrin, 1903",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Haut rio Negro et affluents du haut Orénoque, dont l'Inírida et l'Atabapo (Colombie, Venezuela)",
+  "pays": [
+    "COL",
+    "VEN"
+  ],
+  "presentation": "Décrit en 1903 par le zoologiste français Jacques Pellegrin, le scalaire altum est le plus grand des scalaires : il atteint 18 cm de long et près de 20 cm de haut, nageoires comprises. Son nom latin *altum* signifie « haut ».\n\nOn le distingue du scalaire commun par un profil de tête plus concave au-dessus de la bouche, un corps plus haut et des bandes verticales plus marquées. Presque tous les spécimens vendus sont capturés dans la nature, car sa reproduction en captivité reste difficile.",
+  "habitat": "Il est originaire de Colombie et du Venezuela : haut rio Negro et affluents du haut Orénoque comme l'Inírida et l'Atabapo, jusqu'à Puerto Ayacucho.\n\nIl vit dans des rivières d'eaux noires, extrêmement douces et acides (pH 4,8 à 6,2), et très chaudes (27 à 31 °C), parmi les branches et racines immergées.",
+  "comportement": "Paisible avec les poissons de taille comparable, il mange tout ce qui tient dans sa bouche : néons, guppys et petits rasboras sont des proies. On le maintient en groupe, dans un grand bac haut, avec des compagnons de grande taille et calmes.\n\nLes poissons sauvages sont souvent difficiles à nourrir au début et réclament des proies vivantes. La reproduction exige une eau très acide et douce ; un groupe de jeunes permet aux couples de se former. Les mâles développent une petite bosse nucale en période de reproduction.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pterophyllum-altum.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pterophyllum-altum/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5208522"
+    }
+  ]
+}

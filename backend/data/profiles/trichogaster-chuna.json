@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Trichogaster chuna",
+  "nom_valide": null,
+  "auteur": "(Hamilton, 1822)",
+  "classification": "Anabantiformes › Osphronemidae",
+  "uicn": "LC",
+  "repartition": "Bassins du Gange et du Brahmapoutre (nord de l'Inde, Bangladesh, Népal)",
+  "pays": [
+    "BGD",
+    "IND",
+    "NPL"
+  ],
+  "presentation": "Décrit en 1822 par Francis Hamilton, le gourami miel doit son nom commun à la robe jaune miel des mâles en parade, qui prennent alors une gorge bleu-noir. *Trichogaster* signifie « ventre à cheveux », pour ses nageoires pelviennes transformées en longs filaments tactiles ; *chuna* vient d'un nom local.\n\nComme tous les anabantoïdes, il possède un labyrinthe, un organe respiratoire qui lui permet d'utiliser l'air pris en surface. Les poissons du commerce proviennent presque tous d'élevages.",
+  "habitat": "Il vit dans le Gange, sa plaine d'inondation et son delta au Bangladesh, ainsi que dans le système du Brahmapoutre (Assam, Manipur, Meghalaya, Arunachal Pradesh), avec des signalements au Népal.\n\nIl fréquente les eaux de basse altitude lentes et très végétalisées : mares, fossés, *beels* (lacs de plaine), champs inondés. Ces milieux changent de volume, de chimie et de turbidité avec la mousson, de juin à octobre.",
+  "comportement": "Lent et paisible, il se fait facilement intimider ou devancer par des compagnons plus vifs : de petits cyprinidés calmes et des loches discrètes lui conviennent. Sans former de banc, il apprécie la compagnie de ses congénères ; en groupe de 4 à 6, une hiérarchie s'installe.\n\nDans la nature, il ferait tomber les insectes posés sur les feuilles en leur crachant des gouttes d'eau. Le mâle construit un nid de bulles sous les plantes flottantes et forme un couple temporaire avec la femelle, plus grande et brunâtre.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Trichogaster-chuna.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/trichogaster-chuna/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5211191"
+    }
+  ]
+}

@@ -37,7 +37,7 @@ class Base(DeclarativeBase):
     def as_dict(self) -> dict:
         """ Conversion en dictionnaire (pour JSON)
         """
-        return {k: v.isoformat() if isinstance(v, datetime) else v
-                for k, v in self.__dict__.items() if not k.startswith('_')}
+        values = {attr.key: getattr(self, attr.key) for attr in self.__mapper__.column_attrs}
+        return {k: v.isoformat() if isinstance(v, datetime) else v for k, v in values.items()}
 
 

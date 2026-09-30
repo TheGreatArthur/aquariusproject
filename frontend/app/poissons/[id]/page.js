@@ -7,6 +7,7 @@ import { ArrowLeft, Clock, Droplet, Ruler, Users } from 'lucide-react';
 
 import BehaviourBadge from '@/components/fish/BehaviourBadge';
 import FishGallery from '@/components/fish/FishGallery';
+import FishProfile from '@/components/fish/FishProfile';
 import RangeBar from '@/components/fish/RangeBar';
 import Reveal from '@/components/Reveal';
 import { familyHref } from '@/lib/families';
@@ -100,6 +101,8 @@ export default function Poisson ({ params }) {
           </dl>
         </Reveal>
       </div>
+
+      <FishProfile profil={data.profil} nomScientifique={data.nom_scientifique}/>
     </div>
   );
 }

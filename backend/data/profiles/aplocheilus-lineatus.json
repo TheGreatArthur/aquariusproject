@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Aplocheilus lineatus",
+  "nom_valide": null,
+  "auteur": "(Valenciennes, 1846)",
+  "classification": "Cyprinodontiformes › Aplocheilidae",
+  "uicn": "LC",
+  "repartition": "Inde péninsulaire et nord du Sri Lanka",
+  "pays": [
+    "IND",
+    "LKA"
+  ],
+  "presentation": "Décrit en 1846 par Achille Valenciennes à partir de poissons de Bombay (Mumbai), le panchax rayé est un grand killi de surface qui atteint 10 cm. Les mâles, verdâtres, sont ponctués d'écailles dorées et portent de fines barres sombres sur l'arrière du corps.\n\nLa forme dorée « golden wonder », très répandue en aquariophilie, a été sélectionnée en captivité et n'existe pas dans la nature. Dans son pays d'origine, l'espèce est utilisée pour lutter contre les larves de moustiques.",
+  "habitat": "Il est largement réparti dans l'Inde péninsulaire et dans le nord du Sri Lanka ; il a été introduit à Singapour et à Hong Kong.\n\nIl occupe des milieux très variés : ruisseaux et lacs de montagne, puits de plaine, rizières, marais, et même eaux saumâtres des estuaires. Contrairement à beaucoup de killis, il vit dans des eaux permanentes et n'est pas annuel ; il se tient surtout sous la végétation flottante ou surplombante.",
+  "comportement": "Prédateur de surface, il chasse insectes et petits poissons : il faut l'associer à des espèces paisibles trop grosses pour être avalées (cichlidés calmes, grands tétras, corydoras, loricariidés). Il peut être agressif envers ses congénères, mais un groupe tient dans un bac assez grand.\n\nExcellent sauteur, il impose un aquarium bien couvert. Il se reproduit facilement : les œufs adhésifs sont déposés dans les plantes fines ou une mousse de ponte.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Aplocheilus-lineatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/aplocheilus-lineatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2347854"
+    }
+  ]
+}

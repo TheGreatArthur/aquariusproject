@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Channa asiatica",
+  "nom_valide": null,
+  "auteur": "(Linnaeus, 1758)",
+  "classification": "Anabantiformes › Channidae",
+  "uicn": "LC",
+  "repartition": "Chine centrale et méridionale (jusqu'au Yangtsé), Hainan, Hong Kong et bassin du fleuve Rouge (Vietnam)",
+  "pays": [
+    "CHN",
+    "HKG",
+    "VNM"
+  ],
+  "presentation": "Décrit en 1758 par Carl von Linné, *Channa asiatica* est l'un des poissons-têtes-de-serpent les plus anciennement connus. Il se reconnaît à ses barres verticales noires sur fond brun et aux nombreux points blancs qui constellent son corps et ses nageoires ; il n'a pas de nageoires pelviennes.\n\nSon plus proche parent est *Channa nox*, plus sombre. Il a été introduit à Taïwan et sur l'île d'Ishigaki, dans l'archipel des Ryūkyū.",
+  "habitat": "Il est originaire de Chine centrale et méridionale, le Yangtsé marquant la limite nord de son aire, ainsi que de l'île de Hainan, de Hong Kong et du bassin du fleuve Rouge, au nord du Vietnam.\n\nGénéraliste, il fréquente les étangs, les lacs et les rivières lentes des régions de forêt humide, caché dans les crevasses et les racines. Il supporte une eau pauvre en oxygène et peut même ramper sur de courtes distances hors de l'eau pour changer de point d'eau.",
+  "comportement": "Prédateur, il se maintient en bac spécifique. Des jeunes peuvent vivre ensemble, mais une fois un couple formé, les autres individus sont en danger.\n\nIl se nourrit surtout de petits poissons, de crustacés et d'insectes, et accepte bien les aliments morts. À partir de 18 cm environ, un couple bien nourri se reproduit au moins une fois par an : les parents s'enlacent, des milliers d'œufs flottent en surface et les deux parents défendent la ponte et les jeunes. Les mâles ont plus de points argentés et des nageoires plus longues.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Channa-asiatica.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/channa-asiatica/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2391557"
+    }
+  ]
+}

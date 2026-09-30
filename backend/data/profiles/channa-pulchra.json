@@ -1,0 +1,32 @@
+{
+  "nom_scientifique": "Channa pulchra",
+  "nom_valide": null,
+  "auteur": "Britz, 2007",
+  "classification": "Anabantiformes › Channidae",
+  "uicn": "DD",
+  "repartition": "Tête du bassin de la Kyeintali Chaung, monts d'Arakan, État de Rakhine (ouest du Myanmar)",
+  "pays": [
+    "MMR"
+  ],
+  "emprise": [93.8, 17.3, 95.3, 19.3],
+  "localites": [
+    [94.55, 18.05]
+  ],
+  "presentation": "Décrit en 2007 par l'ichtyologiste allemand Ralf Britz, en même temps que *Channa ornatipinnis*, *Channa pulchra* (« belle ») est un poisson-tête-de-serpent aux flancs bleu-gris ponctués de taches sombres et aux nageoires ourlées de clair. Bien que parfois qualifiée de « naine », l'espèce atteint 30 cm.\n\nL'UICN la classe en « données insuffisantes » : elle n'est connue que d'un petit bassin des monts d'Arakan.",
+  "habitat": "Elle vit dans le bassin de la Kyeintali Chaung, dans les monts d'Arakan (Rakhine Yoma), à l'ouest du Myanmar.\n\nSes ruisseaux sont rapides, clairs, très oxygénés et relativement frais, sous un climat subtropical : l'eau ne dépasse guère 23 °C. Comme toutes les *Channa*, elle respire l'air en surface.",
+  "comportement": "Prédatrice, elle se maintient seule ou en couple dans un bac spécifique ; ses congénères deviennent des rivaux à maturité, et tout poisson qui tient dans sa bouche est une proie. Un bac couvert est indispensable, car les *Channa* sautent.\n\nElle se nourrit de poissons, d'insectes et de crustacés, et accepte en aquarium crevettes, moules et vers. Des aquariophiles britanniques et allemands l'ont reproduite ; les sources divergent sur son mode d'incubation (en cavité ou dans la bouche).",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Channa-pulchra.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2391539"
+    },
+    {
+      "nom": "Wikipédia (en)",
+      "url": "https://en.wikipedia.org/wiki/Channa_pulchra"
+    }
+  ]
+}

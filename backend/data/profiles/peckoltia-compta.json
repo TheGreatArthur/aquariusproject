@@ -1,0 +1,24 @@
+{
+  "nom_scientifique": "Peckoltia compta",
+  "nom_valide": null,
+  "auteur": "De Oliveira, Zuanon, Rapp Py-Daniel & Rocha, 2010",
+  "classification": "Siluriformes › Loricariidae",
+  "uicn": "EN",
+  "repartition": "Bassin du rio Tapajós (Pará, Brésil)",
+  "pays": [
+    "BRA"
+  ],
+  "presentation": "Longtemps connu des aquariophiles sous le code L134 ou le nom de « pléco grenouille léopard », ce petit loricariidé n'a été décrit qu'en 2010 par une équipe de chercheurs brésiliens (de Oliveira, Zuanon, Rapp Py-Daniel et Rocha). *Compta* signifie « orné » en latin, pour ses larges bandes brun foncé sur fond jaune.\n\nIl se distingue des autres *Peckoltia* par une ligne claire à l'intérieur des bandes sombres qui vont du museau aux yeux. Il ne dépasse guère 8 cm. L'UICN le classe « en danger ».",
+  "habitat": "Il est originaire du bassin du rio Tapajós, un grand affluent clair de la rive droite de l'Amazone, au Brésil.\n\nIl vit dans les zones rocheuses et les amas de bois des secteurs courants, dans une eau claire, chaude et bien oxygénée. Ses populations sont exposées aux projets de barrages et à l'orpaillage dans le bassin.",
+  "comportement": "Paisible avec les poissons de pleine eau, il est territorial envers les autres petits plécos et défend sa cachette. Principalement nocturne, il s'abrite le jour dans les cavités et les fissures.\n\nOmnivore, il mange aliments coulants, petites proies congelées et un peu de végétaux. C'est un pondeur en cavité : le mâle garde les œufs dans un abri étroit jusqu'à l'autonomie des alevins.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Peckoltia-compta.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5961513"
+    }
+  ]
+}

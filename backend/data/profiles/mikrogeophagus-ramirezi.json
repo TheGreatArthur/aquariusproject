@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Mikrogeophagus ramirezi",
+  "nom_valide": null,
+  "auteur": "(Myers & Harry, 1948)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Llanos du bassin de l'Orénoque (Venezuela, Colombie)",
+  "pays": [
+    "COL",
+    "VEN"
+  ],
+  "presentation": "Décrit en 1948 par George Myers et Robert Harry, le ramirezi (ou « papillon ») est un cichlidé nain aux reflets bleu électrique et aux premiers rayons dorsaux noirs. Le nom *ramirezi* reprenait simplement celui sous lequel il était déjà vendu. *Mikrogeophagus* signifie « petit mangeur de terre ».\n\nLes formes d'élevage intensif (dorées, « électrique », « ballon ») sont souvent génétiquement fragiles, sensibles aux maladies et de vie courte ; les poissons sauvages sont plus robustes mais plus exigeants sur l'eau.",
+  "habitat": "Il vit dans les Llanos, une immense région de savanes, de plaines et de forêts inondées de près de 600 000 km² au Venezuela et en Colombie, drainée par les affluents de l'Orénoque. Le climat y est chaud toute l'année, avec une saison des pluies et une saison sèche bien marquées.\n\nL'eau y est chaude (27 à 30 °C), douce et acide.",
+  "comportement": "Souvent vendu comme poisson communautaire, il ne l'est pas vraiment : il exige une eau irréprochable et chaude et se fait facilement devancer. De petits poissons de banc paisibles (cardinalis, faux-néons) le rassurent ; il faut éviter les espèces territoriales, dont la plupart des autres cichlidés.\n\nIl se nourrit en prenant des bouchées de sable qu'il tamise, rejetant les grains par les ouïes. Le couple pond sur une pierre plate ou dans une cuvette et garde ensemble œufs et alevins. Les femelles ont souvent une tache rose sur le ventre.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Mikrogeophagus-ramirezi.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/mikrogeophagus-ramirezi/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2373104"
+    }
+  ]
+}

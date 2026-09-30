@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Dario dario",
+  "nom_valide": null,
+  "auteur": "(Hamilton, 1822)",
+  "classification": "Anabantiformes › Badidae",
+  "uicn": "DD",
+  "repartition": "Affluents du Brahmapoutre au Bengale-Occidental et en Assam (Inde), peut-être au Bhoutan",
+  "pays": [
+    "IND"
+  ],
+  "presentation": "Décrit en 1822 par Francis Hamilton, le badis écarlate est l'un des plus petits poissons perciformes : le mâle mesure environ 2 cm. Son nom vient de *darhi*, son nom en bengali. Le mâle adulte, rouge vif barré de bleu irisé, a des nageoires pelviennes et dorsales bordées de bleu ; la femelle est terne.\n\nIl a longtemps été placé dans le genre *Badis* : une révision de Sven Kullander et Ralf Britz en 2002 a créé pour lui le genre *Dario* et désigné un néotype, faute de spécimen original. L'UICN le classe en « données insuffisantes ».",
+  "habitat": "Il vit dans les affluents du Brahmapoutre, au Bengale-Occidental et en Assam ; le néotype provient de la rivière Janali, dans le district de Kokrajhar.\n\nIl habite des ruisseaux peu profonds (30 à 70 cm) à l'eau cristalline, sur fond de sable et de gravier, avec une végétation aquatique dense (*Limnophila*, *Hygrophila*, *Vallisneria*, *Rotala*). En saison sèche, l'eau y est autour de 26 °C.",
+  "comportement": "Lent et discret, il se fait intimider et devancer par des compagnons plus gros : un bac spécifique ou partagé avec de petits poissons de pleine eau lui convient. Les mâles rivaux sont très agressifs entre eux ; on maintient un couple ou un mâle avec plusieurs femelles, sauf dans un bac spacieux avec des territoires bien séparés.\n\nMicro-prédateur, il refuse souvent les aliments secs et réclame nauplies d'artémias, daphnies ou micro-vers. Il pond sur un support, en couple temporaire. Le commerce ne propose souvent que des mâles.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Dario-dario.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/dario-dario/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2389480"
+    }
+  ]
+}

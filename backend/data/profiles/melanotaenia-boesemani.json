@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Melanotaenia boesemani",
+  "nom_valide": null,
+  "auteur": "Allen & Cross, 1980",
+  "classification": "Atheriniformes › Melanotaeniidae",
+  "uicn": "EN",
+  "repartition": "Lacs Ajamaru, Hain et Aitinjo, péninsule de Vogelkop (Papouasie occidentale, Indonésie)",
+  "pays": [
+    "IDN"
+  ],
+  "presentation": "Décrit en 1980 par Gerald Allen et Norbert Cross, l'arc-en-ciel de Boeseman est dédié à l'ichtyologiste néerlandais Marinus Boeseman. Le mâle adulte est spectaculaire : l'avant du corps bleu-gris, l'arrière jaune orangé, avec un dos très haut.\n\nIl est classé « en danger » par l'UICN : son aire est minuscule, et les captures massives pour l'aquariophilie dans les années 1980 ont fortement réduit ses populations. Les poissons du commerce proviennent aujourd'hui d'élevages.",
+  "habitat": "Il n'est connu que des lacs Ajamaru, au cœur de la péninsule de Vogelkop (la « tête d'oiseau » de la Nouvelle-Guinée), et des lacs voisins Hain et Aitinjo. Ces lacs se déversent vers la rivière Kais puis la mer de Céram.\n\nLes poissons se regroupent dans les hauts-fonds clairs couverts d'une végétation aquatique dense. L'eau des lacs est dure et alcaline (pH 8 à 9) et chaude, même si l'espèce vit aussi dans quelques affluents aux eaux bien différentes.",
+  "comportement": "Très paisible mais vif et plutôt craintif, il vit mieux en banc de 6 à 8 individus au moins, dans un bac long. Ses mouvements rapides peuvent déranger les poissons lents ou plus petits ; il cohabite avec d'autres arcs-en-ciel, des barbus, des danios et même des cichlidés africains d'eau dure.\n\nOmnivore peu difficile, il colore mieux avec des proies vivantes ou congelées. Il disperse ses œufs dans les plantes fines ou une mousse de ponte ; les alevins, minuscules, sont délicats à élever.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Melanotaenia-boesemani.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/melanotaenia-boesemani/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2411651"
+    }
+  ]
+}

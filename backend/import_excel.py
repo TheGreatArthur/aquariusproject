@@ -13,8 +13,10 @@ from corrections import apply_corrections
 from models import Poisson, Famille, Genre, ZoneGeo, Robustesse, Comportement, Dispo, Base, TypeEau, ModeVie, Courant
 from models.meta import get_engine
 from normalize import (
-    clean, normalize_comportement, normalize_courant, normalize_mode_vie, normalize_regime, normalize_zone,
+    clean, normalize_comportement, normalize_courant, normalize_famille, normalize_mode_vie, normalize_regime,
+    normalize_zone,
 )
+from profiles import load_occurrences, load_profiles, upsert_profiles
 from utils import get_or_create_id
 
 engine = get_engine(DSN)
@@ -56,7 +58,7 @@ def parse_row(row: tuple) -> dict:
         code=row[0],
         nom_scientifique=clean(row[1]),
         nom_commun=clean(row[2]),
-        famille=clean(row[3]),
+        famille=normalize_famille(row[3]),
         genre=clean(row[4]),
         ph_mini=_number(row[5]),
         ph_maxi=_number(row[6]),
@@ -116,8 +118,12 @@ if __name__ == '__main__':
 
     with Session(engine) as db:
         for row in ws.iter_rows(min_row=2, values_only=True):
-            params = to_params(db, apply_corrections(parse_row(row)))
-            poisson = db.scalar(select(Poisson).filter_by(nom_scientifique=params['nom_scientifique']))
+            fish = parse_row(row)
+            excel_name = fish['nom_scientifique']
+            params = to_params(db, apply_corrections(fish))
+            # Un poisson renommé par corrections.py garde sa ligne (et son id) : recherche aussi sous l'ancien nom
+            poisson = (db.scalar(select(Poisson).filter_by(nom_scientifique=params['nom_scientifique']))
+                       or db.scalar(select(Poisson).filter_by(nom_scientifique=excel_name)))
             if poisson:
                 print('Edition poisson', poisson)
                 for k,v in params.items():
@@ -130,4 +136,6 @@ if __name__ == '__main__':
 
         db.flush()
         delete_unused_nomenclatures(db)
+        for name in upsert_profiles(db, load_profiles(), load_occurrences()):
+            print('Fiche sans poisson en base :', name)
         db.commit()

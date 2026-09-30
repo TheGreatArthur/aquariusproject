@@ -1,0 +1,25 @@
+{
+  "nom_scientifique": "Tyttocharax cochui",
+  "nom_valide": null,
+  "auteur": "(Ladiges, 1950)",
+  "classification": "Characiformes › Stevardiidae",
+  "uicn": "LC",
+  "repartition": "Bassin amazonien (Brésil, Pérou)",
+  "pays": [
+    "BRA",
+    "PER"
+  ],
+  "presentation": "Décrit en 1950 par l'ichtyologiste allemand Werner Ladiges, ce petit tétra bleu dépasse à peine 2 cm sans la queue. Comme *Tyttocharax tambopatensis*, il fait partie de la sous-famille des Xenurobryconinae, placée depuis la révision de 2024 dans la famille des Stevardiidae.\n\nL'espèce reste peu étudiée : les sources de référence donnent surtout sa taille et son aire générale, sans description détaillée de sa biologie.",
+  "habitat": "FishBase le situe dans le bassin amazonien, avec des populations connues au Brésil et au Pérou. Comme les autres membres de son genre, il est associé aux petits cours d'eau forestiers à courant faible.\n\nFaute de relevés publiés sur ses biotopes, les plages de paramètres de la fiche reposent sur les recommandations d'aquariophilie pour le genre : eau douce, légèrement acide, entre 23 et 26 °C.",
+  "comportement": "Paisible et grégaire, il vit en banc et doit être maintenu en groupe d'au moins une dizaine d'individus. Sa petite taille le rend vulnérable face à des compagnons plus gros ou turbulents.\n\nIl se nourrit de petites proies (zooplancton, larves) : en aquarium, des aliments vivants ou congelés très fins lui conviennent mieux que les flocons.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Tyttocharax-cochui.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2353898"
+    }
+  ]
+}

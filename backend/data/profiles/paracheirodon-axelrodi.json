@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Paracheirodon axelrodi",
+  "nom_valide": null,
+  "auteur": "(Schultz, 1956)",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Moyen et haut rio Negro, canal de Casiquiare et haut Orénoque (Brésil, Colombie, Venezuela)",
+  "pays": [
+    "BRA",
+    "COL",
+    "VEN"
+  ],
+  "presentation": "Le cardinalis a été décrit en 1956 par l'ichtyologiste américain Leonard P. Schultz dans la revue d'aquariophilie *Tropical Fish Hobbyist*, sous le nom *Cheirodon axelrodi*. George Myers et Stanley Weitzman s'apprêtaient à publier la même espèce sous le nom *Hyphessobrycon cardinalis* : la règle d'antériorité a retenu le nom de Schultz, dédié à Herbert R. Axelrod, fondateur de la revue.\n\nIl se distingue du néon bleu par sa bande rouge qui couvre toute la face ventrale, de la tête à la queue. Une révision de la classification des tétras publiée en 2024 le range désormais dans la famille des Acestrorhamphidae, séparée des Characidae.",
+  "habitat": "Il fréquente les petits cours d'eau forestiers et les bras secondaires à courant lent. Dans le bassin du rio Negro, ce sont des igapós et igarapés aux eaux noires : très acides, presque sans dureté, teintées de brun par les substances humiques des feuilles en décomposition, sous une végétation riveraine dense. Dans l'Orénoque, il vit plutôt dans les morichales, aux eaux claires sur fond de sable.\n\nLe rythme des crues structure sa vie : à la saison sèche, les poissons se regroupent en grands bancs dans les chenaux, puis se dispersent dans la forêt inondée quand les eaux montent. Des études génétiques ont montré que les populations du haut rio Negro sont des lignées anciennes et distinctes, jugées prioritaires pour la conservation.",
+  "comportement": "Paisible et grégaire, il nage en bancs serrés dans la couche d'eau moyenne et se nourrit de vers, de petits crustacés et de débris végétaux. Dans la nature, c'est presque un poisson annuel : les individus de plus d'un an y sont rares, alors qu'il vit plusieurs années en aquarium.\n\nUn groupe d'au moins 8 à 10 individus le met en confiance et révèle un comportement de banc naturel. Sa reproduction en captivité reste délicate : une grande partie des cardinalis du commerce est encore pêchée dans le moyen rio Negro, notamment dans le cadre du Projet Piaba, une pêche encadrée qui fait vivre les communautés riveraines.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Paracheirodon-axelrodi.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/paracheirodon-axelrodi/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2353911"
+    }
+  ]
+}

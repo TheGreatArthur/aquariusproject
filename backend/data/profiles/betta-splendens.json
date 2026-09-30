@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Betta splendens",
+  "nom_valide": null,
+  "auteur": "Regan, 1910",
+  "classification": "Anabantiformes › Osphronemidae",
+  "uicn": "VU",
+  "repartition": "Centre de la Thaïlande, du Chiang Rai à l'isthme de Kra (bassin du Chao Phraya)",
+  "pays": [
+    "THA"
+  ],
+  "emprise": [97.5, 7.5, 105.7, 20.5],
+  "presentation": "Décrit en 1910 par Charles Tate Regan, du British Museum, le combattant doit son nom à une tradition thaïlandaise : des mâles sont sélectionnés pour s'affronter lors de combats sur lesquels on parie. *Betta* vient de *ikan betah*, nom malais de ces poissons, et *splendens* signifie « éclatant ».\n\nLa forme sauvage, aux nageoires courtes, est rare en aquariophilie ; il existe d'innombrables lignées d'élevage, aux couleurs et aux nageoires extrêmes, parfois hybridées avec des espèces voisines. Il est classé « vulnérable » par l'UICN : la destruction de son habitat et le relâchement de formes d'élevage menacent les populations sauvages.",
+  "habitat": "Selon Seriously Fish, il vit naturellement dans le centre de la Thaïlande, du Chiang Rai jusqu'aux provinces de Surat Thani et Phang Nga ; les signalements du bassin du Mékong concerneraient d'autres espèces ou des populations introduites. Il s'est implanté à Singapour, en Malaisie, en Indonésie, au Brésil, en Colombie et en République dominicaine.\n\nIl fréquente les eaux stagnantes ou lentes : rizières, marais, fossés, mares, souvent ombragés par la végétation et pauvres en oxygène. Il respire l'air en surface grâce à un organe accessoire, le labyrinthe.",
+  "comportement": "Les mâles sont extrêmement agressifs entre eux et attaquent tout poisson aux longues nageoires qu'ils prennent pour un rival : un seul mâle par bac, en évitant les compagnons à nageoires voilées. Les femelles se maintiennent à part, hors reproduction.\n\nIl se nourrit de zooplancton et de larves d'insectes, moustiques notamment. Le mâle construit un nid de bulles en surface, y place les œufs après la ponte et les surveille ; la femelle doit disposer de nombreuses cachettes. Un couvercle bien ajusté garde l'air chaud et humide au-dessus de l'eau, ce dont il a besoin pour respirer.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Betta-splendens.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/betta-splendens/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2393998"
+    }
+  ]
+}

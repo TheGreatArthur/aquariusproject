@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Hyphessobrycon flammeus",
+  "nom_valide": null,
+  "auteur": "Myers, 1924",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "EN",
+  "repartition": "Sud-est du Brésil : États de Rio de Janeiro et de São Paulo (baie de Guanabara, rio Paraíba do Sul, haut rio Tietê)",
+  "pays": [
+    "BRA"
+  ],
+  "presentation": "Décrit en 1924 par George S. Myers, le tétra de Rio doit son nom latin *flammeus* (« couleur de flamme ») à sa robe rouge orangé. Il a été redécrit en 2014, ce qui a précisé les critères qui le séparent des espèces voisines : deux taches humérales verticales bien marquées et une nageoire caudale transparente.\n\nIl est classé « en danger » par l'UICN. Ses populations naturelles, situées dans des régions très urbanisées autour de Rio de Janeiro et de São Paulo, ont fortement régressé ; en revanche, il est élevé commercialement dans plusieurs pays, avec des formes orange, dorées, « diamant » ou albinos.",
+  "habitat": "Il vit dans de petits ruisseaux peu profonds (moins de 50 cm) au courant lent, souvent envahis par la végétation aquatique, et plus rarement en bordure du chenal principal du haut rio Tietê. L'eau y est claire à brunâtre, sur fond de sable, entre 22 et 28 °C.\n\nSon aire comprend les rivières côtières qui se jettent dans la baie de Guanabara, le moyen rio Paraíba do Sul et le rio Guandu dans l'État de Rio de Janeiro, ainsi que le haut rio Tietê dans l'État de São Paulo.",
+  "comportement": "Pacifique, il forme des bancs assez nombreux au sein desquels les mâles dominants établissent des hiérarchies temporaires et paradent pour les femelles : un groupe de 8 à 10 individus au minimum montre ces interactions et de meilleures couleurs.\n\nOmnivore, il consomme petits insectes, vers, algues filamenteuses et débris organiques. La femelle dépose 200 à 300 œufs sur des plantes ou des débris immergés ; ils éclosent en 2 à 3 jours. Les mâles, plus fins et plus colorés, portent de petits crochets osseux sur les nageoires anale et pelviennes.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hyphessobrycon-flammeus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hyphessobrycon-flammeus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2354538"
+    }
+  ]
+}

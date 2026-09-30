@@ -1,0 +1,32 @@
+{
+  "nom_scientifique": "Xiphophorus hellerii",
+  "nom_valide": null,
+  "auteur": "Heckel, 1848",
+  "classification": "Cyprinodontiformes › Poeciliidae",
+  "uicn": "LC",
+  "repartition": "Sud-est du Mexique, Guatemala, sud du Belize et nord-ouest du Honduras",
+  "pays": [
+    "BLZ",
+    "GTM",
+    "HND",
+    "MEX"
+  ],
+  "emprise": [-99, 13, -86, 23],
+  "presentation": "Décrit en 1848 par l'ichtyologiste autrichien Johann Jakob Heckel, le xipho porte le nom du botaniste autrichien Karl Bartholomaeus Heller, qui explora le Mexique de 1845 à 1848 et rapporta les premiers spécimens ; le nom s'écrit avec deux i, *hellerii*. Le mâle se reconnaît à l'« épée » qui prolonge le lobe inférieur de sa nageoire caudale.\n\nC'est l'un des poissons d'aquarium les plus connus au monde, décliné en une foule de variétés, parfois issues d'hybridations avec le platy. Comme lui, il sert de modèle en génétique et en recherche sur le cancer.",
+  "habitat": "Son aire naturelle va du río Nautla, dans l'État de Veracruz, jusqu'au bassin de l'Usumacinta au Guatemala, au río Sarstún à la frontière du Belize et aux ríos Copán et Chamelecón au Honduras ; la localité type est Orizaba. Il a été introduit sur tous les continents sauf l'Antarctique, souvent au détriment des espèces locales.\n\nIl vit du niveau de la mer jusqu'à 1 500 m d'altitude : torrents rocheux, sources, fossés, mares et rivières claires ou troubles, souvent sans plantes. Les adultes se tiennent dans le courant, les jeunes dans les bordures calmes.",
+  "comportement": "Paisible avec les autres espèces, il est plus vif et plus grand que le platy. En espace restreint, les mâles établissent une hiérarchie et consacrent beaucoup de temps à défendre leur rang : un bac assez long et plusieurs femelles par mâle limitent les tensions.\n\nOmnivore généraliste, il mange invertébrés aquatiques et terrestres, détritus, algues et végétaux. Vivipare, il se reproduit facilement ; les femelles choisissent notamment les mâles selon la longueur de leur épée, un exemple classique de sélection sexuelle.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Xiphophorus-hellerii.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/xiphophorus-hellerii/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/8246728"
+    }
+  ]
+}

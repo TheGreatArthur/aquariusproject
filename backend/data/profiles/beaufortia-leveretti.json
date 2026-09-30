@@ -1,0 +1,25 @@
+{
+  "nom_scientifique": "Beaufortia leveretti",
+  "nom_valide": null,
+  "auteur": "(Nichols & Pope, 1927)",
+  "classification": "Cypriniformes › Gastromyzontidae",
+  "uicn": "DD",
+  "repartition": "Sud de la Chine et nord du Vietnam",
+  "pays": [
+    "CHN",
+    "VNM"
+  ],
+  "presentation": "Décrit en 1927 par John Treadwell Nichols et Clifford Pope, *Beaufortia leveretti* est une loche de torrent au corps très aplati, presque circulaire vu de dessus, marbré de brun et de beige. Le genre *Beaufortia* honore l'ichtyologiste néerlandais Lieven Ferdinand de Beaufort.\n\nComme les *Gastromyzon*, il appartient à la famille des Gastromyzontidae : ses nageoires paires forment une ventouse qui le maintient sur les pierres dans le courant. L'UICN le classe en « données insuffisantes ».",
+  "habitat": "Il vit dans les cours d'eau de montagne du sud de la Chine et du nord du Vietnam.\n\nIl fréquente les torrents à fond de graviers et de pierres, à l'eau claire, fraîche (18 à 24 °C) et très oxygénée, où il broute le biofilm des roches.",
+  "comportement": "Paisible, il passe son temps collé aux pierres et aux vitres. Il peut défendre un petit territoire face à ses congénères, sans gravité.\n\nIl lui faut un aquarium à fort courant, bien oxygéné et pas trop chaud, avec des pierres lisses couvertes d'algues ; on complète avec des pastilles végétales et de petites proies. Il supporte mal les eaux chaudes et stagnantes des bacs tropicaux classiques.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Beaufortia-leveretti.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5205365"
+    }
+  ]
+}

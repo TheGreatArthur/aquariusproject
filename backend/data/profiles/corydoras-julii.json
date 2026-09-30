@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Corydoras julii",
+  "nom_valide": "Hoplisoma julii",
+  "auteur": "(Steindachner, 1906)",
+  "classification": "Siluriformes › Callichthyidae",
+  "uicn": "LC",
+  "repartition": "Bas Amazone et fleuves côtiers du nord-est du Brésil (bassin du Parnaíba)",
+  "pays": [
+    "BRA"
+  ],
+  "emprise": [-56, -12, -40, 0],
+  "presentation": "Décrit en 1906 par Franz Steindachner, le corydoras léopard porte le nom d'un certain « Julius » dont l'identité reste un mystère. FishBase le range aujourd'hui dans le genre *Hoplisoma*.\n\nBeaucoup de poissons vendus sous ce nom sont en réalité *C. trilineatus*, une espèce très semblable du haut Amazone, plus souvent capturée pour le commerce. On les distingue traditionnellement à la tête, couverte de petits points nets chez *C. julii* et de marques vermiculées chez *C. trilineatus* ; mais certains *trilineatus* sont eux aussi ponctués.",
+  "habitat": "Il vit dans le bas Amazone et les fleuves côtiers du nord-est du Brésil. Sa localité type est un ruisseau affluent du rio Parnaíba, près d'Alto Parnaíba.\n\nComme les autres corydoras, il fréquente le fond des petits cours d'eau à fond sableux, dans une eau douce à moyennement dure, entre 20 et 26 °C.",
+  "comportement": "Paisible et grégaire, il se maintient en groupe d'au moins 6 individus et fouille le sol à la recherche de vers, de crustacés, d'insectes et de débris végétaux.\n\nIl se reproduit comme la plupart des corydoras : un grand changement d'eau fraîche déclenche la ponte, les œufs étant collés sur les vitres ou les plantes. Les femelles sont plus grandes et plus larges que les mâles.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Corydoras-julii.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/corydoras-julii/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2342734"
+    }
+  ]
+}

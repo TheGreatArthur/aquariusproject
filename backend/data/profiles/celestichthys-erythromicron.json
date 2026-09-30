@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Celestichthys erythromicron",
+  "nom_valide": "Danio erythromicron",
+  "auteur": "(Annandale, 1918)",
+  "classification": "Cypriniformes › Danionidae",
+  "uicn": "EN",
+  "repartition": "Endémique du lac Inle et de son bassin, État Shan (Myanmar), et environs de Loikaw (État Kayah)",
+  "pays": [
+    "MMR"
+  ],
+  "presentation": "Décrit en 1918 par le zoologiste britannique Nelson Annandale, le danio émeraude porte un nom grec qui signifie « petit et rouge ». Il a été placé dans le genre *Celestichthys* créé pour le « galaxy », mais FishBase le range aujourd'hui dans *Danio*, sous le nom *Danio erythromicron*.\n\nC'est un cas de miniaturisation : il se reproduit à moins de 2 cm. Classé « en danger » par l'UICN, il aurait parfois été hybridé avec le galaxy (*Danio margaritatus*), les hybrides étant vendus comme femelles de ce dernier.",
+  "habitat": "Le lac Inle occupe une vallée karstique à près de 900 m d'altitude sur le plateau Shan. Peu profond (2 à 3 m), à l'eau claire sur un fond limoneux fertile, il abrite neuf espèces de poissons endémiques.\n\nIl est célèbre pour ses villages sur pilotis, ses pêcheurs Intha qui rament avec une jambe, et ses jardins flottants faits d'enchevêtrements de plantes. Ces radeaux végétaux bordent le lac et offrent un abri à de nombreux poissons entre leurs racines. L'eau y est plutôt dure et alcaline.",
+  "comportement": "Grégaire sans former de vrai banc, il vit en groupe lâche où les mâles, rayés de barres bleues irisées, se mesurent toute la journée. Il est vite intimidé par des poissons plus gros ou turbulents : un bac spécifique, ou partagé avec d'autres espèces du lac Inle, lui convient mieux.\n\nIl se nourrit de petits invertébrés, d'algues et de zooplancton et monte rarement en surface. Pondeur libre sans soins parentaux, il fraie souvent dans un bac bien planté. À ne pas associer au galaxy, avec lequel il peut s'hybrider.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Danio-erythromicron.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/celestichthys-erythromicron/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2362710"
+    }
+  ]
+}

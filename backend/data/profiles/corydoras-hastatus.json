@@ -1,0 +1,32 @@
+{
+  "nom_scientifique": "Corydoras hastatus",
+  "nom_valide": "Gastrodermus hastatus",
+  "auteur": "(Eigenmann & Eigenmann, 1888)",
+  "classification": "Siluriformes › Callichthyidae",
+  "uicn": "LC",
+  "repartition": "Bassins de l'Amazone, du Madeira et du Paraguay (Brésil, Bolivie, Paraguay, Argentine)",
+  "pays": [
+    "ARG",
+    "BOL",
+    "BRA",
+    "PRY",
+    "URY"
+  ],
+  "presentation": "Décrit en 1888 par Carl et Rosa Eigenmann, un couple d'ichtyologistes américains, le corydoras nain doit son nom *hastatus* (« armé d'une lance ») à la tache sombre en forme de losange ou de flèche qui marque son pédoncule caudal.\n\nIl mesure moins de 3 cm. Moins courant en aquariophilie que *C. pygmaeus* et *C. habrosus*, il est souvent confondu avec le premier. Depuis la révision de 2024, FishBase le place dans le genre *Gastrodermus*.",
+  "habitat": "Il a une aire étendue pour un corydoras : la localité type se trouve sur l'Amazone entre Santarém et Manaus, et on le connaît aussi du bassin du Madeira en Bolivie et de tout le système du río Paraguay, jusqu'au nord-est de l'Argentine.\n\nIl vit dans les chenaux latéraux, bras morts, marais, lacs de plaine inondable et petits affluents, dans une eau peu profonde, claire à trouble, sur fond de vase ou d'argile, parfois parmi des herbiers ou des plantes flottantes (jacinthes et laitues d'eau).",
+  "comportement": "Contrairement à la plupart des corydoras, il nage souvent en pleine eau, en petits bancs parmi les plantes. Au Paraguay, il se mêle à des bancs de petits characidés argentés à tache caudale, qu'il semble imiter : une ressemblance qui le protégerait des prédateurs.\n\nPaisible et grégaire, il se maintient en groupe d'au moins 6, idéalement 10 individus, avec des espèces de petite taille. Il se nourrit en partie en pleine eau, de petites proies. Les femelles sont plus grandes et plus larges que les mâles.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Corydoras-hastatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/corydoras-hastatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2342685"
+    }
+  ]
+}

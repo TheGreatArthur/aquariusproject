@@ -1,0 +1,37 @@
+{
+  "nom_scientifique": "Pygocentrus nattereri",
+  "nom_valide": null,
+  "auteur": "Kner, 1858",
+  "classification": "Characiformes › Serrasalmidae",
+  "uicn": "LC",
+  "repartition": "Bassin amazonien, Essequibo, fleuves côtiers du nord-est du Brésil, bassins du Paraná et de l'Uruguay",
+  "pays": [
+    "ARG",
+    "BOL",
+    "BRA",
+    "COL",
+    "ECU",
+    "GUY",
+    "PER",
+    "PRY",
+    "URY",
+    "VEN"
+  ],
+  "presentation": "Décrit en 1858 par Rudolf Kner, le piranha à ventre rouge est dédié au naturaliste autrichien Johann Natterer, qui explora le Brésil pendant dix-huit ans. *Pygocentrus* signifie « croupion épineux », pour la carène dentelée de son ventre. Ses dents triangulaires tranchantes sont remplacées par séries, en alternance sur chaque côté de la mâchoire.\n\nSa réputation de dévoreur d'hommes est largement un mythe, né notamment lors du voyage de Theodore Roosevelt au Brésil en 1913-1914 : des piranhas affamés depuis des semaines dans un bras de rivière fermé avaient dévoré une vache sous ses yeux. Il produit aussi des sons, des sortes d'aboiements, avec sa vessie natatoire.",
+  "habitat": "Il occupe une grande partie du bassin amazonien, l'Essequibo, des fleuves côtiers du nord-est du Brésil et des Guyanes, et plus au sud les bassins du Paraná et de l'Uruguay ; la localité type est Cuiabá, dans le Mato Grosso.\n\nIl vit dans presque tous les milieux : grands chenaux, affluents, bras morts, lacs de plaine inondable et même lacs de barrage. Il se reproduit deux fois par an, dans la végétation des rives inondées.",
+  "comportement": "Les jeunes forment des bancs, surtout pour se protéger de leurs propres prédateurs ; les adultes vivent en groupes lâches avec une hiérarchie. On en maintient un seul ou un groupe de 5 ou plus, dans un très grand bac, sans autres poissons.\n\nOpportuniste plutôt que strictement carnivore, il mange poissons, invertébrés, insectes, graines et fruits. Les grands individus chassent surtout à l'aube, en fin d'après-midi et la nuit, en guettant puis en fonçant sur leur proie. Sa morsure peut être grave : prudence lors de l'entretien.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pygocentrus-nattereri.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pygocentrus-nattereri/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2352479"
+    }
+  ]
+}

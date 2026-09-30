@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Thayeria boehlkei",
+  "nom_valide": null,
+  "auteur": "Weitzman, 1957",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Haut Amazone au Pérou et bassin du rio Araguaia au Brésil",
+  "pays": [
+    "BRA",
+    "PER"
+  ],
+  "presentation": "Décrit en 1957 par Stanley Weitzman, le tétra pingouin est le plus connu des *Thayeria*. Il doit son surnom à sa posture : il se tient le corps incliné, tête vers le haut, et une large bande noire descend le long du flanc jusqu'au bout du lobe inférieur de la queue, comme un « frac ».\n\nIl mesure environ 3,5 cm sans la queue et peut atteindre 6 cm de longueur totale en aquarium. La classification des tétras révisée en 2024 le range dans la famille des Acestrorhamphidae.",
+  "habitat": "Son aire de répartition semble limitée au haut bassin amazonien péruvien et au rio Araguaia, au Brésil. L'Araguaia, qui traverse plusieurs États brésiliens, reçoit une multitude d'affluents : l'espèce y occupe probablement des milieux variés, des zones humides riches en plantes immergées aux ruisseaux de forêt bordés de végétation dense mais pauvres en plantes aquatiques.\n\nLes eaux fréquentées sont tropicales (22 à 28 °C), de dureté faible à moyenne.",
+  "comportement": "Pacifique et grégaire, c'est un micro-prédateur qui chasse insectes, vers et petits crustacés. Il se maintient en groupe d'au moins 6, idéalement 10 individus : le pincement de nageoires qu'on lui reproche apparaît surtout chez des poissons trop peu nombreux, qui reportent leurs querelles sur les autres espèces.\n\nIl se reproduit assez facilement dans un bac à part faiblement éclairé : la femelle pond un grand nombre d'œufs dans la végétation fine, qui éclosent en 20 à 24 heures. Les femelles adultes ont le ventre plus rond et des couleurs un peu moins vives.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Thayeria-boehlkei.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/thayeria-boehlkei/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5204168"
+    }
+  ]
+}

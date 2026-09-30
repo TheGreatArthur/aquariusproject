@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Paracheirodon simulans",
+  "nom_valide": null,
+  "auteur": "(Géry, 1963)",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Moyen et haut rio Negro en amont du rio Branco, et Orénoque à la frontière Venezuela–Colombie",
+  "pays": [
+    "BRA",
+    "COL",
+    "VEN"
+  ],
+  "presentation": "Décrit en 1963 par l'ichtyologiste français Jacques Géry, le faux-néon doit son nom latin *simulans* (« qui imite ») à sa ressemblance avec le néon bleu et le cardinalis. C'est le plus petit des trois *Paracheirodon* : il dépasse rarement 2,5 cm. Sa bande bleu-vert s'étend jusqu'à la queue, mais le rouge se limite à l'arrière du ventre.\n\nLa localité type publiée au départ (« rio Purus, Manaus ») était erronée et a été corrigée en rio Jufaris, un affluent du rio Negro. Certains individus sauvages portent des écailles dorées, vendus sous le nom « platinum » : ce reflet serait dû à un parasite qui stimule le dépôt de guanine dans les écailles.",
+  "habitat": "Contrairement au néon et au cardinalis, il vit exclusivement en eaux noires, dans les parties hautes des affluents qui drainent la forêt de terre ferme. Ces ruisseaux ont un courant lent à modéré, des berges couvertes de végétation et un fond de sable jonché de branches, de racines et de feuilles mortes. L'eau y est très acide, quasiment dépourvue de minéraux et teintée par les acides humiques.\n\nBien qu'il partage en partie l'aire de répartition du cardinalis, les deux espèces ne se rencontrent pas dans les mêmes ruisseaux ; le faux-néon occupe en général des eaux plus chaudes.",
+  "comportement": "Pacifique mais minuscule et exigeant sur la qualité de l'eau, il convient mieux à un aquarium spécifique ou partagé avec de très petits poissons calmes (petits characidés, corydoras nains). Grégaire, il forme des bancs : un groupe de 8 à 10 individus au minimum le rend moins craintif.\n\nIl n'est pas élevé à l'échelle commerciale ; les poissons vendus sont prélevés dans la nature, ce qui le rend plus rare et plus cher que ses cousins. Les femelles adultes se reconnaissent à leur ventre plus rond.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Paracheirodon-simulans.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/paracheirodon-simulans/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2353914"
+    }
+  ]
+}

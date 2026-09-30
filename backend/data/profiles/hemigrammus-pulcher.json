@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Hemigrammus pulcher",
+  "nom_valide": "Holopristis pulchra",
+  "auteur": "(Ladiges, 1938)",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Haut Amazone péruvien",
+  "pays": [
+    "PER"
+  ],
+  "presentation": "Décrit en 1938 par l'ichtyologiste allemand Werner Ladiges, *pulcher* signifie « beau » en latin. Ce tétra se reconnaît à la tache noire en forme de croissant qui marque l'arrière du corps, surmontée d'une zone cuivrée, et au rouge du haut de l'œil. FishBase le range aujourd'hui dans le genre *Holopristis*, sous le nom *Holopristis pulchra*.\n\nLa plupart des poissons vendus en Europe proviennent de fermes d'élevage d'Europe de l'Est. Attention : le nom « tétra diamant » désigne habituellement une autre espèce, *Moenkhausia pittieri*.",
+  "habitat": "Espèce endémique du haut bassin amazonien au Pérou, il vit dans les affluents lents des grandes rivières, le plus souvent sous le couvert de la forêt.\n\nL'eau y est tropicale (23 à 27 °C), douce et acide.",
+  "comportement": "Vif et paisible, il s'intègre bien dans la plupart des aquariums communautaires : autres tétras, rasboras, danios, vivipares, corydoras et petits loricariidés. Plutôt timide, il ne doit pas cohabiter avec des poissons beaucoup plus gros ou turbulents.\n\nPoisson de banc, il se maintient en groupe d'au moins 6, idéalement 10 individus. Il se reproduit assez facilement en bac séparé : la ponte a lieu dans les plantes et les œufs éclosent en 20 à 24 heures. On distingue les sexes à la vessie natatoire, visible par transparence : pointue chez le mâle, arrondie chez la femelle.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hemigrammus-pulcher.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hemigrammus-pulcher/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2354326"
+    }
+  ]
+}

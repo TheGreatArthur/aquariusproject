@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Hemigrammus stictus",
+  "nom_valide": null,
+  "auteur": "(Durbin, 1909)",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Bassins de l'Amazone, du rio Negro et de l'Orénoque, fleuves côtiers du Guyana (Brésil, Venezuela, Guyana)",
+  "pays": [
+    "BRA",
+    "GUY",
+    "VEN"
+  ],
+  "presentation": "Décrit en 1909 par Marion Durbin, le tétra à queue sanglante se reconnaît au rouge vif de la base de ses nageoires caudale, dorsale et anale, sur un corps argenté. La classification révisée en 2024 place le genre *Hemigrammus* dans la famille des Acestrorhamphidae.\n\nSa taille maximale fait débat : FishBase retient 4,3 cm de longueur totale, certains auteurs citent jusqu'à 6 cm.",
+  "habitat": "Il est répandu dans le bassin amazonien, le rio Negro, l'Orénoque et les fleuves côtiers du Guyana. Il vit dans les rivières lentes, les affluents et les lacs des plaines inondables.\n\nL'eau y est tropicale (23 à 27 °C), plutôt douce et légèrement acide.",
+  "comportement": "Très paisible, il ne rivalise pas avec des compagnons turbulents ou beaucoup plus gros. Il cohabite bien avec d'autres tétras, des poissons-crayons, des cichlidés nains, des corydoras et de petits loricariidés.\n\nPoisson de banc, il se maintient en groupe d'au moins 6, idéalement 10 individus. Il se nourrit de petits invertébrés et n'est pas difficile en aquarium. Les mâles adultes sont un peu plus petits et plus fins que les femelles.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hemigrammus-stictus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hemigrammus-stictus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2354338"
+    }
+  ]
+}

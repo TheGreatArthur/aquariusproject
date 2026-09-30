@@ -1,0 +1,25 @@
+{
+  "nom_scientifique": "Farlowella acus",
+  "nom_valide": null,
+  "auteur": "(Kner, 1853)",
+  "classification": "Siluriformes › Loricariidae",
+  "uicn": "VU",
+  "repartition": "Bassins du lac de Valencia et du río Torito (nord du Venezuela)",
+  "pays": [
+    "VEN"
+  ],
+  "emprise": [-69, 9.5, -66.5, 10.8],
+  "presentation": "Décrit en 1853 par Rudolf Kner, le poisson-brindille (*acus*, « aiguille ») a un corps extrêmement allongé et un long rostre qui le font ressembler à une brindille : un camouflage parfait parmi les branches immergées.\n\nL'UICN le classe « vulnérable » : son aire se limite à quelques bassins du nord du Venezuela, dont le lac de Valencia, fortement pollué. La plupart des « Farlowella acus » vendus sont en réalité d'autres espèces du genre.",
+  "habitat": "L'espèce est connue des bassins du lac de Valencia et du río Torito, au nord du Venezuela.\n\nLes *Farlowella* vivent dans des eaux calmes à faiblement courantes, parmi les branches, les racines et la végétation immergées, où ils broutent algues et biofilm. L'eau recommandée est douce, légèrement acide, entre 24 et 26 °C.",
+  "comportement": "Très paisible et lent, il supporte mal la concurrence de poissons vifs pour la nourriture. Il reste souvent immobile, collé à une branche ou à une vitre.\n\nIl se nourrit d'algues et de biofilm, et râpe le bois tendre ; un aquarium mûr, planté et riche en bois lui est indispensable, avec des légumes blanchis en complément. La femelle pond sur une surface verticale (vitre, bois) et le mâle garde et nettoie les œufs jusqu'à l'éclosion ; les mâles adultes portent des odontodes sur les côtés du rostre.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Farlowella-acus.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2340437"
+    }
+  ]
+}

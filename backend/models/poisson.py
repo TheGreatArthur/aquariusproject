@@ -7,6 +7,7 @@ from models.meta import Base
 
 if TYPE_CHECKING:
     from models.nomenclatures import Comportement, Courant, Famille, Genre, ModeVie, Robustesse, ZoneGeo
+    from models.profil import Profil
 
 class Poisson(Base):
     __tablename__ = 'poisson'
@@ -46,6 +47,7 @@ class Poisson(Base):
     robustesse: Mapped['Robustesse'] = relationship()
     zone_geo: Mapped['ZoneGeo'] = relationship()
     courant: Mapped['Courant | None'] = relationship()
+    profil: Mapped['Profil | None'] = relationship(cascade='all, delete-orphan')
 
     def __str__(self) -> str:
         return f'<{self.__class__.__name__} {self.id} {self.nom_scientifique!r}>'

@@ -53,7 +53,8 @@ def get_poisson(id: int):
     if not poisson:
         return 'Fish not found', 404
 
-    return poisson.as_dict()
+    # La fiche descriptive n'est renvoyée que sur le détail, pas dans la liste (textes longs, points de carte)
+    return {**poisson.as_dict(), 'profil': poisson.profil.as_dict() if poisson.profil else None}
 
 
 @app.route('/poissons/familles')

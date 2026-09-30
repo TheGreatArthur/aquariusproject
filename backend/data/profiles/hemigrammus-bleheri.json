@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Hemigrammus bleheri",
+  "nom_valide": "Petitella bleheri",
+  "auteur": "(Géry & Mahnert, 1986)",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Bassins du rio Negro et du rio Meta (Brésil, Colombie)",
+  "pays": [
+    "BRA",
+    "COL"
+  ],
+  "presentation": "Décrit en 1986 par Jacques Géry et Volker Mahnert, le nez rouge est dédié à Heiko Bleher, l'aquariophile et explorateur qui l'a découvert. Sa tête rouge vif et sa queue rayée de noir et de blanc le rendent facile à repérer ; FishBase le range aujourd'hui dans le genre *Petitella*, nommé en l'honneur du zoologiste français Georges Petit.\n\nTrois espèces très proches sont vendues comme « nez rouges » : *H. rhodostomus*, *Petitella georgiae* et celle-ci. On les distingue aux taches du pédoncule caudal et à la bande qui prolonge la rayure centrale de la queue dans le corps, presque absente ici.",
+  "habitat": "Il vit dans les rivières et affluents d'eaux noires des bassins du rio Negro et du rio Meta, au Brésil et en Colombie.\n\nL'eau y est teintée de brun par les tanins libérés par la matière organique en décomposition et, de ce fait, très acide et peu minéralisée.",
+  "comportement": "Très paisible, c'est l'un des petits tétras qui forment les bancs les plus serrés : il doit être maintenu en groupe d'au moins 10 individus, davantage si possible. Il supporte mal les compagnons turbulents et accompagne souvent les discus dans les aquariums d'eaux noires.\n\nOmnivore à petite bouche, il accepte flocons, granulés et petites proies vivantes ou congelées. Les femelles matures ont le corps plus rond ; ses œufs adhésifs sont déposés dans la végétation fine.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hemigrammus-bleheri.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hemigrammus-bleheri/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2354371"
+    }
+  ]
+}

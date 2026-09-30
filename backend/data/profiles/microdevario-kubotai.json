@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Microdevario kubotai",
+  "nom_valide": null,
+  "auteur": "(Kottelat & Witte, 1999)",
+  "classification": "Cypriniformes › Danionidae",
+  "uicn": "LC",
+  "repartition": "Ouest de la Thaïlande péninsulaire (Ranong, Phang Nga) et bassin de la Salouen jusqu'au sud du Myanmar",
+  "pays": [
+    "MMR",
+    "THA"
+  ],
+  "presentation": "Décrit en 1999 par Maurice Kottelat et Kai-Erik Witte, ce minuscule cyprinidé vert fluo est dédié à Katsuma Kubota, qui a aidé les auteurs sur le terrain en Thaïlande. Il est vendu sous les noms de « rasbora néon vert » ou « microrasbora kubotai ».\n\nLe genre *Microdevario* a été créé en 2009 après des analyses phylogénétiques montrant que certains *Microrasbora* étaient en fait plus proches des *Devario*. L'espèce se reconnaît à ses nageoires dorsale et anale transparentes.",
+  "habitat": "Il est connu des provinces de Ranong et Phang Nga, sur le versant nord-ouest de la péninsule thaïlandaise, et du bassin de la rivière Ataran, affluent de la Salouen au sud du Myanmar ; une population introduite existe dans le haut bassin de la Khwae Noi.\n\nSes rivières ont une eau claire et bien oxygénée, un fond de branches, de feuilles, de graviers et de rochers, et des berges très végétalisées ; dans les zones calmes poussent *Cryptocoryne crispatula* et *Pogostemon helferi*.",
+  "comportement": "Très paisible, il vit dans la nature en bancs de 20 à 50 poissons. En aquarium, il se maintient seul ou avec des espèces de taille comparable (*Boraras*, arlequins, petites loches), en groupe d'au moins 8 à 10 individus.\n\nIl se nourrit de petits invertébrés et de zooplancton ; les proies vivantes ou congelées fines lui conviennent mieux que les aliments secs seuls. Pondeur libre sans soins parentaux, il a été reproduit en aquarium. Les mâles sont plus compacts et plus colorés que les femelles.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Microdevario-kubotai.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/microdevario-kubotai/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2363249"
+    }
+  ]
+}

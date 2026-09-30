@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Betta macrostoma",
+  "nom_valide": null,
+  "auteur": "Regan, 1910",
+  "classification": "Anabantiformes › Osphronemidae",
+  "uicn": "VU",
+  "repartition": "Nord de Bornéo : district de Labi (Brunei) et district de Baram près de Marudi (Sarawak, Malaisie)",
+  "pays": [
+    "BRN",
+    "MYS"
+  ],
+  "presentation": "Décrit en 1910 par Charles Tate Regan, le combattant multicolore (ou « Betta de Brunei ») est l'un des *Betta* les plus spectaculaires : le mâle, rouge, porte une tache rouge sur l'opercule et un ocelle noir cerclé de blanc sur la nageoire dorsale. *Macrostoma* signifie « grande bouche ».\n\nIl est classé « vulnérable » par l'UICN en raison de son aire minuscule. Ses populations diffèrent un peu de couleur selon la localité et sont maintenues séparément par les éleveurs.",
+  "habitat": "Endémique de Bornéo, il n'est connu que de quelques localités le long de la rivière Mendaram et de la forêt de Labi au Brunei, et du district de Baram, près de Marudi, au Sarawak.\n\nIl vit dans des vasques calmes et ombragées, au sommet de cascades en forêt tropicale ou le long de cours d'eau clairs et rapides. Chaque vasque abrite un seul adulte, un couple ou quelques juvéniles. L'eau, légèrement brune, est presque dépourvue de minéraux, avec un pH de 4,4 à 5,7.",
+  "comportement": "Discret face aux autres poissons, il se fait facilement intimider par des espèces plus grosses ou plus vives. Entre eux, en revanche, les mâles se battent sans cesse, et les femelles se querellent jusqu'à établir une hiérarchie : on le maintient en couple, éventuellement formé à partir d'un petit groupe.\n\nC'est un incubateur buccal : le mâle garde les œufs puis les alevins dans sa bouche. Il chasse insectes et petits invertébrés, peut-être les crevettes rouges qui partagent son habitat. Un couvercle bien ajusté est indispensable pour garder l'air humide dont les alevins ont besoin.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Betta-macrostoma.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/betta-macrostoma/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2394042"
+    }
+  ]
+}

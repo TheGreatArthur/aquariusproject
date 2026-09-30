@@ -1,0 +1,25 @@
+{
+  "nom_scientifique": "Metynnis luna",
+  "nom_valide": null,
+  "auteur": "Cope, 1878",
+  "classification": "Characiformes › Serrasalmidae",
+  "uicn": "LC",
+  "repartition": "Bassin de l'Amazone (Brésil, Pérou)",
+  "pays": [
+    "BRA",
+    "PER"
+  ],
+  "presentation": "Décrit en 1878 par Edward Drinker Cope, *Metynnis luna* est l'un des poissons vendus sous le nom de « silver dollar », pour leur corps rond, très aplati et argenté comme une pièce de monnaie. Comme les pacus, ce sont des Serrasalmidae, cousins herbivores des piranhas.\n\nIl atteint environ 13 cm sans la queue. FishBase signale qu'il filtre le phytoplancton grâce à de longues branchiospines, en plus de brouter les végétaux.",
+  "habitat": "Il est originaire du bassin amazonien, au Brésil et au Pérou.\n\nLes *Metynnis* vivent en bancs dans les rivières, les lacs et les zones inondées riches en végétation, dans une eau chaude, douce et légèrement acide.",
+  "comportement": "Paisible et grégaire, il doit vivre en groupe d'au moins 5 individus, dans un grand bac avec de l'espace de nage. Nerveux lorsqu'il est isolé, il se calme en groupe et avec des cachettes.\n\nHerbivore, il dévore la plupart des plantes d'aquarium : on préfère des plantes robustes ou artificielles, et une alimentation riche en végétaux (légumes, flocons à la spiruline). Il cohabite bien avec des poissons de taille moyenne, paisibles.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Metynnis-luna.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2353449"
+    }
+  ]
+}

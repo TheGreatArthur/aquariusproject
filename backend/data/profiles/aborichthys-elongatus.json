@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Aborichthys elongatus",
+  "nom_valide": null,
+  "auteur": "Hora, 1921",
+  "classification": "Cypriniformes › Nemacheilidae",
+  "uicn": "LC",
+  "repartition": "District de Darjeeling (Bengale-Occidental, Inde) : affluents de la Teesta, bassin du Brahmapoutre",
+  "pays": [
+    "IND"
+  ],
+  "presentation": "Décrit en 1921 par l'ichtyologiste indien Sunder Lal Hora, *Aborichthys elongatus* doit son nom de genre aux collines Abor de l'Arunachal Pradesh et son nom d'espèce à son corps très allongé et comprimé, barré de fines bandes sombres. Il appartient à la famille des Nemacheilidae.\n\nLa série type provenait de « la rivière Riang, à 2 000 pieds d'altitude », une rivière introuvable sur les cartes actuelles. La plupart des poissons vendus sous ce nom sont récoltés plus bas, dans le district de Jalpaiguri, et pourraient appartenir à d'autres espèces.",
+  "habitat": "Il vit dans les ruisseaux et petites rivières qui descendent des collines Siwalik dans le district de Darjeeling (Relli, Chel, Ghish), affluents de la Teesta et donc du Brahmapoutre.\n\nIl occupe les tronçons peu profonds et rapides, en pente, sur des fonds de rochers et de galets où il se faufile dans les interstices. Il n'y a pas de plantes aquatiques, mais un riche biofilm couvre les pierres. L'eau est fraîche (15 à 21 °C) et très oxygénée.",
+  "comportement": "Pas vraiment agressif, il reste peu adapté à l'aquarium communautaire à cause de ses besoins en eau fraîche et courante. Il cohabite avec des danios, rasboras, *Garra*, gobies de torrent et poissons-chats d'eau vive ; les poissons lents ou à longues nageoires sont à éviter.\n\nIl se nourrit de larves d'insectes, de vers et de petits crustacés : proies vivantes ou congelées en complément des aliments secs. Sa reproduction en aquarium n'est pas documentée.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Aborichthys-elongatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/aborichthys-elongatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2358761"
+    }
+  ]
+}

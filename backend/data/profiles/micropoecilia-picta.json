@@ -1,0 +1,27 @@
+{
+  "nom_scientifique": "Micropoecilia picta",
+  "nom_valide": "Poecilia picta",
+  "auteur": "Regan, 1913",
+  "classification": "Cyprinodontiformes › Poeciliidae",
+  "uicn": "LC",
+  "repartition": "Côte nord-est de l'Amérique du Sud, de Trinité au delta de l'Amazone (Trinité-et-Tobago, Guyana, Guyane, Brésil)",
+  "pays": [
+    "BRA",
+    "GUF",
+    "GUY",
+    "TTO"
+  ],
+  "presentation": "Décrit en 1913 par Charles Tate Regan sous le nom *Poecilia picta* (« peinte »), le guppy des marais est un proche parent du guppy. Certains auteurs le placent dans le genre *Micropoecilia*, d'autres, comme FishBase, le laissent dans *Poecilia*.\n\nLe mâle, qui ne dépasse guère 3 cm, porte une robe orange ou rouge barrée de noir, tandis que la femelle, argentée, atteint 5 cm. Contrairement au guppy, il n'existe presque pas de formes d'élevage : les poissons vendus restent proches de la forme sauvage.",
+  "habitat": "Il vit le long de la côte nord-est de l'Amérique du Sud, de Trinité jusqu'au delta de l'Amazone, en passant par le Guyana et la Guyane.\n\nIl fréquente surtout les eaux légèrement saumâtres des canaux et fossés de drainage en bordure des marais côtiers, mais remonte aussi assez loin à l'intérieur des terres. L'eau y est chaude (26 à 28 °C), dure et alcaline ; un peu de sel lui est bénéfique en aquarium.",
+  "comportement": "Paisible, il vit en groupe et convient à un bac spécifique ou partagé avec d'autres petites espèces tolérant l'eau dure, voire saumâtre. Il est plus délicat que le guppy et supporte mal l'eau douce et acide.\n\nVivipare comme le guppy, il donne naissance à des alevins déjà formés ; plusieurs femelles par mâle réduisent le harcèlement. Il se nourrit de petites proies et d'algues.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Micropoecilia-picta.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5203905"
+    }
+  ]
+}

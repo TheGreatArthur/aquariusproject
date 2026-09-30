@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Corydoras habrosus",
+  "nom_valide": "Hoplisoma habrosum",
+  "auteur": "(Weitzman, 1960)",
+  "classification": "Siluriformes › Callichthyidae",
+  "uicn": "NT",
+  "repartition": "Haut Orénoque, affluents de rive gauche des Llanos (Venezuela, Colombie)",
+  "pays": [
+    "COL",
+    "VEN"
+  ],
+  "presentation": "Décrit en 1960 par Stanley Weitzman, le corydoras habrosus (du grec *habros*, « gracieux, délicat ») est un corydoras nain d'environ 2,5 cm, au corps beige marqué de deux ou trois taches sombres le long du flanc, ce qui le distingue de *C. cochui*.\n\nIl est vendu sous les noms de « corydoras damier » ou « corydoras pygmée du Venezuela ». FishBase le range désormais dans le genre *Hoplisoma*. L'UICN le classe « quasi menacé ».",
+  "habitat": "Il vit dans le haut bassin de l'Orénoque, surtout dans le bassin du río Apure au Venezuela, et en Colombie dans les ríos Arauca et Casanare. Sa localité type est le río Salinas, près d'El Baúl.\n\nC'est un poisson des Llanos, immenses plaines herbeuses inondées à la saison des pluies. Il préfère les lagunes, les petits affluents, la forêt et la prairie inondées et les bordures à faible courant, et se regroupe près de la végétation immergée, des branches ou des racines.",
+  "comportement": "Paisible et grégaire, il se maintient en groupe d'au moins 6, idéalement 10 individus. Sa petite taille impose des compagnons calmes et de taille comparable.\n\nIl fouille le sol à la recherche de petites proies : aliments coulants fins, larves de chironomes, tubifex. Pour la reproduction, un changement d'eau douce et plus fraîche imite la saison des pluies ; les femelles, plus larges, collent leurs œufs sur les vitres ou les plantes.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Corydoras-habrosus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/corydoras-habrosus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2342708"
+    }
+  ]
+}

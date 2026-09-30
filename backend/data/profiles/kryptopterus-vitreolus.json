@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Kryptopterus vitreolus",
+  "nom_valide": null,
+  "auteur": "Ng & Kottelat, 2013",
+  "classification": "Siluriformes › Siluridae",
+  "uicn": "LC",
+  "repartition": "Fleuves côtiers de la Thaïlande péninsulaire et du sud-est de la Thaïlande (monts des Cardamomes)",
+  "pays": [
+    "THA"
+  ],
+  "localites": [
+    [102.43, 12.36]
+  ],
+  "presentation": "Le silure de verre des aquariums n'a été décrit qu'en 2013, par Ng Heok Hee et Maurice Kottelat, sous le nom *Kryptopterus vitreolus* (« petit poisson de verre »). Auparavant, il était vendu sous les noms de *K. bicirrhis* ou *K. minor*, deux espèces différentes. Petite anecdote : l'article original omettait la mention « espèce nouvelle », ce qui a obligé les auteurs à publier une courte note pour rendre le nom valide.\n\nSon corps presque totalement transparent laisse voir son squelette ; ses deux longs barbillons lui servent à percevoir son environnement. Il mesure environ 6,5 cm sans la queue.",
+  "habitat": "Il n'est connu que des fleuves côtiers de la Thaïlande péninsulaire se jetant dans le golfe de Thaïlande au sud de l'isthme de Kra, et de quelques rivières des monts des Cardamomes, dans le sud-est du pays ; la localité type se trouve dans la province de Trat.\n\nIl préfère les eaux lentes ou stagnantes, brunes et troubles ou noires et acides. Très collecté pour l'aquariophilie et jamais élevé commercialement, il fait l'objet d'une vigilance sur l'état de ses populations sauvages.",
+  "comportement": "Très grégaire, il forme des bancs serrés et dépérit s'il est isolé : un groupe d'au moins 6 individus est un minimum. Il se tient immobile en pleine eau, légèrement incliné, face au courant.\n\nPaisible mais timide, il supporte mal les compagnons gros ou turbulents ; il peut manger œufs et alevins. Prédateur de petits invertébrés et de zooplancton, il apprécie des proies vivantes ou congelées fines. Sa reproduction n'est pas documentée.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Kryptopterus-vitreolus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/kryptopterus-vitreolus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/7916021"
+    }
+  ]
+}

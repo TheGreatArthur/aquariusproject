@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Neolamprologus multifasciatus",
+  "nom_valide": null,
+  "auteur": "(Boulenger, 1906)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "NE",
+  "repartition": "Endémique du lac Tanganyika (Burundi, RD Congo, Tanzanie, Zambie)",
+  "pays": [
+    "BDI",
+    "COD",
+    "TZA",
+    "ZMB"
+  ],
+  "presentation": "Décrit en 1906 par George Albert Boulenger, *Neolamprologus multifasciatus* est l'un des plus petits cichlidés du monde : les mâles atteignent 4 cm, les femelles environ 2,5 cm. Son corps est barré de nombreuses bandes verticales fines, d'où son nom.\n\nC'est un « conchylicole » : chaque poisson vit dans une coquille vide d'escargot du genre *Neothauma*, qui lui sert d'abri et de lieu de ponte. Ses colonies très structurées sont étudiées par les biologistes du comportement.",
+  "habitat": "Il est endémique du lac Tanganyika. Il vit dans des zones assez profondes près des rives, sur des fonds meubles où s'accumulent les coquilles vides d'escargots.\n\nL'eau du lac est chaude, très stable, dure et alcaline (pH 8 à 9).",
+  "comportement": "Il vit en grandes colonies, mais chaque individu défend farouchement sa coquille et un minuscule territoire autour ; les couples ont leurs coquilles côte à côte. Il creuse sans cesse le sable pour enterrer ou dégager les coquilles, remodelant le décor.\n\nIl se nourrit du plancton qui passe au-dessus de la colonie. Il cohabite avec des espèces d'autres niveaux du bac (petits *Julidochromis*, *Cyprichromis*). La femelle pond dans sa coquille et garde les alevins ; il faut prévoir plus de coquilles que de poissons.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Neolamprologus-multifasciatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/neolamprologus-multifasciatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2371798"
+    }
+  ]
+}

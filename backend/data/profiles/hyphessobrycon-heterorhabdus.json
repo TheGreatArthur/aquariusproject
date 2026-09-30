@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Hyphessobrycon heterorhabdus",
+  "nom_valide": null,
+  "auteur": "(Ulrey, 1894)",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Est de l'Amazonie brésilienne : Pará et Maranhão, du rio Tapajós aux fleuves côtiers de l'Atlantique",
+  "pays": [
+    "BRA"
+  ],
+  "emprise": [-58, -10, -42, 2],
+  "presentation": "Décrit en 1894 par Albert Ulrey, le tétra drapeau (ou « tétra drapeau belge ») porte une bande latérale noire bordée de doré et de rouge qui rappelle les trois couleurs du drapeau belge. Son nom vient du grec *heteros* (« autre ») et *rhabdos* (« baguette »), probablement en référence à cette rayure.\n\nLe nom a longtemps été appliqué à des poissons semblables de toute l'Amazonie, de l'Orénoque et des Guyanes ; plusieurs de ces populations ont depuis été décrites comme des espèces distinctes (*H. amapaensis*, *H. eschwartzae*, *H. montagi*).",
+  "habitat": "Au sens strict, l'espèce vit dans l'est de l'Amazonie brésilienne : affluents et fleuves côtiers des États du Pará et du Maranhão, autour de Belém (rios Guamá, Acará, Tocantins, Xingu, Gurupi, Pindaré…), jusqu'au rio Tapajós.\n\nElle a presque toujours été récoltée dans des igarapés de terre ferme, ces petits ruisseaux de tête de bassin qui ne sont pas inondés chaque année. Ombragés par la forêt, ils ont une eau claire sur fond de sable ou de vase, avec racines, branches et feuilles mortes, mais généralement sans plantes aquatiques.",
+  "comportement": "Très paisible, il se nourrit de vers, de petits crustacés et de débris végétaux. Il vit en banc : un groupe mixte d'au moins 8 à 10 individus, accompagné d'autres poissons de banc, le rend plus sûr de lui.\n\nC'est un pondeur libre qui disperse ses œufs sans soins parentaux ; des adultes en bonne forme fraient souvent et quelques alevins peuvent apparaître spontanément dans un aquarium bien établi. Les femelles adultes sont plus hautes et un peu plus grandes que les mâles.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hyphessobrycon-heterorhabdus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hyphessobrycon-heterorhabdus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2354628"
+    }
+  ]
+}

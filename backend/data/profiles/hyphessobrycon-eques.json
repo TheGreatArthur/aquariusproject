@@ -1,0 +1,34 @@
+{
+  "nom_scientifique": "Hyphessobrycon eques",
+  "nom_valide": "Megalamphodus eques",
+  "auteur": "(Steindachner, 1882)",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Bassins de l'Amazone, du Guaporé et du Paraguay (Brésil, Pérou, Bolivie, Paraguay, Argentine, Uruguay)",
+  "pays": [
+    "ARG",
+    "BOL",
+    "BRA",
+    "PER",
+    "PRY",
+    "URY"
+  ],
+  "emprise": [-76, -32, -44, 3],
+  "presentation": "Décrit en 1882 par Franz Steindachner, le tétra joyau (ou « tétra serpae ») tire son nom latin *eques*, « cavalier », de son allure élancée. La classification révisée en 2024 le place dans le genre *Megalamphodus*, rétabli pour ce groupe de tétras rouges.\n\nSes populations sauvages varient beaucoup de couleur selon leur origine, et plusieurs ont été décrites autrefois comme des espèces distinctes. Il fait partie d'un complexe de « tétras sanguins » dont les hybrides sont courants dans le commerce aquariophile.",
+  "habitat": "Son aire est immense : une grande partie du bassin amazonien au Brésil, au Pérou et en Bolivie, et le bassin du Paraguay jusqu'en Argentine, relié à l'Amazonie par le rio Guaporé. La localité type est Óbidos, sur l'Amazone.\n\nIl fréquente surtout les eaux calmes ou stagnantes : affluents lents, bras morts, étangs et petits lacs. Les bancs se regroupent autour de la végétation des berges, entre les tiges des plantes émergées, ou près des racines immergées. Il a été introduit en Guyane par le commerce aquariophile.",
+  "comportement": "Grégaire, il forme des hiérarchies lâches où les mâles rivalisent sans cesse pour les femelles et leur place dans le groupe. Il a la réputation de pincer les nageoires des autres poissons, surtout s'il est trop peu nombreux ou à l'étroit : un groupe d'au moins 12 individus détourne cette agressivité vers ses congénères.\n\nÀ éviter avec des poissons lents aux longues nageoires (scalaires, combattants). Omnivore, il se nourrit de vers, de crustacés, d'insectes et de végétaux ; c'est un pondeur libre sans soins parentaux.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hyphessobrycon-eques.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hyphessobrycon-eques/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2354612"
+    }
+  ]
+}

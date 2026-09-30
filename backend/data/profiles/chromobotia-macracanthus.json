@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Chromobotia macracanthus",
+  "nom_valide": null,
+  "auteur": "(Bleeker, 1852)",
+  "classification": "Cypriniformes › Botiidae",
+  "uicn": "LC",
+  "repartition": "Sumatra et Bornéo (Indonésie)",
+  "pays": [
+    "IDN"
+  ],
+  "presentation": "Décrit en 1852 par Pieter Bleeker, le botia clown est la seule espèce du genre *Chromobotia* (« botia coloré »), créé en 2004 pour lui. Orange vif barré de trois larges bandes noires, il peut dépasser 30 cm et vivre plus de 20 ans. Il appartient à la famille des Botiidae, séparée des Cobitidae.\n\nIl émet des cliquetis audibles, surtout quand il mange ou se dispute, et se couche parfois sur le flanc pour se reposer, un comportement normal qui inquiète souvent les débutants. Les poissons du commerce sont en partie produits en Indonésie par reproduction hormonale.",
+  "habitat": "Il vit à Sumatra (bassins du Batang Hari, du Musi, de l'Indragiri) et dans le Kalimantan à Bornéo (Kapuas, Kayan). Les populations des deux îles diffèrent légèrement par la génétique et la couleur des nageoires.\n\nLes adultes vivent au fond des grands chenaux, cachés sous les rochers, le bois ou dans des cavités de vase. À la saison des pluies, ils remontent vers les affluents et les plaines inondées pour frayer ; les jeunes y restent plusieurs mois, dans une eau douce couleur thé, parmi les feuilles et les racines.",
+  "comportement": "Grégaire, il forme des hiérarchies sociales complexes et doit vivre en groupe d'au moins 5 individus. Actif et parfois bruyant, il intimide les petits poissons et peut pincer les nageoires voilées ; il cohabite bien avec des cyprinidés de pleine eau et d'autres loches.\n\nSurtout carnivore, il mange mollusques (il est un bon mangeur d'escargots), insectes et vers, avec un peu de végétaux. Sa taille adulte impose un très grand bac (1,80 m au minimum).",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Chromobotia-macracanthus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/chromobotia-macracanthus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2367815"
+    }
+  ]
+}

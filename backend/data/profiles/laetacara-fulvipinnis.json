@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Laetacara fulvipinnis",
+  "nom_valide": null,
+  "auteur": "Staeck & Schindler, 2007",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Haut et moyen Orénoque, canal de Casiquiare et rio Negro (Venezuela, Brésil)",
+  "pays": [
+    "BRA",
+    "VEN"
+  ],
+  "presentation": "Connu des aquariophiles sous le nom de *Laetacara* sp. « orangeflossen » (« nageoires orange »), ce petit cichlidé a été décrit en 2007 par Wolfgang Staeck et Ingo Schindler. Son nom *fulvipinnis* signifie « aux nageoires fauves ».\n\n*Laetacara* associe le latin *laetus*, « joyeux », et *acará*, nom amérindien des cichlidés : les marques autour de la bouche donnent à ces poissons un air souriant. Il atteint environ 7,5 cm.",
+  "habitat": "Il vit dans le haut et le moyen Orénoque, le canal de Casiquiare et le haut et moyen rio Negro, entre Puerto Ayacucho au Venezuela et Barcelos au Brésil ; la localité type est une lagune près de San Carlos de Río Negro.\n\nC'est un poisson d'eaux noires claires couleur thé, extrêmement douces et acides : un relevé du Casiquiare indique un pH de 4,4. Il se tient au bord des ruisseaux, dans 10 à 50 cm d'eau, dans la litière de feuilles ou parmi la végétation terrestre inondée.",
+  "comportement": "Paisible pour un cichlidé, il vit en couple et convient à un aquarium d'eaux noires avec des poissons calmes. Il fouille la litière à la recherche d'algues, de détritus, de petits insectes, de vers et de crustacés.\n\nLe couple pond sur une surface dure, souvent une feuille, et garde ensemble les œufs, qui éclosent en trois jours environ ; les alevins nagent librement une semaine plus tard. En période de reproduction, les deux sexes se parent de rouge ; les mâles ont des nageoires plus longues.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Laetacara-fulvipinnis.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/laetacara-fulvipinnis/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2370399"
+    }
+  ]
+}

@@ -6,6 +6,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Fish profiles ([ADR 0006](docs/adr/0006-fish-profiles-and-sources.md)): each of the 135 fish pages now has a
+  "Dans la nature" section with a presentation (description, naming, taxonomy, IUCN status), the natural habitat
+  with a range map (native countries, GBIF observations, rivers and lakes, locator globe), the behaviour and the
+  sources. Texts are written in French from FishBase, Seriously Fish and GBIF and versioned in
+  `backend/data/profiles/`; `GET /poissons/<id>` returns them as `profil`.
+- `make sources`, `make occurrences` and `make profiles`, plus `backend/tools/` to fetch reference data,
+  compare it with the base, draft new profiles and refresh the range-map points.
 - Simulator: new compatibility engine ([ADR 0005](docs/adr/0005-compatibility-rules-engine.md),
   [rules](docs/compatibility-rules.md)) with 14 rules and three levels (blocking, to watch, good to know):
   shared water range across species, declared predators, mouth size, temperament gap, water current, biotope,
@@ -38,6 +45,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - README rewritten in English with architecture diagram and quick start.
 
 ### Fixed
+- Fish data checked against FishBase and Seriously Fish ([report](docs/data-sources-check.md)): 98 values
+  corrected on 63 fish in `backend/corrections.py`, including water ranges (tiger barb, *Corydoras sterbai*,
+  *Aborichthys elongatus*…), sizes, families (Serrasalmidae, Botiidae, Gastromyzontidae, Nemacheilidae,
+  Nothobranchiidae), regions (Central America for platys and swordtails, new "Océanie" for rainbowfishes),
+  behaviours (tiger barb, *Betta gladiator*, *Gambusia*…), misspelt names and wrong common names
+  ("Poisson-zèbre" for the zebra pleco, "Poisson du paradis" for a killifish). "Cyprinidé" is normalized to
+  "Cyprinidae". A species renamed by a correction keeps its row and id on re-import.
 - Simulator: an empty volume field no longer empties the tank, and saved tanks are refreshed with the latest
   fish data; adding a species adds its minimum group.
 - Mariposa (*Cichla ocellaris*), a 60 cm piscivore, was labelled "peu agressif"; it is now "prédateur".

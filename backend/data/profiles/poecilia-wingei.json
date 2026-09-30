@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Poecilia wingei",
+  "nom_valide": null,
+  "auteur": "Poeser, Kempkes & Isbrücker, 2005",
+  "classification": "Cyprinodontiformes › Poeciliidae",
+  "uicn": "EN",
+  "repartition": "Lagunes de Campoma et de Buena Vista, près de Carúpano (nord-est du Venezuela)",
+  "pays": [
+    "VEN"
+  ],
+  "presentation": "Le guppy d'Endler a été découvert en 1937 par Franklyn Bond, puis redécouvert en 1975 par le biologiste John Endler dans la laguna de Patos, au Venezuela. Il n'a été décrit qu'en 2005 par Fred Poeser, Michael Kempkes et Isaäc Isbrücker, qui l'ont dédié au généticien danois Øjvind Winge, pionnier de l'étude des couleurs et de la détermination du sexe chez le guppy.\n\nSon statut d'espèce a été discuté, car il s'hybride avec le guppy en donnant des descendants fertiles ; une étude génétique de 2009 l'a confirmé comme espèce valide. Il est classé « en danger » par l'UICN.",
+  "habitat": "Il vit dans des lagunes côtières du nord-est du Venezuela, près de Carúpano. La laguna de Patos, sa localité type, était à l'origine un lac saumâtre isolé de la mer par un cordon de sable, devenu doux au fil du temps.\n\nLors de sa redécouverte, l'eau y était très chaude, dure et verte d'algues. La population y serait aujourd'hui éteinte, après l'installation d'une décharge au bord du lac.",
+  "comportement": "Paisible, il est trop petit pour un aquarium communautaire classique : on l'associe à des espèces minuscules et calmes (corydoras nains, *Pseudomugil*, petits tétras). Les mâles se tolèrent, mais les femelles peuvent être territoriales entre elles.\n\nTrès prolifique, il se reproduit en continu. Il ne doit pas être maintenu avec des guppys, pour éviter les hybrides qui menacent la pureté des lignées. Omnivore, il consomme petits invertébrés, détritus et végétaux.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Poecilia-wingei.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/poecilia-wingei/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5203789"
+    }
+  ]
+}

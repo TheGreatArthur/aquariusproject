@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Danio margaritatus",
+  "nom_valide": null,
+  "auteur": "(Roberts, 2007)",
+  "classification": "Cypriniformes › Danionidae",
+  "uicn": "DD",
+  "repartition": "État Shan (est du Myanmar), bassin de la Salouen, jusqu'au nord de la Thaïlande",
+  "pays": [
+    "MMR",
+    "THA"
+  ],
+  "presentation": "Le « galaxy » ou danio perle céleste est l'une des découvertes aquariophiles les plus médiatisées : repéré en août 2006, il a été montré en ligne par un exportateur thaïlandais le mois suivant, au point que certains ont cru à une image retouchée. Des milliers de poissons ont été exportés en quelques mois.\n\nIl a été décrit en 2007 par Tyson Roberts sous le nom *Celestichthys margaritatus* (« poisson céleste orné de perles ») ; il est aujourd'hui rattaché au genre *Danio*. Il mesure à peine 2 cm. L'UICN le classe en « données insuffisantes ».",
+  "habitat": "Il a d'abord été trouvé dans des mares peu profondes au pied d'une montagne près de Hopong, dans l'État Shan, à environ 1 040 m d'altitude ; d'autres populations ont depuis été découvertes dans le bassin de la Salouen et jusqu'au nord de la Thaïlande.\n\nCes mares d'une trentaine de centimètres, alimentées par des sources, ont une eau claire et d'épais herbiers d'*Elodea* et de plantes voisines, au milieu de prairies ouvertes. En janvier, l'eau y était à 22–24 °C. Il y vit avec un poisson-tête-de-serpent prédateur (*Channa harcourtbutleri*).",
+  "comportement": "Grégaire mais pas vraiment en banc serré : les mâles se livrent des joutes toute la journée et les nageoires pincées sont fréquentes au sein du groupe, sans que les autres espèces soient visées. Un groupe d'une vingtaine d'individus répartit ces tensions.\n\nTimide, il se fait facilement intimider ou devancer à la nourriture par des poissons plus gros ; il remonte rarement en surface. Il se nourrit de petits invertébrés, d'algues et de zooplancton. Pondeur libre, il a été reproduit en aquarium quelques semaines seulement après son arrivée en Europe. Mieux vaut ne pas le maintenir avec *Danio erythromicron*, avec lequel il pourrait s'hybrider.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Danio-margaritatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/danio-margaritatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2362708"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "nom_scientifique": "Xiphophorus maculatus",
+  "nom_valide": null,
+  "auteur": "(Günther, 1866)",
+  "classification": "Cyprinodontiformes › Poeciliidae",
+  "uicn": "DD",
+  "repartition": "Versant atlantique de l'Amérique centrale, de Veracruz (Mexique) au Guatemala, au Belize et au Honduras",
+  "pays": [
+    "BLZ",
+    "GTM",
+    "HND",
+    "MEX"
+  ],
+  "emprise": [-99, 13, -86, 23],
+  "presentation": "Décrit en 1866 par Albert Günther, du British Museum, le platy doit son nom *maculatus* (« tacheté ») aux taches sombres de la forme sauvage. *Xiphophorus* signifie « porteur d'épée » en grec, pour le gonopode pointu des mâles, leur nageoire anale transformée en organe copulateur.\n\nAvec son cousin le xipho, il est un modèle de la recherche sur le cancer depuis les années 1920 : certains hybrides entre ces deux espèces développent des mélanomes, ce qui a permis d'identifier des gènes impliqués dans la maladie. Les innombrables variétés d'aquarium (rouge, « mickey », wagtail…) sont souvent issues de ces croisements.",
+  "habitat": "Il est originaire de la plaine côtière atlantique du Mexique (depuis Veracruz), du Guatemala, du Belize et du nord du Honduras. Il a été introduit dans de nombreux pays, où il a parfois nui aux espèces locales.\n\nIl vit dans les sources chaudes, canaux, fossés, criques et marais à courant lent, sur fond de limon et avec des berges couvertes de végétation, dans une eau dure et alcaline.",
+  "comportement": "Très paisible, il convient à la plupart des aquariums communautaires ; même les mâles se tolèrent entre eux. Ceux-ci poursuivent sans relâche les femelles : on conseille plusieurs femelles par mâle.\n\nOmnivore, il se nourrit de vers, de crustacés, d'insectes et de végétaux, et broute volontiers les algues. Vivipare, il est mature en 3 à 4 mois et se reproduit sans aucune intervention : des portées naissent en continu dans un bac mixte.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Xiphophorus-maculatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/xiphophorus-maculatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2350164"
+    }
+  ]
+}

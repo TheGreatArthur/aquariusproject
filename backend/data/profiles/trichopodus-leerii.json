@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Trichopodus leerii",
+  "nom_valide": null,
+  "auteur": "(Bleeker, 1852)",
+  "classification": "Anabantiformes › Osphronemidae",
+  "uicn": "NT",
+  "repartition": "Thaïlande, Malaisie péninsulaire, Sumatra et Bornéo",
+  "pays": [
+    "IDN",
+    "MYS",
+    "THA"
+  ],
+  "presentation": "Décrit en 1852 par Pieter Bleeker, le gourami perlé est couvert d'un semis de points nacrés, d'où son nom. Le mâle adulte développe une gorge orange à rouge vif et des nageoires dorsale et anale prolongées en filaments.\n\nL'UICN le classe « quasi menacé » : les tourbières et marais côtiers de plaine qui l'abritent sont convertis en plantations. Presque tous les poissons du commerce proviennent d'élevages d'Asie et d'Europe de l'Est.",
+  "habitat": "Il est originaire de Thaïlande, de Malaisie et des îles de Bornéo et Sumatra ; des populations introduites existent à Singapour et en Colombie.\n\nIl vit dans les marais et ruisseaux de plaine, souvent près des côtes, parmi une végétation dense, dans une eau acide. Comme les autres gouramis, il respire obligatoirement l'air en surface.",
+  "comportement": "C'est l'un des gouramis les plus paisibles et un excellent poisson communautaire, à condition d'éviter les compagnons agressifs ou trop vifs, qui le rendent craintif. Les mâles sont territoriaux entre eux et peuvent être rudes avec les femelles avant la ponte : des cachettes sont indispensables.\n\nPeu difficile, il accepte la plupart des aliments. Le mâle construit un grand nid de bulles, jusqu'à 25 cm de diamètre, parmi les plantes flottantes, dans une eau peu profonde et calme.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Trichopodus-leerii.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/trichopodus-leerii/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/7623402"
+    }
+  ]
+}

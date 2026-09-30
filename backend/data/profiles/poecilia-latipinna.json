@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Poecilia latipinna",
+  "nom_valide": null,
+  "auteur": "(Lesueur, 1821)",
+  "classification": "Cyprinodontiformes › Poeciliidae",
+  "uicn": "LC",
+  "repartition": "Côtes du sud-est des États-Unis et du golfe du Mexique, de la Caroline du Nord à Veracruz (Mexique)",
+  "pays": [
+    "MEX",
+    "USA"
+  ],
+  "emprise": [-100, 18, -75, 37],
+  "presentation": "Décrit en 1821 par le naturaliste français Charles Alexandre Lesueur, le molly voilier doit son nom latin *latipinna* (« large nageoire ») à la dorsale immense, en forme de voile, des mâles adultes, qu'ils déploient lors des parades.\n\nOn le distingue de *Poecilia velifera*, très proche, par les taches sombres rectangulaires (et non arrondies) de sa nageoire dorsale. Introduit dans de nombreux pays, du Kenya à la Nouvelle-Zélande, il y concurrence souvent les espèces locales.",
+  "habitat": "Il est originaire des plaines côtières du sud-est des États-Unis, de la Caroline du Nord à la Floride, et du pourtour du golfe du Mexique jusqu'à Veracruz.\n\nIl vit dans les eaux calmes et chaudes des petits cours d'eau, étangs, marais, canaux et fossés soumis à la marée, souvent saumâtres, riches en algues et en végétation. Il tolère l'eau douce dure comme l'eau de mer.",
+  "comportement": "Il convient à un aquarium communautaire d'eau dure, mais peut harceler les petits poissons en grandissant, et les mâles se montrent agressifs entre eux en période de reproduction.\n\nDans la nature, il est presque exclusivement herbivore et broute algues et végétaux, avec quelques petits crustacés et insectes : des légumes ou des flocons végétaux sont indispensables en aquarium. La gestation dure environ deux mois et donne jusqu'à une cinquantaine de grands alevins ; un mâle pour deux femelles est recommandé.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Poecilia-latipinna.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/poecilia-latipinna/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5203752"
+    }
+  ]
+}

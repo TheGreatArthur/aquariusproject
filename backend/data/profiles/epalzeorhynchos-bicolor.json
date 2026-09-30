@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Epalzeorhynchos bicolor",
+  "nom_valide": null,
+  "auteur": "(Smith, 1931)",
+  "classification": "Cypriniformes › Cyprinidae",
+  "uicn": "CR",
+  "repartition": "Endémique de Thaïlande : bassins du Chao Phraya, du Mae Klong et du Bangpakong",
+  "pays": [
+    "THA"
+  ],
+  "presentation": "Décrit en 1931 par le zoologiste américain Hugh M. Smith, le labéo bicolore (ou « requin à queue rouge ») associe un corps noir velouté à une queue rouge vif. Longtemps classé dans le genre *Labeo*, d'où son nom commun, il appartient aujourd'hui au genre *Epalzeorhynchos*.\n\nC'est l'un des poissons d'aquarium les plus menacés : déclaré éteint en 1996, il a été retrouvé en 2011 dans le bassin du Chao Phraya, puis en 2014 dans le Mae Klong. Il est classé « en danger critique » par l'UICN. Les dizaines de milliers de poissons exportés chaque année proviennent tous d'élevages, où la ponte est déclenchée par hormones.",
+  "habitat": "Il était abondant au début du 20e siècle dans le bas Mae Klong, le bas Chao Phraya et le Bangpakong, qui se jettent au fond du golfe de Thaïlande. Il vit dans les rivières principales et, à la saison des pluies, gagne les plaines et forêts inondées ; les barrages, la pollution et l'aménagement des cours d'eau ont coupé ces migrations.\n\nLe spécimen retrouvé dans le Mae Klong a été capturé dans un tronçon d'eau claire et courante de plus d'un mètre de profondeur, sur fond de sable et de gros rochers.",
+  "comportement": "Souvent vendu comme poisson communautaire, il n'en est pas un : discret jeune, il devient de plus en plus territorial en grandissant et peut harceler les espèces qui lui ressemblent (autres labéos, *Crossocheilus*, *Garra*). Un seul individu par bac, dans un aquarium spacieux et structuré, est la règle.\n\nIl broute le biofilm des surfaces (algues, petits crustacés, larves d'insectes) mais n'est pas un bon mangeur d'algues. Il peut vivre plus de 15 ans. Sa reproduction n'a pas été obtenue en aquarium d'amateur.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Epalzeorhynchos-bicolor.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/epalzeorhynchos-bicolor/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2360397"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "nom_scientifique": "Otocinclus affinis",
+  "nom_valide": null,
+  "auteur": "Steindachner, 1877",
+  "classification": "Siluriformes › Loricariidae",
+  "uicn": "LC",
+  "repartition": "Sud-est du Brésil, région de Rio de Janeiro",
+  "pays": [
+    "BRA"
+  ],
+  "emprise": [-50, -25, -40, -19],
+  "presentation": "Décrit en 1877 par Franz Steindachner, *Otocinclus affinis* est l'un des plus anciens noms du genre. *Otocinclus* vient du grec « oreille » et « grille », pour l'os perforé situé derrière la tête.\n\nDans le commerce, le nom « Otocinclus affinis » est très souvent appliqué à d'autres espèces, notamment *O. macrospilus* ou *O. vittatus*, beaucoup plus exportées : la véritable espèce, originaire du sud-est du Brésil, est rarement proposée.",
+  "habitat": "Son aire naturelle se situe dans les petits fleuves côtiers de la région de Rio de Janeiro, au Brésil, dans un climat subtropical.\n\nLes otocinclus vivent en bancs sur la végétation des berges, les feuilles et le bois des cours d'eau calmes, où ils raclent algues et biofilm. Il supporte une eau plus fraîche que ses cousins amazoniens (20 à 26 °C).",
+  "comportement": "Très paisible, il se maintient en groupe d'au moins 5 à 6 individus, avec des poissons calmes qui ne lui volent pas sa nourriture. Il reste souvent collé aux vitres et aux feuilles.\n\nC'est un brouteur d'algues : un aquarium planté et mûr, riche en biofilm, est indispensable, complété de légumes blanchis et de pastilles à la spiruline. Comme tous les otocinclus, il souffre souvent de jeûne pendant le transport et doit être acclimaté dans un bac bien établi.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Otocinclus-affinis.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2339312"
+    }
+  ]
+}

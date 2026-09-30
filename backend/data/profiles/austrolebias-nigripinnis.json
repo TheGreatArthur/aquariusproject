@@ -1,0 +1,26 @@
+{
+  "nom_scientifique": "Austrolebias nigripinnis",
+  "nom_valide": "Argolebias nigripinnis",
+  "auteur": "(Regan, 1912)",
+  "classification": "Cyprinodontiformes › Rivulidae",
+  "uicn": "NT",
+  "repartition": "Bassins du bas Paraná et du río Uruguay (Argentine, Uruguay, Paraguay)",
+  "pays": [
+    "ARG",
+    "PRY",
+    "URY"
+  ],
+  "presentation": "Décrit en 1912 par Charles Tate Regan, le cyno étoilé (ou « poisson-perle à nageoires noires ») est un killi annuel sud-américain : le mâle, bleu-noir, est constellé de points bleu clair comme un ciel étoilé. FishBase le range désormais dans le genre *Argolebias*, sous le nom *Argolebias nigripinnis*.\n\nSon cycle de vie est calqué sur les saisons : il vit dans des mares temporaires qui s'assèchent l'été ; les adultes meurent, tandis que les œufs, enfouis dans la vase, attendent plusieurs mois le retour des pluies pour éclore.",
+  "habitat": "Il est originaire des plaines des bassins du bas Paraná et du río Uruguay, en Argentine, en Uruguay et au Paraguay, sous un climat subtropical à tempéré.\n\nIl vit dans des mares et dépressions inondées temporairement, qui se remplissent en automne et en hiver austral. L'eau y est fraîche (souvent 18 à 22 °C, parfois beaucoup moins en hiver), peu profonde et riche en végétation.",
+  "comportement": "Les mâles paradent et se disputent les femelles, sans gravité dans un bac assez planté ; on maintient un mâle pour deux ou trois femelles, dans un petit bac spécifique d'eau fraîche.\n\nIl se nourrit de vers, de crustacés et d'insectes. Il pond dans le sol : en aquarium, on utilise un bac de tourbe fine, conservée humide 2 à 4 mois avant d'être remise en eau pour faire éclore les œufs. Sa vie est courte, un an environ.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Austrolebias-nigripinnis.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2349007"
+    }
+  ]
+}

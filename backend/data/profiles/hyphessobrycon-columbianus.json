@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Hyphessobrycon columbianus",
+  "nom_valide": null,
+  "auteur": "Zarske & Géry, 2002",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "DD",
+  "repartition": "Río Acandí, département du Chocó, nord-ouest de la Colombie près de la frontière panaméenne",
+  "pays": [
+    "COL"
+  ],
+  "localites": [
+    [-77.28, 8.51]
+  ],
+  "presentation": "Décrit en 2002 par Axel Zarske et Jacques Géry, ce tétra porte le nom de son pays d'origine, la Colombie. Il est proche de *Hyphessobrycon savagei*, endémique du Costa Rica, mais s'en distingue par un corps nettement plus haut, un reflet bleu irisé sur le haut du corps chez les deux sexes et des nageoires caudale et anale rouge sang.\n\nL'UICN le classe en « données insuffisantes » : son aire connue est minuscule et sa biologie en milieu naturel reste peu étudiée.",
+  "habitat": "L'espèce n'est connue que du bassin du río Acandí, dans le Darién colombien, sur la côte caraïbe près de la frontière avec le Panama. La localité type est un petit ruisseau situé à environ 6 km en aval d'Acandí.\n\nFishBase la signale dans de petits cours d'eau côtiers ; faute de relevés détaillés, les paramètres d'aquarium reposent sur l'expérience des éleveurs : eau douce à légèrement acide, entre 24 et 29 °C.",
+  "comportement": "Globalement paisible, il vit en banc et se montre plus à l'aise en groupe mixte d'au moins 8 à 10 individus, avec des characidés de taille comparable, des petits poissons-chats et des cichlidés non prédateurs. Sa taille (jusqu'à 7 cm) et sa vivacité en font un poisson de banc robuste.\n\nOmnivore, il se nourrit probablement de vers, d'insectes et de zooplancton, avec un peu de matière végétale. Les mâles, plus fins et plus colorés, développent une nageoire dorsale plus longue ; c'est un pondeur libre sans soins parentaux.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hyphessobrycon-columbianus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hyphessobrycon-columbianus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2354590"
+    }
+  ]
+}

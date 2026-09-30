@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Hyphessobrycon herbertaxelrodi",
+  "nom_valide": null,
+  "auteur": "Géry, 1961",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Haut bassin du rio Paraguai, autour du Pantanal (Mato Grosso et Mato Grosso do Sul, Brésil)",
+  "pays": [
+    "BRA"
+  ],
+  "presentation": "Décrit en 1961 par Jacques Géry, le néon noir est dédié à Herbert R. Axelrod, éditeur et auteur américain de livres d'aquariophilie. Malgré son nom commun, ce n'est pas un *Paracheirodon* : il se reconnaît à sa double bande claire et noire sur le flanc et à l'œil rouge vif sur le dessus.\n\nIl appartient au « groupe *H. agulha* », des espèces dont la moitié inférieure du corps est sombre, surtout au-dessus de la nageoire anale.",
+  "habitat": "L'espèce semble répandue dans le haut rio Paraguai, au nord comme au sud du Pantanal, la grande zone humide tropicale du Brésil. Sa localité type se trouve dans le haut bassin du rio Taquari, près de Coxim ; elle a aussi été observée dans le haut rio Sepotuba, 700 km plus au nord.\n\nElle fréquente les petits affluents, les rivières de tête de bassin, les bras morts et les plaines inondables saisonnières. Ces ruisseaux de quelques mètres de large ont une eau claire légèrement brune et une végétation de berge épaisse, parfois des herbiers d'*Echinodorus* ou d'*Eleocharis*.",
+  "comportement": "Très paisible, il nage dans les couches moyenne et supérieure de l'eau et se nourrit de vers, de petits crustacés et de matière végétale. Un groupe mixte d'au moins 8 à 10 individus lui donne un comportement de banc naturel.\n\nIl pond en pleine eau, sans soins parentaux ; les œufs éclosent en 24 à 30 heures. Les femelles adultes sont plus hautes et légèrement plus grandes que les mâles.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hyphessobrycon-herbertaxelrodi.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hyphessobrycon-herbertaxelrodi/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2354640"
+    }
+  ]
+}

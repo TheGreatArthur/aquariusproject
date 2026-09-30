@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Placidochromis electra",
+  "nom_valide": null,
+  "auteur": "(Burgess, 1979)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Endémique du lac Malawi : île de Likoma et côtes du nord-est du lac (Malawi, Mozambique)",
+  "pays": [
+    "MOZ",
+    "MWI"
+  ],
+  "emprise": [33.8, -15.0, 35.4, -9.3],
+  "presentation": "Décrit en 1979 par Warren E. Burgess, le « deep water hap » ou électra est un haplochrominé du lac Malawi. Le mâle adulte prend une robe bleu électrique barrée de bandes sombres, d'où son nom ; la femelle reste argentée.\n\nComme beaucoup de cichlidés du lac Malawi, il appartient à une radiation spectaculaire : plusieurs centaines d'espèces apparues en moins de deux millions d'années.",
+  "habitat": "Il est endémique du lac Malawi, autour de l'île de Likoma, de Mara Point et le long des côtes du nord-est du lac.\n\nIl vit au-dessus des fonds sableux, en général en dessous de 7 m de profondeur. Il récupère les invertébrés et les algues soulevés du sable par d'autres poissons qui fouillent le fond. L'eau du lac est chaude, dure et alcaline (pH 7,6 à 8,8).",
+  "comportement": "Très doux, il ne supporte pas l'agitation d'une communauté de mbunas ; il cohabite bien avec des *Aulonocara*, des *Copadichromis* et d'autres espèces paisibles du lac. Paisible aussi avec ses congénères, il devient légèrement territorial pendant la reproduction ; on maintient plusieurs femelles par mâle.\n\nC'est un incubateur buccal maternel : la femelle garde les œufs puis les alevins dans sa bouche pendant plusieurs semaines. Il accepte la plupart des aliments, avec une part végétale (spiruline).",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Placidochromis-electra.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/placidochromis-electra/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2372614"
+    }
+  ]
+}
