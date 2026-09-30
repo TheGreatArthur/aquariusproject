@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import useSWR from 'swr';
 import clsx from 'clsx';
@@ -9,6 +9,7 @@ import { Search, X } from 'lucide-react';
 import FishCard from '@/components/fish/FishCard';
 import PageHeader from '@/components/PageHeader';
 import Pagination from '@/components/Pagination';
+import { matchesSearch } from '@/lib/fish';
 
 const POISSONS_PER_PAGE = 12;
 
@@ -26,10 +27,8 @@ export default function Poissons () {
     setFamille(params.get('famille') ?? '');
   }, [params]);
 
-  const url = famille
-    ? `/api/poissons?famille=${encodeURIComponent(famille)}`
-    : `/api/poissons?q=${encodeURIComponent(terme)}`;
-  const { data, error, isLoading } = useSWR(url, { keepPreviousData: true });
+  // La liste complète est chargée une fois (même cache que le simulateur) et filtrée dans le navigateur
+  const { data, error, isLoading } = useSWR('/api/poissons');
   const { data: dataFamilles } = useSWR('/api/poissons/familles');
 
   // Réinitialise la pagination à chaque recherche
@@ -54,8 +53,11 @@ export default function Poissons () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const poissons = useMemo(() => (data?.poissons ?? []).filter((p) => famille
+    ? p.nom_famille?.toLowerCase() === famille.toLowerCase()
+    : matchesSearch(p, terme)), [data, famille, terme]);
+
   // Pagination
-  const poissons = data?.poissons ?? [];
   const totalPages = Math.ceil(poissons.length / POISSONS_PER_PAGE);
   const currentPoissons = poissons.slice((currentPage - 1) * POISSONS_PER_PAGE, currentPage * POISSONS_PER_PAGE);
 
@@ -124,7 +126,7 @@ export default function Poissons () {
           <p className="card mt-10 p-8 text-center text-danger">
             Impossible de charger les poissons. Vérifiez que l&apos;API est démarrée.
           </p>
-        ) : isLoading && !data ? (
+        ) : isLoading ? (
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {Array.from({ length: 8 }, (_, i) => (
               <div key={i} className="card aspect-[3/4] animate-pulse bg-surface-elevated/60"/>
@@ -136,8 +138,7 @@ export default function Poissons () {
             <p className="mt-2 text-sm text-muted">Essayez un autre terme ou retirez le filtre de famille.</p>
           </div>
         ) : (
-          <div className={clsx('mt-8 grid gap-5 transition-opacity sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4',
-            isLoading && 'opacity-60')}>
+          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {currentPoissons.map((p, i) => <FishCard key={p.id} poisson={p} priority={i < 4}/>)}
           </div>
         )}
