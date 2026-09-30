@@ -1,0 +1,24 @@
+{
+  "nom_scientifique": "Enigmatochromis lucanusi",
+  "nom_valide": null,
+  "auteur": "Lamboj, 2009",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "NE",
+  "repartition": "Rivière Foto, près de Fria, Guinée côtière (Afrique de l'Ouest)",
+  "pays": [
+    "GIN"
+  ],
+  "presentation": "Décrit en 2009 par l'ichtyologiste allemand Anton Lamboj, ce petit cichlidé ouest-africain a nécessité la création d'un genre nouveau, *Enigmatochromis*, tant ses caractères le distinguaient de ses proches parents : d'où ce nom de « cichlidé énigmatique ». Il ne mesure que 4,5 cm environ sans la queue.\n\nIl fait partie des cichlidés africains de rivière (Pseudocrenilabrinae), proches des *Pelvicachromis*. Son nom d'espèce honore Oliver Lucanus, explorateur et photographe spécialiste des poissons d'eau douce. Il n'a pas encore été évalué par l'UICN.",
+  "habitat": "Il n'est connu que de sa localité type, la rivière Foto, une petite rivière de savane près de la ville minière de bauxite de Fria, en Guinée côtière, au nord de Conakry.\n\nIl y vit aux côtés de *Pelvicachromis humilis*, dans une eau douce et acide. Son aire minuscule, dans une région d'exploitation minière, le rend potentiellement vulnérable.",
+  "comportement": "Comme les petits cichlidés ouest-africains qui lui sont apparentés, il vit en couple ou en petit groupe, défend un territoire modeste et fouille le sol à la recherche de nourriture (détritus, petits invertébrés).\n\nEn aquarium, il demande une eau douce et acide, un sol de sable fin, des feuilles mortes et des cachettes, avec des compagnons paisibles. Les sources de référence donnent encore peu de détails sur sa biologie.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Enigmatochromis-lucanusi.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2370471"
+    }
+  ]
+}

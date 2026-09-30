@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Thayeria ifati",
+  "nom_valide": null,
+  "auteur": "Géry, 1959",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Endémique de Guyane : bassins du Maroni et de l'Approuague",
+  "pays": [
+    "GUF"
+  ],
+  "presentation": "Décrit en 1959 par Jacques Géry, *Thayeria ifati* est l'un des tétras « pingouins » : une bande noire longe le flanc puis plonge dans le lobe inférieur de la nageoire caudale, et le poisson nage le corps incliné, tête vers le haut, comme les autres *Thayeria*.\n\nLes signalements au Brésil et au Suriname se sont révélés être des erreurs d'identification. Selon la classification de 2024, le genre appartient désormais à la famille des Acestrorhamphidae.",
+  "habitat": "Espèce endémique de la Guyane, connue dans les bassins du Maroni et de l'Approuague. On l'a récoltée dans des milieux variés : rivières, ruisseaux, criques, mares et petits lacs.\n\nLe fond est tantôt riche en matière organique, tantôt sableux et rocheux, mais l'espèce recherche toujours les zones calmes : eaux lentes des criques et zones de contre-courant des rivières principales.",
+  "comportement": "Pacifique et grégaire, il vit en groupe et se nourrit de petits insectes, de vers et de zooplancton. Il se maintient en banc d'au moins 6, idéalement 10 individus : en nombre suffisant, les petites querelles restent internes au groupe et il ne pince pas les nageoires des autres poissons.\n\nIl supporte mal les compagnons très turbulents ou beaucoup plus gros. Aucune reproduction en captivité n'est documentée à ce jour.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Thayeria-ifati.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/thayeria-ifati/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5204173"
+    }
+  ]
+}

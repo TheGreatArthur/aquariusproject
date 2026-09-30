@@ -1,0 +1,24 @@
+{
+  "nom_scientifique": "Gambusia holbrooki",
+  "nom_valide": null,
+  "auteur": "Girard, 1859",
+  "classification": "Cyprinodontiformes › Poeciliidae",
+  "uicn": "LC",
+  "repartition": "Est des États-Unis, du New Jersey à l'Alabama ; introduite dans le monde entier, dont le sud de l'Europe",
+  "pays": [
+    "USA"
+  ],
+  "presentation": "Décrite en 1859 par Charles Girard, la gambusie de l'Est porte le nom du zoologiste américain John Edwards Holbrook. Elle a été lâchée dans les pays tropicaux et subtropicaux du monde entier pour lutter contre les larves de moustiques vecteurs du paludisme.\n\nLe bilan de ces introductions est aujourd'hui jugé mauvais : son effet sur les moustiques a été minime, voire contre-productif car elle dévore aussi les invertébrés qui les mangent, et elle a gravement menacé de nombreuses espèces locales, notamment des petits cyprinodontes endémiques en Europe. Elle est aujourd'hui largement établie dans le sud de la France.",
+  "habitat": "Son aire naturelle couvre les bassins atlantiques et du golfe du Mexique de l'est des États-Unis, du New Jersey à l'Alabama. Elle est établie dans tout le sud de l'Europe et sur tous les continents.\n\nElle vit dans les eaux stagnantes ou lentes : étangs et lacs végétalisés, bras morts, fosses calmes des ruisseaux, et même eau saumâtre. Très résistante, elle supporte de 15 à 35 °C. Les bancs se tiennent au bord, où ils chassent les petits insectes tombés à l'eau.",
+  "comportement": "Contrairement à ce que laisse croire sa petite taille, elle est vive et agressive : elle pince les nageoires des autres poissons et s'attaque aux alevins. Elle est à déconseiller en aquarium communautaire.\n\nVivipare, elle se reproduit très rapidement ; sa vie est courte, souvent un à deux ans dans la nature. Relâcher des gambusies (ou tout poisson d'aquarium) dans le milieu naturel est à proscrire.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Gambusia-holbrooki.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2350570"
+    }
+  ]
+}

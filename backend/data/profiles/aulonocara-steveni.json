@@ -1,0 +1,27 @@
+{
+  "nom_scientifique": "Aulonocara steveni",
+  "nom_valide": null,
+  "auteur": "Meyer, Riehl & Zetzsche, 1987",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "NE",
+  "repartition": "Endémique du lac Malawi, près de l'île de Kande (Malawi)",
+  "pays": [
+    "MWI"
+  ],
+  "localites": [
+    [34.13, -11.95]
+  ],
+  "presentation": "Décrit en 1987 par Manfred Meyer, Rüdiger Riehl et Holger Zetzsche, *Aulonocara steveni* est un « paon » du lac Malawi d'environ 9 cm sans la queue ; le mâle est bleu, souvent teinté d'orange sur les flancs.\n\nSon statut est discuté : certains auteurs le rattachent à *A. stuartgranti*, espèce très variable. De nombreuses formes vendues sous ce nom sont des variétés d'élevage ou des hybrides.",
+  "habitat": "Il est connu des environs de l'île de Kande, sur la côte malawite du lac.\n\nIl vit parmi les rochers couverts de sédiments, en bordure des zones sableuses, dans une eau chaude, dure et alcaline.",
+  "comportement": "Assez paisible, il se comporte comme les autres *Aulonocara* : un mâle pour plusieurs femelles, pas d'autres *Aulonocara* dans le bac pour éviter les hybrides, et des compagnons calmes plutôt que des mbunas.\n\nIl se nourrit d'invertébrés à corps mou qu'il trouve dans les sédiments. Incubatrice buccale, la femelle garde œufs et alevins dans sa bouche.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Aulonocara-steveni.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2370495"
+    }
+  ]
+}

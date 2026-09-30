@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Hypancistrus zebra",
+  "nom_valide": null,
+  "auteur": "Isbrücker & Nijssen, 1991",
+  "classification": "Siluriformes › Loricariidae",
+  "uicn": "CR",
+  "repartition": "Endémique de la Volta Grande du rio Xingu (Pará, Brésil)",
+  "pays": [
+    "BRA"
+  ],
+  "emprise": [-53.5, -4.2, -51.5, -2.8],
+  "presentation": "Arrivé en Europe à la fin des années 1980 sous le code L046, le pléco zèbre a été décrit en 1991 par Isaäc Isbrücker et Han Nijssen, qui ont créé pour lui le genre *Hypancistrus*. Ses rayures noires et blanches en font l'un des loricariidés les plus recherchés ; il ne dépasse pas 8 cm.\n\nIl est classé « en danger critique » par l'UICN. Le Brésil interdit son exportation depuis 2004, et le barrage de Belo Monte a fortement réduit le débit de la Volta Grande du Xingu, son seul habitat. Les poissons vendus aujourd'hui en Europe sont nés en captivité.",
+  "habitat": "Il n'est connu que d'un tronçon du rio Xingu, la Volta Grande, une grande boucle de rapides dans l'État du Pará.\n\nIl vit dans des eaux courantes, chaudes (26 à 30 °C) et très oxygénées, en profondeur, dans les failles et les éboulis de roches posés sur un fond de sable.",
+  "comportement": "Paisible mais timide, il se fait facilement devancer à la nourriture : il vit mieux dans un bac spécifique, ou avec de petits poissons de pleine eau qui supportent la même chaleur (tétras, rasboras, discus, cichlidés nains). Les mâles sont territoriaux entre eux autour des cavités.\n\nContrairement à l'image d'un « mangeur d'algues », il est surtout carnivore : vers de vase, moules, crevettes et pastilles riches en protéines. Il se reproduit en cavité, le mâle gardant les œufs ; les mâles adultes ont une tête plus large et des odontodes sur la première nageoire pectorale.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hypancistrus-zebra.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hypancistrus-zebra/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2339299"
+    }
+  ]
+}

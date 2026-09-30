@@ -1,0 +1,26 @@
+{
+  "nom_scientifique": "Gastromyzon punctulatus",
+  "nom_valide": null,
+  "auteur": "Inger & Chin, 1961",
+  "classification": "Cypriniformes › Gastromyzontidae",
+  "uicn": "LC",
+  "repartition": "Bornéo (Sarawak, Sabah, Brunei et Kalimantan)",
+  "pays": [
+    "BRN",
+    "IDN",
+    "MYS"
+  ],
+  "presentation": "Décrit en 1961 par Robert Inger et Chin Phui Kong, *Gastromyzon punctulatus* est une « loche de torrent » de Bornéo, au corps aplati en forme de ventouse et couvert de fines ponctuations, d'où son nom. Il mesure environ 6 cm.\n\nIl appartient à la famille des Gastromyzontidae, séparée des Balitoridae : ses nageoires pectorales et pelviennes élargies forment avec son ventre plat une ventouse qui lui permet de rester collé aux pierres dans le courant.",
+  "habitat": "Il est endémique de Bornéo, où l'on trouve de nombreuses espèces de *Gastromyzon*, souvent propres à un seul bassin.\n\nCes loches vivent dans les ruisseaux et torrents de forêt à courant rapide, sur des fonds de galets et de rochers, dans une eau claire, fraîche pour les tropiques (23 à 25 °C) et très oxygénée. Elles raclent le biofilm d'algues et de micro-organismes qui couvre les pierres.",
+  "comportement": "Paisible envers les autres espèces, il se montre territorial avec ses congénères, qui se disputent les meilleures pierres sans se blesser. Un petit groupe dans un bac spacieux répartit ces joutes.\n\nIl a besoin d'un fort courant, d'une eau très oxygénée et de pierres lisses couvertes de biofilm ; on complète avec des pastilles végétales et de petites proies. Ses compagnons idéaux sont d'autres poissons d'eau vive (danios, gobies de torrent).",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Gastromyzon-punctulatus.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2358893"
+    }
+  ]
+}

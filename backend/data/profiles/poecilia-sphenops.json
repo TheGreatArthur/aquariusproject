@@ -1,0 +1,34 @@
+{
+  "nom_scientifique": "Poecilia sphenops",
+  "nom_valide": null,
+  "auteur": "Valenciennes, 1846",
+  "classification": "Cyprinodontiformes › Poeciliidae",
+  "uicn": "LC",
+  "repartition": "Du Mexique à la Colombie et au Venezuela, avec quelques populations dans les Caraïbes",
+  "pays": [
+    "COL",
+    "CUW",
+    "HND",
+    "MEX",
+    "NIC",
+    "SLV",
+    "VEN"
+  ],
+  "presentation": "Décrit en 1846 par Achille Valenciennes, le molly (ou « molly à nageoires courtes ») est l'ancêtre de nombreuses formes d'aquarium, dont le célèbre molly noir, une variété mélanique. Il est souvent confondu avec *Poecilia mexicana*, une espèce proche.\n\nDes décennies de production intensive ont fragilisé beaucoup de souches d'élevage, sensibles aux maladies lorsqu'elles sont maintenues en eau douce et peu minéralisée. L'espèce est si tolérante au sel qu'elle peut vivre en eau de mer.",
+  "habitat": "Son aire naturelle s'étend du Mexique à la Colombie et au Venezuela, avec des populations isolées sur certaines îles des Caraïbes. Des populations introduites existent aux États-Unis, au Japon, à Singapour et en Europe de l'Est.\n\nIl vit en eau douce comme en eau saumâtre, dans une eau dure et alcaline, entre 18 et 28 °C.",
+  "comportement": "Paisible, il ne convient qu'avec des poissons qui supportent la même eau dure, voire légèrement salée : autres *Poecilia*, arcs-en-ciel, barbus et tétras d'eau dure.\n\nOmnivore, il consomme petits invertébrés et détritus, mais sa ration doit comporter beaucoup de végétaux ; il broute les algues vertes. Vivipare, il se reproduit facilement après une gestation d'environ deux mois ; plusieurs femelles par mâle limitent le harcèlement.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Poecilia-sphenops.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/poecilia-sphenops/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5203748"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "nom_scientifique": "Trichopsis vittata",
+  "nom_valide": null,
+  "auteur": "(Cuvier, 1831)",
+  "classification": "Anabantiformes › Osphronemidae",
+  "uicn": "LC",
+  "repartition": "Indochine (bas Mékong, Thaïlande, Myanmar), Malaisie péninsulaire et Singapour ; signalé à Sumatra, Bornéo et Java",
+  "pays": [
+    "IDN",
+    "KHM",
+    "LAO",
+    "MMR",
+    "MYS",
+    "SGP",
+    "THA",
+    "VNM"
+  ],
+  "presentation": "Décrit en 1831 par Georges Cuvier à partir de poissons de Java, le gourami grogneur doit son nom à sa capacité à émettre des sons audibles, des « grognements », grâce à un mécanisme de tendons des nageoires pectorales unique dans la famille des Osphronemidae. *Vittata* signifie « rayé » en latin.\n\nC'est le plus grand des *Trichopsis* (jusqu'à 8 cm) ; ses rayons de nageoire anale filamenteux atteignent presque le bout de la queue. Les populations des îles de la Sonde pourraient appartenir à une espèce distincte.",
+  "habitat": "Il est présent dans une grande partie de l'Indochine (bas Mékong au Laos, au Cambodge et au Vietnam, Thaïlande, basse Salouen au Myanmar), en Malaisie péninsulaire et à Singapour. Des populations férales existent aux Philippines, en Inde et aux États-Unis.\n\nIl occupe tous les milieux calmes de plaine : forêts marécageuses, tourbières, plaines inondables, canaux d'irrigation, rizières et fossés, avec une nette préférence pour les eaux stagnantes et très végétalisées. Il respire obligatoirement l'air en surface.",
+  "comportement": "Paisible, sauf pendant la reproduction, il peut vivre en couple ou en petit groupe, où l'on observe des parades et des échanges de « grognements » entre mâles. Il se nourrit de zooplancton, de crustacés et de larves d'insectes.\n\nLe mâle construit un nid de bulles ; les œufs, qui coulent, sont ramassés par un ou deux parents et replacés dans le nid. L'eau douce et un peu plus chaude favorise la ponte, et un couvercle bien ajusté protège la respiration aérienne des alevins.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Trichopsis-vittata.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/trichopsis-vittata/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5211201"
+    }
+  ]
+}

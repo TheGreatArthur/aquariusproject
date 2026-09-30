@@ -1,0 +1,24 @@
+{
+  "nom_scientifique": "Scobinancistrus aureatus",
+  "nom_valide": null,
+  "auteur": "Burgess, 1994",
+  "classification": "Siluriformes › Loricariidae",
+  "uicn": "VU",
+  "repartition": "Endémique du bassin du rio Xingu (Pará, Brésil)",
+  "pays": [
+    "BRA"
+  ],
+  "presentation": "Décrit en 1994 par Warren E. Burgess, le pléco solaire (L014, « sunshine pleco ») est un grand loricariidé noir constellé de points jaune d'or, aux nageoires bordées de jaune, qui atteint près de 30 cm. Son nom latin *aureatus* signifie « doré ».\n\nIl est classé « vulnérable » par l'UICN. Comme les autres poissons endémiques du Xingu, il est menacé par les grands aménagements du fleuve, en particulier le barrage de Belo Monte, qui a profondément modifié le régime des eaux de la Volta Grande depuis 2016.",
+  "habitat": "L'espèce n'est connue que du bassin du rio Xingu, un grand affluent clair de la rive droite de l'Amazone, dans l'État du Pará.\n\nLes loricariidés du Xingu vivent dans les rapides rocheux : eau claire, chaude, très oxygénée et courante, où ils s'abritent dans les failles et sous les dalles de roche. En aquarium, un fort brassage et une eau bien oxygénée sont essentiels.",
+  "comportement": "Solitaire et assez territorial envers les autres plécos, il tolère en revanche la plupart des poissons de pleine eau de taille moyenne. Actif surtout au crépuscule et la nuit, il passe la journée caché dans les cavités.\n\nOmnivore à tendance carnivore, il a besoin d'aliments riches en protéines (crevettes, moules, pastilles pour plécos carnivores) plus que de végétaux. Sa taille adulte impose un grand bac, et sa longévité peut dépasser 20 ans.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Scobinancistrus-aureatus.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2339351"
+    }
+  ]
+}

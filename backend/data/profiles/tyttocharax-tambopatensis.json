@@ -1,0 +1,25 @@
+{
+  "nom_scientifique": "Tyttocharax tambopatensis",
+  "nom_valide": null,
+  "auteur": "Weitzman & Ortega, 1995",
+  "classification": "Characiformes › Stevardiidae",
+  "uicn": "LC",
+  "repartition": "Bassins des rivières Manu et Tambopata, Amazonie péruvienne (Madre de Dios)",
+  "pays": [
+    "PER"
+  ],
+  "emprise": [-73, -14, -68, -11],
+  "presentation": "Décrit en 1995 par Stanley Weitzman et Hernán Ortega, ce tétra doit son nom à la rivière Tambopata, dans le sud-est du Pérou. Avec une longueur maximale d'environ 1,6 cm sans la queue, c'est l'un des plus petits characiformes connus.\n\nLe genre *Tyttocharax* appartient à la sous-famille des Xenurobryconinae ; la révision de la classification des tétras publiée en 2024 place ce groupe dans la famille des Stevardiidae, distincte des Characidae.",
+  "habitat": "Il habite de petits ruisseaux d'eau noire qui traversent les palmeraies à *Mauritia flexuosa* (aguajales) de l'Amazonie péruvienne. On le trouve surtout dans les mares et les zones calmes de cours d'eau de 2 à 4 m de large bordés de forêt-galerie, sur 20 à 60 cm de profondeur.\n\nLe courant y est faible, le fond sableux ou caillouteux, encombré de débris végétaux. Il se tient près des berges, où la végétation lui offre un abri contre les prédateurs.",
+  "comportement": "Poisson de banc, il nage près de la surface en groupes de 20 à 80 individus dans la nature. Sa très petite taille en fait un poisson à réserver à un aquarium spécifique ou partagé avec des espèces minuscules et paisibles, avec une nourriture vivante très fine.\n\nIl reste rare dans le commerce et peu documenté en aquarium ; la maintenance en groupe important, dans une eau douce et acide, reproduit au mieux ses conditions naturelles.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Tyttocharax-tambopatensis.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2353897"
+    }
+  ]
+}

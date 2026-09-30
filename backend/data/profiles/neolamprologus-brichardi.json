@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Neolamprologus brichardi",
+  "nom_valide": null,
+  "auteur": "(Poll, 1974)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Endémique du lac Tanganyika (Burundi, RD Congo, Tanzanie)",
+  "pays": [
+    "BDI",
+    "COD",
+    "TZA"
+  ],
+  "presentation": "Décrit en 1974 par l'ichtyologiste belge Max Poll, la princesse du Burundi est dédiée à Pierre Brichard, exportateur belge installé au Burundi qui fit connaître au monde les cichlidés du lac Tanganyika. Élégante, beige rosé avec des nageoires en lyre bordées de blanc, elle mesure environ 9 cm.\n\nAvec son très proche parent *N. pulcher*, elle est un modèle classique de la reproduction coopérative : les jeunes des pontes précédentes restent sur le territoire familial et aident leurs parents à le défendre et à l'entretenir.",
+  "habitat": "Elle vit sur les côtes rocheuses du lac Tanganyika, en particulier dans le nord du lac, où les colonies occupent les éboulis et les failles.\n\nL'eau du lac est chaude, très stable, dure et alcaline (pH 8 à 9). Elle se nourrit surtout du plancton qui passe au-dessus des rochers.",
+  "comportement": "Le couple, puis la famille, défend ensemble un territoire autour de la cavité de ponte, avec une agressivité marquée quand il y a des alevins. Elle vit mieux en bac spécifique ou avec d'autres cichlidés du Tanganyika occupant d'autres niveaux (*Cyprichromis*, conchylicoles).\n\nFacile à reproduire, elle pond au plafond d'une cavité ; plusieurs générations d'alevins cohabitent et la colonie grandit. Un groupe de jeunes permet aux couples de se former. Elle mange proies congelées, vivantes et un peu de végétaux.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Neolamprologus-brichardi.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/neolamprologus-brichardi/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2371754"
+    }
+  ]
+}

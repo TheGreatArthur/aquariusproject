@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Trichogaster lalius",
+  "nom_valide": null,
+  "auteur": "(Hamilton, 1822)",
+  "classification": "Anabantiformes › Osphronemidae",
+  "uicn": "LC",
+  "repartition": "Pakistan, nord de l'Inde et Bangladesh",
+  "pays": [
+    "BGD",
+    "IND",
+    "PAK"
+  ],
+  "presentation": "Décrit en 1822 par Francis Hamilton, le gourami nain porte des bandes obliques rouges et bleu turquoise chez le mâle ; les femelles sont argentées. De nombreuses formes d'élevage existent (« néon », « rouge », « poudre bleue »).\n\nTous les poissons du commerce sont élevés en masse, surtout en Asie. L'espèce est très touchée par un iridovirus (DGIV), un virus répandu dans certaines fermes, qui explique la fragilité de nombreux lots et impose une quarantaine sérieuse.",
+  "habitat": "Il est largement répandu au Pakistan, dans le nord de l'Inde et au Bangladesh ; les signalements au Népal et au Myanmar seraient des erreurs d'identification. Des populations férales existent à Singapour, aux États-Unis et en Colombie.\n\nIl vit dans les eaux lentes et envahies par la végétation : mares, marais, fossés, ruisseaux et canaux d'irrigation. Comme tous les gouramis, il complète sa respiration avec de l'air pris en surface.",
+  "comportement": "Timide et territorial à la fois, il doit être le poisson principal d'un petit bac. Les mâles peuvent devenir très agressifs envers d'autres anabantoïdes (combattants, gouramis) ou des poissons aux couleurs vives comme les guppys, et se cacher en présence d'espèces plus grosses.\n\nDe petits cyprinidés paisibles (arlequins, rasboras) et des loches discrètes sont les meilleurs compagnons. Omnivore, il se nourrit de petits invertébrés et d'algues. Le mâle construit un nid de bulles, souvent mêlé de débris végétaux, et garde les œufs.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Trichogaster-lalius.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/trichogaster-lalius/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5211200"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "nom_scientifique": "Badis badis",
+  "nom_valide": null,
+  "auteur": "(Hamilton, 1822)",
+  "classification": "Anabantiformes › Badidae",
+  "uicn": "LC",
+  "repartition": "Bassins du Gange et de la Mahanadi, Assam (Inde, Bangladesh, Népal), signalé au Bhoutan et au Pakistan",
+  "pays": [
+    "BGD",
+    "BTN",
+    "IND",
+    "NPL",
+    "PAK"
+  ],
+  "emprise": [72, 20, 97, 33],
+  "presentation": "Le badis (*Badis badis*) a été décrit en 1822 par Francis Hamilton uniquement à partir de notes et de dessins ; un néotype a été désigné en 2002 par Sven Kullander et Ralf Britz, lors d'une révision qui a fait passer la famille des Badidae de cinq à quinze espèces.\n\nOn le surnomme « poisson caméléon » pour sa capacité à changer très vite de couleur et de motif selon son humeur. Il mesure jusqu'à 7 cm ; les tailles de 8 cm parfois citées sont exagérées.",
+  "habitat": "Il vit dans le bassin du Gange, de la Yamuna jusqu'au delta au Bangladesh, dans des affluents au Népal, dans le bassin de la Mahanadi et en Assam, près du Brahmapoutre.\n\nIl préfère les eaux lentes et plutôt troubles, parmi la végétation immergée, souvent près des herbiers de nénuphars : rivières, étangs, fossés et marais. La localité du néotype est un cours d'eau large et peu profond, à fond vaseux, qui traverse des rizières.",
+  "comportement": "Lent et discret, il vit plutôt seul et se fait devancer par des espèces plus vives. Les mâles rivaux sont agressifs entre eux : un couple ou un mâle avec plusieurs femelles, avec des cavités bien réparties. Il ne faut pas le maintenir avec d'autres *Badis* (risque d'hybridation), et il mange les petites crevettes.\n\nMicro-prédateur, il refuse souvent les aliments secs et réclame des proies vivantes ou congelées. Il pond dans une cavité, que le mâle défend en gardant les œufs puis les alevins.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Badis-badis.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/badis-badis/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2389470"
+    }
+  ]
+}

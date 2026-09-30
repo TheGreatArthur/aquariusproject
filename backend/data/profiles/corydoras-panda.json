@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Corydoras panda",
+  "nom_valide": "Hoplisoma panda",
+  "auteur": "(Nijssen & Isbrücker, 1971)",
+  "classification": "Siluriformes › Callichthyidae",
+  "uicn": "NT",
+  "repartition": "Haut Amazone péruvien (bassin de l'Ucayali)",
+  "pays": [
+    "PER"
+  ],
+  "presentation": "Décrit en 1971 par Han Nijssen et Isaäc Isbrücker, le corydoras panda doit son nom à ses taches noires sur l'œil, la nageoire dorsale et la base de la queue, sur un corps blanc rosé, qui rappellent le panda géant.\n\nL'UICN le classe « quasi menacé ». FishBase le range désormais dans le genre *Hoplisoma*. Les poissons du commerce proviennent presque tous d'élevages d'Europe de l'Est et d'Asie, plus robustes que les sauvages.",
+  "habitat": "Il est originaire du haut bassin amazonien au Pérou. Il vit dans des ruisseaux et affluents d'eau claire ou d'eau noire, souvent sur fond de sable.\n\nCertains de ces cours d'eau reçoivent, à certaines périodes, l'eau de fonte des neiges andines : le courant se renforce et la température peut descendre vers 19 °C. Il apprécie donc une eau plutôt fraîche pour un poisson tropical (20 à 25 °C).",
+  "comportement": "Très paisible, il convient à de nombreux aquariums communautaires, avec de petits tétras, cyprinidés, anabantoïdes et cichlidés nains, en évitant les poissons grands ou agressifs. Il est bien plus confiant et actif en groupe d'au moins 6 individus.\n\nOmnivore, il se nourrit de pastilles coulantes et de proies vivantes ou congelées. Il se reproduit comme les autres corydoras, dans un bac à fond de sable avec de la mousse de Java. Vues de dessus, les femelles ont le ventre plus rond.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Corydoras-panda.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/corydoras-panda/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2342738"
+    }
+  ]
+}

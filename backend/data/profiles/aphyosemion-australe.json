@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Aphyosemion australe",
+  "nom_valide": null,
+  "auteur": "(Rachow, 1921)",
+  "classification": "Cyprinodontiformes › Nothobranchiidae",
+  "uicn": "LC",
+  "repartition": "Côtes du Gabon et du Congo (région du cap Lopez), jusqu'au Cameroun et au Cabinda (Angola)",
+  "pays": [
+    "AGO",
+    "CMR",
+    "COG",
+    "GAB"
+  ],
+  "presentation": "Décrit en 1921 par l'aquariophile allemand Arthur Rachow, le killi cap Lopez tire son nom commun de sa localité type, le cap Lopez, près de l'embouchure de l'Ogooué au Gabon ; *australe* (« du sud ») rappelle qu'il était alors le plus méridional des *Aphyosemion* connus.\n\nL'un des premiers killis devenus populaires, il reste idéal pour débuter : beau, facile à reproduire, il vit souvent plus de trois ans. Des formes d'élevage orange, dorée, chocolat ou albinos existent, à côté des populations sauvages étiquetées par lieu et année de collecte.",
+  "habitat": "Il vit dans les basses terres côtières du Gabon et du Congo, et est aussi signalé au Cameroun et au Cabinda (Angola).\n\nIl habite des eaux permanentes, marais et petits ruisseaux de forêt, dans une eau douce et légèrement acide ; ce n'est pas un killi annuel.",
+  "comportement": "Très paisible et timide, il vit en aquarium communautaire si ses compagnons sont choisis avec soin : petits characidés, rasboras, cichlidés nains, corydoras, petits loricariidés. Les mâles, aux nageoires en lyre ourlées de blanc et d'orange, paradent sans grands dégâts.\n\nIl préfère les petites proies vivantes ou congelées, mais les poissons d'élevage acceptent aussi les flocons. Il « suspend » ses œufs dans les plantes fines ou une mousse de ponte, même dans un petit bac.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Aphyosemion-australe.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/aphyosemion-australe/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2348299"
+    }
+  ]
+}

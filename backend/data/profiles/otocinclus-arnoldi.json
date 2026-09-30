@@ -1,0 +1,26 @@
+{
+  "nom_scientifique": "Otocinclus arnoldi",
+  "nom_valide": null,
+  "auteur": "Regan, 1909",
+  "classification": "Siluriformes › Loricariidae",
+  "uicn": "LC",
+  "repartition": "Bas Paraná, bas et moyen Uruguay et Río de la Plata (Argentine, Brésil, Uruguay)",
+  "pays": [
+    "ARG",
+    "BRA",
+    "URY"
+  ],
+  "presentation": "Décrit en 1909 par Charles Tate Regan, *Otocinclus arnoldi* est dédié à l'aquariophile allemand Johann Paul Arnold. Ce petit brouteur de 5 cm porte une bande latérale sombre et irrégulière, et se distingue de ses proches par des détails de coloration de la tête et de la queue.\n\nC'est l'un des otocinclus les plus méridionaux : il vit dans un climat subtropical, ce qui lui fait tolérer une eau plus fraîche que les espèces amazoniennes.",
+  "habitat": "Il est présent dans le bassin inférieur du río Paraná, le bas et le moyen río Uruguay et le Río de la Plata, en Argentine, en Uruguay et dans le sud du Brésil.\n\nComme ses cousins, il vit parmi la végétation des berges et sur le bois immergé des eaux calmes, où il racle algues et biofilm. L'eau y est fraîche à tempérée selon les saisons (20 à 25 °C en aquarium).",
+  "comportement": "Paisible et grégaire, il se maintient en groupe d'au moins 6 individus, avec des poissons calmes supportant la même température.\n\nBrouteur, il a besoin d'un aquarium planté et mûr, riche en algues, complété de légumes blanchis et de pastilles à la spiruline. Comme tous les otocinclus sauvages, il doit être acclimaté avec soin après le transport.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Otocinclus-arnoldi.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2340463"
+    }
+  ]
+}

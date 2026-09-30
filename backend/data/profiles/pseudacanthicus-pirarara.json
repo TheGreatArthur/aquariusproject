@@ -1,0 +1,24 @@
+{
+  "nom_scientifique": "Pseudacanthicus pirarara",
+  "nom_valide": null,
+  "auteur": "Chamon & Sousa, 2016",
+  "classification": "Siluriformes › Loricariidae",
+  "uicn": "NE",
+  "repartition": "Bassin du rio Xingu (Pará, Brésil)",
+  "pays": [
+    "BRA"
+  ],
+  "presentation": "Connu depuis longtemps des aquariophiles sous le code L025 ou le nom de « pléco scarlet », ce grand loricariidé n'a été décrit qu'en 2016 par Carine Chamon et Leandro Sousa. Son nom *pirarara*, « poisson-ara » en tupi, fait allusion au rouge vif de ses nageoires, comme les plumes d'un ara.\n\nC'est l'un des plus grands plécos de son genre : il dépasse 40 cm et près d'un kilo. Son corps est hérissé de petites épines (odontodes), comme ses cousins *Pseudacanthicus*.",
+  "habitat": "Il est connu du bassin du rio Xingu, dans l'État du Pará, au Brésil.\n\nIl vit dans les secteurs rocheux du fleuve, aux eaux claires, chaudes et fortement oxygénées, et s'abrite dans les crevasses profondes et sous les blocs de roche.",
+  "comportement": "Territorial, il défend sa cachette avec vigueur contre les autres poissons de fond, surtout les plécos, et peut blesser des compagnons avec ses épines. Il supporte les poissons de pleine eau robustes, mais un seul individu par bac est la règle, sauf dans un très grand volume.\n\nPrincipalement carnivore et charognard, il réclame crevettes, moules, poisson et aliments riches en protéines. Sa taille adulte impose un aquarium de plus de 1 000 litres, avec une filtration et un brassage puissants.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pseudacanthicus-pirarara.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/11188411"
+    }
+  ]
+}

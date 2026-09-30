@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Hyphessobrycon erythrostigma",
+  "nom_valide": "Megalamphodus erythrostigma",
+  "auteur": "(Fowler, 1943)",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Haut Amazone, région des trois frontières Brésil–Pérou–Colombie, du rio Purus au rio Nanay",
+  "pays": [
+    "BRA",
+    "COL",
+    "PER"
+  ],
+  "presentation": "Décrit en 1943 par Henry W. Fowler, le cœur saignant doit son nom à la tache rouge vif placée sur son flanc, derrière l'opercule ; *erythrostigma* vient du grec « marque rouge ». Cette tache humérale rouge n'existe chez aucun autre characidé, en dehors de deux espèces proches (*H. socolofi* et *H. pyrrhonotus*).\n\nLa classification révisée en 2024 le place dans le genre *Megalamphodus*. Avec plus de 6 cm, c'est l'un des plus grands tétras de son groupe.",
+  "habitat": "Il vit dans le haut bassin amazonien, dans la région où se rejoignent les frontières du Brésil, du Pérou et de la Colombie, du rio Purus jusqu'au bassin du rio Nanay près d'Iquitos.\n\nIl fréquente les affluents lents, les bras secondaires et les lacs forestiers, près des racines, des branches tombées, de la végétation surplombante ou des plantes aquatiques. L'eau, très peu minéralisée et teintée de brun, peut descendre sous pH 4 : dans certains igarapés, des relevés ont mesuré un pH de 3,8 à 6,4 et une eau pauvre en oxygène.",
+  "comportement": "Globalement paisible, il convient à un aquarium communautaire bien pensé, mais les mâles adultes défendent un petit territoire. Leurs parades, nageoires dorsale, pelviennes et anale déployées, sont spectaculaires ; un groupe mixte de 8 à 10 individus au minimum permet de les observer.\n\nOmnivore opportuniste, il se nourrit dans la nature surtout de fruits tombés à l'eau, complétés par des insectes et leurs larves. C'est un pondeur libre qui ne s'occupe pas de ses œufs.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hyphessobrycon-erythrostigma.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hyphessobrycon-erythrostigma/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2354681"
+    }
+  ]
+}

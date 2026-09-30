@@ -1,0 +1,24 @@
+{
+  "nom_scientifique": "Corydoras weitzmani",
+  "nom_valide": "Hoplisoma weitzmani",
+  "auteur": "(Nijssen, 1971)",
+  "classification": "Siluriformes › Callichthyidae",
+  "uicn": "LC",
+  "repartition": "Ouest du bassin amazonien, au Pérou",
+  "pays": [
+    "PER"
+  ],
+  "presentation": "Décrit en 1971 par l'ichtyologiste néerlandais Han Nijssen, ce corydoras est dédié à Stanley Weitzman, spécialiste américain des petits characiformes. Il porte une bande sombre qui traverse l'œil et une grande tache noire sur le dos.\n\nUne révision génétique publiée en 2024 a éclaté l'ancien genre *Corydoras* en plusieurs genres : FishBase le range désormais dans *Hoplisoma*, sous le nom *Hoplisoma weitzmani*.",
+  "habitat": "FishBase le situe dans l'ouest du bassin amazonien, au Pérou. Comme la plupart des corydoras, il vit sur le fond des petits cours d'eau, parmi le sable, les feuilles mortes et le bois.\n\nLes plages de paramètres données par FishBase sont larges : pH 6 à 8, dureté faible à moyenne, 22 à 26 °C.",
+  "comportement": "Paisible et grégaire comme tous les corydoras, il fouille le sol en groupe à la recherche de petits invertébrés et de débris. Un groupe d'au moins 6 à 8 individus le rend plus actif et moins craintif ; un sol de sable fin protège ses barbillons.\n\nIl peut respirer de l'air : on le voit parfois remonter rapidement en surface pour avaler une bulle, un comportement normal chez les corydoras.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Corydoras-weitzmani.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2342702"
+    }
+  ]
+}

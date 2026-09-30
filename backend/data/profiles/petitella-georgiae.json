@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Petitella georgiae",
+  "nom_valide": null,
+  "auteur": "Géry & Boutière, 1964",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Haut Amazone au Pérou, bassins des rios Purus, Negro et Madeira au Brésil",
+  "pays": [
+    "BRA",
+    "PER"
+  ],
+  "presentation": "Décrit en 1964 par Jacques Géry et Henri Boutière, le faux nez rouge est le type du genre *Petitella*, dédié au zoologiste français Georges Petit (1892-1973) ; le nom d'espèce honore Georgie, l'épouse de Géry.\n\nIl ressemble beaucoup aux deux autres « nez rouges » (*Hemigrammus rhodostomus* et *Petitella bleheri*). On le reconnaît à l'absence de tache sombre sous le pédoncule caudal et à la large bande noire qui prolonge la rayure centrale de la queue dans le corps.",
+  "habitat": "Il est originaire du haut bassin amazonien au Pérou et des bassins des rios Purus, Negro et Madeira au Brésil.\n\nIl vit surtout dans les affluents et petites rivières d'eau claire, à une température de 22 à 26 °C, dans une eau douce et légèrement acide.",
+  "comportement": "Très paisible, il forme l'un des bancs les plus serrés parmi les petits tétras : il faut au moins une dizaine d'individus, davantage si possible, pour qu'il se sente en sécurité. Il ne supporte pas les compagnons turbulents ou beaucoup plus gros.\n\nSa bouche minuscule impose des aliments fins : vers, petits crustacés et matière végétale dans la nature, petites proies vivantes et aliments secs broyés en aquarium. Sa reproduction en captivité est réputée délicate ; les femelles matures ont le corps plus rond.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Petitella-georgiae.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/petitella-georgiae/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5204489"
+    }
+  ]
+}

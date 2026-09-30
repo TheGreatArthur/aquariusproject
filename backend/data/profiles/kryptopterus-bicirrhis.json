@@ -1,0 +1,33 @@
+{
+  "nom_scientifique": "Kryptopterus bicirrhis",
+  "nom_valide": null,
+  "auteur": "(Valenciennes, 1840)",
+  "classification": "Siluriformes › Siluridae",
+  "uicn": "LC",
+  "repartition": "Bassins du Mékong et du Chao Phraya, péninsule malaise, Sumatra, Bornéo et Java",
+  "pays": [
+    "IDN",
+    "KHM",
+    "LAO",
+    "MYS",
+    "THA",
+    "VNM"
+  ],
+  "presentation": "Décrit en 1840 par le zoologiste français Achille Valenciennes à partir de poissons de Java, *Kryptopterus bicirrhis* est un poisson-chat de la famille des Siluridae. *Kryptopterus* signifie « nageoire cachée », pour sa dorsale minuscule, et *bicirrhis* « deux barbillons ».\n\nSon nom a longtemps été appliqué à tort au silure de verre des aquariums (*K. vitreolus*), plus petit et transparent. Il atteint 15 cm et reste rare en aquariophilie. Au Cambodge, il sert à préparer le prahok, une pâte de poisson fermentée.",
+  "habitat": "Il est répandu dans une grande partie de l'Asie du Sud-Est : Mékong, Chao Phraya, Batang Hari, Rajang, Kapuas et de nombreux cours d'eau plus petits, de la Thaïlande au Vietnam, en Malaisie et dans les îles de la Sonde.\n\nIl vit dans les grandes rivières à eau trouble, souvent dans le courant près des berges, et gagne les champs inondés à la saison des pluies ; dans les lacs du Danau Sentarum, à Bornéo, il abonde en fin de saison humide. Il forme des bancs pouvant compter une centaine de poissons.",
+  "comportement": "Grégaire et diurne, il vit en banc : au moins 4, idéalement une dizaine d'individus, dans un bac d'un mètre minimum. Il reste paisible avec des poissons de taille comparable.\n\nPrédateur, il se nourrit surtout d'insectes de surface (punaises aquatiques), de crustacés et de petits poissons ; en aquarium, il accepte aliments coulants, vers de vase et tubifex. Sa reproduction n'est pas documentée ; les mâles adultes sont plus fins.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Kryptopterus-bicirrhis.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/kryptopterus-bicirrhis/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2337886"
+    }
+  ]
+}

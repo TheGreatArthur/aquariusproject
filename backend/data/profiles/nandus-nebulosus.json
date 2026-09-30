@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Nandus nebulosus",
+  "nom_valide": null,
+  "auteur": "(Gray, 1835)",
+  "classification": "Anabantiformes › Nandidae",
+  "uicn": "LC",
+  "repartition": "Asie du Sud-Est, de la Thaïlande à l'Indonésie (Malaisie, Singapour, Sumatra, Bornéo)",
+  "pays": [
+    "IDN",
+    "KHM",
+    "LAO",
+    "MYS",
+    "SGP",
+    "THA",
+    "VNM"
+  ],
+  "presentation": "Décrit en 1835 par le zoologiste britannique John Edward Gray, le poisson-feuille nébuleux appartient à la petite famille des Nandidae. Brun marbré, le corps haut et comprimé, il ressemble à s'y méprendre à une feuille morte flottant dans l'eau, d'où son nom.\n\nSa bouche très protractile, qui se projette vers l'avant comme un tube, lui permet d'aspirer ses proies en une fraction de seconde. Il mesure une dizaine de centimètres.",
+  "habitat": "Il est répandu de la Thaïlande à l'Indonésie : péninsule malaise, Singapour, Sumatra et Bornéo.\n\nIl vit dans des milieux variés, des ruisseaux de colline aux forêts marécageuses de tourbe, dans les petits cours d'eau et la forêt inondée, parmi les feuilles mortes et le bois immergé.",
+  "comportement": "Solitaire et discret, c'est un prédateur à l'affût : il se laisse dériver ou reste immobile, incliné comme une feuille, avant d'aspirer petits poissons et crustacés. Tout poisson qui tient dans sa bouche est une proie.\n\nOn le maintient seul ou avec des espèces trop grandes pour être avalées, dans un bac calme, sombre et riche en cachettes. Il réclame des proies vivantes ou congelées (crevettes, vers de vase, petits poissons).",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Nandus-nebulosus.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2399363"
+    }
+  ]
+}

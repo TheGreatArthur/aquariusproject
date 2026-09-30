@@ -1,0 +1,24 @@
+{
+  "nom_scientifique": "Pseudohemiodon apithanos",
+  "nom_valide": null,
+  "auteur": "Isbrücker & Nijssen, 1978",
+  "classification": "Siluriformes › Loricariidae",
+  "uicn": "LC",
+  "repartition": "Bassin du río San Miguel, ouest du bassin amazonien (Équateur)",
+  "pays": [
+    "ECU"
+  ],
+  "presentation": "Décrit en 1978 par Isaäc Isbrücker et Han Nijssen, *Pseudohemiodon apithanos* est un loricariidé très aplati de la sous-famille des Loricariinae, parente des loricarias « brindilles ». Son nom d'espèce vient du grec *apithanos*, « invraisemblable ».\n\nIl mesure jusqu'à 14,5 cm sans la queue. Son corps en forme de raie, beige tacheté de brun, se confond parfaitement avec le sable.",
+  "habitat": "Il est connu du bassin du río San Miguel, dans l'ouest du bassin amazonien, en Équateur.\n\nLes *Pseudohemiodon* vivent sur les bancs de sable des rivières, où ils s'enfouissent partiellement, seuls les yeux dépassant, et fouillent le substrat à la recherche de petits invertébrés.",
+  "comportement": "Paisible et discret, il passe l'essentiel de son temps enfoui dans le sable : un sol de sable fin et doux est indispensable, ainsi que des compagnons calmes qui ne lui volent pas sa nourriture.\n\nIl se nourrit de petites proies (larves, vers, crustacés) qu'il cherche dans le sable. Comme d'autres Loricariinae, le mâle incube les œufs collés sous sa lèvre inférieure élargie jusqu'à l'éclosion.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pseudohemiodon-apithanos.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2340383"
+    }
+  ]
+}

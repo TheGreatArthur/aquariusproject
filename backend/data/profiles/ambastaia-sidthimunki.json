@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Ambastaia sidthimunki",
+  "nom_valide": null,
+  "auteur": "(Klausewitz, 1959)",
+  "classification": "Cypriniformes › Botiidae",
+  "uicn": "EN",
+  "repartition": "Bassin du Mae Klong (ouest de la Thaïlande) et bassin de l'Ataran (Myanmar)",
+  "pays": [
+    "MMR",
+    "THA"
+  ],
+  "presentation": "Décrit en 1959 par Wolfgang Klausewitz à partir de poissons d'aquarium importés en Allemagne depuis « le nord de la Thaïlande », le botia nain ne dépasse pas 6 cm. Son nom serait un hommage à Aree Sidthimunk, chercheur du département des pêches thaïlandais ; *Ambastaia* reprend le nom antique du Mékong chez Ptolémée.\n\nIl est classé « en danger » par l'UICN. Longtemps introuvable, il est aujourd'hui produit par des élevages commerciaux grâce à des hormones. Il appartient à la famille des Botiidae.",
+  "habitat": "Les signalements anciens au Laos, au Cambodge ou dans le Yom concernaient en réalité *A. nigrolineata*, une espèce voisine. *A. sidthimunki* serait limité au bassin du Mae Klong, dans l'ouest de la Thaïlande, et à celui de l'Ataran, au Myanmar.\n\nDans l'Ataran, il vit dans des cours d'eau forestiers de tête de bassin, assez lents, clairs et bien oxygénés, sur fond de sable et de rochers avec beaucoup de bois et de feuilles mortes.",
+  "comportement": "Actif de jour, il nage souvent en groupe un peu au-dessus du fond. Grégaire, il forme des hiérarchies et doit vivre en groupe d'au moins 6, idéalement 10 individus ; isolé, il devient craintif ou agressif. Certains aquariophiles rapportent des attaques contre des poissons lents ou à longues nageoires.\n\nSurtout carnivore, il se nourrit d'invertébrés aquatiques. Sa reproduction par des amateurs reste pratiquement inconnue. Les femelles sont plus rondes ; les mâles ont un museau un peu plus long et des lèvres charnues.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Ambastaia-sidthimunki.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/ambastaia-sidthimunki/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/7734965"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Channa bleheri",
+  "nom_valide": null,
+  "auteur": "Vierke, 1991",
+  "classification": "Anabantiformes › Channidae",
+  "uicn": "NT",
+  "repartition": "Bassin du Brahmapoutre : nord de l'Assam et Arunachal Pradesh (nord-est de l'Inde)",
+  "pays": [
+    "IND"
+  ],
+  "emprise": [89, 25.5, 97, 28.5],
+  "presentation": "Décrit en 1991 par Jörg Vierke, le « poisson-tête-de-serpent arc-en-ciel » est dédié à Heiko Bleher, qui en a récolté la série type. C'est l'une des plus petites et des plus colorées des *Channa* : environ 20 cm, avec des taches orange sur la nageoire caudale. Comme quelques autres espèces du genre, il n'a pas de nageoires pelviennes.\n\nClassé « quasi menacé », il est peu abondant, a besoin d'un micro-habitat particulier et subit une pêche intense pour l'alimentation et l'aquariophilie. Comme toutes les *Channa*, il respire l'air en surface.",
+  "habitat": "Il est endémique du bassin du Brahmapoutre : le nord de l'Assam et les environs de Doimukh, dans le bassin de la Dikrong, en Arunachal Pradesh. Le climat y est de type forêt tropicale de mousson, avec de fortes pluies et des étés chauds.\n\nLes poissons creusent des terriers près des souches d'arbres dans les forêts inondées pendant la mousson ; ils s'y réfugient pendant l'hiver sec, puis en sortent pour chasser et se reproduire quand la forêt est inondée. Ils supportent une eau pauvre en oxygène et des températures assez fraîches en hiver.",
+  "comportement": "Prédateur, il vit mieux en bac spécifique, mais peut cohabiter avec des poissons paisibles trop gros pour être avalés. Les jeunes se tolèrent, puis deviennent agressifs entre eux à maturité ; un couple formé reste uni mais hostile aux autres congénères.\n\nIl chasse petits poissons et insectes, et accepte bien les aliments morts (crevettes, vers). Le couple s'enlace comme les anabantoïdes ; plusieurs milliers d'œufs flottent en surface, sans nid, et les deux parents défendent la ponte puis les alevins.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Channa-bleheri.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/channa-bleheri/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2391447"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "nom_scientifique": "Danio albolineatus",
+  "nom_valide": null,
+  "auteur": "(Blyth, 1860)",
+  "classification": "Cypriniformes › Danionidae",
+  "uicn": "LC",
+  "repartition": "Asie du Sud-Est continentale et Sumatra : bassins de l'Irrawaddy, de la Salouen, du Mékong, du Chao Phraya et du Mae Klong",
+  "pays": [
+    "CHN",
+    "IDN",
+    "KHM",
+    "LAO",
+    "MMR",
+    "MYS",
+    "THA",
+    "VNM"
+  ],
+  "presentation": "Décrit en 1860 par le zoologiste anglais Edward Blyth à partir de poissons des « provinces du Tenasserim » (sud de l'actuel Myanmar), le danio perlé doit son nom latin, « à ligne blanche », à ses reflets nacrés. Certains auteurs le placent dans le genre *Brachydanio*.\n\nSes populations varient nettement de couleur selon leur origine : orange sur le dos dans l'ouest de la Thaïlande, bleu dans le centre du pays, forme plus rose au Yunnan. Il pourrait s'agir en réalité d'un complexe de plusieurs espèces proches. Les anciens signalements du Sri Lanka et d'Inde sont erronés.",
+  "habitat": "Très largement répandu, il est connu du Myanmar, de la Thaïlande, du Laos, du Cambodge, du Vietnam, de la Malaisie péninsulaire et de Sumatra, dans les bassins de l'Irrawaddy, de la Salouen, du Mékong, du Chao Phraya et du Mae Klong.\n\nIl occupe des milieux variés : ruisseaux de colline clairs et bien oxygénés sur fond rocheux, en forêt, mais aussi mares, fossés et rizières. Il se tient près de la surface, où il capture les insectes tombés à l'eau.",
+  "comportement": "Très paisible, vif et peu exigeant, il convient à la plupart des aquariums communautaires. Poisson de banc, il se maintient en groupe d'au moins 8 à 10 individus, dans un bac assez long pour nager.\n\nIl se nourrit surtout d'insectes aquatiques et terrestres et de leurs larves, avec un peu d'algues et de zooplancton. Pondeur libre sans soins parentaux, il fraie souvent quand il est en forme ; les femelles sont plus rondes et un peu plus grandes que les mâles.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Danio-albolineatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/danio-albolineatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2362695"
+    }
+  ]
+}

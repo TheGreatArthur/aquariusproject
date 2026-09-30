@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Aulonocara stuartgranti",
+  "nom_valide": null,
+  "auteur": "Meyer & Riehl, 1985",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Endémique du lac Malawi : côtes ouest et est (Malawi, Tanzanie, Mozambique)",
+  "pays": [
+    "MOZ",
+    "MWI",
+    "TZA"
+  ],
+  "emprise": [33.8, -15.0, 35.4, -9.3],
+  "presentation": "Décrit en 1985 par Manfred Meyer et Rüdiger Riehl, cet *Aulonocara* est dédié à Stuart M. Grant (1937-2007), légendaire exportateur de poissons du lac Malawi. *Aulonocara* signifie « tête-flûte » en grec, pour le système de canaux sensoriels très développé de son crâne.\n\nC'est une espèce très variable : de nombreuses populations locales ont reçu des noms commerciaux (« flametail » de Ngara, « Chitimba », faussement vendu comme « *A. masoni* »…), et certaines formes ont été décrites comme espèces distinctes, comme *A. baenschi*.",
+  "habitat": "Il est largement réparti le long des côtes ouest et est du lac Malawi ; sa localité type est Mpanga Rocks, à Chilumba.\n\nIl vit dans les zones intermédiaires, où les côtes rocheuses laissent place au sable parsemé de rochers. Certains individus restent cachés dans les grottes, d'autres forment de grands bancs au-dessus du sable. L'eau est chaude, dure et alcaline.",
+  "comportement": "Assez paisible, il devient agressif envers les poissons de couleurs semblables. On maintient un seul mâle avec 4 à 6 femelles, sans autres *Aulonocara* (hybridation facile) ni mbunas turbulents.\n\nIl se nourrit d'invertébrés vivant dans le sable, qu'il repère grâce aux pores sensoriels de sa tête ou qu'il extrait en tamisant le sable. Incubatrice buccale, la femelle garde œufs et alevins dans sa bouche.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Aulonocara-stuartgranti.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/aulonocara-stuartgranti/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2370511"
+    }
+  ]
+}

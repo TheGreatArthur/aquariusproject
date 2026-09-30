@@ -16,6 +16,7 @@ from normalize import (
     clean, normalize_comportement, normalize_courant, normalize_famille, normalize_mode_vie, normalize_regime,
     normalize_zone,
 )
+from profiles import load_occurrences, load_profiles, upsert_profiles
 from utils import get_or_create_id
 
 engine = get_engine(DSN)
@@ -135,4 +136,6 @@ if __name__ == '__main__':
 
         db.flush()
         delete_unused_nomenclatures(db)
+        for name in upsert_profiles(db, load_profiles(), load_occurrences()):
+            print('Fiche sans poisson en base :', name)
         db.commit()

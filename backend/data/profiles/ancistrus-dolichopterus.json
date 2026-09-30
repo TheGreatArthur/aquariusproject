@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Ancistrus dolichopterus",
+  "nom_valide": null,
+  "auteur": "Kner, 1854",
+  "classification": "Siluriformes › Loricariidae",
+  "uicn": "LC",
+  "repartition": "Moyen et bas rio Negro, Amazonas (Brésil) ; d'autres bassins amazoniens sont cités",
+  "pays": [
+    "BRA"
+  ],
+  "emprise": [-68, -3, -59, 2],
+  "presentation": "Décrit en 1854 par l'ichtyologiste autrichien Rudolf Kner à partir de poissons de Manaus, *Ancistrus dolichopterus* (« à longue nageoire ») se distingue de tous les autres *Ancistrus* par ses 9 rayons mous à la nageoire dorsale. En aquariophilie, il correspond au pléco « starlight » (L183), noir ponctué de blanc avec des nageoires bordées de blanc.\n\nLe genre compte plus de 60 espèces, reconnaissables aux épines de leurs joues et, chez les mâles, aux tentacules charnus du museau. Le nom a longtemps été appliqué à tort à l'ancistrus commun des aquariums, d'où une grande confusion sur sa répartition.",
+  "habitat": "Selon Seriously Fish, l'espèce serait endémique du moyen et du bas rio Negro, dans l'État d'Amazonas ; d'autres sources la citent dans d'autres bassins amazoniens et au Guyana, sans doute à cause d'erreurs d'identification.\n\nElle vit dans les ruisseaux et affluents courants d'eaux noires, acides et très douces, parmi le bois immergé et les rochers.",
+  "comportement": "Assez paisible avec les autres espèces, il est territorial envers ses congénères et les poissons de forme semblable. Il passe la journée à l'abri dans les cavités et le bois.\n\nOmnivore, il apprécie les petits invertébrés et les aliments coulants, en plus des végétaux. C'est un pondeur en cavité : le mâle garde et ventile les œufs, puis les alevins. Les mâles adultes portent des tentacules sur la tête et des odontodes (petites dents cutanées) sur les nageoires pectorales et l'opercule.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Ancistrus-dolichopterus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/ancistrus-dolichopterus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5961451"
+    }
+  ]
+}

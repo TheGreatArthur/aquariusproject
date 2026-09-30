@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Hyphessobrycon amandae",
+  "nom_valide": null,
+  "auteur": "Géry & Uj, 1987",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Bassin du rio Araguaia, centre du Brésil",
+  "pays": [
+    "BRA"
+  ],
+  "presentation": "Décrit en 1987 par Jacques Géry et André Uj, le tétra amandae honore Amanda Bleher, la mère de l'explorateur et aquariophile Heiko Bleher, qui participa à sa découverte. C'est l'un des plus petits *Hyphessobrycon* : environ 2 cm sans la queue.\n\nIl est aussi vendu sous les noms de « tétra ember », « tétra rouge nain » ou « tétra de feu », en référence à sa couleur orange vif.",
+  "habitat": "Il est originaire du bassin du rio Araguaia, un grand affluent du Tocantins au centre du Brésil. Les informations de terrain sont rares, mais il vit probablement dans les petits affluents, les bras morts et les lacs de méandre plutôt que dans les chenaux principaux.\n\nDans l'Araguaia, ces milieux ont une eau douce et légèrement acide, avec un fond couvert de feuilles mortes et de branches.",
+  "comportement": "Très paisible, il supporte mal les compagnons turbulents ou beaucoup plus grands. Il nage dans les couches moyenne et haute de l'eau et ne chasse pas les alevins, ce qui en fait un excellent « poisson d'accompagnement » pour les cichlidés nains comme les *Apistogramma*.\n\nMicro-prédateur, il se nourrit de minuscules invertébrés et de zooplancton : en aquarium, il accepte les aliments secs de petite taille mais profite de nauplies d'artémias ou de moinas. Un banc de 8 à 10 individus au minimum le rend moins craintif.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hyphessobrycon-amandae.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hyphessobrycon-amandae/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2354525"
+    }
+  ]
+}

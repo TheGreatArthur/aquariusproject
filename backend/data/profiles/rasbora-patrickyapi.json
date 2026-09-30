@@ -1,0 +1,25 @@
+{
+  "nom_scientifique": "Rasbora patrickyapi",
+  "nom_valide": null,
+  "auteur": "Tan, 2009",
+  "classification": "Cypriniformes › Danionidae",
+  "uicn": "NT",
+  "repartition": "Bassins des rivières Katingan et Kahayan, Kalimantan central (Bornéo, Indonésie)",
+  "pays": [
+    "IDN"
+  ],
+  "emprise": [110, -4, 116, 0],
+  "presentation": "Décrit en 2009 par l'ichtyologiste singapourien Tan Heok Hui, ce rasbora est dédié à Patrick Yap. Il mesure jusqu'à 5,7 cm sans la queue.\n\nIl appartient à la famille des Danionidae (sous-famille des Rasborinae). L'UICN le classe « quasi menacé », en raison du recul rapide des forêts de tourbe de Bornéo.",
+  "habitat": "Il n'est connu que des bassins des rivières Katingan et Kahayan, dans le Kalimantan central. Il vit dans les zones marécageuses peu profondes et lentes qui bordent les ruisseaux d'eaux noires.\n\nSes biotopes sont des forêts de tourbe de plaine et des forêts de landes (kerangas) dégradées, sur un fond mêlant tourbe et sable siliceux. L'eau y est très douce et acide.",
+  "comportement": "Comme la plupart des rasboras, c'est un poisson de pleine eau paisible, qui vit en banc : il se maintient en groupe d'au moins une dizaine d'individus, avec des espèces calmes de taille comparable.\n\nSes besoins reflètent son habitat : eau douce et acide, lumière tamisée, décor de bois et de feuilles mortes. Les sources de référence ne décrivent pas encore son comportement en détail.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Rasbora-patrickyapi.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2359613"
+    }
+  ]
+}

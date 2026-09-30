@@ -1,0 +1,26 @@
+{
+  "nom_scientifique": "Hyphessobrycon copelandi",
+  "nom_valide": "Megalamphodus copelandi",
+  "auteur": "(Durbin, 1908)",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Haut Solimões (Brésil) et fleuves Mana et Approuague (Guyane, Suriname)",
+  "pays": [
+    "BRA",
+    "GUF",
+    "SUR"
+  ],
+  "presentation": "Décrit en 1908 par l'ichtyologiste américaine Marion Durbin à partir du matériel de l'expédition Thayer, ce tétra porte le nom de l'ichtyologiste Herbert Edson Copeland. La classification révisée en 2024 le place dans le genre *Megalamphodus*, avec les tétras rouges du groupe *eques*.\n\nSon aire de répartition est curieusement éclatée, entre le haut Amazone et les fleuves côtiers du plateau des Guyanes. En Guyane, « yaya » est le nom créole donné aux petits characidés de ce type.",
+  "habitat": "On le trouve fréquemment dans les eaux à courant lent ou dans les zones de contre-courant des petites criques, à l'eau claire et au fond sableux. En Guyane, il occupe notamment le cours supérieur des rivières, en amont des sauts.\n\nLes relevés indiquent une eau tropicale de 24 à 28 °C ; son aire comprend le haut Solimões au Brésil, les bassins de la Mana et de l'Approuague en Guyane, et le Suriname.",
+  "comportement": "Sa capture en grand nombre dans la nature traduit un comportement grégaire : il se maintient en banc d'au moins une dizaine d'individus. Paisible, il cohabite avec d'autres petits poissons sud-américains.\n\nOmnivore, il accepte petites proies vivantes et aliments secs. Sa reproduction en captivité n'a pas été documentée.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hyphessobrycon-copelandi.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2354545"
+    }
+  ]
+}

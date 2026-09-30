@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Betta mahachaiensis",
+  "nom_valide": null,
+  "auteur": "Kowasupat, Panijpan, Ruenwongsa & Sriwattanarothai, 2012",
+  "classification": "Anabantiformes › Osphronemidae",
+  "uicn": "NE",
+  "repartition": "Côte du golfe de Thaïlande autour de Bangkok (Samut Sakhon et provinces voisines)",
+  "pays": [
+    "THA"
+  ],
+  "presentation": "Décrit en 2012 par Chanon Kowasupat et ses collègues, ce combattant doit son nom au sous-district côtier de Mahachai, dans la province de Samut Sakhon, juste au sud de Bangkok. Il a longtemps été pris pour un hybride, avant que des analyses morphologiques et génétiques ne confirment qu'il s'agit d'une espèce à part entière.\n\nIl se reconnaît à son corps brun à noir couvert d'écailles vert-bleu irisé et à deux barres vertes verticales sur l'opercule. Il n'a pas encore été évalué par l'UICN.",
+  "habitat": "C'est le seul *Betta* qui vit exclusivement en eau saumâtre : il habite les marais côtiers soumis aux marées, associés au palmier nipa (*Nypa fruticans*), le seul palmier adapté aux estuaires. Les mâles construisent leur nid de bulles entre les palmes ou dans l'eau retenue à la base des bractées.\n\nLes relevés dans la province de Samut Sakhon indiquent un pH de 6,9 à 7,8 et une salinité de 1 à 10 g/l. Il y côtoie le gourami grogneur, le gourami bleu, l'anabas et le panchax.",
+  "comportement": "Pas adapté à l'aquarium communautaire : il vit mieux seul ou avec quelques espèces très paisibles d'eau légèrement saumâtre. Avec assez de cachettes et d'obstacles visuels, plusieurs mâles peuvent cohabiter, mais les couples sont isolés pour la reproduction.\n\nIl chasse insectes et petits invertébrés. Le mâle construit un nid de bulles ; un couvercle bien ajusté garde au-dessus de l'eau l'air chaud et humide nécessaire au développement du labyrinthe des alevins. Les populations de localités différentes ne doivent pas être croisées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Betta-mahachaiensis.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/betta-mahachaiensis/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/7193203"
+    }
+  ]
+}

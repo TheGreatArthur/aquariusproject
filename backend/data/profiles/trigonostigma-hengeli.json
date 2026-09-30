@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Trigonostigma hengeli",
+  "nom_valide": null,
+  "auteur": "(Meinken, 1956)",
+  "classification": "Cypriniformes › Danionidae",
+  "uicn": "LC",
+  "repartition": "Sumatra (province de Jambi) et probablement ouest de Bornéo (Indonésie)",
+  "pays": [
+    "IDN"
+  ],
+  "presentation": "Décrit en 1956 par Hermann Meinken, le rasbora hengeli est le plus petit des *Trigonostigma*, genre séparé des *Rasbora* en 1999. Sa tache noire en forme de « côtelette » est bordée d'un éclat orange vif sur le haut et l'avant, sur un corps grisâtre presque incolore.\n\nOn le distingue ainsi de *T. espei*, cuivré avec une marque plus fine, et de *T. heteromorpha*, plus grand. Les spécimens types proviennent de la rivière Tambesi, un affluent du Batang Hari à Sumatra.",
+  "habitat": "Son aire se limite aux grandes îles de la Sonde : il a été récolté dans la province de Jambi à Sumatra, et apparemment au Kalimantan occidental, à Bornéo.\n\nIl fréquente les parties calmes des ruisseaux forestiers où poussent des herbiers de *Cryptocoryne*, dans une eau douce, légèrement acide à neutre, parfois teintée par les tanins, sous une lumière tamisée par la canopée.",
+  "comportement": "Très paisible, il convient bien à un aquarium communautaire de petits poissons tranquilles. Poisson de banc, il se maintient en groupe d'au moins 8 à 10 individus ; les mâles, plus fins et plus colorés, rivalisent alors pour les femelles.\n\nMicro-prédateur, il se nourrit de petits insectes, de vers et de zooplancton. Comme l'arlequin, il colle ses œufs sous les feuilles larges plutôt que de les disperser, sans soins parentaux.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Trigonostigma-hengeli.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/trigonostigma-hengeli/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2367614"
+    }
+  ]
+}

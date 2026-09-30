@@ -1,0 +1,39 @@
+{
+  "nom_scientifique": "Corydoras aeneus",
+  "nom_valide": "Osteogaster aenea",
+  "auteur": "(Gill, 1858)",
+  "classification": "Siluriformes › Callichthyidae",
+  "uicn": "LC",
+  "repartition": "Trinité et une grande partie de l'Amérique du Sud, de la Colombie au Río de la Plata (espèce probablement composite)",
+  "pays": [
+    "ARG",
+    "BOL",
+    "BRA",
+    "COL",
+    "GUF",
+    "GUY",
+    "PER",
+    "PRY",
+    "SUR",
+    "TTO",
+    "URY",
+    "VEN"
+  ],
+  "presentation": "Décrit en 1858 par l'Américain Theodore Gill à partir de poissons de l'île de Trinité, le corydoras bronze doit son nom latin *aeneus* à ses reflets vert-doré métalliques. *Corydoras* vient du grec « casque » et « peau », pour les plaques osseuses qui cuirassent ses flancs.\n\nC'est l'un des poissons d'aquarium les plus répandus, avec des formes albinos ou à longues nageoires. Mais son identité pose question : son aire immense ressemble plus à celle d'un complexe d'espèces semblables qu'à une espèce unique. FishBase le range désormais dans le genre *Osteogaster*.",
+  "habitat": "Il est signalé de la Colombie et de Trinité au bassin du Río de la Plata, à l'est des Andes : Argentine, Bolivie, Brésil, Guyanes, Paraguay, Pérou, Uruguay, Venezuela. À Trinité, il subsiste dans quelques rivières du centre et du sud de l'île.\n\nIl vit surtout dans les eaux calmes et peu profondes à fond meuble, mais aussi en eau courante. Les adultes forment des groupes de 20 à 30 poissons ; la ponte est déclenchée par les changements de l'eau au début de la saison des pluies.",
+  "comportement": "Paisible et grégaire, il se maintient en groupe d'au moins 6 individus. Plutôt nocturne, il fouille le fond à la recherche de vers, de crustacés, d'insectes et de débris végétaux.\n\nIl respire l'air par l'intestin : il remonte de 1 à 45 fois par heure en surface pour avaler une bulle. En aquarium, un grand changement d'eau plus fraîche imite l'arrivée des pluies et déclenche souvent la ponte ; les œufs sont collés sur les vitres ou les plantes.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Corydoras-aeneus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/corydoras-aeneus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2342606"
+    }
+  ]
+}

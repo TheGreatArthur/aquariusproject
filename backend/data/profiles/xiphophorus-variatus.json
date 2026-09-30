@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Xiphophorus variatus",
+  "nom_valide": null,
+  "auteur": "(Meek, 1904)",
+  "classification": "Cyprinodontiformes › Poeciliidae",
+  "uicn": "LC",
+  "repartition": "Endémique du versant atlantique du Mexique, du sud du Tamaulipas au nord de Veracruz",
+  "pays": [
+    "MEX"
+  ],
+  "emprise": [-100.5, 19.5, -96.5, 24.5],
+  "presentation": "Décrit en 1904 par l'ichtyologiste américain Seth Eugene Meek, le platy variatus doit son nom au latin *varius*, « bigarré », pour ses couleurs très variables. Comme les autres *Xiphophorus*, il sert à la recherche en génétique.\n\nLes poissons du commerce proviennent presque tous d'élevages d'Asie et d'Europe de l'Est. Des populations introduites se sont implantées au Costa Rica, en Colombie, aux États-Unis, à Hawaï, à Singapour et à Hong Kong.",
+  "habitat": "Il est originaire du Mexique, entre le sud du Tamaulipas et le nord de l'État de Veracruz, sur le versant atlantique.\n\nIl vit dans les sources chaudes, ruisseaux peu profonds, mares, marais, canaux et fossés très végétalisés, souvent riches en algues et en phytoplancton. Son climat subtropical lui fait préférer une eau un peu plus fraîche que la plupart des vivipares (20 à 26 °C), dure et alcaline.",
+  "comportement": "Paisible et robuste, c'est un bon poisson pour l'aquarium communautaire. Comme chez le platy, les mâles poursuivent sans relâche les femelles : plusieurs femelles par mâle et des zones densément plantées sont recommandées.\n\nOmnivore peu difficile, il mange vers, crustacés, insectes, détritus et végétaux. Vivipare, il donne naissance après 4 à 7 semaines de gestation à des portées qui peuvent dépasser 100 alevins ; les adultes les mangent peu.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Xiphophorus-variatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/xiphophorus-variatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2350220"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Melanotaenia lacustris",
+  "nom_valide": null,
+  "auteur": "Munro, 1964",
+  "classification": "Atheriniformes › Melanotaeniidae",
+  "uicn": "EN",
+  "repartition": "Endémique du lac Kutubu et de la rivière Soro, Hautes-Terres du Sud (Papouasie-Nouvelle-Guinée)",
+  "pays": [
+    "PNG"
+  ],
+  "localites": [
+    [143.32, -6.38]
+  ],
+  "presentation": "Décrit en 1964 par Ian Munro, l'arc-en-ciel du lac Kutubu (ou « arc-en-ciel turquoise ») est d'un bleu turquoise éclatant chez le mâle adulte, avec un dos qui s'élève avec l'âge. Il atteint une douzaine de centimètres.\n\nIl est classé « en danger » par l'UICN, car toute son aire se limite à un seul lac et à sa rivière émissaire.",
+  "habitat": "Le lac Kutubu, l'un des plus grands de Papouasie-Nouvelle-Guinée, s'est formé quand des débris volcaniques ont barré une vallée. Très isolé, il abrite 14 espèces de poissons, dont 10 endémiques. Le lac se déverse par la rivière Soro, dans le bassin de la Kikori, à environ 220 km de la mer.\n\nL'eau y est très claire, calme, dure et alcaline, plutôt fraîche pour les tropiques (20 à 25 °C) ; les arcs-en-ciel se regroupent près des herbiers, des racines et des troncs immergés.",
+  "comportement": "Très paisible mais vif, il vit en banc de 6 à 8 individus au moins et peut déranger les poissons plus lents. Il cohabite avec d'autres arcs-en-ciel, des barbus, des danios, des corydoras et des cichlidés d'eau dure.\n\nOmnivore peu difficile, il colore mieux avec des proies vivantes ou congelées. Il disperse ses œufs dans les plantes fines ; la reproduction est facile, l'élevage des alevins plus délicat.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Melanotaenia-lacustris.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/melanotaenia-lacustris/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2411703"
+    }
+  ]
+}

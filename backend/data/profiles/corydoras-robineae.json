@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Corydoras robineae",
+  "nom_valide": "Brochis robineae",
+  "auteur": "(Burgess, 1983)",
+  "classification": "Siluriformes › Callichthyidae",
+  "uicn": "LC",
+  "repartition": "Haut rio Negro (Brésil)",
+  "pays": [
+    "BRA"
+  ],
+  "emprise": [-72, -3, -60, 3],
+  "presentation": "Décrit en 1983 par l'ichtyologiste américain Warren E. Burgess, le corydoras robineae (ou « corydoras à queue rayée ») se reconnaît immédiatement à sa nageoire caudale barrée de bandes noires et blanches obliques, et à la ligne sombre qui longe son flanc jusqu'à la queue.\n\nDepuis la révision de 2024 des corydoras, FishBase le place dans le genre *Brochis*, qui ne comptait auparavant que quelques grandes espèces à longue dorsale.",
+  "habitat": "Il est originaire du haut rio Negro, au Brésil, où il vit dans le cours principal et ses affluents.\n\nLes plages indiquées par les sources sont une eau douce à moyennement dure, légèrement acide à neutre, entre 21 et 26 °C.",
+  "comportement": "Très paisible, il convient à de nombreux aquariums communautaires, en évitant les poissons grands ou agressifs. Il vit en groupe : au moins 6 individus pour qu'il se montre confiant.\n\nIl accepte la plupart des aliments coulants, complétés de proies vivantes ou congelées. Il est moins facile à faire pondre que d'autres corydoras, mais sa reproduction suit la même méthode ; vues de dessus, les femelles sont plus rondes et plus larges.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Corydoras-robineae.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/corydoras-robineae/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2342652"
+    }
+  ]
+}

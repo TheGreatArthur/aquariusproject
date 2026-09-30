@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Gymnocorymbus ternetzi",
+  "nom_valide": null,
+  "auteur": "(Boulenger, 1895)",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Bassins du Paraguay et du Guaporé (Brésil, Bolivie, Argentine)",
+  "pays": [
+    "ARG",
+    "BOL",
+    "BRA"
+  ],
+  "emprise": [-68, -30, -50, -10],
+  "presentation": "Décrit en 1895 par George Albert Boulenger, du British Museum, la veuve noire doit son nom à la moitié arrière de son corps, noire comme un voile de deuil, qui s'éclaircit avec l'âge. Elle mesure jusqu'à 7,5 cm sans la queue.\n\nDe nombreuses formes d'élevage existent : voiles, albinos, et des lignées génétiquement modifiées fluorescentes vendues sous la marque GloFish dans certains pays. La classification révisée en 2024 place le genre dans la famille des Acestrorhamphidae.",
+  "habitat": "Elle vit dans les bassins du rio Paraguay et du rio Guaporé, au Brésil, en Bolivie et en Argentine, dans une région subtropicale où l'eau peut se rafraîchir en hiver (20 à 26 °C).\n\nElle fréquente les petits ruisseaux, affluents et criques à courant lent, généralement bordés d'une végétation dense qui surplombe l'eau.",
+  "comportement": "C'est l'un des meilleurs tétras pour un aquarium communautaire : vive, globalement paisible, elle occupe les couches moyenne et supérieure de l'eau. Sa réputation de pinceuse de nageoires disparaît le plus souvent quand elle vit en banc d'une douzaine d'individus, les chamailleries restant alors internes au groupe.\n\nOmnivore peu exigeante, elle se nourrit de vers, de petits crustacés et d'insectes. Elle se reproduit facilement en bac séparé, en dispersant des œufs adhésifs dans les plantes fines. Les mâles sont plus fins, avec des nageoires dorsale et anale plus pointues.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Gymnocorymbus-ternetzi.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/gymnocorymbus-ternetzi/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2353920"
+    }
+  ]
+}

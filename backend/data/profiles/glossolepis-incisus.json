@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Glossolepis incisus",
+  "nom_valide": "Glossolepis incisa",
+  "auteur": "Weber, 1907",
+  "classification": "Atheriniformes › Melanotaeniidae",
+  "uicn": "EN",
+  "repartition": "Endémique du lac Sentani, près de Jayapura (Papouasie, Indonésie)",
+  "pays": [
+    "IDN"
+  ],
+  "presentation": "Décrit en 1907 par le zoologiste néerlandais Max Weber, l'arc-en-ciel rouge (FishBase écrit *Glossolepis incisa*) est l'un des plus grands arcs-en-ciel, jusqu'à 15 cm. Seuls les mâles adultes prennent cette couleur rouge intense, avec un dos très haut ; les femelles restent olive doré.\n\nIl est classé « en danger » par l'UICN : le lac Sentani subit la pollution d'une ville en croissance et l'introduction d'espèces étrangères.",
+  "habitat": "Il est endémique du lac Sentani, un lac de collines à environ 75 m d'altitude dans le nord de la Nouvelle-Guinée, relié à la mer par une petite rivière.\n\nLes bancs se tiennent près des zones à végétation dense. L'eau est dure et alcaline, chaude en surface (autour de 29 °C d'après les relevés), mais l'espèce s'adapte en aquarium à 24–28 °C.",
+  "comportement": "Très paisible mais rapide, il peut déranger les poissons lents. Craintif, il se sent mieux en banc d'au moins 6 à 8 individus ; les mâles montrent alors leurs plus belles couleurs.\n\nOmnivore peu difficile, il accepte aliments secs, congelés et vivants. Il se reproduit assez facilement : les œufs sont déposés dans les plantes fines ou une mousse de ponte, dans une eau légèrement dure et alcaline.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Glossolepis-incisus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/glossolepis-incisus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5214486"
+    }
+  ]
+}

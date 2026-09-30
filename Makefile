@@ -7,7 +7,7 @@ BACKEND_PORT  ?= 5001
 FRONTEND_PORT ?= 3000
 
 .DEFAULT_GOAL := help
-.PHONY: help setup install dev backend frontend import audit test lint build clean
+.PHONY: help setup install dev backend frontend import profiles sources occurrences audit test lint build clean
 
 help: ## Show available commands
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  make %-10s %s\n", $$1, $$2}'
@@ -42,6 +42,15 @@ frontend:
 
 import: setup ## Load backend/db.xlsx into the database
 	cd backend && venv/bin/python import_excel.py
+
+profiles: setup ## Load the fish profiles (backend/data) into an imported database
+	cd backend && venv/bin/python profiles.py
+
+sources: setup ## Fetch FishBase, Seriously Fish and GBIF data and compare it with the base
+	cd backend && venv/bin/python -m tools.fetch_sources && venv/bin/python -m tools.compare_sources
+
+occurrences: setup ## Refresh the range-map points from GBIF (backend/data/occurrences.json)
+	cd backend && venv/bin/python -m tools.build_occurrences
 
 audit: setup ## Write the data audit report to docs/data-audit.md
 	cd backend && venv/bin/python audit_data.py > ../docs/data-audit.md

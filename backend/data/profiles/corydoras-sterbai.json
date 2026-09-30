@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Corydoras sterbai",
+  "nom_valide": "Hoplisoma sterbai",
+  "auteur": "(Knaack, 1962)",
+  "classification": "Siluriformes › Callichthyidae",
+  "uicn": "LC",
+  "repartition": "Bassin du rio Guaporé (Brésil central et Bolivie)",
+  "pays": [
+    "BOL",
+    "BRA"
+  ],
+  "emprise": [-66, -17, -58, -10],
+  "presentation": "Décrit en 1962 par l'aquariophile allemand Joachim Knaack, le corydoras sterbai est dédié à Günther Sterba, zoologiste et auteur d'ouvrages de référence sur les poissons d'aquarium. On le reconnaît à sa tête sombre ponctuée de blanc, à son corps tacheté et aux rayons orange vif de ses nageoires pectorales et pelviennes.\n\nDepuis la révision de 2024 du groupe des corydoras, FishBase le range dans le genre *Hoplisoma*. Il peut vivre plus de 15 ans.",
+  "habitat": "L'espèce a été décrite à partir d'un spécimen du rio Guaporé, qui marque la frontière entre le Brésil et la Bolivie. Elle vit dans les petites rivières, criques, affluents et mares de forêt inondée, dans une eau douce et acide, souvent courante et pauvre en plantes.\n\nPresque tous les poissons vendus proviennent aujourd'hui d'élevages d'Europe de l'Est et d'Asie ; ils sont plus tolérants que les sauvages mais préfèrent une eau pas trop chaude (22 à 28 °C).",
+  "comportement": "Très paisible, il convient à de nombreux aquariums communautaires avec de petits tétras, cyprinidés, anabantoïdes et cichlidés nains. Il est beaucoup plus actif et confiant en groupe d'au moins 6 individus.\n\nOmnivore, il fouille le sol à la recherche de nourriture : pastilles coulantes et proies vivantes ou congelées. C'est l'un des corydoras les plus faciles à reproduire : la femelle colle ses œufs sur les vitres ou les plantes. Vues de dessus, les femelles sont plus larges et plus rondes que les mâles.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Corydoras-sterbai.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/corydoras-sterbai/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2342679"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "nom_scientifique": "Poecilia reticulata",
+  "nom_valide": null,
+  "auteur": "Peters, 1859",
+  "classification": "Cyprinodontiformes › Poeciliidae",
+  "uicn": "LC",
+  "repartition": "Nord-est de l'Amérique du Sud et sud des Caraïbes (Venezuela, Guyanes, Trinité-et-Tobago, Barbade)",
+  "pays": [
+    "ATG",
+    "BRB",
+    "GUF",
+    "GUY",
+    "SUR",
+    "TTO",
+    "VEN"
+  ],
+  "presentation": "Décrit en 1859 par le zoologiste allemand Wilhelm Peters à partir de poissons du río Guaire, à Caracas, le guppy doit son nom commun à Robert Lechmere Guppy, qui envoya des spécimens de Trinité au British Museum en 1866.\n\nC'est l'un des poissons d'aquarium les plus populaires, avec d'innombrables variétés d'élevage aux nageoires démesurées. C'est aussi un modèle célèbre en biologie de l'évolution : dans les rivières de Trinité, les populations exposées à des prédateurs différents ont évolué, en quelques générations, vers des couleurs, des tailles et des stratégies de reproduction distinctes.",
+  "habitat": "Son aire d'origine couvre le Venezuela, le Guyana, le Suriname, la Guyane, Trinité-et-Tobago, la Barbade, Antigua et les Antilles néerlandaises. Il a été introduit dans une cinquantaine de pays, souvent pour lutter contre les moustiques : sans grand effet sur eux, mais avec des impacts négatifs sur les poissons locaux.\n\nIncroyablement adaptable, il vit des torrents d'altitude aux mares troubles et aux fossés, et même en eau saumâtre, mais préfère les eaux calmes riches en algues et en végétation.",
+  "comportement": "Très paisible, il convient à un aquarium communautaire calme ; il faut éviter les pinceurs de nageoires (barbus de Sumatra, tétras serpae). Les mâles poursuivent sans cesse les femelles : on conseille plusieurs femelles par mâle.\n\nOvovivipare, la femelle donne naissance à des alevins déjà formés toutes les quatre semaines environ, que les adultes mangent volontiers : une végétation dense et des plantes flottantes les protègent. Il se nourrit de zooplancton, de petits insectes et de détritus.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Poecilia-reticulata.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/poecilia-reticulata/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2350050"
+    }
+  ]
+}

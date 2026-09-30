@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Girardinus metallicus",
+  "nom_valide": null,
+  "auteur": "Poey, 1854",
+  "classification": "Cyprinodontiformes › Poeciliidae",
+  "uicn": "LC",
+  "repartition": "Endémique de Cuba",
+  "pays": [
+    "CUB"
+  ],
+  "presentation": "Décrit en 1854 par le naturaliste cubain Felipe Poey, *Girardinus metallicus* doit son nom de genre au zoologiste français Charles Girard et son nom d'espèce aux reflets métalliques de son corps. Les mâles, plus petits, portent une bande noire qui court de la bouche au gonopode, le long de la face inférieure.\n\nLes femelles atteignent près de 9 cm, les mâles environ 5 cm.",
+  "habitat": "Il est endémique de Cuba, où il vit dans les mares, les étangs, les lacs et les ruisseaux.\n\nIl préfère une eau claire, stagnante ou très lente, parfois légèrement saumâtre, dure et proche de la neutralité, entre 22 et 26 °C.",
+  "comportement": "Paisible, il convient à un aquarium d'eau dure avec des corydoras robustes, des tétras et de petits arcs-en-ciel, ou à un bac saumâtre avec de petits gobies. Il supporte mal l'eau douce et acide.\n\nOmnivore, il se nourrit de diatomées, d'algues, de détritus, de larves d'insectes et de végétaux. Vivipare, il se reproduit facilement après une gestation d'environ 24 jours ; plusieurs femelles par mâle et des zones densément plantées limitent le harcèlement.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Girardinus-metallicus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/girardinus-metallicus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2350360"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "nom_scientifique": "Danio rerio",
+  "nom_valide": null,
+  "auteur": "(Hamilton, 1822)",
+  "classification": "Cypriniformes › Danionidae",
+  "uicn": "LC",
+  "repartition": "Plaines du sous-continent indien : Inde, Bangladesh, Népal, Bhoutan, Pakistan, Myanmar",
+  "pays": [
+    "BGD",
+    "BTN",
+    "IND",
+    "MMR",
+    "NPL",
+    "PAK"
+  ],
+  "presentation": "Décrit en 1822 par le chirurgien écossais Francis Hamilton à partir de poissons de la rivière Kosi, un affluent du Gange, le danio rerio est aussi appelé « poisson-zèbre » pour ses rayures bleues et dorées. Certains auteurs le placent dans le genre *Brachydanio*.\n\nC'est l'un des principaux organismes modèles de la biologie : ses embryons transparents, qui se développent en quelques jours, servent à étudier le développement, la génétique, la régénération et la toxicologie. Les lignées domestiques vivent en moyenne 3,5 ans, jusqu'à 5,5 ans pour les plus âgés.",
+  "habitat": "Une étude de 2007 dans le nord-est de l'Inde l'a trouvé surtout dans des eaux lentes ou stagnantes sur fond de limon, avec une végétation immergée ou surplombante : mares saisonnières, bordures inondées et rizières matures, plus que dans les chenaux des rivières. Dans les ruisseaux rocheux, les bancs se tiennent au bord, sous la végétation.\n\nSon aire historique va du Pakistan au Myanmar, mais beaucoup d'anciens signalements concernent sans doute des espèces voisines découvertes depuis. En nature, il se comporte presque comme une espèce annuelle, qui se reproduit juste avant la mousson.",
+  "comportement": "Paisible, robuste et vif, c'est un poisson de banc à maintenir en groupe d'au moins 8 à 10 individus ; les mâles, plus fins, rivalisent alors de couleurs pour attirer les femelles. Il nage surtout en surface et en pleine eau.\n\nMicro-prédateur, il se nourrit de petits crustacés et de larves d'insectes (moustiques notamment), mais accepte tout en aquarium. C'est un excellent choix pour une première reproduction : il disperse ses œufs dans les plantes, sans soins parentaux, et se reproduit toute l'année.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Danio-rerio.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/danio-rerio/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/9797255"
+    }
+  ]
+}

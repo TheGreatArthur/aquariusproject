@@ -1,0 +1,33 @@
+{
+  "nom_scientifique": "Osphronemus goramy",
+  "nom_valide": null,
+  "auteur": "Lacepède, 1801",
+  "classification": "Anabantiformes › Osphronemidae",
+  "uicn": "LC",
+  "repartition": "Sumatra, Bornéo, Java, péninsule malaise, Thaïlande et bassin du Mékong ; introduit ailleurs en aquaculture",
+  "pays": [
+    "IDN",
+    "KHM",
+    "LAO",
+    "MYS",
+    "THA",
+    "VNM"
+  ],
+  "presentation": "Décrit en 1801 par le naturaliste français Bernard-Germain de Lacepède, le gourami géant est le plus grand des gouramis : il atteint 70 cm et peut vivre plus de 20 ans. Des fossiles du Miocène ont été trouvés dans le centre de Sumatra.\n\nC'est avant tout un poisson de consommation très apprécié en Asie du Sud-Est, élevé dans de nombreux pays. Capable de respirer l'air humide, il survit longtemps hors de l'eau, ce qui permet de le transporter vivant sans chaîne du froid. En aquarium, il demande un bac de plusieurs milliers de litres.",
+  "habitat": "Son aire naturelle comprendrait Sumatra, Bornéo, Java, la péninsule malaise, la Thaïlande et l'Indochine ; il a été introduit dans de nombreux pays pour l'aquaculture.\n\nIl vit dans les marais, les lacs, les rivières moyennes à grandes et les canaux lents, parmi la végétation, et pénètre dans la forêt inondée. Il tolère une large gamme d'eaux, douces à dures, et même saumâtres.",
+  "comportement": "Globalement paisible avec d'autres grands poissons (poissons-couteaux, grands poissons-chats, loricariidés), il mange les petits. Certains adultes deviennent agressifs, surtout lorsqu'ils sont à l'étroit.\n\nOmnivore, il consomme plantes aquatiques, poissons, grenouilles, vers de terre et même charognes. Mature dès six mois, le mâle construit un grand nid avec des végétaux (herbes, racines) près de la surface et garde la ponte ; les mâles ont des nageoires dorsale et anale pointues.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Osphronemus-goramy.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/osphronemus-goramy/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2394154"
+    }
+  ]
+}

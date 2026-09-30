@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Corydoras pygmaeus",
+  "nom_valide": "Gastrodermus pygmaeus",
+  "auteur": "(Knaack, 1966)",
+  "classification": "Siluriformes › Callichthyidae",
+  "uicn": "LC",
+  "repartition": "Bassin du rio Madeira (Brésil)",
+  "pays": [
+    "BRA"
+  ],
+  "emprise": [-70, -15, -56, -3],
+  "presentation": "Décrit en 1966 par Joachim Knaack, le corydoras pygmée est l'un des plus petits poissons-chats cuirassés : environ 2,5 cm. Une fine bande noire court le long de son flanc argenté, ce qui le distingue de *C. hastatus*, qui porte plutôt une tache en losange sur le pédoncule caudal.\n\nDepuis la révision de 2024 des corydoras, FishBase le place dans le genre *Gastrodermus*, avec d'autres espèces naines.",
+  "habitat": "Il semble endémique du bassin du rio Madeira, au Brésil. Il vit dans les petits affluents, les criques, les mares et la forêt inondée, souvent en grand nombre à l'abri de la végétation des berges ou des racines.\n\nL'eau y est douce et légèrement acide à neutre, entre 22 et 26 °C.",
+  "comportement": "Contrairement à la plupart des corydoras, il nage volontiers en pleine eau, en bancs serrés, parfois mêlé à d'autres petits poissons : il fait un excellent « poisson d'accompagnement » pour les cichlidés nains. Très paisible mais minuscule, il se fait intimider par des compagnons plus gros, et les scalaires ou gouramis peuvent le manger.\n\nUn groupe d'au moins 6, idéalement 10 individus est recommandé. Sa petite bouche impose des aliments fins ou broyés. Vues de dessus, les femelles sont plus larges et un peu plus grandes.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Corydoras-pygmaeus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/corydoras-pygmaeus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2342634"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Fundulopanchax gardneri",
+  "nom_valide": null,
+  "auteur": "(Boulenger, 1911)",
+  "classification": "Cyprinodontiformes › Nothobranchiidae",
+  "uicn": "LC",
+  "repartition": "Bassin de la Cross River (sud-est du Nigeria, ouest du Cameroun) et bassin de la Bénoué (centre du Nigeria)",
+  "pays": [
+    "CMR",
+    "NGA"
+  ],
+  "presentation": "Décrit en 1911 par George Albert Boulenger, le gardneri porte le nom de R. D. Gardner, qui récolta les spécimens types dans le haut bassin de la Cross River, près d'Okwoga. Robuste et coloré, c'est l'un des killis les plus répandus en aquariophilie.\n\nSes nombreuses formes sauvages sont maintenues séparément et désignées par leur localité (Akure, Enugu, Lafia, Nsukka…) ; trois ont été décrites comme sous-espèces, dont *F. g. lacustris*, limitée au lac Ejagham. Il appartient à la famille des Nothobranchiidae.",
+  "habitat": "Il vit dans les criques, marais, ruisseaux et mares des forêts humides, des savanes d'altitude et de la forêt tropicale, dans le bassin de la Cross River et celui de la Bénoué.\n\nCertains de ces milieux s'assèchent de temps en temps, mais pas chaque année ; d'autres restent en eau toute l'année. L'eau est douce, légèrement acide à neutre, entre 22 et 26 °C.",
+  "comportement": "Robuste, il peut cohabiter avec d'autres poissons, mais n'est pas un poisson communautaire classique : les mâles se montrent agressifs entre eux. Avec assez de cachettes et deux ou trois femelles par mâle, un petit groupe se maintient bien.\n\nMicro-prédateur, il se nourrit de petits crustacés, de vers et de larves. Il a une stratégie de reproduction « semi-annuelle » : ses œufs, déposés près du fond, peuvent éclore sous l'eau en un mois environ ou supporter une période de dessèchement.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Fundulopanchax-gardneri.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/fundulopanchax-gardneri-gardneri/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2348519"
+    }
+  ]
+}

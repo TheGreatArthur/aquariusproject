@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Sawbwa resplendens",
+  "nom_valide": null,
+  "auteur": "Annandale, 1918",
+  "classification": "Cypriniformes › Cyprinidae",
+  "uicn": "EN",
+  "repartition": "Endémique du lac Inle et de son bassin, État Shan (Myanmar)",
+  "pays": [
+    "MMR"
+  ],
+  "presentation": "Décrit en 1918 par Nelson Annandale, le nez rouge asiatique est le seul représentant du genre *Sawbwa*, du titre porté par les princes shans. Son nom latin *resplendens* signifie « resplendissant » : le mâle a la tête et les pointes de la queue rouges et des flancs aux reflets bleus. Son corps est dépourvu d'écailles.\n\nIl est classé « en danger » par l'UICN. Le lac a perdu plus de 30 % de sa surface entre 1935 et 2000 sous l'effet de l'envasement, de l'eutrophisation et de la pollution agricole, et des prédateurs non indigènes y ont été introduits.",
+  "habitat": "Il vit dans le lac Inle, perché à près de 900 m d'altitude sur le plateau Shan, et dans les marais qui l'entourent. L'eau du lac est claire et peu profonde, mais boueuse et trouble sur les bords.\n\nL'espèce est présente dans tout le lac, en eau claire comme en eau tourbeuse, mais surtout le long des rives végétalisées, parmi les herbiers et les racines des jardins flottants des Intha. Elle y forme de grands groupes ; l'eau y est plutôt dure et alcaline, assez fraîche.",
+  "comportement": "Paisible envers les autres espèces, il n'est pas idéal en aquarium communautaire à cause de sa petite taille et des combats incessants entre mâles pour la dominance. Il forme des groupes lâches plutôt que des bancs.\n\nLa meilleure parade est de maintenir davantage de femelles que de mâles, idéalement quatre pour un ; les femelles, olive pâle, sont pourtant rares à la vente car les exportateurs préfèrent les mâles colorés. Il se nourrit de petits invertébrés et de zooplancton, et dépose ses œufs dans la végétation ou les algues filamenteuses.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Sawbwa-resplendens.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/sawbwa-resplendens/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2363712"
+    }
+  ]
+}

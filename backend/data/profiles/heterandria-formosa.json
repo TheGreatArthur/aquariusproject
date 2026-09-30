@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Heterandria formosa",
+  "nom_valide": null,
+  "auteur": "(Girard, 1859)",
+  "classification": "Cyprinodontiformes › Poeciliidae",
+  "uicn": "LC",
+  "repartition": "Sud-est des États-Unis, de la Caroline du Nord (bassin du Cape Fear) au sud de la Louisiane",
+  "pays": [
+    "USA"
+  ],
+  "presentation": "Décrit en 1859 par le zoologiste français Charles Girard, qui travaillait à la Smithsonian, *Heterandria formosa* est le plus petit poisson vivipare connu et l'un des plus petits poissons du monde : les mâles adultes mesurent environ 1,5 cm, les femelles un peu plus de 3 cm.\n\nIl intéresse les biologistes par son mode de reproduction : la femelle nourrit ses embryons pendant la gestation et porte en même temps plusieurs portées à des stades différents (superfétation), si bien qu'elle donne naissance à quelques jeunes presque chaque jour. Il est parfois confondu avec les gambusies, bien plus agressives.",
+  "habitat": "Il est endémique du sud-est des États-Unis, de la Caroline du Nord à la Louisiane ; les localités types sont Charleston (Caroline du Sud) et Palatka (Floride).\n\nIl vit dans les eaux stagnantes ou lentes, peu profondes et très végétalisées : marges de marais, étangs, fossés, parfois en eau saumâtre. Le climat subtropical lui fait supporter des eaux plus fraîches en hiver.",
+  "comportement": "Très paisible mais minuscule, il n'est pas un poisson communautaire : de nombreuses espèces courantes le mangeraient. Il vit mieux en petite colonie, seul ou avec des espèces très petites et calmes (poissons-crayons, corydoras nains, *Otocinclus*, crevettes).\n\nOmnivore, il apprécie les petites proies vivantes ou congelées et broute les algues. Il se reproduit sans difficulté dans un bac densément planté ; les mâles, beaucoup plus petits, portent un gonopode démesuré.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Heterandria-formosa.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/heterandria-formosa/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2349968"
+    }
+  ]
+}

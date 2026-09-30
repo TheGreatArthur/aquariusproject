@@ -1,0 +1,34 @@
+{
+  "nom_scientifique": "Pterophyllum scalare",
+  "nom_valide": null,
+  "auteur": "(Schultze, 1823)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Bassin de l'Amazone (Pérou, Colombie, Brésil), fleuves de l'Amapá, Oyapock (Guyane) et Essequibo (Guyana)",
+  "pays": [
+    "BRA",
+    "COL",
+    "GUF",
+    "GUY",
+    "PER",
+    "SUR"
+  ],
+  "emprise": [-78, -12, -48, 8],
+  "presentation": "Décrit en 1823 par le naturaliste allemand Schultze, le scalaire est l'un des poissons tropicaux les plus célèbres. Son corps très haut et aplati, prolongé par de longues nageoires dorsale et anale, lui permet de se glisser entre les tiges et les racines verticales de son milieu naturel ; ses bandes sombres verticales complètent ce camouflage.\n\nLes poissons du commerce sont presque tous issus d'élevages d'Asie et d'Europe de l'Est, qui ont produit de nombreuses variétés (marbré, doré, voile, noir). Il atteint 15 cm de long et davantage en hauteur.",
+  "habitat": "Il est répandu dans le bassin amazonien au Pérou, en Colombie et au Brésil, le long de l'Ucayali, du Solimões et de l'Amazone, ainsi que dans les rivières de l'Amapá, l'Oyapock en Guyane et l'Essequibo au Guyana.\n\nIl vit dans les marais et les zones inondées où la végétation aquatique et riveraine est dense, en eau claire ou limoneuse ; sa couleur est plus intense en eau claire. L'eau est chaude (24 à 30 °C), douce et légèrement acide.",
+  "comportement": "Globalement paisible, il peut se quereller avec ses congénères et mange volontiers les petits poissons comme les néons. Les jeunes vivent en groupe ; à maturité, des couples se forment et deviennent territoriaux pendant la reproduction.\n\nIl se nourrit de petits crustacés et d'invertébrés aquatiques. Le couple pond sur une surface verticale (feuille large, pierre, vitre), puis garde les œufs et les alevins avec soin. Les sexes sont difficiles à distinguer en dehors de la ponte.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pterophyllum-scalare.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pterophyllum-scalare/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5208518"
+    }
+  ]
+}

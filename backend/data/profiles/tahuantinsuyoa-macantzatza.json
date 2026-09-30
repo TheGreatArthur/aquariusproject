@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Tahuantinsuyoa macantzatza",
+  "nom_valide": null,
+  "auteur": "Kullander, 1986",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "DD",
+  "repartition": "Bassin du río Aguaytía, affluent de l'Ucayali, au pied des Andes (Pérou)",
+  "pays": [
+    "PER"
+  ],
+  "emprise": [-76.5, -10.5, -74, -8],
+  "presentation": "Décrit en 1986 par le Suédois Sven Kullander, ce cichlidé porte un nom de genre tiré de *Tawantinsuyu*, nom quechua de l'Empire inca, d'où son surnom anglais de « poisson-pierre inca ». Son nom d'espèce, emprunté à une langue locale, signifie « poisson des pierres », en référence aux fonds rocheux de son habitat.\n\nIl atteint environ 12 cm ; les deux sexes portent une bande médiane sombre et des marques irisées sur la tête, et le mâle prend des tons orange sur la face et les nageoires. L'UICN le classe en « données insuffisantes ».",
+  "habitat": "Il n'est connu que du bassin du río Aguaytía, un affluent de l'Ucayali au pied des Andes péruviennes.\n\nIl vit dans les rivières et ruisseaux à fond de pierres et de galets. Les relevés indiquent une eau très douce, proche de la neutralité (pH 6,3 à 7,7) et chaude (25 à 28 °C).",
+  "comportement": "Assez paisible pour un cichlidé, il vit en couple ; mieux vaut éviter de très petits tétras ou barbus, qui peuvent devenir des proies.\n\nSa reproduction est originale : le couple pond sur un support mobile (feuille, fine pierre plate) qu'il déplace pour mettre les œufs à l'abri, puis, à l'éclosion, les deux parents incubent les larves dans leur bouche. C'est un incubateur buccal dit « différé », assez facile à reproduire en aquarium.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Tahuantinsuyoa-macantzatza.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2372919"
+    },
+    {
+      "nom": "Quality Marine",
+      "url": "https://www.qualitymarine.com/news/inca-stone-cichlid-tahuantinsuyoa-macantzatza/"
+    }
+  ]
+}

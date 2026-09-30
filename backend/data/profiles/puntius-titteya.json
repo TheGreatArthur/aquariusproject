@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Puntius titteya",
+  "nom_valide": null,
+  "auteur": "Deraniyagala, 1929",
+  "classification": "Cypriniformes › Cyprinidae",
+  "uicn": "VU",
+  "repartition": "Endémique du Sri Lanka : bassins du Kelani au Nilwala, dans la « zone humide » du sud-ouest",
+  "pays": [
+    "LKA"
+  ],
+  "presentation": "Décrit en 1929 par le zoologiste sri-lankais Paulus Deraniyagala, le barbus cerise tire son nom d'espèce d'un nom vernaculaire local ; *Puntius* vient du bengali *pungti*, qui désigne les petits cyprinidés. Les mâles en période de reproduction prennent une couleur rouge cerise intense.\n\nL'espèce est classée « vulnérable » par l'UICN : son habitat forestier a été massivement défriché et les formes les plus colorées ont peut-être été surpêchées. Les poissons du commerce proviennent aujourd'hui presque tous d'élevages, avec des souches albinos ou « super red ».",
+  "habitat": "Il vit dans la « zone humide » du sud-ouest du Sri Lanka, qui reçoit 2 000 à 3 000 mm de pluie par an et abritait autrefois une forêt tropicale de basse altitude. Il a été récolté dans les bassins du Kelani et du Nilwala et dans les petits cours d'eau situés entre eux.\n\nIl fréquente surtout des ruisseaux et rigoles très ombragés, peu profonds et lents, sur fond de limon couvert de feuilles mortes. Moins de 5 % de la forêt primaire de cette région subsiste aujourd'hui.",
+  "comportement": "Très paisible, peu exigeant sur la qualité de l'eau, c'est un excellent poisson pour débuter, compatible avec la plupart des petits poissons communautaires. Grégaire, il se maintient en groupe de 6 à 10 individus au minimum ; les mâles, plus petits et plus fins, rivalisent alors de couleurs.\n\nOmnivore, il se nourrit de détritus, d'algues vertes, de diatomées, de larves d'insectes et de petits animaux. La femelle disperse environ 200 œufs dans la végétation des berges ; ils éclosent en 1 à 2 jours, sans soins parentaux.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Puntius-titteya.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/puntius-titteya/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2364223"
+    }
+  ]
+}

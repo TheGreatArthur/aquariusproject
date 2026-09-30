@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Apistogramma cacatuoides",
+  "nom_valide": null,
+  "auteur": "Hoedeman, 1951",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Haut bassin amazonien : Ucayali et Amazone au Pérou, Solimões au Brésil, jusqu'à la Colombie",
+  "pays": [
+    "BRA",
+    "COL",
+    "PER"
+  ],
+  "presentation": "Décrit en 1951 par Jan Hoedeman, l'apistogramma cacatoès doit son nom aux premiers rayons de sa nageoire dorsale, très allongés chez le mâle comme la crête d'un cacatoès. Les mâles atteignent 7,5 cm, les femelles environ 5 cm.\n\nLa localité type avait d'abord été donnée par erreur au Suriname, avant d'être corrigée par Sven Kullander. Les populations diffèrent de couleur selon leur origine, et de nombreuses formes d'élevage existent (« double red », « orange flag »).",
+  "habitat": "Il est répandu dans une grande partie du haut bassin amazonien, de l'Ucayali et de l'Amazone au Pérou jusqu'au Solimões au Brésil.\n\nIl vit dans les affluents lents, les bras morts et les criques où s'accumulent les feuilles mortes, en eau noire, blanche ou claire selon les lieux et les saisons.",
+  "comportement": "Les poissons d'élevage conviennent à un aquarium communautaire bien pensé ; les sauvages vivent mieux seuls ou avec de petits poissons de banc paisibles comme les poissons-crayons. Mieux vaut ne pas le mélanger à d'autres *Apistogramma*.\n\nPrincipalement carnivore, il chasse de petits invertébrés sur le fond. La femelle pond au plafond d'une cavité, puis s'occupe seule des œufs et des alevins ; dans un petit bac, elle peut devenir très agressive envers le mâle, qu'il faut alors retirer. Un mâle peut vivre avec plusieurs femelles, chacune avec son territoire.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Apistogramma-cacatuoides.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/apistogramma-cacatuoides/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2371275"
+    }
+  ]
+}

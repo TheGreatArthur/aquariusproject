@@ -1,0 +1,27 @@
+{
+  "nom_scientifique": "Pterygoplichthys gibbiceps",
+  "nom_valide": null,
+  "auteur": "(Kner, 1854)",
+  "classification": "Siluriformes › Loricariidae",
+  "uicn": "LC",
+  "repartition": "Moyen et haut Amazone et bassin de l'Orénoque (Brésil, Pérou, Équateur, Venezuela)",
+  "pays": [
+    "BRA",
+    "ECU",
+    "PER",
+    "VEN"
+  ],
+  "presentation": "Décrit en 1854 par Rudolf Kner, le pléco léopard (ou « pléco voile ») se reconnaît à sa haute nageoire dorsale en forme de voile et à son motif réticulé brun et crème. Son nom *gibbiceps* signifie « à tête bossue », pour la crête qui surmonte sa tête.\n\nIl atteint 50 cm et peut vivre plus de 15 ans. Comme les autres *Pterygoplichthys*, il peut respirer de l'air en l'avalant en surface, ce qui l'aide à survivre dans des eaux pauvres en oxygène.",
+  "habitat": "Il est répandu dans le moyen et le haut bassin amazonien et dans l'Orénoque, au Brésil, au Pérou, en Équateur et au Venezuela.\n\nIl vit dans les rivières lentes, les lacs de plaine inondable et les zones inondées, où il broute le biofilm sur le bois et les pierres. Plusieurs *Pterygoplichthys* creusent des terriers dans les berges vaseuses pour s'y abriter et y pondre.",
+  "comportement": "Nocturne et paisible avec les autres espèces, il devient territorial envers les autres grands plécos à l'âge adulte. Sa taille impose un aquarium très spacieux et une filtration puissante, car il produit beaucoup de déchets.\n\nIl se nourrit surtout d'algues et de végétaux, qu'il complète en aquarium par des pastilles, des légumes et du bois tendre à racler. Sa reproduction en aquarium d'amateur est exceptionnelle ; les jeunes du commerce viennent d'élevages en étangs.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pterygoplichthys-gibbiceps.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2339957"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "nom_scientifique": "Trichopodus trichopterus",
+  "nom_valide": null,
+  "auteur": "(Pallas, 1770)",
+  "classification": "Anabantiformes › Osphronemidae",
+  "uicn": "LC",
+  "repartition": "Bassin du Mékong (Chine du Sud, Laos, Thaïlande, Cambodge, Vietnam), Myanmar, Malaisie et nord de l'Indonésie",
+  "pays": [
+    "CHN",
+    "IDN",
+    "KHM",
+    "LAO",
+    "MMR",
+    "MYS",
+    "THA",
+    "VNM"
+  ],
+  "emprise": [95, -9, 120, 23],
+  "presentation": "Décrit en 1770 par le naturaliste allemand Peter Simon Pallas, le gourami bleu est l'un des plus anciens poissons d'aquarium connus. Ses deux taches noires sur le flanc, auxquelles s'ajoute l'œil, lui valent son nom anglais de « gourami à trois taches ». Il atteint 15 cm.\n\nOutre ses nombreuses formes d'élevage (bleu, doré, opaline), c'est aussi un poisson de consommation : on le vend frais sur les marchés d'Asie du Sud-Est, et il est salé et séché à Java. Il a été introduit dans de nombreux pays.",
+  "habitat": "Il vit surtout dans le bassin du Mékong et dans les plaines d'Asie du Sud-Est : mares, fossés, marais, canaux et zones humides peu profondes, stagnantes et riches en végétation.\n\nDans le moyen et le bas Mékong, il effectue des migrations latérales : à la saison des pluies, il quitte le fleuve et les plans d'eau permanents pour gagner les forêts et prairies inondées, puis y revient quand les eaux baissent. Il respire obligatoirement l'air en surface grâce à son labyrinthe.",
+  "comportement": "Souvent présenté comme poisson communautaire, il ne l'est pas toujours : certains individus deviennent hargneux en vieillissant. Les mâles sont territoriaux et se chamaillent, surtout en période de reproduction ; mieux vaut l'associer à des poissons robustes (barbus, grands tétras, loricariidés, loches, autres gouramis moyens).\n\nOmnivore, il mange plantes, algues, zooplancton, larves et détritus. Le mâle construit un grand nid de bulles parmi les plantes flottantes ; il peut malmener une femelle réticente, d'où l'intérêt de lui en proposer deux ou trois.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Trichopodus-trichopterus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/trichopodus-trichopterus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5211169"
+    }
+  ]
+}

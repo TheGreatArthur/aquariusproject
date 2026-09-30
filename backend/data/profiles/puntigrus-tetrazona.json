@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Puntigrus tetrazona",
+  "nom_valide": null,
+  "auteur": "(Bleeker, 1855)",
+  "classification": "Cypriniformes › Cyprinidae",
+  "uicn": "LC",
+  "repartition": "Centre et sud de Sumatra (Indonésie) ; populations introduites dans de nombreux pays",
+  "pays": [
+    "IDN"
+  ],
+  "emprise": [95, -6.5, 106.5, 6],
+  "presentation": "Décrit en 1855 par le médecin et ichtyologiste néerlandais Pieter Bleeker, le barbus de Sumatra doit son nom *tetrazona* (« quatre bandes ») aux quatre larges bandes noires verticales qui barrent son corps doré. Le genre *Puntigrus*, créé en 2016, associe *Puntius* et *tigris* (« tigre »).\n\nLes signalements à Bornéo correspondent en réalité à des espèces voisines. Très diffusé en aquariophilie, il souffre d'une forte consanguinité dans certains élevages, et il fait partie des espèces victimes de la pratique cruelle de la coloration artificielle par injection.",
+  "habitat": "L'espèce serait endémique du centre et du sud de Sumatra, avec des signalements dans les bassins des fleuves Indragiri, Batang Hari et Musi ; la localité type est Lahat, dans la province de Sumatra du Sud. Des populations issues d'aquariums se sont implantées à Singapour, en Australie, aux États-Unis, en Colombie et au Suriname.\n\nSon biotope précis n'est pas confirmé ; ses cousins de Bornéo vivent dans des ruisseaux forestiers d'eau claire, sur fond de sable et de galets, entre 20 et 26 °C.",
+  "comportement": "Vif et turbulent, il est connu pour pincer les nageoires des autres poissons, surtout s'il est trop peu nombreux ou à l'étroit. Il forme des hiérarchies lâches où les mâles se provoquent sans cesse : un groupe d'au moins 8 à 10 individus concentre ces joutes au sein de l'espèce.\n\nÀ éviter avec les poissons lents, timides ou à longues nageoires (guppys, scalaires, gouramis, combattants). Omnivore, il se nourrit surtout d'invertébrés aquatiques, complétés de végétaux. Pondeur libre, il disperse ses œufs sans soins parentaux.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Puntigrus-tetrazona.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/puntigrus-tetrazona/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/8214163"
+    }
+  ]
+}

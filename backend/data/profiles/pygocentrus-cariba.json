@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Pygocentrus cariba",
+  "nom_valide": null,
+  "auteur": "(Humboldt, 1821)",
+  "classification": "Characiformes › Serrasalmidae",
+  "uicn": "LC",
+  "repartition": "Bassin de l'Orénoque (Venezuela, Colombie) : Inírida, Guaviare, Meta, Apure…",
+  "pays": [
+    "COL",
+    "VEN"
+  ],
+  "presentation": "Décrit en 1821 par le naturaliste allemand Alexander von Humboldt lors de son exploration de l'Orénoque, le piranha tacheté (ou « piranha à épaule noire ») porte une grande tache noire derrière l'opercule. Son nom *cariba* reprend le nom vénézuélien de ces poissons.\n\nLes spécialistes reconnaissent trois espèces de *Pygocentrus* : *P. cariba*, *P. nattereri* et *P. piraya*. Malgré leur réputation, les attaques graves de piranhas sur l'homme sont extrêmement rares.",
+  "habitat": "Il est limité au bassin de l'Orénoque, en Colombie et au Venezuela, y compris ses grands affluents : Inírida, Guaviare, Meta, Vichada, Casanare, Apure, Guárico.\n\nIl est largement répandu dans les plaines basses et les Llanos, dans les chenaux, bras morts et lagunes, dans une eau chaude, douce et acide à neutre.",
+  "comportement": "Les jeunes vivent en bancs, les adultes en groupes lâches avec une hiérarchie : on en maintient un seul ou un groupe d'au moins 5 à 6, sans autres poissons, dans un très grand aquarium. Même bien nourri, il considère les nageoires des poissons de même taille comme de la nourriture.\n\nOpportuniste, il mange poissons, invertébrés, insectes, graines et fruits. Ses dents tranchantes infligent des morsures sérieuses : prudence lors de l'entretien. Les femelles deviennent plus grandes et plus rondes que les mâles.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pygocentrus-cariba.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pygocentrus-cariba/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2352463"
+    }
+  ]
+}

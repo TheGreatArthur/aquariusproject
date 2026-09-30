@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Betta gladiator",
+  "nom_valide": null,
+  "auteur": "Tan & Ng, 2005",
+  "classification": "Anabantiformes › Osphronemidae",
+  "uicn": "LC",
+  "repartition": "Bassin de la Maliau, Sabah (Bornéo malaisien)",
+  "pays": [
+    "MYS"
+  ],
+  "presentation": "Décrit en 2005 par Tan Heok Hui et Peter Ng, le Betta gladiator doit son nom à son tempérament combatif. Il appartient au complexe *Betta unimaculata*, des combattants au corps long et à la grosse tête arrondie, avec une grande bouche.\n\nIl se distingue de ses proches par un corps brun jaunâtre et l'absence d'épine à la nageoire dorsale. L'espèce n'est connue que d'un petit bassin de l'intérieur du Sabah.",
+  "habitat": "Il vit dans le bassin de la Maliau, un plateau reculé et protégé du centre du Sabah. La série type a été récoltée dans une forêt de landes, dans une eau très acide (pH 4,2 à 4,8), aux côtés d'un petit barbeau et d'un poisson-chat du genre *Hemibagrus*.\n\nDans la nature, les adultes se tiennent à environ un mètre les uns des autres, chacun accompagné de quelques juvéniles.",
+  "comportement": "Agressif et territorial envers ses congénères : en captivité, des individus maintenus ensemble se battent sans relâche et peuvent s'entre-tuer dans un espace restreint. On le maintient en couple, dans un bac spacieux avec de nombreuses cachettes.\n\nFace aux autres espèces, il est plutôt discret et se fait facilement devancer par des poissons plus vifs. Incubateur buccal, le mâle garde les œufs dans sa bouche. Il chasse insectes et petits invertébrés.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Betta-gladiator.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/betta-gladiator/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2393997"
+    }
+  ]
+}

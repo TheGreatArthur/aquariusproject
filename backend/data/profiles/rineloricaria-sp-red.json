@@ -1,0 +1,22 @@
+{
+  "nom_scientifique": "Rineloricaria sp. Red",
+  "nom_valide": null,
+  "auteur": null,
+  "classification": null,
+  "uicn": null,
+  "repartition": "Origine inconnue : forme connue uniquement en captivité",
+  "pays": [],
+  "presentation": "Le loricaria rouge (« red lizard catfish », parfois appelé L010a) est un poisson-chat allongé en forme de brindille, d'un rouge orangé uniforme. Son origine reste un mystère : il pourrait descendre d'une population sauvage, peut-être du Paraguay, ou être une forme sélectionnée voire un hybride créé en élevage.\n\nFaute de description scientifique, il ne porte pas de nom d'espèce. Tous les poissons vendus sont nés en captivité.",
+  "habitat": "Aucune population sauvage n'est connue avec certitude, d'où l'absence de carte. Les *Rineloricaria* sauvages vivent sur les fonds de sable et de feuilles des rivières d'Amérique du Sud, souvent camouflés sur le substrat.\n\nEn aquarium, il apprécie un décor de sable fin, de feuilles mortes, de branches et de cavités, avec une lumière modérée et une eau douce à moyennement dure, légèrement acide à neutre, pas trop chaude (24 à 29 °C).",
+  "comportement": "C'est l'un des poissons-chats les plus paisibles : il cohabite avec la plupart des poissons calmes, mais se fait devancer à la nourriture par des compagnons vifs. Il n'est territorial qu'en période de reproduction et se maintient bien en petit groupe.\n\nOmnivore, il mange aliments coulants, légumes blanchis et proies congelées. Il se reproduit assez facilement en tube : le mâle nettoie la cavité, la femelle y pond, puis le mâle garde et ventile seul les œufs, qui éclosent en 4 à 5 jours.",
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/rineloricaria-sp/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2339042"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Betta bellica",
+  "nom_valide": null,
+  "auteur": "Sauvage, 1884",
+  "classification": "Anabantiformes › Osphronemidae",
+  "uicn": "LC",
+  "repartition": "Malaisie péninsulaire (Perak, Selangor, Pahang, Terengganu, Johor) et nord-est de Sumatra",
+  "pays": [
+    "IDN",
+    "MYS"
+  ],
+  "presentation": "Décrit en 1884 par le zoologiste français Henri Émile Sauvage, le combattant belliqueux (*bellica*, « guerrier » en latin) est l'un des plus grands *Betta*, jusqu'à 10 cm. Longtemps perdu de vue, il a été retrouvé en 1996 ; un néotype a alors été désigné dans une forêt marécageuse du nord du Selangor.\n\nIl donne son nom au « groupe *bellica* », des combattants au corps long et fin, brun sombre avec un point vert irisé sur chaque écaille.",
+  "habitat": "Il vit surtout dans les forêts marécageuses de tourbe et les ruisseaux d'eaux noires qui en sortent, parfois en forêt marécageuse d'eau douce. Sous la canopée dense, très peu de lumière atteint l'eau, brune et acide (pH parfois de 3 à 4), presque sans minéraux.\n\nLe fond est couvert de feuilles, de branches et de racines. À certaines saisons, faute d'eau libre, les poissons survivent plusieurs semaines dans la litière humide. Il côtoie d'autres combattants, comme *B. livida*, *B. tussyae* ou *B. waseri*.",
+  "comportement": "Discret, il se fait intimider par des poissons plus gros ou vifs : il vit mieux seul ou avec des espèces très paisibles. Les avis divergent sur la maintenance en groupe ; la plupart des éleveurs recommandent un couple par bac, car les dominants peuvent harceler leurs congénères.\n\nDans la nature, il se nourrit presque exclusivement d'insectes, surtout de larves de demoiselles, qu'il chasse en surface ; excellent sauteur, il bondit même pour attraper des proies au-dessus de l'eau. Le mâle construit un nid de bulles.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Betta-bellica.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/betta-bellica/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2394004"
+    }
+  ]
+}

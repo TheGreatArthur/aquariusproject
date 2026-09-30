@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Acnodon normani",
+  "nom_valide": null,
+  "auteur": "Gosline, 1951",
+  "classification": "Characiformes › Serrasalmidae",
+  "uicn": "LC",
+  "repartition": "Bassins de l'Amazone, du Xingu et du Tocantins (Brésil)",
+  "pays": [
+    "BRA"
+  ],
+  "presentation": "Décrit en 1951 par William Gosline, le pacu brebis est dédié à l'ichtyologiste anglais John Roxborough Norman (1898-1944). C'est un Serrasalmidae, la famille des pacus et des piranhas, et non un Characidae : il est vendu aussi sous le nom de « pacu tigre » pour ses barres verticales sombres.\n\nLe genre compte trois espèces ; *A. normani* se distingue de *A. setnai*, du rio Jari, par un corps plus haut et des branchiospines rigides. Il atteint près de 20 cm.",
+  "habitat": "Il est présent dans les bassins de l'Amazone, du Xingu et du Tocantins au Brésil. Dans le rio Sono, un affluent du Tocantins, il vit dans une eau cristalline qui traverse une savane sans forêt riveraine, aux côtés d'autres characiformes, de cichlidés rhéophiles et de loricariidés.\n\nL'eau est tropicale (22 à 28 °C), douce à moyennement dure et légèrement acide.",
+  "comportement": "Souvent présenté comme frugivore ou herbivore, il se nourrit aussi en partie des écailles d'autres poissons : en aquarium, il a tendance à arracher les écailles des espèces plus grandes, tout en ignorant les petites. Il n'est donc pas recommandé pour un aquarium communautaire classique.\n\nIl peut vivre en groupe si l'espace est suffisant (bac de 1,50 m au minimum). Il accepte bien les aliments coulants secs et congelés. Sa reproduction en captivité n'est pas documentée ; les grands mâles portent un lobe sur la nageoire anale.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Acnodon-normani.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/acnodon-normani/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2353604"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Pseudepiplatys annulatus",
+  "nom_valide": "Epiplatys annulatus",
+  "auteur": "(Boulenger, 1915)",
+  "classification": "Cyprinodontiformes › Nothobranchiidae",
+  "uicn": "LC",
+  "repartition": "Plaines côtières du sud de la Guinée, de la Sierra Leone et du nord-ouest du Libéria",
+  "pays": [
+    "GIN",
+    "LBR",
+    "SLE"
+  ],
+  "presentation": "Décrit en 1915 par George Albert Boulenger, le killi clown (ou « killi fusée ») est un petit killi de surface d'environ 4 cm, barré de quatre larges bandes sombres alternant avec du jaune, d'où son nom *annulatus* (« annelé »). Les mâles ont une queue en éventail aux rayons rouges et bleus.\n\nIl a été placé dans son propre genre, *Pseudepiplatys*, aujourd'hui abandonné : FishBase le range dans *Epiplatys*, sous le nom *Epiplatys annulatus*. Ce n'est pas un killi annuel.",
+  "habitat": "Il est largement réparti dans les basses terres côtières du sud de la Guinée, de la Sierra Leone et du nord-ouest du Libéria, autour de Monrovia. Les éleveurs indiquent la localité d'origine (Kasewe, Monrovia, Fallaba…) pour éviter de mélanger les populations.\n\nIl vit dans les marais, ruisseaux lents et petites rivières de savane et de forêt tropicale, parmi la végétation des berges. L'eau est chaude, douce et acide, parfois légèrement saumâtre.",
+  "comportement": "Paisible, il est trop petit et trop exigeant pour un aquarium communautaire classique : on l'associe à de petits tétras africains ou à d'autres espèces minuscules et calmes. Assez grégaire, il se montre moins timide en groupe de 8 à 10.\n\nIl chasse en surface de petits insectes et du zooplancton. Il se reproduit assez facilement : les œufs sont déposés dans les plantes fines ou les racines flottantes, et des alevins apparaissent parfois spontanément dans un bac bien établi.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pseudepiplatys-annulatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pseudepiplatys-annulatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2348780"
+    }
+  ]
+}

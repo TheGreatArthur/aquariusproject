@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Astyanax jordani",
+  "nom_valide": null,
+  "auteur": "(Hubbs & Innes, 1936)",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "EN",
+  "repartition": "Grottes de la Sierra de El Abra et des massifs voisins, San Luis Potosí et Tamaulipas (Mexique)",
+  "pays": [
+    "MEX"
+  ],
+  "presentation": "Le tétra aveugle est la forme cavernicole de *Astyanax mexicanus*, un tétra de surface qui a colonisé des grottes du nord-est du Mexique. Découvert en 1936 lors d'une expédition dans l'État de San Luis Potosí, il a été décrit la même année par Carl Hubbs et William Innes, et dédié à C. Basil Jordan, marchand de poissons de Dallas qui reçut la plupart des spécimens. FishBase le maintient comme espèce distincte, mais beaucoup de chercheurs le considèrent comme une population de *A. mexicanus*.\n\nC'est un modèle majeur de la biologie de l'évolution : chez l'embryon, les yeux commencent à se former puis dégénèrent, et plusieurs populations de grottes ont perdu yeux et pigments de façon indépendante. Il est classé « en danger » par l'UICN.",
+  "habitat": "La forme aveugle vit uniquement dans des grottes et galeries souterraines du nord-est du Mexique, dans l'obscurité totale, où l'eau est stable et pauvre en nourriture. Sa forme de surface, en revanche, est très répandue, du sud du Texas et du Nouveau-Mexique jusqu'au Guatemala, dans les rivières, étangs et lacs.\n\nL'eau des grottes est plutôt dure et neutre à légèrement alcaline, autour de 20 à 25 °C.",
+  "comportement": "Robuste et paisible, il repère sa nourriture grâce à sa ligne latérale et à ses papilles gustatives très développées. En cherchant à manger, il peut heurter ou mordiller ses voisins, sans agressivité réelle ; mieux vaut éviter les compagnons très timides ou lents.\n\nIl ne forme pas de vrai banc mais se porte mieux en groupe d'au moins 4 individus. Il se reproduit facilement en aquarium, avec une grille au fond pour protéger les œufs des adultes. Les femelles sont plus grandes et plus rondes ; la nageoire anale du mâle a un bord légèrement incurvé.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Astyanax-jordani.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/astyanax-mexicanus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5204359"
+    }
+  ]
+}

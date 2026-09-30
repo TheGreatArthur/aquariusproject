@@ -1,0 +1,26 @@
+{
+  "nom_scientifique": "Danio rerio var. frankei",
+  "nom_valide": "Danio rerio",
+  "auteur": "(Hamilton, 1822)",
+  "classification": "Cypriniformes › Danionidae",
+  "uicn": "LC",
+  "repartition": "Forme d'élevage de *Danio rerio* (espèce originaire du sous-continent indien)",
+  "pays": [],
+  "presentation": "Le danio léopard n'est pas une espèce sauvage mais une forme de *Danio rerio* : ses rayures sont remplacées par un semis de taches sombres. Il a d'abord été décrit en 1963 par Hermann Meinken sous le nom *Brachydanio frankei*, à partir de poissons d'aquarium dont l'origine naturelle était inconnue.\n\nDes croisements ont ensuite montré qu'il s'agit d'une mutation récessive du danio rerio, appelée *leopard* par les généticiens ; elle affecte l'organisation des cellules pigmentaires. Le nom *frankei* n'a donc pas de valeur taxonomique.",
+  "habitat": "N'existant qu'en captivité, il n'a pas d'habitat naturel propre. L'espèce dont il dérive vit dans les plaines du nord et de l'est du sous-continent indien : rizières, mares et bordures inondées, ruisseaux lents à fond de limon.\n\nSes besoins sont ceux du danio rerio : eau de 18 à 24 °C, de légèrement acide à légèrement alcaline, bien oxygénée.",
+  "comportement": "Identique à celui du danio rerio : paisible, très actif, il vit en banc et doit être maintenu en groupe d'au moins 8 à 10 individus. Il peut être mélangé à des danios rayés, avec lesquels il se reproduit librement.\n\nMicro-prédateur peu difficile, il accepte tous les aliments. Pondeur libre sans soins parentaux, il se reproduit facilement dans un bac planté ; les femelles sont plus rondes et un peu plus grandes que les mâles.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Danio-rerio.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/danio-rerio/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/9797255"
+    }
+  ]
+}

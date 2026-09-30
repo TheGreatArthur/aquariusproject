@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Boraras maculatus",
+  "nom_valide": null,
+  "auteur": "(Duncker, 1904)",
+  "classification": "Cypriniformes › Danionidae",
+  "uicn": "LC",
+  "repartition": "Malaisie péninsulaire, sud de la Thaïlande, Singapour, est de Sumatra et île de Bintan",
+  "pays": [
+    "IDN",
+    "MYS",
+    "SGP",
+    "THA"
+  ],
+  "presentation": "Décrit en 1904 par Georg Duncker à partir de poissons de Bukit Terah, près de Muar dans l'État de Johor, le rasbora nain est l'un des plus petits cyprinidés au monde : environ 2,5 cm. Son nom latin *maculatus* signifie « tacheté », pour les points sombres qui ornent son corps rouge.\n\nLongtemps placé dans *Rasbora*, il appartient au genre *Boraras* depuis 1993. Sa coloration varie selon les populations, certaines étant nettement plus rouges que d'autres.",
+  "habitat": "Il est répandu dans toute la Malaisie péninsulaire, jusqu'au sud de la Thaïlande, à Singapour, dans l'est de Sumatra et sur l'île de Bintan.\n\nIl vit dans les ruisseaux et rivières d'eaux noires des forêts marécageuses de tourbe : eau calme, très douce et acide (pH jusqu'à 4), teintée de brun, sur un lit de feuilles et de branches, sous la canopée. Ces milieux reculent devant les plantations et l'urbanisation.",
+  "comportement": "Très paisible mais minuscule et timide, il est à réserver à un bac spécifique ou partagé avec d'autres espèces naines et des crevettes. Il vit en banc : un groupe d'au moins 8 à 10 individus le met en confiance.\n\nMicro-prédateur, il se nourrit de vers, de petits crustacés et de zooplancton. Il pond en continu quelques œufs par jour sans s'en occuper ; les femelles matures ont le ventre plus rond, les mâles dominants les couleurs les plus intenses.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Boraras-maculatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/boraras-maculatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2366590"
+    }
+  ]
+}
