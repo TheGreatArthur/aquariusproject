@@ -12,6 +12,10 @@
 ## Features
 
 - **Fish catalogue** — 135 species with water parameters (pH, GH, temperature), size, behaviour, lifespan and photos.
+- **Fish profiles** — for each species, a French text on its description and naming, natural habitat and
+  behaviour, with a range map (native countries, GBIF observations, rivers and lakes) and its IUCN status,
+  written from FishBase, Seriously Fish and GBIF; the data itself was checked against the same sources
+  ([report](docs/data-sources-check.md)).
 - **Instant search** by common name, scientific name, family, genus or behaviour, plus a filter by family.
 - **Modern, responsive UI** — dark theme with Tailwind CSS, subtle scroll animations,
   respecting *reduced motion*.
@@ -71,8 +75,11 @@ To load the fish data, put the workbook at `backend/db.xlsx`, then:
 make import
 ```
 
-The import cleans and normalizes the workbook's labels; run `make audit` to list values that look wrong
-([docs/data-audit.md](docs/data-audit.md)). Run `make help` for all commands. Configuration:
+The import cleans and normalizes the workbook's labels, applies the reviewed corrections and loads the fish
+profiles from `backend/data/`; run `make audit` to list values that look wrong
+([docs/data-audit.md](docs/data-audit.md)) and `make sources` to compare the base with FishBase and
+Seriously Fish (see [ADR 0006](docs/adr/0006-fish-profiles-and-sources.md) to add a species' profile).
+Run `make help` for all commands. Configuration:
 
 | Variable | Where | Default |
 |---|---|---|
@@ -98,6 +105,7 @@ CI runs the same checks on every pull request and on pushes to `main`.
 - [0003 — UI redesign: Tailwind CSS and Framer Motion](docs/adr/0003-ui-redesign-tailwind.md)
 - [0004 — Data normalization, reviewed corrections and audit](docs/adr/0004-data-normalization-and-audit.md)
 - [0005 — Compatibility rules engine with severities](docs/adr/0005-compatibility-rules-engine.md)
+- [0006 — Fish profiles, reference sources and range maps](docs/adr/0006-fish-profiles-and-sources.md)
 
 ## Roadmap & known limitations
 
