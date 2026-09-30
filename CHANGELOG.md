@@ -45,6 +45,15 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - README rewritten in English with architecture diagram and quick start.
 
 ### Fixed
+- Simulator: the saved tank and water are read after the first render, which removes the hydration error
+  (the whole page was re-rendered in the browser) when a tank had been saved; unreadable or blocked local
+  storage no longer breaks the page.
+- Fish search ignores accents and matches anywhere in the names ("pleco" finds "Pléco zèbre", "neon" finds
+  "Faux-néon"); every word must match. The catalogue loads the list once and filters it in the browser.
+- API: `%` and `_` are searched as plain text in `q` and `famille`, `/poissons/<id>` only accepts numbers,
+  and the search no longer prints its SQL query.
+- Each page now has its own browser title and description; fish pages use the fish's common name.
+- "Retour" on a fish page opened from a shared link goes to the catalogue instead of leaving the site.
 - Fish data checked against FishBase and Seriously Fish ([report](docs/data-sources-check.md)): 98 values
   corrected on 63 fish in `backend/corrections.py`, including water ranges (tiger barb, *Corydoras sterbai*,
   *Aborichthys elongatus*…), sizes, families (Serrasalmidae, Botiidae, Gastromyzontidae, Nemacheilidae,
