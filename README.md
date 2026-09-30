@@ -29,6 +29,8 @@
 |---|---|---|
 | ![Fish list](docs/screenshots/fish-list.png) | ![Fish detail](docs/screenshots/fish-detail.png) | ![Simulator](docs/screenshots/simulation.png) |
 
+![Natural habitat section of a fish profile, with its range map](docs/screenshots/fish-profile.jpg)
+
 ## Architecture
 
 ```mermaid
