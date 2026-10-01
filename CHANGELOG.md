@@ -33,6 +33,14 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.env.example` for the front end; backend config driven by `AQUARIUS_DSN` / `AQUARIUS_EXCEL_FILE`.
 
 ### Changed
+- **Design review** ([rules](docs/design-rules.md)), keeping the dark theme and teal accent: the home hero fits
+  on two lines with one CTA label ("Simuler un bac") used everywhere, the "three steps" section shows a real
+  screenshot of the simulator instead of three numbered cards, glows, gradient text and extra uppercase labels
+  are gone, and corner radii follow one scale. Fish cards and the family mosaic use two columns on phones,
+  and the family label moved from the photo to the card text. Fish pages keep the gallery in view while
+  scrolling and show the scientific name once when there is no common name. Simulator result cards put the
+  risk of adding a species on its own line, and "Tout vider" asks for confirmation. Skip link, `theme-color`,
+  balanced headings and non-breaking spaces before French punctuation. README screenshots updated.
 - **Next.js 16 and React 19** ([ADR 0007](docs/adr/0007-nextjs-16-react-19.md)), with Turbopack for dev and
   build, Framer Motion 12, SWR 2.5, React Hook Form 7.89 and ESLint 9 (flat config, `npm run lint`). State copied
   from props or the URL through effects is now derived during render. The simulator is rendered in the browser
@@ -57,6 +65,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Cypress, installed but without any test (its binary download was already disabled in CI).
 
 ### Fixed
+- Footer: the "Suivre" heading sat on the same line as the Instagram link.
+- Form labels were uppercased, which displayed "pH" as "PH"; the tank load read "0 / — points" without a volume.
 - Catalogue: typing a search while a family filter was active erased the first letter typed.
 - Simulator: the saved tank and water are read after the first render, which removes the hydration error
   (the whole page was re-rendered in the browser) when a tank had been saved; unreadable or blocked local
