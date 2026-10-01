@@ -5,8 +5,6 @@ import Link from 'next/link';
 import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowRight, Fish } from 'lucide-react';
 
-import HomeStats from '@/components/home/HomeStats';
-
 const EASE = [0.22, 1, 0.36, 1];
 
 export default function Hero () {
@@ -20,7 +18,7 @@ export default function Hero () {
   });
 
   return (
-    <section className="relative isolate flex min-h-[100svh] items-center overflow-hidden pb-16 pt-28">
+    <section className="relative isolate flex min-h-[100svh] items-center overflow-hidden pb-16 pt-24">
       {/* Photo d'aquascape, fondue dans le fond sombre */}
       <div className="absolute inset-y-0 right-0 -z-20 w-full md:w-[68%]">
         <Image
@@ -35,38 +33,28 @@ export default function Hero () {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/60"/>
       </div>
 
-      {/* Halo lumineux */}
-      <div
-        aria-hidden="true"
-        className="absolute -left-32 top-1/3 -z-10 h-[30rem] w-[30rem] rounded-full bg-accent/15 blur-[120px]"
-      />
-
       <div className="container">
-        <div className="max-w-3xl">
+        <div className="max-w-4xl">
           <motion.p className="eyebrow" {...item(0)}>
             <Fish className="h-4 w-4"/> Aquariophilie d&apos;eau douce
           </motion.p>
 
           <motion.h1 className="mt-5 text-hero font-semibold" {...item(0.08)}>
-            Composez un aquarium <span className="gradient-text">qui vit en harmonie.</span>
+            Composez un aquarium qui vit en <span className="text-accent">harmonie</span>.
           </motion.h1>
 
           <motion.p className="mt-6 max-w-xl text-lg text-muted" {...item(0.16)}>
-            Choisissez vos poissons selon le volume et les paramètres de votre eau. Aquarius vérifie la
-            population, les comportements et les cohabitations à risque avant qu&apos;il ne soit trop tard.
+            Choisissez vos poissons selon le volume et l&apos;eau de votre bac. Aquarius signale les cohabitations
+            à risque avant l&apos;achat.
           </motion.p>
 
           <motion.div className="mt-9 flex flex-wrap gap-3" {...item(0.24)}>
             <Link href="/simulation/starting" className="btn-primary !px-6 !py-3 text-base">
-              Lancer la simulation <ArrowRight className="h-4 w-4"/>
+              Simuler un bac <ArrowRight className="h-4 w-4"/>
             </Link>
             <Link href="/poissons" className="btn-ghost !px-6 !py-3 text-base">
               Explorer les espèces
             </Link>
-          </motion.div>
-
-          <motion.div {...item(0.32)}>
-            <HomeStats/>
           </motion.div>
         </div>
       </div>
