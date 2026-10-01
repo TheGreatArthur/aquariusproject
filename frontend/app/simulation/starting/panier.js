@@ -2,6 +2,7 @@
  * Panier
  */
 
+import { useState } from 'react';
 import clsx from 'clsx';
 import { Minus, Plus, Trash2 } from 'lucide-react';
 
@@ -9,6 +10,8 @@ import { totalPoints } from '@/lib/compat';
 
 
 export default function Panier ({ listePoissons, setListePoissons, severites = {}, litrage }) {
+  // « Tout vider » demande une confirmation : le bac enregistré serait perdu
+  const [confirmVider, setConfirmVider] = useState(false);
 
   const handleRemoveFromList = (poissonId) => {
     setListePoissons((prevSelection) =>
@@ -59,24 +62,34 @@ export default function Panier ({ listePoissons, setListePoissons, severites = {
     <div className="card p-5">
       <div className="flex items-baseline justify-between">
         <h2 className="text-lg font-semibold">Votre bac</h2>
-        {listePoissons.length > 0 && (
-          <button type="button" onClick={() => setListePoissons([])} className="text-xs text-muted hover:text-danger">
+        {listePoissons.length > 0 && (confirmVider ? (
+          <span className="flex items-center gap-3 text-xs">
+            <button type="button" onClick={() => { setListePoissons([]); setConfirmVider(false); }}
+                    className="font-medium text-danger hover:underline">
+              Confirmer
+            </button>
+            <button type="button" onClick={() => setConfirmVider(false)} className="text-muted hover:text-foreground">
+              Annuler
+            </button>
+          </span>
+        ) : (
+          <button type="button" onClick={() => setConfirmVider(true)} className="text-xs text-muted hover:text-danger">
             Tout vider
           </button>
-        )}
+        ))}
       </div>
 
       {/* Charge du bac : points utilisés / litrage */}
       <div className="mt-4">
         <div className="flex justify-between text-xs text-muted">
           <span>Charge</span>
-          <span>{total} / {capacite || '—'} points</span>
+          <span className="tabular-nums">{capacite ? `${total} / ${capacite} points` : 'Indiquez le volume du bac'}</span>
         </div>
         <div className="mt-1.5 h-2 overflow-hidden rounded-full bg-surface-elevated">
           <div
-            className={clsx('h-full rounded-full transition-all duration-500',
+            className={clsx('h-full origin-left rounded-full transition-[transform,background-color] duration-500',
               total > capacite ? 'bg-danger' : remplissage > 80 ? 'bg-warning' : 'bg-accent')}
-            style={{ width: `${total > capacite ? 100 : remplissage}%` }}
+            style={{ transform: `scaleX(${(total > capacite ? 100 : remplissage) / 100})` }}
           />
         </div>
       </div>

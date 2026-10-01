@@ -19,7 +19,7 @@ export default function SiteFooter () {
         </div>
 
         <div>
-          <h2 className="eyebrow !text-muted">Explorer</h2>
+          <h2 className="text-sm font-medium text-muted">Explorer</h2>
           <ul className="mt-4 space-y-2 text-sm">
             {NAV_LINKS.map(({ href, label }) => (
               <li key={href}>
@@ -30,16 +30,18 @@ export default function SiteFooter () {
         </div>
 
         <div>
-          <h2 className="eyebrow !text-muted">Suivre</h2>
-          <a
-            href={INSTAGRAM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 inline-flex items-center gap-2 text-sm text-foreground/80 transition hover:text-accent-glow"
-          >
-            <InstagramIcon className="h-4 w-4"/>
-            @projet.aquarius.pro
-          </a>
+          <h2 className="text-sm font-medium text-muted">Suivre</h2>
+          <p className="mt-4">
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-foreground/80 transition hover:text-accent-glow"
+            >
+              <InstagramIcon className="h-4 w-4"/>
+              @projet.aquarius.pro
+            </a>
+          </p>
         </div>
       </div>
 
