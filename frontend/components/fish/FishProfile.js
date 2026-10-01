@@ -73,8 +73,7 @@ export default function FishProfile ({ profil, nomScientifique }) {
   return (
     <section className="mt-24" aria-labelledby="fiche-title">
       <Reveal>
-        <p className="eyebrow">Fiche descriptive</p>
-        <h2 id="fiche-title" className="mt-3 text-3xl font-semibold sm:text-4xl">
+        <h2 id="fiche-title" className="text-3xl font-semibold sm:text-4xl">
           Dans la nature
         </h2>
       </Reveal>
@@ -120,7 +119,7 @@ export default function FishProfile ({ profil, nomScientifique }) {
                     <p className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-xs text-muted">
                       {profil.points.length > 0 && (
                         <span className="inline-flex items-center gap-2">
-                          <span className="h-2 w-2 rounded-full bg-accent-glow shadow-glow"/> Observations (GBIF) et localités
+                          <span className="h-2 w-2 rounded-full bg-accent-glow"/> Observations (GBIF) et localités
                         </span>
                       )}
                       <span className="inline-flex items-center gap-2">

@@ -13,14 +13,14 @@ export default function RangeBar ({ label, min, max, scaleMin, scaleMax, unit = 
     <div>
       <div className="flex items-baseline justify-between text-sm">
         <span className="text-muted">{label}</span>
-        <span className="font-display font-medium text-foreground">
+        <span className="font-display font-medium tabular-nums text-foreground">
           {min} – {max}{unit}
         </span>
       </div>
       <div className="relative mt-2 h-2 rounded-full bg-surface-elevated" role="img"
            aria-label={`${label} : de ${min} à ${max}${unit}`}>
         <div
-          className="absolute inset-y-0 rounded-full bg-gradient-to-r from-accent to-accent-glow shadow-glow"
+          className="absolute inset-y-0 rounded-full bg-accent"
           style={{ left: `${left}%`, width: `${width}%` }}
         />
       </div>

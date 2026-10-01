@@ -26,10 +26,7 @@ module.exports = {
         display: ['var(--font-display)', 'var(--font-inter)', 'ui-sans-serif', 'sans-serif'],
       },
       fontSize: {
-        hero: ['clamp(2.75rem, 7vw, 5.5rem)', { lineHeight: '1.02', letterSpacing: '-0.03em' }],
-      },
-      boxShadow: {
-        glow: '0 0 40px -12px rgba(94, 234, 212, 0.55), 0 0 80px -24px rgba(45, 212, 191, 0.45)',
+        hero: ['clamp(2.5rem, 6vw, 4.75rem)', { lineHeight: '1.05', letterSpacing: '-0.03em' }],
       },
       keyframes: {
         'fade-in': { from: { opacity: 0 }, to: { opacity: 1 } },
