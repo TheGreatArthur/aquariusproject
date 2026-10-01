@@ -16,7 +16,8 @@
   behaviour, with a range map (native countries, GBIF observations, rivers and lakes) and its IUCN status,
   written from FishBase, Seriously Fish and GBIF; the data itself was checked against the same sources
   ([report](docs/data-sources-check.md)).
-- **Instant search** by common name, scientific name, family, genus or behaviour, plus a filter by family.
+- **Instant search** by common name, scientific name, family, genus or behaviour (accents ignored), plus a
+  filter by family.
 - **Modern, responsive UI** — dark theme with Tailwind CSS, subtle scroll animations,
   respecting *reduced motion*.
 - **Family showcase** on the home page linking to each family's fish.

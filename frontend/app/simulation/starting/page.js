@@ -24,7 +24,8 @@ const nombre = (value) => (value === '' || value == null || Number.isNaN(Number(
 export default function SimulationStart () {
 
   const [poissonsCompatibles, setPoissonsCompatibles] = useState([]);
-  const [listePoissons, setListePoissons] = useState(() => lsGet('listePoissons') || []);
+  const [listePoissons, setListePoissons] = useState([]);
+  const [restored, setRestored] = useState(false);
 
   const { data: poissonsData, error: poissonsError } = useSWR('/api/poissons');
 
@@ -40,9 +41,20 @@ export default function SimulationStart () {
   };
   const { litrage: l, pH: ph, gH: gh, tempMoyenne: temp } = environnement;
 
+  // Le bac et l'eau enregistrés ne sont relus qu'après le premier rendu : le serveur ne connaît pas le
+  // stockage local, les lire plus tôt ferait diverger le HTML du serveur et celui du navigateur
   useEffect(() => {
-    lsSet('listePoissons', listePoissons);
-  }, [listePoissons]);
+    setListePoissons(lsGet('listePoissons') || []);
+    const cachedFormData = lsGet('form_data');
+    if (cachedFormData)
+      reset(cachedFormData);
+    setRestored(true);
+  }, [reset]);
+
+  useEffect(() => {
+    if (restored)
+      lsSet('listePoissons', listePoissons);
+  }, [restored, listePoissons]);
 
   useEffect(() => {
     // Sans volume, on n'affiche aucune espèce mais on garde le bac tel quel
@@ -66,16 +78,9 @@ export default function SimulationStart () {
   }, [poissonsData, l, ph, gh, temp]);
 
   useEffect(() => {
-    const cachedFormData = lsGet('form_data');
-    if (cachedFormData) {
-      reset(cachedFormData);
-    }
-  }, [reset]);
-
-  useEffect(() => {
-    const formData = { litrage, pH, gH, tempMoyenne };
-    lsSet('form_data', formData);
-  }, [litrage, pH, gH, tempMoyenne]);
+    if (restored)
+      lsSet('form_data', { litrage, pH, gH, tempMoyenne });
+  }, [restored, litrage, pH, gH, tempMoyenne]);
 
   const { verdict, issues, ranges } = evaluate(listePoissons, environnement);
 

@@ -30,6 +30,12 @@ def test_quick_search_without_match(client):
     assert res.get_json()['poissons'] == []
 
 
+def test_quick_search_treats_wildcards_as_text(client):
+    for q in ('%', '_', 'c%'):
+        res = client.get('/poissons', query_string={'q': q})
+        assert res.get_json()['poissons'] == [], q
+
+
 def test_filter_by_famille(client):
     res = client.get('/poissons', query_string={'famille': 'cichlidae'})
 
@@ -49,6 +55,16 @@ def test_get_poisson_not_found(client):
     res = client.get('/poissons/999')
 
     assert res.status_code == 404
+
+
+def test_filter_by_famille_is_exact(client):
+    for fam in ('%', 'cichlid', 'cichlidae%'):
+        res = client.get('/poissons', query_string={'famille': fam})
+        assert res.get_json()['poissons'] == [], fam
+
+
+def test_get_poisson_rejects_non_numeric_id(client):
+    assert client.get('/poissons/abc').status_code == 404
 
 
 def test_familles_sorted_by_name(client):

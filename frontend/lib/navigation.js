@@ -10,3 +10,11 @@ export const NAV_LINKS = [
 ];
 
 export const INSTAGRAM_URL = 'https://www.instagram.com/projet.aquarius.pro';
+
+// Nombre de changements de page faits dans le site depuis le chargement (suivi par <Providers>)
+let inAppNavigations = 0;
+
+export const countNavigation = () => { inAppNavigations += 1; };
+
+/** Vrai si « Retour » ramène à une page du site, faux si la page a été ouverte directement (lien partagé) */
+export const hasPreviousPage = () => inAppNavigations > 0;

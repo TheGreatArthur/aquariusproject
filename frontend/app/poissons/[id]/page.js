@@ -12,6 +12,7 @@ import RangeBar from '@/components/fish/RangeBar';
 import Reveal from '@/components/Reveal';
 import { familyHref } from '@/lib/families';
 import { fishImages } from '@/lib/fish';
+import { hasPreviousPage } from '@/lib/navigation';
 
 function Stat ({ icon: Icon, label, value }) {
   return (
@@ -36,6 +37,9 @@ export default function Poisson ({ params }) {
   const router = useRouter();
   const { data, error, isLoading } = useSWR(`/api/poissons/${params.id}`);
 
+  // Ouverte depuis un lien partagé, la fiche n'a pas de page précédente dans le site : retour au catalogue
+  const retour = () => (hasPreviousPage() ? router.back() : router.push('/poissons'));
+
   if (error)
     return (
       <div className="container pt-40 text-center">
@@ -57,7 +61,7 @@ export default function Poisson ({ params }) {
 
   return (
     <div className="container pt-28">
-      <button type="button" onClick={() => router.back()}
+      <button type="button" onClick={retour}
               className="inline-flex items-center gap-2 text-sm text-muted transition hover:text-foreground">
         <ArrowLeft className="h-4 w-4"/> Retour
       </button>
