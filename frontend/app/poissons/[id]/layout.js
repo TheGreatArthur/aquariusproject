@@ -5,8 +5,9 @@
 const BACKEND_URL = process.env.BACKEND_URL || 'http://localhost:5001';
 
 export async function generateMetadata ({ params }) {
+  const { id } = await params;
   try {
-    const res = await fetch(`${BACKEND_URL}/poissons/${encodeURIComponent(params.id)}`, { next: { revalidate: 3600 } });
+    const res = await fetch(`${BACKEND_URL}/poissons/${encodeURIComponent(id)}`, { next: { revalidate: 3600 } });
     if (!res.ok)
       return { title: 'Poisson introuvable' };
     const p = await res.json();

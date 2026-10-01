@@ -12,7 +12,9 @@ import { INSTAGRAM_URL, NAV_LINKS } from '@/lib/navigation';
 export default function SiteHeader () {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
-  const [open, setOpen] = useState(false);
+  // Page sur laquelle le menu mobile a été ouvert : il se referme de lui-même au changement de page
+  const [openOn, setOpenOn] = useState(null);
+  const open = openOn === pathname;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -20,9 +22,6 @@ export default function SiteHeader () {
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
-
-  // Ferme le menu mobile à chaque changement de page
-  useEffect(() => setOpen(false), [pathname]);
 
   const isActive = (href) => pathname === href || pathname.startsWith(`${href}/`);
 
@@ -74,7 +73,7 @@ export default function SiteHeader () {
           <button
             type="button"
             className="inline-flex rounded-full p-2 text-muted hover:text-foreground md:hidden"
-            onClick={() => setOpen((o) => !o)}
+            onClick={() => setOpenOn(open ? null : pathname)}
             aria-expanded={open}
             aria-controls="mobile-menu"
             aria-label={open ? 'Fermer le menu' : 'Ouvrir le menu'}

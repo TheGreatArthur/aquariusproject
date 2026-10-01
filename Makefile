@@ -64,7 +64,7 @@ test: setup ## Run backend (pytest) and front-end (Vitest) tests
 
 lint: setup ## Lint backend (ruff) and front end (ESLint)
 	cd backend && venv/bin/ruff check .
-	cd frontend && npx next lint
+	cd frontend && npm run lint
 
 build: setup ## Production build of the front end
 	cd frontend && npx next build
