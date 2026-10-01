@@ -19,7 +19,7 @@ function Stat ({ icon: Icon, label, value }) {
   return (
     <div className="card p-4">
       <Icon className="h-4 w-4 text-accent"/>
-      <p className="mt-3 font-display text-2xl font-semibold">{value}</p>
+      <p className="mt-3 font-display text-2xl font-semibold tabular-nums">{value}</p>
       <p className="text-xs text-muted">{label}</p>
     </div>
   );
@@ -29,7 +29,7 @@ function Row ({ label, children }) {
   return (
     <div className="flex items-baseline justify-between gap-4 py-3">
       <dt className="text-sm text-muted">{label}</dt>
-      <dd className="text-right text-sm font-medium first-letter:uppercase">{children ?? '—'}</dd>
+      <dd className="text-right text-sm font-medium first-letter:uppercase">{children ?? 'Non renseigné'}</dd>
     </div>
   );
 }
@@ -53,13 +53,15 @@ export default function Poisson ({ params }) {
   if (isLoading || !data)
     return (
       <div className="container grid gap-10 pt-32 lg:grid-cols-2">
-        <div className="aspect-[4/3] animate-pulse rounded-3xl bg-surface"/>
+        <div className="aspect-[4/3] animate-pulse rounded-2xl bg-surface"/>
         <div className="space-y-4">
           <div className="h-10 w-2/3 animate-pulse rounded bg-surface"/>
           <div className="h-5 w-1/3 animate-pulse rounded bg-surface"/>
         </div>
       </div>
     );
+
+  const sansNomCommun = data.nom_commun.trim().toLowerCase() === data.nom_scientifique.trim().toLowerCase();
 
   return (
     <div className="container pt-28">
@@ -69,7 +71,8 @@ export default function Poisson ({ params }) {
       </button>
 
       <div className="mt-6 grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
-        <Reveal>
+        {/* La galerie reste visible pendant la lecture de la colonne de droite, plus haute */}
+        <Reveal className="lg:sticky lg:top-24 lg:self-start">
           <FishGallery images={fishImages(data)} alt={data.nom_commun}/>
         </Reveal>
 
@@ -77,8 +80,15 @@ export default function Poisson ({ params }) {
           <Link href={familyHref(data.nom_famille)} className="eyebrow hover:text-accent-glow">
             {data.nom_famille}
           </Link>
-          <h1 className="mt-3 text-4xl font-semibold sm:text-5xl">{data.nom_commun}</h1>
-          <p className="mt-2 text-lg italic text-muted">{data.nom_scientifique}</p>
+          {/* Sans nom commun, la base reprend le nom scientifique : on ne l'affiche qu'une fois, en italique */}
+          {sansNomCommun ? (
+            <h1 className="mt-3 text-4xl font-semibold italic sm:text-5xl">{data.nom_scientifique}</h1>
+          ) : (
+            <>
+              <h1 className="mt-3 text-4xl font-semibold sm:text-5xl">{data.nom_commun}</h1>
+              <p className="mt-2 text-lg italic text-muted">{data.nom_scientifique}</p>
+            </>
+          )}
 
           <div className="mt-5 flex flex-wrap gap-2">
             <BehaviourBadge comportement={data.nom_comportement}/>
@@ -86,10 +96,10 @@ export default function Poisson ({ params }) {
           </div>
 
           <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
-            <Stat icon={Ruler} label="Taille adulte" value={`${data.taille} cm`}/>
-            <Stat icon={Droplet} label="Volume minimum" value={`${data.litrage_mini} L`}/>
+            <Stat icon={Ruler} label="Taille adulte" value={`${data.taille}\u00a0cm`}/>
+            <Stat icon={Droplet} label="Volume minimum" value={`${data.litrage_mini}\u00a0L`}/>
             <Stat icon={Users} label="Groupe minimum" value={data.nb_individus}/>
-            <Stat icon={Clock} label="Longévité" value={`${data.longevite} ans`}/>
+            <Stat icon={Clock} label="Longévité" value={`${data.longevite}\u00a0ans`}/>
           </div>
 
           <section className="card mt-8 space-y-6 p-6" aria-labelledby="eau-title">

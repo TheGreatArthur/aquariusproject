@@ -87,8 +87,8 @@ export default function Simulator () {
               <label key={name} htmlFor={name}>
                 <span className="label">{label}</span>
                 <span className="relative block">
-                  <input id={name} className="input pr-10" inputMode="decimal" placeholder={placeholder}
-                         {...register(name, rules)}/>
+                  <input id={name} className="input pr-10 tabular-nums" inputMode="decimal" autoComplete="off"
+                         placeholder={placeholder} {...register(name, rules)}/>
                   {unit && <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-xs text-muted">{unit}</span>}
                 </span>
               </label>
