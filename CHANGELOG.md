@@ -48,6 +48,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - SQLite is now the default database, so a fresh clone runs without a MySQL server.
 - README rewritten in English with architecture diagram and quick start.
 
+### Removed
+- Cypress, installed but without any test (its binary download was already disabled in CI).
+
 ### Fixed
 - Simulator: the saved tank and water are read after the first render, which removes the hydration error
   (the whole page was re-rendered in the browser) when a tank had been saved; unreadable or blocked local
@@ -75,3 +78,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `/Simulation/starting` failed to build on case-sensitive file systems (`results.js` was in `app/simulation/`).
 - `/cours` was not a valid React page and broke the production build.
 - `Flask-Cors` was missing from `requirements.txt`.
+
+### Security
+- Next.js 13.4.7 → 13.5.11 (and `eslint-config-next`), which fixes the middleware authorization bypass
+  (GHSA-f82v-jwr5-mffw) and the zod DoS; Vitest 3 → 4 and `npm audit fix` for the development tools.
+  `npm audit` still reports Next.js advisories fixed only from 15.5.24, including two critical ones;
+  that upgrade needs React 19 and is tracked in the roadmap.

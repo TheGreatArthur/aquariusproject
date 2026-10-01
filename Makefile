@@ -24,7 +24,7 @@ $(PY_VENV): backend/requirements.txt backend/requirements-dev.txt
 	@touch $(PY_VENV)
 
 frontend/node_modules: frontend/package-lock.json
-	cd frontend && CYPRESS_INSTALL_BINARY=0 npm ci
+	cd frontend && npm ci
 	@touch frontend/node_modules
 
 dev: setup ## Start the Flask API and the Next.js front end

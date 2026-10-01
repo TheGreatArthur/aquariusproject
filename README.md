@@ -113,9 +113,11 @@ CI runs the same checks on every pull request and on pushes to `main`.
 ## Roadmap & known limitations
 
 - [ ] Deploy a public demo
+- [ ] Upgrade to Next.js 15.5+ / React 19: Next.js 13.5 still has known security advisories
+  (`npm audit`), fixed only from 15.5.24
 - [ ] "Guide pratique" page (`/cours`) is a placeholder
 - [ ] Import the `Plantes` sheet (plants) from the workbook
-- [ ] Front-end tests (validation rules, Cypress end-to-end)
+- [ ] End-to-end tests in a browser (the compatibility rules and search helpers have unit tests)
 - The UI is in French only, dark theme only.
 - Compatibility rules run in the browser and are indicative, not expert advice.
 

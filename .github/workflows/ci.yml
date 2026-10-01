@@ -38,7 +38,6 @@ jobs:
       run:
         working-directory: frontend
     env:
-      CYPRESS_INSTALL_BINARY: 0
       NEXT_TELEMETRY_DISABLED: 1
     steps:
       - uses: actions/checkout@v4
