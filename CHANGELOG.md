@@ -33,6 +33,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.env.example` for the front end; backend config driven by `AQUARIUS_DSN` / `AQUARIUS_EXCEL_FILE`.
 
 ### Changed
+- **Next.js 16 and React 19** ([ADR 0007](docs/adr/0007-nextjs-16-react-19.md)), with Turbopack for dev and
+  build, Framer Motion 12, SWR 2.5, React Hook Form 7.89 and ESLint 9 (flat config, `npm run lint`). State copied
+  from props or the URL through effects is now derived during render. The simulator is rendered in the browser
+  only, so the saved tank is read without a hydration step; species that no longer suit the water are hidden
+  from the tank instead of deleted, and come back when the water is changed back.
 - Fish and family photos downscaled to 2000 px at most and re-encoded (progressive JPEG, quality 82):
   `public/images` and `public/families` go from 112 MB to 42 MB (largest file 0.42 MB instead of 5.5 MB)
   and the first display of a large photo is about twice as fast. `make images` runs
@@ -52,6 +57,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Cypress, installed but without any test (its binary download was already disabled in CI).
 
 ### Fixed
+- Catalogue: typing a search while a family filter was active erased the first letter typed.
 - Simulator: the saved tank and water are read after the first render, which removes the hydration error
   (the whole page was re-rendered in the browser) when a tank had been saved; unreadable or blocked local
   storage no longer breaks the page.
@@ -82,5 +88,5 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Security
 - Next.js 13.4.7 → 13.5.11 (and `eslint-config-next`), which fixes the middleware authorization bypass
   (GHSA-f82v-jwr5-mffw) and the zod DoS; Vitest 3 → 4 and `npm audit fix` for the development tools.
-  `npm audit` still reports Next.js advisories fixed only from 15.5.24, including two critical ones;
-  that upgrade needs React 19 and is tracked in the roadmap.
+  The remaining Next.js advisories (two critical) are fixed by the move to Next.js 16: `npm audit` reports
+  0 vulnerabilities.

@@ -36,7 +36,7 @@
 
 ```mermaid
 flowchart LR
-    Browser["Browser<br/>React + SWR"] -->|"/api/*"| Next["Next.js 13<br/>App Router"]
+    Browser["Browser<br/>React + SWR"] -->|"/api/*"| Next["Next.js 16<br/>App Router"]
     Next -->|"rewrite to BACKEND_URL"| Flask["Flask API<br/>Flask-SQLAlchemy"]
     Flask --> DB[("SQLite (default)<br/>or MySQL / PostgreSQL")]
     Excel["db.xlsx<br/>(source of truth)"] -->|"import_excel.py"| DB
@@ -55,14 +55,14 @@ The data is maintained in an Excel workbook and loaded with `make import`. See t
 
 ## Tech stack
 
-- **Front end:** Next.js 13, React 18, Tailwind CSS, Framer Motion, lucide-react, SWR,
+- **Front end:** Next.js 16, React 19, Tailwind CSS, Framer Motion, lucide-react, SWR,
   react-hook-form, EmailJS
 - **Back end:** Python 3.11, Flask, SQLAlchemy 2, Alembic, openpyxl
 - **Quality:** pytest + pytest-cov, ruff, ESLint, GitHub Actions
 
 ## Quick start
 
-Prerequisites: **Python 3.11+**, **Node.js 20+**, `make`.
+Prerequisites: **Python 3.11+**, **Node.js 20.9+**, `make`.
 
 ```bash
 make dev
@@ -109,12 +109,11 @@ CI runs the same checks on every pull request and on pushes to `main`.
 - [0004 — Data normalization, reviewed corrections and audit](docs/adr/0004-data-normalization-and-audit.md)
 - [0005 — Compatibility rules engine with severities](docs/adr/0005-compatibility-rules-engine.md)
 - [0006 — Fish profiles, reference sources and range maps](docs/adr/0006-fish-profiles-and-sources.md)
+- [0007 — Upgrade to Next.js 16 and React 19](docs/adr/0007-nextjs-16-react-19.md)
 
 ## Roadmap & known limitations
 
 - [ ] Deploy a public demo
-- [ ] Upgrade to Next.js 15.5+ / React 19: Next.js 13.5 still has known security advisories
-  (`npm audit`), fixed only from 15.5.24
 - [ ] "Guide pratique" page (`/cours`) is a placeholder
 - [ ] Import the `Plantes` sheet (plants) from the workbook
 - [ ] End-to-end tests in a browser (the compatibility rules and search helpers have unit tests)
