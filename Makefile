@@ -7,7 +7,7 @@ BACKEND_PORT  ?= 5001
 FRONTEND_PORT ?= 3000
 
 .DEFAULT_GOAL := help
-.PHONY: help setup install dev backend frontend import profiles sources occurrences audit test lint build clean
+.PHONY: help setup install dev backend frontend import profiles sources occurrences images audit test lint build clean
 
 help: ## Show available commands
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  make %-10s %s\n", $$1, $$2}'
@@ -51,6 +51,9 @@ sources: setup ## Fetch FishBase, Seriously Fish and GBIF data and compare it wi
 
 occurrences: setup ## Refresh the range-map points from GBIF (backend/data/occurrences.json)
 	cd backend && venv/bin/python -m tools.build_occurrences
+
+images: setup ## Downscale new fish and family photos (2000 px, JPEG quality 82)
+	$(PY) frontend/scripts/optimize-images.py
 
 audit: setup ## Write the data audit report to docs/data-audit.md
 	cd backend && venv/bin/python audit_data.py > ../docs/data-audit.md

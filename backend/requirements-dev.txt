@@ -1,5 +1,6 @@
 -r requirements.txt
 beautifulsoup4
+Pillow
 pytest
 pytest-cov
 ruff==0.16.9
