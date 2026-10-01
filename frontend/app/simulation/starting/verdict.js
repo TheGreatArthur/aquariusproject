@@ -29,7 +29,7 @@ export default function Verdict ({ verdict, issues, ranges }) {
 
   return (
     <div role="status" className={clsx('card p-5', border)}>
-      <p className={clsx('flex items-center gap-2 font-display font-semibold', text)}>
+      <p className={clsx('flex items-center gap-2 font-display font-semibold leading-snug', text)}>
         <Icon className="h-5 w-5"/> {label}
       </p>
 
