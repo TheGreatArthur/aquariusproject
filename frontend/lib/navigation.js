@@ -4,6 +4,7 @@
 
 export const NAV_LINKS = [
   { href: '/poissons', label: 'Poissons' },
+  { href: '/plantes', label: 'Plantes' },
   { href: '/simulation', label: 'Simulation' },
   { href: '/cours', label: 'Guide pratique' },
   { href: '/contact', label: 'Contact' },
