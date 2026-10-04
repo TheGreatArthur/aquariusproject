@@ -1,19 +1,21 @@
 """
 Points de la carte de répartition : observations géolocalisées GBIF dans l'aire d'origine de chaque espèce
 
-Pour chaque fiche de `data/profiles/`, interroge l'API d'occurrences GBIF (spécimens de musées, observations,
-échantillons) limitée aux pays d'origine de la fiche, écarte les introductions déclarées, les points hors de
-l'`emprise` de la fiche et les points isolés (erreurs de géoréférencement probables), arrondit au dixième de
-degré et écrit `data/occurrences.json`.
+Pour chaque fiche de `data/profiles/` et chaque invertébré de `data/invertebrates/`, interroge l'API d'occurrences
+GBIF (spécimens de musées, observations, échantillons) limitée aux pays d'origine de la fiche, écarte les
+introductions déclarées, les points hors de l'`emprise` de la fiche et les points isolés (erreurs de
+géoréférencement probables), arrondit au dixième de degré et écrit `data/occurrences.json`.
 
 Usage : venv/bin/python -m tools.build_occurrences [nom scientifique ...]
 """
 
 import json
 import math
+import re
 import sys
 import urllib.parse
 
+from invertebrates import INVERTEBRATES_DIR
 from profiles import OCCURRENCES_FILE, PROFILES_DIR
 from tools.fetch_sources import CACHE_DIR, GBIF_SPECIES_RANKS, fetch, slug
 
@@ -81,17 +83,29 @@ def thin(points: list[tuple[float, float]]) -> list[tuple[float, float]]:
     return [points[int(i * step)] for i in range(MAX_POINTS)]
 
 
+def invertebrate_profiles() -> dict[str, dict]:
+    """ Fiches des invertébrés, avec le taxon GBIF cité dans leurs sources (ils n'ont pas de résumé FishBase) """
+    profiles = {}
+    for path in sorted(INVERTEBRATES_DIR.glob('*.json')):
+        item = json.loads(path.read_text(encoding='utf-8'))
+        urls = [s['url'] for s in item.get('sources', [])]
+        gbif = next((m for url in urls if (m := re.search(r'gbif\.org/species/(\d+)', url))), None)
+        profiles[item['nom_scientifique']] = {**item['profil'], 'gbif': int(gbif.group(1)) if gbif else None}
+    return profiles
+
+
 def main(names: list[str]) -> None:
     # Lecture directe (sans validation) : les points peuvent être générés avant la rédaction des textes
     profiles = {p['nom_scientifique']: p for p in
                 (json.loads(f.read_text(encoding='utf-8')) for f in sorted(PROFILES_DIR.glob('*.json')))}
+    profiles.update(invertebrate_profiles())
     existing = json.loads(OCCURRENCES_FILE.read_text(encoding='utf-8')) if OCCURRENCES_FILE.exists() else {}
     iso2 = iso2_codes()
 
     for name, profile in profiles.items():
         if names and name not in names:
             continue
-        key = taxon_key(name)
+        key = profile.get('gbif') or taxon_key(name)
         countries = sorted({iso2[c] for c in profile['pays'] if c in iso2})
         if not key or not countries:
             existing.pop(name, None)

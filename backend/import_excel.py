@@ -13,6 +13,7 @@ from corrections import apply_corrections
 from models import NOMENCLATURES, Poisson
 from models.meta import create_schema, get_engine
 from fish_data import load_fish, upsert_fish
+from invertebrates import load_invertebrates, upsert_invertebrates
 from plants import load_plants, upsert_plants
 from normalize import (
     clean, normalize_comportement, normalize_courant, normalize_famille, normalize_mode_vie, normalize_regime,
@@ -132,4 +133,5 @@ if __name__ == '__main__':
         for name in upsert_profiles(db, load_profiles(), load_occurrences()):
             print('Fiche sans poisson en base :', name)
         upsert_plants(db, load_plants())
+        upsert_invertebrates(db, load_invertebrates())
         db.commit()

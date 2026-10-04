@@ -1,0 +1,87 @@
+{
+  "nom_scientifique": "Cambarellus patzcuarensis",
+  "nom_commun": "Écrevisse CPO",
+  "variete": null,
+  "groupe": "écrevisse",
+  "famille": "Cambaridae",
+  "genre": "Cambarellus",
+  "zone_geo": "Amérique centrale",
+  "installation": "aquarium",
+  "milieu": "eau douce",
+  "ph_mini": 7.2,
+  "ph_maxi": 8,
+  "gh_mini": null,
+  "gh_maxi": null,
+  "kh_mini": null,
+  "kh_maxi": null,
+  "temp_mini": 15,
+  "temp_maxi": 30,
+  "taille": 4,
+  "mesure_taille": "longueur du corps",
+  "litrage_mini": 30,
+  "nb_individus": 2,
+  "longevite": 2,
+  "comportement": "peu agressif",
+  "mode_vie": "colonie",
+  "regime": "omnivore",
+  "activite": "diurne",
+  "reproduction": "en eau douce",
+  "photos": [
+    {
+      "fichier": "cambarellus-patzcuarensis-1.jpg",
+      "auteur": "Tommy Kronkvist",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Cambarellus_patzcuarensis-01.jpg",
+      "vue": "animal"
+    },
+    {
+      "fichier": "cambarellus-patzcuarensis-2.jpg",
+      "auteur": "Tommy Kronkvist",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Cambarellus_patzcuarensis-feeding.jpg",
+      "vue": "animal"
+    },
+    {
+      "fichier": "cambarellus-patzcuarensis-3.jpg",
+      "auteur": "Melunb",
+      "licence": "CC BY-SA 3.0 de",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Cambarellus_patzcuarensis_9.jpg",
+      "vue": "animal"
+    }
+  ],
+  "profil": {
+    "nom_valide": null,
+    "auteur": "Villalobos, 1943",
+    "classification": "Decapoda › Cambaridae",
+    "uicn": "EN",
+    "repartition": "Mexique (Michoacán) : lac de Pátzcuaro, dans le bassin du Río Grande de Santiago",
+    "pays": [
+      "MEX"
+    ],
+    "emprise": [
+      -103.5,
+      19.0,
+      -100.5,
+      21.0
+    ],
+    "presentation": "Originaire des berges peu profondes du lac de Pátzcuaro au Mexique, cette petite écrevisse existe sous des robes brunes ou orangées. La sélection orange est connue sous le nom de CPO ; cette couleur commerciale ne désigne pas une autre espèce.",
+    "habitat": "Elle vit à faible profondeur sur les berges du lac, dans des eaux calmes ou stagnantes, alcalines (pH 7,5 à 8,9) et aux températures variables (15 à 30 °C). Classée en danger par l'UICN depuis 2010, elle souffre des prélèvements d'eau et de la pollution d'une aire de répartition très réduite.",
+    "comportement": "Elle vit en grands groupes dispersés dans la végétation et reste active le jour. Comme les autres écrevisses, elle défend un petit territoire, mais se montre plutôt paisible envers ses congénères.",
+    "maintenance": "Un décor très végétalisé, complété de feuilles et de nombreux abris, facilite la maintenance. Garder des refuges distincts pour les mues et observer les interactions, même si cette écrevisse est généralement moins difficile à faire cohabiter que les grandes espèces.",
+    "alimentation": "Elle accepte les nourritures spécialisées pour écrevisses.",
+    "reproduction": "La reproduction est possible en eau douce. Les jeunes naissent déjà formés et trouvent refuge dans les plantes et la litière."
+  },
+  "sources": [
+    {
+      "nom": "Fishipedia",
+      "url": "https://www.fishipedia.fr/fr/crustacea/cambarellus-patzcuarensis"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2227438"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "nom_scientifique": "Limnopilos naiyanetri",
+  "nom_commun": "Micro-crabe thaïlandais",
+  "variete": null,
+  "groupe": "crabe",
+  "famille": "Hymenosomatidae",
+  "genre": "Limnopilos",
+  "zone_geo": "Asie",
+  "installation": "aquarium",
+  "milieu": "eau douce",
+  "ph_mini": 6.5,
+  "ph_maxi": 8,
+  "gh_mini": 5,
+  "gh_maxi": 12,
+  "kh_mini": 1,
+  "kh_maxi": 8,
+  "temp_mini": 22,
+  "temp_maxi": 28,
+  "taille": 1,
+  "mesure_taille": "largeur de la carapace",
+  "litrage_mini": 20,
+  "nb_individus": null,
+  "longevite": null,
+  "comportement": "pacifique",
+  "mode_vie": null,
+  "regime": "détritivore",
+  "activite": "nocturne",
+  "reproduction": null,
+  "photos": [
+    {
+      "fichier": "limnopilos-naiyanetri-1.jpg",
+      "auteur": "Sean Murray from Edinburgh, Scotland",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Limnopilos_naiyanetri.jpg",
+      "vue": "animal"
+    },
+    {
+      "fichier": "limnopilos-naiyanetri-2.jpg",
+      "auteur": "Sean Murray from Edinburgh, Scotland",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Limnopilos_naiyanetri_-_(1).jpg",
+      "vue": "animal"
+    },
+    {
+      "fichier": "limnopilos-naiyanetri-3.jpg",
+      "auteur": "Sean Murray from Edinburgh, Scotland",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Limnopilos_naiyanetri_-_(4).jpg",
+      "vue": "animal"
+    }
+  ],
+  "profil": {
+    "nom_valide": null,
+    "auteur": "Chuang & Ng, 1991",
+    "classification": "Decapoda › Hymenosomatidae",
+    "uicn": "NE",
+    "repartition": "Thaïlande",
+    "pays": [
+      "THA"
+    ],
+    "presentation": "Le micro-crabe thaïlandais possède une petite carapace ronde et des pattes fines couvertes de poils. Il vit caché parmi les racines et la végétation immergée. Discret et surtout nocturne, il se prête à l’observation dans un bac planté où les grands poissons ne peuvent pas le capturer.",
+    "habitat": "Ce micro-crabe entièrement aquatique vit caché parmi les racines et la végétation immergée. Les sources consultées ne décrivent pas davantage son milieu naturel.",
+    "comportement": "Paisible, discret et surtout nocturne, il passe la journée caché dans les racines et les mousses. Il prélève biofilm, algues et débris et ne s'en prend pas aux autres habitants.",
+    "maintenance": "Préparer un aquarium mature riche en mousses, racines et refuges. Protéger les petits individus des prédateurs et préserver des conditions d’eau régulières. Cette espèce se maintient sous l’eau, contrairement aux crabes vampires semi-terrestres.",
+    "alimentation": "Il prélève biofilm, algues et débris, et accepte de petites nourritures coulantes adaptées aux invertébrés.",
+    "reproduction": "La source ne présente pas de protocole de reproduction réussi et reproductible en aquarium ; l’élevage des larves reste à documenter."
+  },
+  "sources": [
+    {
+      "nom": "Aquarium Dietzenbach",
+      "url": "https://www.aquarium-dietzenbach.de/descriptions_limnopilos_naiyanetri"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5973999"
+    }
+  ],
+  "notes": [
+    "Pays d'origine : Thaïlande, d'où l'espèce a été décrite (Chuang et Ng 1991) et où se trouvent ses observations GBIF ; Fishipedia n'a pas de fiche pour cette espèce."
+  ]
+}

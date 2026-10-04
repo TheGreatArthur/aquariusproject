@@ -1,0 +1,85 @@
+{
+  "nom_scientifique": "Clea helena",
+  "nom_commun": "Escargot assassin",
+  "variete": null,
+  "groupe": "escargot",
+  "famille": "Nassariidae",
+  "genre": "Clea",
+  "zone_geo": "Asie",
+  "installation": "aquarium",
+  "milieu": "eau douce",
+  "ph_mini": 6.8,
+  "ph_maxi": 7.2,
+  "gh_mini": null,
+  "gh_maxi": null,
+  "kh_mini": null,
+  "kh_maxi": null,
+  "temp_mini": 22,
+  "temp_maxi": 28,
+  "taille": null,
+  "mesure_taille": null,
+  "litrage_mini": 10,
+  "nb_individus": 1,
+  "longevite": null,
+  "comportement": "peu agressif",
+  "mode_vie": "solitaire",
+  "regime": "carnivore",
+  "activite": "diurne",
+  "reproduction": "en eau douce",
+  "photos": [
+    {
+      "fichier": "clea-helena-1.jpg",
+      "auteur": "RSX",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Anentome_Helena_2010.jpg",
+      "vue": "animal"
+    },
+    {
+      "fichier": "clea-helena-2.jpg",
+      "auteur": "H. Zell",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Anentome_helena_01.JPG",
+      "vue": "coquille"
+    },
+    {
+      "fichier": "clea-helena-3.jpg",
+      "auteur": "Lardeur A.",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Anentome_helena_(MNHN-IM-2013-59234).jpeg",
+      "vue": "coquille"
+    }
+  ],
+  "profil": {
+    "nom_valide": "Anentome helena",
+    "auteur": "Busch, 1847",
+    "classification": "Neogastropoda › Nassariidae",
+    "uicn": "NE",
+    "repartition": "Asie du Sud-Est tropicale : Thaïlande, Cambodge, Viêt Nam, Malaisie et Sumatra ; introduit à Singapour",
+    "pays": [
+      "IDN",
+      "KHM",
+      "MYS",
+      "THA",
+      "VNM"
+    ],
+    "presentation": "L’escargot assassin porte une coquille jaunâtre barrée de brun rougeâtre. Contrairement aux escargots qui broutent surtout les algues, il capture d’autres gastéropodes et consomme aussi des matières animales mortes. Le commerce utilise plusieurs noms, à confronter à la taxonomie retenue sur la fiche.",
+    "habitat": "Il vit dans les eaux oxygénées des lacs, des rivières et des ruisseaux, entre 22 et 28 °C, et ne fréquente ni les eaux stagnantes ni les eaux saumâtres. Il appartient à la même famille que les buccins marins, mais vit uniquement en eau douce.",
+    "comportement": "Solitaire et actif le jour, c'est un escargot prédateur : il capture d'autres escargots et se nourrit aussi de charognes. Il s'enfouit volontiers dans le substrat.",
+    "maintenance": "Prévoir un substrat dans lequel il peut s’enfouir. Sa présence est incompatible avec l’objectif de protéger tous les autres escargots du bac : il faut tenir compte de son régime prédateur.",
+    "alimentation": "Offrir une ressource animale adaptée ; son alimentation ne doit pas être assimilée à celle d’un nérite alguivore.",
+    "reproduction": "Les sexes sont séparés. La femelle dépose les œufs individuellement dans des capsules ; les jeunes restent cachés dans le substrat."
+  },
+  "sources": [
+    {
+      "nom": "Fishipedia",
+      "url": "https://www.fishipedia.fr/fr/mollusques/clea-helena"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/9510074"
+    }
+  ]
+}

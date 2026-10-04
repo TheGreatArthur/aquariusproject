@@ -1,0 +1,84 @@
+{
+  "nom_scientifique": "Neocaridina davidi",
+  "nom_commun": "Crevette Red Cherry",
+  "variete": "Red Cherry",
+  "groupe": "crevette",
+  "famille": "Atyidae",
+  "genre": "Neocaridina",
+  "zone_geo": "Asie",
+  "installation": "aquarium",
+  "milieu": "eau douce",
+  "ph_mini": 6.8,
+  "ph_maxi": 7.2,
+  "gh_mini": null,
+  "gh_maxi": null,
+  "kh_mini": null,
+  "kh_maxi": null,
+  "temp_mini": 4,
+  "temp_maxi": 28,
+  "taille": 3,
+  "mesure_taille": "longueur du corps",
+  "litrage_mini": 20,
+  "nb_individus": 5,
+  "longevite": null,
+  "comportement": "pacifique",
+  "mode_vie": "colonie",
+  "regime": "détritivore",
+  "activite": "diurne",
+  "reproduction": "en eau douce",
+  "photos": [
+    {
+      "fichier": "neocaridina-davidi-1.jpg",
+      "auteur": "Original uploader was Worldwalker at en.wikipedia",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Two_red_cherry_shrimp.jpg",
+      "vue": "animal"
+    },
+    {
+      "fichier": "neocaridina-davidi-2.jpg",
+      "auteur": "Corydoras-adolfoi",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Red_Cherry_Shrimp_2.jpg",
+      "vue": "animal"
+    },
+    {
+      "fichier": "neocaridina-davidi-3.jpg",
+      "auteur": "Atulbhats",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:RedCherryShrimp.jpg",
+      "vue": "animal"
+    }
+  ],
+  "profil": {
+    "nom_valide": null,
+    "auteur": "(Bouvier, 1904)",
+    "classification": "Decapoda › Atyidae",
+    "uicn": "NE",
+    "repartition": "Asie de l'Est : Chine, Corée et Japon",
+    "pays": [
+      "CHN",
+      "JPN",
+      "KOR",
+      "PRK"
+    ],
+    "presentation": "La Red Cherry est une sélection rouge de Neocaridina davidi, et non une espèce distincte. Cette petite crevette parcourt les plantes et le décor, où elle prélève une partie de sa nourriture. La fiche présente cette souche commerciale sans multiplier artificiellement les espèces selon leur couleur.",
+    "habitat": "Elle vit dans les eaux douces d'Asie de l'Est, à des températures très variables (4 à 28 °C) et un pH de 6 à 8. La Red Cherry est une sélection d'élevage rouge de l'espèce, et non une espèce distincte.",
+    "comportement": "Paisible et vive, elle vit en colonies près du fond et reste active le jour. Elle explore plantes et décor à la recherche de débris et de biofilm. Petite, elle se cache en présence de voisins plus grands et ignore les autres espèces.",
+    "maintenance": "La maintenir en groupe dans un bac végétalisé, avec des racines et des cachettes fines. Les grands poissons peuvent la capturer ; les jeunes profitent particulièrement d’un décor protecteur.",
+    "alimentation": "Elle consomme algues, microorganismes et débris végétaux, complétés si nécessaire par une nourriture pour crevettes.",
+    "reproduction": "Tout le cycle peut se dérouler en eau douce. Les jeunes naissent déjà formés et explorent rapidement les supports du bac."
+  },
+  "sources": [
+    {
+      "nom": "Fishipedia",
+      "url": "https://www.fishipedia.fr/fr/crustacea/neocaridina-davidi"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/11689892"
+    }
+  ]
+}

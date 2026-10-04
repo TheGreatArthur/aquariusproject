@@ -38,7 +38,7 @@ export default function SiteHeader () {
           Aquarius
         </Link>
 
-        <ul className="hidden items-center gap-1 md:flex">
+        <ul className="hidden items-center gap-1 lg:flex">
           {NAV_LINKS.map(({ href, label }) => (
             <li key={href}>
               <Link
@@ -72,7 +72,7 @@ export default function SiteHeader () {
           </Link>
           <button
             type="button"
-            className="inline-flex rounded-full p-2 text-muted hover:text-foreground md:hidden"
+            className="inline-flex rounded-full p-2 text-muted hover:text-foreground lg:hidden"
             onClick={() => setOpenOn(open ? null : pathname)}
             aria-expanded={open}
             aria-controls="mobile-menu"
@@ -84,7 +84,7 @@ export default function SiteHeader () {
       </nav>
 
       {open && (
-        <div id="mobile-menu" className="container animate-fade-in pb-6 md:hidden">
+        <div id="mobile-menu" className="container animate-fade-in pb-6 lg:hidden">
           <ul className="flex flex-col gap-1">
             {NAV_LINKS.map(({ href, label }) => (
               <li key={href}>

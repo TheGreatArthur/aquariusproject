@@ -6,6 +6,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- **Invertebrates like fish** ([ADR 0012](docs/adr/0012-invertebrates-like-fish.md)): the 21 shrimps, crabs, snails
+  and crayfish now follow the fish structure. Each one is a JSON file in `backend/data/invertebrates/` with the fish
+  field names (water parameters, size, minimum tank and group, lifespan, behaviour, way of life, diet) and the same
+  profile (classification, IUCN status, range, native countries, presentation, habitat, behaviour), plus
+  maintenance, feeding and reproduction advice. An `invertebre` table (Alembic migration), `GET /invertebres` and
+  `GET /invertebres/<id>` serve them; `make invertebrates` loads them. The catalogue and the detail page are built
+  like the fish ones, with the range map of GBIF observations, and the static JSON bundle is gone.
 - **169 more fish** ([ADR 0011](docs/adr/0011-fish-added-as-data-files.md)): the catalogue grows from 135 to 304
   freshwater species (tetras, barbs, rasboras, Corydoras, Malawi and Tanganyika cichlids, killifish, rainbowfish,
   gouramis, catfish…). Each one is a JSON file in `backend/data/fish/` with its water parameters from Seriously Fish

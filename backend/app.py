@@ -1,4 +1,4 @@
-""" API Flask d'Aquarius : catalogue des poissons, familles et plantes
+""" API Flask d'Aquarius : catalogue des poissons, familles, invertébrés et plantes
 """
 
 from flask import Flask, request
@@ -7,7 +7,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import func, or_
 
 from config import DSN
-from models import Poisson, Genre, Famille, Comportement, Plante
+from models import Poisson, Genre, Famille, Comportement, Invertebre, Plante
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = DSN
@@ -79,3 +79,28 @@ def get_plante(id: int):
         return 'Plant not found', 404
 
     return plante.as_dict()
+
+
+# Champs de la liste des invertébrés, comme pour les poissons : la fiche descriptive n'est renvoyée que sur le détail
+INVERTEBRE_LISTE = (
+    'id', 'nom_scientifique', 'nom_commun', 'variete', 'groupe', 'famille', 'installation', 'comportement', 'mode_vie',
+    'taille', 'litrage_mini', 'nb_individus', 'ph_mini', 'ph_maxi', 'temp_mini', 'temp_maxi',
+)
+
+
+@app.route('/invertebres')
+def invertebres():
+    """ Liste des invertébrés (crevettes, crabes, escargots, écrevisses), avec leur photo principale """
+    liste = db.session.scalars(db.select(Invertebre).order_by(Invertebre.nom_commun))
+    return {'invertebres': [{**{k: getattr(i, k) for k in INVERTEBRE_LISTE}, 'image': i.images[0] if i.images else None}
+                            for i in liste]}
+
+
+@app.route('/invertebres/<int:id>')
+def get_invertebre(id: int):
+    invertebre: Invertebre = db.session.get(Invertebre, id)
+
+    if not invertebre:
+        return 'Invertebrate not found', 404
+
+    return invertebre.as_dict()

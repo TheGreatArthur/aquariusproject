@@ -1,0 +1,82 @@
+{
+  "nom_scientifique": "Vittina waigiensis",
+  "nom_commun": "Nérite de Waigiou",
+  "variete": null,
+  "groupe": "escargot",
+  "famille": "Neritidae",
+  "genre": "Vittina",
+  "zone_geo": "Asie",
+  "installation": "aquarium",
+  "milieu": "eau douce et eau saumâtre",
+  "ph_mini": 7,
+  "ph_maxi": 8.5,
+  "gh_mini": null,
+  "gh_maxi": null,
+  "kh_mini": null,
+  "kh_maxi": null,
+  "temp_mini": 20,
+  "temp_maxi": 30,
+  "taille": null,
+  "mesure_taille": null,
+  "litrage_mini": 50,
+  "nb_individus": 1,
+  "longevite": null,
+  "comportement": "pacifique",
+  "mode_vie": "seul ou en groupe",
+  "regime": "brouteur",
+  "activite": "diurne",
+  "reproduction": "larves en mer",
+  "photos": [
+    {
+      "fichier": "vittina-waigiensis-1.jpg",
+      "auteur": "Manuel CABALLER",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Vittina_waigiensis_(MNHN-IM-2000-32811).jpeg",
+      "vue": "coquille"
+    },
+    {
+      "fichier": "vittina-waigiensis-2.jpg",
+      "auteur": "Manuel CABALLER",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Vittina_waigiensis_(MNHN-IM-2000-32810).jpeg",
+      "vue": "coquille"
+    },
+    {
+      "fichier": "vittina-waigiensis-3.jpg",
+      "auteur": "H. Zell",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Vittina_waigiensis_-_Variability.jpg",
+      "vue": "coquille"
+    }
+  ],
+  "profil": {
+    "nom_valide": null,
+    "auteur": "(Lesson, 1831)",
+    "classification": "Cycloneritida › Neritidae",
+    "uicn": "LC",
+    "repartition": "Indonésie (Célèbes, Nouvelle-Guinée occidentale) et Philippines (Palawan)",
+    "pays": [
+      "IDN",
+      "PHL"
+    ],
+    "presentation": "La nérite de Waigiou présente une coquille lisse et allongée, avec des bandes jaunes, orangées ou rougeâtres et des motifs noirs. Les dessins varient fortement d’un individu à l’autre. Elle fréquente les estuaires, les mangroves et les ruisseaux côtiers.",
+    "habitat": "Elle vit près de la surface, dans les eaux douces et saumâtres des estuaires, des mangroves et des ruisseaux côtiers à courant lent.",
+    "comportement": "Seule ou en groupe et active le jour, elle broute les algues sur les rochers, près de la surface.",
+    "maintenance": "La maintenir dans un bac mature et fermé, avec assez d’algues sur les supports. Les poissons mangeurs d’escargots sont à éviter ; surveiller les animaux qui explorent la surface.",
+    "alimentation": "Les algues sont sa ressource principale. Une nourriture végétale adaptée peut compléter le régime.",
+    "reproduction": "Les capsules d’œufs donnent des larves qui se développent en mer. Les adultes peuvent vivre en eau douce sans y accomplir tout leur cycle."
+  },
+  "sources": [
+    {
+      "nom": "Fishipedia",
+      "url": "https://www.fishipedia.fr/fr/mollusques/vittina-waigiensis"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/7609508"
+    }
+  ]
+}

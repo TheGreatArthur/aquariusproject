@@ -1,0 +1,100 @@
+{
+  "nom_scientifique": "Atya gabonensis",
+  "nom_commun": "Crevette balais",
+  "variete": null,
+  "groupe": "crevette",
+  "famille": "Atyidae",
+  "genre": "Atya",
+  "zone_geo": "Afrique",
+  "installation": "aquarium",
+  "milieu": "eau douce",
+  "ph_mini": 6.8,
+  "ph_maxi": 7.2,
+  "gh_mini": null,
+  "gh_maxi": null,
+  "kh_mini": null,
+  "kh_maxi": null,
+  "temp_mini": 24,
+  "temp_maxi": 30,
+  "taille": 15,
+  "mesure_taille": "longueur du corps",
+  "litrage_mini": 140,
+  "nb_individus": 3,
+  "longevite": 10,
+  "comportement": "pacifique",
+  "mode_vie": "colonie",
+  "regime": "filtreur",
+  "activite": "nocturne",
+  "reproduction": "larves hors de l'eau douce",
+  "photos": [
+    {
+      "fichier": "atya-gabonensis-1.jpg",
+      "auteur": "Citron",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Atya_gabonensis.JPG",
+      "vue": "animal"
+    },
+    {
+      "fichier": "atya-gabonensis-2.jpg",
+      "auteur": "Ursus sapien",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Atya_gabonensis_trio.jpg",
+      "vue": "animal"
+    },
+    {
+      "fichier": "atya-gabonensis-3.jpg",
+      "auteur": "Ray eye",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Blaue_Monsterf%C3%A4chergarnele.jpg",
+      "vue": "animal"
+    }
+  ],
+  "profil": {
+    "nom_valide": null,
+    "auteur": "Giebel, 1875",
+    "classification": "Decapoda › Atyidae",
+    "uicn": "LC",
+    "repartition": "Afrique de l'Ouest et centrale, du Sénégal au Congo, et versant atlantique du nord de l'Amérique du Sud (Brésil, Suriname, Venezuela)",
+    "pays": [
+      "BRA",
+      "CMR",
+      "COD",
+      "GAB",
+      "GHA",
+      "LBR",
+      "MLI",
+      "NGA",
+      "SEN",
+      "STP",
+      "SUR",
+      "VEN"
+    ],
+    "presentation": "Cette grande crevette africaine déploie des éventails au bout de ses pattes pour saisir les particules transportées par le courant. Sa robe peut être bleutée, beige ou grise, avec de nombreuses variations individuelles. Malgré sa taille imposante, elle se nourrit par filtration plutôt qu’en chassant les petits poissons.",
+    "habitat": "Elle vit dans les eaux vives et bien oxygénées des rivières, sur des fonds de galets et de rochers balayés par le courant. L'eau y est chaude (24 à 30 °C) et proche de la neutralité. Le jour, elle reste à l'abri et ne sort qu'à la nuit tombée, quand ses prédateurs sont moins actifs.",
+    "comportement": "Paisible, elle vit en colonies de dizaines d'individus et ignore les autres espèces. La nuit, elle se poste dans le courant, éventails déployés, pour filtrer les particules en suspension : malgré sa taille, elle ne s'attaque pas aux poissons.",
+    "maintenance": "Aménager des appuis rocheux dans une zone bien brassée et oxygénée, ainsi que des refuges protégés pour la mue. Un espace dégagé lui permet de prendre position face au courant.",
+    "alimentation": "Apporter une nourriture fine en suspension : une eau très propre visuellement ne garantit pas que cette crevette trouve assez à manger.",
+    "reproduction": "Le cycle ne se termine pas dans un aquarium exclusivement d’eau douce."
+  },
+  "sources": [
+    {
+      "nom": "Fishipedia",
+      "url": "https://www.fishipedia.fr/fr/crustacea/atya-gabonensis"
+    },
+    {
+      "nom": "Aquarium Glaser",
+      "url": "https://www.aquariumglaser.de/en/31-crayfishes-shrimps-crabs-snails-mussels/atyopsis-moluccensis-2/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2223031"
+    }
+  ],
+  "notes": [
+    "Champ générique « reproduction eau douce » écarté : contredit le texte spécifique de la source.",
+    "Pays d'origine : distribution GBIF (Catálogo Taxonômico da Fauna do Brasil) ; le Mexique, absent de la répartition décrite par Fishipedia, n'est pas repris."
+  ]
+}

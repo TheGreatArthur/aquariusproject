@@ -4,6 +4,7 @@ from pathlib import Path
 import pytest
 
 from corrections import CORRECTIONS
+from invertebrates import load_invertebrates
 from normalize import COMPORTEMENTS, MODES_VIE
 from profiles import load_occurrences, load_profiles, upsert_profiles, validate
 
@@ -60,7 +61,8 @@ def test_versioned_profiles_use_countries_of_the_base_map():
 
 
 def test_occurrences_belong_to_a_profile_and_stay_in_its_bounding_box():
-    profiles = load_profiles()
+    # Fiches des poissons et des invertébrés (même champ `emprise`)
+    profiles = {**load_profiles(), **{name: row['profil'] for name, row in load_invertebrates(occurrences={}).items()}}
 
     for name, points in load_occurrences().items():
         assert name in profiles

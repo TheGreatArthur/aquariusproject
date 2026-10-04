@@ -1,0 +1,83 @@
+{
+  "nom_scientifique": "Macrobrachium assamense",
+  "nom_commun": "Crevette à pinces rouges",
+  "variete": null,
+  "groupe": "crevette",
+  "famille": "Palaemonidae",
+  "genre": "Macrobrachium",
+  "zone_geo": "Asie",
+  "installation": "aquarium",
+  "milieu": "eau douce",
+  "ph_mini": 7,
+  "ph_maxi": 8.3,
+  "gh_mini": null,
+  "gh_maxi": null,
+  "kh_mini": null,
+  "kh_maxi": null,
+  "temp_mini": 14,
+  "temp_maxi": 28,
+  "taille": 7,
+  "mesure_taille": "longueur du corps",
+  "litrage_mini": 80,
+  "nb_individus": 3,
+  "longevite": null,
+  "comportement": "peu agressif",
+  "mode_vie": "petit groupe",
+  "regime": "carnivore",
+  "activite": "diurne",
+  "reproduction": "en eau douce",
+  "photos": [
+    {
+      "fichier": "macrobrachium-assamense-1.jpg",
+      "auteur": "Tolderi",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Macrobrachium_assamense_Tiwari.JPG",
+      "vue": "animal"
+    },
+    {
+      "fichier": "macrobrachium-assamense-2.jpg",
+      "auteur": "Tolderi",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Macrobrachium_assamense_male_nearly_adult.JPG",
+      "vue": "animal"
+    },
+    {
+      "fichier": "macrobrachium-assamense-3.jpg",
+      "auteur": "Tolderi",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Macrobrachium_assamense_3weeks_old.JPG",
+      "vue": "animal"
+    }
+  ],
+  "profil": {
+    "nom_valide": null,
+    "auteur": "(Tiwari, 1958)",
+    "classification": "Decapoda › Palaemonidae",
+    "uicn": "LC",
+    "repartition": "Asie du Sud : nord-est de l'Inde, Bangladesh et Myanmar",
+    "pays": [
+      "BGD",
+      "IND",
+      "MMR"
+    ],
+    "presentation": "Cette crevette à grandes pinces est souvent confondue avec Macrobrachium hendersoni. Les rainures à l’extrémité des pinces et les fins poils gris-blanc des mâles adultes constituent des repères décrits par la source. Son comportement opportuniste demande plus de prudence que celui des crevettes naines.",
+    "habitat": "Elle vit dans des cours d'eau aux fonds de galets et de rochers, dans des eaux neutres à alcalines (pH 7 à 8,3) de 14 à 28 °C.",
+    "comportement": "Active le jour, elle vit en petits groupes. Robuste et opportuniste, elle s'attaque aux poissons et crustacés plus petits à sa portée, et le cannibalisme est connu en cas de disette. Médiocre nageuse une fois adulte, elle se déplace surtout en marchant.",
+    "maintenance": "Aménager des grottes parmi les galets et les racines, avec des zones de vie distinctes. Éviter les petits animaux susceptibles de devenir des proies et observer les relations entre individus.",
+    "alimentation": "Prévoir une alimentation variée incluant chair de mollusques, poisson et aliments adaptés.",
+    "reproduction": "La source décrit une reproduction en eau douce. Le décor doit permettre aux jeunes et aux adultes de trouver des refuges séparés."
+  },
+  "sources": [
+    {
+      "nom": "Fishipedia",
+      "url": "https://www.fishipedia.fr/fr/crustacea/macrobrachium-assamense"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2224541"
+    }
+  ]
+}

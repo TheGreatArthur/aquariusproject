@@ -1,0 +1,84 @@
+{
+  "nom_scientifique": "Cherax snowden",
+  "nom_commun": "Cherax snowden",
+  "variete": null,
+  "groupe": "écrevisse",
+  "famille": "Parastacidae",
+  "genre": "Cherax",
+  "zone_geo": "Océanie",
+  "installation": "aquarium",
+  "milieu": "eau douce",
+  "ph_mini": 7,
+  "ph_maxi": 7.5,
+  "gh_mini": null,
+  "gh_maxi": null,
+  "kh_mini": null,
+  "kh_maxi": null,
+  "temp_mini": 22,
+  "temp_maxi": 28,
+  "taille": 15,
+  "mesure_taille": "longueur du corps",
+  "litrage_mini": 200,
+  "nb_individus": 1,
+  "longevite": null,
+  "comportement": "moyennement agressif",
+  "mode_vie": "seul ou en groupe",
+  "regime": "omnivore",
+  "activite": "nocturne",
+  "reproduction": "en eau douce",
+  "photos": [
+    {
+      "fichier": "cherax-snowden-1.jpg",
+      "auteur": "Christian Lukhaup, Jörn Panteleit, Anne Schrimpf",
+      "licence": "CC BY 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cherax_snowden_habitus_(B)_male_Indonesia.jpg",
+      "vue": "animal"
+    },
+    {
+      "fichier": "cherax-snowden-2.jpg",
+      "auteur": "Christian Lukhaup, Jörn Panteleit, Anne Schrimpf",
+      "licence": "CC BY 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cherax_snowden_holotype_male_(MZB_Cru_4291).jpg",
+      "vue": "spécimen de collection"
+    },
+    {
+      "fichier": "cherax-snowden-3.jpg",
+      "auteur": "Christian Lukhaup, Jörn Panteleit, Anne Schrimpf",
+      "licence": "CC BY 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cherax_snowden_paratype_female_(MZB_Cru_4293).jpg",
+      "vue": "spécimen de collection"
+    }
+  ],
+  "profil": {
+    "nom_valide": null,
+    "auteur": "Lukhaup, Panteleit & Schrimpf, 2015",
+    "classification": "Decapoda › Parastacidae",
+    "uicn": "NE",
+    "repartition": "Indonésie : péninsule de Vogelkop (Kepala Burung), en Papouasie occidentale, sur l'île de Nouvelle-Guinée",
+    "pays": [
+      "IDN"
+    ],
+    "presentation": "Cette grande écrevisse présente des teintes vertes et orangées. Elle fréquente des eaux bien oxygénées et des fonds rocheux, et défend son territoire avec vigueur. Sa présence impose de réfléchir à l’ensemble de la population du bac.",
+    "habitat": "Elle vit le plus souvent à moins d'un mètre de profondeur, dans des eaux bien oxygénées aux courants variés, près des rapides et des cascades, sur des fonds rocheux jonchés de galets, de bois et de feuilles. L'eau y est neutre (pH 7 à 7,5) et chaude (22 à 28 °C).",
+    "comportement": "Elle vit seule ou en groupe sur le fond et s'active surtout la nuit. Très territoriale, elle ne tolère aucune intrusion dans sa zone de vie et peut livrer de violents combats à ses voisins territoriaux.",
+    "maintenance": "Offrir un espace généreux, des refuges séparés et un décor qui délimite plusieurs zones. La cohabitation avec d’autres animaux territoriaux expose à des combats ; les mues demandent des abris particulièrement sûrs.",
+    "alimentation": "Elle est omnivore avec une tendance herbivore. Prévoir une part végétale dans une ration variée.",
+    "reproduction": "Le cycle se déroule en eau douce. Des jeunes déjà formés quittent la mère et recherchent de petits abris."
+  },
+  "sources": [
+    {
+      "nom": "Fishipedia",
+      "url": "https://www.fishipedia.fr/fr/crustacea/cherax-snowden"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/8682286"
+    }
+  ],
+  "notes": [
+    "Fishipedia indique la Papouasie-Nouvelle-Guinée ; l'espèce a été décrite de la péninsule de Vogelkop, en Papouasie occidentale (Indonésie) (Lukhaup, Panteleit et Schrimpf 2015, ZooKeys 518), où se trouvent ses observations GBIF."
+  ]
+}

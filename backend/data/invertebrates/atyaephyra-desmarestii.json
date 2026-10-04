@@ -1,0 +1,96 @@
+{
+  "nom_scientifique": "Atyaephyra desmarestii",
+  "nom_commun": "Caridine de Desmarest",
+  "variete": null,
+  "groupe": "crevette",
+  "famille": "Atyidae",
+  "genre": "Atyaephyra",
+  "zone_geo": "Europe",
+  "installation": "aquarium",
+  "milieu": "eau douce",
+  "ph_mini": 7,
+  "ph_maxi": 8.5,
+  "gh_mini": null,
+  "gh_maxi": null,
+  "kh_mini": null,
+  "kh_maxi": null,
+  "temp_mini": 6,
+  "temp_maxi": 28,
+  "taille": 4,
+  "mesure_taille": "longueur du corps",
+  "litrage_mini": 20,
+  "nb_individus": 5,
+  "longevite": 2,
+  "comportement": "pacifique",
+  "mode_vie": "colonie",
+  "regime": "détritivore",
+  "activite": "nocturne",
+  "reproduction": "en eau douce",
+  "photos": [
+    {
+      "fichier": "atyaephyra-desmarestii-1.jpg",
+      "auteur": "Duarte Frade",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Atyaephyra_desmarestii_1687661.jpg",
+      "vue": "animal"
+    },
+    {
+      "fichier": "atyaephyra-desmarestii-2.jpg",
+      "auteur": "frangp",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.inaturalist.org/photos/641399832",
+      "vue": "animal"
+    },
+    {
+      "fichier": "atyaephyra-desmarestii-3.jpg",
+      "auteur": "Duarte Frade",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.inaturalist.org/photos/714321673",
+      "vue": "animal"
+    }
+  ],
+  "profil": {
+    "nom_valide": null,
+    "auteur": "(Millet, 1831)",
+    "classification": "Decapoda › Atyidae",
+    "uicn": "LC",
+    "repartition": "Ouest du bassin méditerranéen (Afrique du Nord et Europe du Sud, Corse et Sardaigne comprises), puis une grande partie de l'Europe par les canaux",
+    "pays": [
+      "AUT",
+      "BEL",
+      "CZE",
+      "DEU",
+      "DZA",
+      "ESP",
+      "FRA",
+      "GRC",
+      "HRV",
+      "ITA",
+      "MAR",
+      "NLD",
+      "POL",
+      "PRT",
+      "TUN",
+      "TUR"
+    ],
+    "presentation": "Présente dans les cours d’eau européens et nord-africains, la caridine de Desmarest fréquente la végétation immergée. Les jeunes sont presque transparents ; les adultes peuvent prendre des teintes brunes, rouges ou légèrement bleutées. Les grandes femelles développent souvent des marbrures plus visibles.",
+    "habitat": "Elle fréquente la végétation des ruisseaux et des cours d'eau, dans des eaux plutôt calcaires (pH 7 à 8,5) et sur un large écart de températures, de 6 à 28 °C. Partie de l'ouest méditerranéen, elle a gagné l'Allemagne puis la Pologne par les canaux ; elle semble régresser dans le sud de la France à cause des sécheresses et de l'assèchement des petits cours d'eau.",
+    "comportement": "Paisible et assez vive, elle vit en colonies près du fond et s'active surtout la nuit. Petite et discrète, elle se cache en présence d'animaux plus grands et ne s'intéresse pas aux autres espèces. Elle trie débris et biofilm sur les plantes et le décor.",
+    "maintenance": "Un bac spécifique végétalisé facilite l’observation de cette crevette discrète, surtout active la nuit. Racines, feuilles et abris la mettent à l’écart des prédateurs et protègent les individus en mue.",
+    "alimentation": "Elle prélève algues et microorganismes sur le décor et accepte les aliments destinés aux crevettes naines.",
+    "reproduction": "La reproduction comporte plusieurs stades larvaires et demande davantage de préparation que celle des Neocaridina."
+  },
+  "sources": [
+    {
+      "nom": "Fishipedia",
+      "url": "https://www.fishipedia.fr/fr/crustacea/atyaephyra-desmarestii"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/4309705"
+    }
+  ]
+}

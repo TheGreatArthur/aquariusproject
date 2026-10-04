@@ -1,6 +1,6 @@
 # Aquarius
 
-> Browse 304 freshwater aquarium fish and 10 aquarium plants, and check whether the species you pick can live
+> Browse 304 freshwater aquarium fish, 21 shrimps, crabs, snails and crayfish, and 10 aquarium plants, and check whether the species you pick can live
 > together in your tank.
 
 [![CI](https://github.com/TheGreatArthur/aquariusproject/actions/workflows/ci.yml/badge.svg)](https://github.com/TheGreatArthur/aquariusproject/actions/workflows/ci.yml)
@@ -18,6 +18,9 @@
   behaviour, with a range map (native countries, GBIF observations, rivers and lakes) and its IUCN status,
   written from FishBase, Seriously Fish and GBIF; the data itself was checked against the same sources
   ([report](docs/data-sources-check.md)).
+- **Invertebrate catalogue** — 21 shrimps, crabs, snails and crayfish with the same structure as the fish: water
+  parameters, size, minimum tank, behaviour, range map, habitat, and maintenance, feeding and reproduction advice
+  ([ADR 0012](docs/adr/0012-invertebrates-like-fish.md)).
 - **Plant catalogue** — 10 plants common in the hobby (Anubias, Java fern, Java moss, Cryptocoryne, Amazon sword,
   Vallisneria, Ambulia, Rotala, hornwort, dwarf hairgrass) with pH, KH, tolerated and ideal temperature, light,
   CO₂ need, height, placement and propagation, French texts, and three free-licensed photos each with their
@@ -65,7 +68,7 @@ flowchart LR
     Plants -->|"plants.py"| DB
     FEOW["FEOW ecoregions<br/>(cache only)"] -->|"tools/build_ecoregions.py"| Zones["public/maps/ecoregions.json"]
     Next -->|"static"| Zones
-    Next -->|"static"| Images["public/images · public/plants"]
+    Next -->|"static"| Images["public/images · public/invertebrates · public/plants"]
 ```
 
 The browser only talks to Next.js; Next.js proxies `/api/*` to Flask, which serves JSON from the database.
@@ -77,6 +80,8 @@ The data is maintained in an Excel workbook and loaded with `make import`. See t
 | `GET /poissons?famille=<name>` | Fish of one family |
 | `GET /poissons/<id>` | One fish, including its images |
 | `GET /poissons/familles` | All families, sorted |
+| `GET /invertebres` | All invertebrates with their main photo, sorted by common name |
+| `GET /invertebres/<id>` | One invertebrate, with its profile, photo credits and sources |
 | `GET /plantes` | All plants with their main photo, sorted by common name |
 | `GET /plantes/<id>` | One plant, with its texts, photo credits and sources |
 
@@ -110,7 +115,8 @@ profiles from `backend/data/`; run `make audit` to list values that look wrong
 ([docs/data-audit.md](docs/data-audit.md)) and `make sources` to compare the base with FishBase and
 Seriously Fish (see [ADR 0006](docs/adr/0006-fish-profiles-and-sources.md) to add a species' profile).
 The import then loads the species described by files in `backend/data/fish/` (`make fish` reloads them alone;
-see [ADR 0011](docs/adr/0011-fish-added-as-data-files.md) to add a species and its photos).
+see [ADR 0011](docs/adr/0011-fish-added-as-data-files.md) to add a species and its photos), and the invertebrates of
+`backend/data/invertebrates/` (`make invertebrates`, [ADR 0012](docs/adr/0012-invertebrates-like-fish.md)).
 `make ecoregions` places the fish in their freshwater ecoregions for the home page globe
 ([ADR 0010](docs/adr/0010-home-globe-freshwater-ecoregions.md)). The import also loads the plants of `backend/data/plants/` (`make plants` reloads them alone); `make plants-fetch`
 scrapes their data and photos again (see [ADR 0009](docs/adr/0009-plants-scraped-data-and-free-photos.md) to add
@@ -147,6 +153,7 @@ CI runs the same checks on every pull request and on pushes to `main`.
 - [0009 — Aquarium plants: scraped growing data and free-licensed photos](docs/adr/0009-plants-scraped-data-and-free-photos.md)
 - [0010 — Home page globe of freshwater ecoregions](docs/adr/0010-home-globe-freshwater-ecoregions.md)
 - [0011 — More fish: species added as data files, with the workbook's house rules](docs/adr/0011-fish-added-as-data-files.md)
+- [0012 — Invertebrates stored and served like fish](docs/adr/0012-invertebrates-like-fish.md)
 
 ## Roadmap & known limitations
 

@@ -19,7 +19,7 @@ const UICN = {
   NE: { label: 'Non évalué', tone: 'border-border bg-surface text-muted' },
 };
 
-function Block ({ icon: Icon, title, id, children, className = '' }) {
+export function Block ({ icon: Icon, title, id, children, className = '' }) {
   return (
     <section aria-labelledby={id} className={`card p-6 sm:p-8 ${className}`}>
       <h3 id={id} className="flex items-center gap-2.5 text-lg font-semibold">
@@ -53,10 +53,29 @@ function Countries ({ codes }) {
   );
 }
 
+/** Liens vers les sources de la fiche et crédit du fond de carte */
+export function ProfileSources ({ sources }) {
+  return (
+    <Reveal>
+      <p className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted">
+        <span>Sources :</span>
+        {sources.map((s) => (
+          <a key={s.url} href={s.url} target="_blank" rel="noopener noreferrer"
+             className="inline-flex items-center gap-1 underline-offset-4 hover:text-accent-glow hover:underline">
+            {s.nom} <ExternalLink className="h-3 w-3"/>
+          </a>
+        ))}
+        <span>· Fond de carte : Natural Earth</span>
+      </p>
+    </Reveal>
+  );
+}
+
 /**
- * Fiche descriptive d'un poisson : présentation scientifique, habitat naturel avec carte, comportement, sources
+ * Fiche descriptive d'un poisson, ou d'un invertébré qui a les mêmes champs : présentation scientifique, habitat
+ * naturel avec carte, comportement, puis les sources (`withSources={false}` quand la page les place plus bas)
  */
-export default function FishProfile ({ profil, nomScientifique }) {
+export default function FishProfile ({ profil, nomScientifique, withSources = true }) {
   if (!profil)
     return null;
 
@@ -145,18 +164,7 @@ export default function FishProfile ({ profil, nomScientifique }) {
           </Block>
         </Reveal>
 
-        <Reveal>
-          <p className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted">
-            <span>Sources :</span>
-            {profil.sources.map((s) => (
-              <a key={s.url} href={s.url} target="_blank" rel="noopener noreferrer"
-                 className="inline-flex items-center gap-1 underline-offset-4 hover:text-accent-glow hover:underline">
-                {s.nom} <ExternalLink className="h-3 w-3"/>
-              </a>
-            ))}
-            <span>· Fond de carte : Natural Earth</span>
-          </p>
-        </Reveal>
+        {withSources && <ProfileSources sources={profil.sources}/>}
       </div>
     </section>
   );
