@@ -1,6 +1,6 @@
 # Aquarius
 
-> Browse 135 freshwater aquarium fish and 10 aquarium plants, and check whether the species you pick can live
+> Browse 304 freshwater aquarium fish and 10 aquarium plants, and check whether the species you pick can live
 > together in your tank.
 
 [![CI](https://github.com/TheGreatArthur/aquariusproject/actions/workflows/ci.yml/badge.svg)](https://github.com/TheGreatArthur/aquariusproject/actions/workflows/ci.yml)
@@ -12,7 +12,8 @@
 
 ## Features
 
-- **Fish catalogue** — 135 species with water parameters (pH, GH, temperature), size, behaviour, lifespan and photos.
+- **Fish catalogue** — 304 species with water parameters (pH, GH, temperature), size, behaviour, lifespan and
+  free-licensed photos credited to their authors.
 - **Fish profiles** — for each species, a French text on its description and naming, natural habitat and
   behaviour, with a range map (native countries, GBIF observations, rivers and lakes) and its IUCN status,
   written from FishBase, Seriously Fish and GBIF; the data itself was checked against the same sources
@@ -108,6 +109,8 @@ The import cleans and normalizes the workbook's labels, applies the reviewed cor
 profiles from `backend/data/`; run `make audit` to list values that look wrong
 ([docs/data-audit.md](docs/data-audit.md)) and `make sources` to compare the base with FishBase and
 Seriously Fish (see [ADR 0006](docs/adr/0006-fish-profiles-and-sources.md) to add a species' profile).
+The import then loads the species described by files in `backend/data/fish/` (`make fish` reloads them alone;
+see [ADR 0011](docs/adr/0011-fish-added-as-data-files.md) to add a species and its photos).
 `make ecoregions` places the fish in their freshwater ecoregions for the home page globe
 ([ADR 0010](docs/adr/0010-home-globe-freshwater-ecoregions.md)). The import also loads the plants of `backend/data/plants/` (`make plants` reloads them alone); `make plants-fetch`
 scrapes their data and photos again (see [ADR 0009](docs/adr/0009-plants-scraped-data-and-free-photos.md) to add
@@ -143,6 +146,7 @@ CI runs the same checks on every pull request and on pushes to `main`.
 - [0008 — Practical guide written as data, with computed diagrams](docs/adr/0008-practical-guide-content.md)
 - [0009 — Aquarium plants: scraped growing data and free-licensed photos](docs/adr/0009-plants-scraped-data-and-free-photos.md)
 - [0010 — Home page globe of freshwater ecoregions](docs/adr/0010-home-globe-freshwater-ecoregions.md)
+- [0011 — More fish: species added as data files, with the workbook's house rules](docs/adr/0011-fish-added-as-data-files.md)
 
 ## Roadmap & known limitations
 

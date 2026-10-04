@@ -6,6 +6,15 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- **169 more fish** ([ADR 0011](docs/adr/0011-fish-added-as-data-files.md)): the catalogue grows from 135 to 304
+  freshwater species (tetras, barbs, rasboras, Corydoras, Malawi and Tanganyika cichlids, killifish, rainbowfish,
+  gouramis, catfish…). Each one is a JSON file in `backend/data/fish/` with its water parameters from Seriously Fish
+  and FishBase, simulator values derived with the rules measured on the workbook (volume, population points, group,
+  lifespan) and categories reviewed by hand, a French profile with its range map, and up to three photos from
+  Wikimedia Commons under free licences, picked by eye. The fish page gallery now shows the author and licence of
+  each photo (`credits` column, Alembic migration). `tools/draft_fish.py` drafts a file from the sources,
+  `make fish-photos` downloads the photos and `make fish` loads the files.
+
 - **World globe on the home page** ([ADR 0010](docs/adr/0010-home-globe-freshwater-ecoregions.md)): a canvas globe
   that turns in any direction (mouse, finger, keyboard), zooms (buttons, pinch, +/-) and shows one marker per
   freshwater ecoregion where the catalogue fish live (121 zones from the Freshwater Ecoregions of the World,
@@ -91,6 +100,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Cypress, installed but without any test (its binary download was already disabled in CI).
 
 ### Fixed
+- GBIF matching for genus names shared with another group (*Trichogaster*): the match is retried within
+  ray-finned fishes instead of returning the kingdom.
+- A local database created before a new optional column is now upgraded by the loaders instead of failing on
+  every request.
 - Footer: the "Suivre" heading sat on the same line as the Instagram link.
 - Form labels were uppercased, which displayed "pH" as "PH"; the tank load read "0 / — points" without a volume.
 - Catalogue: typing a search while a family filter was active erased the first letter typed.
