@@ -201,3 +201,32 @@ def test_non_free_photo_is_refused(tmp_path, monkeypatch):
 
     assert credits == [] and errors == ["File:Anubia nana.jpg : licence non libre ou inconnue : 'CC BY-NC 4.0'"]
     assert not (tmp_path / 'anubias-1.jpg').exists()
+
+
+def test_photo_is_downloaded_again_when_the_commons_file_changes(tmp_path, monkeypatch):
+    monkeypatch.setattr(fp, 'PHOTOS_DIR', tmp_path)
+    monkeypatch.setattr(fp, 'fetch', fake_fetch({'commons-': (200, COMMONS)}))
+    downloads = []
+    monkeypatch.setattr(fp, 'download', lambda url: downloads.append(url) or jpeg(10, 10))
+    (tmp_path / 'anubias-1.jpg').write_bytes(jpeg(10, 10))
+    same = [{'fichier': 'anubias-1.jpg', 'source': 'https://commons.wikimedia.org/wiki/File:Anubia_nana.jpg'}]
+    other = [{'fichier': 'anubias-1.jpg', 'source': 'https://commons.wikimedia.org/wiki/File:Autre.jpg'}]
+
+    fp.photos('anubias', ['File:Anubia nana.jpg'], same)
+    assert downloads == []
+
+    fp.photos('anubias', ['File:Anubia nana.jpg'], other)
+    assert downloads == ['https://upload.wikimedia.org/thumb/a.jpg']
+
+
+def test_photos_no_longer_listed_are_removed(tmp_path, monkeypatch):
+    monkeypatch.setattr(fp, 'PHOTOS_DIR', tmp_path)
+    monkeypatch.setattr(fp, 'fetch', fake_fetch({'commons-': (200, COMMONS)}))
+    monkeypatch.setattr(fp, 'download', lambda url: jpeg(10, 10))
+    for name in ('anubias-2.jpg', 'anubias-nana-1.jpg'):
+        (tmp_path / name).write_bytes(b'old')
+
+    fp.photos('anubias', ['File:Anubia nana.jpg'])
+
+    # La photo d'une autre plante dont le nom commence pareil est conservée
+    assert sorted(p.name for p in tmp_path.iterdir()) == ['anubias-1.jpg', 'anubias-nana-1.jpg']

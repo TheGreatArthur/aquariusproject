@@ -389,8 +389,13 @@ def save_photo(data: bytes, path: Path) -> None:
         im.save(path, 'JPEG', quality=PHOTO_QUALITY, optimize=True, progressive=True, icc_profile=icc)
 
 
-def photos(name: str, titles: list[str]) -> tuple[list[dict], list[str]]:
-    """ Télécharge les photos d'une plante (<plante>-1.jpg, -2.jpg...) et renvoie leurs crédits """
+def photos(name: str, titles: list[str], previous: list[dict] = ()) -> tuple[list[dict], list[str]]:
+    """
+    Télécharge les photos d'une plante (<plante>-1.jpg, -2.jpg...) et renvoie leurs crédits. Une photo déjà
+    présente n'est gardée que si elle vient du même fichier Commons qu'au passage précédent (`previous`), pour
+    que l'image et son crédit correspondent toujours ; les photos qui ne sont plus dans la fiche sont supprimées.
+    """
+    sources = {c['fichier']: c['source'] for c in previous}
     credits, errors = [], []
     for i, title in enumerate(titles, start=1):
         info = commons_info(title)
@@ -398,17 +403,22 @@ def photos(name: str, titles: list[str]) -> tuple[list[dict], list[str]]:
             errors.append(f'{title} : {error}')
             continue
         path = PHOTOS_DIR / f'{name}-{i}.jpg'
-        if not path.exists():
+        if not path.exists() or sources.get(path.name) != info['source']:
             save_photo(download(info['url']), path)
         credits.append(dict(fichier=path.name, auteur=clean_author(info['auteur'])[:150], licence=info['licence'],
                             licence_url=info['licence_url'], source=info['source']))
+    kept = {c['fichier'] for c in credits}
+    for path in PHOTOS_DIR.glob(f'{name}-*.jpg'):
+        if re.fullmatch(rf'{re.escape(name)}-\d+\.jpg', path.name) and path.name not in kept:
+            path.unlink()
     return credits, errors
 
 
 # --- Collecte ---------------------------------------------------------------------------------------
 
-def collect(name: str, fiche: dict) -> tuple[dict, list[str]]:
-    """ Données sources d'une plante (clé : nom du fichier de la fiche) et avertissements """
+def collect(name: str, fiche: dict, previous: dict | None = None) -> tuple[dict, list[str]]:
+    """ Données sources d'une plante (clé : nom du fichier de la fiche) et avertissements ; `previous` est le
+    résultat du passage précédent, pour savoir quelles photos sont déjà à jour """
     out, warnings = {}, []
     if fiche.get('flowgrow'):
         out['flowgrow'], problems = flowgrow(fiche['flowgrow'])
@@ -418,7 +428,7 @@ def collect(name: str, fiche: dict) -> tuple[dict, list[str]]:
         warnings += problems
     out['gbif'], problems = gbif(fiche.get('gbif') or fiche['nom_scientifique'])
     warnings += problems
-    out['photos'], problems = photos(name, fiche.get('photos', []))
+    out['photos'], problems = photos(name, fiche.get('photos', []), (previous or {}).get('photos', []))
     warnings += problems
     return out, warnings
 
@@ -431,7 +441,7 @@ def main(names: list[str]) -> int:
         if names and path.stem not in names:
             continue
         fiche = json.loads(path.read_text(encoding='utf-8'))
-        sources[path.stem], warnings = collect(path.stem, fiche)
+        sources[path.stem], warnings = collect(path.stem, fiche, sources.get(path.stem))
         print(f'{path.stem} : {len(sources[path.stem]["photos"])} photo(s)')
         for warning in warnings:
             print('  !', warning)

@@ -124,6 +124,7 @@ def test_upsert_creates_updates_and_removes_plants():
 
         rows = db.scalars(select(Plante)).all()
         assert [(p.id, p.nom_commun) for p in rows] == [(anubias_id, 'Anubias nana')]
+    engine.dispose()
 
 
 def test_photos_dir_is_the_public_folder():
