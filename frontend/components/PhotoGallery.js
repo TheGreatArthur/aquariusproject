@@ -35,7 +35,8 @@ export default function PhotoGallery ({ images, alt, credits }) {
             <a href={credit.licence_url} target="_blank" rel="noopener noreferrer license"
                className="underline-offset-4 hover:text-accent-glow hover:underline">{credit.licence}</a>
           ) : credit.licence}
-          {', via Wikimedia Commons'}
+          {credit.source?.startsWith('https://commons.wikimedia.org/') && ', via Wikimedia Commons'}
+          {credit.source?.startsWith('https://www.inaturalist.org/') && ', via iNaturalist'}
         </p>
       )}
 
