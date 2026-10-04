@@ -6,6 +6,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- **World globe on the home page** ([ADR 0010](docs/adr/0010-home-globe-freshwater-ecoregions.md)): a canvas globe
+  that turns in any direction (mouse, finger, keyboard), zooms (buttons, pinch, +/-) and shows one marker per
+  freshwater ecoregion where the catalogue fish live (121 zones from the Freshwater Ecoregions of the World,
+  sized by number of species). Picking a zone, on the globe or in the list by realm, flies to it, lights up the
+  observations of its species and lists the fish with a link to their page. `make ecoregions` places each
+  species with its range-map points; `scripts/build-globe-map.sh` builds the light 1:110m base map that keeps
+  the globe at 60 fps.
 - **Plant catalogue** ([ADR 0009](docs/adr/0009-plants-scraped-data-and-free-photos.md)): a `plante` table
   (Alembic migration) with 10 aquarium plants common in the hobby, `GET /plantes` and `GET /plantes/<id>`, a
   `/plantes` page with a search and a filter by growth form, and a page per plant (photos with their credits,

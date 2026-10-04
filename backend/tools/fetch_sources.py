@@ -80,6 +80,29 @@ def fetch(url: str, cache_name: str) -> tuple[int, str]:
     return status, body
 
 
+_last_download = 0.0
+
+
+def download(url: str) -> bytes:
+    """ Téléchargement d'un fichier binaire (photo, archive), à une seconde d'intervalle, avec de nouvelles
+    tentatives si le serveur limite le débit (429) """
+    global _last_download
+    for attempt in range(4):
+        wait = 1.0 - (time.monotonic() - _last_download)
+        if wait > 0:
+            time.sleep(wait)
+        _last_download = time.monotonic()
+        request = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
+        try:
+            with urllib.request.urlopen(request, timeout=60) as response:
+                return response.read()
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or attempt == 3:
+                raise
+            time.sleep(5 * (attempt + 1))
+    raise RuntimeError(url)
+
+
 def to_text(markup: str) -> str:
     markup = re.sub(r'(?is)<(script|style).*?</\1>', ' ', markup)
     text = html.unescape(re.sub(r'(?s)<[^>]+>', ' ', markup))
