@@ -20,15 +20,12 @@ import io
 import json
 import re
 import sys
-import time
-import urllib.error
 import urllib.parse
-import urllib.request
 from pathlib import Path
 
 from bs4 import BeautifulSoup, Tag
 
-from tools.fetch_sources import USER_AGENT, fetch, slug
+from tools.fetch_sources import download, fetch, slug
 
 BACKEND_DIR = Path(__file__).resolve().parent.parent
 PLANTS_DIR = BACKEND_DIR / 'data' / 'plants'
@@ -353,28 +350,6 @@ def check_licence(info: dict) -> str | None:
     if not info['auteur']:
         return 'auteur inconnu (attribution impossible)'
     return None
-
-
-_last_download = 0.0
-
-
-def download(url: str) -> bytes:
-    """ Téléchargement d'une photo, à une seconde d'intervalle, avec une nouvelle tentative si Commons limite """
-    global _last_download
-    for attempt in range(4):
-        wait = 1.0 - (time.monotonic() - _last_download)
-        if wait > 0:
-            time.sleep(wait)
-        _last_download = time.monotonic()
-        request = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
-        try:
-            with urllib.request.urlopen(request, timeout=60) as response:
-                return response.read()
-        except urllib.error.HTTPError as e:
-            if e.code != 429 or attempt == 3:
-                raise
-            time.sleep(5 * (attempt + 1))
-    raise RuntimeError(url)
 
 
 def save_photo(data: bytes, path: Path) -> None:
