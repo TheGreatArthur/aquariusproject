@@ -6,6 +6,14 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- **Plant catalogue** ([ADR 0009](docs/adr/0009-plants-scraped-data-and-free-photos.md)): a `plante` table
+  (Alembic migration) with 10 aquarium plants common in the hobby, `GET /plantes` and `GET /plantes/<id>`, a
+  `/plantes` page with a search and a filter by growth form, and a page per plant (photos with their credits,
+  pH, KH, tolerated and ideal temperature, light, CO₂ need, height, placement, propagation, French presentation
+  and growing advice). `make plants-fetch` scrapes the values from Flowgrow (water and growing parameters),
+  Tropica (height in the tank, CO₂ need) and GBIF (current name and family) and downloads three photos per plant
+  from Wikimedia Commons, free licences only; `make import` and `make plants` load them. The plants course links
+  to the catalogue.
 - **Practical guide** ([ADR 0008](docs/adr/0008-practical-guide-content.md)): `/cours` now holds six courses
   (nitrogen cycle, water parameters, temperature and equipment, plants and decor, maintenance, introducing and
   feeding fish) instead of four "coming soon" cards. Each course has a table of contents, reading time, key
@@ -41,6 +49,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.env.example` for the front end; backend config driven by `AQUARIUS_DSN` / `AQUARIUS_EXCEL_FILE`.
 
 ### Changed
+- Range bars write French decimals (6,5) like the course pages, and can show an ideal band inside the tolerated
+  range. The gallery, range bar and prose components moved out of `components/fish/` to be shared.
+- The header keeps its five links on one line between 768 and 1024 px (the Instagram icon shows from 1024 px).
 - **Design review** ([rules](docs/design-rules.md)), keeping the dark theme and teal accent: the home hero fits
   on two lines with one CTA label ("Simuler un bac") used everywhere, the "three steps" section shows a real
   screenshot of the simulator instead of three numbered cards, glows, gradient text and extra uppercase labels
