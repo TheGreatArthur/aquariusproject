@@ -7,9 +7,9 @@ import useSWR from 'swr';
 import { ArrowLeft, Clock, Droplet, Ruler, Users } from 'lucide-react';
 
 import BehaviourBadge from '@/components/fish/BehaviourBadge';
-import FishGallery from '@/components/fish/FishGallery';
 import FishProfile from '@/components/fish/FishProfile';
-import RangeBar from '@/components/fish/RangeBar';
+import PhotoGallery from '@/components/PhotoGallery';
+import RangeBar from '@/components/RangeBar';
 import Reveal from '@/components/Reveal';
 import { familyHref } from '@/lib/families';
 import { fishImages } from '@/lib/fish';
@@ -73,7 +73,7 @@ export default function Poisson ({ params }) {
       <div className="mt-6 grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
         {/* La galerie reste visible pendant la lecture de la colonne de droite, plus haute */}
         <Reveal className="lg:sticky lg:top-24 lg:self-start">
-          <FishGallery images={fishImages(data)} alt={data.nom_commun}/>
+          <PhotoGallery images={fishImages(data)} alt={data.nom_commun}/>
         </Reveal>
 
         <Reveal delay={0.08}>

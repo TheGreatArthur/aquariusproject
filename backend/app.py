@@ -1,4 +1,4 @@
-""" API Flask d'Aquarius : catalogue des poissons et familles
+""" API Flask d'Aquarius : catalogue des poissons, familles et plantes
 """
 
 from flask import Flask, request
@@ -7,7 +7,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import func, or_
 
 from config import DSN
-from models import Poisson, Genre, Famille, Comportement
+from models import Poisson, Genre, Famille, Comportement, Plante
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = DSN
@@ -54,3 +54,28 @@ def get_familles():
     familles = db.session.scalars(db.select(Famille).order_by(Famille.nom))
 
     return {'familles': [f.as_dict() for f in familles]}
+
+
+# Champs de la liste des plantes : les textes et les sources ne sont renvoyés que sur le détail
+PLANTE_LISTE = (
+    'id', 'nom_scientifique', 'nom_commun', 'famille', 'type', 'positions', 'difficulte', 'croissance', 'lumiere_mini',
+    'lumiere_maxi', 'co2', 'ph_mini', 'ph_maxi', 'temp_mini', 'temp_maxi', 'hauteur_mini', 'hauteur_maxi',
+)
+
+
+@app.route('/plantes')
+def plantes():
+    """ Liste des plantes, avec leur photo principale """
+    liste = db.session.scalars(db.select(Plante).order_by(Plante.nom_commun))
+    return {'plantes': [{**{k: getattr(p, k) for k in PLANTE_LISTE}, 'image': p.images[0] if p.images else None}
+                        for p in liste]}
+
+
+@app.route('/plantes/<int:id>')
+def get_plante(id: int):
+    plante: Plante = db.session.get(Plante, id)
+
+    if not plante:
+        return 'Plant not found', 404
+
+    return plante.as_dict()

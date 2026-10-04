@@ -7,7 +7,7 @@ BACKEND_PORT  ?= 5001
 FRONTEND_PORT ?= 3000
 
 .DEFAULT_GOAL := help
-.PHONY: help setup install dev backend frontend import profiles sources occurrences images audit test lint build clean
+.PHONY: help setup install dev backend frontend import profiles plants plants-fetch sources occurrences images audit test lint build clean
 
 help: ## Show available commands
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  make %-10s %s\n", $$1, $$2}'
@@ -45,6 +45,12 @@ import: setup ## Load backend/db.xlsx into the database
 
 profiles: setup ## Load the fish profiles (backend/data) into an imported database
 	cd backend && venv/bin/python profiles.py
+
+plants: setup ## Load the aquarium plants (backend/data/plants) into the database
+	cd backend && venv/bin/python plants.py
+
+plants-fetch: setup ## Scrape plant data (Flowgrow, Tropica, GBIF) and photos (Wikimedia Commons)
+	cd backend && venv/bin/python -m tools.fetch_plants
 
 sources: setup ## Fetch FishBase, Seriously Fish and GBIF data and compare it with the base
 	cd backend && venv/bin/python -m tools.fetch_sources && venv/bin/python -m tools.compare_sources

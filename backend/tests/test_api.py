@@ -71,3 +71,42 @@ def test_familles_sorted_by_name(client):
     res = client.get('/poissons/familles')
 
     assert [f['nom'] for f in res.get_json()['familles']] == ['Characidae', 'Cichlidae']
+
+
+def load_versioned_plants():
+    from app import db
+    from plants import load_plants, upsert_plants
+
+    upsert_plants(db.session, load_plants())
+    db.session.commit()
+
+
+def test_list_plantes_sorted_with_main_photo(client):
+    load_versioned_plants()
+
+    plantes = client.get('/plantes').get_json()['plantes']
+
+    noms = [p['nom_commun'] for p in plantes]
+    assert len(noms) == 10 and noms == sorted(noms)
+    anubias = next(p for p in plantes if p['nom_scientifique'] == 'Anubias barteri var. nana')
+    assert anubias['image']['fichier'] == 'anubias-barteri-var-nana-1.jpg'
+    assert anubias['type'] == 'épiphyte' and anubias['ph_mini'] == 5
+    # Les textes longs ne sont renvoyés que sur le détail
+    assert 'culture' not in anubias and 'sources' not in anubias
+
+
+def test_get_plante(client):
+    load_versioned_plants()
+    plantes = client.get('/plantes').get_json()['plantes']
+    plante_id = next(p['id'] for p in plantes if p['nom_commun'] == 'Fougère de Java')
+
+    data = client.get(f'/plantes/{plante_id}').get_json()
+
+    assert data['nom_scientifique'] == 'Microsorum pteropus'
+    assert data['nom_valide'] == 'Leptochilus pteropus'
+    assert len(data['images']) == 3 and data['culture']
+    assert {s['nom'] for s in data['sources']} >= {'Flowgrow', 'Tropica', 'GBIF'}
+
+
+def test_get_plante_not_found(client):
+    assert client.get('/plantes/999').status_code == 404

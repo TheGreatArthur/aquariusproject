@@ -1,0 +1,27 @@
+{
+  "nom_scientifique": "Echinodorus grisebachii 'Bleherae'",
+  "nom_commun": "Plante amazone",
+  "gbif": "Echinodorus grisebachii",
+  "flowgrow": "echinodorus-grisebachii-bleherae",
+  "tropica": "Echinodorusgrisebachii'Bleherae'(071)/4512",
+  "photos": [
+    "File:Echinodorus amazonicus-1-veda aquarium-bengaluru-India.jpg",
+    "File:Echinodorus grisebachii kz01.jpg",
+    "File:Echinodorus grisebachii - flower view 01.jpg"
+  ],
+  "origine": "Amérique du Sud tropicale, sans doute l'Amazonie ; le groupe d'*E. grisebachii* est répandu en Amérique tropicale",
+  "presentation": "Connue des aquariophiles sous le nom d'*Echinodorus bleheri*, c'est probablement l'échinodore le plus répandu en aquarium. Son origine exacte reste obscure, peut-être l'Amazonie ; elle appartient au groupe d'*Echinodorus grisebachii*, comme les formes « Amazonicus » et « Parviflorus ». Elle a longtemps été vendue sous le nom d'*E. paniculatus*, qui désigne en réalité une tout autre plante. GBIF classe aujourd'hui l'espèce dans le genre *Aquarius*.\n\nDans la nature, ces plantes passent la plus grande partie de l'année sous l'eau et ne forment des feuilles aériennes et des hampes florales qu'à la décrue. La forme la plus courante est triploïde : ses petites fleurs, de 1,5 cm au plus, sont stériles.",
+  "culture": "Facile et vigoureuse, elle s'adapte à des eaux très variées et pousse même dans un aquarium peu éclairé, car ses feuilles montent vers la lumière. On sous-estime souvent sa taille : la hauteur indiquée est celle des premiers mois, mais un pied adulte en bonne santé dépasse 60 cm de haut comme de large. Elle est donc réservée aux grands aquariums, où elle fait une superbe plante isolée ; pour un bac moyen, la forme « Parviflorus » reste autour de 30 cm.\n\nUn sol nutritif favorise sa croissance, et il faut couper les grandes feuilles qui privent de lumière les plantes en dessous. On la multiplie avec les plantules qui se forment sur la hampe florale, ou en divisant le rhizome.",
+  "valeurs": {
+    "ph_mini": 5.5,
+    "ph_maxi": 8.5,
+    "kh_mini": 0,
+    "kh_maxi": 18
+  },
+  "sources": [
+    {
+      "nom": "Quality Marine (pH et KH)",
+      "url": "https://qualitymarine.com/news/echinodorus-bleheri"
+    }
+  ]
+}

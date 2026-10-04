@@ -8,7 +8,7 @@ const SCHEMAS = ['CalculateurAmmoniac', 'CalculateurEquipement', 'CourbeOxygene'
   'PlagesPh', 'PlanAquarium', 'TableauAmmoniac', 'TableauCo2'];
 const ICONES = ['Beaker', 'CalendarCheck', 'Fish', 'Leaf', 'RefreshCw', 'Thermometer'];
 const BLOCS = ['p', 'liste', 'etapes', 'flux', 'colonnes', 'tableau', 'encadre', 'figure'];
-const PAGES = ['/poissons', '/simulation/starting', '/cours'];
+const PAGES = ['/poissons', '/plantes', '/simulation/starting', '/cours'];
 
 describe('typographie', () => {
   it('insère des espaces insécables avant la ponctuation haute et dans les guillemets', () => {

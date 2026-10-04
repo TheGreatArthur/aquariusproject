@@ -44,13 +44,13 @@ export default function SiteHeader () {
               <Link
                 href={href}
                 className={clsx(
-                  'relative rounded-full px-4 py-2 text-sm transition-colors',
+                  'relative whitespace-nowrap rounded-full px-2.5 py-2 text-sm transition-colors lg:px-4',
                   isActive(href) ? 'text-foreground' : 'text-muted hover:text-foreground',
                 )}
               >
                 {label}
                 {isActive(href) && (
-                  <span className="absolute inset-x-4 -bottom-0.5 h-px bg-gradient-to-r from-transparent via-accent to-transparent"/>
+                  <span className="absolute inset-x-2.5 -bottom-0.5 h-px bg-gradient-to-r from-transparent via-accent to-transparent lg:inset-x-4"/>
                 )}
               </Link>
             </li>
@@ -62,7 +62,7 @@ export default function SiteHeader () {
             href={INSTAGRAM_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden rounded-full p-2 text-muted transition hover:text-accent-glow sm:inline-flex"
+            className="hidden rounded-full p-2 text-muted transition hover:text-accent-glow sm:inline-flex md:hidden lg:inline-flex"
             aria-label="Instagram du projet Aquarius"
           >
             <InstagramIcon className="h-5 w-5"/>

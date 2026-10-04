@@ -3,6 +3,7 @@
 import { BookOpen, ExternalLink, MapPinned, Waves } from 'lucide-react';
 
 import RangeMap, { useWorld } from '@/components/fish/RangeMap';
+import Prose from '@/components/Prose';
 import Reveal from '@/components/Reveal';
 
 // Catégories de la Liste rouge UICN
@@ -17,15 +18,6 @@ const UICN = {
   DD: { label: 'Données insuffisantes', tone: 'border-border bg-surface text-muted' },
   NE: { label: 'Non évalué', tone: 'border-border bg-surface text-muted' },
 };
-
-/** Texte en paragraphes (séparés par une ligne vide), noms scientifiques entre *astérisques* en italique */
-function Prose ({ text }) {
-  return text.split(/\n\s*\n/).map((paragraph, i) => (
-    <p key={i}>
-      {paragraph.split(/\*([^*]+)\*/g).map((part, j) => (j % 2 ? <i key={j}>{part}</i> : part))}
-    </p>
-  ));
-}
 
 function Block ({ icon: Icon, title, id, children, className = '' }) {
   return (
