@@ -81,7 +81,7 @@ const cours = {
             ['*Taxiphyllum barbieri* (mousse de Java)', 'Mousse', 'Sur roche ou racine', 'Abri idéal pour les alevins et les crevettes'],
             ['*Limnobium laevigatum*', 'Flottante', 'Surface', 'Fait de l\'ombre aux plantes du dessous'],
           ],
-          legende: 'Une sélection de plantes faciles d\'après le catalogue et le guide de plantation de Tropica.',
+          legende: 'Une sélection de plantes faciles d\'après le catalogue et le guide de plantation de Tropica. Paramètres, photos et conseils de culture : voir [le catalogue des plantes](/plantes).',
         },
       ],
     },
