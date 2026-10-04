@@ -67,7 +67,7 @@ export default function SiteHeader () {
           >
             <InstagramIcon className="h-5 w-5"/>
           </a>
-          <Link href="/simulation" className="btn-primary hidden !py-2 sm:inline-flex">
+          <Link href="/simulation/starting" className="btn-primary hidden !py-2 sm:inline-flex">
             Simuler un bac
           </Link>
           <button

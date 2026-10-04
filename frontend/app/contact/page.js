@@ -13,7 +13,7 @@ import { INSTAGRAM_URL } from '@/lib/navigation';
 const FIELDS = [
   { name: 'nom', label: 'Nom', type: 'text', autoComplete: 'family-name', half: true },
   { name: 'prenom', label: 'Prénom', type: 'text', autoComplete: 'given-name', half: true },
-  { name: 'email', label: 'Email', type: 'email', autoComplete: 'email' },
+  { name: 'email', label: 'Email', type: 'email', autoComplete: 'email', spellCheck: false },
   { name: 'sujet', label: 'Sujet', type: 'text' },
 ];
 
@@ -49,7 +49,7 @@ export default function Formulaire() {
   };
 
   return <>
-    <PageHeader eyebrow="Contact" title="Une question, une espèce à ajouter ?">
+    <PageHeader eyebrow="Contact" title={'Une question, une espèce à ajouter\u00a0?'}>
       Écrivez-nous : suggestions, erreurs dans une fiche ou simple conseil, nous répondons à chaque message.
     </PageHeader>
 
@@ -63,7 +63,7 @@ export default function Formulaire() {
           </a>
         </div>
         <div className="card p-6">
-          <h2 className="text-lg font-semibold">Une donnée semble fausse ?</h2>
+          <h2 className="text-lg font-semibold">Une donnée semble fausse&nbsp;?</h2>
           <p className="mt-2 text-sm text-muted">
             Indiquez le nom de l&apos;espèce et la source de votre information : nous vérifions et corrigeons la fiche.
           </p>
@@ -72,10 +72,11 @@ export default function Formulaire() {
 
       <Reveal delay={0.08}>
         <form onSubmit={handleSubmit(envoyerFormulaire)} className="card grid gap-5 p-6 sm:grid-cols-2 sm:p-8">
-          {FIELDS.map(({ name, label, type, autoComplete, half }) => (
+          {FIELDS.map(({ name, label, type, autoComplete, spellCheck, half }) => (
             <div key={name} className={half ? '' : 'sm:col-span-2'}>
               <label htmlFor={name} className="label">{label}</label>
-              <input id={name} type={type} autoComplete={autoComplete} required className="input" {...register(name)}/>
+              <input id={name} type={type} autoComplete={autoComplete ?? 'off'} spellCheck={spellCheck} required
+                     className="input" {...register(name)}/>
             </div>
           ))}
 
@@ -88,7 +89,7 @@ export default function Formulaire() {
             <p role="status" className="text-sm">
               {status === 'sent' && (
                 <span className="flex items-center gap-2 text-success">
-                  <CheckCircle2 className="h-4 w-4"/> Message envoyé, merci !
+                  <CheckCircle2 className="h-4 w-4"/> Message envoyé, merci&nbsp;!
                 </span>
               )}
               {status === 'error' && (
@@ -97,7 +98,7 @@ export default function Formulaire() {
             </p>
             <button type="submit" className="btn-primary" disabled={isSubmitting}>
               {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin"/> : <Send className="h-4 w-4"/>}
-              Envoyer
+              {isSubmitting ? 'Envoi…' : 'Envoyer'}
             </button>
           </div>
         </form>

@@ -21,8 +21,7 @@ export default function FamilyGrid () {
     <section className="container py-24" aria-labelledby="familles-title">
       <Reveal className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
         <div className="max-w-xl">
-          <p className="eyebrow">Familles</p>
-          <h2 id="familles-title" className="mt-3 text-3xl font-semibold sm:text-4xl">
+          <h2 id="familles-title" className="text-3xl font-semibold sm:text-4xl">
             Des tétras aux cichlidés, trouvez vos futurs pensionnaires.
           </h2>
         </div>
@@ -31,12 +30,17 @@ export default function FamilyGrid () {
         </Link>
       </Reveal>
 
-      <div className="mt-12 grid auto-rows-[15rem] gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {/* Mosaïque sans case vide : la première famille en grand, la dernière sur toute la largeur sous 1024 px */}
+      <div className="mt-12 grid auto-rows-[11rem] grid-cols-2 gap-3 sm:auto-rows-[15rem] sm:gap-4 lg:grid-cols-4">
         {FEATURED_FAMILIES.map((f, i) => (
           <Reveal
             key={f.nom}
             delay={(i % 4) * 0.06}
-            className={clsx(i === 0 && 'sm:col-span-2 sm:row-span-2', i === 1 && 'lg:col-span-2')}
+            className={clsx(
+              i === 0 && 'col-span-2 sm:row-span-2',
+              i === 1 && 'lg:col-span-2',
+              i === FEATURED_FAMILIES.length - 1 && 'col-span-2 lg:col-span-1',
+            )}
           >
             <Link
               href={familyHref(f.nom)}
@@ -50,14 +54,16 @@ export default function FamilyGrid () {
                 className="object-cover transition duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"/>
-              <div className="relative p-5">
+              <div className="relative p-4 sm:p-5">
                 <div className="flex items-center justify-between gap-3">
-                  <h3 className={clsx('font-semibold', i === 0 ? 'text-2xl' : 'text-lg')}>{f.nom}</h3>
-                  <ArrowUpRight className="h-5 w-5 shrink-0 text-accent opacity-0 transition group-hover:opacity-100"/>
+                  <h3 className={clsx('min-w-0 font-semibold', i === 0 ? 'text-2xl' : 'text-[0.95rem] sm:text-lg')}>
+                    {f.nom}
+                  </h3>
+                  <ArrowUpRight className="hidden h-5 w-5 shrink-0 text-accent opacity-0 transition group-hover:opacity-100 sm:block"/>
                 </div>
-                <p className="mt-1 line-clamp-2 text-sm text-foreground/75">{f.description}</p>
+                <p className="mt-1 hidden text-sm text-foreground/75 sm:line-clamp-2">{f.description}</p>
                 {counts[f.nom.toLowerCase()] && (
-                  <p className="mt-3 text-xs font-medium text-accent-glow">
+                  <p className="mt-2 text-xs font-medium text-accent-glow sm:mt-3">
                     {counts[f.nom.toLowerCase()]} espèces
                   </p>
                 )}

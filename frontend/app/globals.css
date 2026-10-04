@@ -6,6 +6,7 @@
   html {
     color-scheme: dark;
     scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
   }
 
   body {
@@ -15,6 +16,16 @@
 
   h1, h2, h3, h4 {
     @apply font-display tracking-tight;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Pas de délai de double-tap sur mobile */
+  a, button, input, label, textarea {
+    touch-action: manipulation;
   }
 
   ::selection {
@@ -43,13 +54,6 @@
     z-index: 60;
   }
 
-  .gradient-text {
-    background: linear-gradient(120deg, theme('colors.foreground') 30%, theme('colors.accent-glow'));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
   .eyebrow {
     @apply inline-flex items-center gap-2 font-display text-xs font-medium uppercase tracking-[0.2em] text-accent;
   }
@@ -63,11 +67,11 @@
   }
 
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition duration-200 disabled:cursor-not-allowed disabled:opacity-50;
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full px-5 py-2.5 text-sm font-medium transition duration-200 active:translate-y-px disabled:cursor-not-allowed disabled:opacity-50;
   }
 
   .btn-primary {
-    @apply btn bg-accent text-background shadow-glow hover:bg-accent-glow;
+    @apply btn bg-accent text-background hover:bg-accent-glow;
   }
 
   .btn-ghost {
@@ -82,8 +86,14 @@
     @apply w-full rounded-xl border border-border bg-surface px-4 py-2.5 text-sm text-foreground placeholder:text-muted/70 transition focus:border-accent/60 focus:outline-none focus:ring-2 focus:ring-accent/30;
   }
 
+  /* Libellés en casse normale : les majuscules transformaient « pH » en « PH » */
   .label {
-    @apply mb-1.5 block text-xs font-medium uppercase tracking-wider text-muted;
+    @apply mb-1.5 block text-sm font-medium text-foreground/80;
+  }
+
+  /* Lien d'évitement, visible au premier Tab */
+  .skip-link {
+    @apply sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-3 focus:z-[70] focus:rounded-full focus:bg-accent focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-background;
   }
 
   .chip {

@@ -9,7 +9,7 @@ export default function FishGallery ({ images, alt }) {
 
   return (
     <div>
-      <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-border bg-surface">
+      <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-surface">
         <Image
           key={images[active]}
           src={images[active]}
@@ -32,7 +32,7 @@ export default function FishGallery ({ images, alt }) {
               aria-pressed={i === active}
               className={clsx(
                 'relative aspect-[4/3] w-24 overflow-hidden rounded-xl border transition',
-                i === active ? 'border-accent shadow-glow' : 'border-border opacity-60 hover:opacity-100',
+                i === active ? 'border-accent ring-1 ring-accent' : 'border-border opacity-60 hover:opacity-100',
               )}
             >
               <Image src={src} alt="" fill sizes="96px" className="object-cover"/>

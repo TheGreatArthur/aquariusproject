@@ -33,7 +33,7 @@ export function CatalogueHeader ({ count }) {
 /** Grille d'attente, pendant le chargement de la liste */
 export function CatalogueSkeleton () {
   return (
-    <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3 xl:grid-cols-4">
       {Array.from({ length: 8 }, (_, i) => (
         <div key={i} className="card aspect-[3/4] animate-pulse bg-surface-elevated/60"/>
       ))}
@@ -150,7 +150,7 @@ export default function Catalogue () {
             <p className="mt-2 text-sm text-muted">Essayez un autre terme ou retirez le filtre de famille.</p>
           </div>
         ) : (
-          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3 xl:grid-cols-4">
             {currentPoissons.map((p, i) => <FishCard key={p.id} poisson={p} priority={i < 4}/>)}
           </div>
         )}
