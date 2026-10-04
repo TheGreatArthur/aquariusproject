@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Jordanella floridae",
+  "nom_valide": null,
+  "auteur": "Goode & Bean, 1879",
+  "classification": "Cyprinodontiformes › Cyprinodontidae",
+  "uicn": "NE",
+  "repartition": "États-Unis : péninsule de Floride, au sud des bassins de l'Ochlockonee et du Saint Johns",
+  "pays": [
+    "USA"
+  ],
+  "presentation": "Ce killi drapeau, dédié à l'ichtyologiste David Starr Jordan, est un classique de l'aquariophilie, élevé commercialement. Ce n'est pas un killi annuel. Il figurait au Livre Guinness des records comme le poisson pondant le moins d'œufs : une vingtaine, sur plusieurs jours. Le mâle garde la ponte.",
+  "habitat": "Il vit dans les eaux peu profondes et envahies d'herbes : bras morts, marais, canaux et fossés, mares, lacs et cours d'eau lents, parfois en eau légèrement saumâtre.",
+  "comportement": "Mieux vaut le garder seul, surtout pour la reproduction, mais il peut vivre en bac communautaire bien pensé s'il a assez de place : chaque mâle défend un territoire, ce qui permet en général d'en garder deux ou plus. Micro-prédateur qui consomme aussi des algues : aliments secs, petites proies vivantes ou congelées et végétaux. Il apprécie une eau plus fraîche.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Jordanella-floridae.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/jordanella-floridae/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2348164"
+    }
+  ]
+}

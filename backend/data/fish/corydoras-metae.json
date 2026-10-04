@@ -1,0 +1,40 @@
+{
+  "nom_scientifique": "Corydoras metae",
+  "nom_commun": "Corydoras de Meta",
+  "famille": "Callichthyidae",
+  "genre": "Corydoras",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 12.0,
+  "temp_mini": 20,
+  "temp_maxi": 26,
+  "taille": 5.0,
+  "litrage_mini": 90,
+  "nb_individus": 8,
+  "points": 5,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "courant",
+  "longevite": 5,
+  "courant": "doux",
+  "photos": [
+    "File:Acuario.jpg",
+    "File:04.Corydoras panda.JPG"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/corydoras-metae/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Corydoras-metae.html"
+    }
+  ]
+}

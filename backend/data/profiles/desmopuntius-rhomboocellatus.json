@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Desmopuntius rhomboocellatus",
+  "nom_valide": null,
+  "auteur": "(Koumans, 1940)",
+  "classification": "Cypriniformes › Cyprinidae",
+  "uicn": "LC",
+  "repartition": "Indonésie : sud et ouest de Kalimantan (Bornéo), bassins de la Kapuas, du Barito et du Kahayan",
+  "pays": [
+    "IDN"
+  ],
+  "presentation": "Son nom d'espèce décrit les ocelles en losange de ses flancs, et son genre (du grec « prisonnier ») ses barres sombres. Longtemps rangé dans le vaste genre *Puntius*, il a rejoint le genre *Desmopuntius* créé en 2013.",
+  "habitat": "Il vit surtout dans les forêts marécageuses tourbeuses et leurs ruisseaux d'eaux noires, ainsi que dans d'autres eaux calmes : eau brune, sans minéraux, au pH parfois de 3 à 4, fond de feuilles et de racines, avec des herbes ou des plantes immergées.",
+  "comportement": "Paisible, il convient à un bac d'espèces d'Asie du Sud-Est de taille comparable (petits cyprinidés, loches, anabantoïdes calmes), sans compagnons turbulents. Micro-prédateur, il accepte les aliments secs fins, à compléter chaque jour de petites proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Desmopuntius-rhomboocellatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/desmopuntius-rhomboocellatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/7461587"
+    }
+  ]
+}

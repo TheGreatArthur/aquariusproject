@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Pseudomugil signifer",
+  "nom_commun": "Œil-bleu du Pacifique",
+  "famille": "Pseudomugilidae",
+  "genre": "Pseudomugil",
+  "zone_geo": "Océanie",
+  "type_eau": "douce",
+  "ph_mini": 6.5,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 20,
+  "temp_maxi": 26,
+  "taille": 7.0,
+  "litrage_mini": 70,
+  "nb_individus": 8,
+  "points": 10,
+  "regime": "carnivore et planctophage",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 5,
+  "courant": "doux, modéré",
+  "photos": [
+    "File:Pseudomugil signifer 333080668.jpg",
+    "File:Pseudomugil signifer 238169927.jpg",
+    "File:Pseudomugil signifer 28436969.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pseudomugil-signifer/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pseudomugil-signifer.html"
+    }
+  ]
+}

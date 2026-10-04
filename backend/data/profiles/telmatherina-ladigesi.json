@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Telmatherina ladigesi",
+  "nom_valide": "Marosatherina ladigesi",
+  "auteur": "(Ahl, 1936)",
+  "classification": "Atheriniformes › Telmatherinidae",
+  "uicn": "VU",
+  "repartition": "Indonésie : sud de Sulawesi (anciennes Célèbes), région de Bantimurung",
+  "pays": [
+    "IDN"
+  ],
+  "presentation": "L'arc-en-ciel des Célèbes, aux nageoires jaunes à filaments noirs chez le mâle, est aujourd'hui la seule espèce du genre *Marosatherina*, mais reste cité sous le nom de *Telmatherina* dans une grande partie de la littérature. La surpêche pour l'aquariophilie l'a fait classer vulnérable ; il est heureusement élevé en masse.",
+  "habitat": "Il vit dans les ruisseaux clairs et lents des contreforts et dans les zones d'estuaire.",
+  "comportement": "Très paisible et de taille modeste, il convient à de nombreux bacs communautaires d'eau dure : arcs-en-ciel de taille comparable, vivipares, gobies d'eau douce, voire en eau saumâtre avec mollys et demi-becs. Assez craintif, il se sent bien mieux en banc d'au moins 6 à 8. Facile à nourrir : aliments secs, congelés et vivants variés pour de belles couleurs. Plantes nécessaires.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Telmatherina-ladigesi.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/marosatherina-ladigesi/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2412071"
+    }
+  ]
+}

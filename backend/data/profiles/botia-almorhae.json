@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Botia almorhae",
+  "nom_valide": null,
+  "auteur": "Gray, 1831",
+  "classification": "Cypriniformes › Botiidae",
+  "uicn": "LC",
+  "repartition": "Bassin du Gange (nord de l'Inde) et peut-être Népal",
+  "pays": [
+    "IND",
+    "MMR",
+    "NPL"
+  ],
+  "presentation": "Nommé d'après le district d'Almora, dans l'Himalaya indien, ce botia appartient à un groupe d'espèces très proches. Souvent appelé à tort « loche du Pakistan », le vrai *B. almorhae* n'a peut-être jamais été vendu : les poissons du commerce sous ce nom sont le plus souvent *B. lohachata* ou d'autres formes voisines.",
+  "habitat": "Rivière de piémont, il se tient dans les fosses et les zones calmes à fond rocheux ou graveleux ; il migre vers l'amont avant de frayer.",
+  "comportement": "Pas vraiment agressif mais très actif, il peut intimider les petits poissons et pincer les longues nageoires (Betta, guppys, beaucoup de cichlidés). On le garde en groupe, avec des cyprinidés de pleine eau. Surtout carnivore (mollusques, insectes, vers), il mange aussi les plantes tendres.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Botia-almorhae.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/botia-almorhae/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2368023"
+    }
+  ]
+}

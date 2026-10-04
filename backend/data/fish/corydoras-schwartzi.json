@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Corydoras schwartzi",
+  "nom_commun": "Corydoras de Schwartz",
+  "famille": "Callichthyidae",
+  "genre": "Corydoras",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 22,
+  "temp_maxi": 24,
+  "taille": 7.0,
+  "litrage_mini": 80,
+  "nb_individus": 8,
+  "points": 10,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "sensible",
+  "dispo": "peu courant",
+  "longevite": 5,
+  "courant": "doux",
+  "photos": [
+    "File:Schwartzi.JPG",
+    "File:Corydoras schwartzi f.jpg",
+    "File:Corydoras schwartzi m.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/corydoras-schwartzi/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Corydoras-schwartzi.html"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Poecilia velifera",
+  "nom_commun": "Molly voilé",
+  "famille": "Poeciliidae",
+  "genre": "Poecilia",
+  "zone_geo": "Amérique centrale",
+  "type_eau": "douce",
+  "ph_mini": 7.0,
+  "ph_maxi": 8.5,
+  "kh": null,
+  "gh_mini": 15.0,
+  "gh_maxi": 35.0,
+  "temp_mini": 22,
+  "temp_maxi": 28,
+  "taille": 15.0,
+  "litrage_mini": 130,
+  "nb_individus": 4,
+  "points": 20,
+  "regime": "omnivore",
+  "mode_vie": "harem",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "courant",
+  "longevite": 12,
+  "courant": "doux",
+  "photos": [
+    "File:PoeciliaVelifera (cropped).jpg",
+    "File:Poecilia velifera.jpg",
+    "File:PoeciliaVelifera.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/poecilia-velifera/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Poecilia-velifera.html"
+    }
+  ]
+}

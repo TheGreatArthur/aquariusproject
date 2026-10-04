@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Microctenopoma ansorgii",
+  "nom_valide": null,
+  "auteur": "(Boulenger, 1912)",
+  "classification": "Anabantiformes › Anabantidae",
+  "uicn": "LC",
+  "repartition": "Bassin du Congo (République du Congo, RD Congo) et fleuve Chiloango",
+  "pays": [
+    "AGO",
+    "COD",
+    "COG"
+  ],
+  "presentation": "Le plus coloré des anabantoïdes africains, très recherché : un mâle en livrée nuptiale, orange barré de bandes sombres, est un spectacle. Difficile à capturer en nombre, il reste assez rare dans le commerce. Le mâle construit un nid de bulles.",
+  "habitat": "Il vit dans les petits cours d'eau, dans la végétation dense près des berges. Il peut respirer l'air en surface.",
+  "comportement": "Lent, il se fait distancer à table par les espèces turbulentes : on l'associe à de petits poissons paisibles des autres niveaux (poissons-hachettes, lampeyes, Corydoras, petits Loricariidés), ou mieux en bac spécifique. Les mâles peuvent s'affronter, surtout à la reproduction. Surtout de petites proies vivantes ou congelées ; il accepte rarement les aliments secs.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Microctenopoma-ansorgii.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/microctenopoma-ansorgii/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2391639"
+    }
+  ]
+}

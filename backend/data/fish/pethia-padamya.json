@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Pethia padamya",
+  "nom_commun": "Barbu odessa",
+  "famille": "Cyprinidae",
+  "genre": "Pethia",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.5,
+  "ph_maxi": 8.5,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 20.0,
+  "temp_mini": 16,
+  "temp_maxi": 25,
+  "taille": 4.5,
+  "litrage_mini": 90,
+  "nb_individus": 8,
+  "points": 5,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "courant",
+  "longevite": 5,
+  "courant": "doux, modéré",
+  "photos": [
+    "File:Pethia padamya - male - AquaPorteDoree 01.JPG",
+    "File:Pethia padamya - male - AquaPorteDoree 03.JPG",
+    "File:Pethia padamya - femelle - AquaPorteDoree 02.JPG"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pethia-padamya/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pethia-padamya.html"
+    }
+  ]
+}

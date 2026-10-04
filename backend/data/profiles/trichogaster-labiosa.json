@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Trichogaster labiosa",
+  "nom_valide": null,
+  "auteur": "Day, 1877",
+  "classification": "Anabantiformes › Osphronemidae",
+  "uicn": "LC",
+  "repartition": "Sud du Myanmar ; répandu dans le monde par l'aquariophilie",
+  "pays": [
+    "MMR"
+  ],
+  "presentation": "Malgré sa facilité et son caractère paisible, ce gourami aux lèvres épaisses est assez peu populaire, bien qu'importé régulièrement. Il existe une forme dorée « sunset », sélectionnée pour le commerce, où les bandes sont remplacées par une couleur orange ; la femelle y est presque aussi colorée que le mâle.",
+  "habitat": "Il vit dans les rivières lentes et ombragées et les mares, surtout dans les zones riches en végétation flottante. Il respire l'air en surface.",
+  "comportement": "L'un des meilleurs gouramis pour le bac communautaire, bien plus adapté que le gourami nain : un groupe acheté jeune vit en général en paix toute sa vie. Il cohabite avec Danio, Rasbora, petits barbus, loches et autres anabantoïdes paisibles, mais pas avec le gourami rayé (hybridation). Peu exigeant, il raffole des petites proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Trichogaster-labiosa.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/trichogaster-labiosa/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5211187"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Synodontis petricola",
+  "nom_valide": null,
+  "auteur": "Matthes, 1959",
+  "classification": "Siluriformes › Mochokidae",
+  "uicn": "LC",
+  "repartition": "Endémique du lac Tanganyika (Burundi, RD Congo, Tanzanie, Zambie)",
+  "pays": [
+    "BDI",
+    "COD",
+    "TZA",
+    "ZMB"
+  ],
+  "presentation": "Ce petit Synodontis noir à pois blancs, aux nageoires bordées de blanc, est très recommandé pour les bacs de cichlidés du Tanganyika. Il en existe une forme naine, très adaptable sur la qualité de l'eau, qui peut même vivre dans un bac d'Amérique du Sud.",
+  "habitat": "Il vit parmi les roches du lac.",
+  "comportement": "Il ne doit pas vivre avec des poissons assez petits pour être mangés, mais il complète bien un bac de cichlidés d'eau dure, idéalement des incubateurs buccaux des lacs africains, ou d'arcs-en-ciel et de vivipares de taille adaptée. À garder en groupe de 4 ou plus, car un individu seul reste souvent caché. Omnivore peu difficile : aliments vivants, congelés et secs, et des végétaux.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Synodontis-petricola.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/synodontis-petricola/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2344304"
+    }
+  ]
+}

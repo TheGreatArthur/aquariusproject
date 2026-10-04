@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Mesonauta festivus",
+  "nom_valide": null,
+  "auteur": "(Heckel, 1840)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Bassins de l'Amazone (Tapajós, Jamari, Madre de Dios, Guaporé, Mamoré) et du Paraguay : Pérou, Brésil, Bolivie, Paraguay",
+  "pays": [
+    "BOL",
+    "BRA",
+    "PER",
+    "PRY"
+  ],
+  "presentation": "Le festivum, ou cichlidé drapeau, se reconnaît à la bande sombre oblique qui va de la bouche à la pointe de la dorsale. Toujours populaire, il est présent dans la plupart des animaleries, mais le poisson vendu sous ce nom est le plus souvent *Mesonauta insignis*.",
+  "habitat": "Il vit dans les eaux lentes et très végétalisées, sur des rives sableuses ou vaseuses, près des plantes aquatiques.",
+  "comportement": "Cichlidé paisible, plus agressif à la reproduction. Il cohabite avec d'autres cichlidés calmes (Geophagus, Apistogramma) et des poissons communautaires paisibles (tétras, barbus, petits poissons-chats), mais de très petits poissons peuvent être mangés. Omnivore généraliste : aliments préparés, proies vivantes (vers de vase, Artemia) et un peu de végétaux.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Mesonauta-festivus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/mesonauta-festivus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2369921"
+    }
+  ]
+}

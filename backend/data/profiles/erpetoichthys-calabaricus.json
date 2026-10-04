@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Erpetoichthys calabaricus",
+  "nom_valide": null,
+  "auteur": "Smith, 1865",
+  "classification": "Polypteriformes › Polypteridae",
+  "uicn": "NT",
+  "repartition": "Afrique de l'Ouest côtière : du fleuve Ouémé (Bénin) à la Sanaga (Cameroun)",
+  "pays": [
+    "BEN",
+    "CMR",
+    "NGA"
+  ],
+  "presentation": "Seule espèce de son genre, le « poisson-roseau » est un proche parent des polyptères, derniers représentants d'une lignée très ancienne. Au corps de serpent, il nage en ondulant au fond comme en pleine eau, respire l'air et voit mal : il chasse à l'odorat, surtout la nuit.",
+  "habitat": "Il vit dans des eaux peu profondes et très végétalisées, rivières lentes et eaux stagnantes, apparemment liées aux roselières, jusque dans les estuaires.",
+  "comportement": "Il mange tout poisson qui tient dans sa bouche, mais reste paisible avec les autres et peut vivre en petit groupe. On l'associe à des Synodontis, de grands characidés et des cichlidés comme le sévérum ou le scalaire, pas à des espèces trop vives. Carnivore, il refuse en général les aliments secs : crevettes, vers, moules, larves. Il s'échappe facilement : aquarium bien fermé.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Erpetoichthys-calabaricus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/erpetoichthys-calabaricus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2346564"
+    }
+  ]
+}

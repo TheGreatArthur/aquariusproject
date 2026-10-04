@@ -1,0 +1,35 @@
+{
+  "nom_scientifique": "Garra rufa",
+  "nom_valide": null,
+  "auteur": "(Heckel, 1843)",
+  "classification": "Cypriniformes › Cyprinidae",
+  "uicn": "LC",
+  "repartition": "Moyen-Orient : bassins du Jourdain, de l'Oronte et du Tigre-Euphrate, fleuves côtiers du sud de la Turquie et du nord de la Syrie",
+  "pays": [
+    "AFG",
+    "IRN",
+    "IRQ",
+    "ISR",
+    "JOR",
+    "LBN",
+    "SYR",
+    "TUR"
+  ],
+  "presentation": "Le « poisson docteur » est utilisé dans des bassins de soins où il grignote les peaux mortes, avec une efficacité discutée contre le psoriasis. On ignore souvent si les poissons vendus sont bien *G. rufa* : l'espèce, telle qu'on la conçoit aujourd'hui, regroupe probablement plusieurs espèces.",
+  "habitat": "Il préfère les têtes de bassin et affluents rapides, en eau claire saturée d'oxygène où se développe un riche biofilm, mais vit aussi dans des rivières de plaine, des réservoirs et des milieux temporaires qui s'assèchent en partie.",
+  "comportement": "Assez paisible, il supporte mal ses congénères dans un petit bac ; seul, il devient agressif envers les poissons de même forme. Un groupe de trois ou quatre s'organise en hiérarchie sans dommage. Il broute les algues mais n'est pas herbivore strict : proies vivantes ou congelées, aliments coulants et végétaux. Il aime le courant et l'eau assez fraîche.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Garra-rufa.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/garra-rufa/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2366850"
+    }
+  ]
+}

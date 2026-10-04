@@ -1,0 +1,32 @@
+{
+  "nom_scientifique": "Gyrinocheilus aymonieri",
+  "nom_valide": null,
+  "auteur": "(Tirant, 1883)",
+  "classification": "Cypriniformes › Gyrinocheilidae",
+  "uicn": "LC",
+  "repartition": "Bassins du Mae Klong, du Chao Phraya, du moyen et bas Mékong et du Dong Nai : Thaïlande, Laos, Cambodge, Viêt Nam",
+  "pays": [
+    "CHN",
+    "KHM",
+    "LAO",
+    "THA",
+    "VNM"
+  ],
+  "presentation": "Vendu sous le nom de « mangeur d'algues chinois » ou « indien », il ne vit pourtant ni en Chine ni en Inde. Les jeunes sont vendus sans information sur leur caractère, leur taille adulte (28 cm) ni leur longévité, qui peut dépasser 15 ans. Tous les poissons du commerce sont élevés ; il existe des formes albinos, dorée et panachée, et la forme dorée est parfois colorée artificiellement par injection.",
+  "habitat": "Il vit dans les cours d'eau courants, sur blocs, galets, gravier et sable, souvent près du bois immergé ou des racines, et gagne les champs inondés. Fixé aux surfaces par sa bouche en ventouse, il respire par un petit orifice au-dessus des branchies, sans lâcher prise dans le courant.",
+  "comportement": "Malgré l'usage, il convient mal au bac communautaire : discret jeune, il devient de plus en plus territorial en grandissant, très agressif envers les poissons qui lui ressemblent (Crossocheilus, Epalzeorhynchos, Garra), et il peut se coller au flanc de poissons lents ou à corps plat. Brouteur d'aufwuchs : végétaux frais (courgette, concombre, petits pois), aliments secs et petites proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Gyrinocheilus-aymonieri.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/gyrinocheilus-aymonieri/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2368346"
+    }
+  ]
+}

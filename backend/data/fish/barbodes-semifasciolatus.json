@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Barbodes semifasciolatus",
+  "nom_commun": "Barbu doré",
+  "famille": "Cyprinidae",
+  "genre": "Barbodes",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 2.0,
+  "gh_maxi": 20.0,
+  "temp_mini": 16,
+  "temp_maxi": 24,
+  "taille": 7.5,
+  "litrage_mini": 100,
+  "nb_individus": 8,
+  "points": 10,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "très robuste",
+  "dispo": "très courant",
+  "longevite": 5,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Puntius semifasciolatus in Botanic garden in Teplice.JPG",
+    "File:Puntius semifasciolatus (aka).jpg",
+    "File:Gold Barb 700.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/barbodes-semifasciolatus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Barbodes-semifasciolatus.html"
+    }
+  ]
+}

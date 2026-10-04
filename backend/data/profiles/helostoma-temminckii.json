@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Helostoma temminckii",
+  "nom_valide": null,
+  "auteur": "Cuvier, 1829",
+  "classification": "Anabantiformes › Helostomatidae",
+  "uicn": "LC",
+  "repartition": "Sud de l'Indochine (Viêt Nam, Cambodge, Thaïlande), Malaisie péninsulaire, Bornéo, Sumatra et Java",
+  "pays": [
+    "IDN",
+    "KHM",
+    "MYS",
+    "THA"
+  ],
+  "presentation": "Le gourami embrasseur doit son nom aux « baisers » qu'échangent deux individus, en fait une forme d'affrontement. La forme rose, l'une des plus vendues au monde, n'existe pas dans la nature : c'est une variété leucique sélectionnée. La forme « ballon », volontairement déformée, est à éviter.",
+  "habitat": "Il préfère les eaux lentes ou stagnantes (lacs de plaine inondable, bras morts, marais), noires ou claires, près des herbiers immergés. Les eaux noires des tourbières anciennes peuvent descendre à un pH de 3 ou 4. Il respire l'air en surface.",
+  "comportement": "Il ne convient qu'aux grands bacs communautaires de poissons robustes : incapable de chasser des proies de plus de quelques millimètres, il peut vivre avec des cyprinidés de banc, poissons-chats, characidés, cichlidés et autres anabantoïdes de taille adaptée. Il devient agressif s'il manque de place. Filtreur spécialisé, il racle aussi les algues de ses lèvres garnies de dents cornées : aliments fins et végétaux.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Helostoma-temminckii.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/helostoma-temminkii/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2392012"
+    }
+  ]
+}

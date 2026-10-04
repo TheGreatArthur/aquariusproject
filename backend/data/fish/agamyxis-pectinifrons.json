@@ -1,0 +1,40 @@
+{
+  "nom_scientifique": "Agamyxis pectinifrons",
+  "nom_commun": "Poisson-chat à pois blancs",
+  "famille": "Doradidae",
+  "genre": "Agamyxis",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 5.5,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 20.0,
+  "temp_mini": 22,
+  "temp_maxi": 26,
+  "taille": 15.0,
+  "litrage_mini": 140,
+  "nb_individus": 4,
+  "points": 20,
+  "regime": "carnivore et omnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "peu agressif",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 12,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Dornwels.JPG",
+    "File:Agamyxis.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/agamyxis-pectinifrons/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Agamyxis-pectinifrons.html"
+    }
+  ]
+}

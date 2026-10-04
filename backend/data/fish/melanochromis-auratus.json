@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Melanochromis auratus",
+  "nom_commun": "Melanochromis doré",
+  "famille": "Cichlidae africain",
+  "genre": "Melanochromis",
+  "zone_geo": "Afrique",
+  "type_eau": "douce",
+  "ph_mini": 7.6,
+  "ph_maxi": 8.8,
+  "kh": null,
+  "gh_mini": 10.0,
+  "gh_maxi": 25.0,
+  "temp_mini": 24,
+  "temp_maxi": 28,
+  "taille": 11.0,
+  "litrage_mini": 250,
+  "nb_individus": 4,
+  "points": 20,
+  "regime": "herbivore, alguivore",
+  "mode_vie": "harem",
+  "comportement": "moyennement agressif",
+  "robustesse": "robuste",
+  "dispo": "courant",
+  "longevite": 8,
+  "courant": "doux",
+  "photos": [
+    "File:Melanochromis auratus, female.jpg",
+    "File:Melanochromis auratus - Türkisgoldbarsch ♀.jpg",
+    "File:非洲鳳凰 Melanochromis auratus - panoramio.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/melanochromis-auratus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Melanochromis-auratus.html"
+    }
+  ]
+}

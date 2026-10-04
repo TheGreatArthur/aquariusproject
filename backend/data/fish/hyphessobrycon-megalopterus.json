@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Hyphessobrycon megalopterus",
+  "nom_commun": "Tétra fantôme noir",
+  "famille": "Characidae",
+  "genre": "Hyphessobrycon",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 5.0,
+  "ph_maxi": 7.0,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 12.0,
+  "temp_mini": 20,
+  "temp_maxi": 28,
+  "taille": 3.5,
+  "litrage_mini": 90,
+  "nb_individus": 8,
+  "points": 5,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "courant",
+  "longevite": 4,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Hyphessobrycon megalopterus Porte Doree.jpg",
+    "File:Black phantom tetra.jpg",
+    "File:Black phantom tetra, male.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hyphessobrycon-megalopterus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hyphessobrycon-megalopterus.html"
+    }
+  ]
+}

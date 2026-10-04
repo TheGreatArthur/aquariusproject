@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Heros efasciatus",
+  "nom_commun": "Sévérum",
+  "famille": "Cichlidae américain",
+  "genre": "Heros",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 5.5,
+  "ph_maxi": 7.0,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 8.0,
+  "temp_mini": 22,
+  "temp_maxi": 29,
+  "taille": 30.0,
+  "litrage_mini": 300,
+  "nb_individus": 2,
+  "points": 50,
+  "regime": "omnivore",
+  "mode_vie": "couple",
+  "comportement": "peu agressif",
+  "robustesse": "robuste",
+  "dispo": "courant",
+  "longevite": 15,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Heros efasciatus - 1.jpg",
+    "File:Heros efasciatus - 2.jpg",
+    "File:Heros efasciatus in the Leningrad zoo.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/heros-efasciatus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Heros-efasciatus.html"
+    }
+  ]
+}

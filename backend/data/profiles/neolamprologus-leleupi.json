@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Neolamprologus leleupi",
+  "nom_valide": null,
+  "auteur": "(Poll, 1956)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Endémique de la moitié sud du lac Tanganyika (RD Congo, Tanzanie, Zambie)",
+  "pays": [
+    "COD",
+    "TZA",
+    "ZMB"
+  ],
+  "presentation": "Ce lamprologue citron, d'un jaune orangé éclatant en bonne santé, est l'un des cichlidés du Tanganyika les plus populaires. Il est pourtant moins facile à maintenir que sa popularité le laisse penser, à cause de son intolérance envers ses congénères et de sa sensibilité à la dégradation de l'eau.",
+  "habitat": "Il vit dans les zones rocheuses du littoral, en général au fond des recoins, où il cherche des invertébrés dans les algues et les anfractuosités. Solitaire dans la nature, le mâle visite les grottes des femelles pour s'y reproduire.",
+  "comportement": "Agressif et territorial à la reproduction, il est assez calme le reste du temps. On l'associe à de petits ou moyens cichlidés du Tanganyika vivant ailleurs dans le bac (Cyprichromis), voire à d'autres poissons de roches (Julidochromis, Altolamprologus) dans un grand bac aux territoires suffisants. Jamais avec des mbunas ou des espèces turbulentes. Proies vivantes et congelées surtout, un peu de spiruline.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Neolamprologus-leleupi.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/neolamprologus-leleupi/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2371746"
+    }
+  ]
+}

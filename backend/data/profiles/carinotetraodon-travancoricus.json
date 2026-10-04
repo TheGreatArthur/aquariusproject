@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Carinotetraodon travancoricus",
+  "nom_valide": null,
+  "auteur": "(Hora & Nair, 1941)",
+  "classification": "Tetraodontiformes › Tetraodontidae",
+  "uicn": "VU",
+  "repartition": "Inde : endémique du Kerala",
+  "pays": [
+    "IND"
+  ],
+  "presentation": "Probablement le plus petit des poissons-globes (moins de 2,5 cm), aussi appelé « tétraodon du Malabar ». Populaire pour sa mine et sa nage étonnante, il est souvent vendu sans les informations nécessaires à son entretien, et il est classé vulnérable.",
+  "habitat": "Strictement d'eau douce, il vit dans les eaux lentes et très végétalisées de l'intérieur du Kerala.",
+  "comportement": "Peu adapté au bac communautaire : il pince les nageoires des poissons lents et se fait distancer à table par les espèces vives. On le garde plutôt en bac spécifique, éventuellement avec des *Otocinclus*. Il lui faut de petits escargots à coquille pour user ses dents, qui poussent sans cesse, et des proies vivantes ou congelées. Très sensible à la qualité de l'eau.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Carinotetraodon-travancoricus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/carinotetraodon-travancoricus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2407801"
+    }
+  ]
+}

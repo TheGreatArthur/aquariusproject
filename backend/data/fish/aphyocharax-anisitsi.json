@@ -1,0 +1,40 @@
+{
+  "nom_scientifique": "Aphyocharax anisitsi",
+  "nom_commun": "Tétra à nageoires rouges",
+  "famille": "Characidae",
+  "genre": "Aphyocharax",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 3.0,
+  "gh_maxi": 25.0,
+  "temp_mini": 18,
+  "temp_maxi": 28,
+  "taille": 5.5,
+  "litrage_mini": 70,
+  "nb_individus": 8,
+  "points": 5,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "peu agressif",
+  "robustesse": "robuste",
+  "dispo": "courant",
+  "longevite": 5,
+  "courant": "doux, modéré",
+  "photos": [
+    "File:Aphyocharax anisitsi 2.jpg",
+    "File:The complete aquarium book; the care and breeding of goldfish and tropical fishes (1936) (20049231384).jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/aphyocharax-anisitsi/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Aphyocharax-anisitsi.html"
+    }
+  ]
+}

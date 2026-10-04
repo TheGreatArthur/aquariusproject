@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Uaru amphiacanthoides",
+  "nom_valide": null,
+  "auteur": "Heckel, 1840",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Bassin de l'Amazone : moyen et bas Rio Negro, et Solimões-Amazone du Japurá au Tapajós",
+  "pays": [
+    "BRA"
+  ],
+  "presentation": "Ce grand cichlidé sud-américain est étonnamment paisible pour sa taille. Il demande une eau propre, bien filtrée et plutôt chaude. Dans la nature, il consomme beaucoup de végétaux, des invertébrés et même des éponges d'eau douce ; les essais en captivité le montrent surtout herbivore.",
+  "habitat": "Il vit dans les affluents d'eau claire, souvent près des branches ou des racines immergées, à un pH voisin de 6,8.",
+  "comportement": "Il peut vivre avec des poissons plus petits comme les tétras. Compagnons idéaux : scalaires (*P. altum* et *P. scalare*), sévérums, géophages, Satanoperca et grands characidés (Anostomidae, Prochilodus, Metynnis), qui doivent supporter une eau chaude. Éviter les poissons trop agressifs. Il se plaît en couple ou en groupe. Beaucoup de végétaux, avec des vers, crustacés et insectes.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Uaru-amphiacanthoides.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/uaru-amphiacanthoides/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2371462"
+    }
+  ]
+}

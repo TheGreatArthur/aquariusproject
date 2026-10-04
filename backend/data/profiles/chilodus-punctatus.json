@@ -1,0 +1,33 @@
+{
+  "nom_scientifique": "Chilodus punctatus",
+  "nom_valide": null,
+  "auteur": "Müller & Troschel, 1844",
+  "classification": "Characiformes › Chilodidae",
+  "uicn": "LC",
+  "repartition": "Bassin de l'Amazone (Équateur, Pérou, Brésil), ouest de l'Orénoque (Colombie), fleuves côtiers des Guyanes",
+  "pays": [
+    "BRA",
+    "COL",
+    "ECU",
+    "GUY",
+    "PER",
+    "SUR"
+  ],
+  "presentation": "Son nom de genre associe « lèvre » et « dent », et *punctatus* décrit ses rangées de points. Ce characiforme, aussi appelé « poisson tête en bas à damier », nage souvent la tête inclinée vers le bas. Sa coloration varie selon les localités.",
+  "habitat": "Il vit surtout dans les rivières lentes, les affluents, les bras morts et les lacs de plaine inondable.",
+  "comportement": "Timide et paisible, il n'aime pas les espèces turbulentes : il cohabite avec des tétras, de petits Loricariidés, des Corydoras et des cichlidés calmes. En groupe, les querelles restent sans gravité avec assez de cachettes. Omnivore, il mange surtout des insectes, des fruits et même des écailles dans la nature. Sensible aux déchets organiques, il ne supporte pas un bac récent.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Chilodus-punctatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/chilodus-punctatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5204644"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Rasboroides vaterifloris",
+  "nom_valide": null,
+  "auteur": "(Deraniyagala, 1930)",
+  "classification": "Cypriniformes › Danionidae",
+  "uicn": "EN",
+  "repartition": "Endémique du sud-ouest du Sri Lanka : bassins de la Kalu, de la Bentota, de la Gin et de la Nilwala",
+  "pays": [
+    "LKA"
+  ],
+  "presentation": "Ce petit rasbora orange aux reflets nacrés, surnommé « perle de feu », est peu courant dans le commerce : peu élevé commercialement, il supporte mal le transport, et le Sri Lanka limite l'exportation des poissons sauvages. Il est classé en danger : il ne reste presque plus de forêt dans son aire, et l'eau y est très dégradée.",
+  "habitat": "Il vit dans la « zone humide » du Sri Lanka, qui reçoit 2 000 à 3 000 mm de pluie par an : ruisseaux forestiers peu profonds, frais, clairs, calmes et très ombragés, sur fond de limon, souvent riches en feuilles mortes. Il y mange des insectes tombés à l'eau et des détritus.",
+  "comportement": "Discret, il se fait intimider ou distancer à table par les compagnons plus grands ou turbulents. Compagnons idéaux : petits cyprinidés (Trigonostigma, Boraras, petits Rasbora, certains Pethia et Puntius) et loches paisibles comme les Pangio. Poisson de banc, au moins 6 à 10. Facile à nourrir, avec de petites proies vivantes ou congelées pour la forme et les couleurs.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Rasboroides-vaterifloris.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/rasboroides-vaterifloris/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5851550"
+    }
+  ]
+}

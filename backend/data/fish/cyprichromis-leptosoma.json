@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Cyprichromis leptosoma",
+  "nom_commun": "Cyprichromis",
+  "famille": "Cichlidae africain",
+  "genre": "Cyprichromis",
+  "zone_geo": "Afrique",
+  "type_eau": "douce",
+  "ph_mini": 7.8,
+  "ph_maxi": 9.0,
+  "kh": null,
+  "gh_mini": 10.0,
+  "gh_maxi": 25.0,
+  "temp_mini": 24,
+  "temp_maxi": 27,
+  "taille": 12.5,
+  "litrage_mini": 300,
+  "nb_individus": 10,
+  "points": 20,
+  "regime": "carnivore et planctophage",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "tolérant",
+  "dispo": "occasionnel",
+  "longevite": 8,
+  "courant": "doux",
+  "photos": [
+    "File:Cyprichromis leptosoma 'Kitumba' - Karlsruhe Zoo 01.jpg",
+    "File:Cyprichromis kitumba.jpg",
+    "File:Cyprichromis leptosoma (Wroclaw zoo)-3.JPG"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/cyprichromis-leptosoma/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Cyprichromis-leptosoma.html"
+    }
+  ]
+}

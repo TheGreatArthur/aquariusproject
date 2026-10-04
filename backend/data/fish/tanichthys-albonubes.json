@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Tanichthys albonubes",
+  "nom_commun": "Vairon de Chine",
+  "famille": "Tanichthyidae",
+  "genre": "Tanichthys",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 8.5,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 20.0,
+  "temp_mini": 14,
+  "temp_maxi": 22,
+  "taille": 4.0,
+  "litrage_mini": 70,
+  "nb_individus": 8,
+  "points": 5,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "très robuste",
+  "dispo": "très courant",
+  "longevite": 5,
+  "courant": "doux",
+  "photos": [
+    "File:White Cloud Mountain minnow (Tanichthys albonubes) captive adult female.jpg",
+    "File:Tanichthys albonubes gold.jpg",
+    "File:White cloud - male (4057199382).jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/tanichthys-albonubes/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Tanichthys-albonubes.html"
+    }
+  ]
+}

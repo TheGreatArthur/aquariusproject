@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Misgurnus anguillicaudatus",
+  "nom_commun": "Loche météo",
+  "famille": "Cobitidae",
+  "genre": "Misgurnus",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 12.0,
+  "temp_mini": 5,
+  "temp_maxi": 25,
+  "taille": 28.0,
+  "litrage_mini": 300,
+  "nb_individus": 3,
+  "points": 50,
+  "regime": "carnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "pacifique",
+  "robustesse": "très robuste",
+  "dispo": "courant",
+  "longevite": 12,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Weather loach.jpg",
+    "File:Weather Loach.jpg",
+    "File:Dojo loach2.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/misgurnus-anguillicaudatus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Misgurnus-anguillicaudatus.html"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "nom_scientifique": "Aplocheilus panchax",
+  "nom_valide": null,
+  "auteur": "(Hamilton, 1822)",
+  "classification": "Cyprinodontiformes › Aplocheilidae",
+  "uicn": "LC",
+  "repartition": "Asie du Sud et du Sud-Est : du Pakistan à l'Inde, au Bangladesh, au Myanmar et à l'archipel indo-malais",
+  "pays": [
+    "BGD",
+    "IDN",
+    "IND",
+    "KHM",
+    "LKA",
+    "MMR",
+    "MYS",
+    "NPL",
+    "PAK",
+    "SGP",
+    "THA",
+    "VNM"
+  ],
+  "presentation": "Décrit en 1822 par Hamilton, ce petit killi est l'un des Aplocheilidae les plus répandus d'Asie. Il vit juste sous la surface, où il chasse les insectes.",
+  "habitat": "Il occupe une grande variété de milieux de plaine : mares, fossés, canaux, réservoirs et tourbières, jusqu'aux estuaires et aux criques de mangrove, de préférence en eau claire et riche en plantes enracinées ou flottantes. Il supporte même des eaux très salées.",
+  "comportement": "Prédateur de surface, il peut avaler de très petits poissons mais reste paisible avec les espèces de taille comparable. Il se nourrit surtout d'insectes : proies vivantes ou congelées, complétées d'aliments flottants.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Aplocheilus-panchax.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2347811"
+    }
+  ]
+}

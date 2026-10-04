@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Botia kubotai",
+  "nom_valide": null,
+  "auteur": "Kottelat, 2004",
+  "classification": "Cypriniformes › Botiidae",
+  "uicn": "DD",
+  "repartition": "Haut bassin de la Salouen, à la frontière du Myanmar et de la Thaïlande",
+  "pays": [
+    "MMR"
+  ],
+  "presentation": "Dédié à Katsuma Kubota, ce botia marbré était vendu avant même sa description en 2004, sous des noms comme « Botia angelicus » ou « loche marbrée ». Il appartient au complexe de *B. histrionica*.",
+  "habitat": "Il vit dans des cours d'eau de tête ombragés par la forêt, au courant assez lent, à l'eau claire et bien oxygénée, sur un fond de sable et de roches parsemé de bois et de feuilles mortes.",
+  "comportement": "Actif et sociable, il se garde en groupe ; il peut intimider les petits poissons et pincer les nageoires longues. Il cohabite avec des cyprinidés de pleine eau. Surtout carnivore (mollusques, insectes, vers), il accepte les aliments secs et surgelés, et mange aussi les plantes tendres.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Botia-kubotai.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/botia-kubotai/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2368030"
+    }
+  ]
+}

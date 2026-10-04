@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Astronotus ocellatus",
+  "nom_commun": "Oscar",
+  "famille": "Cichlidae américain",
+  "genre": "Astronotus",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 20.0,
+  "temp_mini": 20,
+  "temp_maxi": 28,
+  "taille": 35.0,
+  "litrage_mini": 700,
+  "nb_individus": 2,
+  "points": 50,
+  "regime": "carnivore",
+  "mode_vie": "couple",
+  "comportement": "prédateur",
+  "robustesse": "très robuste",
+  "dispo": "très courant",
+  "longevite": 15,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:A photo of an oscar fish (Astronotus ocellatus) in a aquarium.jpg",
+    "File:2 Baby Oscar.jpg",
+    "File:Aquarium Paradise, Bangalore (2025) 32.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/astronotus-ocellatus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Astronotus-ocellatus.html"
+    }
+  ]
+}

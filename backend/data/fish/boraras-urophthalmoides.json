@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Boraras urophthalmoides",
+  "nom_commun": "Rasbora nain à point",
+  "famille": "Danionidae",
+  "genre": "Boraras",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 7.0,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 10.0,
+  "temp_mini": 20,
+  "temp_maxi": 28,
+  "taille": 1.5,
+  "litrage_mini": 50,
+  "nb_individus": 10,
+  "points": 2,
+  "regime": "carnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "tolérant",
+  "dispo": "courant",
+  "longevite": 4,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Boraras uraphthalmoides Thai.jpg",
+    "File:Least rasbora Thai1.jpg",
+    "File:LK-ซิวหางแดง1.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/boraras-urophthalmoides/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Boraras-urophthalmoides.html"
+    }
+  ]
+}

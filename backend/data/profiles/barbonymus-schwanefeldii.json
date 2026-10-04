@@ -1,0 +1,35 @@
+{
+  "nom_scientifique": "Barbonymus schwanefeldii",
+  "nom_valide": null,
+  "auteur": "(Bleeker, 1854)",
+  "classification": "Cypriniformes › Cyprinidae",
+  "uicn": "LC",
+  "repartition": "Asie du Sud-Est : bassins du Mékong et du Chao Phraya, péninsule Malaise, Sumatra et Bornéo",
+  "pays": [
+    "BRN",
+    "IDN",
+    "KHM",
+    "LAO",
+    "MYS",
+    "SGP",
+    "THA",
+    "VNM"
+  ],
+  "presentation": "Vendu sous le nom de « barbu feuille d'étain », comme son cousin *B. altus*, ce grand barbu argenté aux nageoires rouges est presque toujours proposé à 5 cm, sans indication de sa taille adulte, qui dépasse 30 cm.",
+  "habitat": "Il vit dans les rivières moyennes qui débordent à la saison des pluies et gagne alors les plaines et forêts inondées pour se nourrir et pondre ; on le trouve aussi dans des canaux et des lacs artificiels.",
+  "comportement": "Pas agressif, il mange pourtant les petits poissons et dérange les espèces calmes par son activité. Poisson de banc, il demande un aquarium immense et des compagnons robustes de même taille. Surtout herbivore, il mange aussi des invertébrés et accepte tous les aliments, végétaux compris.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Barbonymus-schwanefeldii.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/barbonymus-schwanefeldii/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/10374537"
+    }
+  ]
+}

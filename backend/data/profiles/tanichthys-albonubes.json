@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Tanichthys albonubes",
+  "nom_valide": null,
+  "auteur": "Lin, 1932",
+  "classification": "Cypriniformes › Tanichthyidae",
+  "uicn": "DD",
+  "repartition": "Sud de la Chine (delta de la rivière des Perles, île de Hainan) et Viêt Nam ; introduit ailleurs",
+  "pays": [
+    "CHN",
+    "VNM"
+  ],
+  "presentation": "Le vairon de Chine, dédié au chef scout Tan Kan Fei qui le récolta le premier, vient de la « montagne du Nuage blanc » près de Canton, d'où il a disparu. On l'a cru éteint dans la nature avant la redécouverte de quelques populations. Très courant en aquarium, il existe en formes à longues nageoires, dorée, albinos et « super red » ; la consanguinité des élevages a affaibli bien des souches.",
+  "habitat": "L'une des populations redécouvertes vit dans un ruisseau de montagne lent, alimenté par une source, en eau claire et peu profonde avec une végétation aquatique dense, aux côtés du poisson de paradis. Celle de Hainan occupe un ruisseau côtier lent sur sable, galets et feuilles mortes, de moins de 60 cm de profondeur. Il supporte une eau à 5 °C.",
+  "comportement": "Très paisible, idéal en bac communautaire à condition de respecter son besoin d'eau fraîche : barbus rosé et odessa, barbu doré, poisson de paradis. Malgré l'usage, ce n'est pas un bon compagnon pour les poissons rouges. En banc. Micro-prédateur : facile à nourrir, avec de petites proies vivantes ou congelées pour la forme et les couleurs. Il vit aussi en bassin extérieur l'été.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Tanichthys-albonubes.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/tanichthys-albonubes/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5207572"
+    }
+  ]
+}

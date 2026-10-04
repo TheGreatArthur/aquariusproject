@@ -1,0 +1,36 @@
+{
+  "nom_scientifique": "Pantodon buchholzi",
+  "nom_valide": null,
+  "auteur": "Peters, 1876",
+  "classification": "Osteoglossiformes › Pantodontidae",
+  "uicn": "LC",
+  "repartition": "Afrique de l'Ouest et centrale : Nigeria, lac Tchad, Cameroun, bassins de l'Ogooué et du Congo, haut Zambèze ; signalé au Bénin et en Sierra Leone",
+  "pays": [
+    "BEN",
+    "CAF",
+    "CMR",
+    "COD",
+    "COG",
+    "GAB",
+    "NGA",
+    "SLE",
+    "TCD"
+  ],
+  "presentation": "Vu de dessus, ce poisson de surface ressemble à un papillon avec ses grandes nageoires pectorales. Elles le camouflent en feuille morte flottante et, avec la caudale, propulsent des sauts impressionnants pour attraper des insectes ou fuir un prédateur. Il est le seul représentant de sa famille.",
+  "habitat": "Il vit dans les eaux calmes ou lentes des criques, lacs, marais et bras morts, en général sous une végétation aquatique ou surplombante dense, et se tient à la surface. Il respire l'air.",
+  "comportement": "Assez paisible, mais ses longues nageoires attirent les mordilleurs ; il mange tout poisson qui tient dans sa bouche et se montre souvent agressif envers les autres poissons de surface. On l'associe à des espèces africaines : tétras du Congo, poissons-éléphants, Synodontis, Ctenopoma, petits cichlidés d'Afrique de l'Ouest. Insectivore : proies vivantes et congelées, insectes. Aquarium bien couvert.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pantodon-buchholzi.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pantodon-buchholzi/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2402307"
+    }
+  ]
+}

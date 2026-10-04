@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Synodontis petricola",
+  "nom_commun": "Synodontis petricola",
+  "famille": "Mochokidae",
+  "genre": "Synodontis",
+  "zone_geo": "Afrique",
+  "type_eau": "douce",
+  "ph_mini": 7.5,
+  "ph_maxi": 8.5,
+  "kh": null,
+  "gh_mini": 10.0,
+  "gh_maxi": 35.0,
+  "temp_mini": 24,
+  "temp_maxi": 28,
+  "taille": 13.0,
+  "litrage_mini": 100,
+  "nb_individus": 4,
+  "points": 20,
+  "regime": "omnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "peu agressif",
+  "robustesse": "robuste",
+  "dispo": "courant",
+  "longevite": 8,
+  "courant": "doux",
+  "photos": [
+    "File:Frankfurt Zoo - Synodontis petricola.jpg",
+    "File:Synodontis-petricola-dwarf.jpg",
+    "File:Synodontis petricola in Ouwehands Dierenpark 02.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/synodontis-petricola/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Synodontis-petricola.html"
+    }
+  ]
+}

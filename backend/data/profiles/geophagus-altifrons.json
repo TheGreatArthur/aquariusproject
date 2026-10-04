@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Geophagus altifrons",
+  "nom_valide": null,
+  "auteur": "Heckel, 1840",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Brésil : moyen et bas bassin de l'Amazone (Xingu, Tapajós, Trombetas, Madeira, Negro, Purus)",
+  "pays": [
+    "BRA"
+  ],
+  "presentation": "Espèce type du genre *Geophagus* (« mangeur de terre »), c'est pourtant l'une des plus souvent mal identifiées, car les populations de l'Orénoque, des Guyanes et du Tocantins sont aujourd'hui des espèces distinctes. Les femelles incubent les œufs dans la bouche.",
+  "habitat": "Il vit dans le cours inférieur des rivières, jusqu'aux premiers rapides, et dans les lacs de forêt inondée (várzea), plutôt en eaux claires ou noires, sur des rives en pente douce à fond de sable, de gravier fin et de vase.",
+  "comportement": "Hors reproduction, il est étonnamment paisible et ne mange que de minuscules poissons : il cohabite avec la plupart des espèces paisibles d'eau douce, mais pas avec des espèces de fond agressives. Il tamise le sable en permanence : un sol de sable fin est indispensable, ainsi qu'une alimentation variée et fine.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Geophagus-altifrons.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/geophagus-altifrons/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5208430"
+    }
+  ]
+}

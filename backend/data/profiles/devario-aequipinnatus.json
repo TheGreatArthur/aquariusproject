@@ -1,0 +1,38 @@
+{
+  "nom_scientifique": "Devario aequipinnatus",
+  "nom_valide": null,
+  "auteur": "(McClelland, 1839)",
+  "classification": "Cypriniformes › Danionidae",
+  "uicn": "LC",
+  "repartition": "Nord-est de l'Inde, Bangladesh et Népal (Brahmapoutre, Barak, Tista, Meghna)",
+  "pays": [
+    "BGD",
+    "BTN",
+    "CHN",
+    "IND",
+    "KHM",
+    "LAO",
+    "LKA",
+    "MMR",
+    "NPL",
+    "PAK",
+    "THA"
+  ],
+  "presentation": "Son nom a été donné à presque tous les Devario rayés, et notamment au « danio géant » d'élevage, qui serait en réalité *Devario malabaricus* d'après les données génétiques. Le vrai *D. aequipinnatus* vient du nord-est de l'Inde et du Bangladesh.",
+  "habitat": "Il vit dans les ruisseaux de colline et le cours supérieur des petites rivières, en eau claire et bien oxygénée, sur fond de graviers et de roches, sous une végétation surplombante ; débit et turbidité varient beaucoup selon la saison.",
+  "comportement": "Pas agressif, mais son activité incessante dérange les poissons lents ou timides : il convient aux grands bacs, avec des espèces robustes de même taille. En banc. Il mange surtout des insectes dans la nature : aliments secs, complétés de proies vivantes ou congelées. Un bon courant lui convient.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Devario-aequipinnatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/devario-aequipinnatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2361515"
+    }
+  ]
+}

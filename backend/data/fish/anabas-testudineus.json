@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Anabas testudineus",
+  "nom_commun": "Perche grimpeuse",
+  "famille": "Anabantidae",
+  "genre": "Anabas",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 5.5,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 2.0,
+  "gh_maxi": 25.0,
+  "temp_mini": 15,
+  "temp_maxi": 30,
+  "taille": 20.0,
+  "litrage_mini": 300,
+  "nb_individus": 3,
+  "points": 30,
+  "regime": "carnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "prédateur",
+  "robustesse": "très robuste",
+  "dispo": "occasionnel",
+  "longevite": 12,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Anabas Testudineus.jpg",
+    "File:108Climbing gourami 01.jpg",
+    "File:78Ambassis interrupta Anabas testudineus 22.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/anabas-testudineus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Anabas-testudineus.html"
+    }
+  ]
+}

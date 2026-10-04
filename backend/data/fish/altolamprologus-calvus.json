@@ -1,0 +1,40 @@
+{
+  "nom_scientifique": "Altolamprologus calvus",
+  "nom_commun": "Calvus",
+  "famille": "Cichlidae africain",
+  "genre": "Altolamprologus",
+  "zone_geo": "Afrique",
+  "type_eau": "douce",
+  "ph_mini": 7.5,
+  "ph_maxi": 9.0,
+  "kh": null,
+  "gh_mini": 8.0,
+  "gh_maxi": 20.0,
+  "temp_mini": 24,
+  "temp_maxi": 27,
+  "taille": 14.0,
+  "litrage_mini": 300,
+  "nb_individus": 2,
+  "points": 20,
+  "regime": "carnivore",
+  "mode_vie": "couple",
+  "comportement": "territorial",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 8,
+  "courant": "doux",
+  "photos": [
+    "File:Altolamprologus calvus - Perlhuhn-Buntbarsch.jpg",
+    "File:Altolamprologus calvus 1862.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/altolamprologus-calvus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Altolamprologus-calvus.html"
+    }
+  ]
+}

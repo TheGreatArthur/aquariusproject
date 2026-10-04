@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Pimelodus pictus",
+  "nom_valide": null,
+  "auteur": "Steindachner, 1876",
+  "classification": "Siluriformes › Pimelodidae",
+  "uicn": "LC",
+  "repartition": "Bassins de l'Amazone et de l'Orénoque : Colombie, Venezuela, Pérou, Brésil",
+  "pays": [
+    "BRA",
+    "COL",
+    "PER",
+    "VEN"
+  ],
+  "presentation": "Ce poisson-chat ange argenté à pois noirs, aux très longs barbillons, est souvent vendu comme poisson de fond pour bac communautaire de petites espèces, ce qui a coûté la vie à d'innombrables néons et guppys. Il vit en moyenne 4 à 8 ans en captivité ; un individu a atteint 18 ans.",
+  "habitat": "Il vit en eau peu profonde et courante sur fond de sable ou de vase, dans les grandes rivières comme dans leurs affluents.",
+  "comportement": "Assez paisible, mais prédateur : il ne convient qu'aux grands bacs avec des poissons impossibles à avaler. Très actif, surtout la nuit, il peut aussi déranger les espèces lentes comme beaucoup de cichlidés avec ses barbillons. Il vit mieux en groupe. Il mange de tout avec avidité : proies vivantes ou congelées, vers et aliments coulants. Ses épines peuvent piquer à la manipulation.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pimelodus-pictus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pimelodus-pictus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2338912"
+    }
+  ]
+}

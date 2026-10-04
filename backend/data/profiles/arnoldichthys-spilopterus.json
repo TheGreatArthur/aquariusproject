@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Arnoldichthys spilopterus",
+  "nom_valide": null,
+  "auteur": "(Boulenger, 1909)",
+  "classification": "Characiformes › Lepidarchidae",
+  "uicn": "EN",
+  "repartition": "Nigeria : bassins de l'Ogun et du bas Niger",
+  "pays": [
+    "NGA"
+  ],
+  "presentation": "Seule espèce de son genre, ce tétra africain se distingue par ses grandes écailles, d'où son nom de « tétra à grandes écailles » ou « tétra du Niger ». Très populaire en aquariophilie, il est pourtant classé en danger : connu de moins de dix localités, il souffre de la déforestation et de la pollution.",
+  "habitat": "Il vit dans les ruisseaux et rivières du sud-ouest du Nigeria.",
+  "comportement": "Paisible mais très actif, il dérange les espèces timides. Il se garde en groupe d'au moins dix, avec d'autres tétras africains, de petits Synodontis et des cichlidés nains robustes comme *Pelvicachromis pulcher*. Il accepte tous les aliments, surtout les petites proies vivantes ou congelées. Robuste une fois acclimaté, il vit plusieurs années.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Arnoldichthys-spilopterus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/arnoldichthys-spilopterus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2356195"
+    }
+  ]
+}

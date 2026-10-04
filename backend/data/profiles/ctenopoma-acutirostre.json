@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Ctenopoma acutirostre",
+  "nom_valide": null,
+  "auteur": "Pellegrin, 1899",
+  "classification": "Anabantiformes › Anabantidae",
+  "uicn": "LC",
+  "repartition": "Bassin moyen du Congo (Congo, RD Congo, Centrafrique)",
+  "pays": [
+    "CAF",
+    "COD",
+    "COG"
+  ],
+  "presentation": "Le cténopoma léopard imite une feuille morte qui dérive pour approcher ses proies, comme les poissons-feuilles d'Amérique du Sud, auxquels il n'est pas apparenté. Très robuste, il peut vivre plus de quinze ans : un bon premier poisson « original ». Il respire l'air en surface.",
+  "habitat": "Il vit dans le bassin moyen du Congo, du Pool Malebo aux chutes Boyoma, et dans de grands affluents comme le Kasaï et l'Oubangui ; il y côtoie poissons-papillons, poissons-éléphants et tétras du Congo.",
+  "comportement": "Prédateur obligé, il avale les poissons qui tiennent dans sa bouche : on l'associe à des espèces plus grandes et calmes. Il accepte en général les proies mortes (larves de chironomes, vers, crevettes) ; les aliments secs ne doivent pas être la base de son régime.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Ctenopoma-acutirostre.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/ctenopoma-acutirostre/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5210826"
+    }
+  ]
+}

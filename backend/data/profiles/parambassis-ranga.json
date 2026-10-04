@@ -1,0 +1,34 @@
+{
+  "nom_scientifique": "Parambassis ranga",
+  "nom_valide": "Chanda ranga",
+  "auteur": "Hamilton, 1822",
+  "classification": null,
+  "uicn": "LC",
+  "repartition": "Asie du Sud et du Sud-Est : Pakistan, Inde, Népal, Bangladesh, Myanmar, Thaïlande, Malaisie",
+  "pays": [
+    "BGD",
+    "IND",
+    "MMR",
+    "MYS",
+    "NPL",
+    "PAK",
+    "THA"
+  ],
+  "presentation": "La perche de verre doit son nom à sa peau translucide qui laisse voir le squelette et les organes. Dans des fermes d'Asie, on lui a longtemps injecté des colorants fluorescents pour la vendre comme « poisson disco » : une pratique cruelle, la plupart des poissons ne survivant pas longtemps. Il faut refuser ces poissons colorés.",
+  "habitat": "Elle vit dans les eaux lentes ou stagnantes, en grand nombre à la saison des pluies, et prolifère dans les retenues. Elle se reproduit pendant les pluies, construit un nid et garde ses petits.",
+  "comportement": "Paisible et timide, elle ne doit pas vivre avec des espèces vives ou agressives. En eau douce, elle cohabite avec des barbus, vivipares, petits arcs-en-ciel et loches ; en eau saumâtre, avec des mollys, Brachygobius et Etroplus. Poisson de banc. Peu difficile, elle accepte la plupart des aliments vivants, congelés et secs.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Parambassis-ranga.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/parambassis-ranga/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2387235"
+    }
+  ]
+}

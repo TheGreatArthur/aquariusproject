@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Herichthys cyanoguttatus",
+  "nom_commun": "Cichlidé du Texas",
+  "famille": "Cichlidae américain",
+  "genre": "Herichthys",
+  "zone_geo": "Amérique du Nord",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 12.0,
+  "temp_mini": 20,
+  "temp_maxi": 33,
+  "taille": 30.0,
+  "litrage_mini": 500,
+  "nb_individus": 1,
+  "points": 50,
+  "regime": "omnivore",
+  "mode_vie": "solitaire",
+  "comportement": "agressif",
+  "robustesse": "très robuste",
+  "dispo": "peu courant",
+  "longevite": 15,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Бриллиантовая цихлазома Гродно.JPG",
+    "File:Mojarra norteña juvenil (Herichthys cyanoguttatus) en el Río Santa Catarina.jpg",
+    "File:Herichthys cyanoguttatus 184228237.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/herichthys-cyanoguttatus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Herichthys-cyanoguttatus.html"
+    }
+  ]
+}

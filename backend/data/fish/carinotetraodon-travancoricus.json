@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Carinotetraodon travancoricus",
+  "nom_commun": "Tétraodon nain",
+  "famille": "Tetraodontidae",
+  "genre": "Carinotetraodon",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.8,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 25.0,
+  "temp_mini": 22,
+  "temp_maxi": 28,
+  "taille": 2.5,
+  "litrage_mini": 40,
+  "nb_individus": 4,
+  "points": 2,
+  "regime": "carnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "moyennement agressif",
+  "robustesse": "sensible",
+  "dispo": "courant",
+  "longevite": 4,
+  "courant": "doux",
+  "photos": [
+    "File:Carinotetraodon travancoricus Seitenansicht.jpg",
+    "File:Carinotetraodon travancoricus by Parazelsus (cropped).jpg",
+    "File:アベニーパファー.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/carinotetraodon-travancoricus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Carinotetraodon-travancoricus.html"
+    }
+  ]
+}

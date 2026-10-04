@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Pangasianodon hypophthalmus",
+  "nom_valide": null,
+  "auteur": "(Sauvage, 1878)",
+  "classification": "Siluriformes › Pangasiidae",
+  "uicn": "EN",
+  "repartition": "Bas Mékong (Thaïlande, Laos, Cambodge, Viêt Nam), Chao Phraya et Mae Klong ; introduit ailleurs pour l'aquaculture",
+  "pays": [
+    "KHM",
+    "LAO",
+    "THA",
+    "VNM"
+  ],
+  "presentation": "Le requin iridescent, autrefois appelé *Pangasius sutchi*, est vendu tout petit (5 à 8 cm), argenté et bleuté, sans information sur sa taille adulte : il dépasse le mètre. Il finit donc dans bien des bacs de débutants totalement inadaptés. Élevé en masse, il est aussi très cultivé pour la consommation. Dans la nature, il est classé en danger.",
+  "habitat": "Poisson de pleine eau, il vit dans les chenaux principaux et les grands affluents. Migrateur, il remonte le Mékong pour frayer. Il peut respirer l'air.",
+  "comportement": "Pas agressif, mais il mange les poissons bien plus petits, dérange les espèces calmes par son activité incessante et se laisse intimider par les espèces agressives. Il ne convient qu'aux aquariums publics ou aux très grands bassins, avec de grands Doradidés, Pacu ou grands cyprinidés. Omnivore : protéines pour les jeunes (vers, granulés), plus de végétaux avec l'âge.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pangasianodon-hypophthalmus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pangasianodon-hypophthalmus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2340714"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Gyrinocheilus aymonieri",
+  "nom_commun": "Mangeur d'algues chinois",
+  "famille": "Gyrinocheilidae",
+  "genre": "Gyrinocheilus",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 2.0,
+  "gh_maxi": 20.0,
+  "temp_mini": 22,
+  "temp_maxi": 26,
+  "taille": 28.0,
+  "litrage_mini": 400,
+  "nb_individus": 1,
+  "points": 50,
+  "regime": "herbivore",
+  "mode_vie": "solitaire",
+  "comportement": "territorial",
+  "robustesse": "très robuste",
+  "dispo": "très courant",
+  "longevite": 12,
+  "courant": "doux, modéré",
+  "photos": [
+    "File:Gyrinocheilus (Chinese Algae Eater) in Aquarium.jpg",
+    "File:Gyrinocheilus aymonieri (Glonojad syjamski).JPG",
+    "File:Algae eater (2341779669).jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/gyrinocheilus-aymonieri/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Gyrinocheilus-aymonieri.html"
+    }
+  ]
+}

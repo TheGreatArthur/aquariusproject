@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Agamyxis pectinifrons",
+  "nom_valide": null,
+  "auteur": "(Cope, 1870)",
+  "classification": "Siluriformes › Doradidae",
+  "uicn": "LC",
+  "repartition": "Bassin de l'Amazone (Pérou, Colombie, Bolivie, Brésil)",
+  "pays": [
+    "BOL",
+    "BRA",
+    "COL",
+    "PER"
+  ],
+  "presentation": "Ce poisson-chat cuirassé de la famille des Doradidae porte de petites taches ou barres claires, très variables d'un individu à l'autre. Son nom d'espèce évoque le front « peigné » de petites épines. Courant dans le commerce, robuste et longévif, il convient aux débutants comme aux aquariophiles confirmés.",
+  "habitat": "Il préfère les eaux lentes ou stagnantes riches en abris immergés ou flottants, où il se cache le jour, comme les affluents en eau blanche du rio Pacaya au Pérou, inondés la plus grande partie de l'année.",
+  "comportement": "Paisible, mais un adulte peut avaler de très petits poissons : il trouve sa place dans un bac amazonien de taille moyenne à grande, avec characidés, cichlidés et poissons-chats paisibles. Grégaire, il se montre plus naturel en groupe de quatre ou plus. Omnivore, il s'alimente surtout la nuit d'aliments coulants et de proies congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Agamyxis-pectinifrons.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/agamyxis-pectinifrons/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2343984"
+    }
+  ]
+}

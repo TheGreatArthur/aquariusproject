@@ -1,0 +1,32 @@
+{
+  "nom_scientifique": "Trichogaster fasciata",
+  "nom_valide": null,
+  "auteur": "Bloch & Schneider, 1801",
+  "classification": "Anabantiformes › Osphronemidae",
+  "uicn": "LC",
+  "repartition": "Pakistan, Inde, Népal, Bangladesh et haut Myanmar",
+  "pays": [
+    "BGD",
+    "IND",
+    "MMR",
+    "NPL",
+    "PAK"
+  ],
+  "presentation": "Le gourami rayé, le plus grand de son genre, est consommé dans son aire d'origine. Beau et paisible, il se voit pourtant peu dans le commerce. Comme les autres anabantoïdes, il possède un organe labyrinthe qui lui permet de respirer l'air en surface ; plusieurs formes de couleur existeraient selon la localité.",
+  "habitat": "Il vit dans les eaux lentes, le plus souvent couvertes de végétation flottante : grandes rivières, estuaires, fossés, mares et lacs. Il a été introduit dans les rizières de nombreuses régions.",
+  "comportement": "Il convient à la plupart des bacs communautaires paisibles, mais peut être un peu agressif à la reproduction, et les mâles se battent dans un petit bac. On l'associe à des espèces paisibles qui ne lui ressemblent pas trop : bancs de Rasbora, Danio et barbus, loches, petits Bagridae. Pas avec le gourami à grosses lèvres, avec qui il s'hybride. Omnivore peu difficile, avec des proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Trichogaster-fasciata.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/trichogaster-fasciata/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5788257"
+    }
+  ]
+}

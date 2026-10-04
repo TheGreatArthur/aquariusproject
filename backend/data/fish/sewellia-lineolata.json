@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Sewellia lineolata",
+  "nom_commun": "Loche-ventouse rayée",
+  "famille": "Gastromyzontidae",
+  "genre": "Sewellia",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 10.0,
+  "temp_mini": 20,
+  "temp_maxi": 24,
+  "taille": 6.5,
+  "litrage_mini": 80,
+  "nb_individus": 4,
+  "points": 5,
+  "regime": "herbivore, alguivore",
+  "mode_vie": "petit groupe",
+  "comportement": "pacifique",
+  "robustesse": "sensible",
+  "dispo": "peu courant",
+  "longevite": 5,
+  "courant": "modéré, fort",
+  "photos": [
+    "File:Hillstream Loach.JPG",
+    "File:セウェルリア.jpg",
+    "File:Sewellia lineolata - Pracht-Flossensauger.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/sewellia-lineolata/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Sewellia-lineolata.html"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Phenacogrammus interruptus",
+  "nom_valide": null,
+  "auteur": "(Boulenger, 1899)",
+  "classification": "Characiformes › Alestidae",
+  "uicn": "LC",
+  "repartition": "Bas et moyen bassin du Congo : République démocratique du Congo et République du Congo",
+  "pays": [
+    "COD",
+    "COG"
+  ],
+  "presentation": "Le tétra du Congo est souvent vendu jeune, gris et terne, à 4 cm, et passe inaperçu. Une fois adulte, il se pare de reflets irisés et les mâles développent de longues nageoires frangées spectaculaires. La plupart des poissons du commerce sont élevés en Extrême-Orient et en Europe de l'Est.",
+  "habitat": "Les populations sauvages vivent dans une partie du bassin du Congo, où elles se nourrissent de petits vers, d'insectes, de crustacés et d'algues.",
+  "comportement": "Paisible, mais sa nage active et sa taille peuvent effrayer les espèces timides. On l'associe à d'autres tétras, arcs-en-ciel, Corydoras, Loricariidés, Synodontis et cichlidés calmes (Pelvicachromis, Cleithracara), jamais à des mordilleurs ni à des espèces turbulentes. Craintif, il faut le garder en groupe. Sensible à la qualité de l'eau, qui conditionne ses nageoires et ses couleurs. Proies vivantes et congelées en bonne part.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Phenacogrammus-interruptus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/phenacogrammus-interruptus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2356255"
+    }
+  ]
+}

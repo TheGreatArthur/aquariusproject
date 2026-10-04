@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Moenkhausia sanctaefilomenae",
+  "nom_commun": "Tétra yeux rouges",
+  "famille": "Characidae",
+  "genre": "Moenkhausia",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 3.0,
+  "gh_maxi": 20.0,
+  "temp_mini": 22,
+  "temp_maxi": 26,
+  "taille": 7.0,
+  "litrage_mini": 130,
+  "nb_individus": 8,
+  "points": 10,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "peu agressif",
+  "robustesse": "robuste",
+  "dispo": "très courant",
+  "longevite": 5,
+  "courant": "doux",
+  "photos": [
+    "File:Moenkhausia sanctaefilomenae - Tétra yeux rouge - Aqua Porte Dorée 05.JPG",
+    "File:Moenkhausia sanctaefilomenae - Tétra yeux rouge - Aqua Porte Dorée 02.JPG",
+    "File:Moenkhausia sanctaefilomenae - Tétra yeux rouge - Aqua Porte Dorée 03.JPG"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/moenkhausia-sanctaefilomenae/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Moenkhausia-sanctaefilomenae.html"
+    }
+  ]
+}

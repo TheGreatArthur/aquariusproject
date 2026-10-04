@@ -1,0 +1,37 @@
+{
+  "nom_scientifique": "Abramites hypselonotus",
+  "nom_valide": null,
+  "auteur": "(Günther, 1868)",
+  "classification": "Characiformes › Anostomidae",
+  "uicn": "LC",
+  "repartition": "Bassins de l'Amazone et de l'Orénoque, système Paraguay-Paraná",
+  "pays": [
+    "ARG",
+    "BOL",
+    "BRA",
+    "COL",
+    "ECU",
+    "GUY",
+    "PER",
+    "PRY",
+    "URY",
+    "VEN"
+  ],
+  "presentation": "Le genre *Abramites* doit son nom à sa ressemblance superficielle avec la brème d'Europe, et *hypselonotus* signifie « au dos élevé ». C'est un anostomidé au corps haut, marqué d'une carène ventrale propre au genre, qui ne compte qu'une autre espèce, *A. eques*, en Colombie.",
+  "habitat": "Généraliste, il fréquente aussi bien les chenaux principaux aux eaux troubles et courantes que les petits affluents et les bras morts, et gagne les zones inondées pendant les crues annuelles.",
+  "comportement": "À maintenir en groupe dans un grand aquarium, avec des cichlidés, characidés et poissons-chats robustes : il peut pincer les nageoires longues. Omnivore, il fouille le fond à la recherche de larves, de débris et d'algues ; en aquarium il accepte les aliments préparés, à compléter de proies congelées et de végétaux.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Abramites-hypselonotus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/abramites-hypselonotus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2355545"
+    }
+  ]
+}

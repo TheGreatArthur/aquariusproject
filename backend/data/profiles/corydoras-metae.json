@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Corydoras metae",
+  "nom_valide": "Hoplisoma metae",
+  "auteur": "(Eigenmann, 1914)",
+  "classification": "Siluriformes › Callichthyidae",
+  "uicn": "VU",
+  "repartition": "Colombie : haut bassin du río Meta (affluent de l'Orénoque)",
+  "pays": [
+    "COL"
+  ],
+  "presentation": "Le « Corydoras de Meta » ou « Corydoras masqué » porte une bande sombre oblique sur l'arrière du corps, qui s'arrête à la base de la queue. Il est rangé aujourd'hui dans le genre *Hoplisoma* et classé vulnérable.",
+  "habitat": "Il vit dans plusieurs affluents du haut río Meta (Humea, Guatiquía, Manacacias, Metica) et semble absent du bas Meta.",
+  "comportement": "Paisible et grégaire, il se garde en groupe. Omnivore, il accepte les aliments secs coulants et les proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Corydoras-metae.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/corydoras-metae/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2342763"
+    }
+  ]
+}

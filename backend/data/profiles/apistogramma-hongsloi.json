@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Apistogramma hongsloi",
+  "nom_valide": null,
+  "auteur": "Kullander, 1979",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Bassin de l'Orénoque : río Vichada et moyen río Meta (Colombie), moyen Orénoque (Venezuela)",
+  "pays": [
+    "COL",
+    "VEN"
+  ],
+  "presentation": "Décrit en 1979 par Kullander, cet Apistogramma porte le code A110 du système de numérotation de la revue DATZ ; des populations voisines, peut-être de la même espèce, sont codées de A111 à A115.",
+  "habitat": "Il vit dans de petits affluents et des eaux calmes du bassin de l'Orénoque.",
+  "comportement": "Contrairement à beaucoup d'Apistogramma, il ne forme pas de harem : les deux parents restent ensemble et élèvent les jeunes. À garder en couple, avec de petits poissons de pleine eau comme les *Nannostomus*, sans autre Apistogramma. Surtout carnivore, il demande des proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Apistogramma-hongsloi.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/apistogramma-hongsloi/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2371301"
+    }
+  ]
+}

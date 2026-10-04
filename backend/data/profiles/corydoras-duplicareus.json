@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Corydoras duplicareus",
+  "nom_valide": "Hoplisoma duplicareum",
+  "auteur": "(Sands, 1995)",
+  "classification": "Siluriformes › Callichthyidae",
+  "uicn": "DD",
+  "repartition": "Brésil : haut rio Negro",
+  "pays": [
+    "BRA"
+  ],
+  "presentation": "Décrit en 1995 par David Sands, ce Corydoras porte une bande sombre oblique sur le dos et une tache orange sur la nuque ; il se confond facilement avec *C. adolfoi*. Il est rangé aujourd'hui dans le genre *Hoplisoma*.",
+  "habitat": "Sur son site de découverte, l'eau était courante et le fond sableux ; il vit probablement dans les affluents d'eaux noires et les forêts inondées du haut rio Negro, très douces et acides.",
+  "comportement": "Paisible et grégaire, il se garde en groupe. Omnivore, il accepte les aliments secs coulants et les proies vivantes ou congelées, et demande une eau douce, acide et très propre.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Corydoras-duplicareus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/corydoras-duplicareus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2342771"
+    }
+  ]
+}

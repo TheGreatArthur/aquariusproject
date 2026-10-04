@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Pseudomugil furcatus",
+  "nom_commun": "Pseudomugil fourchu",
+  "famille": "Pseudomugilidae",
+  "genre": "Pseudomugil",
+  "zone_geo": "Océanie",
+  "type_eau": "douce",
+  "ph_mini": 7.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 15.0,
+  "gh_maxi": 30.0,
+  "temp_mini": 24,
+  "temp_maxi": 28,
+  "taille": 6.0,
+  "litrage_mini": 70,
+  "nb_individus": 8,
+  "points": 5,
+  "regime": "carnivore et planctophage",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "tolérant",
+  "dispo": "courant",
+  "longevite": 5,
+  "courant": "doux, modéré",
+  "photos": [
+    "File:Pseudomugil furcatus f Aquarium DG.jpg",
+    "File:Pseudomugil furcatus m Aquarium DG.jpg",
+    "File:Forktail worakarn.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pseudomugil-furcatus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pseudomugil-furcatus.html"
+    }
+  ]
+}

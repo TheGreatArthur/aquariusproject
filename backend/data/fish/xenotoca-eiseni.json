@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Xenotoca eiseni",
+  "nom_commun": "Xenotoca à queue rouge",
+  "famille": "Goodeidae",
+  "genre": "Xenotoca",
+  "zone_geo": "Amérique centrale",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 10.0,
+  "gh_maxi": 20.0,
+  "temp_mini": 15,
+  "temp_maxi": 30,
+  "taille": 6.0,
+  "litrage_mini": 70,
+  "nb_individus": 5,
+  "points": 5,
+  "regime": "omnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "moyennement agressif",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 5,
+  "courant": "doux, modéré",
+  "photos": [
+    "File:Xenotoca eiseni San Marcos Male.png",
+    "File:Xenotoca eiseni.JPG",
+    "File:Xenotoca eiseni San Marcos Female.png"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/xenotoca-eiseni/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Xenotoca-eiseni.html"
+    }
+  ]
+}

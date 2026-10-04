@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Dermogenys pusilla",
+  "nom_commun": "Demi-bec",
+  "famille": "Zenarchopteridae",
+  "genre": "Dermogenys",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.5,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 10.0,
+  "gh_maxi": 20.0,
+  "temp_mini": 24,
+  "temp_maxi": 28,
+  "taille": 5.5,
+  "litrage_mini": 80,
+  "nb_individus": 5,
+  "points": 5,
+  "regime": "carnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "pacifique",
+  "robustesse": "sensible",
+  "dispo": "peu courant",
+  "longevite": 5,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Dermogenys.jpg",
+    "File:Dermogenys pusilla.jpg",
+    "File:Dermogenys pusilla by OpenCage.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/dermogenys-pusilla/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Dermogenys-pusilla.html"
+    }
+  ]
+}

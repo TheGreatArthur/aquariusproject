@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Pethia conchonius",
+  "nom_commun": "Barbu rosé",
+  "famille": "Cyprinidae",
+  "genre": "Pethia",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 20.0,
+  "temp_mini": 16,
+  "temp_maxi": 24,
+  "taille": 10.0,
+  "litrage_mini": 110,
+  "nb_individus": 8,
+  "points": 10,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "très robuste",
+  "dispo": "très courant",
+  "longevite": 8,
+  "courant": "doux, modéré",
+  "photos": [
+    "File:Rosy Barbs.jpg",
+    "File:Pethia conchonius Prachtbarbe.JPG",
+    "File:Rosy barb.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pethia-conchonius/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pethia-conchonius.html"
+    }
+  ]
+}

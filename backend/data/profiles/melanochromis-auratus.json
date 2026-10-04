@@ -1,0 +1,34 @@
+{
+  "nom_scientifique": "Melanochromis auratus",
+  "nom_valide": null,
+  "auteur": "(Boulenger, 1897)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Endémique du lac Malawi : toute la côte ouest, l'extrémité sud et le sud de la côte est",
+  "pays": [
+    "MWI"
+  ],
+  "emprise": [
+    33.8,
+    -15.0,
+    35.4,
+    -9.3
+  ],
+  "presentation": "Ce mbuna doré à bandes noires, très courant, n'est pas recommandé aux débutants à cause de son intolérance. Les mâles, sombres, peuvent reprendre la livrée dorée sous le stress, et les vieilles femelles foncent parfois au point de ressembler aux mâles.",
+  "habitat": "Il vit dans les zones rocheuses des côtes, des récifs et des îles, où il picore les algues des roches.",
+  "comportement": "L'un des mbunas les plus agressifs et territoriaux, surtout envers ses congénères. On l'associe à d'autres mbunas de motif différent, jamais aux espèces paisibles (Aulonocara, Copadichromis) ni à d'autres Melanochromis (hybridation). Il faut un très grand bac bien peuplé et plusieurs femelles par mâle. Végétaux en grande partie (spiruline, épinards), complétés de proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Melanochromis-auratus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/melanochromis-auratus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2373186"
+    }
+  ]
+}

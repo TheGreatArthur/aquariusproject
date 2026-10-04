@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Boraras merah",
+  "nom_valide": null,
+  "auteur": "(Kottelat, 1991)",
+  "classification": "Cypriniformes › Danionidae",
+  "uicn": "DD",
+  "repartition": "Sud et ouest de Bornéo (Kalimantan, Indonésie)",
+  "pays": [
+    "IDN"
+  ],
+  "presentation": "*Boraras* est l'anagramme de *Rasbora*, et *merah* signifie « rouge » en indonésien. Ce micro-poisson ressemble à *B. brigittae* et *B. maculatus*, mais son rouge se concentre autour des taches sombres. Il est parfois vendu sous le nom de « phoenix rasbora ».",
+  "habitat": "Il vit dans les ruisseaux d'eaux noires des forêts marécageuses tourbeuses : eau brune, très douce et acide (pH jusqu'à 4), peu éclairée, sur un fond de feuilles mortes et de branches. Ces milieux sont menacés par les plantations de palmiers à huile et d'hévéas.",
+  "comportement": "Très paisible mais minuscule et timide, il se garde seul ou avec d'autres micro-poissons (*Microdevario*, *Trigonostigma*, Corydoras nains, *Otocinclus*) ou de petits anabantoïdes discrets. Micro-prédateur, il demande de petites proies vivantes ou congelées en plus d'aliments secs fins.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Boraras-merah.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/boraras-merah/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2366584"
+    }
+  ]
+}

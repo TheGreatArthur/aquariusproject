@@ -1,0 +1,39 @@
+{
+  "nom_scientifique": "Satanoperca leucosticta",
+  "nom_commun": "Satanoperca leucosticta",
+  "famille": "Cichlidae américain",
+  "genre": "Satanoperca",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 5.5,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 2.0,
+  "gh_maxi": 12.0,
+  "temp_mini": 20,
+  "temp_maxi": 28,
+  "taille": 15.0,
+  "litrage_mini": 800,
+  "nb_individus": 5,
+  "points": 20,
+  "regime": "omnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "pacifique",
+  "robustesse": "tolérant",
+  "dispo": "peu courant",
+  "longevite": 12,
+  "courant": "doux",
+  "photos": [
+    "File:Satanoperca leucosticta (1).jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/satanoperca-leucosticta/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Satanoperca-leucosticta.html"
+    }
+  ]
+}

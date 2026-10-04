@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Biotodoma cupido",
+  "nom_valide": null,
+  "auteur": "(Heckel, 1840)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Bassin de l'Amazone, du Pérou au Tocantins (Brésil) et jusqu'à la Bolivie ; bassin de l'Essequibo (Guyana)",
+  "pays": [
+    "BOL",
+    "BRA",
+    "GUY",
+    "PER"
+  ],
+  "presentation": "Son nom de genre (« maison de vie ») faisait allusion à des alevins transportés dans les branchies, ce qui ne s'applique pas aux espèces actuelles. Ce « mangeur de terre » est vendu sous plusieurs formes géographiques (« Santarém », « Belém », Pérou).",
+  "habitat": "Probablement généraliste, il évite les eaux torrentielles. Ses milieux varient beaucoup au fil de la crue annuelle de l'Amazone, en profondeur comme en turbidité.",
+  "comportement": "Hors reproduction, il est étonnamment paisible et ne chasse que des poissons de quelques millimètres : il cohabite avec la plupart des espèces paisibles d'eau douce et acide. Grégaire, il vit en petit groupe. Il tamise le sable : il lui faut un sol fin et des aliments fins, avec une part de végétaux.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Biotodoma-cupido.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/biotodoma-cupido/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2372964"
+    }
+  ]
+}

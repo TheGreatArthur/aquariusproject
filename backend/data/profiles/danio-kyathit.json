@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Danio kyathit",
+  "nom_valide": null,
+  "auteur": "Fang, 1998",
+  "classification": "Cypriniformes › Danionidae",
+  "uicn": "NT",
+  "repartition": "Nord du Myanmar : affluents du haut Irrawaddy près de Myitkyina (Kachin), Sagaing et Chin",
+  "pays": [
+    "MMR"
+  ],
+  "presentation": "Son nom vient du mot birman pour « léopard », en référence à ses taches. Sa robe varie : bandes continues chez certains individus, ondulées ou fragmentées en points chez d'autres. Il est parfois classé dans le genre *Brachydanio*.",
+  "habitat": "Sur son site de découverte, un petit ruisseau ombragé par des bambous coulait vite, en eau claire légèrement brune, sur un fond de vase et de pierres.",
+  "comportement": "Très paisible et peu exigeant, il vit bien en bac communautaire avec d'autres petits cyprinidés, tétras, vivipares, arcs-en-ciel et loches. En banc, il chasse surtout des insectes : aliments secs complétés de petites proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Danio-kyathit.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/danio-kyathit/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2362721"
+    }
+  ]
+}

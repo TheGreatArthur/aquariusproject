@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Corydoras arcuatus",
+  "nom_valide": "Brochis arcuatus",
+  "auteur": "(Elwin, 1938)",
+  "classification": "Siluriformes › Callichthyidae",
+  "uicn": "LC",
+  "repartition": "Haut bassin de l'Amazone (Brésil, Pérou, Équateur, Colombie)",
+  "pays": [
+    "BRA",
+    "COL",
+    "ECU",
+    "PER"
+  ],
+  "presentation": "Le « Corydoras arqué » doit son nom à la bande noire courbe qui court du museau à la queue. Décrit en 1938 d'après un poisson d'aquarium, il porte le numéro C020 et ressemble à d'autres espèces comme *C. narcissus*. Il est rangé aujourd'hui dans le genre *Brochis*.",
+  "habitat": "Il vit dans le haut bassin de l'Amazone, en amont de la confluence avec le rio Negro, où il côtoie *C. narcissus*.",
+  "comportement": "Paisible et grégaire, il se garde en groupe et convient aux bacs communautaires calmes. Omnivore, il accepte les aliments secs coulants et les proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Corydoras-arcuatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/corydoras-arcuatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2342688"
+    }
+  ]
+}

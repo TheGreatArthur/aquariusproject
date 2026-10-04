@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Nannostomus mortenthaleri",
+  "nom_valide": null,
+  "auteur": "Paepke & Arendt, 2001",
+  "classification": "Characiformes › Lebiasinidae",
+  "uicn": "CR",
+  "repartition": "Pérou (Loreto) : bassin du Nanay et du Río Tigre",
+  "pays": [
+    "PER"
+  ],
+  "presentation": "Le poisson-crayon rouge, découvert par Martin Mortenthaler, a d'abord été décrit comme une sous-espèce de *N. marginatus* avant d'être élevé au rang d'espèce en 2003. Les mâles sont d'un rouge éclatant. Son aire minuscule lui vaut le statut d'espèce en danger critique.",
+  "habitat": "Il vit dans les affluents lents, petites rivières et marais riches en plantes, en bois immergé et en feuilles mortes, en eaux noires : eau peu profonde presque immobile, très douce, pH 4 à 6.",
+  "comportement": "Paisible avec les autres espèces, mais timide et minuscule : on le garde seul ou avec de petits characidés calmes, Corydoras ou petits Loricariidés. Il accompagne très bien les cichlidés nains sans chasser les alevins. Grégaire, il forme des hiérarchies entre mâles. Aliments secs fins et chaque jour de petites proies vivantes ou congelées (nauplies d'Artemia, Moina).",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Nannostomus-mortenthaleri.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/nannostomus-mortenthaleri/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2355649"
+    }
+  ]
+}

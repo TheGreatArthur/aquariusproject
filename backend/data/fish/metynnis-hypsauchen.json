@@ -1,0 +1,39 @@
+{
+  "nom_scientifique": "Metynnis hypsauchen",
+  "nom_commun": "Dollar argenté",
+  "famille": "Serrasalmidae",
+  "genre": "Metynnis",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 7.0,
+  "kh": null,
+  "gh_mini": 0.0,
+  "gh_maxi": 10.0,
+  "temp_mini": 24,
+  "temp_maxi": 28,
+  "taille": 15.0,
+  "litrage_mini": 300,
+  "nb_individus": 5,
+  "points": 20,
+  "regime": "herbivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "courant",
+  "longevite": 12,
+  "courant": "doux",
+  "photos": [
+    "File:Metynnis hypsauchen small.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/metynnis-hypsauchen/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Metynnis-hypsauchen.html"
+    }
+  ]
+}

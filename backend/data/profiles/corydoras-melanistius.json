@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Corydoras melanistius",
+  "nom_valide": "Hoplisoma melanistium",
+  "auteur": "(Regan, 1912)",
+  "classification": "Siluriformes › Callichthyidae",
+  "uicn": "LC",
+  "repartition": "Fleuves côtiers des Guyanes (Guyana, Suriname, Guyane)",
+  "pays": [
+    "BRA",
+    "GUF",
+    "GUY",
+    "SUR"
+  ],
+  "presentation": "Ce Corydoras à masque noir appartient à un genre de plus de 180 espèces décrites, et beaucoup d'autres, non décrites, portent un « numéro C ». Il est rangé aujourd'hui dans le genre *Hoplisoma*.",
+  "habitat": "Il vit dans les fleuves côtiers et leurs affluents.",
+  "comportement": "Très paisible, il convient à beaucoup de bacs communautaires, avec petits characidés, cyprinidés, anabantoïdes, cichlidés nains et autres poissons-chats paisibles. On le garde en groupe d'au moins six. Il lui faut un sol propre, car il perd ses barbillons sur un fond sale. Omnivore, il accepte les aliments coulants et les proies congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Corydoras-melanistius.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/corydoras-melanistius/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2342709"
+    }
+  ]
+}

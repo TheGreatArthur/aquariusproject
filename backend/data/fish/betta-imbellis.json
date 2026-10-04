@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Betta imbellis",
+  "nom_commun": "Betta pacifique",
+  "famille": "Osphronemidae",
+  "genre": "Betta",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 5.0,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 10.0,
+  "temp_mini": 20,
+  "temp_maxi": 28,
+  "taille": 6.0,
+  "litrage_mini": 50,
+  "nb_individus": 2,
+  "points": 5,
+  "regime": "carnivore",
+  "mode_vie": "couple",
+  "comportement": "territorial",
+  "robustesse": "tolérant",
+  "dispo": "peu courant",
+  "longevite": 5,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Betta imbellis (female) 20100511.jpg",
+    "File:Betta imbellis (male) 20100512.jpg",
+    "File:Betta imbellis (male) 20100512 2.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/betta-imbellis/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Betta-imbellis.html"
+    }
+  ]
+}

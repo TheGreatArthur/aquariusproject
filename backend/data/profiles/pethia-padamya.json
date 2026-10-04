@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Pethia padamya",
+  "nom_valide": null,
+  "auteur": "(Kullander & Britz, 2008)",
+  "classification": "Cypriniformes › Cyprinidae",
+  "uicn": "DD",
+  "repartition": "Centre du Myanmar : environs de Pyin Oo Lwin (région de Mandalay) et bas Chindwin",
+  "pays": [
+    "MMR"
+  ],
+  "presentation": "Le barbu odessa est dans le commerce depuis le début des années 1970, mais son origine est restée un mystère jusqu'en 2003. Apparu d'abord en Ukraine, d'où son nom tiré du port d'Odessa, il passait pour un hybride d'espèces voisines. Décrit en 2008, il porte le mot birman pour « rubis », en référence au rouge vif des mâles.",
+  "habitat": "Les spécimens types viennent d'un étang artificiel alimenté par un petit ruisseau, au village de Toe Gyi, juste au-dessus des chutes d'Anisakan. L'eau y est claire, pauvre en plantes et coule sur du calcaire, sur fond de gravier ou de vase.",
+  "comportement": "Très paisible, idéal en bac communautaire bien pensé, de préférence avec des cyprinidés de pleine eau de taille comparable, des loches et des cyprinidés de fond (Crossocheilus, Garra). Poisson de banc. Omnivore fouilleur : facile à nourrir, avec de petites proies vivantes ou congelées pour la forme et les couleurs.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pethia-padamya.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pethia-padamya/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/8015393"
+    }
+  ]
+}

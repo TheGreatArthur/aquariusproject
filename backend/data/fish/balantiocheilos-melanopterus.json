@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Balantiocheilos melanopterus",
+  "nom_commun": "Requin argenté",
+  "famille": "Cyprinidae",
+  "genre": "Balantiocheilos",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 2.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 20,
+  "temp_maxi": 28,
+  "taille": 35.0,
+  "litrage_mini": 1100,
+  "nb_individus": 5,
+  "points": 50,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "peu agressif",
+  "robustesse": "robuste",
+  "dispo": "courant",
+  "longevite": 15,
+  "courant": "doux, modéré",
+  "photos": [
+    "File:Aquarium tropical de Pierrefitte-Nestalas 03082018 Barbus-requin Balantiocheilos melanopterus 1.jpg",
+    "File:Bala-shark.jpg",
+    "File:Aquarium de la Porte Dorée - Poisson 03.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/balantiocheilos-melanopterus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Balantiocheilos-melanopterus.html"
+    }
+  ]
+}

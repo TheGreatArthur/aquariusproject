@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Pseudomugil furcatus",
+  "nom_valide": null,
+  "auteur": "Nichols, 1955",
+  "classification": "Atheriniformes › Pseudomugilidae",
+  "uicn": "DD",
+  "repartition": "Endémique des basses terres de l'est de la Papouasie-Nouvelle-Guinée, entre Dyke Ackland Bay et Collingwood Bay",
+  "pays": [
+    "PNG"
+  ],
+  "presentation": "Ce petit œil-bleu jaune, à la caudale fourchue bordée de jaune vif, est très populaire mais vient d'une petite région ; les poissons sauvages ne sont pas disponibles. Il a été placé dans un genre à part, *Popondetta*, avant de revenir dans *Pseudomugil*.",
+  "habitat": "Il vit dans les ruisseaux forestiers de basse altitude, très végétalisés, à courant lent ou modéré et eau claire. La mousson de décembre à mars grossit et trouble les cours d'eau ; à la saison sèche, ils peuvent s'assécher en partie : les spécimens types venaient de fosses de ruisseaux intermittents, avec *Tateurndina ocellicauda*.",
+  "comportement": "Paisible, il convient aux bacs communautaires choisis, avec des poissons de taille et de caractère comparables : cyprinidés, gobies, petits arcs-en-ciel, et surtout le gobie paon *Tateurndina ocellicauda*, qui vit avec lui dans la nature. En banc d'au moins 8 à 10. Aliments à sa taille, surtout vivants (Daphnia, Moina, nauplies d'Artemia, micro-vers).",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pseudomugil-furcatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pseudomugil-furcatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2411765"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Limia melanogaster",
+  "nom_valide": null,
+  "auteur": "(Günther, 1866)",
+  "classification": "Cyprinodontiformes › Poeciliidae",
+  "uicn": "NT",
+  "repartition": "Grandes Antilles : Jamaïque et Haïti",
+  "pays": [
+    "HTI",
+    "JAM"
+  ],
+  "presentation": "Ce petit vivipare des Antilles, à la tache ventrale noire chez la femelle, a changé plusieurs fois de genre entre *Limia* et *Poecilia* : on le trouve encore sous le nom de *Poecilia melanogaster* dans une grande partie de la littérature. Il est peu courant dans le commerce et classé quasi menacé.",
+  "habitat": "Il vit dans les petits cours d'eau, près de la surface, où il se nourrit de vers, de crustacés, d'insectes et de végétaux.",
+  "comportement": "Paisible, il cohabite avec d'autres petits poissons supportant l'eau dure. Très peu difficile, il accepte la plupart des aliments, avec une part végétale.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Limia-melanogaster.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/limia-melanogaster/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5203841"
+    }
+  ]
+}

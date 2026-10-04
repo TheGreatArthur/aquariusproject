@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Botia kubotai",
+  "nom_commun": "Botia de Kubota",
+  "famille": "Botiidae",
+  "genre": "Botia",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 2.0,
+  "gh_maxi": 10.0,
+  "temp_mini": 22,
+  "temp_maxi": 28,
+  "taille": 15.0,
+  "litrage_mini": 300,
+  "nb_individus": 5,
+  "points": 20,
+  "regime": "carnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "peu agressif",
+  "robustesse": "tolérant",
+  "dispo": "peu courant",
+  "longevite": 12,
+  "courant": "doux",
+  "photos": [
+    "File:Botia kubotai2.jpg",
+    "File:Salle calypso 1005999.jpg",
+    "File:Botia kubotai3.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/botia-kubotai/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Botia-kubotai.html"
+    }
+  ]
+}

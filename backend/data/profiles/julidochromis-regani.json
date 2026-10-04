@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Julidochromis regani",
+  "nom_valide": null,
+  "auteur": "Poll, 1942",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Endémique du lac Tanganyika (Burundi, RD Congo, Tanzanie, Zambie)",
+  "pays": [
+    "BDI",
+    "COD",
+    "TZA",
+    "ZMB"
+  ],
+  "presentation": "Le plus grand des « julies », rayé de bandes sombres sur le corps, est aussi le moins agressif du genre. Plusieurs formes géographiques sont disponibles. Comme chez les autres Julidochromis, de grands changements d'eau peuvent pousser les couples à s'entre-tuer.",
+  "habitat": "Répandu dans tout le lac, il est moins lié aux roches que ses cousins : on le trouve surtout au-dessus de fonds sableux parsemés de roches, en eau peu profonde, mais il pond toujours dans des grottes rocheuses.",
+  "comportement": "Territorial, il cohabite avec d'autres cichlidés du Tanganyika (Altolamprologus, Cyprichromis). Sauf dans un très grand bac, on le garde en couple, car il est agressif envers ses congénères. Proies vivantes et congelées en grande partie, aliments secs moins souvent, et un peu de végétaux.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Julidochromis-regani.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/julidochromis-regani/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2372478"
+    }
+  ]
+}

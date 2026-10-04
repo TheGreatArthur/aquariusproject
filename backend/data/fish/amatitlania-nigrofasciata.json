@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Amatitlania nigrofasciata",
+  "nom_commun": "Cichlidé zébré",
+  "famille": "Cichlidae américain",
+  "genre": "Amatitlania",
+  "zone_geo": "Amérique centrale",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 25.0,
+  "temp_mini": 24,
+  "temp_maxi": 28,
+  "taille": 15.0,
+  "litrage_mini": 300,
+  "nb_individus": 2,
+  "points": 20,
+  "regime": "omnivore",
+  "mode_vie": "couple",
+  "comportement": "moyennement agressif",
+  "robustesse": "très robuste",
+  "dispo": "courant",
+  "longevite": 12,
+  "courant": "doux, modéré",
+  "photos": [
+    "File:Convicts Cichlids.jpg",
+    "File:Чернополосая цихлазома Гродно.JPG",
+    "File:Convict cichlid (Amatitlania nigrofasciata).jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/amatitlania-nigrofasciata/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Amatitlania-nigrofasciata.html"
+    }
+  ]
+}

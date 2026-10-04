@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Sphaerichthys osphromenoides",
+  "nom_valide": null,
+  "auteur": "Canestrini, 1860",
+  "classification": "Anabantiformes › Osphronemidae",
+  "uicn": "DD",
+  "repartition": "Malaisie péninsulaire, Sumatra et Bornéo (Sarawak, Kalimantan occidental) ; peut-être disparu de Singapour",
+  "pays": [
+    "IDN",
+    "MYS"
+  ],
+  "presentation": "Le gourami chocolat, brun barré de bandes dorées, est de loin le plus connu de son genre de quatre espèces. Le mâle incube les œufs dans sa bouche. Délicat, il convient aux aquariophiles expérimentés.",
+  "habitat": "Il vit surtout dans les marais tourbeux et leurs ruisseaux d'eaux noires, parfois en eau claire : eau brune presque sans minéraux, au pH pouvant descendre à 3 ou 4, sous une canopée si dense que la lumière y pénètre à peine, sur un fond de branches et de feuilles. Il respire l'air en surface.",
+  "comportement": "Lent, il se fait intimider ou distancer à table par les compagnons plus grands ou turbulents. On l'associe à de petits cyprinidés paisibles de pleine eau (Trigonostigma, petits Rasbora) ou à des loches Pangio, mais pas à son cousin *S. selatanensis* (risque d'hybridation). Micro-prédateur, parfois difficile : petites proies vivantes ou congelées, les aliments secs n'étant acceptés qu'avec le temps.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Sphaerichthys-osphromenoides.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/sphaerichthys-osphromenoides/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2394132"
+    }
+  ]
+}

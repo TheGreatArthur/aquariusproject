@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Sphaerichthys osphromenoides",
+  "nom_commun": "Gourami chocolat",
+  "famille": "Osphronemidae",
+  "genre": "Sphaerichthys",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 4.0,
+  "ph_maxi": 6.5,
+  "kh": null,
+  "gh_mini": 0.0,
+  "gh_maxi": 3.0,
+  "temp_mini": 26,
+  "temp_maxi": 31,
+  "taille": 5.0,
+  "litrage_mini": 70,
+  "nb_individus": 6,
+  "points": 5,
+  "regime": "carnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "pacifique",
+  "robustesse": "fragile",
+  "dispo": "occasionnel",
+  "longevite": 5,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Chocolate gourami, Sphaerichthys osphromenoides.jpg",
+    "File:Sphaerichthys breeding.jpg",
+    "File:Sphaerichthys osphromenoides Borneo.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/sphaerichthys-osphromenoides/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Sphaerichthys-osphromenoides.html"
+    }
+  ]
+}

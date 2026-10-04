@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Inpaichthys kerri",
+  "nom_valide": null,
+  "auteur": "Géry & Junk, 1977",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Brésil (Mato Grosso) : Rio Aripuanã et haut bassin du Rio Madeira",
+  "pays": [
+    "BRA"
+  ],
+  "presentation": "Seule espèce de son genre, ce tétra royal bleu est vendu sous plusieurs noms (« blue emperor », « royal tetra »). On le confond parfois avec le tétra empereur *Nematobrycon palmeri*, mais il possède une nageoire adipeuse, absente chez *Nematobrycon*.",
+  "habitat": "Il vit surtout en zone forestière, dans les affluents lents à l'écart des chenaux principaux, en eau teintée de brun par les tanins et très acide.",
+  "comportement": "Paisible, il supporte mal les compagnons turbulents ou bien plus grands. On l'associe à de petits tétras, poissons-crayons, poissons-hachettes, Apistogramma, Corydoras et Otocinclus, ou à de petits gouramis, Rasbora et barbus paisibles. Sa réputation de mordilleur de nageoires est peu méritée. En banc. Aliments secs, avec régulièrement de petites proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Inpaichthys-kerri.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/inpaichthys-kerri/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2354732"
+    }
+  ]
+}

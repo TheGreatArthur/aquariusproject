@@ -1,0 +1,36 @@
+{
+  "nom_scientifique": "Copadichromis borleyi",
+  "nom_valide": null,
+  "auteur": "(Iles, 1960)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Endémique du lac Malawi (Malawi, Mozambique, Tanzanie)",
+  "pays": [
+    "MOZ",
+    "MWI",
+    "TZA"
+  ],
+  "emprise": [
+    33.8,
+    -15.0,
+    35.4,
+    -9.3
+  ],
+  "presentation": "Les Copadichromis forment avec le genre *Mchenga* le groupe des « Utaka », des cichlidés de pleine eau spécialisés dans le zooplancton, très nombreux dans le lac Malawi. Les mâles de *C. borleyi* sont parmi les plus colorés.",
+  "habitat": "Il vit près des zones rocheuses et des gros blocs isolés, entre 5 et 20 m de profondeur, et forme de grands bancs en pleine eau, souvent avec d'autres espèces.",
+  "comportement": "Plutôt paisible, il ne supporte pas les compagnons turbulents et jamais les mbunas. Il cohabite avec la plupart des Aulonocara et des Haplochromis calmes, mais pas avec des poissons de même couleur ni d'autres Copadichromis (hybridations). Mangeur de zooplancton, il accepte les petits aliments vivants, congelés et secs, avec un peu de végétaux.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Copadichromis-borleyi.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/copadichromis-borleyi/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2373844"
+    }
+  ]
+}

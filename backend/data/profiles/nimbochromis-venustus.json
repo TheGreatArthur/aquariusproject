@@ -1,0 +1,36 @@
+{
+  "nom_scientifique": "Nimbochromis venustus",
+  "nom_valide": null,
+  "auteur": "(Boulenger, 1908)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Endémique du lac Malawi (Malawi, Mozambique, Tanzanie), répandu dans tout le lac",
+  "pays": [
+    "MOZ",
+    "MWI",
+    "TZA"
+  ],
+  "emprise": [
+    33.8,
+    -15.0,
+    35.4,
+    -9.3
+  ],
+  "presentation": "Ce grand haplochromine, à la robe tachetée comme une girafe, est un prédateur à l'affût : il reste immobile près des roches, dans les herbiers de *Vallisneria* ou sur le fond. Les jeunes adultes ont été vus à demi enfouis dans le sable, guettant les petits poissons venus fouiller près d'eux.",
+  "habitat": "Il vit en eau assez peu profonde (15 m ou moins), sur les côtes rocheuses comme sur les fonds de sable ou de vase. Les jeunes restent près des roches en eau peu profonde, les adultes chassent plus au large au-dessus du sable.",
+  "comportement": "Prédateur, il mange les petits mbunas et les jeunes poissons, mais reste calme avec les espèces trop grandes pour lui (Cyphotilapia frontosa, Dimidiochromis compressiceps, grands mbunas). Solitaire, et les mâles s'affrontent : un seul individu, ou un harem de plusieurs femelles pour la reproduction. Piscivore exclusif dans la nature, il accepte les aliments morts : crevettes, poissons ; jamais de viande.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Nimbochromis-venustus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/nimbochromis-venustus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2371145"
+    }
+  ]
+}

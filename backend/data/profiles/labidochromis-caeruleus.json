@@ -1,0 +1,34 @@
+{
+  "nom_scientifique": "Labidochromis caeruleus",
+  "nom_valide": null,
+  "auteur": "Fryer, 1956",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Endémique du nord-ouest du lac Malawi ; la forme jaune « electric yellow » n'est connue qu'entre Charo et Lion's Cove",
+  "pays": [
+    "MWI"
+  ],
+  "emprise": [
+    33.8,
+    -15.0,
+    35.4,
+    -9.3
+  ],
+  "presentation": "L'un des cichlidés des lacs africains les plus populaires, grâce à sa couleur éclatante et à son caractère plutôt calme pour un mbuna. La forme jaune vif si répandue en aquarium est en fait l'une des plus rares dans la nature, où la forme bleu et blanc domine.",
+  "habitat": "Il fréquente deux milieux différents du lac : les zones rocheuses et les herbiers denses de *Vallisneria*.",
+  "comportement": "Relativement paisible, il convient à de nombreux bacs d'eau dure : en biotope du Malawi avec des haplochromines paisibles, ou avec des arcs-en-ciel et certains cyprinidés d'eau dure. Il peut vivre en groupe mais devient territorial à la reproduction ; les mâles poursuivent les femelles avec vigueur, d'où plusieurs femelles par mâle. Végétaux en grande partie, complétés de proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Labidochromis-caeruleus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/labidochromis-caeruleus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2371661"
+    }
+  ]
+}

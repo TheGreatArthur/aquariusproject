@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Hyphessobrycon socolofi",
+  "nom_commun": "Tétra de Socolof",
+  "famille": "Characidae",
+  "genre": "Hyphessobrycon",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 4.0,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 10.0,
+  "temp_mini": 22,
+  "temp_maxi": 28,
+  "taille": 5.5,
+  "litrage_mini": 100,
+  "nb_individus": 8,
+  "points": 5,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "tolérant",
+  "dispo": "peu courant",
+  "longevite": 5,
+  "courant": "doux",
+  "photos": [
+    "File:Hyphessobrycon socolofi.jpg",
+    "File:Kirschflecksalmler-M.jpg",
+    "File:Kirschflecksalmler-W.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hyphessobrycon-socolofi/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hyphessobrycon-socolofi.html"
+    }
+  ]
+}

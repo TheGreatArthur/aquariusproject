@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Axelrodia riesei",
+  "nom_valide": null,
+  "auteur": "Géry, 1966",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Colombie : haut bassin du río Meta (système de l'Orénoque)",
+  "pays": [
+    "COL"
+  ],
+  "presentation": "Le tétra rubis doit son genre au Dr Herbert R. Axelrod et son nom d'espèce à William Riese, qui l'ont collecté ensemble. Rouge vif dans la nature, il pâlit souvent en aquarium. Il est plus rarement vendu que son cousin *A. stigmatias*.",
+  "habitat": "Il serait lié aux eaux noires des petits affluents forestiers du haut río Meta, mais les données de terrain manquent.",
+  "comportement": "Paisible mais minuscule et exigeant, il se garde seul ou avec de très petits characidés et poissons-chats paisibles. Grégaire sans former de banc serré, ses mâles se disputent de petits territoires : un groupe de 8 à 10 au moins le rend moins craintif. Micro-prédateur, il demande de petites proies vivantes ou congelées et une eau très stable.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Axelrodia-riesei.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/axelrodia-riesei/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2352795"
+    }
+  ]
+}

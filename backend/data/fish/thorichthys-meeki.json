@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Thorichthys meeki",
+  "nom_commun": "Cichlidé à gorge de feu",
+  "famille": "Cichlidae américain",
+  "genre": "Thorichthys",
+  "zone_geo": "Amérique centrale",
+  "type_eau": "douce",
+  "ph_mini": 6.5,
+  "ph_maxi": 8.5,
+  "kh": null,
+  "gh_mini": 2.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 20,
+  "temp_maxi": 32,
+  "taille": 12.0,
+  "litrage_mini": 140,
+  "nb_individus": 2,
+  "points": 20,
+  "regime": "omnivore",
+  "mode_vie": "couple",
+  "comportement": "territorial",
+  "robustesse": "robuste",
+  "dispo": "courant",
+  "longevite": 8,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Firemouth cichlid Thorichthys meeki.png",
+    "File:Thorichthys meeki - Feuermaulbuntbarsch.jpg",
+    "File:Micro Zoo de Saint Malo - Thorichthys meeki.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/thorichthys-meeki/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Thorichthys-meeki.html"
+    }
+  ]
+}

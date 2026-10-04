@@ -1,0 +1,40 @@
+{
+  "nom_scientifique": "Pethia ticto",
+  "nom_commun": "Barbu ticto",
+  "famille": "Cyprinidae",
+  "genre": "Pethia",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 2.0,
+  "gh_maxi": 12.0,
+  "temp_mini": 18,
+  "temp_maxi": 25,
+  "taille": 6.5,
+  "litrage_mini": 90,
+  "nb_individus": 8,
+  "points": 5,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 5,
+  "courant": "doux",
+  "photos": [
+    "File:Puntius ticto.jpg",
+    "File:Ticto barb from arpa river.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pethia-ticto/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pethia-ticto.html"
+    }
+  ]
+}

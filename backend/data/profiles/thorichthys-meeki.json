@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Thorichthys meeki",
+  "nom_valide": null,
+  "auteur": "Brind, 1918",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Versant atlantique du Mexique (du Río Tonalá au Yucatán), nord du Belize et Guatemala ; naturalisé à Hawaï et à Porto Rico",
+  "pays": [
+    "BLZ",
+    "GTM",
+    "MEX"
+  ],
+  "presentation": "Le cichlidé à gorge de feu, dédié à l'ichtyologiste Seth Eugene Meek, se reconnaît au rouge orangé vif du dessous de sa tête, plus marqué chez l'adulte. Face à un rival, il gonfle ses opercules ornés d'une tache noire pour paraître plus grand. Presque tous les poissons du commerce sont élevés pour l'aquariophilie.",
+  "habitat": "Il vit dans des milieux de plaine très variés, calmes ou à courant modéré, peu profonds (moins de 1,5 m), clairs ou boueux, doux ou légèrement saumâtres : cenotes, lagunes, mares, fossés, ruisseaux, sur sable, vase ou calcaire, avec ou sans plantes.",
+  "comportement": "Peu agressif, mais territorial à la reproduction, et il peut manger les poissons bien plus petits. Il cohabite avec des cichlidés d'Amérique centrale de taille comparable, à condition que chacun ait son territoire, et avec des poissons paisibles de surface comme les mollys et xiphos. Omnivore fouilleur, il tamise le sable : sol fin et aliments coulants variés.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Thorichthys-meeki.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/thorichthys-meeki/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2370898"
+    }
+  ]
+}

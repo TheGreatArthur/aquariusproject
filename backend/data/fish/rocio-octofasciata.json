@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Rocio octofasciata",
+  "nom_commun": "Jack Dempsey",
+  "famille": "Cichlidae américain",
+  "genre": "Rocio",
+  "zone_geo": "Amérique centrale",
+  "type_eau": "douce",
+  "ph_mini": 6.5,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 20.0,
+  "temp_mini": 20,
+  "temp_maxi": 30,
+  "taille": 20.0,
+  "litrage_mini": 300,
+  "nb_individus": 2,
+  "points": 30,
+  "regime": "omnivore",
+  "mode_vie": "couple",
+  "comportement": "agressif",
+  "robustesse": "très robuste",
+  "dispo": "courant",
+  "longevite": 12,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Николаевский зоопарк. Аквариум.3 - panoramio.jpg",
+    "File:Aquatic Kingdom, KSR railway station, Bengaluru (28).jpg",
+    "File:Jack Dempsey (Rocio octofasciata) - Carwash Cenote QR.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/rocio-octofasciata/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Rocio-octofasciata.html"
+    }
+  ]
+}

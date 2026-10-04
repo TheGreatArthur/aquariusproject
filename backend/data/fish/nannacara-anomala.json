@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Nannacara anomala",
+  "nom_commun": "Nannacara",
+  "famille": "Cichlidae américain",
+  "genre": "Nannacara",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 5.0,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 19.0,
+  "temp_mini": 22,
+  "temp_maxi": 27,
+  "taille": 7.5,
+  "litrage_mini": 60,
+  "nb_individus": 2,
+  "points": 10,
+  "regime": "carnivore",
+  "mode_vie": "couple",
+  "comportement": "peu agressif",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 5,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Nannacara anomala juvenile1.jpg",
+    "File:Nannacara anomala male1.jpg",
+    "File:Nannacara anomala06.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/nannacara-anomala/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Nannacara-anomala.html"
+    }
+  ]
+}

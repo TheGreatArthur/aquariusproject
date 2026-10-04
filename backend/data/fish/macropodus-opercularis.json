@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Macropodus opercularis",
+  "nom_commun": "Poisson de paradis",
+  "famille": "Osphronemidae",
+  "genre": "Macropodus",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 20.0,
+  "temp_mini": 10,
+  "temp_maxi": 22,
+  "taille": 8.0,
+  "litrage_mini": 90,
+  "nb_individus": 2,
+  "points": 10,
+  "regime": "carnivore",
+  "mode_vie": "couple",
+  "comportement": "territorial",
+  "robustesse": "très robuste",
+  "dispo": "courant",
+  "longevite": 8,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:DV Paradise fish male 01.jpg",
+    "File:DV Paradise fish male 05.jpg",
+    "File:DV Paradise fish male 03.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/macropodus-opercularis/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Macropodus-opercularis.html"
+    }
+  ]
+}

@@ -7,6 +7,9 @@ from sqlalchemy.orm import Session
 from fish_data import load_fish, upsert_fish, validate
 from models import Base, Famille, Poisson
 from models.meta import create_schema
+from profiles import load_profiles
+from tools.commons import FREE_LICENCE
+from tools.fetch_fish_photos import IMAGES_DIR
 
 FISH = dict(
     nom_scientifique='Hemigrammus erythrozonus', nom_commun='Tétra lumineux', famille='Characidae',
@@ -86,6 +89,19 @@ def test_upsert_creates_then_updates_the_fish_with_its_labels():
         assert [(p.id, p.taille) for p in db.scalars(select(Poisson))] == [(created.id, 4.5)]
         assert db.scalars(select(Famille.nom)).all() == ['Characidae']
     engine.dispose()
+
+
+def test_versioned_fish_files_are_complete():
+    fishes = load_fish()
+    profiles = load_profiles()
+
+    assert len(fishes) >= 165
+    for name, fish in fishes.items():
+        # Chaque poisson ajouté par fichier a sa fiche rédigée et des photos libres présentes dans le front end
+        assert name in profiles, name
+        for credit in fish['credits']:
+            assert (IMAGES_DIR / credit['fichier']).is_file(), credit['fichier']
+            assert FREE_LICENCE.match(credit['licence']), (name, credit['licence'])
 
 
 def test_create_schema_adds_new_optional_columns_to_an_existing_database():

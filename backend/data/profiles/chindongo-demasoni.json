@@ -1,0 +1,34 @@
+{
+  "nom_scientifique": "Chindongo demasoni",
+  "nom_valide": null,
+  "auteur": "(Konings, 1994)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "VU",
+  "repartition": "Lac Malawi : rochers de Pombo, côte tanzanienne",
+  "pays": [
+    "TZA"
+  ],
+  "emprise": [
+    33.8,
+    -15.0,
+    35.4,
+    -9.3
+  ],
+  "presentation": "Ce mbuna nain rayé de bleu, décrit seulement en 1994 par Ad Konings, a longtemps été classé dans le genre *Pseudotropheus*. Classé vulnérable, il ne vit que sur un seul site rocheux. Il plaque souvent son corps contre les roches, jusqu'à nager sur le flanc.",
+  "habitat": "Il vit uniquement autour des rochers de Pombo, souvent en eau peu profonde près du sommet des roches, et s'aventure rarement en pleine eau.",
+  "comportement": "L'un des mbunas les plus agressifs et territoriaux, qui n'hésite pas à attaquer des poissons bien plus gros. On le maintient en groupe nombreux, dans un bac volontairement très peuplé, avec d'autres mbunas robustes de motifs différents, jamais avec des Aulonocara ou des Utaka. Son régime doit être surtout végétal (spiruline, épinards, nori), sans viande rouge. Réservé aux aquariophiles expérimentés.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Chindongo-demasoni.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pseudotropheus-demasoni/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2373063"
+    }
+  ]
+}

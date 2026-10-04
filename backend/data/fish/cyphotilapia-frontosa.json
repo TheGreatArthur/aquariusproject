@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Cyphotilapia frontosa",
+  "nom_commun": "Frontosa",
+  "famille": "Cichlidae africain",
+  "genre": "Cyphotilapia",
+  "zone_geo": "Afrique",
+  "type_eau": "douce",
+  "ph_mini": 8.0,
+  "ph_maxi": 9.0,
+  "kh": null,
+  "gh_mini": 10.0,
+  "gh_maxi": 25.0,
+  "temp_mini": 23,
+  "temp_maxi": 27,
+  "taille": 25.5,
+  "litrage_mini": 1100,
+  "nb_individus": 5,
+  "points": 30,
+  "regime": "carnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "prédateur",
+  "robustesse": "robuste",
+  "dispo": "courant",
+  "longevite": 12,
+  "courant": "doux",
+  "photos": [
+    "File:Cyphotilapia frontosa Pierrefitte-Nestalas Aquarium.JPG",
+    "File:Frontosa cichlid (Cyphotilapia frontosa) at Nairobi Snake Park and Aquarium 1.jpg",
+    "File:Cyphotilapia frontosa2.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/cyphotilapia-frontosa/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Cyphotilapia-frontosa.html"
+    }
+  ]
+}

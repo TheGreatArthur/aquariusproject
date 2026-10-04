@@ -1,0 +1,32 @@
+{
+  "nom_scientifique": "Barbodes semifasciolatus",
+  "nom_valide": null,
+  "auteur": "(Günther, 1868)",
+  "classification": "Cypriniformes › Cyprinidae",
+  "uicn": "LC",
+  "repartition": "Chine du Sud-Ouest (dont Hainan), Taïwan, Viêt Nam et nord du Laos",
+  "pays": [
+    "CHN",
+    "HKG",
+    "LAO",
+    "TWN",
+    "VNM"
+  ],
+  "presentation": "Le barbu doré est la forme d'élevage dorée, apparue dans les années 1960, du « barbu vert » de Chine. Elle est si répandue que beaucoup d'aquariophiles ignorent que la forme naturelle est verte. Son nom signifie « à demi rayé de petites bandes ».",
+  "habitat": "Il préfère les affluents lents et les eaux stagnantes (marais, canaux d'irrigation) à végétation dense, où il forme des bancs près du fond.",
+  "comportement": "Très paisible et peu exigeant, il convient aux débutants. On le garde en groupe d'au moins 8 à 10, avec d'autres cyprinidés paisibles et des loches. Omnivore, il fouille le fond à la recherche de diatomées, d'algues et de petits invertébrés, et accepte tous les aliments. Il supporte une eau assez fraîche.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Barbodes-semifasciolatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/barbodes-semifasciolatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/9515715"
+    }
+  ]
+}

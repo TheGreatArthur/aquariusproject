@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Corydoras adolfoi",
+  "nom_valide": "Hoplisoma adolfoi",
+  "auteur": "(Burgess, 1982)",
+  "classification": "Siluriformes › Callichthyidae",
+  "uicn": "LC",
+  "repartition": "Brésil : haut rio Negro, près de São Gabriel da Cachoeira",
+  "pays": [
+    "BRA"
+  ],
+  "presentation": "Dédié au célèbre collecteur Adolfo Schwartz, ce Corydoras porte une bande sombre oblique sur le dos, comme plusieurs espèces voisines du rio Negro, et une tache orange sur la nuque. Depuis 2024, les chercheurs le rangent dans le genre *Hoplisoma*.",
+  "habitat": "Il vit dans les affluents d'eaux noires et les forêts inondées du haut rio Negro : eau couleur de thé, presque sans dureté, pH 4 à 6, avec de petits characidés, des poissons-crayons et des Apistogramma.",
+  "comportement": "Paisible et grégaire, il se garde en groupe. Omnivore, il fouille le sol : aliments secs coulants et proies vivantes ou congelées, sans compter sur les restes des autres poissons. Il demande une eau douce, acide et très propre.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Corydoras-adolfoi.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/corydoras-adolfoi/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2342782"
+    }
+  ]
+}

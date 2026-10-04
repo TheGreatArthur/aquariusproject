@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Telmatherina ladigesi",
+  "nom_commun": "Arc-en-ciel des Célèbes",
+  "famille": "Telmatherinidae",
+  "genre": "Telmatherina",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 7.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 10.0,
+  "gh_maxi": 25.0,
+  "temp_mini": 22,
+  "temp_maxi": 28,
+  "taille": 8.0,
+  "litrage_mini": 80,
+  "nb_individus": 8,
+  "points": 10,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "courant",
+  "longevite": 8,
+  "courant": "doux",
+  "photos": [
+    "File:Adult male of a CELEBES RAINBOWFISH Telmaterina Ladigesi MAROSATHERINA LADIGESI (51636246566).jpg",
+    "File:Adult male of a CELEBES RAINBOWFISH Telmaterina Ladigesi MAROSATHERINA LADIGESI (51636463238).jpg",
+    "File:Celebes Rainbowfish.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/marosatherina-ladigesi/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Telmatherina-ladigesi.html"
+    }
+  ]
+}

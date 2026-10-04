@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Pseudomugil signifer",
+  "nom_valide": null,
+  "auteur": "Kner, 1866",
+  "classification": "Atheriniformes › Pseudomugilidae",
+  "uicn": "LC",
+  "repartition": "Endémique de l'est de l'Australie : de la péninsule du cap York (Queensland) au lac Merimbula (Nouvelle-Galles du Sud), et quelques îles du détroit de Torres",
+  "pays": [
+    "AUS"
+  ],
+  "presentation": "C'est l'œil-bleu le plus répandu d'Australie, décrit des environs de Sydney. Très variable selon les populations, avec au moins 15 formes géographiques reconnues, il pourrait être scindé à l'avenir en plusieurs espèces.",
+  "habitat": "On le trouve aussi bien en mer qu'en eau douce : criques de mangrove à marée, marais salants, mais aussi ruisseaux forestiers clairs et frais, parfois rapides, et quelques eaux noires acides. La température y varie de 15 à 28 °C selon la saison et la latitude.",
+  "comportement": "La plupart des formes sont paisibles et conviennent aux bacs communautaires choisis, avec des cyprinidés, gobies, Eleotridae et petits arcs-en-ciel de taille et de caractère comparables. En banc d'au moins 8 à 10, plus si possible, il est moins nerveux. Aliments à sa taille, surtout vivants (Daphnia, Moina, nauplies d'Artemia), et aliments secs fins flottants.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pseudomugil-signifer.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pseudomugil-signifer/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2411752"
+    }
+  ]
+}

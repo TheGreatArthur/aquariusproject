@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Bedotia madagascariensis",
+  "nom_commun": "Arc-en-ciel de Madagascar",
+  "famille": "Bedotiidae",
+  "genre": "Bedotia",
+  "zone_geo": "Afrique",
+  "type_eau": "douce",
+  "ph_mini": 4.5,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 0.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 23,
+  "temp_maxi": 32,
+  "taille": 10.0,
+  "litrage_mini": 140,
+  "nb_individus": 8,
+  "points": 10,
+  "regime": "carnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 8,
+  "courant": "doux, modéré",
+  "photos": [
+    "File:Bedotia madagascariensis.png",
+    "File:Bedotia geayi 1.jpg",
+    "File:Bedotia madagascariensis.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/bedotia-madagascariensis/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Bedotia-madagascariensis.html"
+    }
+  ]
+}

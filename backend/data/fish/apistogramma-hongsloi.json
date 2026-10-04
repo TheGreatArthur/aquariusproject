@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Apistogramma hongsloi",
+  "nom_commun": "Apistogramma de Hongslo",
+  "famille": "Cichlidae américain",
+  "genre": "Apistogramma",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 5.5,
+  "ph_maxi": 7.0,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 23,
+  "temp_maxi": 29,
+  "taille": 6.0,
+  "litrage_mini": 50,
+  "nb_individus": 2,
+  "points": 5,
+  "regime": "carnivore",
+  "mode_vie": "couple",
+  "comportement": "territorial",
+  "robustesse": "tolérant",
+  "dispo": "peu courant",
+  "longevite": 5,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Apistogramma hongsloi (11120040994).jpg",
+    "File:Apistogramma hongsloi sp. \"Red\" 004.jpg",
+    "File:Apistogramma hongsloi sp. \"Red\" 001.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/apistogramma-hongsloi/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Apistogramma-hongsloi.html"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "nom_scientifique": "Pterygoplichthys pardalis",
+  "nom_commun": "Pléco commun",
+  "famille": "Loricariidae",
+  "genre": "Pterygoplichthys",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 7.0,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 10.0,
+  "gh_maxi": 20.0,
+  "temp_mini": 23,
+  "temp_maxi": 28,
+  "taille": 49.0,
+  "litrage_mini": 900,
+  "nb_individus": 1,
+  "points": 100,
+  "regime": "omnivore, herbivore, alguivore",
+  "mode_vie": "solitaire",
+  "comportement": "territorial",
+  "robustesse": "très robuste",
+  "dispo": "très courant",
+  "longevite": 15,
+  "courant": "doux",
+  "photos": [
+    "File:A suckermouth catfish in aquarium.jpg",
+    "File:2004-02-02 Pterygoplichthys pardalis on blue gravel.jpg",
+    "File:0023Janitor fish in the Philippines and Kanduli 01.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pterygoplichthys-pardalis.html"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Lamprologus ocellatus",
+  "nom_valide": null,
+  "auteur": "(Steindachner, 1909)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Endémique du lac Tanganyika (Burundi, RD Congo, Tanzanie, Zambie)",
+  "pays": [
+    "BDI",
+    "COD",
+    "TZA",
+    "ZMB"
+  ],
+  "presentation": "Ce minuscule cichlidé vit et se reproduit dans des coquilles vides d'escargots *Neothauma*. Il a la manie attachante d'enterrer sa coquille et de la défendre contre tous, parfois en pinçant la main de l'aquariophile ; il enterre aussi les coquilles voisines pour empêcher d'autres poissons de s'y installer.",
+  "habitat": "Il vit dans les zones de sable ouvert parsemées de roches, là où le fond est couvert de coquilles d'escargots vides. On le trouve en petits groupes, parfois mêlé à *L. brevis*, avec qui il se dispute peut-être les amas de coquilles.",
+  "comportement": "Il défend vigoureusement sa coquille et le petit territoire qui l'entoure, mais tolère les espèces d'autres zones du bac : cichlidés de roches comme *Neolamprologus brichardi* ou petits Julidochromis, et Cyprichromis en pleine eau. En groupe, il forme une colonie : prévoir plus de coquilles que de poissons. Proies vivantes et congelées surtout.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Lamprologus-ocellatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/lamprologus-ocellatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2371694"
+    }
+  ]
+}

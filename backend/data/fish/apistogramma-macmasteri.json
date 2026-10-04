@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Apistogramma macmasteri",
+  "nom_commun": "Apistogramma de McMaster",
+  "famille": "Cichlidae américain",
+  "genre": "Apistogramma",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 5.5,
+  "ph_maxi": 7.0,
+  "kh": null,
+  "gh_mini": 0.0,
+  "gh_maxi": 5.0,
+  "temp_mini": 24,
+  "temp_maxi": 28,
+  "taille": 5.5,
+  "litrage_mini": 50,
+  "nb_individus": 4,
+  "points": 5,
+  "regime": "carnivore",
+  "mode_vie": "harem",
+  "comportement": "territorial",
+  "robustesse": "tolérant",
+  "dispo": "peu courant",
+  "longevite": 5,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:ApistogrammaMacmasteri.jpg",
+    "File:Macmast.jpg",
+    "File:AMacMasteri.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/apistogramma-macmasteri/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Apistogramma-macmasteri.html"
+    }
+  ]
+}

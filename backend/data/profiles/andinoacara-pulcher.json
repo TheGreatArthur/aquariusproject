@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Andinoacara pulcher",
+  "nom_valide": null,
+  "auteur": "(Gill, 1858)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Trinité-et-Tobago et nord du Venezuela ; introduit ailleurs",
+  "pays": [
+    "COL",
+    "TTO",
+    "VEN"
+  ],
+  "presentation": "L'acara bleu, longtemps classé dans le genre *Aequidens*, est un cichlidé classique pour débuter. Son genre évoque la cordillère des Andes et le mot tupi *acará* qui désigne les cichlidés ; *pulcher* signifie « joli ». Beaucoup de poissons du commerce, issus d'élevages anciens, sont moins colorés que les sauvages, voire hybrides.",
+  "habitat": "Très adaptable, il vit aussi bien dans des eaux troubles et stagnantes que dans des ruisseaux et rivières claires et courantes.",
+  "comportement": "Assez paisible pour sa taille, il cohabite avec des poissons trop gros pour être avalés : characidés moyens, Corydoras, Loricariidés et, dans un grand bac, d'autres cichlidés calmes. Le couple garde œufs et larves. Surtout carnivore, il apprécie les proies congelées et accepte les aliments secs ; il demande une eau bien entretenue.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Andinoacara-pulcher.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/andinoacara-pulcher/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/7525430"
+    }
+  ]
+}

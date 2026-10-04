@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Tropheus moorii",
+  "nom_valide": null,
+  "auteur": "Boulenger, 1898",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "NT",
+  "repartition": "Endémique du lac Tanganyika (Burundi, RD Congo, Tanzanie, Zambie)",
+  "pays": [
+    "BDI",
+    "COD",
+    "TZA",
+    "ZMB"
+  ],
+  "presentation": "Malgré sa popularité, ce cichlidé brouteur aux innombrables formes de couleur selon la localité est une énigme en aquariophilie et ne convient pas aux débutants : la meilleure façon de le maintenir fait encore débat. Les femelles incubent les œufs dans la bouche. Il est classé quasi menacé.",
+  "habitat": "Il vit en eau peu profonde le long des côtes rocheuses, où il broute les algues des roches. Les adultes sont solitaires.",
+  "comportement": "Sa réputation d'agressivité est exagérée : il est assez paisible avec les autres espèces mais se querelle avec ses congénères, d'où un grand bac et beaucoup de femelles par mâle. Très actif, il ne doit pas vivre avec des espèces timides ; il convient avec Julidochromis, Eretmodus ou Tanganicodus. Les végétaux (spiruline, épinards, nori) doivent former la base de son alimentation ; jamais de viande.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Tropheus-moorii.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/tropheus-moorii/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2372563"
+    }
+  ]
+}

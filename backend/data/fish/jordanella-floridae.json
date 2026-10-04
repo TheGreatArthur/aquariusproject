@@ -1,0 +1,39 @@
+{
+  "nom_scientifique": "Jordanella floridae",
+  "nom_commun": "Killi drapeau",
+  "famille": "Cyprinodontidae",
+  "genre": "Jordanella",
+  "zone_geo": "Amérique du Nord",
+  "type_eau": "douce",
+  "ph_mini": 6.5,
+  "ph_maxi": 8.5,
+  "kh": null,
+  "gh_mini": 2.0,
+  "gh_maxi": 20.0,
+  "temp_mini": 18,
+  "temp_maxi": 30,
+  "taille": 5.5,
+  "litrage_mini": 70,
+  "nb_individus": 2,
+  "points": 5,
+  "regime": "omnivore",
+  "mode_vie": "couple",
+  "comportement": "territorial",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 5,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Jordanella floridae 182122551.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/jordanella-floridae/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Jordanella-floridae.html"
+    }
+  ]
+}

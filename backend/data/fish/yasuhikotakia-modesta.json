@@ -1,0 +1,40 @@
+{
+  "nom_scientifique": "Yasuhikotakia modesta",
+  "nom_commun": "Botia modeste",
+  "famille": "Botiidae",
+  "genre": "Yasuhikotakia",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 2.0,
+  "gh_maxi": 12.0,
+  "temp_mini": 23,
+  "temp_maxi": 28,
+  "taille": 25.0,
+  "litrage_mini": 400,
+  "nb_individus": 5,
+  "points": 30,
+  "regime": "carnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "moyennement agressif",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 12,
+  "courant": "doux, modéré",
+  "photos": [
+    "File:Yasuhikotakia modesta.jpg",
+    "File:Yasuhikotakia modesta2.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/yasuhikotakia-modesta/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Yasuhikotakia-modesta.html"
+    }
+  ]
+}

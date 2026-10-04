@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Neolamprologus leleupi",
+  "nom_commun": "Lamprologue citron",
+  "famille": "Cichlidae africain",
+  "genre": "Neolamprologus",
+  "zone_geo": "Afrique",
+  "type_eau": "douce",
+  "ph_mini": 7.5,
+  "ph_maxi": 9.0,
+  "kh": null,
+  "gh_mini": 8.0,
+  "gh_maxi": 25.0,
+  "temp_mini": 23,
+  "temp_maxi": 27,
+  "taille": 10.0,
+  "litrage_mini": 180,
+  "nb_individus": 2,
+  "points": 10,
+  "regime": "carnivore",
+  "mode_vie": "couple",
+  "comportement": "territorial",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 8,
+  "courant": "doux",
+  "photos": [
+    "File:Large Neolamprologus leleupi.jpg",
+    "File:Lemon cichild, Baltimore Aquarium.jpg",
+    "File:Lamprologus leleupi (4120053758).jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/neolamprologus-leleupi/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Neolamprologus-leleupi.html"
+    }
+  ]
+}

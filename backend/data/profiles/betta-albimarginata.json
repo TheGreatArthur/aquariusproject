@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Betta albimarginata",
+  "nom_valide": null,
+  "auteur": "Kottelat & Ng, 1994",
+  "classification": "Anabantiformes › Osphronemidae",
+  "uicn": "EN",
+  "repartition": "Indonésie : bassin de la Sebuku, Kalimantan oriental (Bornéo)",
+  "pays": [
+    "IDN"
+  ],
+  "presentation": "Son nom (« à bord blanc ») évoque le liseré blanc de ses nageoires. Avec *B. channoides*, il forme un petit groupe d'espèces qui se distinguent des autres Betta par leur coloration et leurs 9 à 12 épines à la nageoire anale. Classé en danger, il n'est connu que d'un seul bassin de Bornéo.",
+  "habitat": "Il vit dans des ruisseaux forestiers au courant modéré, dans à peine 5 à 10 cm d'eau, parmi les racines des plantes des rives et la litière de feuilles.",
+  "comportement": "Minuscule et discret, il se garde seul ou avec de petites espèces paisibles ; les poissons plus grands ou vifs l'intimident. Il vit en couple ou en petit groupe. Il se nourrit d'insectes et de petits invertébrés : il accepte les aliments secs une fois reconnus, mais réclame des proies vivantes ou congelées. Il respire aussi l'air en surface.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Betta-albimarginata.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/betta-albimarginata/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2394012"
+    }
+  ]
+}

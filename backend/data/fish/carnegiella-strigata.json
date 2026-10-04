@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Carnegiella strigata",
+  "nom_commun": "Poisson-hachette marbré",
+  "famille": "Gasteropelecidae",
+  "genre": "Carnegiella",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 4.0,
+  "ph_maxi": 7.0,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 10.0,
+  "temp_mini": 20,
+  "temp_maxi": 28,
+  "taille": 3.5,
+  "litrage_mini": 80,
+  "nb_individus": 8,
+  "points": 5,
+  "regime": "carnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "sensible",
+  "dispo": "courant",
+  "longevite": 4,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Carnegiella strigata lateral view.jpg",
+    "File:Gasteropelecidae Carnegiella strigata (5806481295).jpg",
+    "File:Beilbauchsalmler.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/carnegiella-strigata/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Carnegiella-strigata.html"
+    }
+  ]
+}

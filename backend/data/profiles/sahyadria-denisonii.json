@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Sahyadria denisonii",
+  "nom_valide": "Dawkinsia denisonii",
+  "auteur": "(Day, 1865)",
+  "classification": "Cypriniformes › Cyprinidae",
+  "uicn": "EN",
+  "repartition": "Sud de l'Inde : Kerala et Karnataka, en populations très fragmentées (Valapatanam, Chaliyar, Bharatapuzha...)",
+  "pays": [
+    "IND"
+  ],
+  "presentation": "Le barbu de Denison, dédié à un gouverneur de Madras, est devenu l'un des poissons d'aquarium les plus populaires depuis son arrivée à la fin des années 1990 ; en Inde, on le surnomme « Miss Kerala ». Le prélèvement massif pour le commerce l'a fait classer en danger. FishBase le range aujourd'hui dans le genre *Dawkinsia*.",
+  "habitat": "Il vit dans les cours supérieurs de rivières des Ghâts occidentaux, en eau intacte et très oxygénée, où il se rassemble dans des fosses rocheuses bordées d'une végétation dense. Il serait plus actif à l'aube et au crépuscule.",
+  "comportement": "Paisible, idéal en bac communautaire bien pensé, mais il lui faut de l'espace et un bon courant. Poisson de banc, au moins 6 à 10. L'espèce voisine *S. chalakkudiensis*, parfois vendue sous son nom, est plus querelleuse. Omnivore : vers, insectes, crustacés et végétaux ; en aquarium, proies vivantes ou congelées et aliments secs de qualité.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Sahyadria-denisonii.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/sahyadria-denisonii/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/8395052"
+    }
+  ]
+}

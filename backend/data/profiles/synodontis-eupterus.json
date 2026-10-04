@@ -1,0 +1,37 @@
+{
+  "nom_scientifique": "Synodontis eupterus",
+  "nom_valide": null,
+  "auteur": "Boulenger, 1901",
+  "classification": "Siluriformes › Mochokidae",
+  "uicn": "LC",
+  "repartition": "Afrique de l'Ouest et du Nord-Est : bassins du Nil Blanc, du Niger, de la Volta, du Tchad et de la Cross",
+  "pays": [
+    "BFA",
+    "CAF",
+    "CMR",
+    "ETH",
+    "GHA",
+    "GIN",
+    "MLI",
+    "NGA",
+    "SDN",
+    "TCD"
+  ],
+  "presentation": "L'un des Synodontis les plus populaires, souvent vendu tout jeune (3 à 8 cm) sous le nom de « Synodontis network », pour ses dessins réticulés, sans mention de sa taille adulte. Ce réseau se fragmente avec l'âge en simples taches. La grande dorsale à longs filaments lui vaut son nom de synodontis à voile. Il nage parfois sur le dos.",
+  "habitat": "Il vit sur des fonds vaseux, parfois rocheux, et se nourrit surtout de larves d'insectes, mais aussi d'algues.",
+  "comportement": "Il ne doit pas vivre avec des poissons assez petits pour être mangés. Bons compagnons : tétras africains (Alestidae), cichlidés robustes d'Afrique de l'Ouest, Mormyridae, poissons-couteaux, gouramis, grands Rasbora et barbus. Un peu territorial avec l'âge, surtout envers les autres Synodontis, mais bien moins que ses cousins. Omnivore peu difficile, il râpe aussi les végétaux (petits pois, concombre).",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Synodontis-eupterus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/synodontis-eupterus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2344483"
+    }
+  ]
+}

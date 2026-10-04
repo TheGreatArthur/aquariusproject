@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Oliotius oligolepis",
+  "nom_valide": null,
+  "auteur": "(Bleeker, 1853)",
+  "classification": "Cypriniformes › Cyprinidae",
+  "uicn": "LC",
+  "repartition": "Indonésie : centre-ouest de Sumatra (Sumatra du Nord) ; introduit en Colombie",
+  "pays": [
+    "IDN"
+  ],
+  "presentation": "Le barbu damier, aux écailles bordées de noir formant un damier, est l'un des poissons les plus courants du commerce, élevé en masse ; les poissons sauvages ne sont presque jamais disponibles. Longtemps rangé dans le genre fourre-tout *Puntius*, il a reçu son propre genre, dont le nom combine *oligolepis* et *Puntius*.",
+  "habitat": "Il vit dans les criques, rivières et lacs ; l'étendue exacte de son aire reste mal connue, les rares données récentes venant des bas cours de quelques rivières de Sumatra du Nord.",
+  "comportement": "Très paisible, idéal en bac communautaire bien pensé. Poisson de banc, il faut en acheter au moins 6 à 10 : moins craintifs, ils forment un groupe naturel et les mâles montrent leurs plus belles couleurs face à leurs rivaux. Omnivore : facile à nourrir, avec de petites proies vivantes ou congelées pour la forme et les couleurs.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Oliotius-oligolepis.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/oliotius-oligolepis/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/7654632"
+    }
+  ]
+}

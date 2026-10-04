@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Nannostomus eques",
+  "nom_valide": null,
+  "auteur": "Steindachner, 1876",
+  "classification": "Characiformes › Lebiasinidae",
+  "uicn": "LC",
+  "repartition": "Amazonie centrale et supérieure (Brésil, Pérou, Colombie : Tapajós, Trombetas, Madeira, Negro, Japurá, Putumayo) et bassin de l'Orénoque",
+  "pays": [
+    "BRA",
+    "PER"
+  ],
+  "presentation": "Son nom latin, « cavalier », évoque sa nage oblique, la tête vers le haut, un comportement qu'il ne partage dans son genre qu'avec *N. unifasciatus*. Longtemps placé dans les genres *Poecilobrycon* et *Nannobrycon*, il est populaire en aquariophilie.",
+  "habitat": "Il vit dans les affluents lents, petites rivières et zones marécageuses riches en plantes, en bois immergé et en feuilles mortes, souvent en forêt inondée et dans les lacs de plaine inondable d'eaux noires. Dans le bas Atabapo, il a été relevé en eau couleur thé, à pH 4,4, parmi la végétation terrestre immergée.",
+  "comportement": "Très paisible mais timide et de petite taille : pas idéal en bac communautaire. On l'associe à de petits characidés calmes, Corydoras ou petits Loricariidés. Il occupe le milieu et le haut du bac et ne chasse pas les alevins : un excellent poisson de compagnie pour les Apistogramma. Très grégaire. Micro-prédateur : aliments secs fins et chaque jour de petites proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Nannostomus-eques.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/nannostomus-eques/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2355643"
+    }
+  ]
+}

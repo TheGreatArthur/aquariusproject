@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Psalidodon anisitsi",
+  "nom_commun": "Tétra de Buenos Aires",
+  "famille": "Characidae",
+  "genre": "Psalidodon",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 5.5,
+  "ph_maxi": 8.5,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 20.0,
+  "temp_mini": 16,
+  "temp_maxi": 28,
+  "taille": 6.0,
+  "litrage_mini": 100,
+  "nb_individus": 8,
+  "points": 5,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "peu agressif",
+  "robustesse": "très robuste",
+  "dispo": "courant",
+  "longevite": 5,
+  "courant": "doux",
+  "photos": [
+    "File:Flaggtettra.JPG",
+    "File:Two Buenos Aires tetras.jpg",
+    "File:Hyphessobrycon anisitsi albus.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hyphessobrycon-anisitsi/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Psalidodon-anisitsi.html"
+    }
+  ]
+}

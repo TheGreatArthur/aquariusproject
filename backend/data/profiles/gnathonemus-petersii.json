@@ -1,0 +1,35 @@
+{
+  "nom_scientifique": "Gnathonemus petersii",
+  "nom_valide": null,
+  "auteur": "(Günther, 1862)",
+  "classification": "Osteoglossiformes › Mormyridae",
+  "uicn": "LC",
+  "repartition": "Afrique : des bassins du Niger au bassin du Congo",
+  "pays": [
+    "AGO",
+    "CAF",
+    "CMR",
+    "COD",
+    "COG",
+    "NGA",
+    "TCD",
+    "ZMB"
+  ],
+  "presentation": "Le poisson-éléphant, le plus courant des Mormyridae en aquariophilie, fouille le sol avec sa « trompe », un prolongement de la mâchoire inférieure. Il émet de faibles décharges électriques qui l'aident à trouver ses proies et à communiquer avec ses congénères.",
+  "habitat": "Il vit près du fond des zones calmes et très végétalisées des rivières, sur des fonds sombres et vaseux. Il chasse surtout la nuit, des vers et des insectes.",
+  "comportement": "Calme mais territorial et agressif envers ses semblables et les autres Mormyridae, il est paisible avec les autres espèces. On l'associe à des poissons africains calmes (poissons-papillons, tétras du Congo, Synodontis, Ctenopoma). Il lui faut un sol fin et doux, une lumière tamisée et beaucoup de cachettes, sinon il dépérit. Il raffole des vers.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Gnathonemus-petersii.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/gnathonemus-petersii/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2402409"
+    }
+  ]
+}

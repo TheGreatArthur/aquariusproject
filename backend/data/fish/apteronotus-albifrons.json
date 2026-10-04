@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Apteronotus albifrons",
+  "nom_commun": "Poisson-couteau noir",
+  "famille": "Apteronotidae",
+  "genre": "Apteronotus",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 10.0,
+  "temp_mini": 23,
+  "temp_maxi": 28,
+  "taille": 50.0,
+  "litrage_mini": 800,
+  "nb_individus": 1,
+  "points": 100,
+  "regime": "carnivore",
+  "mode_vie": "solitaire",
+  "comportement": "peu agressif",
+  "robustesse": "sensible",
+  "dispo": "courant",
+  "longevite": 15,
+  "courant": "modéré, fort",
+  "photos": [
+    "File:Apteronotus albifrons Aquarium tropical du Palais de la Porte Dorée 10 04 2016 1.jpg",
+    "File:Gymnarque Salle nautilus 1006005.jpg",
+    "File:Apteronotus albifrons Aquarium tropical du Palais de la Porte Dorée 10 04 2016 2.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/apteronotus-albifrons/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Apteronotus-albifrons.html"
+    }
+  ]
+}

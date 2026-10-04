@@ -1,0 +1,40 @@
+{
+  "nom_scientifique": "Devario aequipinnatus",
+  "nom_commun": "Danio géant",
+  "famille": "Danionidae",
+  "genre": "Devario",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 2.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 16,
+  "temp_maxi": 26,
+  "taille": 7.5,
+  "litrage_mini": 300,
+  "nb_individus": 8,
+  "points": 10,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "peu agressif",
+  "robustesse": "très robuste",
+  "dispo": "courant",
+  "longevite": 5,
+  "courant": "modéré, fort",
+  "photos": [
+    "File:Devario aequipinnatus.JPG",
+    "File:Devario aequipinnatus (cropped).JPG"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/devario-aequipinnatus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Devario-aequipinnatus.html"
+    }
+  ]
+}

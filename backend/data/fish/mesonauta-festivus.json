@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Mesonauta festivus",
+  "nom_commun": "Festivum",
+  "famille": "Cichlidae américain",
+  "genre": "Mesonauta",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 0.0,
+  "gh_maxi": 5.0,
+  "temp_mini": 25,
+  "temp_maxi": 34,
+  "taille": 10.0,
+  "litrage_mini": 170,
+  "nb_individus": 2,
+  "points": 10,
+  "regime": "omnivore",
+  "mode_vie": "couple",
+  "comportement": "pacifique",
+  "robustesse": "tolérant",
+  "dispo": "peu courant",
+  "longevite": 8,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Mesonauta festivus.jpg",
+    "File:Mesonauta festivus - Flag Cichlid.jpg",
+    "File:The complete aquarium book; the care and breeding of goldfish and tropical fishes (1936) (20662532082).jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/mesonauta-festivus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Mesonauta-festivus.html"
+    }
+  ]
+}

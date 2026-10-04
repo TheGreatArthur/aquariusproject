@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Nannostomus eques",
+  "nom_commun": "Poisson-crayon oblique",
+  "famille": "Lebiasinidae",
+  "genre": "Nannostomus",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 4.5,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 10.0,
+  "temp_mini": 22,
+  "temp_maxi": 28,
+  "taille": 3.5,
+  "litrage_mini": 70,
+  "nb_individus": 6,
+  "points": 5,
+  "regime": "carnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "pacifique",
+  "robustesse": "tolérant",
+  "dispo": "peu courant",
+  "longevite": 4,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Nannostomus eques 1.jpg",
+    "File:Nannostomus eques 2.jpg",
+    "File:Pencilfish, Nannostomus eques in aquarium aquarium.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/nannostomus-eques/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Nannostomus-eques.html"
+    }
+  ]
+}

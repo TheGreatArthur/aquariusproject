@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Rasbora einthovenii",
+  "nom_commun": "Rasbora d'Einthoven",
+  "famille": "Danionidae",
+  "genre": "Rasbora",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 6.5,
+  "kh": null,
+  "gh_mini": 2.0,
+  "gh_maxi": 10.0,
+  "temp_mini": 22,
+  "temp_maxi": 26,
+  "taille": 9.0,
+  "litrage_mini": 140,
+  "nb_individus": 8,
+  "points": 10,
+  "regime": "carnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "tolérant",
+  "dispo": "occasionnel",
+  "longevite": 8,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Rasbora e.jpg",
+    "File:Rasbora einthovenii.jpg",
+    "File:Rasbora einthovenii lampung.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/rasbora-einthovenii/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Rasbora-einthovenii.html"
+    }
+  ]
+}

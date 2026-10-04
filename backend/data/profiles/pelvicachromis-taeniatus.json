@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Pelvicachromis taeniatus",
+  "nom_valide": null,
+  "auteur": "(Boulenger, 1901)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Afrique de l'Ouest : de l'est du Bénin au Nigeria (dont le delta du Niger), en eau douce près des côtes",
+  "pays": [
+    "BEN",
+    "NGA"
+  ],
+  "presentation": "Ce pelvicachromis rayé, à la lèvre supérieure marquée et souvent jaune vif, existe en plus d'une douzaine de formes géographiques (« Nigeria Red », « Calabar »...), qu'il ne faut pas croiser entre elles. D'après FishBase, les formes du Cameroun, dont « Moliwe », « Dehane » ou « Kienke », relèvent aujourd'hui de *P. kribensis*.",
+  "habitat": "Il vit dans les ruisseaux et rivières forestiers calmes ou lents, souvent très végétalisés. Il pond dans une grotte et garde ses alevins.",
+  "comportement": "Recommandé pour le bac communautaire, mais territorial à la reproduction. Timide, il ne doit pas vivre avec des espèces vives ou grandes : petits characidés, barbus, Danio, Rasbora, Corydoras, gouramis, Loricariidés, ou d'autres cichlidés nains d'Afrique de l'Ouest avec assez d'espace. En couple. Il accepte la plupart des aliments, avec surtout des proies vivantes et congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pelvicachromis-taeniatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pelvicachromis-taeniatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2372921"
+    }
+  ]
+}

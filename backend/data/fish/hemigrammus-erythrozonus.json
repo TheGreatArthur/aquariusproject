@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Hemigrammus erythrozonus",
+  "nom_commun": "Tétra lumineux",
+  "famille": "Characidae",
+  "genre": "Hemigrammus",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 5.5,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 2.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 24,
+  "temp_maxi": 28,
+  "taille": 4.0,
+  "litrage_mini": 80,
+  "nb_individus": 8,
+  "points": 5,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "très courant",
+  "longevite": 5,
+  "courant": "doux",
+  "photos": [
+    "File:Tetra Glowlight.jpg",
+    "File:Hemigrammus erythrozonus h080.jpg",
+    "File:Tetra žhavá 3.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hemigrammus-erythrozonus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hemigrammus-erythrozonus.html"
+    }
+  ]
+}

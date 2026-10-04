@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Hemichromis lifalili",
+  "nom_valide": "Rubricatochromis lifalili",
+  "auteur": "(Loiselle, 1979)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Bassin du Congo (sauf le Katanga et le Kasaï) : République démocratique du Congo, République du Congo et Centrafrique",
+  "pays": [
+    "CAF",
+    "COD",
+    "COG"
+  ],
+  "presentation": "Ce cichlidé joyau rouge, aujourd'hui rangé dans le genre *Rubricatochromis*, est souvent confondu avec *Hemichromis bimaculatus* : *H. lifalili* ne porte que deux taches noires sur les flancs, contre trois chez *H. bimaculatus*, qui en a une de plus sur le pédoncule caudal.",
+  "habitat": "Il vit dans les criques et affluents calmes ou lents, pourtant riches en oxygène, surtout en forêt mais aussi dans des savanes à forêts-galeries. Il est absent des rapides et des marais. Il pond sur un support découvert et forme des couples bien établis.",
+  "comportement": "Territorial, il devient extrêmement agressif à la reproduction mais reste assez calme le reste du temps. Il cohabite avec de grands Alestidae (tétras du Congo), des Synodontis et des Loricariidés. On le garde en couple : mieux vaut laisser un couple se former au sein d'un groupe de jeunes, car deux poissons achetés ensemble finissent souvent par la mort du plus faible. Surtout carnivore : proies vivantes, aliments secs et un peu de végétaux.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hemichromis-lifalili.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hemichromis-lifalili/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2371376"
+    }
+  ]
+}

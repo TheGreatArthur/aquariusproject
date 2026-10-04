@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Crossocheilus langei",
+  "nom_valide": null,
+  "auteur": "Bleeker, 1860",
+  "classification": "Cypriniformes › Cyprinidae",
+  "uicn": "DD",
+  "repartition": "Bornéo, Sumatra, péninsule Malaise, sud et ouest de la Thaïlande, peut-être sud du Myanmar",
+  "pays": [
+    "IDN",
+    "MYS"
+  ],
+  "presentation": "Il fait partie d'un petit groupe d'espèces presque identiques vendues sous le nom de « mangeur d'algues siamois » ou « *Crossocheilus siamensis* », un nom qui désigne en réalité une autre espèce. Le genre doit son nom aux barbillons frangés de sa lèvre supérieure.",
+  "habitat": "Il vit dans des ruisseaux et affluents courants à fond de rochers, de galets et de sable, souvent près du bois immergé. L'eau claire et peu profonde laisse pousser un riche biofilm, qu'il broute. Il migrerait au fil des saisons vers des eaux plus profondes et troubles.",
+  "comportement": "Paisible, il vit avec la plupart des espèces courantes, de préférence des poissons de rivière d'Asie du Sud-Est. Il est célèbre pour manger les algues en « barbe » (algues rouges), difficiles à éliminer autrement, ce qui en a fait un poisson très demandé dans les bacs plantés. Il doit aussi recevoir des aliments variés.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Crossocheilus-langei.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/crossocheilus-langei/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2361958"
+    }
+  ]
+}

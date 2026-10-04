@@ -1,0 +1,25 @@
+{
+  "nom_scientifique": "Pterygoplichthys pardalis",
+  "nom_valide": null,
+  "auteur": "(Castelnau, 1855)",
+  "classification": "Siluriformes › Loricariidae",
+  "uicn": "LC",
+  "repartition": "Bassin de l'Amazone (bas, moyen et haut cours) : Brésil, Pérou ; introduit dans de nombreux pays",
+  "pays": [
+    "BRA",
+    "PER"
+  ],
+  "presentation": "L'un des « plécos communs » vendus tout petits comme mangeurs d'algues, alors qu'il dépasse 40 cm. Relâché ou échappé d'élevages, il s'est implanté dans de nombreuses régions tropicales et subtropicales hors de son aire d'origine, où il est considéré comme envahissant.",
+  "habitat": "Il vit dans les eaux lentes de plaine. Il peut respirer l'air, ce qui lui permet de supporter des eaux pauvres en oxygène.",
+  "comportement": "Paisible avec les autres espèces mais territorial envers les poissons de fond de même forme, il ne convient qu'aux très grands bacs. Gros producteur de déchets, il demande une filtration puissante. Brouteur : aliments coulants végétaux, légumes (courgette, concombre), bois à râper et un peu de proies congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pterygoplichthys-pardalis.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2339971"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Dawkinsia arulius",
+  "nom_commun": "Barbu arulius",
+  "famille": "Cyprinidae",
+  "genre": "Dawkinsia",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 2.0,
+  "gh_maxi": 10.0,
+  "temp_mini": 19,
+  "temp_maxi": 25,
+  "taille": 10.0,
+  "litrage_mini": 300,
+  "nb_individus": 8,
+  "points": 10,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "occasionnel",
+  "longevite": 8,
+  "courant": "modéré, fort",
+  "photos": [
+    "File:Dawkinsia Tambraparanei.jpg",
+    "File:Dawkinsia arulius -Marcus Knight.jpg",
+    "File:Puntius arulius.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/dawkinsia-arulius/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Dawkinsia-arulius.html"
+    }
+  ]
+}

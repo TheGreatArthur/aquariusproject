@@ -1,0 +1,40 @@
+{
+  "nom_scientifique": "Fundulopanchax sjostedti",
+  "nom_commun": "Killi bleu",
+  "famille": "Nothobranchiidae",
+  "genre": "Fundulopanchax",
+  "zone_geo": "Afrique",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 20.0,
+  "temp_mini": 23,
+  "temp_maxi": 26,
+  "taille": 12.0,
+  "litrage_mini": 100,
+  "nb_individus": 2,
+  "points": 20,
+  "regime": "carnivore",
+  "mode_vie": "couple",
+  "comportement": "peu agressif",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 8,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Fundulopanchax sjostedti 'Niger Delta' male.png",
+    "File:Fundulopanchax sjostedti 'Red dwarf'.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/fundulopanchax-sjoestedti/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Fundulopanchax-sjostedti.html"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Epalzeorhynchos frenatum",
+  "nom_commun": "Labéo à nageoires rouges",
+  "famille": "Cyprinidae",
+  "genre": "Epalzeorhynchos",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.5,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 2.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 20,
+  "temp_maxi": 26,
+  "taille": 15.0,
+  "litrage_mini": 300,
+  "nb_individus": 1,
+  "points": 20,
+  "regime": "omnivore",
+  "mode_vie": "solitaire",
+  "comportement": "territorial",
+  "robustesse": "robuste",
+  "dispo": "courant",
+  "longevite": 12,
+  "courant": "doux, modéré",
+  "photos": [
+    "File:Fransenlipper.JPG",
+    "File:Epalzeorhynchos frenatum.jpg",
+    "File:Albino rainbow shark .JPG"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/epalzeorhynchos-frenatum/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Epalzeorhynchos-frenatum.html"
+    }
+  ]
+}

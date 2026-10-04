@@ -1,0 +1,40 @@
+{
+  "nom_scientifique": "Epiplatys dageti",
+  "nom_commun": "Épiplatys à menton rouge",
+  "famille": "Nothobranchiidae",
+  "genre": "Epiplatys",
+  "zone_geo": "Afrique",
+  "type_eau": "douce",
+  "ph_mini": 5.0,
+  "ph_maxi": 7.0,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 12.0,
+  "temp_mini": 20,
+  "temp_maxi": 30,
+  "taille": 4.5,
+  "litrage_mini": 70,
+  "nb_individus": 6,
+  "points": 5,
+  "regime": "carnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 5,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Kabrozubka dagetova - epiplatys dageti.jpg",
+    "File:Epiplatys dageti.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/epiplatys-dageti/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Epiplatys-dageti.html"
+    }
+  ]
+}

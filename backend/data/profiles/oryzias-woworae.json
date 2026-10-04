@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Oryzias woworae",
+  "nom_valide": null,
+  "auteur": "Parenti & Hadiaty, 2010",
+  "classification": "Beloniformes › Adrianichthyidae",
+  "uicn": "EN",
+  "repartition": "Indonésie : île de Muna, au large du sud-est de Sulawesi (un seul site connu)",
+  "pays": [
+    "IDN"
+  ],
+  "presentation": "Décrit en 2010 et dédié à la carcinologue Daisy Wowor, ce médaka bleu aux nageoires rouges a fait sensation dès son arrivée dans le commerce, à des prix très élevés. Sulawesi est un centre de diversité du genre, avec 17 espèces endémiques. Il est classé en danger.",
+  "habitat": "Le site type est un ruisseau karstique sous couvert forestier à 80 %, sur fond de vase, de sable et de feuilles mortes. Il a été capturé dans une fosse calme de 3 à 4 m de profondeur, face à une source, en banc avec un demi-bec *Nomorhamphus*, à un pH de 6 à 7.",
+  "comportement": "Très paisible, mais trop petit pour la plupart des bacs communautaires : on l'associe à d'autres micro-poissons (Boraras, Trigonostigma, Pseudomugil, Corydoras nains, Otocinclus) ou à des crevettes Caridina et Neocaridina. Il faut des aliments à sa taille : aliments secs fins et proies vivantes (micro-vers, nauplies d'Artemia). Les adultes broutent aussi les surfaces.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Oryzias-woworae.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/oryzias-woworae/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5961081"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Aphyocharax anisitsi",
+  "nom_valide": null,
+  "auteur": "Eigenmann & Kennedy, 1903",
+  "classification": "Characiformes › Characidae",
+  "uicn": "LC",
+  "repartition": "Bassin du Paraná (Brésil, Paraguay, Argentine)",
+  "pays": [
+    "ARG",
+    "BRA",
+    "PRY",
+    "URY"
+  ],
+  "presentation": "Le tétra à nageoires rouges, décrit d'Asunción au Paraguay, est un characidé robuste et longévif : des individus de plus de dix ans sont connus en aquarium. Les mâles adultes portent de petits crochets sur la nageoire anale.",
+  "habitat": "Il fréquente ruisseaux, rivières et affluents, surtout dans les zones ombragées par la végétation flottante ou surplombante.",
+  "comportement": "Assez paisible, il peut pincer les nageoires des poissons lents ou à longues nageoires. Poisson de banc, il se garde en groupe d'au moins six, avec d'autres characidés, des Corydoras et de petits Loricariidés. Il nage dans les couches moyennes et hautes et accepte tous les aliments. Bon tétra de débutant, il supporte une eau assez fraîche.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Aphyocharax-anisitsi.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/aphyocharax-anisitsi/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2353650"
+    }
+  ]
+}

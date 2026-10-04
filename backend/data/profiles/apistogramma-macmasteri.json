@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Apistogramma macmasteri",
+  "nom_valide": null,
+  "auteur": "Kullander, 1979",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "NT",
+  "repartition": "Colombie : haut bassin du río Meta (ríos Guaytiquía et Metica), système de l'Orénoque",
+  "pays": [
+    "COL"
+  ],
+  "presentation": "Décrit par Kullander en 1979, cet Apistogramma porte le code A120 du système de la revue DATZ ; une population voisine est codée A122 et la forme ornementale « rouge » A121.",
+  "habitat": "Il n'est connu que des bassins des ríos Guaytiquía et Metica, dans le haut río Meta, affluent de l'Orénoque en Colombie.",
+  "comportement": "On le maintient avec un mâle pour plusieurs femelles ; la femelle pond au plafond d'une cavité et soigne seule œufs et larves. Les poissons d'élevage vivent bien en bac communautaire paisible, les sauvages plutôt seuls ou avec de petits poissons de pleine eau, sans autre Apistogramma. Surtout carnivore, il réclame des proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Apistogramma-macmasteri.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/apistogramma-macmasteri/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2371262"
+    }
+  ]
+}

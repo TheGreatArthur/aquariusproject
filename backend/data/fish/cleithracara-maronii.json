@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Cleithracara maronii",
+  "nom_commun": "Acara maroni",
+  "famille": "Cichlidae américain",
+  "genre": "Cleithracara",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 4.0,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 2.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 21,
+  "temp_maxi": 28,
+  "taille": 11.0,
+  "litrage_mini": 100,
+  "nb_individus": 2,
+  "points": 20,
+  "regime": "omnivore",
+  "mode_vie": "couple",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 8,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Amphilophus citrinellus 02.jpg",
+    "File:Amphilophus citrinellus 01.jpg",
+    "File:Akara z Maroni.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/cleithracara-maronii/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Cleithracara-maronii.html"
+    }
+  ]
+}
