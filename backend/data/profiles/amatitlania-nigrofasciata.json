@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Amatitlania nigrofasciata",
+  "nom_valide": null,
+  "auteur": "(Günther, 1867)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "DD",
+  "repartition": "Amérique centrale : versants pacifique et atlantique du Guatemala, du Salvador et du Honduras ; introduit ailleurs",
+  "pays": [
+    "GTM",
+    "HND",
+    "SLV"
+  ],
+  "presentation": "Le « cichlidé zébré », ou cichlidé à bagnard, est l'un des poissons les plus répandus en aquariophilie, longtemps vendu sous les noms de *Cryptoheros* ou *Cichlasoma nigrofasciatus*. Son nom de genre vient du lac Amatitlán, au Guatemala, et *nigrofasciata* décrit ses bandes noires.",
+  "habitat": "Il occupe des milieux très variés, des ruisseaux et rivières courantes aux mares et aux lacs, toujours près d'un abri : fissures des rochers, racines ou débris.",
+  "comportement": "Robuste et facile à reproduire, il n'est pourtant pas un poisson communautaire : agressif et territorial, il devient violent en période de reproduction et s'attaque à des poissons bien plus gros. À garder en couple seul, ou dans un très grand bac avec des cichlidés centraméricains robustes. Il accepte tous les aliments.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Amatitlania-nigrofasciata.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/amatitlania-nigrofasciata/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2370027"
+    }
+  ]
+}

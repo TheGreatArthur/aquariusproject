@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Dawkinsia arulius",
+  "nom_valide": null,
+  "auteur": "(Jerdon, 1849)",
+  "classification": "Cypriniformes › Cyprinidae",
+  "uicn": "EN",
+  "repartition": "Sud de l'Inde : bassin de la Kaveri (Cauvery)",
+  "pays": [
+    "IND"
+  ],
+  "presentation": "Le genre *Dawkinsia*, créé en 2012, est dédié au biologiste Richard Dawkins pour sa contribution à la vulgarisation de la science. Ce barbu aux nageoires dorsales filamenteuses chez le mâle est classé en danger ; il semble avoir disparu de sa localité type, sans doute à cause d'un barrage construit en amont.",
+  "habitat": "Il préfère les rivières et ruisseaux propres, bien oxygénés et courants, à fond de graviers, de galets et de roches. La mousson y fait varier fortement le débit, jusqu'à l'assèchement partiel.",
+  "comportement": "Il convient à un bac paisible de poissons de rivière, avec d'autres cyprinidés de banc et des loches, ou avec tout poisson calme trop grand pour être avalé. En banc. Omnivore, il accepte les aliments secs et les proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Dawkinsia-arulius.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/dawkinsia-arulius/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/7868332"
+    }
+  ]
+}

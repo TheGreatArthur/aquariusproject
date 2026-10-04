@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Hemichromis bimaculatus",
+  "nom_valide": "Rubricatochromis bimaculatus",
+  "auteur": "(Gill, 1862)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Afrique de l'Ouest : de la Guinée au centre du Liberia (Sierra Leone comprise)",
+  "pays": [
+    "GIN",
+    "LBR",
+    "SLE"
+  ],
+  "presentation": "Considéré comme le vrai « poisson joyau » des aquariophiles, et aujourd'hui rangé dans le genre *Rubricatochromis*, il sert aussi d'animal d'étude aux physiologistes et éthologistes. Il porte trois taches noires sur les flancs, dont une sur le pédoncule caudal, contre deux chez *H. lifalili*, devenu plus populaire.",
+  "habitat": "Il vit dans les petits cours d'eau et canaux sur fond de vase ou de sable, sous une végétation surplombante et flottante, à l'intérieur des terres, en zone forestière intacte ou récemment perturbée.",
+  "comportement": "Malgré l'usage, il ne convient ni aux débutants ni au bac communautaire : territorial, il devient extrêmement agressif à la reproduction. Il cohabite avec de grands Alestidae (tétras du Congo), des Synodontis, des Loricariidés et, dans un grand bac, d'autres cichlidés africains comme Steatocranus. En couple, formé de préférence au sein d'un groupe de jeunes. Il mange presque tout, avec des proies vivantes et des végétaux.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hemichromis-bimaculatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hemichromis-bimaculatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2371368"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Labidochromis caeruleus",
+  "nom_commun": "Labidochromis jaune",
+  "famille": "Cichlidae africain",
+  "genre": "Labidochromis",
+  "zone_geo": "Afrique",
+  "type_eau": "douce",
+  "ph_mini": 7.7,
+  "ph_maxi": 8.6,
+  "kh": null,
+  "gh_mini": 10.0,
+  "gh_maxi": 25.0,
+  "temp_mini": 24,
+  "temp_maxi": 28,
+  "taille": 10.0,
+  "litrage_mini": 190,
+  "nb_individus": 4,
+  "points": 10,
+  "regime": "omnivore",
+  "mode_vie": "harem",
+  "comportement": "peu agressif",
+  "robustesse": "robuste",
+  "dispo": "très courant",
+  "longevite": 8,
+  "courant": "doux",
+  "photos": [
+    "File:Labidochromis caeruleus in Botanic garden in Teplice.JPG",
+    "File:Female Labidochromis caeruleus light.jpg",
+    "File:2023-08-20. Анапа DSC 5508.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/labidochromis-caeruleus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Labidochromis-caeruleus.html"
+    }
+  ]
+}

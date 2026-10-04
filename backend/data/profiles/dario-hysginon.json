@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Dario hysginon",
+  "nom_valide": null,
+  "auteur": "Kullander & Britz, 2002",
+  "classification": "Anabantiformes › Badidae",
+  "uicn": "LC",
+  "repartition": "Myanmar : bassin de l'Irrawaddy (État Kachin, lac Indawgyi, région de Mandalay)",
+  "pays": [
+    "MMR"
+  ],
+  "presentation": "Son nom vient du grec *hysginon*, une teinture écarlate, en référence au rouge vif des mâles. Il est vendu sous les noms de « Dario rouge melon » ou « Dario rouge flamme ». C'est l'un des plus petits poissons d'aquarium (2 cm).",
+  "habitat": "Il préfère les petites mares, souvent troubles, envahies de plantes aquatiques ou d'herbes immergées, et vit aussi dans des ruisseaux clairs à courant modéré, avec *Badis corycaeus* et *B. kyar*.",
+  "comportement": "Pas grégaire, il se garde seul ; les mâles rivaux peuvent être très agressifs. Dans un petit bac, un couple ou un mâle avec plusieurs femelles ; dans un bac plus grand, un groupe peut cohabiter si chaque mâle a son territoire. Micro-prédateur timide, il demande de petites proies vivantes ou congelées et refuse souvent les aliments secs.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Dario-hysginon.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/dario-hysginon/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2389479"
+    }
+  ]
+}

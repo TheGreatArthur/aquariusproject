@@ -19,7 +19,7 @@ from config import DSN
 from models import Poisson
 from models.meta import get_engine
 from profiles import PROFILES_DIR
-from tools.fetch_sources import CACHE_DIR, slug
+from tools.fetch_sources import CACHE_DIR, GBIF_SPECIES_RANKS, slug
 
 
 def draft(nom_scientifique: str, sources: dict) -> dict:
@@ -49,7 +49,7 @@ def draft(nom_scientifique: str, sources: dict) -> dict:
         profile['sources'].append({'nom': 'FishBase', 'url': fb['url']})
     if sf:
         profile['sources'].append({'nom': 'Seriously Fish', 'url': sf['url']})
-    if key := gbif.get('acceptedUsageKey') or gbif.get('usageKey'):
+    if gbif.get('rank') in GBIF_SPECIES_RANKS and (key := gbif.get('acceptedUsageKey') or gbif.get('usageKey')):
         profile['sources'].append({'nom': 'GBIF', 'url': f'https://www.gbif.org/species/{key}'})
     return profile
 

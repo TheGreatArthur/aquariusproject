@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Betta imbellis",
+  "nom_valide": null,
+  "auteur": "Ladiges, 1975",
+  "classification": "Anabantiformes › Osphronemidae",
+  "uicn": "LC",
+  "repartition": "Sud de la Thaïlande, péninsule Malaise et nord de Sumatra ; introduit à Singapour",
+  "pays": [
+    "IDN",
+    "MYS",
+    "THA"
+  ],
+  "presentation": "Son nom latin signifie « pacifique », mais il est sélectionné pour le combat dans le sud de la Thaïlande, comme *B. splendens*. Il a aussi été croisé avec d'autres Betta pour l'aquariophilie, d'où des formes colorées qui n'existent pas dans la nature. Comme les autres Betta, il construit un nid de bulles.",
+  "habitat": "Il vit dans des eaux calmes ou stagnantes, souvent ombragées et pauvres en oxygène : rizières, marais, fossés, ruisseaux et étangs, parfois en eau saumâtre côtière. Les relâchers de formes d'élevage menacent la pureté génétique de certaines populations.",
+  "comportement": "Il ne convient pas au bac communautaire classique : on le garde seul ou avec de petites espèces très paisibles. Avec assez de cachettes, plusieurs mâles peuvent cohabiter, mais un couple reste plus sûr. Il chasse des invertébrés : aliments secs, et surtout proies vivantes ou congelées. Il respire l'air en surface.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Betta-imbellis.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/betta-imbellis/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2394051"
+    }
+  ]
+}

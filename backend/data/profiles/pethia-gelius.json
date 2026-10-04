@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Pethia gelius",
+  "nom_valide": null,
+  "auteur": "(Hamilton, 1822)",
+  "classification": "Cypriniformes › Cyprinidae",
+  "uicn": "LC",
+  "repartition": "Bassins du Gange et du Brahmapoutre (nord de l'Inde, Népal, Bangladesh) ; signalé plus récemment au Tamil Nadu et dans le delta de l'Irrawaddy",
+  "pays": [
+    "BGD",
+    "IND",
+    "NPL",
+    "PAK"
+  ],
+  "presentation": "Ce minuscule barbu doré tacheté de noir n'a été clairement défini qu'en 2013, quand *P. canius* a été revalidé et *P. aurea* décrit : ces trois espèces étaient auparavant considérées comme des formes de *P. gelius*. Il est répandu en aquariophilie.",
+  "habitat": "Il vit surtout dans des eaux lentes, souvent troubles, sur fond de vase ou de limon, et dans les bordures des rivières. Au Bengale-Occidental, il fréquente les petits ruisseaux qui traversent les rizières ; profondeur, courant et turbidité varient selon la saison.",
+  "comportement": "Très paisible mais petit et timide : pas idéal en bac communautaire. On le garde seul ou avec d'autres micro-poissons (Trigonostigma, petits Danio, Lepidocephalichthys) et des crevettes. Poisson de banc, au moins 8 à 10. Micro-prédateur : aliments secs fins, mais pas exclusivement, avec chaque jour de petites proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pethia-gelius.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pethia-gelius/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/7554524"
+    }
+  ]
+}

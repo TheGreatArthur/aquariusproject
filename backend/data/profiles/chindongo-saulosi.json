@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Chindongo saulosi",
+  "nom_valide": null,
+  "auteur": "(Konings, 1990)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "CR",
+  "repartition": "Lac Malawi : récif de Taiwanee, près de l'île de Chizumulu",
+  "pays": [
+    "MWI"
+  ],
+  "emprise": [
+    33.8,
+    -15.0,
+    35.4,
+    -9.3
+  ],
+  "presentation": "Décrit par Ad Konings en 1990 et longtemps classé dans le genre *Pseudotropheus*, ce petit mbuna présente un dimorphisme marqué : mâles bleus rayés de noir, femelles jaune vif. Il est classé en danger critique d'extinction.",
+  "habitat": "Il vit en grands groupes sur des récifs rocheux sans sédiment, dans la partie haute du récif où le courant est fort.",
+  "comportement": "Comme les autres mbunas, il est territorial et se garde en groupe, un mâle pour plusieurs femelles, avec d'autres mbunas. Il broute et picore le revêtement d'algues et de petits organismes qui couvre les roches : son régime doit être surtout végétal.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Chindongo-saulosi.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2373064"
+    }
+  ]
+}

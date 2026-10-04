@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Corydoras leucomelas",
+  "nom_valide": "Hoplisoma leucomelas",
+  "auteur": "(Eigenmann & Allen, 1942)",
+  "classification": "Siluriformes › Callichthyidae",
+  "uicn": "LC",
+  "repartition": "Haut bassin de l'Amazone (Pérou, Colombie, Équateur)",
+  "pays": [
+    "COL",
+    "ECU",
+    "PER"
+  ],
+  "presentation": "L'un des Corydoras les plus abondants dans la nature, capturé en masse et souvent vendu dans des lots de « Corydoras mélangés » avec des espèces voisines difficiles à distinguer. Il est rangé aujourd'hui dans le genre *Hoplisoma*.",
+  "habitat": "Il vit surtout dans les rivières et affluents d'eaux noires, acides et brunies par les tanins, où il nage en très grands groupes au-dessus de fonds meubles et vaseux.",
+  "comportement": "Paisible et grégaire, il se garde en groupe. Omnivore, il accepte les aliments secs coulants et les proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Corydoras-leucomelas.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/corydoras-leucomelas/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2342599"
+    }
+  ]
+}

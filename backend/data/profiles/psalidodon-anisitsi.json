@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Psalidodon anisitsi",
+  "nom_valide": null,
+  "auteur": "(Eigenmann, 1907)",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Bassins du Paraná (Brésil, Paraguay, Argentine) et de l'Uruguay",
+  "pays": [
+    "ARG",
+    "BRA",
+    "PRY",
+    "URY"
+  ],
+  "presentation": "Le tétra de Buenos Aires, dédié au professeur Anisits d'Asunción qui récolta les premiers spécimens, est l'un des tétras les plus robustes. Il existe une forme albinos, vendue sous le nom de « golden ». Il dévore les plantes tendres.",
+  "habitat": "Il fréquente les petits cours d'eau et affluents plus que les grandes rivières, ainsi que les lacs de plaine inondable, bras morts et mares, dans une région subtropicale aux hivers assez doux. Dans les marais d'Iberá (Argentine), il côtoie de nombreux Hyphessobrycon.",
+  "comportement": "Il a la réputation de mordiller les nageoires, surtout en trop petit nombre ou à l'étroit. Grégaire, il forme des hiérarchies lâches où les mâles se disputent sans cesse : un groupe de 8 à 10 au moins est un minimum. Omnivore : facile à nourrir, avec des végétaux et des proies vivantes ou congelées. Il supporte une eau assez fraîche ; plantes robustes ou artificielles.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Psalidodon-anisitsi.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hyphessobrycon-anisitsi/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2354671"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "nom_scientifique": "Trichogaster labiosa",
+  "nom_commun": "Gourami à grosses lèvres",
+  "famille": "Osphronemidae",
+  "genre": "Trichogaster",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 22,
+  "temp_maxi": 27,
+  "taille": 10.0,
+  "litrage_mini": 80,
+  "nb_individus": 4,
+  "points": 10,
+  "regime": "omnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "courant",
+  "longevite": 8,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Colisa labiosa m.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/trichogaster-labiosa/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Trichogaster-labiosa.html"
+    }
+  ]
+}

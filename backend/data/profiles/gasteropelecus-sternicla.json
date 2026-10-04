@@ -1,0 +1,33 @@
+{
+  "nom_scientifique": "Gasteropelecus sternicla",
+  "nom_valide": null,
+  "auteur": "(Linnaeus, 1758)",
+  "classification": "Characiformes › Gasteropelecidae",
+  "uicn": "LC",
+  "repartition": "Amazonie péruvienne et moyenne Amazonie, Guyanes et Venezuela ; signalé dans le bassin du Paraguay",
+  "pays": [
+    "BRA",
+    "GUF",
+    "GUY",
+    "PER",
+    "SUR",
+    "VEN"
+  ],
+  "presentation": "Son nom de genre signifie « ventre en hache », et *sternicla* évoque son thorax très bombé. Comme les autres poissons-hachettes, il peut bondir hors de l'eau et planer sur plusieurs mètres, pour attraper des insectes en vol ou fuir un prédateur.",
+  "habitat": "Il vit dans les ruisseaux forestiers lents, les affluents et les marais, surtout là où abonde la végétation flottante.",
+  "comportement": "Très paisible mais nerveux et timide, il se fait distancer à table par les espèces turbulentes. On l'associe à de petits poissons vivant à d'autres niveaux (tétras, cichlidés nains, Corydoras). Il ne s'installe qu'en groupe d'au moins six. Il mange surtout des insectes à la surface : proies vivantes ou congelées. Aquarium couvert indispensable.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Gasteropelecus-sternicla.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/gasteropelecus-sternicla/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2355737"
+    }
+  ]
+}

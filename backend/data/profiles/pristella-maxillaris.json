@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Pristella maxillaris",
+  "nom_valide": null,
+  "auteur": "(Ulrey, 1894)",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Plaines côtières du Venezuela, des Guyanes et du nord du Brésil, bassins de l'Amazone et de l'Orénoque",
+  "pays": [
+    "BRA",
+    "GUF",
+    "GUY",
+    "VEN"
+  ],
+  "presentation": "Seule espèce de son genre, le pristella se reconnaît à la tache noire bordée de jaune et de blanc de sa dorsale. Paisible, robuste et bon marché, c'est l'un des meilleurs choix pour débuter ; il existe une forme « dorée » semi-albinos. Les poissons du commerce sont élevés en masse.",
+  "habitat": "À la saison sèche, il vit dans les ruisseaux et affluents d'eau claire ; aux pluies, il gagne les savanes inondées où il pond parmi la végétation immergée. Il supporte même une eau légèrement saumâtre.",
+  "comportement": "Très paisible et grégaire, il supporte mal les compagnons turbulents ou bien plus grands. On l'associe à de petits tétras, poissons-crayons, poissons-hachettes, Apistogramma, Corydoras et petits Loricariidés, ou en bac communautaire à de petits Rasbora, barbus, vivipares, loches, anabantoïdes et Pelvicachromis. En banc. Micro-prédateur : aliments secs et petites proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pristella-maxillaris.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pristella-maxillaris/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2353616"
+    }
+  ]
+}

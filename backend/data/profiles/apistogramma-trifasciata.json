@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Apistogramma trifasciata",
+  "nom_valide": null,
+  "auteur": "(Eigenmann & Kennedy, 1903)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Bassin du Guaporé (sud de l'Amazonie), bassins du Paraguay et du moyen Paraná (Brésil, Paraguay, Argentine)",
+  "pays": [
+    "ARG",
+    "BRA",
+    "PRY"
+  ],
+  "presentation": "Son nom d'espèce évoque ses trois bandes sombres. Décrit du Paraguay en 1903, il porte les codes A204 à A206 du système DATZ selon les populations ; celle du rio Guaporé existe en formes rouge et bleue qui vivent ensemble dans la nature.",
+  "habitat": "Il vit dans les criques lentes, les affluents et les petites rivières, surtout là où s'accumule la litière de feuilles.",
+  "comportement": "Contrairement à beaucoup d'Apistogramma, les deux parents s'occupent des œufs, pondus au plafond d'une cavité, et des larves : on le garde en couple. Il convient aux bacs paisibles, avec de petits poissons de pleine eau et sans autre Apistogramma. Surtout carnivore, il demande des proies vivantes ou congelées et une eau sans déchets organiques.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Apistogramma-trifasciata.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/apistogramma-trifasciata/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2371310"
+    }
+  ]
+}

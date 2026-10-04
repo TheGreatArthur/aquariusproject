@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Mikrogeophagus altispinosus",
+  "nom_valide": null,
+  "auteur": "(Haseman, 1911)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Haut bassin du Rio Madeira (Mamoré, Guaporé, Orthon), en Bolivie et au Brésil",
+  "pays": [
+    "BOL",
+    "BRA"
+  ],
+  "presentation": "Ce cichlidé nain, vendu sous le nom de « ramirezi bolivien », est sans doute un meilleur choix pour un aquariophile peu expérimenté que son cousin *M. ramirezi*. Son nom vient des premiers rayons épineux allongés de sa dorsale.",
+  "habitat": "On sait peu de choses de son milieu, probablement des affluents, bordures, bras morts et lacs sur fond de sable ou de vase. Le haut Madeira compte plus de 400 espèces de poissons, dont de nombreux tétras connus en aquariophilie.",
+  "comportement": "Malgré sa réputation, il ne convient pas au bac communautaire classique : il exige une eau irréprochable et se nourrit mal face aux concurrents. Un groupe de tétras paisibles nageant en pleine eau le rassure. Il tamise le sol à la recherche de nourriture : sable fin, aliments coulants et petites proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Mikrogeophagus-altispinosus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/mikrogeophagus-altispinosus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2373109"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Sewellia lineolata",
+  "nom_valide": null,
+  "auteur": "(Valenciennes, 1846)",
+  "classification": "Cypriniformes › Gastromyzontidae",
+  "uicn": "VU",
+  "repartition": "Centre du Viêt Nam (bassins de la Huong, de la Thu Bon, de la Tra Khuc et de l'An Lao) ; signalée dans le bassin du Mékong",
+  "pays": [
+    "CHN",
+    "KHM",
+    "VNM"
+  ],
+  "presentation": "Cette loche-ventouse réticulée, collée aux pierres comme un petit disque, a été signalée par Diard plus de 150 ans avant sa redécouverte au début des années 1990. Arrivée dans le commerce au milieu des années 2000, elle est vite devenue populaire grâce à ses motifs et à sa reproduction facile. Elle est classée vulnérable.",
+  "habitat": "Elle vit dans les têtes de bassin et affluents rapides, peu profonds et très oxygénés, faits de radiers et de courants coupés de fosses ou de cascades, sur roche, sable, gravier et blocs, sans plantes aquatiques. L'eau claire et le soleil y font pousser un riche biofilm.",
+  "comportement": "La plus dominante des loches-ventouses, sans être agressive envers les poissons différents. On l'associe à de petits cyprinidés de pleine eau (Tanichthys, Danio, Devario, Rasbora), à des gobies de torrent (Rhinogobius, Stiphodon) ou à des poissons-chats rhéophiles. Il lui faut un fort courant, beaucoup d'oxygène et une eau fraîche. Elle broute les algues : aliments à base d'algues et petites proies.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Sewellia-lineolata.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/sewellia-lineolata/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5205384"
+    }
+  ]
+}

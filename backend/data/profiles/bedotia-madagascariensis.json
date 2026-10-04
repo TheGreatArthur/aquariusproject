@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Bedotia madagascariensis",
+  "nom_valide": null,
+  "auteur": "Regan, 1903",
+  "classification": "Atheriniformes › Bedotiidae",
+  "uicn": "EN",
+  "repartition": "Est de Madagascar : bas cours des rivières entre l'Ivoloina (près de Toamasina) et Vatomandry",
+  "pays": [
+    "MDG"
+  ],
+  "presentation": "Importé dès les années 1950, cet arc-en-ciel malgache est encore souvent vendu sous le nom de *Bedotia geayi*, une espèce voisine du bassin de la Mananjary. Il est classé en danger.",
+  "habitat": "Il vit dans des ruisseaux clairs et ombragés de basse altitude, aux eaux très douces et au courant modéré, et parfois dans des marais d'eaux noires acides. Là où le milieu est découvert ou trouble, il a été remplacé par des espèces introduites (gambusies, platys).",
+  "comportement": "Paisible et peu exigeant, c'est un poisson de banc qui cohabite avec arcs-en-ciel, barbus, characidés, cichlidés paisibles et poissons-chats, mais pas avec d'autres Bedotia (hybridations). Il mange surtout des insectes : proies vivantes ou congelées et aliments secs de qualité.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Bedotia-madagascariensis.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/bedotia-madagascariensis/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2412028"
+    }
+  ]
+}

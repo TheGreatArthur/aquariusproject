@@ -1,0 +1,43 @@
+{
+  "nom_scientifique": "Anabas testudineus",
+  "nom_valide": null,
+  "auteur": "(Bloch, 1792)",
+  "classification": "Anabantiformes › Anabantidae",
+  "uicn": "LC",
+  "repartition": "Asie du Sud et du Sud-Est, de l'Inde et du Pakistan à la Chine du Sud et à l'Indonésie ; introduit aux Philippines, en Papouasie-Nouvelle-Guinée et dans des îles du Pacifique",
+  "pays": [
+    "BGD",
+    "CHN",
+    "IDN",
+    "IND",
+    "KHM",
+    "LAO",
+    "LKA",
+    "MMR",
+    "MYS",
+    "NPL",
+    "PAK",
+    "SGP",
+    "THA",
+    "TLS",
+    "TWN",
+    "VNM"
+  ],
+  "presentation": "La perche grimpeuse est célèbre pour sa capacité à survivre hors de l'eau et à se déplacer sur la terre ferme d'un point d'eau à l'autre. Elle respire obligatoirement l'air et émet des sons audibles. Élevée pour la consommation dans plusieurs pays, elle est peu courante en aquariophilie malgré son intérêt.",
+  "habitat": "Elle vit dans presque tous les milieux d'eau douce de son aire : marais, lacs, canaux, mares, rizières, flaques, bras morts et rivières, souvent très végétalisés, en eau trouble et stagnante. Elle supporte des conditions extrêmes et s'enfouit dans la vase à la saison sèche.",
+  "comportement": "Sa taille adulte et son instinct prédateur la rendent impropre au bac communautaire : les poissons bien plus petits sont mangés, mais des cyprinidés, poissons-chats, cichlidés et anguilles épineuses robustes de taille adaptée conviennent dans un grand bac. Son agressivité envers ses congénères varie selon les témoignages. Surtout prédatrice : vers, coquillages, proies congelées et granulés.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Anabas-testudineus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/anabas-testudineus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2391579"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Limia melanogaster",
+  "nom_commun": "Limia à ventre noir",
+  "famille": "Poeciliidae",
+  "genre": "Limia",
+  "zone_geo": "Amérique centrale",
+  "type_eau": "douce",
+  "ph_mini": 7.5,
+  "ph_maxi": 8.5,
+  "kh": null,
+  "gh_mini": 20.0,
+  "gh_maxi": 30.0,
+  "temp_mini": 22,
+  "temp_maxi": 28,
+  "taille": 4.0,
+  "litrage_mini": 70,
+  "nb_individus": 4,
+  "points": 5,
+  "regime": "omnivore",
+  "mode_vie": "harem",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 5,
+  "courant": "doux",
+  "photos": [
+    "File:Limia melanogaster.jpg",
+    "File:Limia melanogaster (3).jpg",
+    "File:Limia melanogaster (3) (cropped).jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/limia-melanogaster/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Limia-melanogaster.html"
+    }
+  ]
+}

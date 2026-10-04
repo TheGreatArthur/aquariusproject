@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Heros efasciatus",
+  "nom_valide": null,
+  "auteur": "Heckel, 1840",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Bassin de l'Amazone : Solimões et cours principal de l'Amazone, affluents de l'Ucayali (Pérou), signalé dans le Xingu",
+  "pays": [
+    "BRA",
+    "PER"
+  ],
+  "presentation": "Le sévérum, l'un des cichlidés les plus populaires et disponibles, existe en forme verte sauvage et en forme dorée. Beaucoup ignorent qu'il atteint une assez grande taille (30 cm) et ne convient donc pas à tous les aquariums. Les poissons du commerce, longtemps vendus sous le nom de *Heros severus*, appartiennent surtout à cette espèce.",
+  "habitat": "Il vit dans les rivières lentes, les affluents et les lacs de plaine inondable, surtout en eau profonde et calme parmi les racines et branches immergées, mais aussi dans les zones inondées et les estuaires à marée.",
+  "comportement": "Hors reproduction, il est assez calme pour un cichlidé de cette taille : un bon choix pour un bac de grands poissons paisibles d'Amérique du Sud, sans poissons assez petits pour être mangés. Un individu seul peut devenir hargneux en vieillissant : la compagnie de congénères l'évite souvent. Omnivore, surtout frugivore dans la nature : aliments secs, proies charnues et végétaux (petits pois, épinards, spiruline).",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Heros-efasciatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/heros-efasciatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5208365"
+    }
+  ]
+}

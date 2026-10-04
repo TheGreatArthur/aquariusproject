@@ -1,0 +1,27 @@
+{
+  "nom_scientifique": "Peckoltia vittata",
+  "nom_valide": null,
+  "auteur": "(Steindachner, 1881)",
+  "classification": "Siluriformes › Loricariidae",
+  "uicn": "LC",
+  "repartition": "Amazonie brésilienne (bas Tapajós, Madeira, Xingu, Uatumã, Trombetas, Capim) et Río Ventuari au Venezuela",
+  "pays": [
+    "BOL",
+    "BRA",
+    "COL",
+    "VEN"
+  ],
+  "presentation": "Ce petit pléco rayé de bandes sombres et claires reste de taille raisonnable (13 cm) et convient donc à des bacs plus modestes que la plupart des Loricariidés. Il peut respirer l'air, comme les autres membres de son genre.",
+  "habitat": "Au Venezuela, il a été capturé sur les roches des zones de courant.",
+  "comportement": "Paisible et nocturne, il broute les algues et grignote les plantes et les racines. On peut le garder en groupe, avec des poissons calmes. Aliments coulants à base de végétaux, bois tendre à râper et proies congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Peckoltia-vittata.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5202098"
+    }
+  ]
+}

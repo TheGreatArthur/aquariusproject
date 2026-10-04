@@ -1,0 +1,25 @@
+{
+  "nom_scientifique": "Boehlkea fredcochui",
+  "nom_valide": null,
+  "auteur": "Géry, 1966",
+  "classification": "Characiformes › Stevardiidae",
+  "uicn": "LC",
+  "repartition": "Bassin de l'Amazone (Colombie, Brésil)",
+  "pays": [
+    "BRA",
+    "COL"
+  ],
+  "presentation": "Décrit par Géry en 1966, ce petit characidé aux reflets bleus est vendu sous le nom de « tétra bleu du Pérou ». Il est le seul représentant de son genre.",
+  "habitat": "Il vit dans le haut bassin de l'Amazone ; ses habitats naturels sont peu documentés.",
+  "comportement": "Poisson de banc actif, il se garde en groupe avec des espèces de taille comparable, et pas avec des poissons lents à longues nageoires. Il accepte les aliments secs et les petites proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Boehlkea-fredcochui.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2353608"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Abramites hypselonotus",
+  "nom_commun": "Abramites",
+  "famille": "Anostomidae",
+  "genre": "Abramites",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 5.5,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 20,
+  "temp_maxi": 30,
+  "taille": 14.0,
+  "litrage_mini": 140,
+  "nb_individus": 4,
+  "points": 20,
+  "regime": "omnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "peu agressif",
+  "robustesse": "robuste",
+  "dispo": "occasionnel",
+  "longevite": 8,
+  "courant": "doux, modéré",
+  "photos": [
+    "File:Abramites hypselonotus1.jpg",
+    "File:Abramites hypselonotus Brazil.jpg",
+    "File:Abramites hypselonotus.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/abramites-hypselonotus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Abramites-hypselonotus.html"
+    }
+  ]
+}

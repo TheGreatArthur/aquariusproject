@@ -1,0 +1,34 @@
+{
+  "nom_scientifique": "Maylandia zebra",
+  "nom_valide": null,
+  "auteur": "(Boulenger, 1899)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Endémique du lac Malawi (Malawi), dont les îles Likoma et Chizumulu",
+  "pays": [
+    "MWI"
+  ],
+  "emprise": [
+    33.8,
+    -15.0,
+    35.4,
+    -9.3
+  ],
+  "presentation": "Le zébra du Malawi, bleu barré de noir chez le mâle, est l'un des mbunas les plus agressifs et ne convient en aucun cas au bac tropical classique. Incubateur buccal maternel, il se reproduit au mieux en bac spécifique, en harem d'un mâle pour au moins trois femelles.",
+  "habitat": "Il vit dans les zones rocheuses du lac, à profondeur variable autour des côtes, des récifs et des îles. Il peigne les algues et les dépôts du biofilm des roches et se nourrit aussi de plancton en pleine eau.",
+  "comportement": "Il convient à la plupart des bacs de mbunas, mais pas avec les espèces douces comme les Aulonocara. Trois femelles par mâle, et un seul mâle dans un bac de moins de 200 L, pour répartir l'agressivité. Les végétaux (spiruline, épinards, nori) doivent former la base de son alimentation, avec peu de protéines. Sensible à la qualité de l'eau : filtration et entretien irréprochables.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Maylandia-zebra.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/maylandia-zebra/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2373039"
+    }
+  ]
+}

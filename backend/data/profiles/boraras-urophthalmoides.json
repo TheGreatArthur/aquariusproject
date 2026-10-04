@@ -1,0 +1,32 @@
+{
+  "nom_scientifique": "Boraras urophthalmoides",
+  "nom_valide": null,
+  "auteur": "(Kottelat, 1991)",
+  "classification": "Cypriniformes › Danionidae",
+  "uicn": "NT",
+  "repartition": "Thaïlande (centre et sud) ; aussi signalé au Cambodge, au Laos et en Malaisie",
+  "pays": [
+    "IDN",
+    "KHM",
+    "LAO",
+    "MYS",
+    "THA"
+  ],
+  "presentation": "L'un des plus petits poissons d'aquarium (1,5 cm). Il se reconnaît à la tache ronde et sombre de son pédoncule caudal et à sa ligne latérale continue ; certaines populations montrent une bande orangée qui prête à confusion avec *B. brigittae*.",
+  "habitat": "Il vit dans des eaux peu profondes et claires, à végétation immergée dense : marais, plaines inondables et rizières, et gagne les zones inondées à la saison des pluies.",
+  "comportement": "Très paisible mais trop petit et timide pour un bac communautaire classique : on l'associe à d'autres micro-poissons ou à de petits anabantoïdes discrets. Micro-prédateur, il se nourrit de zooplancton : petites proies vivantes ou congelées et aliments secs très fins.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Boraras-urophthalmoides.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/boraras-urophthalmoides/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2366593"
+    }
+  ]
+}

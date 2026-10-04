@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Pantodon buchholzi",
+  "nom_commun": "Poisson-papillon",
+  "famille": "Pantodontidae",
+  "genre": "Pantodon",
+  "zone_geo": "Afrique",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 23,
+  "temp_maxi": 30,
+  "taille": 12.0,
+  "litrage_mini": 100,
+  "nb_individus": 3,
+  "points": 20,
+  "regime": "carnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "prédateur",
+  "robustesse": "tolérant",
+  "dispo": "peu courant",
+  "longevite": 8,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Pantodon buchholzi.jpg",
+    "File:Pantodon buchholzi 53146715.jpg",
+    "File:Pantadon fry from above.png"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pantodon-buchholzi/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pantodon-buchholzi.html"
+    }
+  ]
+}

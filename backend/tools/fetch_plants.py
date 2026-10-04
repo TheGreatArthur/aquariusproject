@@ -15,8 +15,6 @@ des sources n'est jamais recopié dans le dépôt.
 Usage : venv/bin/python -m tools.fetch_plants [plante ...]   (noms de fichiers sans .json)
 """
 
-import html
-import io
 import json
 import re
 import sys
@@ -25,7 +23,8 @@ from pathlib import Path
 
 from bs4 import BeautifulSoup, Tag
 
-from tools.fetch_sources import download, fetch, slug
+from tools.commons import FREE_LICENCE, check_licence, clean_author, download_photos  # noqa: F401
+from tools.fetch_sources import fetch, slug
 
 BACKEND_DIR = Path(__file__).resolve().parent.parent
 PLANTS_DIR = BACKEND_DIR / 'data' / 'plants'
@@ -34,12 +33,7 @@ PHOTOS_DIR = BACKEND_DIR.parent / 'frontend' / 'public' / 'plants'
 
 FLOWGROW_URL = 'https://www.flowgrow.de/db/aquaticplants/{}'
 TROPICA_URL = 'https://tropica.com/en/plants/plantdetails/{}'
-COMMONS_API = 'https://commons.wikimedia.org/w/api.php?'
 
-PHOTO_MAX_SIDE = 2000
-PHOTO_QUALITY = 82
-# Licences libres acceptées pour les photos : domaine public, CC0, CC BY et CC BY-SA (toutes versions)
-FREE_LICENCE = re.compile(r'^(public domain|pd\b.*|cc0( 1\.0)?|cc by(-sa)? \d\.\d( [a-z]{2})?)$', re.IGNORECASE)
 
 # --- Traductions des libellés Flowgrow et Tropica ---------------------------------------------------
 
@@ -307,86 +301,9 @@ def plain_name(usage: dict) -> str | None:
 
 # --- Wikimedia Commons ------------------------------------------------------------------------------
 
-def strip_markup(text: str | None) -> str:
-    return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', text or ''))).strip()
-
-
-def commons_info(title: str) -> dict:
-    """ Adresse, auteur et licence d'un fichier Commons """
-    query = urllib.parse.urlencode({
-        'action': 'query', 'titles': title, 'prop': 'imageinfo', 'iiprop': 'url|size|mime|extmetadata|user',
-        'iiurlwidth': PHOTO_MAX_SIDE, 'format': 'json',
-    })
-    _, body = fetch(COMMONS_API + query, f'commons-{slug(title)}.json')
-    page = next(iter(json.loads(body or '{}').get('query', {}).get('pages', {}).values()), {})
-    if 'imageinfo' not in page:
-        return {}
-    info = page['imageinfo'][0]
-    meta = info.get('extmetadata', {})
-    return dict(
-        titre=page['title'],
-        url=info.get('thumburl') or info['url'],
-        source=info['descriptionurl'],
-        # Sans champ « Artist » (vieux fichiers), l'auteur est la personne qui a versé la photo
-        auteur=strip_markup(meta.get('Artist', {}).get('value')) or info.get('user'),
-        licence=strip_markup(meta.get('LicenseShortName', {}).get('value')),
-        licence_url=meta.get('LicenseUrl', {}).get('value'),
-    )
-
-
-def clean_author(text: str) -> str:
-    """ 'photo: S. Tanaka' -> 'S. Tanaka' ; 'W. Follette @ USDA-NRCS PLANTS Database / USDA NRCS. 1992...' ->
-    'W. Follette, USDA-NRCS PLANTS Database' (la référence bibliographique reste sur la page Commons) """
-    text = re.sub(r'^(photo|photograph|author)\s*:\s*', '', text.split(' / ')[0], flags=re.IGNORECASE)
-    return text.replace(' @ ', ', ').strip()
-
-
-def check_licence(info: dict) -> str | None:
-    """ Erreur si la photo ne peut pas être publiée dans le dépôt """
-    if not info:
-        return 'fichier introuvable sur Commons'
-    if not FREE_LICENCE.match(info['licence'] or ''):
-        return f'licence non libre ou inconnue : {info["licence"]!r}'
-    if not info['auteur']:
-        return 'auteur inconnu (attribution impossible)'
-    return None
-
-
-def save_photo(data: bytes, path: Path) -> None:
-    """ Enregistre la photo en JPEG progressif, 2000 px au plus sur le grand côté (comme `make images`) """
-    from PIL import Image, ImageOps
-
-    with Image.open(io.BytesIO(data)) as im:
-        icc = im.info.get('icc_profile')
-        im = ImageOps.exif_transpose(im).convert('RGB')
-        im.thumbnail((PHOTO_MAX_SIDE, PHOTO_MAX_SIDE), Image.LANCZOS)
-        path.parent.mkdir(parents=True, exist_ok=True)
-        im.save(path, 'JPEG', quality=PHOTO_QUALITY, optimize=True, progressive=True, icc_profile=icc)
-
-
 def photos(name: str, titles: list[str], previous: list[dict] = ()) -> tuple[list[dict], list[str]]:
-    """
-    Télécharge les photos d'une plante (<plante>-1.jpg, -2.jpg...) et renvoie leurs crédits. Une photo déjà
-    présente n'est gardée que si elle vient du même fichier Commons qu'au passage précédent (`previous`), pour
-    que l'image et son crédit correspondent toujours ; les photos qui ne sont plus dans la fiche sont supprimées.
-    """
-    sources = {c['fichier']: c['source'] for c in previous}
-    credits, errors = [], []
-    for i, title in enumerate(titles, start=1):
-        info = commons_info(title)
-        if error := check_licence(info):
-            errors.append(f'{title} : {error}')
-            continue
-        path = PHOTOS_DIR / f'{name}-{i}.jpg'
-        if not path.exists() or sources.get(path.name) != info['source']:
-            save_photo(download(info['url']), path)
-        credits.append(dict(fichier=path.name, auteur=clean_author(info['auteur'])[:150], licence=info['licence'],
-                            licence_url=info['licence_url'], source=info['source']))
-    kept = {c['fichier'] for c in credits}
-    for path in PHOTOS_DIR.glob(f'{name}-*.jpg'):
-        if re.fullmatch(rf'{re.escape(name)}-\d+\.jpg', path.name) and path.name not in kept:
-            path.unlink()
-    return credits, errors
+    """ Télécharge les photos d'une plante (<plante>-1.jpg, -2.jpg...) et renvoie leurs crédits """
+    return download_photos(name, titles, PHOTOS_DIR, previous)
 
 
 # --- Collecte ---------------------------------------------------------------------------------------

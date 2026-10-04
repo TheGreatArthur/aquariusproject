@@ -1,0 +1,40 @@
+{
+  "nom_scientifique": "Uaru amphiacanthoides",
+  "nom_commun": "Uaru",
+  "famille": "Cichlidae américain",
+  "genre": "Uaru",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 7.0,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 12.0,
+  "temp_mini": 27,
+  "temp_maxi": 30,
+  "taille": 25.5,
+  "litrage_mini": 500,
+  "nb_individus": 4,
+  "points": 30,
+  "regime": "herbivore et omnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "pacifique",
+  "robustesse": "sensible",
+  "dispo": "occasionnel",
+  "longevite": 12,
+  "courant": "doux",
+  "photos": [
+    "File:Uaru.jpg",
+    "File:Uaru amphiacanthoides Singapore.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/uaru-amphiacanthoides/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Uaru-amphiacanthoides.html"
+    }
+  ]
+}

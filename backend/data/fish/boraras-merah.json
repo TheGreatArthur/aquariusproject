@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Boraras merah",
+  "nom_commun": "Rasbora merah",
+  "famille": "Danionidae",
+  "genre": "Boraras",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 4.0,
+  "ph_maxi": 6.5,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 5.0,
+  "temp_mini": 20,
+  "temp_maxi": 28,
+  "taille": 2.0,
+  "litrage_mini": 50,
+  "nb_individus": 10,
+  "points": 2,
+  "regime": "carnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "sensible",
+  "dispo": "occasionnel",
+  "longevite": 4,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Boraras merah4.png",
+    "File:Boraras merah2.png",
+    "File:Boraras merah1.png"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/boraras-merah/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Boraras-merah.html"
+    }
+  ]
+}

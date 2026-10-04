@@ -1,0 +1,39 @@
+{
+  "nom_scientifique": "Dianema urostriatum",
+  "nom_commun": "Dianema à queue rayée",
+  "famille": "Callichthyidae",
+  "genre": "Dianema",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 20.0,
+  "temp_mini": 25,
+  "temp_maxi": 28,
+  "taille": 12.5,
+  "litrage_mini": 170,
+  "nb_individus": 6,
+  "points": 20,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 8,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Dianema urostriata.JPG"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/dianema-urostriatum/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Dianema-urostriatum.html"
+    }
+  ]
+}

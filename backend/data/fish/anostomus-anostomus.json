@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Anostomus anostomus",
+  "nom_commun": "Anostomus rayé",
+  "famille": "Anostomidae",
+  "genre": "Anostomus",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 5.5,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 18.0,
+  "temp_mini": 20,
+  "temp_maxi": 28,
+  "taille": 20.0,
+  "litrage_mini": 140,
+  "nb_individus": 1,
+  "points": 30,
+  "regime": "omnivore",
+  "mode_vie": "solitaire",
+  "comportement": "peu agressif",
+  "robustesse": "tolérant",
+  "dispo": "occasionnel",
+  "longevite": 12,
+  "courant": "modéré, fort",
+  "photos": [
+    "File:Anostomus anostomus, striped headstander.jpg",
+    "File:Anostomus anostomus - Zoo Frankfurt.jpg",
+    "File:Anostomus anostomus Armbruster.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/anostomus-anostomus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Anostomus-anostomus.html"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "nom_scientifique": "Hemigrammus ocellifer",
+  "nom_valide": "Holopristis ocellifera",
+  "auteur": "(Steindachner, 1882)",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Guyana, Suriname, Guyane française, et bassin de l'Amazone au Brésil et au Pérou",
+  "pays": [
+    "BRA",
+    "GUF",
+    "GUY",
+    "PER",
+    "SUR"
+  ],
+  "presentation": "Le tétra feu de position doit son nom aux deux points lumineux de son œil et de sa queue, comme les feux d'un navire. Populaire depuis des décennies, il est élevé en masse pour le commerce ; il existe aussi une forme albinos.",
+  "habitat": "Il vit dans les rivières lentes, les affluents et les lacs de plaine inondable, en groupes, dans des eaux à faible courant. Il se nourrit de vers, de petits insectes, de crustacés et de végétaux.",
+  "comportement": "Robuste, vif et paisible, c'est l'un des meilleurs choix pour débuter et pour le bac communautaire : vivipares, Danio, Rasbora, autres tétras, Corydoras, gouramis et cichlidés nains. Pas avec les grandes espèces qui le mangeraient, comme le scalaire. En banc. Il accepte presque tout, avec de petites proies vivantes ou congelées pour de belles couleurs.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hemigrammus-ocellifer.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hemigrammus-ocellifer/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2354330"
+    }
+  ]
+}

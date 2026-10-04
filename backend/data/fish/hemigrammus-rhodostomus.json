@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Hemigrammus rhodostomus",
+  "nom_commun": "Nez rouge vrai",
+  "famille": "Characidae",
+  "genre": "Hemigrammus",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 5.5,
+  "ph_maxi": 7.0,
+  "kh": null,
+  "gh_mini": 2.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 24,
+  "temp_maxi": 27,
+  "taille": 5.0,
+  "litrage_mini": 80,
+  "nb_individus": 10,
+  "points": 5,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "tolérant",
+  "dispo": "courant",
+  "longevite": 5,
+  "courant": "doux",
+  "photos": [
+    "File:Petitella rhodostoma.jpg",
+    "File:Petitella rhodostoma, Bernat Arlandis, 2013.jpg",
+    "File:Petitellarhodostom.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hemigrammus-rhodostomus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hemigrammus-rhodostomus.html"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "nom_scientifique": "Pethia gelius",
+  "nom_commun": "Barbu doré nain",
+  "famille": "Cyprinidae",
+  "genre": "Pethia",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 7.0,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 10.0,
+  "temp_mini": 18,
+  "temp_maxi": 24,
+  "taille": 4.0,
+  "litrage_mini": 70,
+  "nb_individus": 10,
+  "points": 5,
+  "regime": "carnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "tolérant",
+  "dispo": "occasionnel",
+  "longevite": 5,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Pethia gelius hi res.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pethia-gelius/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pethia-gelius.html"
+    }
+  ]
+}

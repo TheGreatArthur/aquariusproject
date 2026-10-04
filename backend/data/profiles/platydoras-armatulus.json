@@ -1,0 +1,32 @@
+{
+  "nom_scientifique": "Platydoras armatulus",
+  "nom_valide": null,
+  "auteur": "(Valenciennes, 1840)",
+  "classification": "Siluriformes › Doradidae",
+  "uicn": "LC",
+  "repartition": "Bassin du Paraná-Paraguay (Argentine, Bolivie, Brésil, Paraguay, Uruguay) ; Seriously Fish lui attribue une aire bien plus vaste (Orénoque, Amazonie, Guyanes)",
+  "pays": [
+    "ARG",
+    "BOL",
+    "BRA",
+    "PRY",
+    "URY"
+  ],
+  "presentation": "Ce poisson-chat rayé noir et blanc, aussi appelé « poisson-chat qui parle », émet des grincements audibles en frottant ses épines pectorales. Robuste et tolérant, il passe pour un poisson de débutant, mais sa discrétion, sa taille adulte (24 cm) et son goût pour les petits poissons le réservent aux bacs de grandes espèces.",
+  "habitat": "Il vit dans les eaux lentes ou stagnantes (affluents, criques, marais), en général abrité parmi les racines ou la végétation immergée.",
+  "comportement": "Totalement pacifique, mais il mange les petits poissons : on l'associe à des espèces paisibles trop grandes pour lui (characidés moyens, cyprinidés, anabantoïdes, cichlidés, poissons-chats non territoriaux). Il tolère ses congénères, qui partagent souvent le même abri le jour. Omnivore : pastilles coulantes et proies vivantes ou congelées, distribuées après l'extinction des lumières.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Platydoras-armatulus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/platydoras-armatulus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2343888"
+    }
+  ]
+}

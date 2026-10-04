@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Nematobrycon palmeri",
+  "nom_valide": null,
+  "auteur": "Eigenmann, 1911",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "DD",
+  "repartition": "Colombie : bassins du San Juan et de l'Atrato",
+  "pays": [
+    "COL"
+  ],
+  "presentation": "Le tétra empereur, au reflet violet et à la caudale en trident chez le mâle, est l'un des meilleurs choix pour débuter : beau, robuste et bon marché. Presque tous les poissons du commerce sont élevés en captivité. On le confond parfois avec *N. lacortei*, seule autre espèce du genre.",
+  "habitat": "Il est omniprésent dans son aire, dans les sections lentes des rivières, les petits affluents et les bras morts, avec des vivipares (*Priapichthys*), des cichlidés (*Andinoacara*) et divers characidés et Loricariidés.",
+  "comportement": "L'un des meilleurs tétras pour le bac communautaire : vif, paisible et coloré, il vit avec la plupart des vivipares, Danio, Rasbora, autres tétras, Corydoras, petits Loricariidés, gouramis et cichlidés nains, mais pas avec les grandes espèces qui le mangeraient. En banc. Micro-prédateur : aliments secs fins, mais pas exclusivement, avec chaque jour de petites proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Nematobrycon-palmeri.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/nematobrycon-palmeri/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2354003"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Anostomus anostomus",
+  "nom_valide": null,
+  "auteur": "(Linnaeus, 1758)",
+  "classification": "Characiformes › Anostomidae",
+  "uicn": "LC",
+  "repartition": "Bassins de l'Amazone et de l'Orénoque (Pérou, Brésil, Venezuela, Guyanes)",
+  "pays": [
+    "BRA",
+    "GUY",
+    "PER",
+    "SUR"
+  ],
+  "presentation": "Le nom *Anostomus* (« bouche vers le haut ») décrit sa bouche tournée vers le haut. Ce poisson rayé de bandes noires et dorées appartient aux Anostomidae ; le genre ne compte que deux espèces bien connues en aquariophilie, *A. anostomus* et *A. ternetzi*.",
+  "habitat": "Il vit le long des rives rocheuses des rivières rapides, où il broute les algues et les petits invertébrés qui couvrent les roches.",
+  "comportement": "En grands bancs dans la nature, il se montre querelleur avec ses congénères quand ils sont peu nombreux : un seul individu dans un bac communautaire de poissons moyens à grands, ou un groupe de six et plus dans un grand aquarium. Omnivore brouteur, il lui faut des proies congelées et beaucoup de végétaux, ainsi qu'un bon courant.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Anostomus-anostomus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/anostomus-anostomus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2355535"
+    }
+  ]
+}

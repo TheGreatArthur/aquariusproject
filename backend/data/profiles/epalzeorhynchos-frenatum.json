@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Epalzeorhynchos frenatum",
+  "nom_valide": null,
+  "auteur": "(Fowler, 1934)",
+  "classification": "Cypriniformes › Cyprinidae",
+  "uicn": "LC",
+  "repartition": "Thaïlande (Mae Klong, Chao Phraya, Mékong), Laos et Cambodge",
+  "pays": [
+    "KHM",
+    "LAO",
+    "THA"
+  ],
+  "presentation": "Ce labéo vert aux nageoires rouges, cousin du labéo bicolore, est souvent vendu jeune comme « mangeur d'algues », sans mention de son caractère, de sa taille ni de sa longévité, qui peut dépasser 15 ans. Il broute les algues, mais bien moins efficacement que les *Crossocheilus*.",
+  "habitat": "Il broute les fonds sableux ou rocheux des ruisseaux et rivières et gagne les plaines et forêts inondées à la saison des pluies ; ces migrations ont été perturbées par les aménagements humains.",
+  "comportement": "Les jeunes se cachent beaucoup, mais l'adulte devient territorial et parfois très agressif envers les espèces qui lui ressemblent : un seul individu par bac, avec des compagnons choisis. Brouteur d'aufwuchs, il demande des proies vivantes ou congelées, des aliments secs et des végétaux frais.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Epalzeorhynchos-frenatum.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/epalzeorhynchos-frenatum/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2360401"
+    }
+  ]
+}

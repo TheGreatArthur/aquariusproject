@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Dianema urostriatum",
+  "nom_valide": null,
+  "auteur": "(Miranda Ribeiro, 1912)",
+  "classification": "Siluriformes › Callichthyidae",
+  "uicn": "LC",
+  "repartition": "Brésil : bassin de l'Amazone",
+  "pays": [
+    "BRA"
+  ],
+  "presentation": "Ce poisson-chat cuirassé, cousin des Corydoras, se reconnaît aux bandes noires et blanches de sa nageoire caudale. Tous les poissons vendus sont capturés dans la nature : fragiles à l'arrivée, ils deviennent très robustes une fois acclimatés.",
+  "habitat": "Il vit à l'écart des chenaux principaux, dans des criques, affluents lents, lacs de plaine inondable et mares. Il respire l'air en surface.",
+  "comportement": "Très paisible, il ne s'attaque même pas aux plus petits compagnons (seuls de minuscules alevins risquent d'être gobés). Il vit avec tétras, cichlidés paisibles, Corydoras et petits Loricariidés, en groupe, car il est grégaire. Omnivore, il accepte granulés coulants et proies congelées, et vient souvent manger en surface.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Dianema-urostriatum.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/dianema-urostriatum/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5202859"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "nom_scientifique": "Nannostomus marginatus",
+  "nom_commun": "Poisson-crayon nain",
+  "famille": "Lebiasinidae",
+  "genre": "Nannostomus",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 4.0,
+  "ph_maxi": 7.0,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 10.0,
+  "temp_mini": 22,
+  "temp_maxi": 28,
+  "taille": 2.5,
+  "litrage_mini": 50,
+  "nb_individus": 6,
+  "points": 2,
+  "regime": "carnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "pacifique",
+  "robustesse": "tolérant",
+  "dispo": "peu courant",
+  "longevite": 4,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Nannostomus marginatus, adultes Männchen.jpg",
+    "File:Nannostomus marginatus-adultes Weibchen.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/nannostomus-marginatus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Nannostomus-marginatus.html"
+    }
+  ]
+}

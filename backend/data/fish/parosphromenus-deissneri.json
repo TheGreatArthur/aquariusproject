@@ -1,0 +1,40 @@
+{
+  "nom_scientifique": "Parosphromenus deissneri",
+  "nom_commun": "Gourami réglisse",
+  "famille": "Osphronemidae",
+  "genre": "Parosphromenus",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 5.6,
+  "ph_maxi": 7.2,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 4.0,
+  "temp_mini": 22,
+  "temp_maxi": 28,
+  "taille": 4.0,
+  "litrage_mini": 20,
+  "nb_individus": 2,
+  "points": 5,
+  "regime": "carnivore",
+  "mode_vie": "couple",
+  "comportement": "pacifique",
+  "robustesse": "fragile",
+  "dispo": "rare",
+  "longevite": 5,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Parosphromenus deissneri.jpg",
+    "File:Parosphromenus deissneri spawning cave.png"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/parosphromenus-deissneri/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Parosphromenus-deissneri.html"
+    }
+  ]
+}

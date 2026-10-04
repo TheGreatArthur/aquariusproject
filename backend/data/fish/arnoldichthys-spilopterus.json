@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Arnoldichthys spilopterus",
+  "nom_commun": "Tétra à grandes écailles",
+  "famille": "Alestidae",
+  "genre": "Arnoldichthys",
+  "zone_geo": "Afrique",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 24,
+  "temp_maxi": 27,
+  "taille": 10.0,
+  "litrage_mini": 140,
+  "nb_individus": 10,
+  "points": 10,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 8,
+  "courant": "doux, modéré",
+  "photos": [
+    "File:Arnoldichthys spilopterus A.jpg",
+    "File:Arnoldichthys spilopterus B.jpg",
+    "File:Aquarium tropical du Palais de la Porte Dorée - Phenacogrammus interruptus.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/arnoldichthys-spilopterus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Arnoldichthys-spilopterus.html"
+    }
+  ]
+}

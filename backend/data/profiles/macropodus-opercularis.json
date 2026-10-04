@@ -1,0 +1,32 @@
+{
+  "nom_scientifique": "Macropodus opercularis",
+  "nom_valide": null,
+  "auteur": "(Linnaeus, 1758)",
+  "classification": "Anabantiformes › Osphronemidae",
+  "uicn": "LC",
+  "repartition": "Chine au sud du Yangtsé (avec Taïwan et Hainan), nord et centre du Viêt Nam, nord-est du Laos ; introduit dans de nombreux pays",
+  "pays": [
+    "CHN",
+    "HKG",
+    "LAO",
+    "TWN",
+    "VNM"
+  ],
+  "presentation": "Le poisson de paradis est l'un des tout premiers poissons d'ornement importés en Europe : un soldat français, Gérault, en ramena une centaine en 1869, dont 22 survécurent et furent reproduits la même année à Paris par Pierre Carbonnier. Le mâle construit un nid de bulles.",
+  "habitat": "Très adaptable, il vit dans toutes sortes de milieux de plaine : ruisseaux, bras morts, mares, canaux d'irrigation, rizières et réservoirs, parfois en ruisseau de colline. Il respire obligatoirement l'air et colonise des eaux stagnantes très pauvres en oxygène.",
+  "comportement": "Il faut éviter les poissons de même forme, mais il vit avec des espèces de banc paisibles aux besoins comparables. Les mâles défendent agressivement un territoire, surtout à la reproduction : un seul mâle sauf très grand bac, avec deux femelles ou plus. Petites proies vivantes ou congelées (Daphnia, Artemia, enchytrées) et aliments secs de qualité. Il supporte une eau fraîche.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Macropodus-opercularis.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/macropodus-opercularis/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5211160"
+    }
+  ]
+}

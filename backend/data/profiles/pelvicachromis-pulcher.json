@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Pelvicachromis pulcher",
+  "nom_valide": null,
+  "auteur": "(Boulenger, 1901)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Afrique de l'Ouest : est du Bénin, sud du Nigeria et ouest du Cameroun",
+  "pays": [
+    "BEN",
+    "CMR",
+    "NGA"
+  ],
+  "presentation": "Le pelmatochromis, ou « krib », est l'un des cichlidés les plus courants et populaires. La grande majorité des poissons du commerce sont élevés en captivité : bien plus adaptables que les sauvages, ils sont aussi moins agressifs à la reproduction. Il existe une forme albinos. Le couple pond dans une grotte et garde les alevins.",
+  "habitat": "Il vit dans les eaux calmes ou lentes, peu profondes et très végétalisées ; certaines populations vivent en eau saumâtre. Dans la rivière Sombreiro (Nigeria), il se nourrit surtout de diatomées, d'algues, de plantes et de détritus.",
+  "comportement": "Recommandé pour le bac communautaire, mais très territorial à la reproduction. Plutôt timide, il ne doit pas vivre avec des espèces très vives ou grandes. Bons compagnons : petits characidés, barbus, Danio, Rasbora, Corydoras, gouramis, Loricariidés, et d'autres cichlidés nains d'Afrique de l'Ouest si l'espace permet des territoires. En couple. Il accepte presque tout, avec des proies vivantes et congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pelvicachromis-pulcher.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pelvicachromis-pulcher/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2372929"
+    }
+  ]
+}

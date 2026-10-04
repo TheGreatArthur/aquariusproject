@@ -1,0 +1,39 @@
+{
+  "nom_scientifique": "Apteronotus albifrons",
+  "nom_valide": null,
+  "auteur": "(Linnaeus, 1766)",
+  "classification": "Gymnotiformes › Apteronotidae",
+  "uicn": "LC",
+  "repartition": "Amérique du Sud, du Venezuela au Paraguay : bassins de l'Orénoque, de l'Amazone et du Paraná",
+  "pays": [
+    "ARG",
+    "BOL",
+    "BRA",
+    "COL",
+    "ECU",
+    "GUF",
+    "GUY",
+    "PER",
+    "PRY",
+    "SUR",
+    "URY",
+    "VEN"
+  ],
+  "presentation": "Ce poisson-couteau noir à taches blanches nage dans toutes les directions en faisant onduler sa longue nageoire ventrale. Il émet de faibles décharges électriques et perçoit son environnement grâce à des électrorécepteurs répartis sur tout le corps. Souvent vendu à 10 cm, il peut atteindre une grande taille.",
+  "habitat": "Il vit dans les ruisseaux et rivières au courant rapide, le plus souvent sur fond de sable, et gagne les forêts inondées pendant la saison des pluies. Il est nocturne.",
+  "comportement": "Paisible jusqu'à la timidité, il mange pourtant les petits poissons en grandissant : ses compagnons doivent dépasser une quinzaine de centimètres (Geophagus, Satanoperca, scalaires, discus). Prédateur d'insectes et de vers, il réclame des proies vivantes ou congelées. Son adulte exige un très grand aquarium, une forte filtration et une eau impeccable.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Apteronotus-albifrons.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/apteronotus-albifrons/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2401878"
+    }
+  ]
+}

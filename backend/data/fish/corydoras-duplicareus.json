@@ -1,0 +1,39 @@
+{
+  "nom_scientifique": "Corydoras duplicareus",
+  "nom_commun": "Corydoras duplicareus",
+  "famille": "Callichthyidae",
+  "genre": "Corydoras",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 4.0,
+  "ph_maxi": 7.0,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 5.0,
+  "temp_mini": 20,
+  "temp_maxi": 26,
+  "taille": 5.0,
+  "litrage_mini": 80,
+  "nb_individus": 8,
+  "points": 5,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "sensible",
+  "dispo": "occasionnel",
+  "longevite": 5,
+  "courant": "doux, modéré",
+  "photos": [
+    "File:Corydoras duplicareus.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/corydoras-duplicareus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Corydoras-duplicareus.html"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Andinoacara pulcher",
+  "nom_commun": "Acara bleu",
+  "famille": "Cichlidae américain",
+  "genre": "Andinoacara",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 6.5,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 25.0,
+  "temp_mini": 22,
+  "temp_maxi": 28,
+  "taille": 15.0,
+  "litrage_mini": 300,
+  "nb_individus": 2,
+  "points": 20,
+  "regime": "carnivore",
+  "mode_vie": "couple",
+  "comportement": "peu agressif",
+  "robustesse": "tolérant",
+  "dispo": "courant",
+  "longevite": 12,
+  "courant": "doux",
+  "photos": [
+    "File:Andinoacara pulcher spec. neonblue.jpg",
+    "File:Blaupunktbuntbarsch (Aequidens pulcher) Männchen zur Paarungszeit.JPG",
+    "File:Andinoacara pulcher spec. neonblue - submissive color.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/andinoacara-pulcher/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Andinoacara-pulcher.html"
+    }
+  ]
+}

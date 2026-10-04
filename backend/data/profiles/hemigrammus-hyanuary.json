@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Hemigrammus hyanuary",
+  "nom_valide": null,
+  "auteur": "Durbin, 1918",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Bassin de l'Amazone, au Pérou et au Brésil ; décrit du lac Hyanuary, près de Manaus",
+  "pays": [
+    "BRA",
+    "PER"
+  ],
+  "presentation": "Aussi appelé « néon vert » ou « costello », ce petit tétra reflet de vert et à la tache caudale noire se voit beaucoup moins qu'autrefois dans le commerce. On le confond parfois avec le tétra feu de position, dont il ressemble à une version plus allongée.",
+  "habitat": "Il vit dans les rivières lentes, les affluents et les lacs de plaine inondable.",
+  "comportement": "Très paisible, il supporte mal les compagnons turbulents ou bien plus grands. Idéalement, on l'associe à d'autres petits poissons d'Amérique du Sud (tétras, poissons-crayons, Apistogramma, Corydoras, petits Loricariidés). Il faut toujours en acheter un groupe. Il mange surtout de petits invertébrés : aliments secs et petites proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hemigrammus-hyanuary.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hemigrammus-hyanuary/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2354340"
+    }
+  ]
+}

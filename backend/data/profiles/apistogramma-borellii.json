@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Apistogramma borellii",
+  "nom_valide": null,
+  "auteur": "(Regan, 1906)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Bassins du Paraguay et du bas Paraná (sud du Brésil, Paraguay, Argentine)",
+  "pays": [
+    "ARG",
+    "BRA",
+    "PRY"
+  ],
+  "presentation": "Décrit en 1906 par Regan, ce petit Apistogramma du sud de l'Amérique du Sud est l'un des plus faciles du genre. Plusieurs formes colorées ont été sélectionnées en aquariophilie.",
+  "habitat": "Il habite les criques et petits affluents des bassins du Paraguay et du bas Paraná, jusqu'au système de l'Uruguay.",
+  "comportement": "Territorial comme tous les cichlidés nains, il se maintient en couple, avec de petits poissons paisibles de pleine eau et sans autre Apistogramma. La femelle pond au plafond d'une cavité et garde la ponte. Surtout carnivore, il réclame des proies vivantes ou congelées ; il apprécie une eau un peu plus fraîche que la plupart des Apistogramma.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Apistogramma-borellii.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/apistogramma-borellii/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2371268"
+    }
+  ]
+}

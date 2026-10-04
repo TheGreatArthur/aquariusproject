@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Nannacara anomala",
+  "nom_valide": null,
+  "auteur": "Regan, 1905",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Plaine côtière du Guyana (Rio Aruka) au bas Marowijne (Suriname)",
+  "pays": [
+    "GUY",
+    "SUR"
+  ],
+  "presentation": "Ce cichlidé nain, beau, robuste et bon marché, est un excellent premier cichlidé pour apprendre la reproduction. Les mâles sont plus grands et plus colorés, avec des nageoires impaires plus allongées. Comme chez certains Apistogramma, la mère communique avec ses alevins par une gestuelle et des changements de couleur. Les poissons du commerce viennent d'élevages.",
+  "habitat": "Il vit souvent dans les savanes inondées des basses terres côtières.",
+  "comportement": "Très paisible, il cohabite avec la plupart des poissons calmes, mais la femelle devient très agressive quand elle protège ses alevins, ce qui peut poser problème en bac communautaire. Un mâle pour plusieurs femelles. Micro-prédateur de vers, d'insectes et de crustacés : granulés pour cichlidés, végétaux et proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Nannacara-anomala.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/nannacara-anomala/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5208106"
+    }
+  ]
+}

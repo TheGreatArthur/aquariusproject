@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Betta smaragdina",
+  "nom_valide": null,
+  "auteur": "Ladiges, 1972",
+  "classification": "Anabantiformes › Osphronemidae",
+  "uicn": "DD",
+  "repartition": "Plateau de Khorat (est de la Thaïlande) et affluents du Mékong au centre du Laos",
+  "pays": [
+    "LAO",
+    "THA"
+  ],
+  "presentation": "Le « Betta émeraude » doit son nom à ses reflets vert émeraude. Comme *B. splendens*, il est sélectionné pour le combat dans l'est de la Thaïlande, et des formes d'élevage croisées avec d'autres Betta circulent en aquariophilie. Il construit un nid de bulles.",
+  "habitat": "Il vit dans les rizières, marais, fossés et étangs du plateau de Khorat, dans des eaux calmes, ombragées et parfois pauvres en oxygène.",
+  "comportement": "Peu adapté au bac communautaire, il se garde seul ou avec de petites espèces très paisibles. Un couple est préférable, même si plusieurs mâles peuvent cohabiter avec beaucoup de cachettes. Il demande des proies vivantes ou congelées en plus des aliments secs, et respire l'air en surface.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Betta-smaragdina.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/betta-smaragdina/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2394055"
+    }
+  ]
+}

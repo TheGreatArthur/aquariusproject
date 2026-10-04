@@ -1,0 +1,35 @@
+{
+  "nom_scientifique": "Herichthys cyanoguttatus",
+  "nom_valide": null,
+  "auteur": "Baird & Girard, 1854",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Bas bassin du Rio Grande (Texas, États-Unis) et nord-est du Mexique ; introduit ailleurs au Texas, en Floride et au Mexique",
+  "pays": [
+    "MEX",
+    "USA"
+  ],
+  "emprise": [
+    -101.5,
+    21.5,
+    -96.5,
+    30.0
+  ],
+  "presentation": "Le seul cichlidé originaire des États-Unis, piqueté de points bleu turquoise. Espèce type du genre *Herichthys*, il a été déplacé plusieurs fois entre ce genre et *Cichlasoma*. Introduit hors de son aire, il y forme des populations sauvages, notamment en Floride.",
+  "habitat": "Il préfère les eaux lentes : mares, fosses et sections calmes des rivières, souvent près de rochers immergés, de branches ou d'herbiers denses. Il aime l'eau chaude et la végétation.",
+  "comportement": "Comme la plupart des grands cichlidés, il est très belliqueux et territorial, surtout les mâles et dans un bac trop petit : il lui faut un très grand aquarium et des compagnons robustes. Il mange surtout des invertébrés aquatiques, mais aussi des végétaux : aliments variés, avec une part végétale.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Herichthys-cyanoguttatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/herichthys-cyanoguttatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2373136"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Cyprichromis leptosoma",
+  "nom_valide": null,
+  "auteur": "(Boulenger, 1898)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Endémique du lac Tanganyika",
+  "pays": [
+    "BDI",
+    "COD",
+    "TZA",
+    "ZMB"
+  ],
+  "presentation": "L'un des cichlidés tanganyikais préférés des aquariophiles. Il existe sous plusieurs formes géographiques, chacune à queue bleue ou jaune ; la forme « Jumbo » est plus grande. Dans la nature, il forme des bancs de plusieurs milliers d'individus.",
+  "habitat": "Poisson de pleine eau, il vit au large des pentes rocheuses, dans les zones intermédiaires à roches éparses et fond sableux, où il se nourrit de zooplancton. Il se tient souvent immobile, tête vers le bas.",
+  "comportement": "Très paisible, il ne supporte pas les mbunas. Il cohabite avec des Tanganyikais vivant dans d'autres zones du bac : *Julidochromis*, *Altolamprologus*, espèces des coquilles. On le garde en banc d'au moins huit. Il a une petite bouche : proies vivantes et congelées de petite taille. Les femelles incubent les œufs dans la bouche.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Cyprichromis-leptosoma.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/cyprichromis-leptosoma/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2372100"
+    }
+  ]
+}

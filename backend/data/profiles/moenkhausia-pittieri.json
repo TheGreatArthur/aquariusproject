@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Moenkhausia pittieri",
+  "nom_valide": "Makunaima pittieri",
+  "auteur": "(Eigenmann, 1920)",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "EN",
+  "repartition": "Endémique du lac de Valencia et de ses affluents, Venezuela",
+  "pays": [
+    "VEN"
+  ],
+  "presentation": "Ce « vilain petit canard » est vendu jeune, argenté et terne ; avec le temps et une bonne alimentation, il devient un magnifique adulte aux écailles scintillantes comme des diamants, d'où son nom de tétra diamant. Aujourd'hui rangé dans le genre *Makunaima*, il est classé en danger dans la nature.",
+  "habitat": "Le lac de Valencia, deuxième lac du Venezuela, souffre de pollutions agricoles et industrielles, d'eutrophisation et d'efflorescences d'algues : sa diversité de poissons a chuté de près de 60 % au XXe siècle. L'espèce vit dans les zones peu profondes et végétalisées du lac et dans quelques affluents lents.",
+  "comportement": "Coloré, paisible et assez grand pour un tétra, c'est un bon choix pour le bac communautaire : vivipares, Danio, Rasbora, autres tétras, Corydoras, petits Loricariidés, gouramis et cichlidés nains. Un grand banc dans un bac planté est superbe. Il accepte presque tout ; de petites proies vivantes ou congelées pour l'éclat.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Moenkhausia-pittieri.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/moenkhausia-pittieri/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2352623"
+    }
+  ]
+}

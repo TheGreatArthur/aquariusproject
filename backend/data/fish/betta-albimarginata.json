@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Betta albimarginata",
+  "nom_commun": "Betta à bords blancs",
+  "famille": "Osphronemidae",
+  "genre": "Betta",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 4.0,
+  "ph_maxi": 6.5,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 5.0,
+  "temp_mini": 23,
+  "temp_maxi": 28,
+  "taille": 3.0,
+  "litrage_mini": 50,
+  "nb_individus": 2,
+  "points": 5,
+  "regime": "carnivore",
+  "mode_vie": "couple",
+  "comportement": "territorial",
+  "robustesse": "sensible",
+  "dispo": "occasionnel",
+  "longevite": 4,
+  "courant": "doux, modéré",
+  "photos": [
+    "File:Betta albimarginata 060311 8.jpg",
+    "File:Betta albimarginata 060311 1.jpg",
+    "File:Betta albimarginata 060311 11.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/betta-albimarginata/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Betta-albimarginata.html"
+    }
+  ]
+}

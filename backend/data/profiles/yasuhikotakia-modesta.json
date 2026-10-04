@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Yasuhikotakia modesta",
+  "nom_valide": null,
+  "auteur": "(Bleeker, 1864)",
+  "classification": "Cypriniformes › Botiidae",
+  "uicn": "LC",
+  "repartition": "Moyen et bas Mékong (Thaïlande, Laos, Cambodge, Viêt Nam), Chao Phraya et Mae Klong",
+  "pays": [
+    "KHM",
+    "LAO",
+    "THA",
+    "VNM"
+  ],
+  "presentation": "Ce botia gris-bleu aux nageoires orange ou rouges est l'un des botiidés les plus courants. On le colore parfois artificiellement en bleu vif ou violet : il ne faut pas acheter ces poissons, interdits dans plusieurs pays, pour des raisons de bien-être et de santé.",
+  "habitat": "Commun dans son aire, il préfère les eaux courantes, où il se cache le jour parmi les roches et racines et sort la nuit chercher sa nourriture, souvent sur fond vaseux. Grand migrateur, il remonte les affluents et ruisseaux pour frayer et fréquente les zones inondées selon la saison.",
+  "comportement": "Plus doux que *Y. eos* ou *Y. morleti*, il connaît pourtant des phases d'agressivité et peut pincer les longues nageoires : on l'associe à des cyprinidés actifs de pleine eau (Devario, Rasbora, Barilius) et à d'autres Botia, en groupe. Surtout carnivore (escargots, insectes, vers), il mange aussi les plantes tendres : aliments coulants et proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Yasuhikotakia-modesta.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/yasuhikotakia-modesta/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2367775"
+    }
+  ]
+}

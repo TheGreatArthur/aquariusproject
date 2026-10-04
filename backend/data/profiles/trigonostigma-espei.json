@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Trigonostigma espei",
+  "nom_valide": null,
+  "auteur": "(Meinken, 1967)",
+  "classification": "Cypriniformes › Danionidae",
+  "uicn": "LC",
+  "repartition": "Sud-ouest et sud-est de la Thaïlande et sud-ouest du Cambodge (bassin du Prek Tuk Sap)",
+  "pays": [
+    "KHM",
+    "LAO",
+    "THA",
+    "VNM"
+  ],
+  "presentation": "Le rasbora d'Espe, ou « faux arlequin », ressemble à *T. heteromorpha* et *T. hengeli*. Il s'en distingue par un corps orangé (rosé chez *T. heteromorpha*) et une tache noire en forme de hache plus fine. Les signalements au Laos sont probablement des erreurs d'identification.",
+  "habitat": "Il vit surtout dans les sections calmes des ruisseaux forestiers riches en plantes immergées, parfois en eau légèrement teintée par les tanins, douce et neutre à légèrement acide, sous une lumière tamisée. On le trouve aussi dans les mares et marais très végétalisés.",
+  "comportement": "Très paisible, idéal en bac communautaire bien entretenu ; peu exigeant sur l'eau, il cohabite avec la plupart des poissons populaires de petite taille (petits cyprinidés, tétras, vivipares, cichlidés nains, poissons-chats, loches). En banc. Micro-prédateur : facile à nourrir, avec de petites proies vivantes ou congelées pour la forme et les couleurs.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Trigonostigma-espei.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/trigonostigma-espei/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2367616"
+    }
+  ]
+}

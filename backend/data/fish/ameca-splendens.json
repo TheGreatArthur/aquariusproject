@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Ameca splendens",
+  "nom_commun": "Ameca",
+  "famille": "Goodeidae",
+  "genre": "Ameca",
+  "zone_geo": "Amérique centrale",
+  "type_eau": "douce",
+  "ph_mini": 7.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 10.0,
+  "gh_maxi": 20.0,
+  "temp_mini": 26,
+  "temp_maxi": 32,
+  "taille": 9.0,
+  "litrage_mini": 100,
+  "nb_individus": 5,
+  "points": 10,
+  "regime": "omnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "moyennement agressif",
+  "robustesse": "tolérant",
+  "dispo": "peu courant",
+  "longevite": 8,
+  "courant": "doux",
+  "photos": [
+    "File:Ameca splendens Jungtier Dez 2016.JPG",
+    "File:Ameca splendens.jpg",
+    "File:Butterfly Splitfin (Ameca splendens) (1).jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/ameca-splendens/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Ameca-splendens.html"
+    }
+  ]
+}

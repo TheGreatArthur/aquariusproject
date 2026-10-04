@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Trichogaster fasciata",
+  "nom_commun": "Gourami rayé",
+  "famille": "Osphronemidae",
+  "genre": "Trichogaster",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 21,
+  "temp_maxi": 28,
+  "taille": 10.0,
+  "litrage_mini": 180,
+  "nb_individus": 2,
+  "points": 10,
+  "regime": "omnivore",
+  "mode_vie": "couple",
+  "comportement": "peu agressif",
+  "robustesse": "robuste",
+  "dispo": "courant",
+  "longevite": 8,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Trichogaster fasciata 179813241.jpg",
+    "File:Trichogaster fasciata 68167544.jpg",
+    "File:Trichogaster fasciata Karachi.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/trichogaster-fasciata/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Trichogaster-fasciata.html"
+    }
+  ]
+}

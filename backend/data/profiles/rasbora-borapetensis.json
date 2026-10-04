@@ -1,0 +1,34 @@
+{
+  "nom_scientifique": "Rasbora borapetensis",
+  "nom_valide": null,
+  "auteur": "Smith, 1934",
+  "classification": "Cypriniformes › Danionidae",
+  "uicn": "LC",
+  "repartition": "Bassins du Mékong, du Chao Phraya et du Mae Klong, et nord de la péninsule malaise",
+  "pays": [
+    "BRN",
+    "IDN",
+    "KHM",
+    "LAO",
+    "MYS",
+    "THA",
+    "VNM"
+  ],
+  "presentation": "Le rasbora à queue rouge, à la fine ligne noire et au pédoncule rouge, est l'un des rasboras les plus courants et un excellent choix pour débuter. Un peu terne en magasin, il devient superbe une fois installé et nage souvent en banc serré.",
+  "habitat": "Très robuste et adaptable, parfois même en eau polluée, il préfère les bordures peu profondes des eaux calmes ou lentes, souvent un peu troubles : mares, fossés, canaux, rizières, marais et rives de réservoirs de moins de 2 m de profondeur.",
+  "comportement": "Très paisible, idéal en bac communautaire bien aménagé ; peu exigeant sur l'eau, il cohabite avec la plupart des poissons populaires (petits cyprinidés, tétras, vivipares, arcs-en-ciel, anabantoïdes, poissons-chats, loches), à condition qu'ils ne soient pas assez grands pour le manger. En banc. Micro-prédateur : aliments secs fins, mais pas exclusivement, avec chaque jour de petites proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Rasbora-borapetensis.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/rasbora-borapetensis/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2359536"
+    }
+  ]
+}

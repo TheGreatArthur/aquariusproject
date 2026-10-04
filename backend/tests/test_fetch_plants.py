@@ -6,6 +6,7 @@ import json
 import pytest
 from PIL import Image
 
+import tools.commons as commons
 import tools.fetch_plants as fp
 
 FLOWGROW = """
@@ -150,7 +151,7 @@ def test_plain_name_keeps_the_rank():
     ('CC BY-NC 4.0', False), ('CC BY-ND 3.0', False), ('GFDL', False), ('', False),
 ])
 def test_only_free_licences_are_accepted(licence, free):
-    assert bool(fp.FREE_LICENCE.match(licence)) is free
+    assert bool(commons.FREE_LICENCE.match(licence)) is free
 
 
 @pytest.mark.parametrize('author, expected', [
@@ -160,7 +161,7 @@ def test_only_free_licences_are_accepted(licence, free):
     ('Krzysztof Ziarnek, Kenraiz', 'Krzysztof Ziarnek, Kenraiz'),
 ])
 def test_clean_author(author, expected):
-    assert fp.clean_author(author) == expected
+    assert commons.clean_author(author) == expected
 
 
 COMMONS = json.dumps({'query': {'pages': {'1': {'title': 'File:Anubia nana.jpg', 'imageinfo': [{
@@ -180,8 +181,8 @@ def jpeg(width: int, height: int) -> bytes:
 
 def test_photos_are_downloaded_resized_and_credited(tmp_path, monkeypatch):
     monkeypatch.setattr(fp, 'PHOTOS_DIR', tmp_path)
-    monkeypatch.setattr(fp, 'fetch', fake_fetch({'commons-file-anubia-nana': (200, COMMONS)}))
-    monkeypatch.setattr(fp, 'download', lambda url: jpeg(3000, 1500))
+    monkeypatch.setattr(commons, 'fetch', fake_fetch({'commons-file-anubia-nana': (200, COMMONS)}))
+    monkeypatch.setattr(commons, 'download', lambda url: jpeg(3000, 1500))
 
     credits, errors = fp.photos('anubias', ['File:Anubia nana.jpg', 'File:Absent.jpg'])
 
@@ -195,7 +196,8 @@ def test_photos_are_downloaded_resized_and_credited(tmp_path, monkeypatch):
 
 def test_non_free_photo_is_refused(tmp_path, monkeypatch):
     monkeypatch.setattr(fp, 'PHOTOS_DIR', tmp_path)
-    monkeypatch.setattr(fp, 'fetch', fake_fetch({'commons-': (200, COMMONS.replace('CC BY-SA 3.0', 'CC BY-NC 4.0'))}))
+    non_free = COMMONS.replace('CC BY-SA 3.0', 'CC BY-NC 4.0')
+    monkeypatch.setattr(commons, 'fetch', fake_fetch({'commons-': (200, non_free)}))
 
     credits, errors = fp.photos('anubias', ['File:Anubia nana.jpg'])
 
@@ -205,9 +207,9 @@ def test_non_free_photo_is_refused(tmp_path, monkeypatch):
 
 def test_photo_is_downloaded_again_when_the_commons_file_changes(tmp_path, monkeypatch):
     monkeypatch.setattr(fp, 'PHOTOS_DIR', tmp_path)
-    monkeypatch.setattr(fp, 'fetch', fake_fetch({'commons-': (200, COMMONS)}))
+    monkeypatch.setattr(commons, 'fetch', fake_fetch({'commons-': (200, COMMONS)}))
     downloads = []
-    monkeypatch.setattr(fp, 'download', lambda url: downloads.append(url) or jpeg(10, 10))
+    monkeypatch.setattr(commons, 'download', lambda url: downloads.append(url) or jpeg(10, 10))
     (tmp_path / 'anubias-1.jpg').write_bytes(jpeg(10, 10))
     same = [{'fichier': 'anubias-1.jpg', 'source': 'https://commons.wikimedia.org/wiki/File:Anubia_nana.jpg'}]
     other = [{'fichier': 'anubias-1.jpg', 'source': 'https://commons.wikimedia.org/wiki/File:Autre.jpg'}]
@@ -221,8 +223,8 @@ def test_photo_is_downloaded_again_when_the_commons_file_changes(tmp_path, monke
 
 def test_photos_no_longer_listed_are_removed(tmp_path, monkeypatch):
     monkeypatch.setattr(fp, 'PHOTOS_DIR', tmp_path)
-    monkeypatch.setattr(fp, 'fetch', fake_fetch({'commons-': (200, COMMONS)}))
-    monkeypatch.setattr(fp, 'download', lambda url: jpeg(10, 10))
+    monkeypatch.setattr(commons, 'fetch', fake_fetch({'commons-': (200, COMMONS)}))
+    monkeypatch.setattr(commons, 'download', lambda url: jpeg(10, 10))
     for name in ('anubias-2.jpg', 'anubias-nana-1.jpg'):
         (tmp_path / name).write_bytes(b'old')
 
@@ -230,3 +232,17 @@ def test_photos_no_longer_listed_are_removed(tmp_path, monkeypatch):
 
     # La photo d'une autre plante dont le nom commence pareil est conservée
     assert sorted(p.name for p in tmp_path.iterdir()) == ['anubias-1.jpg', 'anubias-nana-1.jpg']
+
+
+def test_a_broken_download_is_reported_without_stopping_the_others(tmp_path, monkeypatch):
+    monkeypatch.setattr(fp, 'PHOTOS_DIR', tmp_path)
+    monkeypatch.setattr(commons, 'fetch', fake_fetch({'commons-': (200, COMMONS)}))
+    payloads = iter([jpeg(10, 10)[:40], jpeg(10, 10)[:40], jpeg(10, 10)])
+    monkeypatch.setattr(commons, 'download', lambda url: next(payloads))
+
+    credits, errors = fp.photos('anubias', ['File:Anubia nana.jpg', 'File:Anubia nana.jpg'])
+
+    # Deux essais pour la première photo (fichier tronqué), la seconde est enregistrée
+    assert [c['fichier'] for c in credits] == ['anubias-2.jpg']
+    assert len(errors) == 1 and 'téléchargement impossible' in errors[0]
+    assert not (tmp_path / 'anubias-1.jpg').exists()

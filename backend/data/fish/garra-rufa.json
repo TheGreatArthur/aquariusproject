@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Garra rufa",
+  "nom_commun": "Garra rufa",
+  "famille": "Cyprinidae",
+  "genre": "Garra",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 14,
+  "temp_maxi": 20,
+  "taille": 12.0,
+  "litrage_mini": 300,
+  "nb_individus": 4,
+  "points": 20,
+  "regime": "omnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "peu agressif",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 8,
+  "courant": "modéré, fort",
+  "photos": [
+    "File:Garra Rufa.JPG",
+    "File:Garra Rufa Fish.JPG",
+    "File:2015-09-07. Архипо-Осиповка 015.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/garra-rufa/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Garra-rufa.html"
+    }
+  ]
+}

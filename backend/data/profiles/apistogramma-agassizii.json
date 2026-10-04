@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Apistogramma agassizii",
+  "nom_valide": null,
+  "auteur": "(Steindachner, 1875)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Bassin de l'Amazone, du Pérou au Brésil (fleuve Amazone-Solimões jusqu'au bassin du Capim)",
+  "pays": [
+    "BRA",
+    "COL",
+    "PER"
+  ],
+  "presentation": "L'un des Apistogramma les plus connus, décrit en 1875 et dédié au naturaliste Louis Agassiz. Le genre, l'un des plus riches parmi les cichlidés sud-américains, compte environ 70 espèces décrites ; de nombreuses variétés colorées d'*A. agassizii* ont été sélectionnées pour l'aquariophilie.",
+  "habitat": "Il vit dans les affluents lents, les bras morts et les criques où s'accumule la litière de feuilles, en eaux noires, blanches ou claires selon les endroits et la saison.",
+  "comportement": "Les poissons d'élevage conviennent au bac communautaire ; les sauvages se gardent seuls ou avec de petits poissons de pleine eau comme les *Nannostomus*, sans autre Apistogramma. On maintient un mâle pour plusieurs femelles ; la femelle pond au plafond d'une cavité et soigne seule œufs et larves. Surtout carnivore, il réclame des proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Apistogramma-agassizii.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/apistogramma-agassizii/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2371326"
+    }
+  ]
+}

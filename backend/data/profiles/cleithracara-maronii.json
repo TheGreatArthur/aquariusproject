@@ -1,0 +1,32 @@
+{
+  "nom_scientifique": "Cleithracara maronii",
+  "nom_valide": null,
+  "auteur": "(Steindachner, 1881)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Guyane, Suriname, Guyana, delta de l'Orénoque ; autrefois à Trinidad",
+  "pays": [
+    "GUF",
+    "GUY",
+    "SUR",
+    "TTO",
+    "VEN"
+  ],
+  "presentation": "L'acara maroni, décrit du fleuve Maroni en Guyane, se reconnaît à la tache en « trou de serrure » de ses flancs : son nom de genre vient d'ailleurs du grec *kleithron* (« serrure ») et du guarani *acará* (cichlidé). C'est la seule espèce du genre ; la plupart des poissons vendus viennent d'élevages commerciaux.",
+  "habitat": "Il vit dans des criques et affluents d'eaux noires, lents ou stagnants, en basse altitude : eau brune, très douce et acide (pH 4 à 5), fond de feuilles, de branches et de racines.",
+  "comportement": "Pacifique hors reproduction et peu prédateur, c'est l'un des cichlidés les plus paisibles. Timide, il se sent plus en sécurité avec un groupe de petits characidés de pleine eau. Effrayé, il se plaque contre une branche et change de couleur. Le couple soigne la ponte. Omnivore, il accepte la plupart des aliments.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Cleithracara-maronii.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/cleithracara-maronii/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2373115"
+    }
+  ]
+}

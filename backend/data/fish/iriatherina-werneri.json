@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Iriatherina werneri",
+  "nom_commun": "Arc-en-ciel à filaments",
+  "famille": "Melanotaeniidae",
+  "genre": "Iriatherina",
+  "zone_geo": "Océanie",
+  "type_eau": "douce",
+  "ph_mini": 5.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 12.0,
+  "temp_mini": 22,
+  "temp_maxi": 30,
+  "taille": 4.0,
+  "litrage_mini": 70,
+  "nb_individus": 8,
+  "points": 5,
+  "regime": "carnivore et planctophage",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "sensible",
+  "dispo": "peu courant",
+  "longevite": 5,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Iriatherina werneri.jpg",
+    "File:Iriatherina Werneri-Male group.jpg",
+    "File:Iriatherina Werneri-Yellow Finned Male.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/iriatherina-werneri/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Iriatherina-werneri.html"
+    }
+  ]
+}

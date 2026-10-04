@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Altolamprologus calvus",
+  "nom_valide": null,
+  "auteur": "(Poll, 1978)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "NT",
+  "repartition": "Endémique du lac Tanganyika (surtout sa partie sud-ouest)",
+  "pays": [
+    "BDI",
+    "COD",
+    "TZA",
+    "ZMB"
+  ],
+  "presentation": "Son nom de genre évoque son profil dorsal très haut, et *calvus* (« chauve ») une zone sans écailles entre les yeux. Son corps extrêmement aplati lui permet de se glisser dans les fissures des rochers pour y chasser œufs, alevins et petits poissons, et ses épaisses écailles le protègent.",
+  "habitat": "Il vit exclusivement dans les zones rocheuses des rives et des îles du lac Tanganyika, où il patrouille à quelques dizaines de centimètres des roches.",
+  "comportement": "Territorial mais paisible avec les poissons trop grands pour sa bouche, il est plutôt timide : on l'associe à des Tanganyikais calmes (*Julidochromis*, *Neolamprologus*, *Cyprichromis*, Synodontis) et jamais aux mbunas. En couple ou en colonie. Il préfère les proies vivantes ou congelées et refuse souvent les aliments secs.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Altolamprologus-calvus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/altolamprologus-calvus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2372761"
+    }
+  ]
+}

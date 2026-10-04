@@ -1,0 +1,34 @@
+{
+  "nom_scientifique": "Oryzias latipes",
+  "nom_valide": null,
+  "auteur": "(Temminck & Schlegel, 1846)",
+  "classification": "Beloniformes › Adrianichthyidae",
+  "uicn": "LC",
+  "repartition": "Asie de l'Est : Japon (des Ryukyu à Honshu), Corée, Chine orientale (avec Hainan et Hong Kong), Taïwan, Viêt Nam et Laos",
+  "pays": [
+    "CHN",
+    "HKG",
+    "JPN",
+    "KOR",
+    "LAO",
+    "MMR",
+    "VNM"
+  ],
+  "presentation": "Le médaka, ou « poisson du riz » (*Oryzias* vient du grec *oryza*, « riz »), est un organisme modèle de la biologie depuis plus d'un siècle, et le premier vertébré à s'être accouplé dans l'espace, au milieu des années 1990. Il existe de nombreuses formes d'ornement, notamment au Japon.",
+  "habitat": "Plutôt côtier, il est très adaptable : mangroves saumâtres soumises aux marées, ruisseaux forestiers acides, rizières, canaux agricoles, mares et bras morts, et même des cuvettes de marée sur certaines côtes du Japon et de Corée. Il supporte une large gamme de salinité et de températures.",
+  "comportement": "Paisible, mais ses besoins (eau fraîche, parfois saumâtre) limitent ses compagnons : petits poissons aux conditions comparables (Dermogenys, Pseudomugil, Brachygobius) ou escargots Neritina ; pour la reproduction, mieux vaut le garder seul. Micro-prédateur : aliments secs fins et chaque jour de petites proies vivantes ou congelées. Il vit aussi en bassin extérieur.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Oryzias-latipes.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/oryzias-latipes/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2368377"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Metynnis hypsauchen",
+  "nom_valide": null,
+  "auteur": "(Müller & Troschel, 1844)",
+  "classification": "Characiformes › Serrasalmidae",
+  "uicn": "LC",
+  "repartition": "Bassins de l'Amazone et du Paraguay et rivières du nord du bouclier guyanais : Guyana, Brésil, Pérou, Bolivie",
+  "pays": [
+    "BOL",
+    "BRA",
+    "GUY",
+    "PER"
+  ],
+  "presentation": "Ce dollar argenté, cousin végétarien des piranhas, est vendu sous le même nom que *Metynnis argenteus*, presque identique d'aspect et de maintenance ; *M. hypsauchen* porte une tache noire un peu au-dessus et en arrière de chaque œil. Sa dentition puissante peut infliger de sérieuses morsures.",
+  "habitat": "Il vit dans les affluents à végétation dense.",
+  "comportement": "Paisible, il se garde en groupe d'au moins cinq avec d'autres grandes espèces calmes, mais les poissons bien plus petits peuvent être mangés. Il occupe le milieu et le haut du bac : de grands poissons-chats paisibles (Loricariidés, Doradidés) complètent bien le fond. Il dévore les plantes : beaucoup de végétaux (courgette, concombre, petits pois, salade), spiruline et aliments secs.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Metynnis-hypsauchen.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/metynnis-hypsauchen/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2353434"
+    }
+  ]
+}

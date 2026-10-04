@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Puntius lateristriga",
+  "nom_commun": "Barbu à barre en T",
+  "famille": "Cyprinidae",
+  "genre": "Puntius",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 10.0,
+  "temp_mini": 20,
+  "temp_maxi": 28,
+  "taille": 15.0,
+  "litrage_mini": 400,
+  "nb_individus": 6,
+  "points": 20,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "peu agressif",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 12,
+  "courant": "modéré, fort",
+  "photos": [
+    "File:Puntius lateristriga.jpg",
+    "File:Puntius lateristriga 1.jpg",
+    "File:Punti lateri 080503 8415 napo.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/systomus-lateristriga/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Puntius-lateristriga.html"
+    }
+  ]
+}

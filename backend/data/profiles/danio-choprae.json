@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Danio choprae",
+  "nom_valide": null,
+  "auteur": "Hora, 1928",
+  "classification": "Cypriniformes › Danionidae",
+  "uicn": "LC",
+  "repartition": "Nord du Myanmar : bassin du Mogaung Chaung (État Kachin), affluent de l'Irrawaddy",
+  "pays": [
+    "MMR"
+  ],
+  "presentation": "Dédié au Dr B. N. Chopra qui en récolta les premiers spécimens, ce petit danio orange et noir, parfois classé dans le genre *Celestichthys*, est arrivé en aquariophilie vers 2003 et s'est vite imposé parmi les danios nains les plus populaires. Il est aujourd'hui élevé commercialement.",
+  "habitat": "Il préfère les petits ruisseaux de colline à fond de graviers et de roches ; on l'a aussi trouvé dans une mare à fond vaseux sans plantes, d'eau claire, au pied d'une colline.",
+  "comportement": "Très paisible et peu exigeant sur la qualité de l'eau, il convient au bac communautaire avec d'autres petits cyprinidés, tétras, vivipares, arcs-en-ciel, anabantoïdes et loches. Il chasse surtout des insectes : aliments secs, complétés de petites proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Danio-choprae.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/danio-choprae/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2362712"
+    }
+  ]
+}

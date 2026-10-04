@@ -1,0 +1,37 @@
+{
+  "nom_scientifique": "Aplocheilus panchax",
+  "nom_commun": "Panchax bleu",
+  "famille": "Aplocheilidae",
+  "genre": "Aplocheilus",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 12.0,
+  "temp_mini": 20,
+  "temp_maxi": 25,
+  "taille": 7.5,
+  "litrage_mini": 110,
+  "nb_individus": 4,
+  "points": 10,
+  "regime": "carnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "peu agressif",
+  "robustesse": "très robuste",
+  "dispo": "peu courant",
+  "longevite": 5,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Aplocheilus panchax 00849.jpg",
+    "File:Whitespot(Aplocheilus panchax).jpg",
+    "File:Seluang Pengeran - Aplocheilus panchax.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Aplocheilus-panchax.html"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "nom_scientifique": "Nothobranchius furzeri",
+  "nom_valide": null,
+  "auteur": "Jubb, 1971",
+  "classification": "Cyprinodontiformes › Nothobranchiidae",
+  "uicn": "LC",
+  "repartition": "Sud-est du Zimbabwe (réserve de Gonarezhou) et sud du Mozambique ; signalé dans la rivière Save",
+  "pays": [
+    "MOZ",
+    "ZWE"
+  ],
+  "presentation": "Ce killi annuel détient l'un des records de longévité les plus courts chez les vertébrés : moins de 12 semaines en captivité, ce qui en fait un modèle très étudié en recherche sur le vieillissement. Il est rare dans la nature et menacé par la destruction de son habitat et les pulvérisations d'insecticides.",
+  "habitat": "Il vit dans les mares temporaires de la savane, qui s'assèchent chaque année. Les œufs, pondus dans le fond, survivent à la saison sèche dans la boue : leur incubation dure de 5 à 7 mois.",
+  "comportement": "Les mâles, très colorés, sont querelleurs entre eux : on le garde en bac spécifique, un mâle pour plusieurs femelles. Prédateur de petits invertébrés, il demande des proies vivantes ou congelées. Sa reproduction demande de conserver les œufs dans de la tourbe humide avant de les remettre en eau.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Nothobranchius-furzeri.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2348706"
+    }
+  ]
+}

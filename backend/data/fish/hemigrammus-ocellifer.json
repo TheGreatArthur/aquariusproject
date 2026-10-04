@@ -1,0 +1,40 @@
+{
+  "nom_scientifique": "Hemigrammus ocellifer",
+  "nom_commun": "Tétra feu de position",
+  "famille": "Characidae",
+  "genre": "Hemigrammus",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 5.5,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 20.0,
+  "temp_mini": 24,
+  "temp_maxi": 28,
+  "taille": 4.5,
+  "litrage_mini": 80,
+  "nb_individus": 8,
+  "points": 5,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "très courant",
+  "longevite": 5,
+  "courant": "doux",
+  "photos": [
+    "File:Hemigrammus ocellifer (31499).png",
+    "File:Hemigrammus ocellifer, Tapajós.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hemigrammus-ocellifer/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hemigrammus-ocellifer.html"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Hyphessobrycon rosaceus",
+  "nom_valide": "Megalamphodus rosaceus",
+  "auteur": "(Durbin, 1909)",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Guyana, Suriname et Brésil : bassins de l'Essequibo, du Corantijn et du Suriname",
+  "pays": [
+    "GUY",
+    "SUR"
+  ],
+  "presentation": "Ce tétra rosé à la dorsale noire bordée de blanc ressemble à s'y méprendre à *Hyphessobrycon bentosi*, dont il a longtemps été considéré comme une sous-espèce ; *H. bentosi* porte une marque sombre juste derrière l'opercule, absente chez *H. rosaceus*. Les poissons du commerce viennent d'élevages.",
+  "habitat": "Il vit surtout en zone forestière, dans les affluents lents à l'écart des chenaux principaux, en eau teintée de brun par les tanins et très acide.",
+  "comportement": "Très paisible, il supporte mal les compagnons turbulents ou bien plus grands. On l'associe à d'autres petits poissons d'Amérique du Sud (tétras, poissons-crayons, Apistogramma, Corydoras, petits Loricariidés), ou en bac communautaire à de petits Rasbora, barbus, anabantoïdes et Pelvicachromis. En banc. Il mange de petits invertébrés : aliments secs et petites proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hyphessobrycon-rosaceus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hyphessobrycon-rosaceus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2354579"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Nannostomus trifasciatus",
+  "nom_valide": null,
+  "auteur": "Steindachner, 1876",
+  "classification": "Characiformes › Lebiasinidae",
+  "uicn": "LC",
+  "repartition": "Guyana et ouest du bassin de l'Amazone (Brésil, Pérou, Colombie, Bolivie : Negro, Madeira, Guaporé, Juruá, Napo, Ucayali...)",
+  "pays": [
+    "BOL",
+    "BRA",
+    "GUY",
+    "PER"
+  ],
+  "presentation": "Ce poisson-crayon à trois bandes sombres, aux taches rouges sur les nageoires, est courant dans le commerce et, moins exigeant que beaucoup de ses cousins, c'est un excellent premier poisson-crayon. Des poissons sauvages sont encore régulièrement exportés.",
+  "habitat": "Il vit dans les affluents lents, petites rivières et marais riches en plantes, en bois immergé et en feuilles mortes, souvent en forêt inondée et dans les lacs d'eaux noires : eau peu profonde presque immobile, très douce, pH 4 à 6.",
+  "comportement": "Assez paisible, il supporte mal les compagnons turbulents ou bien plus grands. On l'associe à de petits characidés calmes, Corydoras ou petits Loricariidés, mais pas aux poissons-hachettes, calmes nageurs de surface, surtout en petit bac. Excellent compagnon des cichlidés nains. En groupe. Aliments secs fins et chaque jour de petites proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Nannostomus-trifasciatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/nannostomus-trifasciatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2355633"
+    }
+  ]
+}

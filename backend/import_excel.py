@@ -10,8 +10,9 @@ from sqlalchemy import delete, select
 
 from config import DSN, EXCEL_FILE
 from corrections import apply_corrections
-from models import Poisson, Famille, Genre, ZoneGeo, Robustesse, Comportement, Dispo, Base, TypeEau, ModeVie, Courant
-from models.meta import get_engine
+from models import NOMENCLATURES, Poisson
+from models.meta import create_schema, get_engine
+from fish_data import load_fish, upsert_fish
 from plants import load_plants, upsert_plants
 from normalize import (
     clean, normalize_comportement, normalize_courant, normalize_famille, normalize_mode_vie, normalize_regime,
@@ -24,18 +25,6 @@ engine = get_engine(DSN)
 
 IMAGES_DIR = Path(__file__).resolve().parent.parent / 'frontend' / 'public' / 'images'
 
-# Tables de nomenclature : (classe, champ du dictionnaire lu, colonne de la table poisson)
-NOMENCLATURES = [
-    (Famille, 'famille', 'id_famille'),
-    (Genre, 'genre', 'id_genre'),
-    (ZoneGeo, 'zone_geo', 'id_zone_geo'),
-    (TypeEau, 'type_eau', 'id_type_eau'),
-    (ModeVie, 'mode_vie', 'id_mode_vie'),
-    (Robustesse, 'robustesse', 'id_robustesse'),
-    (Comportement, 'comportement', 'id_comportement'),
-    (Dispo, 'dispo', 'id_dispo'),
-    (Courant, 'courant', 'id_courant'),
-]
 
 
 def get_images(code) -> list[str]:
@@ -104,7 +93,8 @@ def delete_unused_nomenclatures(db) -> None:
 
 if __name__ == '__main__':
     # Création des tables manquantes
-    Base.metadata.create_all(bind=engine)
+    for column in create_schema(engine):
+        print('Colonne ajoutée :', column)
 
     try:
         wb = load_workbook(filename=EXCEL_FILE)
@@ -135,6 +125,8 @@ if __name__ == '__main__':
                 db.add(Poisson(**params))
                 print('Création poisson', params['nom_scientifique'])
 
+        # Poissons décrits par fichier (data/fish/), ajoutés après ceux du classeur
+        upsert_fish(db, load_fish())
         db.flush()
         delete_unused_nomenclatures(db)
         for name in upsert_profiles(db, load_profiles(), load_occurrences()):

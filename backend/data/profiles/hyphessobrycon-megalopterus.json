@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Hyphessobrycon megalopterus",
+  "nom_valide": "Megalamphodus megalopterus",
+  "auteur": "Eigenmann, 1915",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Haut bassin du Rio Madeira (Guaporé, Mamoré, Beni) en Bolivie et au Brésil, et haut Rio Paraguay (Pantanal)",
+  "pays": [
+    "BOL",
+    "BRA"
+  ],
+  "presentation": "Le tétra fantôme noir, aux grandes nageoires sombres, est populaire et élevé commercialement dans plusieurs pays ; il existe une forme à longues nageoires. Les mâles se disputent les femelles en paradant, nageoires déployées, sans se blesser.",
+  "habitat": "Il vit dans les affluents calmes et bras morts, mares et petits lacs, en groupes près de la végétation des rives ou des racines immergées. Au Pantanal, il fréquente des eaux très claires riches en plantes aquatiques (*Echinodorus*, *Bacopa*, *Ludwigia*, *Salvinia*).",
+  "comportement": "Très paisible, idéal en bac communautaire avec des characidés, poissons-hachettes, poissons-crayons, Corydoras ou petits Loricariidés et cichlidés non prédateurs de taille moyenne. Il faut un groupe mixte d'au moins 8 à 10 individus, au sein duquel les mâles établissent des hiérarchies passagères. Omnivore : aliments secs, proies vivantes et congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hyphessobrycon-megalopterus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hyphessobrycon-megalopterus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2354646"
+    }
+  ]
+}

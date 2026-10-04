@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Hemigrammus rhodostomus",
+  "nom_valide": "Petitella rhodostoma",
+  "auteur": "(Ahl, 1924)",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "NE",
+  "repartition": "Bassin de l'Orénoque et bas bassin de l'Amazone, au Venezuela et au Brésil",
+  "pays": [
+    "BRA",
+    "VEN"
+  ],
+  "presentation": "C'est le « vrai » nez rouge, aujourd'hui rangé dans le genre *Petitella*. Le poisson le plus souvent vendu sous ce nom est en fait *Hemigrammus bleheri*, très proche, comme le « faux » nez rouge *Petitella georgiae* ; on les distingue notamment à l'étendue du rouge de la tête vers le corps.",
+  "habitat": "Il vit dans les rivières et affluents d'eaux noires, teintés de brun par les tanins et très acides.",
+  "comportement": "Très paisible, il supporte mal les compagnons turbulents ou bien plus grands. On l'associe à d'autres petits poissons d'Amérique du Sud (tétras, poissons-crayons, Apistogramma, Corydoras) et il accompagne souvent les discus. En banc. Omnivore à petite bouche : aliments fins, secs et vivants ou congelés, variés pour de belles couleurs.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hemigrammus-rhodostomus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hemigrammus-rhodostomus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2354397"
+    }
+  ]
+}

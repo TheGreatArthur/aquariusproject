@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Barbonymus schwanefeldii",
+  "nom_commun": "Barbu de Schwanenfeld",
+  "famille": "Cyprinidae",
+  "genre": "Barbonymus",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 2.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 20,
+  "temp_maxi": 28,
+  "taille": 35.5,
+  "litrage_mini": 950,
+  "nb_individus": 5,
+  "points": 50,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "peu agressif",
+  "robustesse": "très robuste",
+  "dispo": "courant",
+  "longevite": 15,
+  "courant": "doux, modéré",
+  "photos": [
+    "File:Barbonymus schwanenfeldii Lódź.jpg",
+    "File:Colossoma brachypomum LoroParqueTenerife red pacu IMG 5370.JPG",
+    "File:Micro Zoo de Saint Malo - Barbonymus schwanenfeldii 01.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/barbonymus-schwanefeldii/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Barbonymus-schwanefeldii.html"
+    }
+  ]
+}

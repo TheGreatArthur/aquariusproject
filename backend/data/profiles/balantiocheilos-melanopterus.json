@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Balantiocheilos melanopterus",
+  "nom_valide": null,
+  "auteur": "(Bleeker, 1850)",
+  "classification": "Cypriniformes › Cyprinidae",
+  "uicn": "VU",
+  "repartition": "Bornéo, Sumatra et peut-être la péninsule Malaise",
+  "pays": [
+    "BRN",
+    "IDN",
+    "MYS"
+  ],
+  "presentation": "Vendu sous le nom de « requin argenté » ou « bala shark », ce cyprinidé doit son nom de genre à la poche que forme sa lèvre inférieure. Contrairement à ce que l'on lit souvent, il ne vit pas en Indochine : il est limité à Bornéo et Sumatra, et ses populations ont décliné, au point qu'il est classé vulnérable.",
+  "habitat": "Poisson de pleine eau, il vit surtout dans les rivières, mais aussi dans des lacs naturels comme ceux du Danau Sentarum, à Bornéo.",
+  "comportement": "Paisible mais très actif, il mange les très petits poissons et dérange les espèces lentes. Vendu jeune, il dépasse 30 cm : il exige un très grand aquarium, en groupe, avec des compagnons robustes de même taille. Omnivore, il accepte tous les aliments.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Balantiocheilos-melanopterus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/balantiocheilos-melanopterus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2363816"
+    }
+  ]
+}

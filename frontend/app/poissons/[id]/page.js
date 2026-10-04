@@ -73,7 +73,8 @@ export default function Poisson ({ params }) {
       <div className="mt-6 grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
         {/* La galerie reste visible pendant la lecture de la colonne de droite, plus haute */}
         <Reveal className="lg:sticky lg:top-24 lg:self-start">
-          <PhotoGallery images={fishImages(data)} alt={data.nom_commun}/>
+          {/* Crédits des photos Wikimedia Commons des poissons ajoutés par fichier (data/fish/) */}
+          <PhotoGallery images={fishImages(data)} alt={data.nom_commun} credits={data.credits}/>
         </Reveal>
 
         <Reveal delay={0.08}>

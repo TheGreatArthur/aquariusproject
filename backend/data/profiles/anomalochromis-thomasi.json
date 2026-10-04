@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Anomalochromis thomasi",
+  "nom_valide": null,
+  "auteur": "(Boulenger, 1915)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Fleuves côtiers de Guinée, de Sierra Leone et du Liberia",
+  "pays": [
+    "GIN",
+    "LBR",
+    "SLE"
+  ],
+  "presentation": "Seule espèce de son genre, ce petit cichlidé ouest-africain tire son nom d'une particularité de son système de ligne latérale. Les jeunes paraissent ternes en magasin, mais l'adulte installé est très coloré : c'est l'un des meilleurs choix pour découvrir les cichlidés nains.",
+  "habitat": "Il vit dans des ruisseaux forestiers ombragés, aux eaux souvent couleur de thé, et dans des eaux peu profondes et boueuses de savane, qui approchent 30 °C en saison sèche ; inquiété, il peut s'enfouir dans la vase.",
+  "comportement": "Très paisible pour un cichlidé, il ne devient territorial qu'au moment de pondre. Timide, il s'associe à de petits characidés, d'autres cichlidés nains africains, des Corydoras et des petits anabantoïdes, mais pas à des espèces turbulentes. Les deux parents s'occupent des œufs, déposés sur un support découvert. Il accepte tous les aliments.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Anomalochromis-thomasi.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/anomalochromis-thomasi/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2372864"
+    }
+  ]
+}

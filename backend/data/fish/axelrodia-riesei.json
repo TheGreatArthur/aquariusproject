@@ -1,0 +1,39 @@
+{
+  "nom_scientifique": "Axelrodia riesei",
+  "nom_commun": "Tétra rubis",
+  "famille": "Characidae",
+  "genre": "Axelrodia",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 4.0,
+  "ph_maxi": 6.5,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 5.0,
+  "temp_mini": 20,
+  "temp_maxi": 28,
+  "taille": 2.0,
+  "litrage_mini": 70,
+  "nb_individus": 10,
+  "points": 2,
+  "regime": "carnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "sensible",
+  "dispo": "rare",
+  "longevite": 4,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Pfeffersalmler Axelrodia riesei (16467043916).jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/axelrodia-riesei/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Axelrodia-riesei.html"
+    }
+  ]
+}

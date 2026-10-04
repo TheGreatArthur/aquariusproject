@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Rocio octofasciata",
+  "nom_valide": null,
+  "auteur": "(Regan, 1903)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Versant atlantique de l'Amérique centrale : du Río Actopan (Veracruz, Mexique) au Belize, au Guatemala et à l'ouest du Honduras ; populations introduites aux États-Unis, en Russie, en Australie et en Thaïlande",
+  "pays": [
+    "BLZ",
+    "GTM",
+    "HND",
+    "MEX"
+  ],
+  "presentation": "Ce cichlidé tacheté de bleu et de vert doit son nom au boxeur américain Jack Dempsey, champion du monde des poids lourds dans les années 1920, pour ses traits marqués et son caractère bagarreur. La forme bleu électrique « EBJD » est une souche d'élevage issue d'une mutation naturelle, qui reste plus petite.",
+  "habitat": "Généraliste, il vit surtout dans les cours d'eau côtiers et les sections lentes des basses vallées : marais aux eaux chaudes et troubles, canaux et fossés envahis d'herbes sur fond de vase ou de sable, lacs et étangs.",
+  "comportement": "Il cohabite avec des poissons trop grands pour être mangés, mais il faut un très grand bac pour l'associer à d'autres cichlidés. Les jeunes vivent ensemble, puis deviennent agressifs entre eux à la maturité ; un couple formé reste uni mais hostile envers ses congénères et les poissons de même forme. Omnivore à dominante carnivore : aliments coulants, larves, crevettes, avec une part végétale.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Rocio-octofasciata.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/rocio-octofasciata/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2369703"
+    }
+  ]
+}

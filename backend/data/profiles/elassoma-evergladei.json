@@ -1,0 +1,24 @@
+{
+  "nom_scientifique": "Elassoma evergladei",
+  "nom_valide": null,
+  "auteur": "Jordan, 1884",
+  "classification": "Centrarchiformes › Elassomatidae",
+  "uicn": "LC",
+  "repartition": "Sud-est des États-Unis : de la Caroline du Nord à l'Alabama et au nord des Everglades (Floride)",
+  "pays": [
+    "USA"
+  ],
+  "presentation": "Cette minuscule perche pygmée (3 cm), seule famille d'Elassomatidae, est un poisson d'eau tempérée chaude, dont les mâles prennent une robe noire à reflets bleus en période de reproduction.",
+  "habitat": "Elle vit dans les marais, les bras morts très végétalisés et les petits ruisseaux lents, en général sur fond de vase. Elle pond dans la végétation, de préférence sur les cornifles (*Ceratophyllum*).",
+  "comportement": "Paisible et discrète, elle se garde en petit groupe dans un bac spécifique très planté ou avec d'autres micro-poissons calmes. Elle se nourrit de vers et de petits crustacés : proies vivantes ou congelées. Elle supporte une large gamme de températures, eau fraîche comprise.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Elassoma-evergladei.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2380536"
+    }
+  ]
+}

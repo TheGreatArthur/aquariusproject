@@ -1,0 +1,35 @@
+{
+  "nom_scientifique": "Peckoltia vittata",
+  "nom_commun": "Pléco rayé",
+  "famille": "Loricariidae",
+  "genre": "Peckoltia",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 5.0,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 2.0,
+  "gh_maxi": 20.0,
+  "temp_mini": 23,
+  "temp_maxi": 26,
+  "taille": 13.0,
+  "litrage_mini": 180,
+  "nb_individus": 1,
+  "points": 20,
+  "regime": "omnivore, herbivore, alguivore",
+  "mode_vie": "solitaire",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "courant",
+  "longevite": 8,
+  "courant": "doux, modéré",
+  "photos": [
+    "File:Peckoltia vittata.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Peckoltia-vittata.html"
+    }
+  ]
+}

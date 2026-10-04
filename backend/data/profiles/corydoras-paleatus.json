@@ -1,0 +1,36 @@
+{
+  "nom_scientifique": "Corydoras paleatus",
+  "nom_valide": "Hoplisoma paleatum",
+  "auteur": "(Jenyns, 1842)",
+  "classification": "Siluriformes › Callichthyidae",
+  "uicn": "LC",
+  "repartition": "Sud du Brésil, Uruguay, Paraguay et Argentine",
+  "pays": [
+    "ARG",
+    "BRA",
+    "URY"
+  ],
+  "emprise": [
+    -61.5,
+    -36.5,
+    -47.5,
+    -22.0
+  ],
+  "presentation": "L'un des premiers Corydoras connus, décrit dès 1842 par Jenyns d'après des poissons récoltés lors du voyage de Darwin sur le *Beagle*. Le nom du genre signifie « peau en casque », en référence aux plaques osseuses qui couvrent ses flancs. Comme ses cousins, il avale parfois de l'air en surface : il peut absorber de l'oxygène par l'intestin.",
+  "habitat": "Il vit dans les rivières, les affluents et les eaux stagnantes : mares, étangs et petits lacs.",
+  "comportement": "Paisible, il convient aux petits bacs communautaires, en groupe, avec tétras et cichlidés nains. Omnivore opportuniste, il accepte presque tout : aliments coulants de qualité et proies vivantes ou congelées. Venu de régions subtropicales, il supporte une eau plus fraîche que la plupart des Corydoras.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Corydoras-paleatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/corydoras-paleatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2342720"
+    }
+  ]
+}

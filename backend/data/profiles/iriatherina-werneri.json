@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Iriatherina werneri",
+  "nom_valide": null,
+  "auteur": "Meinken, 1974",
+  "classification": "Atheriniformes › Melanotaeniidae",
+  "uicn": "LC",
+  "repartition": "Sud de la Nouvelle-Guinée (de Merauke au fleuve Fly, Indonésie et Papouasie-Nouvelle-Guinée) et nord de l'Australie",
+  "pays": [
+    "AUS",
+    "IDN",
+    "PNG"
+  ],
+  "presentation": "Les mâles de ce minuscule arc-en-ciel portent de longs filaments aux nageoires dorsales et anale, d'où son nom anglais de « featherfin rainbowfish ». Très répandu et élevé commercialement, il est pourtant délicat et a des besoins précis : ce n'est pas un poisson pour débutant.",
+  "habitat": "Il préfère les ruisseaux lents, marais, lagunes et billabongs d'eau claire riches en plantes, surtout dans les zones de bordure de moins de 1,5 m, souvent près des nénuphars. Femelles et jeunes forment des bancs, tandis que les mâles défendent de petits territoires en pleine eau où ils paradent.",
+  "comportement": "Très paisible, il ne convient pas au bac communautaire classique : il se fait voler la nourriture et les longues nageoires des mâles attirent les mordilleurs. On le garde seul ou avec des poissons de taille et de caractère comparables (Pseudomugil, Boraras, Corydoras nains, Otocinclus). Sa bouche minuscule demande des aliments très fins, surtout vivants (Artemia, Daphnia, micro-vers).",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Iriatherina-werneri.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/iriatherina-werneri/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2411742"
+    }
+  ]
+}

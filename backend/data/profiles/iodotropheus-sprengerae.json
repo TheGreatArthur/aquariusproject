@@ -1,0 +1,34 @@
+{
+  "nom_scientifique": "Iodotropheus sprengerae",
+  "nom_valide": null,
+  "auteur": "Oliver & Loiselle, 1972",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "NT",
+  "repartition": "Endémique du sud du lac Malawi : îles Boadzulu, Chinyankwazi et Chinyamwezi",
+  "pays": [
+    "MWI"
+  ],
+  "emprise": [
+    33.8,
+    -15.0,
+    35.4,
+    -9.3
+  ],
+  "presentation": "L'un des plus petits et des moins agressifs des mbunas, à la robe rouille et violacée. Son caractère, ses couleurs discrètes mais originales et sa petite taille en font un excellent premier mbuna, qui se contente d'un bac plus modeste. Il est classé quasi menacé.",
+  "habitat": "Il vit dans les zones littorales peu profondes des côtes rocheuses.",
+  "comportement": "Facilement dominé par les espèces plus grandes et turbulentes, il demande des compagnons choisis : Aulonocara, Copadichromis, Protomelas ou Labidochromis caeruleus, voire certaines espèces calmes du Tanganyika. Les mâles rivaux sont territoriaux. Omnivore : les végétaux (spiruline, épinards) doivent former une grande partie de son alimentation, complétée de petites proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Iodotropheus-sprengerae.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/iodotropheus-sprengerae/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2371552"
+    }
+  ]
+}

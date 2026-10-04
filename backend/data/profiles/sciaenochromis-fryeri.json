@@ -1,0 +1,35 @@
+{
+  "nom_scientifique": "Sciaenochromis fryeri",
+  "nom_valide": null,
+  "auteur": "Konings, 1993",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Endémique du lac Malawi (Malawi, Tanzanie), répandu mais peu commun",
+  "pays": [
+    "MWI",
+    "TZA"
+  ],
+  "emprise": [
+    33.8,
+    -15.0,
+    35.4,
+    -9.3
+  ],
+  "presentation": "Ce haplochromine d'un bleu électrique a longtemps été importé et décrit sous le nom de *Sciaenochromis ahli*, nom encore très utilisé dans la littérature. Il en existe de nombreuses formes, toutes à mâles bleus, qui diffèrent par la couleur des nageoires ; il ne faut pas les mélanger, car elles s'hybrident.",
+  "habitat": "Il vit sur les côtes rocheuses et dans les zones intermédiaires de sable qui les prolongent, où il chasse de petits poissons.",
+  "comportement": "Peu agressif mais robuste, il ne doit pas vivre avec des mbunas. Il convient avec Nimbochromis venustus, Cyrtocara moorii, Protomelas et Copadichromis, voire Aulonocara avec prudence. Éviter les poissons de même couleur. Plusieurs femelles par mâle et un seul mâle sauf très grand bac. Prédateur : aliments vivants, congelés et secs variés, sans besoin de végétaux ; jamais de viande.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Sciaenochromis-fryeri.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/sciaenochromis-fryeri/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2372908"
+    }
+  ]
+}

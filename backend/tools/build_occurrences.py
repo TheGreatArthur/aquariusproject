@@ -15,7 +15,7 @@ import sys
 import urllib.parse
 
 from profiles import OCCURRENCES_FILE, PROFILES_DIR
-from tools.fetch_sources import CACHE_DIR, fetch, slug
+from tools.fetch_sources import CACHE_DIR, GBIF_SPECIES_RANKS, fetch, slug
 
 BASIS = ('PRESERVED_SPECIMEN', 'MATERIAL_SAMPLE', 'MATERIAL_CITATION', 'HUMAN_OBSERVATION', 'OBSERVATION',
          'MACHINE_OBSERVATION', 'OCCURRENCE')
@@ -34,7 +34,7 @@ def taxon_key(name: str) -> int | None:
     if not cache.exists():
         return None
     gbif = json.loads(cache.read_text(encoding='utf-8'))['gbif']
-    if gbif.get('rank') not in ('SPECIES', 'SUBSPECIES', 'VARIETY'):
+    if gbif.get('rank') not in GBIF_SPECIES_RANKS:
         return None
     return gbif.get('acceptedUsageKey') or gbif.get('usageKey')
 

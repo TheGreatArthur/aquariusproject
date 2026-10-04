@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Anomalochromis thomasi",
+  "nom_commun": "Cichlidé de Thomas",
+  "famille": "Cichlidae africain",
+  "genre": "Anomalochromis",
+  "zone_geo": "Afrique",
+  "type_eau": "douce",
+  "ph_mini": 5.5,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 23,
+  "temp_maxi": 27,
+  "taille": 8.0,
+  "litrage_mini": 90,
+  "nb_individus": 2,
+  "points": 10,
+  "regime": "omnivore",
+  "mode_vie": "couple",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 8,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Anomalochromis thomasi 2.jpg",
+    "File:Anomalochromis thomasi A.jpg",
+    "File:Anomalochromis thomasi B.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/anomalochromis-thomasi/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Anomalochromis-thomasi.html"
+    }
+  ]
+}

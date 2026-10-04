@@ -1,0 +1,40 @@
+{
+  "nom_scientifique": "Corydoras arcuatus",
+  "nom_commun": "Corydoras arqué",
+  "famille": "Callichthyidae",
+  "genre": "Corydoras",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 5.0,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 2.0,
+  "gh_maxi": 12.0,
+  "temp_mini": 20,
+  "temp_maxi": 28,
+  "taille": 5.5,
+  "litrage_mini": 80,
+  "nb_individus": 8,
+  "points": 5,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "tolérant",
+  "dispo": "peu courant",
+  "longevite": 5,
+  "courant": "doux",
+  "photos": [
+    "File:Corydoras arcuatus.jpg",
+    "File:Corydoras arcuatus PiaH.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/corydoras-arcuatus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Corydoras-arcuatus.html"
+    }
+  ]
+}

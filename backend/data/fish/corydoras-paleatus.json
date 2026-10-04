@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Corydoras paleatus",
+  "nom_commun": "Corydoras poivré",
+  "famille": "Callichthyidae",
+  "genre": "Corydoras",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 7.0,
+  "kh": null,
+  "gh_mini": 0.0,
+  "gh_maxi": 12.0,
+  "temp_mini": 22,
+  "temp_maxi": 26,
+  "taille": 7.0,
+  "litrage_mini": 90,
+  "nb_individus": 8,
+  "points": 10,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "très robuste",
+  "dispo": "très courant",
+  "longevite": 5,
+  "courant": "doux",
+  "photos": [
+    "File:Marmorierter Panzerwels 1.jpg",
+    "File:Corydoras paleatus h080.jpg",
+    "File:Kirysek pstry (Corydoras paleatus).JPG"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/corydoras-paleatus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Corydoras-paleatus.html"
+    }
+  ]
+}

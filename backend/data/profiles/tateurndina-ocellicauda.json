@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Tateurndina ocellicauda",
+  "nom_valide": null,
+  "auteur": "Nichols, 1955",
+  "classification": "Gobiiformes › Eleotridae",
+  "uicn": "VU",
+  "repartition": "Est de la Papouasie-Nouvelle-Guinée",
+  "pays": [
+    "PNG"
+  ],
+  "presentation": "Malgré son nom, le gobie paon n'est pas un vrai gobie mais un Eleotridae (« dormeur ») : ses nageoires pelviennes ne sont pas soudées en ventouse. C'est l'un des plus petits et des plus beaux de sa famille, avec sa tache noire caudale en œil, et un hôte idéal du bac communautaire planté. Il est classé vulnérable.",
+  "habitat": "Il vit dans les ruisseaux, mares et rivières des basses terres, surtout en forêt pluviale, où il nage en bancs lâches au-dessus du fond.",
+  "comportement": "Un peu territorial avec ses congénères, il convient à de nombreux bacs de petits poissons paisibles : idéalement d'autres espèces de Papouasie comme *Pseudomugil furcatus*, mais aussi tétras, Rasbora, Corydoras. Prévoir assez d'espace avec d'autres espèces territoriales comme les cichlidés nains. Il accepte les aliments secs mais préfère de petites proies vivantes ou congelées, qui avivent ses couleurs.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Tateurndina-ocellicauda.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/tateurndina-ocellicauda/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2386263"
+    }
+  ]
+}

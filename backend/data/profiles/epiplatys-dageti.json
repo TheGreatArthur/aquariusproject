@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Epiplatys dageti",
+  "nom_valide": null,
+  "auteur": "Poll, 1953",
+  "classification": "Cyprinodontiformes › Nothobranchiidae",
+  "uicn": "LC",
+  "repartition": "Afrique de l'Ouest : de Monrovia (Liberia) au sud de la Côte d'Ivoire et au sud-ouest du Ghana",
+  "pays": [
+    "CIV",
+    "GHA",
+    "LBR"
+  ],
+  "presentation": "Dédié à l'ichtyologiste français Jacques Daget, ce killi est un classique de l'aquariophilie : la forme à gorge rouge a été exportée de Monrovia dès 1908. Ce n'est pas un killi annuel ; robuste et facile à reproduire, il est idéal pour débuter avec les killis.",
+  "habitat": "Il vit dans les zones marécageuses de la savane côtière et les parties calmes des ruisseaux et rivières de plaine, surtout en eau douce, parfois saumâtre.",
+  "comportement": "Paisible, il vit bien en bac communautaire avec des characidés, cyprinidés, anabantoïdes et poissons-chats de taille comparable. Il se tient près de la surface. Assez grégaire, il se garde en groupe de six ou plus. Prédateur d'insectes, il accepte les aliments secs mais demande aussi de petites proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Epiplatys-dageti.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/epiplatys-dageti/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/4284376"
+    }
+  ]
+}

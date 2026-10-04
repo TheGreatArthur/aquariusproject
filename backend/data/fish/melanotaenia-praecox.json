@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Melanotaenia praecox",
+  "nom_commun": "Arc-en-ciel nain néon",
+  "famille": "Melanotaeniidae",
+  "genre": "Melanotaenia",
+  "zone_geo": "Océanie",
+  "type_eau": "douce",
+  "ph_mini": 6.8,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 23,
+  "temp_maxi": 28,
+  "taille": 8.0,
+  "litrage_mini": 70,
+  "nb_individus": 8,
+  "points": 10,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "courant",
+  "longevite": 8,
+  "courant": "doux, modéré",
+  "photos": [
+    "File:Dwarf neon rainbows.jpg",
+    "File:MELANOTAENIA PRAECOX.JPG",
+    "File:Melanotaenia praecox.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/melanotaenia-praecox/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Melanotaenia-praecox.html"
+    }
+  ]
+}

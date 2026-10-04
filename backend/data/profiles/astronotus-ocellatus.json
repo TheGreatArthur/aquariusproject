@@ -1,0 +1,32 @@
+{
+  "nom_scientifique": "Astronotus ocellatus",
+  "nom_valide": null,
+  "auteur": "(Agassiz, 1831)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Ouest des bassins de l'Amazone et de l'Orénoque ; introduit ailleurs (Singapour, États-Unis)",
+  "pays": [
+    "ARG",
+    "BRA",
+    "COL",
+    "GUF",
+    "PER"
+  ],
+  "presentation": "L'oscar, décrit par Agassiz en 1831, doit son nom d'espèce à l'ocelle noir cerclé d'orange de sa nageoire caudale. Très populaire, il existe en nombreuses formes d'élevage (oscar rouge, tigre, à longues nageoires). Il vit dix à vingt ans et c'est aussi un poisson de consommation apprécié en Amérique du Sud.",
+  "habitat": "Il fréquente surtout les eaux peu profondes, lentes ou stagnantes des zones forestières, de préférence en eau blanche chargée de limon, près des racines immergées ou de la végétation des rives.",
+  "comportement": "Pas spécialement agressif pour sa taille, c'est un prédateur qui avale tout poisson qui tient dans sa bouche. Seul un très grand aquarium permet de lui associer characidés, anostomidés, autres cichlidés et grands poissons-chats. Omnivore, il préfère les aliments carnés et accepte granulés et végétaux.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Astronotus-ocellatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/astronotus-ocellatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2370243"
+    }
+  ]
+}

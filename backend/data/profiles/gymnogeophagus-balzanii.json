@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Gymnogeophagus balzanii",
+  "nom_valide": null,
+  "auteur": "(Perugia, 1891)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Bassin du Paraná (Brésil, Paraguay, Argentine) et bas Uruguay (Uruguay, Brésil)",
+  "pays": [
+    "ARG",
+    "BRA",
+    "PRY",
+    "URY"
+  ],
+  "presentation": "Ce géophage du sud de l'Amérique du Sud se reconnaît au front très bombé des mâles adultes. Il existe plusieurs formes de couleur selon la localité. Espèce passionnante, elle est pourtant réservée aux aquariophiles capables de lui offrir les conditions particulières dont elle a besoin, dont une eau plus fraîche.",
+  "habitat": "Il vit à l'écart des chenaux principaux, dans les affluents lents et les criques.",
+  "comportement": "Peu adapté au bac communautaire : les mâles surtout supportent mal les autres cichlidés. Les characidés et poissons de banc de taille moyenne qui occupent le haut du bac sont en général épargnés, à condition de supporter une eau plus fraîche (tétras de Buenos Aires, certains Danio). Il ne se nourrit qu'au fond : aliments coulants, petites proies vivantes ou congelées et un peu de végétaux.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Gymnogeophagus-balzanii.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/gymnogeophagus-balzanii/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2371131"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Xenotoca eiseni",
+  "nom_valide": null,
+  "auteur": "(Rutter, 1896)",
+  "classification": "Cyprinodontiformes › Goodeidae",
+  "uicn": "EN",
+  "repartition": "Ouest du Mexique",
+  "pays": [
+    "MEX"
+  ],
+  "presentation": "Ce vivipare de la famille des Goodeidae, à la queue rouge orangé et au dos bleuté chez le mâle, est incroyablement robuste et adaptable, mais moins populaire qu'autrefois, sans doute à cause de son caractère souvent agressif. Il est classé en danger dans la nature. Mâles et femelles diffèrent moins par la taille que chez les autres vivipares.",
+  "habitat": "Il vit dans des milieux très variés, des ruisseaux de montagne clairs aux fossés pollués de bord de route.",
+  "comportement": "Imprévisible : certains individus vivent bien en bac communautaire, d'autres mordillent les nageoires, voire attaquent et tuent les autres espèces. Il semble particulièrement s'en prendre aux poissons-chats, comme les Corydoras, dont il arrache les nageoires et mange les yeux. Mieux vaut le garder en bac spécifique. Peu difficile, il accepte la plupart des aliments, avec une part végétale.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Xenotoca-eiseni.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/xenotoca-eiseni/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2347678"
+    }
+  ]
+}

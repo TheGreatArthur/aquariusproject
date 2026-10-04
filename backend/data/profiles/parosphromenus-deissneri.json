@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Parosphromenus deissneri",
+  "nom_valide": null,
+  "auteur": "(Bleeker, 1859)",
+  "classification": "Anabantiformes › Osphronemidae",
+  "uicn": "EN",
+  "repartition": "Indonésie : endémique de l'île de Bangka, surtout au nord et à l'est",
+  "pays": [
+    "IDN"
+  ],
+  "presentation": "Seul membre reconnu de son genre pendant près d'un siècle après sa description en 1859, ce gourami réglisse a donné son nom à bien des poissons d'autres régions, décrits depuis comme espèces distinctes. Le vrai *P. deissneri* a sans doute toujours été très rare en aquariophilie. Il est classé en danger.",
+  "habitat": "Il vit dans la végétation des marais et ruisseaux de jungle, en eau lente couleur thé. Sous une canopée dense, la lumière pénètre à peine ; l'eau, teintée d'acides humiques, est presque sans minéraux, avec un pH pouvant descendre à 3 ou 4. Certaines populations ne survivent plus que dans des restes de forêt très dégradés.",
+  "comportement": "Il ne convient pas au bac communautaire : ses besoins, son caractère et surtout son statut de conservation imposent un bac spécifique, au plus avec un groupe de petits cyprinidés paisibles (Boraras, Sundadanio). Ne jamais mélanger les espèces de Parosphromenus, qui peuvent s'hybrider. Micro-prédateur : petites proies vivantes variées (nauplies d'Artemia, Daphnia, Moina, larves de moustique).",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Parosphromenus-deissneri.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/parosphromenus-deissneri/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2394190"
+    }
+  ]
+}

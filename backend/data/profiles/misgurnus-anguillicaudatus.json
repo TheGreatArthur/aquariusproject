@@ -1,0 +1,35 @@
+{
+  "nom_scientifique": "Misgurnus anguillicaudatus",
+  "nom_valide": null,
+  "auteur": "(Cantor, 1842)",
+  "classification": "Cypriniformes › Cobitidae",
+  "uicn": "LC",
+  "repartition": "Asie de l'Est : Sibérie (Amour), Sakhaline, Corée, Japon, Chine jusqu'au nord du Viêt Nam ; introduite en Europe, en Amérique du Nord, en Australie et à Hawaï",
+  "pays": [
+    "CHN",
+    "HKG",
+    "JPN",
+    "KOR",
+    "PRK",
+    "RUS",
+    "TWN",
+    "VNM"
+  ],
+  "presentation": "La loche météo doit son nom à son agitation quand la pression atmosphérique change avant un orage. Très robuste et adaptable, elle s'est implantée dans le monde entier, surtout via l'aquariophilie, au point d'inquiéter les spécialistes de la conservation.",
+  "habitat": "Elle vit surtout dans les sections lentes et peu profondes des rivières, marais, bras morts et rizières, souvent riches en plantes et en racines, sur fond de vase où elle s'enfouit en ne laissant dépasser que la tête. Elle respire l'air quand l'eau manque d'oxygène.",
+  "comportement": "Paisible avec ses congénères et les autres espèces, mais elle peut manger œufs, alevins et très petits poissons. Plus à l'aise et active en groupe, elle va avec des poissons actifs de taille moyenne qui nagent plus haut. Sol fin indispensable. Prédatrice de larves et petits crustacés : aliments coulants et proies vivantes ou congelées. Eau fraîche.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Misgurnus-anguillicaudatus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/misgurnus-anguillicaudatus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2367919"
+    }
+  ]
+}

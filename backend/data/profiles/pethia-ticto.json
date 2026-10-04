@@ -1,0 +1,33 @@
+{
+  "nom_scientifique": "Pethia ticto",
+  "nom_valide": null,
+  "auteur": "(Hamilton, 1822)",
+  "classification": "Cypriniformes › Cyprinidae",
+  "uicn": "LC",
+  "repartition": "Sous-continent indien : Pakistan, Inde, Népal, Bhoutan, Bangladesh et Sri Lanka ; les signalements au Myanmar et en Chine restent à confirmer",
+  "pays": [
+    "BGD",
+    "BTN",
+    "IND",
+    "LKA",
+    "NPL",
+    "PAK"
+  ],
+  "presentation": "Le barbu ticto, argenté à deux taches noires, est souvent confondu dans la littérature aquariophile avec *P. padamya* (barbu odessa), pourtant facile à distinguer : *P. ticto* est bien moins coloré et ses mâles n'ont pas de rouge orangé sur le corps. Il supporte une eau assez fraîche.",
+  "habitat": "Il est surtout abondant dans les ruisseaux peu profonds et les petits affluents, parfois en altitude, sur fond de vase ou de limon, et dans les eaux calmes de bordure des réservoirs et rivières, où il fouille près du fond. La femelle pond environ 150 œufs par lots d'une vingtaine.",
+  "comportement": "Très paisible, idéal en bac communautaire bien pensé, de préférence avec des cyprinidés de pleine eau de taille comparable, des loches ou des cyprinidés de fond (Crossocheilus, Garra). Il faut un groupe mixte d'au moins 8 à 10, où les mâles rivalisent sans dommage. Omnivore fouilleur : aliments secs avec une part végétale et petites proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pethia-ticto.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pethia-ticto/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/7819600"
+    }
+  ]
+}

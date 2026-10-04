@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Sahyadria denisonii",
+  "nom_commun": "Barbu de Denison",
+  "famille": "Cyprinidae",
+  "genre": "Sahyadria",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.5,
+  "ph_maxi": 7.8,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 25.0,
+  "temp_mini": 15,
+  "temp_maxi": 25,
+  "taille": 11.0,
+  "litrage_mini": 300,
+  "nb_individus": 8,
+  "points": 20,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "tolérant",
+  "dispo": "courant",
+  "longevite": 8,
+  "courant": "modéré, fort",
+  "photos": [
+    "File:Aquarium tropical de Pierrefitte-Nestalas 03082018 Barbus crayon 1.jpg",
+    "File:Cyprinidae Sahyadria denisonii 1.2.jpg",
+    "File:Aquarium tropical de Pierrefitte-Nestalas 03082018 Barbus crayon 2.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/sahyadria-denisonii/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Sahyadria-denisonii.html"
+    }
+  ]
+}

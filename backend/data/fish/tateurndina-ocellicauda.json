@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Tateurndina ocellicauda",
+  "nom_commun": "Gobie paon",
+  "famille": "Eleotridae",
+  "genre": "Tateurndina",
+  "zone_geo": "Océanie",
+  "type_eau": "douce",
+  "ph_mini": 6.5,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 10.0,
+  "temp_mini": 22,
+  "temp_maxi": 26,
+  "taille": 7.5,
+  "litrage_mini": 50,
+  "nb_individus": 4,
+  "points": 10,
+  "regime": "carnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 5,
+  "courant": "doux",
+  "photos": [
+    "File:Tateurndina ocellicauda, male.jpg",
+    "File:Tateurndina ocellicauda, male after lunch.jpg",
+    "File:Tateurndina ocellicauda male DG.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/tateurndina-ocellicauda/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Tateurndina-ocellicauda.html"
+    }
+  ]
+}

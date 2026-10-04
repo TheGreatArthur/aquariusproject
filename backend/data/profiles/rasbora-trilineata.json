@@ -1,0 +1,32 @@
+{
+  "nom_scientifique": "Rasbora trilineata",
+  "nom_valide": null,
+  "auteur": "Steindachner, 1870",
+  "classification": "Cypriniformes › Danionidae",
+  "uicn": "LC",
+  "repartition": "Chao Phraya et bas Mékong (Laos, Thaïlande, Cambodge), Malaisie péninsulaire, est de Sumatra et ouest de Bornéo",
+  "pays": [
+    "IDN",
+    "KHM",
+    "LAO",
+    "MYS",
+    "THA"
+  ],
+  "presentation": "Le rasbora ciseaux doit son nom au mouvement saccadé de sa caudale noire et blanche au repos, qui s'ouvre et se ferme comme des ciseaux. Excellent choix pour débuter, à condition d'avoir un bac assez grand pour cet assez grand rasbora. Le commerce l'a répandu dans le monde entier.",
+  "habitat": "Très adaptable, il vit aussi bien dans les ruisseaux de colline rapides sur blocs, galets, sable ou gravier, en eau claire de pH 6,5 à 7,5, que dans les eaux noires lentes des forêts tourbeuses, et dans les lacs, marais, canaux et fossés de plaine.",
+  "comportement": "Très paisible, idéal en grand bac communautaire ; peu exigeant sur l'eau, il cohabite avec la plupart des poissons populaires (cyprinidés, tétras, vivipares, arcs-en-ciel, anabantoïdes, poissons-chats, loches), en tenant compte de sa taille adulte. En banc. Il mange surtout des insectes : aliments secs, mais pas exclusivement, avec chaque jour des proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Rasbora-trilineata.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/rasbora-trilineata/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2359627"
+    }
+  ]
+}

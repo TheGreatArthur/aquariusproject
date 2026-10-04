@@ -136,11 +136,11 @@ def upsert_plants(db: Session, plants: dict[str, dict]) -> None:
 
 if __name__ == '__main__':
     from config import DSN
-    from models import Base
-    from models.meta import get_engine
+    from models.meta import create_schema, get_engine
 
     engine = get_engine(DSN)
-    Base.metadata.create_all(bind=engine)
+    for column in create_schema(engine):
+        print('Colonne ajoutée :', column)
     with Session(engine) as session:
         loaded = load_plants()
         upsert_plants(session, loaded)

@@ -1,0 +1,33 @@
+{
+  "nom_scientifique": "Pethia conchonius",
+  "nom_valide": null,
+  "auteur": "(Hamilton, 1822)",
+  "classification": "Cypriniformes › Cyprinidae",
+  "uicn": "LC",
+  "repartition": "Du Pakistan (et de l'Afghanistan) à l'Inde, au Népal et au Bangladesh ; signalé au Myanmar",
+  "pays": [
+    "AFG",
+    "BGD",
+    "IND",
+    "MMR",
+    "NPL",
+    "PAK"
+  ],
+  "presentation": "Le barbu rosé est l'un des petits cyprinidés les plus robustes et un excellent choix pour débuter. Le mâle, argenté, prend une teinte bordeaux à la reproduction. La sélection a produit des formes à longues nageoires, « voile », « super red », « néon » et dorée. Les populations varient selon la localité.",
+  "habitat": "Il vit dans des milieux très variés : ruisseaux de colline courants et affluents, mais aussi lacs, étangs et marais.",
+  "comportement": "Paisible, idéal en bac communautaire bien pensé ; peu exigeant sur l'eau, il cohabite avec la plupart des poissons populaires : petits cyprinidés, tétras, vivipares, arcs-en-ciel, anabantoïdes, poissons-chats et loches. Poisson de banc, au moins 8 à 10. Omnivore généraliste : aliments secs, petites proies vivantes ou congelées et végétaux. Il supporte une eau plus fraîche.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pethia-conchonius.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pethia-conchonius/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/7572096"
+    }
+  ]
+}

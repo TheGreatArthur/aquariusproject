@@ -1,0 +1,31 @@
+{
+  "nom_scientifique": "Puntius lateristriga",
+  "nom_valide": "Striuntius lateristriga",
+  "auteur": "(Valenciennes, 1842)",
+  "classification": "Cypriniformes › Cyprinidae",
+  "uicn": "LC",
+  "repartition": "Sud de la Thaïlande, Malaisie péninsulaire, Sumatra, Java et quelques îles de la mer de Chine méridionale (Tioman, Anambas)",
+  "pays": [
+    "IDN",
+    "MYS",
+    "SGP",
+    "THA"
+  ],
+  "presentation": "Le barbu à barre en T, aujourd'hui rangé dans le genre *Striuntius*, doit son nom au dessin sombre de ses flancs. On le vend parfois sous le nom de l'espèce voisine *B. kuchingensis*, qui porte plutôt une rangée de taches le long de la ligne latérale. Plusieurs formes locales sont reconnues.",
+  "habitat": "Il vit surtout dans les ruisseaux forestiers d'eau claire, souvent dans les fosses au pied des cascades, sur roches lisses, sable ou gravier, avec du bois immergé, des feuilles mortes et des plantes (*Cryptocoryne*, *Barclaya*). On l'a aussi trouvé en tourbières et ruisseaux d'eaux noires.",
+  "comportement": "Assez turbulent, il peut intimider les espèces moins robustes par sa taille et son activité, surtout aux repas. Dans un grand bac, on l'associe à d'autres poissons robustes : grands Danio et Devario, Barilius, Garra et certaines loches. Les jeunes vivent en grands groupes, les mâles adultes deviennent plus solitaires. Omnivore fouilleur : aliments variés, proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Puntius-lateristriga.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/systomus-lateristriga/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2364073"
+    }
+  ]
+}

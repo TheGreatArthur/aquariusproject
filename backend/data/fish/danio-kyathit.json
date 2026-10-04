@@ -1,0 +1,40 @@
+{
+  "nom_scientifique": "Danio kyathit",
+  "nom_commun": "Danio kyathit",
+  "famille": "Danionidae",
+  "genre": "Danio",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.5,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 5.0,
+  "temp_mini": 16,
+  "temp_maxi": 26,
+  "taille": 4.5,
+  "litrage_mini": 100,
+  "nb_individus": 8,
+  "points": 5,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 5,
+  "courant": "modéré, fort",
+  "photos": [
+    "File:Danio kyathit.jpg",
+    "File:Danio kyathit2.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/danio-kyathit/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Danio-kyathit.html"
+    }
+  ]
+}

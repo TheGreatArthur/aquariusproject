@@ -1,0 +1,33 @@
+{
+  "nom_scientifique": "Rasbora einthovenii",
+  "nom_valide": null,
+  "auteur": "(Bleeker, 1851)",
+  "classification": "Cypriniformes › Danionidae",
+  "uicn": "LC",
+  "repartition": "Sud de la Thaïlande, Malaisie péninsulaire, Singapour, Sumatra et Bornéo",
+  "pays": [
+    "BRN",
+    "IDN",
+    "MMR",
+    "MYS",
+    "SGP",
+    "THA"
+  ],
+  "presentation": "L'un des rasboras les plus courants, idéal pour un bac communautaire moyen. Il ressemble à *R. jacobsoni*, mais n'a pas d'écailles réticulées sombres au-dessus de sa bande latérale, dont les bords sont nettement plus irréguliers que chez les espèces voisines.",
+  "habitat": "Il vit surtout dans les ruisseaux et rivières d'eaux noires des anciennes forêts marécageuses tourbeuses : eau brune, très douce et acide (pH jusqu'à 3), fond de feuilles et de branches, lumière tamisée par la canopée. Ces milieux sont menacés par les plantations d'hévéas et de palmiers à huile.",
+  "comportement": "Très paisible, idéal en bac communautaire bien aménagé ; peu exigeant sur l'eau, il vit avec la plupart des poissons populaires (petits cyprinidés, tétras, vivipares, cichlidés nains, poissons-chats, loches), ou en biotope avec des espèces d'eaux noires de Malaisie et de Bornéo. En banc. Micro-prédateur : aliments secs fins et chaque jour de petites proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Rasbora-einthovenii.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/rasbora-einthovenii/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2359549"
+    }
+  ]
+}

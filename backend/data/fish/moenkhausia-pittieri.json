@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Moenkhausia pittieri",
+  "nom_commun": "Tétra diamant vrai",
+  "famille": "Characidae",
+  "genre": "Moenkhausia",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 5.5,
+  "ph_maxi": 7.0,
+  "kh": null,
+  "gh_mini": 5.0,
+  "gh_maxi": 12.0,
+  "temp_mini": 24,
+  "temp_maxi": 28,
+  "taille": 6.0,
+  "litrage_mini": 80,
+  "nb_individus": 8,
+  "points": 5,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "tolérant",
+  "dispo": "courant",
+  "longevite": 5,
+  "courant": "stagnant, doux",
+  "photos": [
+    "File:Moenkhausia pittieri young fish in aquarium.jpg",
+    "File:MoenkhausiaPittieri.jpg",
+    "File:Brillantsalmler.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/moenkhausia-pittieri/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Moenkhausia-pittieri.html"
+    }
+  ]
+}

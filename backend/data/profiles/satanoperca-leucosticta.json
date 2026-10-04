@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Satanoperca leucosticta",
+  "nom_valide": null,
+  "auteur": "(Müller & Troschel, 1849)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Bouclier guyanais : est du Venezuela, Guyana, nord-ouest du Suriname et nord du Brésil (Roraima)",
+  "pays": [
+    "GUY",
+    "SUR"
+  ],
+  "presentation": "Ce géophage, dont le nom de genre signifie « perche de Satan », est souvent confondu avec *S. jurupari*, mais se reconnaît aux taches ou vermiculures blanches bien visibles sur les côtés de la tête. Fréquent dans le commerce, il est élevé dans plusieurs pays. Il incube les œufs dans la bouche.",
+  "habitat": "Il vit dans les chenaux principaux, les petits affluents et les lacs de plaine inondable, en général sur sable ou vase parsemés de feuilles mortes et de branches immergées.",
+  "comportement": "Hors reproduction, il est étonnamment paisible et ne mange pas de poissons de plus de quelques millimètres : il cohabite avec la plupart des espèces paisibles aux besoins comparables, mais pas avec des espèces de fond agressives ou territoriales. Mangeur de terre, il tamise le sable sans arrêt : sol de sable fin indispensable et aliments coulants variés.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Satanoperca-leucosticta.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/satanoperca-leucosticta/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5208450"
+    }
+  ]
+}

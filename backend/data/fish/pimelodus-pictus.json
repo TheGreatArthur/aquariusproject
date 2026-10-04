@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Pimelodus pictus",
+  "nom_commun": "Pimelodus ange",
+  "famille": "Pimelodidae",
+  "genre": "Pimelodus",
+  "zone_geo": "Amérique du Sud",
+  "type_eau": "douce",
+  "ph_mini": 5.8,
+  "ph_maxi": 6.8,
+  "kh": null,
+  "gh_mini": 1.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 22,
+  "temp_maxi": 25,
+  "taille": 12.0,
+  "litrage_mini": 300,
+  "nb_individus": 3,
+  "points": 20,
+  "regime": "carnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "prédateur",
+  "robustesse": "sensible",
+  "dispo": "courant",
+  "longevite": 8,
+  "courant": "doux, modéré",
+  "photos": [
+    "File:Pimelodus pictus - Engel-Antennenwels.jpg",
+    "File:Pimelodus pictus lateral.jpg",
+    "File:Pimelodus pictus 25cm 2.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pimelodus-pictus/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Pimelodus-pictus.html"
+    }
+  ]
+}

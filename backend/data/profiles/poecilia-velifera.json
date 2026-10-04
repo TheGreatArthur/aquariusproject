@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Poecilia velifera",
+  "nom_valide": null,
+  "auteur": "(Regan, 1914)",
+  "classification": "Cyprinodontiformes › Poeciliidae",
+  "uicn": "VU",
+  "repartition": "Sud-est du Mexique : péninsule du Yucatán et bas Usumacinta ; introduit en Colombie, en Israël, à Singapour et à Taïwan",
+  "pays": [
+    "MEX"
+  ],
+  "presentation": "Le molly voilé, aux mâles dotés d'une immense nageoire dorsale en voile, a donné de nombreuses variétés (albinos, noires, rouges), parfois croisées avec *P. latipinna*. La forme « ballon », déformée, est à éviter. Il est classé vulnérable dans la nature.",
+  "habitat": "Il vit dans les eaux côtières du Yucatán, douces à saumâtres, où il se nourrit d'invertébrés, de détritus et de végétaux.",
+  "comportement": "Paisible, il ne vit qu'avec des espèces supportant l'eau dure : xiphos, platys (pas d'autres mollys, qui s'hybrident), certains gouramis, Corydoras ou Loricariidés robustes, barbus et tétras, voire en eau saumâtre avec Etroplus et gobies. Omnivore : il accepte tout, mais demande une part de végétaux (épinards, concombre, paillettes végétales).",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Poecilia-velifera.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/poecilia-velifera/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5203757"
+    }
+  ]
+}

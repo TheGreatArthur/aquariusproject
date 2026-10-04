@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Ameca splendens",
+  "nom_valide": null,
+  "auteur": "Miller & Fitzsimons, 1971",
+  "classification": "Cyprinodontiformes › Goodeidae",
+  "uicn": "CR",
+  "repartition": "Mexique : bassin du río Ameca et vallée de Sayula (Jalisco)",
+  "pays": [
+    "MEX"
+  ],
+  "presentation": "Seule espèce de son genre, ce Goodeidae vivipare doit son nom au haut bassin du río Ameca, et *splendens* à ses couleurs éclatantes. Classé en danger critique d'extinction, il ne survit plus que dans quelques localités, mais de solides populations d'élevage existent chez les aquariophiles.",
+  "habitat": "Il vit dans des sources claires où les plantes aquatiques prolifèrent.",
+  "comportement": "Peu adapté au bac communautaire : les mâles peuvent être agressifs et l'espèce est très compétitive au moment des repas. Un bac spécifique, ou des compagnons robustes de même taille, lui conviennent mieux. Omnivore vorace, il consomme beaucoup d'algues dans la nature : son régime doit comprendre des végétaux. Une filtration efficace est indispensable.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Ameca-splendens.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/ameca-splendens/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2347699"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Hyphessobrycon pulchripinnis",
+  "nom_valide": null,
+  "auteur": "Ahl, 1937",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Brésil : bassin du Tapajós, peut-être aussi du Xingu",
+  "pays": [
+    "BRA"
+  ],
+  "presentation": "Le tétra citron doit son nom latin (« belles nageoires ») au jaune vif de ses nageoires et à l'éclat jaune pâle de son corps. Les poissons du commerce, bon marché, viennent d'élevages ; l'origine de la souche commerciale reste incertaine et il existe une forme albinos.",
+  "habitat": "Il fréquente probablement les petits affluents, les petites rivières, les bras morts et les forêts inondées plutôt que les chenaux principaux.",
+  "comportement": "Très paisible, idéal en bac communautaire avec des characidés, poissons-hachettes, poissons-crayons, Corydoras ou petits Loricariidés et cichlidés non prédateurs. Il faut un groupe mixte d'au moins 8 à 10 individus, au sein duquel les mâles rivalisent pour les femelles. Omnivore : aliments secs, proies vivantes et congelées, pour de belles couleurs.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hyphessobrycon-pulchripinnis.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hyphessobrycon-pulchripinnis/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2354601"
+    }
+  ]
+}

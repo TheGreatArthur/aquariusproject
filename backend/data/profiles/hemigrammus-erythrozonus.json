@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Hemigrammus erythrozonus",
+  "nom_valide": null,
+  "auteur": "Durbin, 1909",
+  "classification": "Characiformes › Acestrorhamphidae",
+  "uicn": "LC",
+  "repartition": "Guyana : bassin de l'Essequibo",
+  "pays": [
+    "GUY"
+  ],
+  "presentation": "Le tétra lumineux, à la fine ligne orange fluo, est l'un des meilleurs choix pour débuter : robuste, bon marché et présent dans presque toutes les animaleries. Tous les poissons du commerce viennent d'élevages en Europe de l'Est et en Asie ; il existe aussi une forme albinos.",
+  "habitat": "Il vit surtout en zone forestière, dans les affluents à l'écart du cours principal de l'Essequibo, en eau teintée de brun par les tanins et souvent très acide.",
+  "comportement": "Vif, coloré et paisible, c'est l'un des meilleurs tétras pour le bac communautaire : vivipares, Danio, Rasbora, autres tétras, Corydoras, petits Loricariidés, la plupart des gouramis et des cichlidés nains. Il n'est pas en sécurité avec les grandes espèces comme le scalaire. En banc. Il accepte presque tout ; de petites proies vivantes ou congelées avivent ses couleurs.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Hemigrammus-erythrozonus.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/hemigrammus-erythrozonus/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2354398"
+    }
+  ]
+}

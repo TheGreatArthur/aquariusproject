@@ -1,0 +1,28 @@
+{
+  "nom_scientifique": "Dermogenys pusilla",
+  "nom_valide": null,
+  "auteur": "Kuhl & van Hasselt, 1823",
+  "classification": "Beloniformes › Zenarchopteridae",
+  "uicn": "DD",
+  "repartition": "Asie du Sud-Est ; au sens strict, Java (Indonésie)",
+  "pays": [
+    "IDN"
+  ],
+  "presentation": "Les demi-becs doivent leur nom à leur mâchoire inférieure allongée. Les mâles de cette espèce se battent en se tenant par les mâchoires, d'où son surnom anglais de « demi-bec lutteur » ; on organise d'ailleurs des combats de mâles dans certains pays. C'est un poisson vivipare.",
+  "habitat": "Il vit dans des eaux lentes ou stagnantes riches en végétation de surface : rivières, canaux, fossés, rizières, lacs et étangs ; on le trouve parfois en eau saumâtre près des mangroves à la saison des pluies.",
+  "comportement": "Paisible mais timide, il cohabite avec des espèces de taille comparable (vivipares, petits arcs-en-ciel, gobies d'eau douce), pas avec des poissons plus grands ou vifs. Il se nourrit uniquement en surface : drosophiles, artémias, larves. Sensible aux changements brusques d'eau et de température, il demande des changements d'eau petits et fréquents.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Dermogenys-pusilla.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/dermogenys-pusilla/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2368988"
+    }
+  ]
+}

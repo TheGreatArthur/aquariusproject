@@ -1,0 +1,34 @@
+{
+  "nom_scientifique": "Maylandia estherae",
+  "nom_valide": null,
+  "auteur": "(Konings, 1995)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Endémique du lac Malawi : côte du Mozambique, de Metangula et Minos Reef à Gome",
+  "pays": [
+    "MOZ"
+  ],
+  "emprise": [
+    33.8,
+    -15.0,
+    35.4,
+    -9.3
+  ],
+  "presentation": "Ce mbuna populaire n'a été décrit qu'en 1995 : on le considérait auparavant comme une forme du zébra *Maylandia zebra*. Son genre reste débattu, entre *Maylandia*, *Metriaclima* et *Pseudotropheus*. Mâles bleu clair et femelles orange vif lui valent le nom de « zébra rouge ».",
+  "habitat": "Il vit sur les côtes rocheuses et les récifs du lac, où il broute les algues ; les mâles y sont territoriaux.",
+  "comportement": "Pas très agressif pour un mbuna, mais robuste : on ne l'associe pas aux espèces paisibles (Aulonocara, Copadichromis) mais à d'autres mbunas de taille comparable. Un bac bien peuplé limite l'agressivité, avec plusieurs femelles par mâle et un seul mâle sauf très grand bac. Les végétaux (spiruline, épinards, nori) doivent dominer son alimentation ; jamais de cœur de bœuf ni de viande.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Maylandia-estherae.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/pseudotropheus-estherae/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2372994"
+    }
+  ]
+}
