@@ -1,0 +1,18 @@
+{
+  "nom_scientifique": "Anubias barteri var. nana",
+  "nom_commun": "Anubias nain",
+  "flowgrow": "anubias-barteri-var-nana",
+  "tropica": "Anubiasbarterivar.nana(101)/4545",
+  "photos": [
+    "File:Zwerg-Speerblatt.jpg",
+    "File:Anubia nana.jpg",
+    "File:Anubias barteri var. nana kz01.jpg"
+  ],
+  "origine": "Cameroun : eaux peu profondes de rivières forestières au courant soutenu (Afrique centrale)",
+  "presentation": "Variété naine d'*Anubias barteri*, une aracée d'Afrique centrale et occidentale. Elle vient du Cameroun, où elle pousse en eau peu profonde dans des rivières forestières au courant soutenu, mais ses stations naturelles restent mal connues. La pépinière danoise Tropica l'a mise en culture en 1970 ; c'est devenu l'une des plantes d'aquarium les plus répandues en Europe, en Asie et en Amérique du Nord.\n\nUn rhizome rampant porte des feuilles épaisses, vert foncé, qui vivent plusieurs années. Elle fleurit souvent sous l'eau, avec la petite inflorescence typique des aracées, et les poissons herbivores n'y touchent pas.",
+  "culture": "Presque indestructible, au point d'être surnommée « la plante en plastique qui pousse » : elle se contente d'une lumière très faible comme d'un éclairage fort, avec ou sans CO2. Son rhizome ne doit jamais être enterré, sinon il pourrit : on la fixe sur une racine ou une pierre avec du fil de pêche, le temps que ses racines s'accrochent.\n\nComme elle pousse lentement, les algues ont le temps de s'installer sur ses vieilles feuilles ; sous un éclairage fort, mieux vaut la placer dans un coin ombragé. On la multiplie en coupant le rhizome en deux ou plusieurs morceaux. Elle se place au premier plan d'un grand bac ou au plan intermédiaire d'un nano-aquarium.",
+  "valeurs": {
+    "co2": "faible"
+  },
+  "sources": []
+}

@@ -1,0 +1,693 @@
+{
+  "anubias-barteri-var-nana": {
+    "flowgrow": {
+      "url": "https://www.flowgrow.de/db/aquaticplants/anubias-barteri-var-nana",
+      "ph_mini": 5,
+      "ph_maxi": 8,
+      "kh_mini": 0,
+      "kh_maxi": 21,
+      "temp_mini": 12,
+      "temp_maxi": 30,
+      "temp_opti_mini": 22,
+      "temp_opti_maxi": 26,
+      "hauteur_mini": 5,
+      "hauteur_maxi": 10,
+      "lumiere_mini": "faible",
+      "lumiere_maxi": "forte",
+      "difficulte": "très facile",
+      "croissance": "lente",
+      "positions": [
+        "sur le décor",
+        "plan intermédiaire",
+        "premier plan"
+      ],
+      "usages": [
+        "résiste aux cichlidés",
+        "nano-aquarium"
+      ],
+      "multiplication": [
+        "division du rhizome",
+        "séparation des rejets"
+      ],
+      "type": "épiphyte",
+      "emergee": true,
+      "ordre": "Alismatales",
+      "famille": "Araceae",
+      "regions": "Central Africa"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Anubiasbarterivar.nana(101)/4545",
+      "hauteur_mini": 5,
+      "hauteur_maxi": 15,
+      "origine": "Africa"
+    },
+    "gbif": {
+      "url": "https://www.gbif.org/species/2871878",
+      "statut": "ACCEPTED",
+      "auteur": "(Engl.) Crusio",
+      "ordre": "Alismatales",
+      "famille": "Araceae"
+    },
+    "photos": [
+      {
+        "fichier": "anubias-barteri-var-nana-1.jpg",
+        "auteur": "Michael Linnenbach",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Zwerg-Speerblatt.jpg"
+      },
+      {
+        "fichier": "anubias-barteri-var-nana-2.jpg",
+        "auteur": "Carlosar",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Anubia_nana.jpg"
+      },
+      {
+        "fichier": "anubias-barteri-var-nana-3.jpg",
+        "auteur": "Krzysztof Ziarnek, Kenraiz",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Anubias_barteri_var._nana_kz01.jpg"
+      }
+    ]
+  },
+  "ceratophyllum-demersum": {
+    "flowgrow": {
+      "url": "https://www.flowgrow.de/db/aquaticplants/ceratophyllum-demersum",
+      "ph_mini": 6,
+      "ph_maxi": 9,
+      "kh_mini": 5,
+      "kh_maxi": 24,
+      "temp_mini": 4,
+      "temp_maxi": 30,
+      "temp_opti_mini": 10,
+      "temp_opti_maxi": 30,
+      "lumiere_mini": "moyenne",
+      "lumiere_maxi": "forte",
+      "difficulte": "très facile",
+      "croissance": "très rapide",
+      "positions": [
+        "arrière-plan",
+        "plan intermédiaire",
+        "en surface"
+      ],
+      "usages": [
+        "frayère"
+      ],
+      "multiplication": [
+        "fragmentation",
+        "boutures"
+      ],
+      "type": "flottante",
+      "emergee": false,
+      "ordre": "Ceratophyllales",
+      "famille": "Ceratophyllaceae",
+      "regions": "Africa, Europe, Asia, America"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Ceratophyllumdemersum(021APOR)/4434",
+      "hauteur_mini": 5,
+      "hauteur_maxi": 30,
+      "co2": "faible",
+      "origine": "Cosmopolitan"
+    },
+    "gbif": {
+      "url": "https://www.gbif.org/species/2882398",
+      "statut": "ACCEPTED",
+      "auteur": "L.",
+      "ordre": "Ceratophyllales",
+      "famille": "Ceratophyllaceae"
+    },
+    "photos": [
+      {
+        "fichier": "ceratophyllum-demersum-1.jpg",
+        "auteur": "chiuluan",
+        "licence": "CC BY 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ceratophyllum_demersum_193786804.jpg"
+      },
+      {
+        "fichier": "ceratophyllum-demersum-2.jpg",
+        "auteur": "chiuluan",
+        "licence": "CC BY 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ceratophyllum_demersum_193786838.jpg"
+      },
+      {
+        "fichier": "ceratophyllum-demersum-3.jpg",
+        "auteur": "Christian Fischer",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ceratophyllum_demersum_(inflorescence).jpg"
+      }
+    ]
+  },
+  "cryptocoryne-wendtii": {
+    "flowgrow": {
+      "url": "https://www.flowgrow.de/db/aquaticplants/cryptocoryne-wendtii-grun",
+      "ph_mini": 5,
+      "ph_maxi": 8,
+      "kh_mini": 1,
+      "kh_maxi": 18,
+      "temp_mini": 15,
+      "temp_maxi": 30,
+      "temp_opti_mini": 22,
+      "temp_opti_maxi": 26,
+      "lumiere_mini": "faible",
+      "lumiere_maxi": "forte",
+      "difficulte": "facile",
+      "croissance": "moyenne",
+      "positions": [
+        "plan intermédiaire",
+        "premier plan"
+      ],
+      "usages": [],
+      "multiplication": [
+        "stolons",
+        "division du rhizome",
+        "séparation des rejets"
+      ],
+      "type": "rosette",
+      "emergee": true,
+      "ordre": "Alismatales",
+      "famille": "Araceae",
+      "regions": "South Asia"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Cryptocorynewendtii'Green'(109)/4562",
+      "hauteur_mini": 10,
+      "hauteur_maxi": 30,
+      "co2": "faible",
+      "origine": "Asia"
+    },
+    "gbif": {
+      "url": "https://www.gbif.org/species/2869214",
+      "statut": "ACCEPTED",
+      "auteur": "de Wit",
+      "ordre": "Alismatales",
+      "famille": "Araceae"
+    },
+    "photos": [
+      {
+        "fichier": "cryptocoryne-wendtii-1.jpg",
+        "auteur": "John Robert McPherson",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cryptocoryne_wendtii_74_Sunbury_St_Geebung_P1070960.jpg"
+      },
+      {
+        "fichier": "cryptocoryne-wendtii-2.jpg",
+        "auteur": "Yercaud-elango",
+        "licence": "CC BY 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cryptocoryne_wendtii_Tropica-1-veda_aquarium-bengaluru-India.jpg"
+      },
+      {
+        "fichier": "cryptocoryne-wendtii-3.jpg",
+        "auteur": "S. Tanaka",
+        "licence": "Public domain",
+        "licence_url": null,
+        "source": "https://commons.wikimedia.org/wiki/File:-Cryptocoryne_wendtii-_from_Tropica_farm.JPG"
+      }
+    ]
+  },
+  "echinodorus-grisebachii-bleherae": {
+    "flowgrow": {
+      "url": "https://www.flowgrow.de/db/aquaticplants/echinodorus-grisebachii-bleherae",
+      "temp_mini": 18,
+      "temp_maxi": 30,
+      "temp_opti_mini": 22,
+      "temp_opti_maxi": 26,
+      "lumiere_mini": "moyenne",
+      "lumiere_maxi": "forte",
+      "difficulte": "facile",
+      "croissance": "rapide",
+      "positions": [
+        "arrière-plan"
+      ],
+      "usages": [],
+      "multiplication": [
+        "plantules sur la hampe florale",
+        "division du rhizome"
+      ],
+      "type": "rosette",
+      "emergee": true,
+      "ordre": "Alismatales",
+      "famille": "Alismataceae",
+      "regions": "Tropical South America"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Echinodorusgrisebachii'Bleherae'(071)/4512",
+      "hauteur_mini": 20,
+      "hauteur_maxi": 30,
+      "co2": "faible",
+      "origine": "South America"
+    },
+    "gbif": {
+      "url": "https://www.gbif.org/species/5328812",
+      "statut": "SYNONYM",
+      "auteur": "Small",
+      "ordre": "Alismatales",
+      "famille": "Alismataceae",
+      "nom_valide": "Aquarius grisebachii"
+    },
+    "photos": [
+      {
+        "fichier": "echinodorus-grisebachii-bleherae-1.jpg",
+        "auteur": "Yercaud-elango",
+        "licence": "CC BY 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Echinodorus_amazonicus-1-veda_aquarium-bengaluru-India.jpg"
+      },
+      {
+        "fichier": "echinodorus-grisebachii-bleherae-2.jpg",
+        "auteur": "Krzysztof Ziarnek, Kenraiz",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Echinodorus_grisebachii_kz01.jpg"
+      },
+      {
+        "fichier": "echinodorus-grisebachii-bleherae-3.jpg",
+        "auteur": "Fan Wen",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Echinodorus_grisebachii_-_flower_view_01.jpg"
+      }
+    ]
+  },
+  "eleocharis-acicularis": {
+    "flowgrow": {
+      "url": "https://www.flowgrow.de/db/aquaticplants/eleocharis-acicularis",
+      "ph_mini": 5,
+      "ph_maxi": 7.5,
+      "kh_mini": 0,
+      "kh_maxi": 14,
+      "temp_mini": 4,
+      "temp_maxi": 27,
+      "temp_opti_mini": 20,
+      "temp_opti_maxi": 25,
+      "lumiere_mini": "moyenne",
+      "lumiere_maxi": "forte",
+      "difficulte": "facile",
+      "croissance": "moyenne",
+      "positions": [
+        "plan intermédiaire",
+        "premier plan"
+      ],
+      "usages": [
+        "nano-aquarium",
+        "tapis"
+      ],
+      "multiplication": [
+        "stolons",
+        "séparation des rejets"
+      ],
+      "type": "tapissante",
+      "emergee": true,
+      "ordre": "Poales",
+      "famille": "Cyperaceae",
+      "regions": "North Africa, Europe, Asia, Australia, North America, Central America, Tropical South America"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Eleocharisacicularis(133TC)/28401",
+      "hauteur_mini": 10,
+      "hauteur_maxi": 15,
+      "co2": "faible",
+      "origine": "Cosmopolitan"
+    },
+    "gbif": {
+      "url": "https://www.gbif.org/species/2717570",
+      "statut": "ACCEPTED",
+      "auteur": "(L.) Roem. & Schult.",
+      "ordre": "Poales",
+      "famille": "Cyperaceae"
+    },
+    "photos": [
+      {
+        "fichier": "eleocharis-acicularis-1.jpg",
+        "auteur": "Chris Penny",
+        "licence": "CC BY 2.0",
+        "licence_url": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Eleocharis_acicularis_plant_(03).jpg"
+      },
+      {
+        "fichier": "eleocharis-acicularis-2.jpg",
+        "auteur": "Krzysztof Ziarnek, Kenraiz",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Eleocharis_acicularis_kz03.jpg"
+      },
+      {
+        "fichier": "eleocharis-acicularis-3.jpg",
+        "auteur": "Krzysztof Ziarnek, Kenraiz",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Eleocharis_acicularis_kz01.jpg"
+      }
+    ]
+  },
+  "limnophila-sessiliflora": {
+    "flowgrow": {
+      "url": "https://www.flowgrow.de/db/aquaticplants/limnophila-sessiliflora",
+      "ph_mini": 5,
+      "ph_maxi": 8,
+      "kh_mini": 2,
+      "kh_maxi": 21,
+      "temp_mini": 15,
+      "temp_maxi": 28,
+      "temp_opti_mini": 20,
+      "temp_opti_maxi": 26,
+      "lumiere_mini": "moyenne",
+      "lumiere_maxi": "forte",
+      "difficulte": "facile",
+      "croissance": "très rapide",
+      "positions": [
+        "arrière-plan"
+      ],
+      "usages": [],
+      "multiplication": [
+        "boutures"
+      ],
+      "type": "tige",
+      "emergee": true,
+      "ordre": "Lamiales",
+      "famille": "Plantaginaceae",
+      "regions": "South Asia, Southeast Asia, East Asia"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Limnophilasessiliflora(047)/4472",
+      "hauteur_mini": 15,
+      "hauteur_maxi": 30,
+      "co2": "faible",
+      "origine": "Asia"
+    },
+    "gbif": {
+      "url": "https://www.gbif.org/species/5415001",
+      "statut": "ACCEPTED",
+      "auteur": "(Vahl) Blume",
+      "ordre": "Lamiales",
+      "famille": "Plantaginaceae"
+    },
+    "photos": [
+      {
+        "fichier": "limnophila-sessiliflora-1.jpg",
+        "auteur": "Andreus Felipen",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Punta_de_abulia.JPG"
+      },
+      {
+        "fichier": "limnophila-sessiliflora-2.jpg",
+        "auteur": "S.Tanaka",
+        "licence": "Public domain",
+        "licence_url": null,
+        "source": "https://commons.wikimedia.org/wiki/File:-Limnophila_sessiliflora-_from_Japan.JPG"
+      },
+      {
+        "fichier": "limnophila-sessiliflora-3.jpg",
+        "auteur": "J.M.Garg",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Limnophila_sessiliflora_(Asian_Ambulia)_in_Hyderabad,_AP_W_IMG_1415.jpg"
+      }
+    ]
+  },
+  "microsorum-pteropus": {
+    "flowgrow": {
+      "url": "https://www.flowgrow.de/db/aquaticplants/microsorum-pteropus",
+      "ph_mini": 5,
+      "ph_maxi": 8,
+      "kh_mini": 0,
+      "kh_maxi": 14,
+      "temp_mini": 4,
+      "temp_maxi": 30,
+      "temp_opti_mini": 20,
+      "temp_opti_maxi": 28,
+      "lumiere_mini": "faible",
+      "lumiere_maxi": "forte",
+      "difficulte": "très facile",
+      "croissance": "lente",
+      "positions": [
+        "sur le décor",
+        "arrière-plan",
+        "plan intermédiaire"
+      ],
+      "usages": [],
+      "multiplication": [
+        "plantules sur les feuilles",
+        "plantules sur les racines",
+        "division du rhizome",
+        "séparation des rejets"
+      ],
+      "type": "épiphyte",
+      "emergee": true,
+      "ordre": "Polypodiales",
+      "famille": "Polypodiaceae",
+      "regions": "South Asia, Southeast Asia, East Asia"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Microsorumpteropus(008)/4408",
+      "hauteur_mini": 15,
+      "hauteur_maxi": 30,
+      "co2": "faible",
+      "origine": "Asia"
+    },
+    "gbif": {
+      "url": "https://www.gbif.org/species/7289955",
+      "statut": "SYNONYM",
+      "auteur": "(Blume) Copel.",
+      "ordre": "Polypodiales",
+      "famille": "Polypodiaceae",
+      "nom_valide": "Leptochilus pteropus"
+    },
+    "photos": [
+      {
+        "fichier": "microsorum-pteropus-1.jpg",
+        "auteur": "Pinpin",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Microsorium_pteropus2.JPG"
+      },
+      {
+        "fichier": "microsorum-pteropus-2.jpg",
+        "auteur": "Fhurzan",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Java_Fern_(Microsorum_pteropus)_growing_in_the_wild..jpg"
+      },
+      {
+        "fichier": "microsorum-pteropus-3.jpg",
+        "auteur": "Yercaud-elango",
+        "licence": "CC BY 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Leptochilus_pteropus-1-veda_aquarium-bengaluru-India.jpg"
+      }
+    ]
+  },
+  "rotala-rotundifolia": {
+    "flowgrow": {
+      "url": "https://www.flowgrow.de/db/aquaticplants/rotala-rotundifolia",
+      "ph_mini": 4.5,
+      "ph_maxi": 8,
+      "kh_mini": 0,
+      "kh_maxi": 21,
+      "temp_mini": 4,
+      "temp_maxi": 32,
+      "temp_opti_mini": 22,
+      "temp_opti_maxi": 28,
+      "hauteur_mini": 20,
+      "hauteur_maxi": 80,
+      "lumiere_mini": "moyenne",
+      "lumiere_maxi": "forte",
+      "difficulte": "facile",
+      "croissance": "rapide",
+      "positions": [
+        "arrière-plan",
+        "plan intermédiaire"
+      ],
+      "usages": [],
+      "multiplication": [
+        "boutures"
+      ],
+      "type": "tige",
+      "emergee": true,
+      "ordre": "Myrtales",
+      "famille": "Lythraceae",
+      "regions": "South Asia, Southeast Asia, East Asia"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Rotalarotundifolia(033)/4447",
+      "hauteur_mini": 15,
+      "hauteur_maxi": 30,
+      "co2": "faible",
+      "origine": "Asia"
+    },
+    "gbif": {
+      "url": "https://www.gbif.org/species/7122825",
+      "statut": "ACCEPTED",
+      "auteur": "(Buch.-Ham. ex Roxb.) Koehne",
+      "ordre": "Myrtales",
+      "famille": "Lythraceae"
+    },
+    "photos": [
+      {
+        "fichier": "rotala-rotundifolia-1.jpg",
+        "auteur": "Yercaud-elango",
+        "licence": "CC BY 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rotala_rotundifolia_pink-1-veda_aquarium-bengaluru-India.jpg"
+      },
+      {
+        "fichier": "rotala-rotundifolia-2.jpg",
+        "auteur": "Cyclopelta",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Leaf-b.jpg"
+      },
+      {
+        "fichier": "rotala-rotundifolia-3.jpg",
+        "auteur": "Cyclopelta",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Population-a.jpg"
+      }
+    ]
+  },
+  "taxiphyllum-barbieri": {
+    "flowgrow": {
+      "url": "https://www.flowgrow.de/db/aquaticplants/taxiphyllum-barbieri",
+      "ph_mini": 5,
+      "ph_maxi": 8,
+      "kh_mini": 0,
+      "kh_maxi": 21,
+      "temp_mini": 12,
+      "temp_maxi": 34,
+      "temp_opti_mini": 20,
+      "temp_opti_maxi": 30,
+      "lumiere_mini": "faible",
+      "lumiere_maxi": "forte",
+      "difficulte": "très facile",
+      "croissance": "moyenne",
+      "positions": [
+        "sur le décor"
+      ],
+      "usages": [
+        "frayère",
+        "nano-aquarium"
+      ],
+      "multiplication": [
+        "séparation des rejets"
+      ],
+      "type": "mousse",
+      "emergee": true,
+      "ordre": "Hypnales",
+      "famille": "Hypnaceae",
+      "regions": "Southeast Asia"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Taxiphyllumbarbieri'BogorMoss'(003POR)/4391",
+      "hauteur_mini": 3,
+      "hauteur_maxi": 10,
+      "co2": "faible",
+      "origine": "Asia"
+    },
+    "gbif": {
+      "url": "https://www.gbif.org/species/2682670",
+      "statut": "SYNONYM",
+      "auteur": "(Cardot & Copp.) Z.Iwats.",
+      "ordre": "Hypnales",
+      "famille": "Hypnaceae",
+      "nom_valide": "Ectropothecium barbieri"
+    },
+    "photos": [
+      {
+        "fichier": "taxiphyllum-barbieri-1.jpg",
+        "auteur": "Xedoo",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Musgo-de-java-xedoo.jpg"
+      },
+      {
+        "fichier": "taxiphyllum-barbieri-2.jpg",
+        "auteur": "Sky99",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Crevette_caridina_multidentata_(amano,_japonica).jpg"
+      },
+      {
+        "fichier": "taxiphyllum-barbieri-3.jpg",
+        "auteur": "Harchenko963",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%AF%D0%B2%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%BE%D1%85.jpg"
+      }
+    ]
+  },
+  "vallisneria-spiralis": {
+    "flowgrow": {
+      "url": "https://www.flowgrow.de/db/aquaticplants/vallisneria-spiralis",
+      "ph_mini": 6,
+      "ph_maxi": 8,
+      "kh_mini": 2,
+      "kh_maxi": 21,
+      "temp_mini": 5,
+      "temp_maxi": 30,
+      "temp_opti_mini": 20,
+      "temp_opti_maxi": 28,
+      "lumiere_mini": "moyenne",
+      "lumiere_maxi": "forte",
+      "difficulte": "très facile",
+      "croissance": "rapide",
+      "positions": [
+        "arrière-plan"
+      ],
+      "usages": [],
+      "multiplication": [
+        "stolons"
+      ],
+      "type": "rosette",
+      "emergee": false,
+      "ordre": "Alismatales",
+      "famille": "Hydrocharitaceae",
+      "regions": "Africa, Europe, West Asia"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Vallisneriaspiralis'Tiger'(055A)/4503",
+      "hauteur_mini": 20,
+      "hauteur_maxi": 30,
+      "co2": "faible",
+      "origine": "Asia"
+    },
+    "gbif": {
+      "url": "https://www.gbif.org/species/2865526",
+      "statut": "ACCEPTED",
+      "auteur": "L.",
+      "ordre": "Alismatales",
+      "famille": "Hydrocharitaceae"
+    },
+    "photos": [
+      {
+        "fichier": "vallisneria-spiralis-1.jpg",
+        "auteur": "Lamiot",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Vallisn%C3%A9rie_Vallisneria_spiralis_Brant%C3%B4me-Dronne_2014_2.JPG"
+      },
+      {
+        "fichier": "vallisneria-spiralis-2.jpg",
+        "auteur": "Lamiot",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Vallisn%C3%A9rie_Vallisneria_spiralis_Brant%C3%B4me-Dronne_2014_5.JPG"
+      },
+      {
+        "fichier": "vallisneria-spiralis-3.jpg",
+        "auteur": "William & Wilma Follette, USDA-NRCS PLANTS Database",
+        "licence": "Public domain",
+        "licence_url": null,
+        "source": "https://commons.wikimedia.org/wiki/File:Vallisneria_spiralis_vaam3_001_php.jpg"
+      }
+    ]
+  }
+}
