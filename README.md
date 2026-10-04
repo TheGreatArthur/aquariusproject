@@ -24,6 +24,9 @@
 - **Tank simulator** — enter your tank volume, pH, GH and temperature and build a population checked by
   [14 compatibility rules](docs/compatibility-rules.md) (shared water, predation, temperament, current, group
   size, overpopulation…) with blocking / warning / info levels; each species shows its risks before you add it.
+- **Practical guide** — six French courses (nitrogen cycle, water parameters, equipment, plants and decor,
+  maintenance, introducing and feeding fish) with diagrams computed from published formulas, two calculators
+  (free ammonia, equipment for a given volume) and the sources of every figure.
 - **Contact form** sent through EmailJS.
 
 | Fish list | Fish detail | Simulator |
@@ -31,6 +34,8 @@
 | ![Fish list](docs/screenshots/fish-list.png) | ![Fish detail](docs/screenshots/fish-detail.png) | ![Simulator](docs/screenshots/simulation.png) |
 
 ![Natural habitat section of a fish profile, with its range map](docs/screenshots/fish-profile.jpg)
+
+![A course of the practical guide, with the free ammonia table and calculator](docs/screenshots/guide.jpg)
 
 ## Architecture
 
@@ -110,11 +115,11 @@ CI runs the same checks on every pull request and on pushes to `main`.
 - [0005 — Compatibility rules engine with severities](docs/adr/0005-compatibility-rules-engine.md)
 - [0006 — Fish profiles, reference sources and range maps](docs/adr/0006-fish-profiles-and-sources.md)
 - [0007 — Upgrade to Next.js 16 and React 19](docs/adr/0007-nextjs-16-react-19.md)
+- [0008 — Practical guide written as data, with computed diagrams](docs/adr/0008-practical-guide-content.md)
 
 ## Roadmap & known limitations
 
 - [ ] Deploy a public demo
-- [ ] "Guide pratique" page (`/cours`) is a placeholder
 - [ ] Import the `Plantes` sheet (plants) from the workbook
 - [ ] End-to-end tests in a browser (the compatibility rules and search helpers have unit tests)
 - The UI is in French only, dark theme only.

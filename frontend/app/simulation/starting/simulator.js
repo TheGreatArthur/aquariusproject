@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
+import Link from 'next/link';
 import { useForm, useWatch } from 'react-hook-form';
 import useSWR from 'swr';
 
@@ -81,7 +82,10 @@ export default function Simulator () {
       {/* Paramètres, verdict et bac */}
       <aside className="space-y-5 lg:sticky lg:top-24">
         <form className="card p-5" onSubmit={(e) => e.preventDefault()}>
-          <h2 className="text-lg font-semibold">Votre eau</h2>
+          <div className="flex items-baseline justify-between gap-3">
+            <h2 className="text-lg font-semibold">Votre eau</h2>
+            <Link href="/cours/parametres-eau" className="text-xs text-muted hover:text-accent-glow">Comprendre ces valeurs</Link>
+          </div>
           <div className="mt-4 grid grid-cols-2 gap-4">
             {FIELDS.map(({ name, label, unit, placeholder, rules }) => (
               <label key={name} htmlFor={name}>

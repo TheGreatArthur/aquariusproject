@@ -103,7 +103,10 @@ export default function Poisson ({ params }) {
           </div>
 
           <section className="card mt-8 space-y-6 p-6" aria-labelledby="eau-title">
-            <h2 id="eau-title" className="text-lg font-semibold">Paramètres de l&apos;eau</h2>
+            <div className="flex items-baseline justify-between gap-3">
+              <h2 id="eau-title" className="text-lg font-semibold">Paramètres de l&apos;eau</h2>
+              <Link href="/cours/parametres-eau" className="text-xs text-muted hover:text-accent-glow">Comprendre ces valeurs</Link>
+            </div>
             <RangeBar label="pH" min={data.ph_mini} max={data.ph_maxi} scaleMin={4} scaleMax={9}/>
             <RangeBar label="Dureté (GH)" min={data.gh_mini} max={data.gh_maxi} scaleMin={0} scaleMax={30} unit="°"/>
             <RangeBar label="Température" min={data.temp_mini} max={data.temp_maxi} scaleMin={18} scaleMax={32} unit="°C"/>

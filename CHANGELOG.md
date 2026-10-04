@@ -6,6 +6,14 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- **Practical guide** ([ADR 0008](docs/adr/0008-practical-guide-content.md)): `/cours` now holds six courses
+  (nitrogen cycle, water parameters, temperature and equipment, plants and decor, maintenance, introducing and
+  feeding fish) instead of four "coming soon" cards. Each course has a table of contents, reading time, key
+  points and sources (UF/IFAS, OATA, RSPCA, Tropica, USGS, Emerson et al. 1975, Hovanec et al. 1998).
+  Diagrams are computed from tested formulas: free ammonia by pH and temperature, oxygen saturation, CO₂ from
+  KH and pH, hardness units (°dGH and French °f), typical cycling curves, a layout plan, the pH ranges of
+  catalogue species (live from the API), plus a free ammonia calculator and an equipment calculator.
+  The simulator and fish pages link to the water parameters course.
 - Fish profiles ([ADR 0006](docs/adr/0006-fish-profiles-and-sources.md)): each of the 135 fish pages now has a
   "Dans la nature" section with a presentation (description, naming, taxonomy, IUCN status), the natural habitat
   with a range map (native countries, GBIF observations, rivers and lakes, locator globe), the behaviour and the
