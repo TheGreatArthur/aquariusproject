@@ -1,0 +1,82 @@
+{
+  "nom_scientifique": "Caridina multidentata",
+  "nom_commun": "Crevette Amano",
+  "variete": null,
+  "groupe": "crevette",
+  "famille": "Atyidae",
+  "genre": "Caridina",
+  "zone_geo": "Asie",
+  "installation": "aquarium",
+  "milieu": "eau douce et eau saumâtre",
+  "ph_mini": 6.8,
+  "ph_maxi": 7.2,
+  "gh_mini": null,
+  "gh_maxi": null,
+  "kh_mini": null,
+  "kh_maxi": null,
+  "temp_mini": 16,
+  "temp_maxi": 28,
+  "taille": 5.5,
+  "mesure_taille": "longueur du corps",
+  "litrage_mini": 60,
+  "nb_individus": 5,
+  "longevite": null,
+  "comportement": "pacifique",
+  "mode_vie": "colonie",
+  "regime": "détritivore",
+  "activite": "diurne",
+  "reproduction": "larves en eau saumâtre",
+  "photos": [
+    {
+      "fichier": "caridina-multidentata-1.jpg",
+      "auteur": "MdE",
+      "licence": "CC BY-SA 3.0 de",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Caridina_multidentata_Stein.jpg",
+      "vue": "animal"
+    },
+    {
+      "fichier": "caridina-multidentata-2.jpg",
+      "auteur": "John Stockla",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Amano_Shrimp_with_eggs_eating.jpg",
+      "vue": "animal"
+    },
+    {
+      "fichier": "caridina-multidentata-3.jpg",
+      "auteur": "Dennis Lamczak",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Caridina_Japonica_(78786591).jpeg",
+      "vue": "animal"
+    }
+  ],
+  "profil": {
+    "nom_valide": null,
+    "auteur": "Stimpson, 1860",
+    "classification": "Decapoda › Atyidae",
+    "uicn": "LC",
+    "repartition": "Japon (dont Kyūshū) et Taïwan",
+    "pays": [
+      "JPN",
+      "TWN"
+    ],
+    "presentation": "La crevette Amano explore activement les plantes et le décor pour y prélever sa nourriture. Les femelles deviennent nettement plus grandes que les mâles, dont l’abdomen porte un motif de petits points. Elle reste paisible, mais sa taille ne la protège pas des grands prédateurs.",
+    "habitat": "Les adultes vivent en eau douce, dans des eaux de 16 à 28 °C, neutres à alcalines (pH 7 à 8,3). Les larves ont besoin d'un milieu salé pour se développer, avant le retour des jeunes en eau douce.",
+    "comportement": "Paisible et plutôt calme, elle vit en colonies sur le fond et reste active le jour, à explorer sans relâche les plantes et le décor. Petite, elle se cache en présence d'animaux plus grands et ignore les autres espèces.",
+    "maintenance": "La maintenir en groupe dans un bac offrant plantes, racines et refuges pour les mues. Éviter les poissons et crustacés capables de la capturer.",
+    "alimentation": "Elle consomme algues, microorganismes et matière végétale, et accepte les aliments pour crevettes. Ne pas compter uniquement sur une fonction de nettoyage du bac.",
+    "reproduction": "Les œufs sont portés sous l’abdomen. Les larves nécessitent un milieu salé ; une ponte en eau douce ne garantit donc pas des jeunes viables."
+  },
+  "sources": [
+    {
+      "nom": "Fishipedia",
+      "url": "https://www.fishipedia.fr/fr/crustacea/caridina-multidentata"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5863054"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "nom_scientifique": "Neocaridina palmata",
+  "nom_commun": "Neocaridina palmata",
+  "variete": "Blue Pearl",
+  "groupe": "crevette",
+  "famille": "Atyidae",
+  "genre": "Neocaridina",
+  "zone_geo": "Asie",
+  "installation": "aquarium",
+  "milieu": "eau douce",
+  "ph_mini": 6.8,
+  "ph_maxi": 7.2,
+  "gh_mini": null,
+  "gh_maxi": null,
+  "kh_mini": null,
+  "kh_maxi": null,
+  "temp_mini": 10,
+  "temp_maxi": 30,
+  "taille": 3.5,
+  "mesure_taille": "longueur du corps",
+  "litrage_mini": 20,
+  "nb_individus": 5,
+  "longevite": null,
+  "comportement": "pacifique",
+  "mode_vie": "colonie",
+  "regime": "herbivore",
+  "activite": "diurne",
+  "reproduction": "en eau douce",
+  "photos": [
+    {
+      "fichier": "neocaridina-palmata-1.jpg",
+      "auteur": "DirkBlankenhaus",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Neocaridina-palmata.jpg",
+      "vue": "animal"
+    },
+    {
+      "fichier": "neocaridina-palmata-2.jpg",
+      "auteur": "Hermann Junghans",
+      "licence": "CC BY-SA 3.0 de",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Neocaridina_palmata_Eireifung.JPG",
+      "vue": "animal"
+    },
+    {
+      "fichier": "neocaridina-palmata-3.jpg",
+      "auteur": "Tu et al. (2021)",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Neocaridina_palmata_palmata_(10.3897-BDJ.9.e70289)_Figure_13.jpg",
+      "vue": "animal"
+    }
+  ],
+  "profil": {
+    "nom_valide": null,
+    "auteur": "(Shen, 1948)",
+    "classification": "Decapoda › Atyidae",
+    "uicn": "LC",
+    "repartition": "Chine",
+    "pays": [
+      "CHN"
+    ],
+    "presentation": "Neocaridina palmata est une petite crevette active qui vit en colonies près du fond. Sa coloration varie selon les populations et les sélections d’élevage. Les photos de cette fiche montrent l’espèce, sans garantir la sélection Blue Pearl : les paramètres aquariophiles proviennent de la fiche consacrée à cette dernière. La taille annoncée pour cette forme est de deux centimètres et demi à trois centimètres et demi.",
+    "habitat": "Elle vit dans des eaux douces de 10 à 30 °C, au pH de 6 à 8,5. Sa coloration varie selon les populations ; la Blue Pearl est une sélection d'élevage.",
+    "comportement": "Vive et paisible, elle vit en colonies près du fond, active le jour. Elle broute algues et biofilm sur les plantes. Petite, elle se cache en présence de voisins plus grands et ignore les autres espèces.",
+    "maintenance": "La source recommande au moins cinq individus dans un aquarium de vingt litres minimum. Plantes, feuilles et racines multiplient les refuges, particulièrement utiles après les mues. Les poissons et crustacés de grande taille peuvent capturer ces petites crevettes ; pour observer la colonie et préserver les jeunes, privilégier un bac spécifique ou des compagnons de petite taille sans comportement prédateur.",
+    "alimentation": "Elle recherche les algues et microorganismes sur les plantes et le décor. Des feuilles en décomposition fournissent des surfaces de nourrissage, et les aliments pour crevettes naines complètent ces ressources. Distribuer de petites portions limite les restes susceptibles de polluer l’eau.",
+    "reproduction": "La femelle porte sa ponte sous l’abdomen. Après plusieurs semaines d’incubation, les jeunes sont déjà formés et autonomes : la reproduction de la forme documentée se déroule entièrement en eau douce. Les juvéniles profitent des végétaux et des refuges fins ; une ponte réussie ne les protège pas des autres habitants du bac."
+  },
+  "sources": [
+    {
+      "nom": "Fishipedia",
+      "url": "https://www.fishipedia.fr/fr/crustacea/neocaridina-palmata-blue-pearl"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/5862985"
+    }
+  ],
+  "notes": [
+    "Photos de Neocaridina palmata, non certifiées Blue Pearl. Paramètres de maintenance documentés pour la sélection Blue Pearl ; ne pas en déduire la coloration des sujets illustrés."
+  ]
+}

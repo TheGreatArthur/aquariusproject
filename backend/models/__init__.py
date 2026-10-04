@@ -1,3 +1,4 @@
+from .invertebre import Invertebre
 from .meta import Base
 from .nomenclatures import Courant, Comportement, Dispo, Famille, Genre, ModeVie, Robustesse, TypeEau, ZoneGeo
 from .plante import Plante
@@ -6,7 +7,7 @@ from .profil import Profil
 
 __all__ = [
     'Base', 'Courant', 'Comportement', 'Dispo', 'Famille', 'Genre', 'ModeVie', 'Robustesse', 'TypeEau', 'ZoneGeo',
-    'Plante', 'Poisson', 'Profil', 'NOMENCLATURES',
+    'Invertebre', 'Plante', 'Poisson', 'Profil', 'NOMENCLATURES',
 ]
 
 

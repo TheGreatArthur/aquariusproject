@@ -1,0 +1,91 @@
+{
+  "nom_scientifique": "Marisa cornuarietis",
+  "nom_commun": "Escargot bélier",
+  "variete": null,
+  "groupe": "escargot",
+  "famille": "Ampullariidae",
+  "genre": "Marisa",
+  "zone_geo": "Amérique du Sud",
+  "installation": "aquarium",
+  "milieu": "eau douce",
+  "ph_mini": 6.8,
+  "ph_maxi": 7.2,
+  "gh_mini": null,
+  "gh_maxi": null,
+  "kh_mini": null,
+  "kh_maxi": null,
+  "temp_mini": 13,
+  "temp_maxi": 30,
+  "taille": null,
+  "mesure_taille": null,
+  "litrage_mini": 50,
+  "nb_individus": 1,
+  "longevite": 2,
+  "comportement": "peu agressif",
+  "mode_vie": "solitaire",
+  "regime": "omnivore",
+  "activite": "diurne",
+  "reproduction": "en eau douce",
+  "photos": [
+    {
+      "fichier": "marisa-cornuarietis-1.jpg",
+      "auteur": "Dairo Escobar",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.inaturalist.org/photos/649487864",
+      "vue": "animal"
+    },
+    {
+      "fichier": "marisa-cornuarietis-2.jpg",
+      "auteur": "H. Zell",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Marisa_cornuarietis_01.JPG",
+      "vue": "coquille"
+    },
+    {
+      "fichier": "marisa-cornuarietis-3.jpg",
+      "auteur": "David Garza",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.inaturalist.org/photos/497008470",
+      "vue": "coquille"
+    }
+  ],
+  "profil": {
+    "nom_valide": null,
+    "auteur": "(Linnaeus, 1758)",
+    "classification": "Architaenioglossa › Ampullariidae",
+    "uicn": "LC",
+    "repartition": "Nord de l'Amérique du Sud et sud de l'Amérique centrale ; introduit aux États-Unis, à Cuba, en Égypte, en Espagne et dans les Antilles",
+    "pays": [
+      "BRA",
+      "COL",
+      "CRI",
+      "ECU",
+      "GUF",
+      "GUY",
+      "NIC",
+      "PAN",
+      "PRY",
+      "SUR",
+      "VEN"
+    ],
+    "presentation": "L’escargot bélier possède une coquille enroulée dans un plan, jaune à brune et marquée de bandes sombres. Malgré sa ressemblance avec un grand planorbe, son appétit pour les végétaux change fortement les possibilités d’aménagement du bac.",
+    "habitat": "Il vit à faible profondeur dans les rivières, étangs, lacs et marais aux eaux calmes, entre 13 et 30 °C. Dans les zones très végétalisées, il peut dépasser 150 individus par mètre carré.",
+    "comportement": "Actif le jour, il vit sans lien social particulier. Omnivore à nette préférence végétale, il consomme les plantes aquatiques et peut s'attaquer aux autres escargots, à leurs pontes et à leurs jeunes s'il manque de nourriture.",
+    "maintenance": "Tenir compte du risque de consommation et de déracinement des plantes. Il ne convient pas à un projet où l’on souhaite préserver une végétation délicate.",
+    "alimentation": "Il est omnivore à tendance herbivore. Varier les aliments végétaux et les nourritures adaptées plutôt que de le laisser dépendre des plantes du décor.",
+    "reproduction": "Les sexes sont séparés. Les pontes sont déposées sous la surface, sur les supports immergés, et le cycle se déroule en eau douce."
+  },
+  "sources": [
+    {
+      "nom": "Fishipedia",
+      "url": "https://www.fishipedia.fr/fr/mollusques/marisa-cornuarietis"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2292586"
+    }
+  ]
+}

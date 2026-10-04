@@ -1,0 +1,87 @@
+{
+  "nom_scientifique": "Vittina turrita",
+  "nom_commun": "Nérite tachetée",
+  "variete": null,
+  "groupe": "escargot",
+  "famille": "Neritidae",
+  "genre": "Vittina",
+  "zone_geo": "Océanie",
+  "installation": "aquarium",
+  "milieu": "eau douce",
+  "ph_mini": 6.8,
+  "ph_maxi": 7.2,
+  "gh_mini": null,
+  "gh_maxi": null,
+  "kh_mini": null,
+  "kh_maxi": null,
+  "temp_mini": 18,
+  "temp_maxi": 30,
+  "taille": null,
+  "mesure_taille": null,
+  "litrage_mini": 50,
+  "nb_individus": 1,
+  "longevite": null,
+  "comportement": "pacifique",
+  "mode_vie": "seul ou en groupe",
+  "regime": "brouteur",
+  "activite": "diurne",
+  "reproduction": "larves en mer",
+  "photos": [
+    {
+      "fichier": "vittina-turrita-1.jpg",
+      "auteur": "Gmelin, 1791",
+      "licence": "CC0",
+      "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_RMNH.MOL.152646_-_Vittina_turrita_(Gmelin,_1791)_-_Neritidae_-_Mollusc_shell.jpeg",
+      "vue": "coquille"
+    },
+    {
+      "fichier": "vittina-turrita-2.jpg",
+      "auteur": "Gmelin, 1791",
+      "licence": "CC0",
+      "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_ZMA.MOLL.313453_-_Vittina_turrita_(Gmelin,_1791)_-_Neritidae_-_Mollusc_shell.jpeg",
+      "vue": "coquille"
+    },
+    {
+      "fichier": "vittina-turrita-3.jpg",
+      "auteur": "Gmelin, 1791",
+      "licence": "CC0",
+      "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_ZMA.MOLL.313498_-_Vittina_turrita_(Gmelin,_1791)_-_Neritidae_-_Mollusc_shell.jpeg",
+      "vue": "coquille"
+    }
+  ],
+  "profil": {
+    "nom_valide": null,
+    "auteur": "(Gmelin, 1791)",
+    "classification": "Cycloneritida › Neritidae",
+    "uicn": "NE",
+    "repartition": "Îles du Pacifique (Fidji, Vanuatu, Salomon, Micronésie, Nouvelle-Calédonie, Polynésie française) et Philippines (Palawan) ; signalée aussi en Asie du Sud",
+    "pays": [
+      "FJI",
+      "FSM",
+      "NCL",
+      "PHL",
+      "PYF",
+      "SLB",
+      "VUT"
+    ],
+    "presentation": "Cette nérite porte généralement des rayures diagonales jaunes et noires. Elle broute les supports immergés près de la surface et reste difficile à distinguer formellement de certaines espèces voisines. La fiche conserve le nom de la source et sa correspondance taxonomique.",
+    "habitat": "Elle vit très près de la surface, sur les zones rocheuses et les racines immergées, dans des eaux à courant modéré, neutres à alcalines (pH 7 à 8,5). Elle peut sortir brièvement de l'eau.",
+    "comportement": "Active le jour, seule ou en groupe, elle broute les algues des rochers et des racines et se réfugie dans sa coquille en cas de menace.",
+    "maintenance": "Un aquarium mature et fermé lui offre nourriture et protection contre les sorties. Éviter les poissons spécialisés dans la prédation des escargots et vérifier l’état des individus nouvellement acquis.",
+    "alimentation": "Les algues constituent sa ressource principale. Des aliments végétaux frais adaptés peuvent compléter le régime décrit par la source.",
+    "reproduction": "Le cycle comprend une phase larvaire marine et ne se réalise pas entièrement en eau douce."
+  },
+  "sources": [
+    {
+      "nom": "Fishipedia",
+      "url": "https://www.fishipedia.fr/fr/mollusques/neritina-turrita"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/7403760"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "nom_scientifique": "Vittina semiconica",
+  "nom_commun": "Vittina semiconica",
+  "variete": null,
+  "groupe": "escargot",
+  "famille": "Neritidae",
+  "genre": "Vittina",
+  "zone_geo": "Asie",
+  "installation": "aquarium",
+  "milieu": "eau douce",
+  "ph_mini": 6.8,
+  "ph_maxi": 7.2,
+  "gh_mini": null,
+  "gh_maxi": null,
+  "kh_mini": null,
+  "kh_maxi": null,
+  "temp_mini": 20,
+  "temp_maxi": 30,
+  "taille": null,
+  "mesure_taille": null,
+  "litrage_mini": 50,
+  "nb_individus": 1,
+  "longevite": null,
+  "comportement": "pacifique",
+  "mode_vie": "solitaire",
+  "regime": "brouteur",
+  "activite": "diurne",
+  "reproduction": "larves en mer",
+  "photos": [
+    {
+      "fichier": "vittina-semiconica-1.jpg",
+      "auteur": "H. Zell",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Vittina_semiconica_01.JPG",
+      "vue": "coquille"
+    },
+    {
+      "fichier": "vittina-semiconica-2.jpg",
+      "auteur": "H. Zell",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Vittina_semiconica_02.JPG",
+      "vue": "coquille"
+    },
+    {
+      "fichier": "vittina-semiconica-3.jpg",
+      "auteur": "Lamarck, 1822",
+      "licence": "CC0",
+      "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_ZMA.MOLL.313445_-_Vittina_semiconica_(Lamarck,_1822)_-_Neritidae_-_Mollusc_shell.jpeg",
+      "vue": "coquille"
+    }
+  ],
+  "profil": {
+    "nom_valide": null,
+    "auteur": "(Lamarck, 1822)",
+    "classification": "Cycloneritida › Neritidae",
+    "uicn": "LC",
+    "repartition": "Endémique de l'île de Java (Indonésie), selon Fishipedia",
+    "pays": [
+      "IDN"
+    ],
+    "emprise": [
+      105.0,
+      -9.0,
+      115.0,
+      -5.5
+    ],
+    "presentation": "Cette nérite de Java porte une coquille brun orangé parcourue de bandes noires discontinues. Elle vit souvent près de la surface, dans les mangroves et les ruisseaux côtiers peu courants. Ses motifs variables demandent une identification plus précise qu’un nom commercial générique.",
+    "habitat": "Elle vit près de la surface dans les mangroves et les ruisseaux côtiers à courant lent, de préférence sur les zones rocheuses, parfois aux côtés d'escargots des genres Melanoides ou Tarebia.",
+    "comportement": "Solitaire et active le jour, elle broute les algues sur les rochers et se réfugie dans sa coquille ou une anfractuosité en cas de danger.",
+    "maintenance": "Un bac mature avec un couvercle limite les risques de famine et de sortie. Éviter les poissons qui chassent les escargots et examiner les individus fragilisés par le transport.",
+    "alimentation": "Elle broute les algues ; les végétaux frais adaptés décrits par la source peuvent servir de complément.",
+    "reproduction": "Les œufs sont déposés sur les supports. Les larves poursuivent leur développement en milieu marin avant le retour des jeunes en eau douce."
+  },
+  "sources": [
+    {
+      "nom": "Fishipedia",
+      "url": "https://www.fishipedia.fr/fr/mollusques/vittina-semiconica"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/9856005"
+    }
+  ]
+}

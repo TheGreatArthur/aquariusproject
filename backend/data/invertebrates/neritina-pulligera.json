@@ -1,0 +1,92 @@
+{
+  "nom_scientifique": "Neritina pulligera",
+  "nom_commun": "Nérite sombre",
+  "variete": null,
+  "groupe": "escargot",
+  "famille": "Neritidae",
+  "genre": "Neritina",
+  "zone_geo": "Océanie",
+  "installation": "aquarium",
+  "milieu": "eau douce",
+  "ph_mini": 6.8,
+  "ph_maxi": 7.2,
+  "gh_mini": null,
+  "gh_maxi": null,
+  "kh_mini": null,
+  "kh_maxi": null,
+  "temp_mini": 18,
+  "temp_maxi": 30,
+  "taille": null,
+  "mesure_taille": null,
+  "litrage_mini": 80,
+  "nb_individus": 1,
+  "longevite": null,
+  "comportement": "pacifique",
+  "mode_vie": "seul ou en groupe",
+  "regime": "brouteur",
+  "activite": "diurne",
+  "reproduction": "larves en mer",
+  "photos": [
+    {
+      "fichier": "neritina-pulligera-1.jpg",
+      "auteur": "GUERY G.",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Neritina_pulligera_(MNHN-IM-2012-27698)_001.jpeg",
+      "vue": "coquille"
+    },
+    {
+      "fichier": "neritina-pulligera-2.jpg",
+      "auteur": "GUERY G.",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Neritina_pulligera_(MNHN-IM-2012-27698)_002.jpeg",
+      "vue": "coquille"
+    },
+    {
+      "fichier": "neritina-pulligera-3.jpg",
+      "auteur": "H. Zell",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Neritina_pulligera_01.JPG",
+      "vue": "coquille"
+    }
+  ],
+  "profil": {
+    "nom_valide": null,
+    "auteur": "(Linnaeus, 1767)",
+    "classification": "Cycloneritida › Neritidae",
+    "uicn": "LC",
+    "repartition": "Indo-Pacifique tropical : îles du Pacifique, Philippines, Indonésie, Malaisie, Thaïlande, nord de l'Australie et Madagascar ; signalée à Hawaï",
+    "pays": [
+      "AUS",
+      "FJI",
+      "FSM",
+      "IDN",
+      "MDG",
+      "MYS",
+      "NCL",
+      "PHL",
+      "PYF",
+      "SLB",
+      "THA",
+      "VUT"
+    ],
+    "presentation": "Le nérite sombre broute les roches et les racines immergées, souvent près de la surface. La couleur de sa coquille varie, ce qui complique l’identification. Un nom de vente comme « escargot mangeur d’algues » ne suffit pas à reconnaître l’espèce.",
+    "habitat": "Elle vit très près de la surface, sur les zones rocheuses et les racines immergées des rivières, dans des eaux à courant modéré, neutres à alcalines (pH 7 à 8,5). Elle peut sortir brièvement de l'eau.",
+    "comportement": "Active le jour, seule ou en groupe, elle broute la végétation des rochers et des racines et se réfugie dans sa coquille en cas de menace.",
+    "maintenance": "Préparer un bac mature offrant des surfaces couvertes d’algues et un couvercle pour limiter les sorties. Les animaux fragilisés par le transport doivent pouvoir se nourrir dès leur arrivée.",
+    "alimentation": "Il est principalement alguivore ; surveiller la disponibilité réelle de nourriture dans le bac.",
+    "reproduction": "Les larves se développent en milieu marin. Les pontes observées en eau douce ne produisent pas directement une nouvelle population d’escargots."
+  },
+  "sources": [
+    {
+      "nom": "Fishipedia",
+      "url": "https://www.fishipedia.fr/fr/mollusques/neritina-pulligera"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2291424"
+    }
+  ]
+}

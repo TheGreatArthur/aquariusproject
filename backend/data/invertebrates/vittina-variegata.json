@@ -1,0 +1,91 @@
+{
+  "nom_scientifique": "Vittina variegata",
+  "nom_commun": "Nérite tatouée",
+  "variete": null,
+  "groupe": "escargot",
+  "famille": "Neritidae",
+  "genre": "Vittina",
+  "zone_geo": "Océanie",
+  "installation": "aquarium",
+  "milieu": "eau douce",
+  "ph_mini": 6.8,
+  "ph_maxi": 7.2,
+  "gh_mini": null,
+  "gh_maxi": null,
+  "kh_mini": null,
+  "kh_maxi": null,
+  "temp_mini": 20,
+  "temp_maxi": 30,
+  "taille": null,
+  "mesure_taille": null,
+  "litrage_mini": 30,
+  "nb_individus": 1,
+  "longevite": null,
+  "comportement": "pacifique",
+  "mode_vie": "seul ou en groupe",
+  "regime": "brouteur",
+  "activite": "diurne",
+  "reproduction": "larves en mer",
+  "photos": [
+    {
+      "fichier": "vittina-variegata-1.jpg",
+      "auteur": "Manuel CABALLER",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Vittina_variegata_(MNHN-IM-2000-32808).jpeg",
+      "vue": "coquille"
+    },
+    {
+      "fichier": "vittina-variegata-2.jpg",
+      "auteur": "H. Zell",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Vittina_variegata_02.JPG",
+      "vue": "coquille"
+    },
+    {
+      "fichier": "vittina-variegata-3.jpg",
+      "auteur": "H. Zell",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Vittina_variegata_01.JPG",
+      "vue": "coquille"
+    }
+  ],
+  "profil": {
+    "nom_valide": null,
+    "auteur": "(Lesson, 1831)",
+    "classification": "Cycloneritida › Neritidae",
+    "uicn": "LC",
+    "repartition": "Pacifique occidental, du Japon aux îles Samoa : Philippines, Indonésie, nord de l'Australie, Mélanésie et Micronésie",
+    "pays": [
+      "AUS",
+      "FJI",
+      "FSM",
+      "GUM",
+      "IDN",
+      "NCL",
+      "PHL",
+      "PYF",
+      "SLB",
+      "THA",
+      "VUT"
+    ],
+    "presentation": "La coquille de cette nérite mêle jaune et noir en motifs irréguliers, parfois réunis en larges bandes. Elle vit sur les roches des rivières et des ruisseaux insulaires du Pacifique. Les individus peuvent facilement être confondus avec d’autres nérites du commerce.",
+    "habitat": "Elle abonde dans les zones rocheuses des rivières et des ruisseaux côtiers, en eau bien oxygénée, y compris dans les courants forts, et évite les eaux saumâtres.",
+    "comportement": "Active le jour, seule ou en groupe, elle broute les algues des rochers et se réfugie dans sa coquille en cas de danger.",
+    "maintenance": "Prévoir des surfaces rocheuses riches en algues et une eau bien oxygénée, avec du courant. Un bac récent et pauvre en nourriture peut fragiliser ces escargots.",
+    "alimentation": "Elle broute surtout les algues ; des végétaux frais adaptés peuvent compléter les ressources disponibles.",
+    "reproduction": "Les larves sont entraînées vers la mer, puis les jeunes remontent les cours d’eau. La reproduction complète ne se fait pas en eau douce."
+  },
+  "sources": [
+    {
+      "nom": "Fishipedia",
+      "url": "https://www.fishipedia.fr/fr/mollusques/neritina-variegata"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/9056918"
+    }
+  ]
+}

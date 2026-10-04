@@ -1,0 +1,87 @@
+{
+  "nom_scientifique": "Procambarus alleni",
+  "nom_commun": "Écrevisse bleue",
+  "variete": null,
+  "groupe": "écrevisse",
+  "famille": "Cambaridae",
+  "genre": "Procambarus",
+  "zone_geo": "Amérique du Nord",
+  "installation": "aquarium",
+  "milieu": "eau douce",
+  "ph_mini": 7.2,
+  "ph_maxi": 8,
+  "gh_mini": null,
+  "gh_maxi": null,
+  "kh_mini": null,
+  "kh_maxi": null,
+  "temp_mini": 18,
+  "temp_maxi": 30,
+  "taille": 10,
+  "mesure_taille": "longueur du corps",
+  "litrage_mini": 120,
+  "nb_individus": 1,
+  "longevite": null,
+  "comportement": "moyennement agressif",
+  "mode_vie": "petit groupe",
+  "regime": "omnivore",
+  "activite": "nocturne",
+  "reproduction": "en eau douce",
+  "photos": [
+    {
+      "fichier": "procambarus-alleni-1.jpg",
+      "auteur": "Emőke Dénes",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Iz_-_Procambarus_alleni_-_2.jpg",
+      "vue": "animal"
+    },
+    {
+      "fichier": "procambarus-alleni-2.jpg",
+      "auteur": "Nathan Daly",
+      "licence": "CC BY 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Blue_Crayfish_in_Aquarium.JPG",
+      "vue": "animal"
+    },
+    {
+      "fichier": "procambarus-alleni-3.jpg",
+      "auteur": "Bastet78",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Procambarus_alleni.jpg",
+      "vue": "animal"
+    }
+  ],
+  "profil": {
+    "nom_valide": null,
+    "auteur": "(Faxon, 1884)",
+    "classification": "Decapoda › Cambaridae",
+    "uicn": "LC",
+    "repartition": "États-Unis : Floride",
+    "pays": [
+      "USA"
+    ],
+    "emprise": [
+      -83.5,
+      24.5,
+      -79.8,
+      30.8
+    ],
+    "presentation": "L’écrevisse bleue de Floride doit sa robe très vive à une forme sélectionnée : les populations naturelles présentent plutôt des tons bruns. Les mâles sont plus grands et ont des pinces plus étroites, tandis que les femelles sont plus trapues.",
+    "habitat": "Elle vit dans des eaux de 18 à 30 °C, légèrement alcalines (pH 7,5 à 8), sur des fonds de sable et d'humus. Les populations naturelles sont plutôt brunes : la robe bleu vif est une forme sélectionnée.",
+    "comportement": "Nocturne, elle vit en petits groupes sur le fond et reste plutôt calme, mais ne tolère aucune intrusion sur son territoire et peut se battre violemment avec ses voisins territoriaux.",
+    "maintenance": "Préférer un aquarium spécifique avec des grottes et des refuges séparés. Elle peut attaquer poissons et crustacés, et endommager les plantes. La cohabitation entre adultes reste risquée, surtout entre mâles.",
+    "alimentation": "La source la décrit comme omnivore ; une nourriture variée doit être distribuée au fond.",
+    "reproduction": "La reproduction se déroule en eau douce. Le cannibalisme impose de très nombreux abris pour espérer conserver les jeunes."
+  },
+  "sources": [
+    {
+      "nom": "Fishipedia",
+      "url": "https://www.fishipedia.fr/fr/crustacea/procambarus-alleni"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2227203"
+    }
+  ]
+}

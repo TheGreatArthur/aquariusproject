@@ -1,0 +1,90 @@
+{
+  "nom_scientifique": "Geosesarma dennerle",
+  "nom_commun": "Crabe vampire",
+  "variete": null,
+  "groupe": "crabe",
+  "famille": "Sesarmidae",
+  "genre": "Geosesarma",
+  "zone_geo": "Asie",
+  "installation": "aquaterrarium",
+  "milieu": "eau douce",
+  "ph_mini": 6,
+  "ph_maxi": 7,
+  "gh_mini": null,
+  "gh_maxi": null,
+  "kh_mini": null,
+  "kh_maxi": null,
+  "temp_mini": 24,
+  "temp_maxi": 32,
+  "taille": 2.2,
+  "mesure_taille": "largeur de la carapace",
+  "litrage_mini": 40,
+  "nb_individus": 3,
+  "longevite": null,
+  "comportement": "peu agressif",
+  "mode_vie": "petit groupe",
+  "regime": "omnivore",
+  "activite": "nocturne",
+  "reproduction": "en eau douce",
+  "photos": [
+    {
+      "fichier": "geosesarma-dennerle-1.jpg",
+      "auteur": "AverageWalrus",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Geosesarma_dennerle.png",
+      "vue": "animal"
+    },
+    {
+      "fichier": "geosesarma-dennerle-2.jpg",
+      "auteur": "AverageWalrus",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Geosesarma_dennerle.jpg",
+      "vue": "animal"
+    },
+    {
+      "fichier": "geosesarma-dennerle-3.jpg",
+      "auteur": "Kev22",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Geosesarma_dennerle_02.jpg",
+      "vue": "animal"
+    }
+  ],
+  "profil": {
+    "nom_valide": null,
+    "auteur": "Ng, Schubart & Lukhaup, 2015",
+    "classification": "Decapoda › Sesarmidae",
+    "uicn": "NE",
+    "repartition": "Endémique de l'île de Java (Indonésie)",
+    "pays": [
+      "IDN"
+    ],
+    "emprise": [
+      105.0,
+      -9.0,
+      115.0,
+      -5.5
+    ],
+    "presentation": "Le crabe vampire associe un corps violet à des yeux jaunes ou orangés. Originaire de Java, il vit au contact d’un milieu terrestre humide. Sa petite taille et sa couleur ne doivent pas conduire à l’installer comme un simple habitant du fond d’un aquarium.",
+    "habitat": "Ce petit crabe surtout terrestre vit dans la végétation dense, sous et entre les rochers, à proximité des ruisseaux, et creuse parfois des terriers dans les sols meubles. Selon les pêcheurs locaux, ses populations diminuent : la collecte pour l'aquariophilie n'est pas une pratique durable.",
+    "comportement": "Nocturne, il vit en petits groupes et défend son territoire. Il chasse de petits insectes et des larves et contribue au recyclage des végétaux en décomposition.",
+    "maintenance": "Préparer un aquaterrarium spécifique avec une partie terrestre accessible, des cachettes et une zone d’eau. Les refuges sont essentiels pendant les mues. Rechercher des animaux dont la provenance est documentée.",
+    "alimentation": "Il est omnivore avec une préférence pour les aliments carnés.",
+    "reproduction": "La femelle incube les œufs sous son abdomen. De petits crabes déjà formés apparaissent et se dispersent dans le décor."
+  },
+  "sources": [
+    {
+      "nom": "Fishipedia",
+      "url": "https://www.fishipedia.fr/fr/crustacea/crabe-vampire-geosesarma-dennerle"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/9016339"
+    }
+  ],
+  "notes": [
+    "Libellé Aquarium de la source remplacé par Aquaterrarium, conformément aux besoins terrestres décrits. La température source ne distingue pas l’air de l’eau."
+  ]
+}

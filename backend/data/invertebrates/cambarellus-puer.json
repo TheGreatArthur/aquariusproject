@@ -1,0 +1,87 @@
+{
+  "nom_scientifique": "Cambarellus puer",
+  "nom_commun": "Cambarellus puer",
+  "variete": null,
+  "groupe": "écrevisse",
+  "famille": "Cambaridae",
+  "genre": "Cambarellus",
+  "zone_geo": "Amérique du Nord",
+  "installation": "aquarium",
+  "milieu": "eau douce",
+  "ph_mini": 6.8,
+  "ph_maxi": 7.2,
+  "gh_mini": null,
+  "gh_maxi": null,
+  "kh_mini": null,
+  "kh_maxi": null,
+  "temp_mini": 18,
+  "temp_maxi": 30,
+  "taille": 3,
+  "mesure_taille": "longueur du corps",
+  "litrage_mini": 20,
+  "nb_individus": 2,
+  "longevite": 2,
+  "comportement": "peu agressif",
+  "mode_vie": "colonie",
+  "regime": "carnivore",
+  "activite": "diurne",
+  "reproduction": "en eau douce",
+  "photos": [
+    {
+      "fichier": "cambarellus-puer-1.jpg",
+      "auteur": "Dan Johnson",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cambarellus_puer_53937865.jpg",
+      "vue": "animal"
+    },
+    {
+      "fichier": "cambarellus-puer-2.jpg",
+      "auteur": "fishesoftexas",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cambarellus_puer_61222726.jpg",
+      "vue": "animal"
+    },
+    {
+      "fichier": "cambarellus-puer-3.jpg",
+      "auteur": "Brady Reed",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cambarellus_puer_13203074.jpg",
+      "vue": "animal"
+    }
+  ],
+  "profil": {
+    "nom_valide": null,
+    "auteur": "Hobbs, 1945",
+    "classification": "Decapoda › Cambaridae",
+    "uicn": "LC",
+    "repartition": "Sud des États-Unis : bassin du Mississippi et bayous du Texas (Buffalo Bayou)",
+    "pays": [
+      "USA"
+    ],
+    "emprise": [
+      -98.0,
+      28.0,
+      -86.0,
+      38.0
+    ],
+    "presentation": "Brune et peu voyante, cette écrevisse naine se fond dans les fonds vaseux et les débris végétaux. Elle fréquente les secteurs où les plantes et les feuilles accumulées lui fournissent à la fois nourriture et refuge.",
+    "habitat": "Elle évolue dans des eaux lentes ou stagnantes envahies de plantes aquatiques et palustres, de branches et de matières en décomposition, sur des fonds d'humus et de vase. Elle se tient près des amas de feuilles et des plantes, où elle trouve nourriture et abri.",
+    "comportement": "Elle vit en colonies sur le fond, active le jour et plutôt calme. Territoriale, elle supporte mal les intrus de comportement semblable, mais ignore les autres animaux. Petite, elle se cache en présence de voisins plus imposants.",
+    "maintenance": "Répartir les cachettes au sol plutôt que de concentrer tous les abris au même endroit. Les conflits territoriaux restent possibles ; les individus qui viennent de muer doivent pouvoir s’isoler.",
+    "alimentation": "La fiche source décrit une alimentation carnivore. Distribuer au fond des portions adaptées à sa petite taille.",
+    "reproduction": "La reproduction se déroule en eau douce, avec des jeunes déjà formés. Une végétation dense améliore leurs possibilités de refuge."
+  },
+  "sources": [
+    {
+      "nom": "Fishipedia",
+      "url": "https://www.fishipedia.fr/fr/crustacea/cambarellus-puer"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2227434"
+    }
+  ]
+}
