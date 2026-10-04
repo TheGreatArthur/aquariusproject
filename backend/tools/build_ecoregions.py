@@ -71,6 +71,16 @@ HABITATS = {
 }
 
 
+def translate(label: str | None, table: dict[str, str], warnings: list[str]) -> str | None:
+    """ Libellé FEOW traduit (la liste FEOW n'est pas régulière sur les majuscules) ; inconnu : gardé et signalé """
+    if label is None:
+        return None
+    found = {k.lower(): v for k, v in table.items()}.get(label.lower())
+    if found is None:
+        warnings.append(f'libellé FEOW sans traduction : {label!r}')
+    return found or label
+
+
 # --- Sources ----------------------------------------------------------------------------------------
 
 def ecoregion_list() -> dict[int, dict]:
@@ -214,8 +224,8 @@ def build(shapes, regions_info: dict[int, dict], points_by_species: dict[str, li
             id=region,
             nom=translations.get(str(region)) or info.get('nom', str(region)),
             nom_feow=info.get('nom'),
-            royaume=ROYAUMES.get(info.get('royaume'), info.get('royaume')),
-            habitat=HABITATS.get(info.get('habitat'), info.get('habitat')),
+            royaume=translate(info.get('royaume'), ROYAUMES, warnings),
+            habitat=translate(info.get('habitat'), HABITATS, warnings),
             url=DETAILS_URL.format(region),
             point=anchor(shapes, region, observations),
             especes=sorted(zone['especes']),

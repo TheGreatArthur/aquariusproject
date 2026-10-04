@@ -85,7 +85,16 @@ def test_build_lists_inhabited_regions_with_their_species():
     assert west['especes'] == ['Aus bus', 'Cus dus'] and west['observations'] == [[5, 5], [6, 6]]
     # Sans traduction, le nom FEOW est gardé et signalé ; un libellé inconnu est repris tel quel
     assert (east['nom'], east['royaume'], east['habitat']) == ('East', 'Mars', 'Unknown')
-    assert warnings == ['écorégion 2 (East) sans nom français dans ecoregions_fr.json']
+    assert warnings == ['écorégion 2 (East) sans nom français dans ecoregions_fr.json',
+                        "libellé FEOW sans traduction : 'Mars'", "libellé FEOW sans traduction : 'Unknown'"]
+
+
+def test_feow_labels_are_translated_whatever_their_case():
+    warnings = []
+
+    assert be.translate('large river deltas', be.HABITATS, warnings) == 'deltas de grands fleuves'
+    assert be.translate(None, be.HABITATS, warnings) is None
+    assert warnings == []
 
 
 def test_species_without_region_is_reported():
@@ -118,6 +127,7 @@ def test_versioned_ecoregions_match_the_catalogue():
         assert -180 <= zone['point'][0] <= 180 and -90 <= zone['point'][1] <= 90
         assert zone['especes'] and set(zone['especes']) <= species, zone['id']
         assert zone['observations'], zone['id']
+        assert zone['habitat'] in be.HABITATS.values() and zone['royaume'] in be.ROYAUMES.values(), zone['id']
 
 
 def test_every_versioned_zone_has_a_french_name():
