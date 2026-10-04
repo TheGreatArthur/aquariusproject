@@ -108,7 +108,7 @@ def test_draft_prefills_facts_from_the_sources():
               order='Siluriformes', family='Callichthyidae', iucn_code='LC',
               countries=[{'iso3': 'BRA', 'status': 'native'}, {'iso3': 'USA', 'status': 'introduced'}])
     sources = dict(lookup='Corydoras sterbai', fishbase=fb, seriouslyfish={'url': 'https://sf'},
-                   gbif={'usageKey': 12, 'acceptedUsageKey': None})
+                   gbif={'usageKey': 12, 'acceptedUsageKey': None, 'rank': 'SPECIES'})
 
     profile = draft('Corydoras sterbai', sources)
 
@@ -118,6 +118,13 @@ def test_draft_prefills_facts_from_the_sources():
     assert profile['pays'] == ['BRA']
     assert [s['nom'] for s in profile['sources']] == ['FishBase', 'Seriously Fish', 'GBIF']
     assert profile['presentation'] == ''
+
+
+def test_draft_skips_a_gbif_match_that_is_not_a_species():
+    sources = dict(lookup='Trichogaster fasciata', fishbase=None, seriouslyfish=None,
+                   gbif={'usageKey': 1, 'acceptedUsageKey': None, 'rank': 'KINGDOM'})
+
+    assert draft('Trichogaster fasciata', sources)['sources'] == []
 
 
 def test_occurrences_skip_introduced_and_null_island(monkeypatch):

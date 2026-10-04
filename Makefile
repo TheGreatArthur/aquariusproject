@@ -7,7 +7,7 @@ BACKEND_PORT  ?= 5001
 FRONTEND_PORT ?= 3000
 
 .DEFAULT_GOAL := help
-.PHONY: help setup install dev backend frontend import profiles plants plants-fetch ecoregions sources occurrences images audit test lint build clean
+.PHONY: help setup install dev backend frontend import profiles fish fish-photos plants plants-fetch ecoregions sources occurrences images audit test lint build clean
 
 help: ## Show available commands
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  make %-10s %s\n", $$1, $$2}'
@@ -45,6 +45,12 @@ import: setup ## Load backend/db.xlsx into the database
 
 profiles: setup ## Load the fish profiles (backend/data) into an imported database
 	cd backend && venv/bin/python profiles.py
+
+fish: setup ## Load the fish described by files (backend/data/fish) into an imported database
+	cd backend && venv/bin/python fish_data.py
+
+fish-photos: setup ## Download the Commons photos picked in backend/data/fish and write their credits
+	cd backend && venv/bin/python -m tools.fetch_fish_photos
 
 plants: setup ## Load the aquarium plants (backend/data/plants) into the database
 	cd backend && venv/bin/python plants.py

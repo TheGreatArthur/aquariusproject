@@ -46,6 +46,13 @@ SERIOUSLYFISH_SLUGS = {
     'Celestichthys erythromicron': 'celestichthys-erythromicron',
     'Fundulopanchax gardneri': 'fundulopanchax-gardneri-gardneri',
     'Rineloricaria sp. Red': 'rineloricaria-sp',
+    'Psalidodon anisitsi': 'hyphessobrycon-anisitsi',
+    'Puntius lateristriga': 'systomus-lateristriga',
+    'Chindongo demasoni': 'pseudotropheus-demasoni',
+    'Maylandia estherae': 'pseudotropheus-estherae',
+    'Helostoma temminckii': 'helostoma-temminkii',
+    'Fundulopanchax sjostedti': 'fundulopanchax-sjoestedti',
+    'Telmatherina ladigesi': 'marosatherina-ladigesi',
 }
 
 _last_call: dict[str, float] = {}
@@ -120,10 +127,20 @@ def between(text: str, start: str, end: str) -> str | None:
 
 # --- GBIF -------------------------------------------------------------------------------------------
 
+GBIF_SPECIES_RANKS = ('SPECIES', 'SUBSPECIES', 'VARIETY')
+
+
 def gbif_match(name: str) -> dict:
     query = urllib.parse.urlencode({'name': name, 'kingdom': 'Animalia', 'verbose': 'false'})
     _, body = fetch(f'https://api.gbif.org/v1/species/match?{query}', f'gbif-match-{slug(name)}.json')
     data = json.loads(body or '{}')
+    if data.get('rank') not in GBIF_SPECIES_RANKS:
+        # Nom de genre partagé avec un autre groupe (Trichogaster est aussi un collembole) : GBIF ne tranche pas
+        # et renvoie le règne ; la classe des poissons à nageoires rayonnées lève l'ambiguïté
+        query = urllib.parse.urlencode({'name': name, 'kingdom': 'Animalia', 'class': 'Actinopterygii',
+                                        'verbose': 'false'})
+        _, body = fetch(f'https://api.gbif.org/v1/species/match?{query}', f'gbif-match-{slug(name)}-fish.json')
+        data = json.loads(body or '{}')
     keys = ('usageKey', 'acceptedUsageKey', 'scientificName', 'canonicalName', 'status', 'matchType', 'rank',
             'family', 'order', 'speciesKey')
     return {k: data.get(k) for k in keys}
