@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from sqlalchemy import MetaData, create_engine
+from sqlalchemy import MetaData, create_engine, inspect, text
 from sqlalchemy.orm import DeclarativeBase
 
 # Recommended naming convention used by Alembic, as various different database
@@ -41,3 +41,21 @@ class Base(DeclarativeBase):
         return {k: v.isoformat() if isinstance(v, datetime) else v for k, v in values.items()}
 
 
+
+
+def create_schema(engine) -> list[str]:
+    """ Crée les tables manquantes et ajoute aux tables existantes les colonnes facultatives apparues depuis :
+    une base locale créée par `make import` n'est pas suivie par Alembic. Renvoie les colonnes ajoutées """
+    Base.metadata.create_all(bind=engine)
+    inspector = inspect(engine)
+    quote = engine.dialect.identifier_preparer.quote
+    added = []
+    with engine.begin() as connection:
+        for table in Base.metadata.sorted_tables:
+            existing = {c['name'] for c in inspector.get_columns(table.name)}
+            for column in table.columns:
+                if column.name not in existing and column.nullable:
+                    kind = column.type.compile(dialect=engine.dialect)
+                    connection.execute(text(f'ALTER TABLE {quote(table.name)} ADD COLUMN {quote(column.name)} {kind}'))
+                    added.append(f'{table.name}.{column.name}')
+    return added

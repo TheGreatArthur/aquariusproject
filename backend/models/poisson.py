@@ -38,6 +38,8 @@ class Poisson(Base):
     points: Mapped[int | None]
     id_courant: Mapped[int | None] = mapped_column(ForeignKey('courant.id'))
     images: Mapped[list|None] = mapped_column(JSON())
+    # Auteur et licence de chaque photo, dans l'ordre de `images` (photos Wikimedia Commons des poissons de data/fish/)
+    credits: Mapped[list | None] = mapped_column(JSON())
 
     # Relations
     famille: Mapped['Famille'] = relationship()
