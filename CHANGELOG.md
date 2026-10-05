@@ -6,6 +6,15 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- **Plants like fish, with their native range** ([ADR 0013](docs/adr/0013-plants-like-fish-native-range.md)): the
+  plant catalogue grows from 10 to 132 references (species, forms and cultivars from Flowgrow, three free photos
+  each from Wikimedia Commons or iNaturalist, [report](docs/data/plant-expansion-2026-10-04.md)) and its pages are
+  built like the fish ones: filter by growth form in the URL, pagination, then *Dans la nature* (presentation,
+  classification, IUCN status, range map) and *En aquarium* (growing advice, sources). The native and introduced
+  countries come from the World Checklist of Vascular Plants of Kew (TDWG regions mapped to countries), the map
+  points from GBIF observations inside the native countries; introduced countries are drawn in amber. New `pays`,
+  `introduits`, `points` and `uicn` columns (Alembic migration); `make plants-fetch` collects the range and IUCN
+  status, `make occurrences` the points.
 - **Invertebrates like fish** ([ADR 0012](docs/adr/0012-invertebrates-like-fish.md)): the 21 shrimps, crabs, snails
   and crayfish now follow the fish structure. Each one is a JSON file in `backend/data/invertebrates/` with the fish
   field names (water parameters, size, minimum tank and group, lifespan, behaviour, way of life, diet) and the same
@@ -107,6 +116,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Cypress, installed but without any test (its binary download was already disabled in CI).
 
 ### Fixed
+- `make plants-fetch` deleted the iNaturalist photos of a plant gallery and could not read Commons titles written
+  without `File:`; both are now kept.
+- Photos: the Commons cache gave the same file to titles in non-Latin scripts and to titles differing only by case.
+  Four fish (*Amatitlania nigrofasciata*, *Herichthys cyanoguttatus*, *Carinotetraodon travancoricus*, *Sewellia
+  lineolata*) showed a photo of Java moss and three others a duplicate photo; the right photos are downloaded and
+  credited again. Public-domain photos link to the Commons page on the public domain, and authors guessed by
+  Commons ("No machine-readable author provided…") are reduced to the name.
 - GBIF matching for genus names shared with another group (*Trichogaster*): the match is retried within
   ray-finned fishes instead of returning the kingdom.
 - A local database created before a new optional column is now upgraded by the loaders instead of failing on
