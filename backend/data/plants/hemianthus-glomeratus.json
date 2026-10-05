@@ -1,0 +1,27 @@
+{
+  "nom_scientifique": "Hemianthus glomeratus",
+  "nom_commun": "Hemianthus glomeratus",
+  "flowgrow": "hemianthus-glomeratus",
+  "photos": [],
+  "origine": "Amérique du Nord",
+  "presentation": "Ses petites feuilles et ses nombreuses pousses permettent de former un buisson dense, vert clair. Cette plante originaire de Floride a longtemps été diffusée comme Hemianthus micranthemoides, alors que la véritable espèce portant ce nom est différente. Elle peut pousser vers le haut ou s’étaler selon l’éclairage.",
+  "culture": "Une bonne lumière donne un massif plus compact ; dans l’ombre, les tiges s’allongent et les entre-nœuds s’écartent. Le CO₂ accélère la croissance et favorise les ramifications. Maintenir des apports nutritifs réguliers, puis tailler et replanter les boutures pour conserver la forme recherchée plutôt que laisser le buisson devenir trop haut.",
+  "sources": [],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/473046673",
+      "occurrence": "https://www.gbif.org/occurrence/5087367816",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/473046673/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/413109824",
+      "occurrence": "https://www.gbif.org/occurrence/4919401456",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/413109824/original.jpeg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/421409598",
+      "occurrence": "https://www.gbif.org/occurrence/4925944160",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/421409598/original.jpeg"
+    }
+  ]
+}

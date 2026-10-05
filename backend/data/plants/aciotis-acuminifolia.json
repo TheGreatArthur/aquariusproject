@@ -1,0 +1,27 @@
+{
+  "nom_scientifique": "Aciotis acuminifolia",
+  "nom_commun": "Aciotis acuminifolia",
+  "flowgrow": "aciotis-acuminifolia",
+  "photos": [],
+  "origine": "Amérique du Sud tropicale",
+  "presentation": "Ses tiges dressées et anguleuses portent des feuilles opposées, parcourues de nervures parallèles. Leur couleur va du vert au rouge, avec un revers rougeâtre ; les jeunes feuilles ont parfois les bords légèrement relevés. Cette plante des régions tropicales d’Amérique du Sud apporte une silhouette nette au plan intermédiaire.",
+  "culture": "Prévoir une eau douce et une alimentation régulière en nutriments. Un éclairage soutenu accentue les teintes rouges ; le CO₂ accompagne sa culture immergée. Elle peut aussi dépasser la surface et se cultiver hors de l’eau, à condition de conserver une atmosphère très humide.",
+  "sources": [],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/358643166",
+      "occurrence": "https://www.gbif.org/occurrence/5154030397",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/358643166/original.jpeg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/172100021",
+      "occurrence": "https://www.gbif.org/occurrence/3759772808",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/172100021/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/358643185",
+      "occurrence": "https://www.gbif.org/occurrence/5154030397",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/358643185/original.jpeg"
+    }
+  ]
+}

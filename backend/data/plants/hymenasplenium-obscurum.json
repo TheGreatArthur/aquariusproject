@@ -1,0 +1,32 @@
+{
+  "nom_scientifique": "Hymenasplenium obscurum",
+  "nom_commun": "Hymenasplenium obscurum",
+  "flowgrow": "hymenasplenium-obscurum",
+  "photos": [],
+  "origine": "Afrique de l’Est, région malgache, Asie du Sud, Asie du Sud-Est, Asie de l’Est",
+  "presentation": "Cette fougère a circulé en aquariophilie sous le nom erroné de Crepidomanes auriculatum. Son identification a été précisée grâce à des pieds adultes cultivés hors de l’eau. Également appelée Asplenium obscurum, elle appartient à une lignée différente des petites fougères parfois vendues sous un nom ressemblant.",
+  "culture": "La fiche la classe parmi les épiphytes : prévoir une implantation sur le décor et une croissance très lente. La division du rhizome permet sa multiplication. Les retours détaillés de culture restent limités dans la description consultée ; vérifier l’identité du pied et observer sa reprise avant d’attendre le comportement d’un Bolbitis ou d’un vrai Crepidomanes.",
+  "sources": [
+    {
+      "nom": "Flowgrow — description allemande",
+      "url": "https://www.flowgrow.de/db/wasserpflanzen/hymenasplenium-obscurum"
+    }
+  ],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/441054275",
+      "occurrence": "https://www.gbif.org/occurrence/5935821632",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/441054275/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/109728910",
+      "occurrence": "https://www.gbif.org/occurrence/4039182409",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/109728910/original.jpeg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/441054273",
+      "occurrence": "https://www.gbif.org/occurrence/5935821632",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/441054273/original.jpg"
+    }
+  ]
+}

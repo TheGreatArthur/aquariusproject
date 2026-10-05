@@ -2,6 +2,7 @@
  * Utilitaires d'affichage des plantes
  */
 
+import { typo } from '@/lib/cours/texte';
 import { searchKey } from '@/lib/fish';
 
 /** Photos des plantes, dans public/plants */
@@ -56,4 +57,26 @@ export function matchesPlantSearch (p, terme) {
   const texte = searchKey([p.nom_commun, p.nom_scientifique, p.famille, TYPES[p.type]?.label]
     .filter(Boolean).join(' '));
   return mots.every((mot) => texte.includes(mot));
+}
+
+/** Les pays d'origine viennent de la liste mondiale des plantes vasculaires de Kew (sinon, mousses : de GBIF) */
+export const rangeFromKew = (p) => p.sources.some((s) => s.nom === 'POWO (Kew)');
+
+/**
+ * Fiche « Dans la nature » d'une plante, avec les champs de celle d'un poisson (voir FishProfile). L'auteur relevé
+ * sur GBIF est celui du nom d'usage : il n'accompagne pas le nom valide quand la plante a été renommée.
+ */
+export function plantProfil (p) {
+  return {
+    nom_valide: p.nom_valide,
+    auteur: p.nom_valide ? null : p.auteur,
+    classification: p.ordre ? `${p.ordre} › ${p.famille}` : p.famille,
+    uicn: p.uicn,
+    repartition: typo(p.origine),
+    pays: p.pays ?? [],
+    introduits: p.introduits ?? [],
+    points: p.points ?? [],
+    presentation: typo(p.presentation),
+    sources: p.sources,
+  };
 }

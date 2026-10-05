@@ -82,12 +82,14 @@ def load_versioned_plants():
 
 
 def test_list_plantes_sorted_with_main_photo(client):
+    from plants import load_plants
+
     load_versioned_plants()
 
     plantes = client.get('/plantes').get_json()['plantes']
 
     noms = [p['nom_commun'] for p in plantes]
-    assert len(noms) == 10 and noms == sorted(noms)
+    assert len(noms) == len(load_plants()) and len(noms) >= 100 and noms == sorted(noms)
     anubias = next(p for p in plantes if p['nom_scientifique'] == 'Anubias barteri var. nana')
     assert anubias['image']['fichier'] == 'anubias-barteri-var-nana-1.jpg'
     assert anubias['type'] == 'épiphyte' and anubias['ph_mini'] == 5

@@ -1,0 +1,24 @@
+{
+  "nom_scientifique": "Ludwigia brevipes",
+  "nom_commun": "Ludwigia brevipes",
+  "flowgrow": "ludwigia-brevipes",
+  "photos": [
+    "Ludwigia brevipes kz01.jpg"
+  ],
+  "origine": "Amérique du Nord",
+  "presentation": "Cette Ludwigia à feuilles étroites forme un buisson fin dont les extrémités peuvent devenir rouges ou orangées. Elle vient des milieux humides du sud-est des États-Unis et apporte une texture légère au premier plan surélevé ou au milieu du bac. Son apparence aquatique est très proche de Ludwigia arcuata.",
+  "culture": "Une bonne lumière est le premier facteur de réussite. Maintenir des nutriments disponibles, surtout si du CO₂ accélère la croissance. La taille fait apparaître de nouvelles pousses latérales ; replanter les portions saines pour étoffer le massif. Vérifier l’identité à l’achat : les deux Ludwigia sont souvent confondues et se distinguent mieux lorsqu’elles fleurissent hors de l’eau.",
+  "sources": [],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/657793285",
+      "occurrence": "https://www.gbif.org/occurrence/6273533926",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/657793285/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/658880518",
+      "occurrence": "https://www.gbif.org/occurrence/6320459503",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/658880518/original.jpg"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Aquarius
 
-> Browse 304 freshwater aquarium fish, 21 shrimps, crabs, snails and crayfish, and 10 aquarium plants, and check whether the species you pick can live
+> Browse 304 freshwater aquarium fish, 21 shrimps, crabs, snails and crayfish, and 132 aquarium plants, and check whether the species you pick can live
 > together in your tank.
 
 [![CI](https://github.com/TheGreatArthur/aquariusproject/actions/workflows/ci.yml/badge.svg)](https://github.com/TheGreatArthur/aquariusproject/actions/workflows/ci.yml)
@@ -21,11 +21,13 @@
 - **Invertebrate catalogue** — 21 shrimps, crabs, snails and crayfish with the same structure as the fish: water
   parameters, size, minimum tank, behaviour, range map, habitat, and maintenance, feeding and reproduction advice
   ([ADR 0012](docs/adr/0012-invertebrates-like-fish.md)).
-- **Plant catalogue** — 10 plants common in the hobby (Anubias, Java fern, Java moss, Cryptocoryne, Amazon sword,
-  Vallisneria, Ambulia, Rotala, hornwort, dwarf hairgrass) with pH, KH, tolerated and ideal temperature, light,
-  CO₂ need, height, placement and propagation, French texts, and three free-licensed photos each with their
-  credits. The data is scraped from Flowgrow, Tropica and GBIF, the photos from Wikimedia Commons
-  ([ADR 0009](docs/adr/0009-plants-scraped-data-and-free-photos.md)).
+- **Plant catalogue** — 132 species, forms and cultivars (Anubias, Java fern, Cryptocoryne, Rotala, Bacopa,
+  Ludwigia, mosses, floating plants…) with pH, KH, tolerated and ideal temperature, light, growth, height,
+  placement and propagation, French texts, and three free-licensed photos each with their credits. The data is
+  scraped from Flowgrow, Tropica and GBIF, the photos from Wikimedia Commons and iNaturalist
+  ([ADR 0009](docs/adr/0009-plants-scraped-data-and-free-photos.md)). The pages are built like the fish ones, with
+  a range map of the native countries (World Checklist of Vascular Plants, Kew), the countries where the plant was
+  introduced, and GBIF observations ([ADR 0013](docs/adr/0013-plants-like-fish-native-range.md)).
 - **World globe** on the home page — turn it in any direction, pick one of the 121 freshwater ecoregions where the
   catalogue fish live (Rio Negro, Lake Malawi, Mekong Delta…) and see its species and their observations
   ([ADR 0010](docs/adr/0010-home-globe-freshwater-ecoregions.md)).
@@ -64,7 +66,7 @@ flowchart LR
     Next -->|"rewrite to BACKEND_URL"| Flask["Flask API<br/>Flask-SQLAlchemy"]
     Flask --> DB[("SQLite (default)<br/>or MySQL / PostgreSQL")]
     Excel["db.xlsx<br/>(source of truth)"] -->|"import_excel.py"| DB
-    Sources["Flowgrow · Tropica · GBIF<br/>Wikimedia Commons"] -->|"tools/fetch_plants.py"| Plants["data/plants<br/>+ plant_sources.json"]
+    Sources["Flowgrow · Tropica · GBIF · WCVP<br/>Wikimedia Commons"] -->|"tools/fetch_plants.py"| Plants["data/plants<br/>+ plant_sources.json"]
     Plants -->|"plants.py"| DB
     FEOW["FEOW ecoregions<br/>(cache only)"] -->|"tools/build_ecoregions.py"| Zones["public/maps/ecoregions.json"]
     Next -->|"static"| Zones
@@ -83,7 +85,7 @@ The data is maintained in an Excel workbook and loaded with `make import`. See t
 | `GET /invertebres` | All invertebrates with their main photo, sorted by common name |
 | `GET /invertebres/<id>` | One invertebrate, with its profile, photo credits and sources |
 | `GET /plantes` | All plants with their main photo, sorted by common name |
-| `GET /plantes/<id>` | One plant, with its texts, photo credits and sources |
+| `GET /plantes/<id>` | One plant, with its texts, photo credits, sources, native and introduced countries and map points |
 
 ## Tech stack
 
@@ -119,8 +121,9 @@ see [ADR 0011](docs/adr/0011-fish-added-as-data-files.md) to add a species and i
 `backend/data/invertebrates/` (`make invertebrates`, [ADR 0012](docs/adr/0012-invertebrates-like-fish.md)).
 `make ecoregions` places the fish in their freshwater ecoregions for the home page globe
 ([ADR 0010](docs/adr/0010-home-globe-freshwater-ecoregions.md)). The import also loads the plants of `backend/data/plants/` (`make plants` reloads them alone); `make plants-fetch`
-scrapes their data and photos again (see [ADR 0009](docs/adr/0009-plants-scraped-data-and-free-photos.md) to add
-a plant).
+scrapes their data, native range and photos again (see [ADR 0009](docs/adr/0009-plants-scraped-data-and-free-photos.md)
+to add a plant, [ADR 0013](docs/adr/0013-plants-like-fish-native-range.md) for the range), and `make occurrences`
+refreshes the map points of fish, invertebrates and plants.
 Run `make help` for all commands. Configuration:
 
 | Variable | Where | Default |
@@ -154,11 +157,12 @@ CI runs the same checks on every pull request and on pushes to `main`.
 - [0010 — Home page globe of freshwater ecoregions](docs/adr/0010-home-globe-freshwater-ecoregions.md)
 - [0011 — More fish: species added as data files, with the workbook's house rules](docs/adr/0011-fish-added-as-data-files.md)
 - [0012 — Invertebrates stored and served like fish](docs/adr/0012-invertebrates-like-fish.md)
+- [0013 — Plant pages built like fish pages, with a native range map](docs/adr/0013-plants-like-fish-native-range.md)
 
 ## Roadmap & known limitations
 
 - [ ] Deploy a public demo
-- [ ] More plants, and plants in the simulator (light, CO₂ and water shared with the fish)
+- [ ] Plants in the simulator (light, CO₂ and water shared with the fish)
 - [ ] End-to-end tests in a browser (the compatibility rules and search helpers have unit tests)
 - The UI is in French only, dark theme only.
 - Compatibility rules run in the browser and are indicative, not expert advice.
@@ -172,5 +176,5 @@ The globe zones (`frontend/public/maps/ecoregions.json`) are derived from Freshw
 BioScience 58(5): 403-414), used for non-commercial, educational purposes under its own terms, not under the MIT
 licence. Base maps: Natural Earth (public domain).
 
-Plant photos come from Wikimedia Commons and keep their own licences (CC0, public domain, CC BY, CC BY-SA): each
-author and licence is shown on the plant's page and listed in `backend/data/plant_sources.json`.
+Plant photos come from Wikimedia Commons and iNaturalist and keep their own licences (CC0, public domain, CC BY,
+CC BY-SA): each author and licence is shown on the plant's page and listed in `backend/data/plant_sources.json`.

@@ -151,3 +151,24 @@ def test_thin_keeps_at_most_max_points(monkeypatch):
     monkeypatch.setattr(occ, 'MAX_POINTS', 3)
 
     assert occ.thin([(i, 0) for i in range(9)]) == [(0, 0), (3, 0), (6, 0)]
+
+
+def test_cache_name_of_a_long_country_list_stays_short():
+    few = ['BR', 'CO', 'PE']
+    many = [f'{a}{b}' for a in 'ABCDEFGHIJ' for b in 'ABCDEFGHIJ']
+
+    # Les noms des fiches existantes ne changent pas ; une plante presque cosmopolite a une empreinte
+    assert occ.countries_key(few) == 'BR-CO-PE'
+    assert len(occ.countries_key(many)) == 12 and occ.countries_key(many) != occ.countries_key(many[1:])
+
+
+def test_plant_profiles_give_the_native_countries_and_the_gbif_taxon(monkeypatch):
+    # Pas de réseau : seul le taxon de l'espèce d'une variété est cherché sur GBIF
+    monkeypatch.setattr(occ, 'gbif_plant', lambda name: ({'taxon': 42} if name == 'Anubias barteri' else {}, []))
+
+    profiles = occ.plant_profiles()
+
+    wendtii = profiles['Cryptocoryne wendtii']
+    assert wendtii['pays'] == ['LKA'] and wendtii['gbif']
+    # L'Anubias nain n'a pas d'aire propre dans la WCVP : ses points sont ceux de l'espèce Anubias barteri
+    assert profiles['Anubias barteri var. nana']['gbif'] == 42

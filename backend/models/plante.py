@@ -43,6 +43,15 @@ class Plante(Base):
     multiplication: Mapped[list] = mapped_column(JSON())
     emergee: Mapped[bool | None]
     origine: Mapped[str] = mapped_column(String(300))
+    # Aire de répartition naturelle : pays d'origine et pays d'introduction (codes ISO alpha-3, WCVP de Kew),
+    # observations [longitude, latitude] de la carte (GBIF)
+    pays: Mapped[list | None] = mapped_column(JSON())
+    introduits: Mapped[list | None] = mapped_column(JSON())
+    points: Mapped[list | None] = mapped_column(JSON())
+    # Taxon dont la WCVP donne l'aire, quand il diffère du nom de la plante (l'espèce d'une variété ou d'un cultivar)
+    taxon_aire: Mapped[str | None] = mapped_column(String(100))
+    # Catégorie de la Liste rouge UICN (LC, NT, VU...), si l'espèce a été évaluée
+    uicn: Mapped[str | None] = mapped_column(String(2))
     presentation: Mapped[str] = mapped_column(Text())
     culture: Mapped[str] = mapped_column(Text())
     # [{"fichier": "...jpg", "auteur": "...", "licence": "CC BY-SA 4.0", "licence_url": "https://...", "source": "https://..."}]

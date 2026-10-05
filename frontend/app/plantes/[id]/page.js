@@ -4,7 +4,7 @@ import { use } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import useSWR from 'swr';
-import { ArrowLeft, Ruler, Sun, Thermometer, Wind } from 'lucide-react';
+import { ArrowLeft, Gauge, Ruler, Sun, Thermometer, Wind } from 'lucide-react';
 
 import PhotoGallery from '@/components/PhotoGallery';
 import DifficultyBadge from '@/components/plants/DifficultyBadge';
@@ -18,7 +18,7 @@ function Stat ({ icon: Icon, label, value }) {
   return (
     <div className="card p-4">
       <Icon className="h-4 w-4 text-accent"/>
-      <p className="mt-3 font-display text-xl font-semibold tabular-nums first-letter:uppercase">{value}</p>
+      <p className="mt-3 font-display text-xl font-semibold tabular-nums first-letter:uppercase">{value ?? '—'}</p>
       <p className="text-xs text-muted">{label}</p>
     </div>
   );
@@ -34,6 +34,13 @@ function Row ({ label, children }) {
 }
 
 const liste = (valeurs) => valeurs?.join(', ');
+
+/** Plage de valeurs de l'eau, ou mention de la valeur absente des sources */
+function Water ({ label, min, max, ...scale }) {
+  if (min == null)
+    return <p className="text-sm text-muted">{label} : non renseigné par les sources</p>;
+  return <RangeBar label={label} min={min} max={max} {...scale}/>;
+}
 
 export default function Plante ({ params }) {
   const { id } = use(params);
@@ -62,6 +69,9 @@ export default function Plante ({ params }) {
       </div>
     );
 
+  // Sans nom français vérifié, la fiche reprend le nom scientifique : on ne l'affiche qu'une fois, en italique
+  const sansNomCommun = data.nom_commun.trim().toLowerCase() === data.nom_scientifique.trim().toLowerCase();
+
   return (
     <div className="container pt-28">
       <button type="button" onClick={retour}
@@ -76,23 +86,38 @@ export default function Plante ({ params }) {
         </Reveal>
 
         <Reveal delay={0.08}>
-          <p className="eyebrow">{data.famille}</p>
-          <h1 className="mt-3 text-4xl font-semibold sm:text-5xl">{data.nom_commun}</h1>
-          <p className="mt-2 text-lg text-muted"><i>{data.nom_scientifique}</i> <span className="text-base">{data.auteur}</span></p>
+          <Link href={`/plantes?type=${encodeURIComponent(data.type)}`} className="eyebrow hover:text-accent-glow">
+            {TYPES[data.type]?.label} · {data.famille}
+          </Link>
+          {sansNomCommun ? (
+            <h1 className="mt-3 text-4xl font-semibold italic sm:text-5xl">{data.nom_scientifique}</h1>
+          ) : (
+            <h1 className="mt-3 text-4xl font-semibold sm:text-5xl">{data.nom_commun}</h1>
+          )}
+          {(!sansNomCommun || data.auteur) && (
+            <p className="mt-2 text-lg text-muted">
+              {!sansNomCommun && <><i>{data.nom_scientifique}</i>{' '}</>}
+              <span className="text-base">{data.auteur}</span>
+            </p>
+          )}
 
           <div className="mt-5 flex flex-wrap gap-2">
             <DifficultyBadge difficulte={data.difficulte}/>
-            <span className="chip !inline-block">{TYPES[data.type]?.label}</span>
-            <span className="chip !inline-block">Croissance {data.croissance}</span>
+            {data.co2 && <span className="chip !inline-block">Croissance {data.croissance}</span>}
           </div>
 
           <div className="mt-8 grid grid-cols-2 gap-3">
-            <Stat icon={Ruler} label="Hauteur en aquarium"
-                  value={formatRange(data.hauteur_mini, data.hauteur_maxi, 'cm') ?? 'Non renseigné'}/>
+            <Stat icon={Ruler} label="Hauteur en aquarium" value={formatRange(data.hauteur_mini, data.hauteur_maxi, 'cm')}/>
             <Stat icon={Sun} label="Lumière" value={lightLabel(data.lumiere_mini, data.lumiere_maxi)}/>
-            <Stat icon={Wind} label="Besoin en CO₂" value={data.co2 ?? 'Non renseigné'}/>
-            <Stat icon={Thermometer} label="Température idéale"
-                  value={formatRange(data.temp_opti_mini, data.temp_opti_maxi, '°C') ?? 'Non renseigné'}/>
+            {/* Seul Tropica classe le besoin en CO₂ : sans lui, la vitesse de croissance prend sa place */}
+            {data.co2
+              ? <Stat icon={Wind} label="Besoin en CO₂" value={data.co2}/>
+              : <Stat icon={Gauge} label="Croissance" value={data.croissance}/>}
+            {data.temp_opti_mini != null
+              ? <Stat icon={Thermometer} label="Température idéale"
+                      value={formatRange(data.temp_opti_mini, data.temp_opti_maxi, '°C')}/>
+              : <Stat icon={Thermometer} label="Température supportée"
+                      value={formatRange(data.temp_mini, data.temp_maxi, '°C')}/>}
           </div>
 
           <section className="card mt-8 space-y-6 p-6" aria-labelledby="eau-title">
@@ -101,7 +126,7 @@ export default function Plante ({ params }) {
               <Link href="/cours/parametres-eau" className="text-xs text-muted hover:text-accent-glow">Comprendre ces valeurs</Link>
             </div>
             <RangeBar label="pH" min={data.ph_mini} max={data.ph_maxi} scaleMin={4} scaleMax={9}/>
-            <RangeBar label="Dureté carbonatée (KH)" min={data.kh_mini} max={data.kh_maxi} scaleMin={0} scaleMax={25} unit="°"/>
+            <Water label="Dureté carbonatée (KH)" min={data.kh_mini} max={data.kh_maxi} scaleMin={0} scaleMax={25} unit="°"/>
             <RangeBar label="Température" min={data.temp_mini} max={data.temp_maxi} scaleMin={0} scaleMax={35} unit="°C"
                       optiMin={data.temp_opti_mini} optiMax={data.temp_opti_maxi}/>
           </section>

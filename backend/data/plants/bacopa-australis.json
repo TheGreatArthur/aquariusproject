@@ -1,0 +1,27 @@
+{
+  "nom_scientifique": "Bacopa australis",
+  "nom_commun": "Bacopa australis",
+  "flowgrow": "bacopa-australis",
+  "photos": [],
+  "origine": "Amérique du Sud tropicale, sud de l’Amérique du Sud",
+  "presentation": "Ses petites feuilles souples, d’un vert lumineux, forment des buissons plus légers que ceux de Bacopa caroliniana. Les jeunes feuilles peuvent rougir sous un éclairage intense. Originaire du sud du Brésil et d’Argentine, elle apporte du volume au premier plan ou au milieu du bac, et peut occuper l’arrière-plan d’un petit aquarium.",
+  "culture": "Sous une lumière moyenne, les tiges poussent surtout vers le haut ; avec davantage de lumière, elles peuvent s’étaler. Le CO₂ et une fertilisation équilibrée améliorent la croissance, sans être indispensables. Tailler les massifs avant qu’ils deviennent trop denses, sinon leur base manque de lumière. Replanter les extrémités coupées pour multiplier la plante.",
+  "sources": [],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/704119756",
+      "occurrence": "https://www.gbif.org/occurrence/6520125557",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/704119756/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/651983013",
+      "occurrence": "https://www.gbif.org/occurrence/6518912866",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/651983013/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/651983021",
+      "occurrence": "https://www.gbif.org/occurrence/6518912866",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/651983021/original.jpg"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "nom_scientifique": "Limnophila brownii",
+  "nom_commun": "Limnophila brownii",
+  "flowgrow": "limnophila-brownii",
+  "photos": [],
+  "origine": "Australie",
+  "presentation": "Cette ambulie du nord de l’Australie porte des feuilles très finement divisées en verticilles, plus petits que ceux de Limnophila aquatica. Une bonne lumière peut teinter les extrémités de bronze, tandis que les tiges sont souvent brun rouge. Elle apporte un feuillage léger et reste peu courante dans le commerce.",
+  "culture": "Une lumière moyenne à forte, du CO₂ et une alimentation régulière en nutriments favorisent une croissance rapide. Les boutures de tiges permettent de renouveler le groupe. Elle peut aussi former des pousses horizontales semblables à des stolons, d’où montent de nouvelles tiges : prévoir un peu d’espace autour du massif pour cette extension.",
+  "sources": [
+    {
+      "nom": "Aquasabi",
+      "url": "https://www.aquasabi.com/Limnophila-brownii-Bunch"
+    }
+  ],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/30152522",
+      "occurrence": "https://www.gbif.org/occurrence/1990479327",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/30152522/original.jpeg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/30152527",
+      "occurrence": "https://www.gbif.org/occurrence/1990479327",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/30152527/original.jpeg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/30152534",
+      "occurrence": "https://www.gbif.org/occurrence/1990479327",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/30152534/original.jpeg"
+    }
+  ]
+}

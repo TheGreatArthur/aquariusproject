@@ -6,6 +6,7 @@ Seules les photos en domaine public, CC0, CC BY ou CC BY-SA sont acceptées, ave
 publiée garde son auteur, sa licence et le lien vers sa page Commons.
 """
 
+import hashlib
 import html
 import io
 import json
@@ -17,6 +18,9 @@ from tools.fetch_sources import download, fetch, slug
 
 COMMONS_API = 'https://commons.wikimedia.org/w/api.php?'
 PHOTO_MAX_SIDE = 2000
+AUTHOR_MAX = 300  # assez pour les crédits complets (photographes d'un ouvrage), pas pour une notice entière
+# Page Commons citée comme licence d'une photo du domaine public, qui n'a pas d'adresse de licence
+PUBLIC_DOMAIN_URL = 'https://commons.wikimedia.org/wiki/Commons:Public_domain'
 PHOTO_QUALITY = 82
 # Licences libres acceptées : domaine public, CC0, CC BY et CC BY-SA (toutes versions)
 FREE_LICENCE = re.compile(r'^(public domain|pd\b.*|cc0( 1\.0)?|cc by(-sa)? \d\.\d( [a-z]{2})?)$', re.IGNORECASE)
@@ -30,6 +34,12 @@ def strip_markup(text: str | None) -> str:
     return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', text or ''))).strip()
 
 
+def cache_key(title: str) -> str:
+    """ Nom du cache d'un titre : le slug seul confond les titres en écriture non latine (« 矮珍珠.jpg » et
+    « Яванский мох.jpg » donnent tous deux « file-jpg ») et ceux qui ne diffèrent que par la casse """
+    return f'{slug(title)}-{hashlib.sha1(title.encode()).hexdigest()[:10]}'
+
+
 def api(params: dict, cache_name: str) -> dict:
     _, body = fetch(COMMONS_API + urllib.parse.urlencode({**params, 'format': 'json'}), cache_name)
     return json.loads(body or '{}')
@@ -38,7 +48,7 @@ def api(params: dict, cache_name: str) -> dict:
 def commons_info(title: str) -> dict:
     """ Adresse, taille, auteur et licence d'un fichier Commons """
     data = api({'action': 'query', 'titles': title, 'prop': 'imageinfo', 'iiprop': 'url|size|mime|extmetadata|user',
-                'iiurlwidth': PHOTO_MAX_SIDE}, f'commons-{slug(title)}.json')
+                'iiurlwidth': PHOTO_MAX_SIDE}, f'commons-{cache_key(title)}.json')
     page = next(iter(data.get('query', {}).get('pages', {}).values()), {})
     if 'imageinfo' not in page:
         return {}
@@ -63,6 +73,9 @@ def clean_author(text: str) -> str:
     """ 'photo: S. Tanaka' -> 'S. Tanaka' ; 'W. Follette @ USDA-NRCS PLANTS Database / USDA NRCS. 1992...' ->
     'W. Follette, USDA-NRCS PLANTS Database' (la référence bibliographique reste sur la page Commons) """
     text = re.sub(r'^(photo|photograph|author)\s*:\s*', '', text.split(' / ')[0], flags=re.IGNORECASE)
+    # Auteur déduit par Commons : « No machine-readable author provided. Ged~commonswiki assumed (...) » -> « Ged »
+    if assumed := re.match(r'No machine-readable author provided\. (.+?) assumed\b', text):
+        text = assumed.group(1).removesuffix('~commonswiki')
     return text.replace(' @ ', ', ').strip()
 
 
@@ -98,7 +111,7 @@ def infos(titles: list[str], thumb_width: int = 400) -> list[dict]:
         batch = titles[i:i + 50]
         data = api({'action': 'query', 'titles': '|'.join(batch), 'prop': 'imageinfo',
                     'iiprop': 'url|size|mime|extmetadata|user', 'iiurlwidth': thumb_width},
-                   f'commons-batch-{slug(batch[0])}-{len(batch)}.json')
+                   f'commons-batch-{cache_key("|".join(batch))}.json')
         for page in data.get('query', {}).get('pages', {}).values():
             if 'imageinfo' not in page:
                 continue
@@ -158,11 +171,12 @@ def save_photo(data: bytes, path: Path) -> None:
 
 
 def download_photos(name: str, titles: list[str], folder: Path,
-                    previous: list[dict] = ()) -> tuple[list[dict], list[str]]:
+                    previous: list[dict] = (), keep: tuple[str, ...] = ()) -> tuple[list[dict], list[str]]:
     """
     Télécharge les photos <name>-1.jpg, -2.jpg... dans `folder` et renvoie leurs crédits. Une photo déjà présente
     n'est gardée que si elle vient du même fichier Commons qu'au passage précédent (`previous`), pour que l'image
-    et son crédit correspondent toujours ; les photos <name>-N.jpg qui ne sont plus listées sont supprimées.
+    et son crédit correspondent toujours ; les photos <name>-N.jpg qui ne sont plus listées sont supprimées, sauf
+    celles de `keep` (photos venues d'une autre source que Commons).
     """
     sources = {c['fichier']: c['source'] for c in previous}
     credits, errors = [], []
@@ -183,9 +197,12 @@ def download_photos(name: str, titles: list[str], folder: Path,
             else:
                 errors.append(error)
                 continue
-        credits.append(dict(fichier=path.name, auteur=clean_author(info['auteur'])[:150], licence=info['licence'],
-                            licence_url=info['licence_url'], source=info['source']))
-    kept = {c['fichier'] for c in credits}
+        public_domain = re.match(r'(public domain|pd\b)', info['licence'], re.IGNORECASE)
+        credits.append(dict(fichier=path.name, auteur=clean_author(info['auteur'])[:AUTHOR_MAX],
+                            licence=info['licence'],
+                            licence_url=info['licence_url'] or (PUBLIC_DOMAIN_URL if public_domain else None),
+                            source=info['source']))
+    kept = {c['fichier'] for c in credits} | set(keep)
     for path in folder.glob(f'{name}-*.jpg'):
         if re.fullmatch(rf'{re.escape(name)}-\d+\.jpg', path.name) and path.name not in kept:
             path.unlink()

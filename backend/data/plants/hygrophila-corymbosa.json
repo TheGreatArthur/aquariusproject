@@ -1,0 +1,25 @@
+{
+  "nom_scientifique": "Hygrophila corymbosa",
+  "nom_commun": "Hygrophila corymbosa",
+  "flowgrow": "hygrophila-corymbosa",
+  "photos": [
+    "Hygrophila corymbosa kz01.jpg",
+    "Hygrophila corymbosa.JPG"
+  ],
+  "origine": "Asie du Sud-Est",
+  "presentation": "Cette Hygrophila asiatique produit de longues et larges feuilles vert clair. Ses tiges poussent vite et développent des ramifications qui donnent un massif fourni. Peu exigeante, elle convient pour créer rapidement un volume végétal, à condition d’accepter les tailles nécessaires pour garder une composition lisible.",
+  "culture": "Séparer les tiges d’un bouquet et retirer l’attache de transport avant de planter. Espacer les pieds, dégager leurs parties basses des feuilles abîmées et laisser les racines se développer. Tailler fréquemment pour contenir la hauteur ; les portions coupées se replantent facilement et permettent d’étoffer le massif.",
+  "sources": [
+    {
+      "nom": "Tropica",
+      "url": "https://tropica.com/en/plants/plantdetails/4490/4490"
+    }
+  ],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/123606773",
+      "occurrence": "https://www.gbif.org/occurrence/4607352683",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/123606773/original.jpeg"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "nom_scientifique": "Callitriche palustris agg.",
+  "nom_commun": "Callitriche palustris agg.",
+  "flowgrow": "callitriche-palustris-agg",
+  "gbif": "Callitriche palustris",
+  "photos": [
+    "CallitrichePalustrisAgg.jpg",
+    "Callitriche palustris agg. (8405535728).jpg",
+    "Sumpf-Wasserstern (Callitriche palustris agg.).jpg"
+  ],
+  "origine": "Europe",
+  "presentation": "Les callitriches de ce groupe portent des feuilles souples sur des tiges fines. Immergées, elles développent surtout des feuilles étroites ; à la surface, les extrémités forment des rosettes de feuilles plus larges. Le suffixe « agg. » désigne un ensemble d’espèces proches, et non une identification botanique précise du pied.",
+  "culture": "Certaines plantes du groupe semblent pouvoir se maintenir durablement en aquarium, y compris au-dessus de 20 °C, mais les expériences restent limitées. Les boutures servent à renouveler les tiges. Observer la forme reçue et les changements de feuillage : les callitriches vendues pour bassin ne sont pas nécessairement toutes la même espèce et leur identification demande souvent les fleurs ou les fruits.",
+  "sources": [
+    {
+      "nom": "Flowgrow — description allemande",
+      "url": "https://www.flowgrow.de/db/wasserpflanzen/callitriche-palustris-agg"
+    }
+  ],
+  "photos_externes": []
+}

@@ -52,17 +52,29 @@ function extent (points, countries) {
   };
 }
 
+// Remplissage et contour des pays d'origine, des pays d'introduction (plantes) et des autres pays
+const FILL = { native: 'rgba(45, 212, 191, 0.13)', introduced: 'rgba(251, 191, 36, 0.10)', other: '#0d1a26' };
+const STROKE = { native: 'rgba(94, 234, 212, 0.45)', introduced: 'rgba(251, 191, 36, 0.4)', other: '#1c2e40' };
+const GLOBE_FILL = { native: '#2DD4BF', introduced: '#FBBF24', other: '#1a2c3d' };
+// Ordre de dessin : les pays d'origine en dernier, pour que leur contour reste visible
+const ORDER = { other: 0, introduced: 1, native: 2 };
+// Valeur par défaut stable : un nouveau tableau à chaque rendu relancerait le calcul de la carte
+const NONE = [];
+
 /**
- * Carte de l'aire de répartition naturelle : pays d'origine surlignés, fleuves et lacs,
- * observations géolocalisées (GBIF), et un globe de situation
+ * Carte de l'aire de répartition naturelle : pays d'origine surlignés (et pays où l'homme a introduit l'espèce),
+ * fleuves et lacs, observations géolocalisées (GBIF), et un globe de situation. La carte est cadrée sur l'aire
+ * d'origine ; le globe montre aussi les introductions lointaines.
  */
-export default function RangeMap ({ points = [], pays = [], label }) {
+export default function RangeMap ({ points = NONE, pays = NONE, introduits = NONE, label }) {
   const world = useWorld();
 
   const layers = useMemo(() => {
     if (!world)
       return null;
     const native = new Set(pays);
+    const introduced = new Set(introduits);
+    const status = (iso) => (native.has(iso) ? 'native' : introduced.has(iso) ? 'introduced' : 'other');
     const countries = world.pays.filter((f) => native.has(f.properties.iso));
     const { west, east, south, north } = extent(points, countries);
     const corners = [[west, south], [east, south], [east, north], [west, north]];
@@ -78,19 +90,19 @@ export default function RangeMap ({ points = [], pays = [], label }) {
       graticule: path(geoGraticule10()),
       // Pays d'origine dessinés en dernier : leur contour reste visible (et la Guyane passe devant la France)
       countries: world.pays
-        .map((f) => ({ id: f.properties.iso, native: native.has(f.properties.iso), d: path(f) }))
-        .sort((a, b) => a.native - b.native),
+        .map((f) => ({ id: f.properties.iso, status: status(f.properties.iso), d: path(f) }))
+        .sort((a, b) => ORDER[a.status] - ORDER[b.status]),
       lakes: world.lacs.map((f, i) => ({ id: i, d: path(f) })),
       rivers: world.fleuves.map((f, i) => ({ id: i, d: path(f) })),
       dots: points.map((p) => projection(p)).filter(Boolean),
       globe: {
         land: world.pays
-          .map((f) => ({ id: f.properties.iso, native: native.has(f.properties.iso), d: globePath(f) }))
-          .sort((a, b) => a.native - b.native),
+          .map((f) => ({ id: f.properties.iso, status: status(f.properties.iso), d: globePath(f) }))
+          .sort((a, b) => ORDER[a.status] - ORDER[b.status]),
         frame: globePath({ type: 'Polygon', coordinates: [[...corners, corners[0]].reverse()] }),
       },
     };
-  }, [world, points, pays]);
+  }, [world, points, pays, introduits]);
 
   if (!layers)
     return <div className="aspect-[720/440] w-full animate-pulse rounded-xl bg-surface-elevated"/>;
@@ -108,8 +120,8 @@ export default function RangeMap ({ points = [], pays = [], label }) {
         </defs>
         <path d={layers.graticule} fill="none" stroke="#10202e" strokeWidth="0.6"/>
         {layers.countries.map((c) => c.d && (
-          <path key={c.id} d={c.d} fill={c.native ? 'rgba(45, 212, 191, 0.13)' : '#0d1a26'}
-                stroke={c.native ? 'rgba(94, 234, 212, 0.45)' : '#1c2e40'} strokeWidth={c.native ? 0.9 : 0.5}/>
+          <path key={c.id} d={c.d} fill={FILL[c.status]} stroke={STROKE[c.status]}
+                strokeWidth={c.status === 'other' ? 0.5 : 0.9}/>
         ))}
         {layers.rivers.map((r) => r.d && (
           <path key={r.id} d={r.d} fill="none" stroke="#3b8fc2" strokeOpacity="0.85" strokeWidth="1.2"
@@ -128,7 +140,7 @@ export default function RangeMap ({ points = [], pays = [], label }) {
            className="absolute right-3 top-3 w-16 sm:w-[5.75rem]">
         <circle cx={GLOBE / 2} cy={GLOBE / 2} r={GLOBE / 2 - 2} fill="#07121c" stroke="#1c2e40"/>
         {layers.globe.land.map((c) => c.d && (
-          <path key={c.id} d={c.d} fill={c.native ? '#2DD4BF' : '#1a2c3d'} fillOpacity={c.native ? 0.7 : 1}/>
+          <path key={c.id} d={c.d} fill={GLOBE_FILL[c.status]} fillOpacity={c.status === 'other' ? 1 : 0.7}/>
         ))}
         {layers.globe.frame && <path d={layers.globe.frame} fill="none" stroke="#5EEAD4" strokeWidth="1.2"/>}
       </svg>

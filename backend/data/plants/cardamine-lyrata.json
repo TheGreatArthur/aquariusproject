@@ -1,0 +1,27 @@
+{
+  "nom_scientifique": "Cardamine lyrata",
+  "nom_commun": "Cardamine lyrata",
+  "flowgrow": "cardamine-lyrata",
+  "photos": [],
+  "origine": "Asie de l’Est",
+  "presentation": "Ses tiges souples portent de petites feuilles vert clair en forme de rein. Cette plante des milieux humides d’Asie orientale grimpe parmi les voisines et peut courir sur les racines du décor. Dans une eau fraîche, les feuilles sont plus grandes ; une eau plus chaude produit un feuillage beaucoup plus petit.",
+  "culture": "Elle convient aux bacs frais ou tropicaux modérément chauffés. Une bonne lumière évite des tiges trop fines ; le CO₂ stimule la croissance sans être indispensable. Pour garder un buisson au milieu du bac, tailler souvent. Les fragments de tiges et les pousses latérales s’enracinent rapidement lorsqu’ils sont replantés.",
+  "sources": [],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/657989897",
+      "occurrence": "https://www.gbif.org/occurrence/6273359941",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/657989897/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/513081810",
+      "occurrence": "https://www.gbif.org/occurrence/5176783809",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/513081810/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/657989891",
+      "occurrence": "https://www.gbif.org/occurrence/6273359941",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/657989891/original.jpg"
+    }
+  ]
+}

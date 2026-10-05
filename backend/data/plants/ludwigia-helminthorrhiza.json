@@ -1,0 +1,27 @@
+{
+  "nom_scientifique": "Ludwigia helminthorrhiza",
+  "nom_commun": "Ludwigia helminthorrhiza",
+  "flowgrow": "ludwigia-helminthorrhiza",
+  "photos": [],
+  "origine": "Amérique centrale, Amérique du Sud tropicale",
+  "presentation": "Cette plante flottante américaine développe de longues tiges, des feuilles parfois rougeâtres et d’étranges racines blanches spongieuses. Ces organes respiratoires en forme de petits fuseaux lui donnent un aspect reconnaissable. Dans de bonnes conditions, des fleurs blanches à centre jaune apparaissent au-dessus de l’eau.",
+  "culture": "Elle demande beaucoup de lumière et une grande surface libre pour ses tiges rapidement ramifiées. Un ancrage dans un substrat nutritif lui profite. Elle convient davantage à un grand bac ouvert ou à un paludarium qu’à une petite galerie de plantes immergées. La culture émergée est plus facile et favorise davantage les fleurs.",
+  "sources": [],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/570161401",
+      "occurrence": "https://www.gbif.org/occurrence/5892785246",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/570161401/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/427039255",
+      "occurrence": "https://www.gbif.org/occurrence/4945496750",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/427039255/original.jpeg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/457979628",
+      "occurrence": "https://www.gbif.org/occurrence/5007248113",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/457979628/original.jpeg"
+    }
+  ]
+}

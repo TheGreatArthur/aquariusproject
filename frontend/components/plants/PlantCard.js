@@ -6,6 +6,9 @@ import DifficultyBadge from '@/components/plants/DifficultyBadge';
 import { formatRange, lightLabel, plantImage, TYPES } from '@/lib/plants';
 
 export default function PlantCard ({ plante: p, priority = false }) {
+  // Sans nom français vérifié, la fiche reprend le nom scientifique : on ne l'affiche qu'une fois
+  const sansNomCommun = p.nom_commun.trim().toLowerCase() === p.nom_scientifique.trim().toLowerCase();
+
   return (
     <Link href={`/plantes/${p.id}`} className="card card-hover group flex h-full min-w-0 flex-col overflow-hidden">
       <div className="relative aspect-[4/3] overflow-hidden bg-surface-elevated">
@@ -20,10 +23,12 @@ export default function PlantCard ({ plante: p, priority = false }) {
       </div>
 
       <div className="flex flex-1 flex-col p-3 sm:p-5">
-        <h3 className="break-words text-base font-semibold leading-snug transition group-hover:text-accent-glow sm:text-lg">
+        <h3 className={sansNomCommun
+          ? 'break-words text-base font-semibold italic leading-snug transition group-hover:text-accent-glow sm:text-lg'
+          : 'break-words text-base font-semibold leading-snug transition group-hover:text-accent-glow sm:text-lg'}>
           {p.nom_commun}
         </h3>
-        <p className="truncate text-xs italic text-muted sm:text-sm">{p.nom_scientifique}</p>
+        {!sansNomCommun && <p className="truncate text-xs italic text-muted sm:text-sm">{p.nom_scientifique}</p>}
 
         <div className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1">
           <DifficultyBadge difficulte={p.difficulte}/>

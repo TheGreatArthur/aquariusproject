@@ -1,0 +1,20 @@
+{
+  "nom_scientifique": "Rorippa aquatica",
+  "nom_commun": "Rorippa aquatica",
+  "flowgrow": "rorippa-aquatica",
+  "photos": [
+    "Rorippa aquatica - 52890717849.jpg",
+    "Lake-cress, Tennessee, US imported from iNaturalist photo 490160005.jpg"
+  ],
+  "origine": "Amérique du Nord",
+  "presentation": "Cette plante américaine peut former une petite rosette ou des pousses dressées, avec des feuilles tantôt entières et dentées, tantôt profondément découpées. Son aspect dépend des conditions de culture. Elle reste relativement basse sous l’eau et offre au premier plan un feuillage différent de celui des plantes gazonnantes.",
+  "culture": "Une eau modérément fraîche, une lumière moyenne à forte et un substrat nutritif lui conviennent. La croissance est très lente, même en bonnes conditions. Des jeunes plantes peuvent se former sur des feuilles détachées laissées flottantes, ce qui permet la multiplication. Ne pas confondre cette méthode avec la reprise immédiate d’une bouture de tige classique.",
+  "sources": [],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/654559882",
+      "occurrence": "https://www.gbif.org/occurrence/6273682863",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/654559882/original.jpg"
+    }
+  ]
+}

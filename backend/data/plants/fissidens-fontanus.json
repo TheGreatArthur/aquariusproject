@@ -1,0 +1,25 @@
+{
+  "nom_scientifique": "Fissidens fontanus",
+  "nom_commun": "Fissidens fontanus",
+  "flowgrow": "fissidens-fontanus",
+  "photos": [
+    "F.fontanus.jpg",
+    "F. fontanus frond.jpg"
+  ],
+  "origine": "Europe, Amérique du Nord et Amérique centrale ; signalée plus rarement en Amérique du Sud, en Afrique australe et en Océanie",
+  "presentation": "Connue dans le commerce comme « Phoenix moss », cette mousse réellement aquatique porte des feuilles en deux rangs, qui donnent à chaque pousse l’allure d’une petite plume. Vert sombre et souple, elle forme des touffes fixées au bois ou à la pierre. Elle pousse naturellement dans des rivières et des lacs, parfois profondément à l’ombre.",
+  "culture": "Elle peut se maintenir avec peu de lumière et s’attache au décor grâce à ses rhizoïdes. La multiplier en séparant les touffes. Manipuler les pousses avec douceur et les garder humides pendant le travail : cette mousse se dessèche vite à l’air et devient cassante. L’origine asiatique d’un lot commercial ne correspond pas nécessairement à son aire naturelle.",
+  "sources": [
+    {
+      "nom": "Flowgrow — description allemande",
+      "url": "https://www.flowgrow.de/db/wasserpflanzen/fissidens-fontanus"
+    }
+  ],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/604634096",
+      "occurrence": "https://www.gbif.org/occurrence/6159576503",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/604634096/original.jpg"
+    }
+  ]
+}

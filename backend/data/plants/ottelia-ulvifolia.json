@@ -1,0 +1,27 @@
+{
+  "nom_scientifique": "Ottelia ulvifolia",
+  "nom_commun": "Ottelia ulvifolia",
+  "flowgrow": "ottelia-ulvifolia",
+  "photos": [],
+  "origine": "Afrique de l’Ouest, Afrique centrale, Afrique de l’Est, Afrique australe, région malgache",
+  "presentation": "Ses grandes feuilles légèrement translucides sont ondulées, parfois torsadées, et rappellent la laitue de mer dont s’inspire son nom. La forme connue en aquarium porte souvent des marbrures ou de petites lignes brun rouge sur fond vert clair. Cette plante africaine et malgache constitue un point focal dans un aquarium haut.",
+  "culture": "Prévoir beaucoup de place autour de la rosette, avec une lumière forte adaptée à sa culture difficile. Les feuilles peuvent atteindre une taille importante et ne conviennent pas à un massif serré de petit bac. La multiplication par graines est indiquée. Les différentes formes de l’espèce ne montrent pas toutes exactement le même motif.",
+  "sources": [],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/633548317",
+      "occurrence": "https://www.gbif.org/occurrence/6187941422",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/633548317/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/483880521",
+      "occurrence": "https://www.gbif.org/occurrence/6131176842",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/483880521/original.jpeg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/562703757",
+      "occurrence": "https://www.gbif.org/occurrence/5932258425",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/562703757/original.jpg"
+    }
+  ]
+}

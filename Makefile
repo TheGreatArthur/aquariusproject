@@ -58,7 +58,7 @@ invertebrates: setup ## Load the shrimps, crabs, snails and crayfish (backend/da
 plants: setup ## Load the aquarium plants (backend/data/plants) into the database
 	cd backend && venv/bin/python plants.py
 
-plants-fetch: setup ## Scrape plant data (Flowgrow, Tropica, GBIF) and photos (Wikimedia Commons)
+plants-fetch: setup ## Scrape plant data (Flowgrow, Tropica, GBIF), native range (WCVP) and photos (Wikimedia Commons)
 	cd backend && venv/bin/python -m tools.fetch_plants
 
 ecoregions: setup ## Place each fish in its freshwater ecoregions (FEOW) for the home page globe

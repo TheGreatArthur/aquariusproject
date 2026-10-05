@@ -1,0 +1,27 @@
+{
+  "nom_scientifique": "Tonina fluviatilis",
+  "nom_commun": "Tonina fluviatilis",
+  "flowgrow": "tonina-fluviatilis",
+  "photos": [],
+  "origine": "Amérique centrale, Amérique du Sud tropicale",
+  "presentation": "Les pousses restent très droites et portent un feuillage vert frais au dessin inhabituel. Cette plante des eaux noires lentes d’Amérique tropicale forme un accent net au milieu ou à l’arrière-plan. Sa croissance modérée permet des compositions structurées, mais ses besoins la destinent aux bacs préparés pour les plantes exigeantes.",
+  "culture": "Prévoir une eau douce, un substrat acide, une lumière forte et du CO₂. Maintenir des nutriments disponibles, notamment du fer et des oligoéléments. Éviter que les voisines plus rapides la recouvrent. Pour la multiplier, utiliser de courtes têtes ou pousses latérales : les boutures longues développent facilement des racines visibles sur les parties basses.",
+  "sources": [],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/605512892",
+      "occurrence": "https://www.gbif.org/occurrence/6441054191",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/605512892/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/604641247",
+      "occurrence": "https://www.gbif.org/occurrence/6441370907",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/604641247/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/604637005",
+      "occurrence": "https://www.gbif.org/occurrence/6441380655",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/604637005/original.jpg"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "nom_scientifique": "Barclaya longifolia",
+  "nom_commun": "Barclaya longifolia",
+  "flowgrow": "barclaya-longifolia",
+  "photos": [
+    "Barclaya longifolia in Thailand.jpg"
+  ],
+  "origine": "Asie du Sud-Est",
+  "presentation": "Malgré sa parenté avec les nénuphars, Barclaya longifolia ne produit pas de feuilles flottantes. Ses longues feuilles ondulées peuvent être vertes ou rougeâtres ; la forme verte garde un revers rouge. Une jeune rosette évoque une Cryptocoryne, puis prend progressivement la place d’une grande plante solitaire.",
+  "culture": "Lui réserver une eau chaude et une lumière suffisante. Un apport nutritif aux racines peut amplifier sa taille ; un petit pot permet de contenir son développement. Ses feuilles tendres s’abîment facilement. Elle peut perdre tout son feuillage pendant une période de repos puis repartir : ne pas jeter le rhizome dès cette disparition.",
+  "sources": [],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/255413831",
+      "occurrence": "https://www.gbif.org/occurrence/4535865674",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/255413831/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/309935305",
+      "occurrence": "https://www.gbif.org/occurrence/4177273976",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/309935305/original.jpeg"
+    }
+  ]
+}

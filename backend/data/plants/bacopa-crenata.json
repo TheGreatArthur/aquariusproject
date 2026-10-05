@@ -1,0 +1,32 @@
+{
+  "nom_scientifique": "Bacopa crenata",
+  "nom_commun": "Bacopa crenata",
+  "flowgrow": "bacopa-crenata",
+  "photos": [],
+  "origine": "Afrique de l’Ouest, Afrique centrale, Afrique de l’Est, région malgache",
+  "presentation": "Cette Bacopa des zones humides africaines et de Madagascar développe des tiges souples, parfois rampantes à leur base, qui peuvent s’enraciner aux nœuds. Ses feuilles ovales à lancéolées portent un bord crénelé. Dans son milieu naturel, de petites fleurs blanches, parfois légèrement violettes, apparaissent à l’aisselle des feuilles.",
+  "culture": "En aquarium, cette référence demande une lumière forte et sa culture est classée difficile. Les boutures permettent de renouveler le groupe. Les informations botaniques décrivent ses marais et fossés naturels, mais ne fournissent pas une méthode complète de culture immergée : observer la reprise sans attendre automatiquement la robustesse des Bacopa plus courantes.",
+  "sources": [
+    {
+      "nom": "Kew — Flora of Tropical East Africa",
+      "url": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A799497-1/general-information"
+    }
+  ],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/469105840",
+      "occurrence": "https://www.gbif.org/occurrence/6133159298",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/469105840/original.jpeg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/469105884",
+      "occurrence": "https://www.gbif.org/occurrence/6133159298",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/469105884/original.jpeg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/469105931",
+      "occurrence": "https://www.gbif.org/occurrence/6133159298",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/469105931/original.jpeg"
+    }
+  ]
+}
