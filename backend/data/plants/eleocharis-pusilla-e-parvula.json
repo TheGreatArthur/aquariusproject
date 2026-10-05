@@ -1,0 +1,25 @@
+{
+  "nom_scientifique": "Eleocharis pusilla (\"E. parvula\")",
+  "nom_commun": "Eleocharis pusilla (\"E. parvula\")",
+  "flowgrow": "eleocharis-pusilla-e-parvula",
+  "gbif": "Eleocharis pusilla",
+  "photos": [
+    "Eleocharis pusilla kz01.jpg"
+  ],
+  "origine": "Australie, Nouvelle-Zélande",
+  "presentation": "De fines tiges vert clair, souvent inclinées sur les côtés, forment un gazon bas. La plante diffusée en aquarium sous le nom d’Eleocharis parvula est souvent attribuée à E. pusilla, originaire d’Australie et de Nouvelle-Zélande. Elle reste généralement plus courte qu’Eleocharis acicularis, ce qui la rend intéressante au premier plan.",
+  "culture": "Une lumière moyenne à forte accompagne sa culture tapissante. Elle se multiplie par stolons : laisser de l’espace entre les touffes pour leur extension. Le nom d’achat « parvula » ne garantit pas l’espèce, car plusieurs Eleocharis proches circulent sous cette étiquette. Une forme reçue plus haute n’est donc pas forcément la même référence.",
+  "sources": [],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/625854750",
+      "occurrence": "https://www.gbif.org/occurrence/6185364197",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/625854750/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/652635689",
+      "occurrence": "https://www.gbif.org/occurrence/6251449638",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/652635689/original.jpg"
+    }
+  ]
+}

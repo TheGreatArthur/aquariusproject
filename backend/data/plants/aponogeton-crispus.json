@@ -1,0 +1,24 @@
+{
+  "nom_scientifique": "Aponogeton crispus",
+  "nom_commun": "Aponogeton crispus",
+  "flowgrow": "aponogeton-crispus",
+  "photos": [
+    "Aponogeton crispus Fond blanc.jpg"
+  ],
+  "origine": "Asie du Sud",
+  "presentation": "De longues feuilles aux bords ondulés donnent à cette plante du Sri Lanka une silhouette souple et volumineuse. Elle vit naturellement dans des mares saisonnières, mais peut continuer à pousser en aquarium sans repos imposé. Elle fleurit volontiers et se prête à une plantation isolée ou en groupe à l’arrière-plan.",
+  "culture": "Réserver un bac assez grand : les feuilles peuvent atteindre la surface et ombrager les voisines. Un substrat nutritif et une lumière suffisante favorisent sa croissance ; un ajout de CO₂ n’est pas indispensable. Retirer les feuilles abîmées à leur base. La multiplication se fait par division ou par graines.",
+  "sources": [],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/104633568",
+      "occurrence": "https://www.gbif.org/occurrence/2963792109",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/104633568/original.jpeg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/104633580",
+      "occurrence": "https://www.gbif.org/occurrence/2963792109",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/104633580/original.jpeg"
+    }
+  ]
+}

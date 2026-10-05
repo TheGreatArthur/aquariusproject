@@ -1,0 +1,27 @@
+{
+  "nom_scientifique": "Juncus repens",
+  "nom_commun": "Juncus repens",
+  "flowgrow": "juncus-repens",
+  "photos": [],
+  "origine": "Amérique du Nord, Amérique centrale, Caraïbes",
+  "presentation": "Son port mêle celui d’une plante à tiges et d’une rosette : des touffes de feuilles fines apparaissent à intervalles réguliers sur les pousses. Vert sous une lumière modérée, ce jonc peut prendre des tons rougeâtres avec davantage de lumière et une bonne nutrition. Il apporte une texture herbacée au massif.",
+  "culture": "Il accepte plusieurs niveaux d’éclairage et sa croissance régulière reste assez facile à contrôler. Replanter une portion de tige coupée sous une touffe de feuilles ; elle n’a pas besoin de porter déjà des racines. La taille permet de l’utiliser au fond, au milieu ou même plus bas dans le bac. Surveiller les algues ponctuelles sur ses feuilles persistantes.",
+  "sources": [],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/645851552",
+      "occurrence": "https://www.gbif.org/occurrence/6234808654",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/645851552/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/708994995",
+      "occurrence": "https://www.gbif.org/occurrence/6499138949",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/708994995/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/504569100",
+      "occurrence": "https://www.gbif.org/occurrence/5166824762",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/504569100/original.jpg"
+    }
+  ]
+}

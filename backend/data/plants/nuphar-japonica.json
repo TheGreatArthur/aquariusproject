@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Nuphar japonica",
+  "nom_commun": "Nuphar japonica",
+  "flowgrow": "nuphar-japonica",
+  "photos": [
+    "(Nuphar japonica close-up at Nikko Botanical Garden, Japan) - DPLA - 98ad3116a5b78975cb2004b273fb9cdb.jpg"
+  ],
+  "origine": "Asie de l’Est",
+  "presentation": "Cette plante japonaise peut produire des feuilles immergées, flottantes ou aériennes. Elle fréquente aussi bien des eaux stagnantes que courantes et se cultive comme plante ornementale aquatique. Plusieurs variétés existent, ce qui explique des différences d’aspect entre les pieds vendus sous le nom de Nuphar japonica.",
+  "culture": "Prévoir une installation où le feuillage aura de la place pour évoluer, avec une bonne lumière pour cette référence. La division du rhizome sert à la multiplication. Observer l’apparition des feuilles flottantes avant de décider de la place définitive : la plante n’est pas limitée à un petit bouquet de feuilles sous l’eau.",
+  "sources": [
+    {
+      "nom": "Flowgrow — description allemande",
+      "url": "https://www.flowgrow.de/db/wasserpflanzen/nuphar-japonica"
+    }
+  ],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/658919703",
+      "occurrence": "https://www.gbif.org/occurrence/6320071900",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/658919703/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/658919244",
+      "occurrence": "https://www.gbif.org/occurrence/6334511605",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/658919244/original.jpg"
+    }
+  ]
+}

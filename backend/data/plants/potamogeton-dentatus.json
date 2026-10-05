@@ -1,0 +1,24 @@
+{
+  "nom_scientifique": "Potamogeton dentatus",
+  "nom_commun": "Potamogeton dentatus",
+  "flowgrow": "potamogeton-dentatus",
+  "photos": [
+    "Potamogeton dentatus in aquarium..JPG",
+    "Potamogeton dentatus1.jpg",
+    "Potamogeton dentatus taken form a above angle.JPG"
+  ],
+  "origine": "Asie de l’Est",
+  "presentation": "Ce potamot japonais porte des feuilles allongées où le réseau des nervures reste visible. Les tiges se ramifient vers leur partie haute et peuvent produire des épis au niveau de la surface. Plante véritablement immergée, elle développe aussi des rhizomes, ce qui lui permet d’étendre le groupe au-delà des pousses déjà visibles.",
+  "culture": "Prévoir une place au milieu ou à l’arrière-plan, avec une lumière moyenne à forte. Les boutures et les jeunes pousses issues des stolons permettent de multiplier la plantation. Suivre cette expansion souterraine en plus de la hauteur des tiges. Les retours détaillés de culture restent limités : éviter de confondre cette référence avec les potamots plus courants.",
+  "sources": [
+    {
+      "nom": "Kew",
+      "url": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A699669-1/general-information"
+    },
+    {
+      "nom": "Botanic.jp — observations au jardin botanique",
+      "url": "https://www.botanic.jp/plants-ka/gasham.htm"
+    }
+  ],
+  "photos_externes": []
+}

@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Crinum thaianum",
+  "nom_commun": "Crinum thaianum",
+  "flowgrow": "crinum-thaianum",
+  "photos": [
+    "Crinum thaianum in Thailand.jpg"
+  ],
+  "origine": "Asie du Sud-Est",
+  "presentation": "Cette grande plante à bulbe développe de longues feuilles lisses, semblables à des rubans. Son système racinaire devient important dans le substrat, tandis que le feuillage occupe progressivement beaucoup de volume. Elle convient à une implantation où sa silhouette pourra rester visible sans être comprimée entre des massifs.",
+  "culture": "Prévoir de l’espace dans le sol et autour du pied. La multiplication se fait en séparant les jeunes bulbes qui apparaissent à la base du bulbe principal. Avant de replanter ces jeunes pieds, la source recommande de raccourcir leurs longues racines. Sa croissance lente appelle de la patience plutôt que des déplacements fréquents.",
+  "sources": [
+    {
+      "nom": "Flowgrow — description allemande",
+      "url": "https://www.flowgrow.de/db/wasserpflanzen/crinum-thaianum"
+    }
+  ],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/329658047",
+      "occurrence": "https://www.gbif.org/occurrence/4436325399",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/329658047/original.jpeg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/329658069",
+      "occurrence": "https://www.gbif.org/occurrence/4436325399",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/329658069/original.jpeg"
+    }
+  ]
+}

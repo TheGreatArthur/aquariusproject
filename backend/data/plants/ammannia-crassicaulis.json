@@ -1,0 +1,27 @@
+{
+  "nom_scientifique": "Ammannia crassicaulis",
+  "nom_commun": "Ammannia crassicaulis",
+  "flowgrow": "ammannia-crassicaulis",
+  "photos": [],
+  "origine": "Afrique de l’Ouest, Afrique centrale, Afrique de l’Est, région malgache",
+  "presentation": "Originaire des zones humides tropicales d’Afrique et de Madagascar, cette plante est aussi connue sous le nom de Nesaea crassicaulis. Ses tons vont du vert jaunâtre au rouge pâle. Elle ressemble beaucoup à Ammannia gracilis, généralement plus rouge, et les deux sont fréquemment confondues dans le commerce.",
+  "culture": "La culture demande un éclairage fort et une eau plutôt douce, dans un bac adapté aux plantes exigeantes. Les boutures servent à étoffer un groupe de tiges. Vérifier l’identité d’un pied acheté sous le nom de Nesaea : la source signale que de nombreuses plantes vendues ainsi sont en réalité Ammannia gracilis.",
+  "sources": [],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/173717623",
+      "occurrence": "https://www.gbif.org/occurrence/3923593463",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/173717623/original.jpeg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/60597716",
+      "occurrence": "https://www.gbif.org/occurrence/4039382322",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/60597716/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/173717629",
+      "occurrence": "https://www.gbif.org/occurrence/3923593463",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/173717629/original.jpeg"
+    }
+  ]
+}

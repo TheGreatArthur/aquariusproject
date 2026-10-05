@@ -1,0 +1,20 @@
+{
+  "nom_scientifique": "Ceratophyllum submersum",
+  "nom_commun": "Ceratophyllum submersum",
+  "flowgrow": "ceratophyllum-submersum",
+  "photos": [
+    "Ceratophyllum submersum winterform.jpeg",
+    "Ceratophyllum submersum sl11.jpg"
+  ],
+  "origine": "Afrique, Europe, Asie de l’Ouest, Asie du Sud-Est, Asie de l’Est, Amérique du Nord",
+  "presentation": "Plus souple et plus fin que Ceratophyllum demersum, ce cornifle porte des feuilles divisées en de nombreux filaments. Les tiges restent vert clair, tandis que le feuillage peut prendre une teinte orangée sous une lumière intense. Sans racines, il forme rapidement un couvert flottant pouvant abriter les alevins.",
+  "culture": "Le laisser flotter sous la surface ou maintenir les extrémités dans le sol. Une lumière moyenne suffit ; le CO₂ n’est pas indispensable, mais accélère la croissance. Tailler souvent pour éviter que la végétation n’occupe tout le bac. Son feuillage délicat en fait une alternative plus légère au cornifle immergé habituel.",
+  "sources": [],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/662180687",
+      "occurrence": "https://www.gbif.org/occurrence/6334517523",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/662180687/original.jpg"
+    }
+  ]
+}

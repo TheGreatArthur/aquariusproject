@@ -1,0 +1,20 @@
+{
+  "nom_scientifique": "Pistia stratiotes",
+  "nom_commun": "Pistia stratiotes",
+  "flowgrow": "pistia-stratiotes",
+  "photos": [
+    "Kiambang (Pistia stratiotes).jpg",
+    "Pond covered by Pistia, Odessa 1.JPG",
+    "Aguape lago Unifei.JPG"
+  ],
+  "origine": "Afrique, région malgache, Asie centrale, Asie du Sud, Asie du Sud-Est, Asie de l’Est, Australie, Océanie, Amérique centrale, Caraïbes, Amérique du Sud tropicale",
+  "presentation": "Les feuilles veloutées se rassemblent en rosettes flottantes, d’où le nom de « laitue d’eau ». De nombreuses racines fines et plumeuses pendent sous la plante. Cette flottante des régions chaudes occupe les eaux douces calmes ; ses petites fleurs restent discrètes, cachées près de la base des feuilles.",
+  "culture": "Laisser les rosettes à la surface, dans un emplacement bien éclairé. Les stolons produisent de jeunes pieds qui permettent la multiplication. La plante peut former de grandes colonies : retirer les excédents pour préserver une partie de la surface libre et éviter un ombrage trop marqué du fond. Ses racines peuvent atteindre le sol dans une faible profondeur.",
+  "sources": [
+    {
+      "nom": "Kew — Flora Zambesiaca",
+      "url": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A317684-2/general-information"
+    }
+  ],
+  "photos_externes": []
+}

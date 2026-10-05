@@ -1,0 +1,27 @@
+{
+  "nom_scientifique": "Eriocaulon setaceum",
+  "nom_commun": "Eriocaulon setaceum",
+  "flowgrow": "eriocaulon-setaceum",
+  "photos": [],
+  "origine": "Afrique, Asie du Sud, Asie du Sud-Est, Asie de l’Est, Australie, Amérique du Sud tropicale",
+  "presentation": "Ses feuilles fines, presque en aiguilles, donnent aux pousses une texture claire et délicate. Contrairement à un Eriocaulon en petite rosette, cette espèce monte davantage et peut développer de nombreuses ramifications. Elle convient comme accent fin au milieu ou à l’arrière d’un bac conçu pour des plantes exigeantes.",
+  "culture": "Elle demande une eau très douce, un sol acide, une lumière forte et du CO₂. Maintenir des apports nutritifs réguliers. La taille est mal supportée : intervenir seulement lorsque c’est nécessaire et préférer renouveler le pied par de courtes boutures plutôt que raccourcir sans cesse un vieux massif. Les longues boutures produisent facilement des racines peu esthétiques sur les tiges.",
+  "sources": [],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/642195273",
+      "occurrence": "https://www.gbif.org/occurrence/6234360601",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/642195273/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/644627582",
+      "occurrence": "https://www.gbif.org/occurrence/6234715742",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/644627582/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/641787312",
+      "occurrence": "https://www.gbif.org/occurrence/6235963550",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/641787312/original.jpg"
+    }
+  ]
+}

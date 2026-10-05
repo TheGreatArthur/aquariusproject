@@ -1,0 +1,20 @@
+{
+  "nom_scientifique": "Crinum natans",
+  "nom_commun": "Crinum natans",
+  "flowgrow": "crinum-natans",
+  "photos": [
+    "Crinum natans.jpg",
+    "Crinum natans-Jardin botanique Jean-Marie Pelt (1).jpg",
+    "Crinum natans-Jardin botanique Jean-Marie Pelt (2).jpg"
+  ],
+  "origine": "Afrique de l’Ouest, Afrique centrale",
+  "presentation": "Ce Crinum d’Afrique tropicale pousse naturellement dans la vase au fond de cours d’eau permanents. Ses feuilles plissées peuvent rester immergées ou flotter, tandis que de grandes fleurs blanches et parfumées se dressent au-dessus du niveau d’eau. Son port à bulbe donne au décor une silhouette différente d’une plante à tiges.",
+  "culture": "Prévoir une lumière moyenne à forte et laisser au pied le temps de s’installer : la croissance est lente. Les jeunes rejets peuvent être séparés pour multiplier la plantation. Lui réserver une place au milieu ou à l’arrière du bac, où l’évolution du feuillage vers la surface pourra être suivie sans comprimer les plantes voisines.",
+  "sources": [
+    {
+      "nom": "Kew — Flora of West Tropical Africa",
+      "url": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A63994-1/general-information"
+    }
+  ],
+  "photos_externes": []
+}

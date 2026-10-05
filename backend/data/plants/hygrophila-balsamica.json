@@ -1,0 +1,27 @@
+{
+  "nom_scientifique": "Hygrophila balsamica",
+  "nom_commun": "Hygrophila balsamica",
+  "flowgrow": "hygrophila-balsamica",
+  "photos": [],
+  "origine": "Asie du Sud",
+  "presentation": "Cette Hygrophila d’Inde et du Sri Lanka peut former un grand massif vert clair, très ramifié. La taille permet soit de favoriser un buisson dense, soit de conserver des tiges plus verticales. Sa croissance rapide donne du volume à l’arrière-plan, mais réclame beaucoup d’espace et un entretien suivi.",
+  "culture": "Prévoir une bonne lumière, du CO₂ et des nutriments disponibles, notamment du fer. La source rapporte une toxicité envers la faune pour certaines anciennes souches émergées, tout en indiquant que des souches commerciales récentes diffèrent sur ce point. Vérifier le lot et son mode de culture avant de l’introduire dans un bac peuplé. Bouturer les nombreuses pousses latérales.",
+  "sources": [],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/190586331",
+      "occurrence": "https://www.gbif.org/occurrence/3764212911",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/190586331/original.jpeg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/190586350",
+      "occurrence": "https://www.gbif.org/occurrence/3764212911",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/190586350/original.jpeg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/190586363",
+      "occurrence": "https://www.gbif.org/occurrence/3764212911",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/190586363/original.jpeg"
+    }
+  ]
+}

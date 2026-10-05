@@ -1,0 +1,27 @@
+{
+  "nom_scientifique": "Eichhornia diversifolia",
+  "nom_commun": "Eichhornia diversifolia",
+  "flowgrow": "eichhornia-diversifolia",
+  "photos": [],
+  "origine": "Amérique centrale, Caraïbes, Amérique du Sud tropicale",
+  "presentation": "Cette plante à tiges développe un feuillage dense dont la silhouette peut évoquer une petite palme. Si elle atteint la surface, elle produit des feuilles flottantes ovales et peut fleurir en bleu. Son vert soutenu forme un point d’intérêt au milieu ou à l’arrière d’un aquarium planté.",
+  "culture": "Éviter les zones ombragées : les feuilles peuvent devenir transparentes puis tomber. Un apport de CO₂ et une alimentation régulière en nutriments favorisent des tiges robustes ; les carences font notamment dépérir le bas du massif. Laisser de la place aux ramifications, puis replanter les pousses latérales pour multiplier la plante.",
+  "sources": [],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/713736888",
+      "occurrence": "https://www.gbif.org/occurrence/6499620215",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/713736888/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/371731487",
+      "occurrence": "https://www.gbif.org/occurrence/4855099265",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/371731487/original.jpeg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/713736927",
+      "occurrence": "https://www.gbif.org/occurrence/6499620215",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/713736927/original.jpg"
+    }
+  ]
+}

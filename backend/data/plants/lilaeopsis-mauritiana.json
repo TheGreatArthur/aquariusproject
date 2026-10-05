@@ -1,0 +1,27 @@
+{
+  "nom_scientifique": "Lilaeopsis mauritiana",
+  "nom_commun": "Lilaeopsis mauritiana",
+  "flowgrow": "lilaeopsis-mauritiana",
+  "photos": [],
+  "origine": "région malgache",
+  "presentation": "Originaire de l’île Maurice, cette Lilaeopsis a été introduite dans le commerce comme « Lilaeopsis sp. Mauritius » avant sa description botanique. Elle porte les feuilles les plus étroites parmi les espèces de Lilaeopsis citées comme cultivées en aquarium. Sa texture très fine est intéressante pour une plantation basse.",
+  "culture": "Prévoir une lumière moyenne à forte pour cette référence tapissante. Sa multiplication par stolons permet d’étendre progressivement la plantation : laisser du sol libre autour des touffes. Les conseils détaillés restent limités dans la description source, aussi vaut-il mieux observer le rythme de colonisation que promettre la fermeture du tapis dans un délai précis.",
+  "sources": [],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/513167929",
+      "occurrence": "https://www.gbif.org/occurrence/5176850083",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/513167929/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/6365748",
+      "occurrence": "https://www.gbif.org/occurrence/1453452163",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/6365748/original.jpg"
+    },
+    {
+      "source": "https://www.inaturalist.org/photos/6365785",
+      "occurrence": "https://www.gbif.org/occurrence/1453452163",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/6365785/original.jpg"
+    }
+  ]
+}
