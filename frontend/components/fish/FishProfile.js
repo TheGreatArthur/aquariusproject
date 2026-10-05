@@ -1,9 +1,10 @@
 'use client';
 
+import { useState } from 'react';
 import { BookOpen, ExternalLink, MapPinned, Waves } from 'lucide-react';
 
 import RangeMap, { useWorld } from '@/components/fish/RangeMap';
-import Prose from '@/components/Prose';
+import Prose, { Italics } from '@/components/Prose';
 import Reveal from '@/components/Reveal';
 
 // Catégories de la Liste rouge UICN
@@ -30,7 +31,7 @@ export function Block ({ icon: Icon, title, id, children, className = '' }) {
   );
 }
 
-function Fact ({ label, children }) {
+export function Fact ({ label, children }) {
   return (
     <div>
       <dt className="text-xs uppercase tracking-wider text-muted">{label}</dt>
@@ -39,17 +40,53 @@ function Fact ({ label, children }) {
   );
 }
 
-function Countries ({ codes }) {
+/**
+ * Noms des pays, par ordre alphabétique ; au-delà de `limit` (espèces presque cosmopolites), la liste se déplie
+ */
+export function Countries ({ codes, label = 'Pays d\'origine', limit = 24, className = 'mt-4', chipClassName = '' }) {
   const world = useWorld();
-  if (!world || !codes.length)
+  const [open, setOpen] = useState(false);
+  if (!world || !codes?.length)
     return null;
   const names = codes
     .map((code) => world.pays.find((f) => f.properties.iso === code)?.properties.nom ?? code)
     .sort((a, b) => a.localeCompare(b, 'fr'));
+  const shown = open ? names : names.slice(0, limit);
   return (
-    <ul className="mt-4 flex flex-wrap gap-2" aria-label="Pays d'origine">
-      {names.map((nom) => <li key={nom} className="chip">{nom}</li>)}
+    <ul className={`flex flex-wrap gap-2 ${className}`} aria-label={label}>
+      {shown.map((nom) => <li key={nom} className={`chip ${chipClassName}`}>{nom}</li>)}
+      {names.length > shown.length && (
+        <li>
+          <button type="button" className="chip hover:text-foreground" onClick={() => setOpen(true)}>
+            + {names.length - shown.length} autres
+          </button>
+        </li>
+      )}
     </ul>
+  );
+}
+
+/** Légende de la carte de répartition */
+function RangeLegend ({ points, introduits = [] }) {
+  return (
+    <p className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-xs text-muted">
+      {points.length > 0 && (
+        <span className="inline-flex items-center gap-2">
+          <span className="h-2 w-2 rounded-full bg-accent-glow"/> Observations (GBIF) et localités
+        </span>
+      )}
+      <span className="inline-flex items-center gap-2">
+        <span className="h-2.5 w-3.5 rounded-sm border border-accent-glow/50 bg-accent/15"/> Pays d&apos;origine
+      </span>
+      {introduits.length > 0 && (
+        <span className="inline-flex items-center gap-2">
+          <span className="h-2.5 w-3.5 rounded-sm border border-warning/50 bg-warning/15"/> Pays d&apos;introduction
+        </span>
+      )}
+      <span className="inline-flex items-center gap-2">
+        <span className="h-0.5 w-4 rounded bg-[#3b8fc2]"/> Fleuves et lacs
+      </span>
+    </p>
   );
 }
 
@@ -72,10 +109,12 @@ export function ProfileSources ({ sources }) {
 }
 
 /**
- * Fiche descriptive d'un poisson, ou d'un invertébré qui a les mêmes champs : présentation scientifique, habitat
- * naturel avec carte, comportement, puis les sources (`withSources={false}` quand la page les place plus bas)
+ * Fiche descriptive d'un poisson, ou d'un invertébré ou d'une plante qui ont les mêmes champs : présentation
+ * scientifique, habitat naturel avec carte, comportement, puis les sources (`withSources={false}` quand la page les
+ * place plus bas). `habitatAside` remplace le texte d'habitat et la liste des pays à droite de la carte (plantes) ;
+ * sans `comportement`, le bloc n'est pas affiché.
  */
-export default function FishProfile ({ profil, nomScientifique, withSources = true }) {
+export default function FishProfile ({ profil, nomScientifique, withSources = true, habitatAside = null }) {
   if (!profil)
     return null;
 
@@ -120,27 +159,15 @@ export default function FishProfile ({ profil, nomScientifique, withSources = tr
 
         <Reveal>
           <Block icon={MapPinned} title="Habitat naturel" id="habitat-title">
-            <p className="mt-2 text-sm text-accent-glow">{profil.repartition}</p>
+            <p className="mt-2 text-sm text-accent-glow"><Italics text={profil.repartition}/></p>
             <div className="mt-6 grid gap-8 lg:grid-cols-[1.25fr_1fr]">
               <div>
                 {profil.pays.length > 0 ? (
                   <>
-                    <RangeMap points={profil.points} pays={profil.pays}
-                              label={`Carte de répartition : ${profil.repartition}`}/>
-                    <p className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-xs text-muted">
-                      {profil.points.length > 0 && (
-                        <span className="inline-flex items-center gap-2">
-                          <span className="h-2 w-2 rounded-full bg-accent-glow"/> Observations (GBIF) et localités
-                        </span>
-                      )}
-                      <span className="inline-flex items-center gap-2">
-                        <span className="h-2.5 w-3.5 rounded-sm border border-accent-glow/50 bg-accent/15"/> Pays d&apos;origine
-                      </span>
-                      <span className="inline-flex items-center gap-2">
-                        <span className="h-0.5 w-4 rounded bg-[#3b8fc2]"/> Fleuves et lacs
-                      </span>
-                    </p>
-                    <Countries codes={profil.pays}/>
+                    <RangeMap points={profil.points} pays={profil.pays} introduits={profil.introduits}
+                              label={`Carte de répartition : ${profil.repartition.replaceAll('*', '')}`}/>
+                    <RangeLegend points={profil.points} introduits={profil.introduits}/>
+                    {!habitatAside && <Countries codes={profil.pays}/>}
                   </>
                 ) : (
                   <div className="grid aspect-[720/440] place-items-center rounded-xl border border-dashed border-border
@@ -149,20 +176,24 @@ export default function FishProfile ({ profil, nomScientifique, withSources = tr
                   </div>
                 )}
               </div>
-              <div className="space-y-4 text-[0.95rem] leading-relaxed text-foreground/85">
-                <Prose text={profil.habitat}/>
-              </div>
+              {habitatAside ?? (
+                <div className="space-y-4 text-[0.95rem] leading-relaxed text-foreground/85">
+                  <Prose text={profil.habitat}/>
+                </div>
+              )}
             </div>
           </Block>
         </Reveal>
 
-        <Reveal>
-          <Block icon={Waves} title="Comportement" id="comportement-title">
-            <div className="mt-5 max-w-3xl space-y-4 text-[0.95rem] leading-relaxed text-foreground/85">
-              <Prose text={profil.comportement}/>
-            </div>
-          </Block>
-        </Reveal>
+        {profil.comportement && (
+          <Reveal>
+            <Block icon={Waves} title="Comportement" id="comportement-title">
+              <div className="mt-5 max-w-3xl space-y-4 text-[0.95rem] leading-relaxed text-foreground/85">
+                <Prose text={profil.comportement}/>
+              </div>
+            </Block>
+          </Reveal>
+        )}
 
         {withSources && <ProfileSources sources={profil.sources}/>}
       </div>

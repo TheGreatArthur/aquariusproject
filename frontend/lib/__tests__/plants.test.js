@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
 import {
-  difficultyTone, formatRange, lightLabel, matchesPlantSearch, plantImage, typesPresents,
+  difficultyTone, formatRange, lightLabel, matchesPlantSearch, plantImage, plantProfil, rangeFromKew, typesPresents,
 } from '@/lib/plants';
 
 const fougere = {
@@ -74,5 +74,48 @@ describe('typesPresents', () => {
     const plantes = [{ type: 'tige' }, { type: 'épiphyte' }, { type: 'tige' }, { type: 'mousse' }];
 
     expect(typesPresents(plantes)).toEqual(['épiphyte', 'mousse', 'tige']);
+  });
+});
+
+describe('plantProfil', () => {
+  const plante = {
+    ...fougere,
+    nom_valide: null,
+    auteur: '(Blume) Copel.',
+    ordre: 'Polypodiales',
+    uicn: 'LC',
+    origine: 'Asie du Sud-Est : rochers des ruisseaux',
+    presentation: 'Une fougère ; elle pousse sur le bois.',
+    pays: ['THA', 'VNM'],
+    introduits: [],
+    points: [[100.5, 13.7]],
+    sources: [{ nom: 'POWO (Kew)', url: 'https://powo.science.kew.org/taxon/x' }],
+  };
+
+  it('gives a plant the fields of a fish profile', () => {
+    const profil = plantProfil(plante);
+
+    expect(profil.classification).toBe('Polypodiales › Polypodiaceae');
+    expect(profil.repartition).toBe('Asie du Sud-Est\u00a0: rochers des ruisseaux');
+    expect(profil.presentation).toBe('Une fougère\u00a0; elle pousse sur le bois.');
+    expect([profil.pays, profil.introduits, profil.points, profil.uicn])
+      .toEqual([['THA', 'VNM'], [], [[100.5, 13.7]], 'LC']);
+  });
+
+  it('keeps the GBIF author only with the name used in aquaria', () => {
+    expect(plantProfil(plante).auteur).toBe('(Blume) Copel.');
+    // L'auteur relevé est celui du nom d'usage, pas celui du nom valide
+    expect(plantProfil({ ...plante, nom_valide: 'Leptochilus pteropus' }).auteur).toBeNull();
+  });
+
+  it('has an empty map without range data', () => {
+    const profil = plantProfil({ ...plante, pays: undefined, introduits: undefined, points: undefined });
+
+    expect([profil.pays, profil.introduits, profil.points]).toEqual([[], [], []]);
+  });
+
+  it('knows whether the countries come from Kew or from GBIF observations (mosses)', () => {
+    expect(rangeFromKew(plante)).toBe(true);
+    expect(rangeFromKew({ ...plante, sources: [{ nom: 'GBIF', url: 'https://www.gbif.org/species/1' }] })).toBe(false);
   });
 });
