@@ -6,6 +6,7 @@ import pytest
 from corrections import CORRECTIONS
 from invertebrates import load_invertebrates
 from normalize import COMPORTEMENTS, MODES_VIE
+from plants import PLANTS_DIR
 from profiles import load_occurrences, load_profiles, upsert_profiles, validate
 
 WORLD_MAP = Path(__file__).resolve().parents[2] / 'frontend' / 'public' / 'maps' / 'world-50m.json'
@@ -61,8 +62,10 @@ def test_versioned_profiles_use_countries_of_the_base_map():
 
 
 def test_occurrences_belong_to_a_profile_and_stay_in_its_bounding_box():
-    # Fiches des poissons et des invertébrés (même champ `emprise`)
+    # Fiches des poissons, des invertébrés et des plantes (même champ `emprise`)
     profiles = {**load_profiles(), **{name: row['profil'] for name, row in load_invertebrates(occurrences={}).items()}}
+    plants = (json.loads(path.read_text(encoding='utf-8')) for path in PLANTS_DIR.glob('*.json'))
+    profiles.update({plant['nom_scientifique']: plant for plant in plants})
 
     for name, points in load_occurrences().items():
         assert name in profiles

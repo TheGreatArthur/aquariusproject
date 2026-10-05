@@ -1,7 +1,8 @@
 """
 Points de la carte de répartition : observations géolocalisées GBIF dans l'aire d'origine de chaque espèce
 
-Pour chaque fiche de `data/profiles/` et chaque invertébré de `data/invertebrates/`, interroge l'API d'occurrences
+Pour chaque fiche de `data/profiles/`, chaque invertébré de `data/invertebrates/` et chaque plante de `data/plants/`
+(pays d'origine relevés par `tools/fetch_plants.py`), interroge l'API d'occurrences
 GBIF (spécimens de musées, observations, échantillons) limitée aux pays d'origine de la fiche, écarte les
 introductions déclarées, les points hors de l'`emprise` de la fiche et les points isolés (erreurs de
 géoréférencement probables), arrondit au dixième de degré et écrit `data/occurrences.json`.
@@ -9,6 +10,7 @@ géoréférencement probables), arrondit au dixième de degré et écrit `data/o
 Usage : venv/bin/python -m tools.build_occurrences [nom scientifique ...]
 """
 
+import hashlib
 import json
 import math
 import re
@@ -16,6 +18,8 @@ import sys
 import urllib.parse
 
 from invertebrates import INVERTEBRATES_DIR
+from plants import PLANTS_DIR, SOURCES_FILE, merge
+from tools.fetch_plants import gbif as gbif_plant
 from profiles import OCCURRENCES_FILE, PROFILES_DIR
 from tools.fetch_sources import CACHE_DIR, GBIF_SPECIES_RANKS, fetch, slug
 
@@ -48,7 +52,7 @@ def occurrences(key: int, countries: list[str]) -> list[tuple[float, float]]:
                   ('occurrenceStatus', 'PRESENT'), ('limit', PAGE), ('offset', page * PAGE)]
         params += [('country', c) for c in countries] + [('basisOfRecord', b) for b in BASIS]
         url = 'https://api.gbif.org/v1/occurrence/search?' + urllib.parse.urlencode(params)
-        _, body = fetch(url, f'gbif-occ-{key}-{"-".join(countries)}-{page}.json')
+        _, body = fetch(url, f'gbif-occ-{key}-{countries_key(countries)}-{page}.json')
         data = json.loads(body or '{}')
         for r in data.get('results', []):
             if str(r.get('establishmentMeans', '')).lower() in EXCLUDED_MEANS:
@@ -59,6 +63,13 @@ def occurrences(key: int, countries: list[str]) -> list[tuple[float, float]]:
         if data.get('endOfRecords', True):
             break
     return points
+
+
+def countries_key(countries: list[str]) -> str:
+    """ Pays d'une requête dans le nom du cache ; une longue liste (plante presque cosmopolite) est résumée par
+    une empreinte, sans quoi le nom de fichier dépasserait la limite du système """
+    joined = '-'.join(countries)
+    return joined if len(joined) <= 120 else hashlib.sha1(joined.encode()).hexdigest()[:12]
 
 
 def within(points: list[tuple[float, float]], emprise: list[float] | None) -> list[tuple[float, float]]:
@@ -94,11 +105,28 @@ def invertebrate_profiles() -> dict[str, dict]:
     return profiles
 
 
+def plant_profiles() -> dict[str, dict]:
+    """ Plantes : pays d'origine (fiche et données collectées) et taxon GBIF accepté ; une fiche peut limiter les
+    points à une `emprise` [ouest, sud, est, nord] """
+    collected = json.loads(SOURCES_FILE.read_text(encoding='utf-8'))
+    profiles = {}
+    for path in sorted(PLANTS_DIR.glob('*.json')):
+        fiche, sources = json.loads(path.read_text(encoding='utf-8')), collected.get(path.stem, {})
+        values = merge(fiche, sources)
+        key = sources.get('gbif', {}).get('taxon')
+        # La carte d'une variété ou d'un cultivar montre l'aire de son espèce : les points sont ceux de l'espèce
+        if values['taxon_aire']:
+            key = gbif_plant(values['taxon_aire'])[0].get('taxon') or key
+        profiles[values['nom_scientifique']] = {'pays': values['pays'], 'emprise': fiche.get('emprise'), 'gbif': key}
+    return profiles
+
+
 def main(names: list[str]) -> None:
     # Lecture directe (sans validation) : les points peuvent être générés avant la rédaction des textes
     profiles = {p['nom_scientifique']: p for p in
                 (json.loads(f.read_text(encoding='utf-8')) for f in sorted(PROFILES_DIR.glob('*.json')))}
     profiles.update(invertebrate_profiles())
+    profiles.update(plant_profiles())
     existing = json.loads(OCCURRENCES_FILE.read_text(encoding='utf-8')) if OCCURRENCES_FILE.exists() else {}
     iso2 = iso2_codes()
 

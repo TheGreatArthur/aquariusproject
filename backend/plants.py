@@ -3,9 +3,11 @@ Plantes d'aquarium : fiches rédigées (`data/plants/<plante>.json`) et données
 
 Une fiche donne le nom commun, l'origine et les textes en français, les pages sources et les photos retenues ;
 `tools/fetch_plants.py` en tire les paramètres de culture (Flowgrow), la hauteur en aquarium et le besoin en CO2
-(Tropica), la taxonomie actuelle (GBIF) et les crédits des photos. Une fiche peut compléter ou corriger une
-valeur collectée dans `valeurs`, en citant sa source dans `sources`. Les plantes sont chargées en base par
-l'import Excel, ou seules avec `python plants.py` ; une fiche supprimée retire la plante de la base.
+(Tropica), la taxonomie actuelle et le statut UICN (GBIF), les pays d'origine et d'introduction (WCVP de Kew) et
+les crédits des photos. Les points de la carte de répartition viennent de `data/occurrences.json`, comme pour les
+poissons. Une fiche peut compléter ou corriger une valeur collectée dans `valeurs`, en citant sa source dans
+`sources`. Les plantes sont chargées en base par l'import Excel, ou seules avec `python plants.py` ; une fiche
+supprimée retire la plante de la base.
 """
 
 import json
@@ -15,6 +17,7 @@ from sqlalchemy import delete, select
 from sqlalchemy.orm import Session
 
 from models import Plante
+from profiles import ISO3, load_occurrences
 
 DATA_DIR = Path(__file__).resolve().parent / 'data'
 PLANTS_DIR = DATA_DIR / 'plants'
@@ -25,6 +28,7 @@ DIFFICULTES = ('très facile', 'facile', 'moyenne', 'difficile', 'très difficil
 CROISSANCES = ('très lente', 'lente', 'moyenne', 'rapide', 'très rapide')
 LUMIERES = ('très faible', 'faible', 'moyenne', 'forte', 'très forte')
 CO2 = ('faible', 'moyen', 'élevé')
+UICN = ('LC', 'NT', 'VU', 'EN', 'CR', 'EW', 'EX', 'DD', 'NE')
 
 # Champs repris de Flowgrow tels quels
 FLOWGROW_FIELDS = (
@@ -38,9 +42,9 @@ REQUIRED = ('famille', 'type', 'difficulte', 'croissance', 'lumiere_mini', 'lumi
             'temp_mini', 'temp_maxi')
 
 
-def merge(fiche: dict, collected: dict) -> dict:
-    """ Valeurs d'une plante pour la base : fiche rédigée + données collectées """
-    flowgrow, tropica, gbif = (collected.get(k, {}) for k in ('flowgrow', 'tropica', 'gbif'))
+def merge(fiche: dict, collected: dict, points: list | None = None) -> dict:
+    """ Valeurs d'une plante pour la base : fiche rédigée + données collectées (+ points de la carte) """
+    flowgrow, tropica, gbif, aire = (collected.get(k, {}) for k in ('flowgrow', 'tropica', 'gbif', 'aire'))
     values = {field: flowgrow.get(field) for field in FLOWGROW_FIELDS}
     for field in ('positions', 'usages', 'multiplication'):
         values[field] = values[field] or []
@@ -53,18 +57,28 @@ def merge(fiche: dict, collected: dict) -> dict:
     values['ordre'] = gbif.get('ordre') or flowgrow.get('ordre')
     values['auteur'] = gbif.get('auteur')
     values['nom_valide'] = gbif.get('nom_valide')
+    values['uicn'] = gbif.get('uicn')
+    # Aire de répartition naturelle : pays d'origine, pays où l'homme l'a introduite, observations
+    values['pays'] = aire.get('natif', [])
+    values['introduits'] = aire.get('introduit', [])
+    values['points'] = points or []
 
     values['nom_scientifique'] = fiche['nom_scientifique'].strip()
     for field in TEXT_FIELDS:
         values[field] = str(fiche.get(field) or '').strip()
     values['images'] = collected.get('photos', [])
 
-    sources = [{'nom': nom, 'url': page['url']}
-               for nom, page in (('Flowgrow', flowgrow), ('Tropica', tropica), ('GBIF', gbif)) if page.get('url')]
+    powo = aire if aire.get('source') == 'POWO' else {}
+    sources = [{'nom': nom, 'url': page['url']} for nom, page in (
+        ('Flowgrow', flowgrow), ('Tropica', tropica), ('GBIF', gbif), ('POWO (Kew)', powo)) if page.get('url')]
     sources += [s for s in fiche.get('sources', []) if s.get('url') not in {x['url'] for x in sources}]
     values['sources'] = sources
 
     values.update(fiche.get('valeurs', {}))
+    # Taxon de la WCVP dont l'aire est montrée, quand ce n'est ni le nom de la fiche ni son nom valide (l'espèce
+    # d'une variété ou d'un cultivar, un nom accepté par Kew mais pas par GBIF)
+    nom_aire = aire.get('nom') if 'pays' not in fiche.get('valeurs', {}) else None
+    values['taxon_aire'] = nom_aire if nom_aire not in (values['nom_scientifique'], values['nom_valide']) else None
     return values
 
 
@@ -82,6 +96,12 @@ def validate(values: dict) -> list[str]:
             errors.append(f'{field} inconnu : {values[field]!r}')
     if values.get('co2') is not None and values['co2'] not in CO2:
         errors.append(f"co2 inconnu : {values['co2']!r}")
+    if values.get('uicn') is not None and values['uicn'] not in UICN:
+        errors.append(f"uicn inconnu : {values['uicn']!r}")
+    for field in ('pays', 'introduits'):
+        codes = values.get(field, [])
+        if not isinstance(codes, list) or not all(isinstance(c, str) and ISO3.match(c) for c in codes):
+            errors.append(f'{field} : liste de codes ISO alpha-3 attendue')
     if values.get('lumiere_mini') in LUMIERES and values.get('lumiere_maxi') in LUMIERES \
             and LUMIERES.index(values['lumiere_mini']) > LUMIERES.index(values['lumiere_maxi']):
         errors.append('lumiere : minimum supérieur au maximum')
@@ -108,12 +128,15 @@ def validate(values: dict) -> list[str]:
     return errors
 
 
-def load_plants(directory: Path = PLANTS_DIR, sources_file: Path = SOURCES_FILE) -> dict[str, dict]:
+def load_plants(directory: Path = PLANTS_DIR, sources_file: Path = SOURCES_FILE,
+                occurrences: dict | None = None) -> dict[str, dict]:
     """ Plantes indexées par nom scientifique ; lève ValueError si une plante est invalide """
     collected = json.loads(sources_file.read_text(encoding='utf-8')) if sources_file.exists() else {}
+    occurrences = load_occurrences() if occurrences is None else occurrences
     plants = {}
     for path in sorted(directory.glob('*.json')):
-        values = merge(json.loads(path.read_text(encoding='utf-8')), collected.get(path.stem, {}))
+        fiche = json.loads(path.read_text(encoding='utf-8'))
+        values = merge(fiche, collected.get(path.stem, {}), occurrences.get(fiche['nom_scientifique']))
         if errors := validate(values):
             raise ValueError(f'{path.name} : ' + ', '.join(errors))
         if values['nom_scientifique'] in plants:

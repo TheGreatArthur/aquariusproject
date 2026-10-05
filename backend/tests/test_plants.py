@@ -7,7 +7,7 @@ from sqlalchemy.orm import Session
 
 from models import Base, Plante
 from plants import load_plants, merge, upsert_plants, validate
-from tools.fetch_plants import FREE_LICENCE, PHOTOS_DIR
+from tools.fetch_plants import FREE_LICENCE, PHOTOS_DIR, WORLD_MAP
 
 FICHE = dict(
     nom_scientifique='Anubias barteri var. nana',
@@ -43,6 +43,35 @@ def test_merge_combines_the_sources():
     assert (values['hauteur_mini'], values['hauteur_maxi'], values['co2']) == (5, 15, 'faible')
     assert values['auteur'] == '(Engl.) Crusio' and values['nom_valide'] is None
     assert [s['nom'] for s in values['sources']] == ['Flowgrow', 'Tropica', 'GBIF', 'Wikipédia']
+    # Sans aire collectée ni points, la carte n'a rien à montrer
+    assert (values['pays'], values['introduits'], values['points'], values['uicn']) == ([], [], [], None)
+
+
+def test_merge_adds_the_native_range_and_the_map_points():
+    aire = dict(source='POWO', url='https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:85520-1',
+                natif=['CMR', 'NGA'], introduit=['USA'])
+    values = merge(FICHE, {**COLLECTED, 'aire': aire, 'gbif': {**COLLECTED['gbif'], 'uicn': 'LC'}}, [[9.5, 4.1]])
+
+    assert validate(values) == []
+    assert (values['pays'], values['introduits'], values['uicn']) == (['CMR', 'NGA'], ['USA'], 'LC')
+    assert values['points'] == [[9.5, 4.1]]
+    assert values['sources'][3] == {'nom': 'POWO (Kew)', 'url': aire['url']}
+    assert values['taxon_aire'] is None
+
+
+def test_range_of_the_species_is_named_for_a_variety():
+    aire = dict(source='POWO', url='https://powo.science.kew.org/x', nom='Anubias barteri', natif=['CMR'], introduit=[])
+
+    # L'Anubias nain n'a pas d'aire propre dans la WCVP : la carte montre celle de l'espèce, et la page le dit
+    assert merge(FICHE, {**COLLECTED, 'aire': aire})['taxon_aire'] == 'Anubias barteri'
+    assert merge({**FICHE, 'valeurs': {'pays': ['CMR']}}, {**COLLECTED, 'aire': aire})['taxon_aire'] is None
+
+
+def test_moss_range_from_gbif_observations_is_not_a_source_page():
+    values = merge(FICHE, {**COLLECTED, 'aire': dict(source='GBIF', url='https://www.gbif.org/species/1',
+                                                     natif=['VNM'], introduit=[])})
+
+    assert values['pays'] == ['VNM'] and 'POWO (Kew)' not in [s['nom'] for s in values['sources']]
 
 
 def test_merge_prefers_gbif_taxonomy_and_falls_back_to_flowgrow():
@@ -74,6 +103,9 @@ def test_fiche_values_complete_or_correct_the_collected_data():
     ({'type': 'arbre'}, "type inconnu : 'arbre'"),
     ({'lumiere_mini': 'forte', 'lumiere_maxi': 'faible'}, 'lumiere : minimum supérieur'),
     ({'co2': 'beaucoup'}, 'co2 inconnu'),
+    ({'uicn': 'XX'}, 'uicn inconnu'),
+    ({'pays': ['Cameroun']}, 'pays : liste de codes ISO'),
+    ({'introduits': None}, 'introduits : liste de codes ISO'),
     ({'images': []}, 'images'),
     ({'images': [{'fichier': 'a.jpg', 'auteur': '', 'licence': 'CC0', 'source': 'https://x'}]}, 'images'),
     ({'sources': [{'nom': 'Flowgrow', 'url': 'http://flowgrow.de'}]}, 'sources'),
@@ -106,6 +138,18 @@ def test_versioned_plants_have_three_free_photos_on_disk():
         for image in plant['images']:
             assert (PHOTOS_DIR / image['fichier']).exists(), image['fichier']
             assert FREE_LICENCE.match(image['licence']), image
+
+
+def test_versioned_plants_have_a_native_range_on_the_world_map():
+    topo = json.loads(WORLD_MAP.read_text(encoding='utf-8'))
+    codes = {g['properties']['iso'] for g in topo['objects']['pays']['geometries']}
+    plants = load_plants()
+
+    without_range = sorted(name for name, p in plants.items() if not p['pays'])
+    assert without_range == [], without_range
+    for name, plant in plants.items():
+        assert set(plant['pays'] + plant['introduits']) <= codes, name
+        assert not set(plant['pays']) & set(plant['introduits']), name
 
 
 def test_upsert_creates_updates_and_removes_plants():
