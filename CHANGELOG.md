@@ -6,6 +6,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- **End-to-end tests** (Playwright, `npm run e2e`, own CI job): catalogue → species page → simulator → alerts, on a
+  database built from the versioned data files.
+- **SEO**: `sitemap.xml` with every species page, `robots.txt`, Open Graph and Twitter cards (site image, and each
+  species' photo on its page), canonical URL from `NEXT_PUBLIC_SITE_URL`.
 - **Simulator for fish, plants and invertebrates** ([ADR 0014](docs/adr/0014-simulator-fish-plants-invertebrates.md)):
   one `/simulation` page (the old `/simulation/starting` redirects to it) with the tank and its water on top (typical
   waters in one click), one searchable list with a tab per catalogue and the tank beside it, plus a tank bar at the
@@ -88,6 +92,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.env.example` for the front end; backend config driven by `AQUARIUS_DSN` / `AQUARIUS_EXCEL_FILE`.
 
 ### Changed
+- `.DS_Store` files are no longer tracked; ADR 0001 describes the current stack.
 - Range bars write French decimals (6,5) like the course pages, and can show an ideal band inside the tolerated
   range. The gallery, range bar and prose components moved out of `components/fish/` to be shared.
 - The header keeps its five links on one line between 768 and 1024 px (the Instagram icon shows from 1024 px).

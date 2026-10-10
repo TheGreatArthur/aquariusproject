@@ -94,7 +94,7 @@ The data is maintained in an Excel workbook and loaded with `make import`. See t
 - **Front end:** Next.js 16, React 19, Tailwind CSS, Framer Motion, lucide-react, SWR,
   react-hook-form, EmailJS
 - **Back end:** Python 3.11, Flask, SQLAlchemy 2, Alembic, openpyxl; BeautifulSoup and Pillow for the data tools
-- **Quality:** pytest + pytest-cov, ruff, ESLint, GitHub Actions
+- **Quality:** pytest + pytest-cov, ruff, Vitest, ESLint, Playwright, GitHub Actions
 
 ## Quick start
 
@@ -134,6 +134,7 @@ Run `make help` for all commands. Configuration:
 | `AQUARIUS_EXCEL_FILE` | backend | `backend/db.xlsx` |
 | `BACKEND_URL` | `frontend/.env.local` | `http://localhost:5001` |
 | `NEXT_PUBLIC_EMAILJS_*` | `frontend/.env.local` | empty (contact form disabled) |
+| `NEXT_PUBLIC_SITE_URL` | front-end build | `http://localhost:3000` (canonical URL of the sitemap and share images) |
 
 ## Tests
 
@@ -141,7 +142,12 @@ Run `make help` for all commands. Configuration:
 make test   # backend (pytest) and front-end (Vitest) tests
 make lint   # ruff + ESLint
 make build  # production build of the front end
+cd frontend && npm run e2e  # browser journeys (Playwright, first run: npx playwright install chromium)
 ```
+
+The end-to-end tests build their own database from the versioned data files (no workbook needed), start the API
+on port 5055 and a production build of the front end on port 3055, then follow a visitor from the catalogues to a
+species page and through the simulator and its alerts.
 
 CI runs the same checks on every pull request and on pushes to `main`.
 
@@ -165,7 +171,6 @@ CI runs the same checks on every pull request and on pushes to `main`.
 ## Roadmap & known limitations
 
 - [ ] Deploy a public demo
-- [ ] End-to-end tests in a browser (the compatibility rules and search helpers have unit tests)
 - The UI is in French only, dark theme only.
 - Compatibility rules run in the browser and are indicative, not expert advice.
 
