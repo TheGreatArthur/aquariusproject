@@ -3,12 +3,14 @@
  */
 
 import { plageCourant } from '../levels';
-import { issue, paires, plageFr } from '../utils';
+import { translator } from '@/lib/i18n';
+
+import { formatRange, issue, paires } from '../utils';
 
 export const PARAMETRES = [
-  { key: 'ph', label: 'pH', unit: '' },
-  { key: 'gh', label: 'GH', unit: '°' },
-  { key: 'temp', label: 'température', unit: ' °C' },
+  { key: 'ph', label: 'pH', en: 'pH', unit: '' },
+  { key: 'gh', label: 'GH', en: 'GH', unit: '°' },
+  { key: 'temp', label: 'température', en: 'temperature', unit: ' °C' },
 ];
 
 // Espèces dont la fiche donne ce paramètre (pas de GH pour les plantes ni pour la plupart des invertébrés)
@@ -32,50 +34,57 @@ export function commonRanges (panier) {
   }));
 }
 
-const plage = (p, key, unit) => plageFr(p[`${key}_mini`], p[`${key}_maxi`], unit);
+const plage = (p, key, unit, locale) => formatRange(p[`${key}_mini`], p[`${key}_maxi`], unit, locale);
 
 /** 1. Les espèces doivent partager une plage commune de pH, de GH et de température */
-export function parametres (panier) {
+export function parametres (panier, { locale } = {}) {
+  const { t } = translator(locale);
   const ranges = commonRanges(panier);
   if (!ranges || panier.length < 2)
     return [];
-  return PARAMETRES.filter(({ key }) => ranges[key] === null).map(({ key, label, unit }) => {
+  return PARAMETRES.filter(({ key }) => ranges[key] === null).map(({ key, label, en, unit }) => {
     // Les deux espèces responsables : le minimum le plus haut et le maximum le plus bas
     const haut = avec(panier, key).reduce((a, b) => (b[`${key}_mini`] > a[`${key}_mini`] ? b : a));
     const bas = avec(panier, key).reduce((a, b) => (b[`${key}_maxi`] < a[`${key}_maxi`] ? b : a));
     return issue('parametres', 'error',
-      `Pas de ${label} commun : ${haut.nom_commun} (${plage(haut, key, unit)}) et ${bas.nom_commun} `
-      + `(${plage(bas, key, unit)}) ne peuvent pas vivre dans la même eau.`,
+      t(`Pas de ${label} commun : ${haut.nom_commun} (${plage(haut, key, unit)}) et ${bas.nom_commun} `
+        + `(${plage(bas, key, unit)}) ne peuvent pas vivre dans la même eau.`,
+      `No common ${en}: ${haut.nom_commun} (${plage(haut, key, unit, locale)}) and ${bas.nom_commun} `
+        + `(${plage(bas, key, unit, locale)}) cannot live in the same water.`),
       [haut.id, bas.id]);
   });
 }
 
 /** 0. Espèces qui ne supportent pas l'eau ou le volume indiqués pour le bac */
-export function votreEau (panier, { litrage, pH, gH, tempMoyenne } = {}) {
+export function votreEau (panier, { litrage, pH, gH, tempMoyenne, locale } = {}) {
+  const { t } = translator(locale);
   const eau = { ph: pH, gh: gH, temp: tempMoyenne };
   return panier.flatMap((p) => {
     const hors = PARAMETRES
       .filter(({ key }) => eau[key] != null && p[`${key}_mini`] != null
         && (eau[key] < p[`${key}_mini`] || eau[key] > p[`${key}_maxi`]))
-      .map(({ key, label, unit }) => `${label} ${plage(p, key, unit)}`);
+      .map(({ key, label, en, unit }) => `${t(label, en)} ${plage(p, key, unit, locale)}`);
     if (litrage && p.litrage_mini > litrage)
-      hors.push(`bac d'au moins ${p.litrage_mini} L`);
+      hors.push(t(`bac d'au moins ${p.litrage_mini} L`, `tank of at least ${p.litrage_mini} L`));
     return hors.length
-      ? [issue('eau', 'error', `${p.nom_commun} ne convient pas à votre bac (${hors.join(', ')}).`, [p.id])]
+      ? [issue('eau', 'error', t(`${p.nom_commun} ne convient pas à votre bac (${hors.join(', ')}).`,
+        `${p.nom_commun} does not suit your tank (${hors.join(', ')}).`), [p.id])]
       : [];
   });
 }
 
 /** 5. Deux espèces dont les courants préférés sont écartés d'au moins 2 niveaux */
-export function courant (panier) {
+export function courant (panier, { locale } = {}) {
+  const { t, term } = translator(locale);
   return paires(panier).flatMap(([a, b]) => {
     const pa = plageCourant(a);
     const pb = plageCourant(b);
     if (!pa || !pb || Math.max(pa[0], pb[0]) - Math.min(pa[1], pb[1]) < 2)
       return [];
-    const nom = (p) => `${p.nom_commun} (${p.nom_courant})`;
+    const nom = (p) => `${p.nom_commun} (${term(p.nom_courant)})`;
     return [issue('courant', 'warning',
-      `Courant incompatible : ${nom(a)} et ${nom(b)} n'ont pas besoin du même brassage.`,
+      t(`Courant incompatible : ${nom(a)} et ${nom(b)} n'ont pas besoin du même brassage.`,
+        `Incompatible current: ${nom(a)} and ${nom(b)} need different water flow.`),
       [a.id, b.id])];
   });
 }

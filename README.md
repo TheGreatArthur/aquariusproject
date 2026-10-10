@@ -33,8 +33,10 @@
   ([ADR 0010](docs/adr/0010-home-globe-freshwater-ecoregions.md)).
 - **Instant search** by common name, scientific name, family, genus or behaviour (accents ignored), plus a
   filter by family.
-- **Modern, responsive UI** — dark theme with Tailwind CSS, subtle scroll animations,
-  respecting *reduced motion*.
+- **Modern, responsive UI** — dark and light themes (following the system until you pick one) with Tailwind CSS,
+  subtle scroll animations, respecting *reduced motion*.
+- **French and English** — the interface, the simulator and its alerts in English under `/en`; species texts and the
+  practical guide stay in French ([ADR 0015](docs/adr/0015-english-version-and-light-theme.md)).
 - **Family showcase** on the home page linking to each family's fish.
 - **Tank simulator** — enter your tank volume and water (or pick a typical water), then add fish, plants and
   invertebrates from one searchable list; the tank is checked by [23 compatibility rules](docs/compatibility-rules.md)
@@ -167,11 +169,12 @@ CI runs the same checks on every pull request and on pushes to `main`.
 - [0012 — Invertebrates stored and served like fish](docs/adr/0012-invertebrates-like-fish.md)
 - [0013 — Plant pages built like fish pages, with a native range map](docs/adr/0013-plants-like-fish-native-range.md)
 - [0014 — One simulator for fish, plants and invertebrates](docs/adr/0014-simulator-fish-plants-invertebrates.md)
+- [0015 — English version under /en and a light theme](docs/adr/0015-english-version-and-light-theme.md)
 
 ## Roadmap & known limitations
 
 - [ ] Deploy a public demo
-- The UI is in French only, dark theme only.
+- In English, species names and texts and the practical guide are still in French.
 - Compatibility rules run in the browser and are indicative, not expert advice.
 
 ## Credits & license

@@ -2,16 +2,18 @@
 
 import useSWR from 'swr';
 
+import { useI18n } from '@/components/I18nProvider';
 import { RULES } from '@/lib/compat';
 
 export default function HomeStats () {
+  const { t } = useI18n();
   const { data: poissons } = useSWR('/api/poissons');
   const { data: familles } = useSWR('/api/poissons/familles');
 
   const stats = [
-    { value: poissons?.poissons.length, label: 'espèces référencées' },
-    { value: familles?.familles.length, label: 'familles' },
-    { value: RULES.length, label: 'règles de compatibilité' },
+    { value: poissons?.poissons.length, label: t('espèces référencées', 'species listed') },
+    { value: familles?.familles.length, label: t('familles', 'families') },
+    { value: RULES.length, label: t('règles de compatibilité', 'compatibility rules') },
   ];
 
   return (

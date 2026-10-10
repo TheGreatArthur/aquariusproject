@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import useSWR from 'swr';
 import { ArrowLeft, Gauge, Ruler, Sun, Thermometer, Wind } from 'lucide-react';
 
+import { useI18n } from '@/components/I18nProvider';
 import PhotoGallery from '@/components/PhotoGallery';
 import DifficultyBadge from '@/components/plants/DifficultyBadge';
 import PlantProfile from '@/components/plants/PlantProfile';
@@ -25,36 +26,39 @@ function Stat ({ icon: Icon, label, value }) {
 }
 
 function Row ({ label, children }) {
+  const { t } = useI18n();
   return (
     <div className="flex items-baseline justify-between gap-4 py-3">
       <dt className="shrink-0 text-sm text-muted">{label}</dt>
-      <dd className="text-right text-sm font-medium first-letter:uppercase">{children || 'Non renseigné'}</dd>
+      <dd className="text-right text-sm font-medium first-letter:uppercase">{children || t('Non renseigné', 'Not known')}</dd>
     </div>
   );
 }
 
-const liste = (valeurs) => valeurs?.join(', ');
+const liste = (valeurs, term) => valeurs?.map(term).join(', ');
 
 /** Plage de valeurs de l'eau, ou mention de la valeur absente des sources */
 function Water ({ label, min, max, ...scale }) {
+  const { t } = useI18n();
   if (min == null)
-    return <p className="text-sm text-muted">{label} : non renseigné par les sources</p>;
+    return <p className="text-sm text-muted">{label}{t(' : non renseigné par les sources', ': not given by the sources')}</p>;
   return <RangeBar label={label} min={min} max={max} {...scale}/>;
 }
 
 export default function Plante ({ params }) {
   const { id } = use(params);
   const router = useRouter();
+  const { t, href, term, locale } = useI18n();
   const { data, error, isLoading } = useSWR(`/api/plantes/${id}`);
 
   // Ouverte depuis un lien partagé, la fiche n'a pas de page précédente dans le site : retour au catalogue
-  const retour = () => (hasPreviousPage() ? router.back() : router.push('/plantes'));
+  const retour = () => (hasPreviousPage() ? router.back() : router.push(href('/plantes')));
 
   if (error)
     return (
       <div className="container pt-40 text-center">
-        <h1 className="text-3xl font-semibold">Plante introuvable</h1>
-        <Link href="/plantes" className="btn-ghost mt-6">Retour aux plantes</Link>
+        <h1 className="text-3xl font-semibold">{t('Plante introuvable', 'Plant not found')}</h1>
+        <Link href={href('/plantes')} className="btn-ghost mt-6">{t('Retour aux plantes', 'Back to the plants')}</Link>
       </div>
     );
 
@@ -76,7 +80,7 @@ export default function Plante ({ params }) {
     <div className="container pt-28">
       <button type="button" onClick={retour}
               className="inline-flex items-center gap-2 text-sm text-muted transition hover:text-foreground">
-        <ArrowLeft className="h-4 w-4"/> Retour
+        <ArrowLeft className="h-4 w-4"/> {t('Retour', 'Back')}
       </button>
 
       <div className="mt-6 grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
@@ -86,8 +90,8 @@ export default function Plante ({ params }) {
         </Reveal>
 
         <Reveal delay={0.08}>
-          <Link href={`/plantes?type=${encodeURIComponent(data.type)}`} className="eyebrow hover:text-accent-glow">
-            {TYPES[data.type]?.label} · {data.famille}
+          <Link href={href(`/plantes?type=${encodeURIComponent(data.type)}`)} className="eyebrow hover:text-accent-glow">
+            {t(TYPES[data.type]?.label, TYPES[data.type]?.en)} · {data.famille}
           </Link>
           {sansNomCommun ? (
             <h1 className="mt-3 text-4xl font-semibold italic sm:text-5xl">{data.nom_scientifique}</h1>
@@ -103,39 +107,44 @@ export default function Plante ({ params }) {
 
           <div className="mt-5 flex flex-wrap gap-2">
             <DifficultyBadge difficulte={data.difficulte}/>
-            {data.co2 && <span className="chip !inline-block">Croissance {data.croissance}</span>}
+            {data.co2 && <span className="chip !inline-block">{t(`Croissance ${data.croissance}`, `Growth: ${term(data.croissance)}`)}</span>}
           </div>
 
           <div className="mt-8 grid grid-cols-2 gap-3">
-            <Stat icon={Ruler} label="Hauteur en aquarium" value={formatRange(data.hauteur_mini, data.hauteur_maxi, 'cm')}/>
-            <Stat icon={Sun} label="Lumière" value={lightLabel(data.lumiere_mini, data.lumiere_maxi)}/>
+            <Stat icon={Ruler} label={t('Hauteur en aquarium', 'Height in the aquarium')}
+                  value={formatRange(data.hauteur_mini, data.hauteur_maxi, 'cm', locale)}/>
+            <Stat icon={Sun} label={t('Lumière', 'Light')} value={lightLabel(data.lumiere_mini, data.lumiere_maxi, locale)}/>
             {/* Seul Tropica classe le besoin en CO₂ : sans lui, la vitesse de croissance prend sa place */}
             {data.co2
-              ? <Stat icon={Wind} label="Besoin en CO₂" value={data.co2}/>
-              : <Stat icon={Gauge} label="Croissance" value={data.croissance}/>}
+              ? <Stat icon={Wind} label={t('Besoin en CO₂', 'CO₂ needs')} value={term(data.co2)}/>
+              : <Stat icon={Gauge} label={t('Croissance', 'Growth')} value={term(data.croissance)}/>}
             {data.temp_opti_mini != null
-              ? <Stat icon={Thermometer} label="Température idéale"
-                      value={formatRange(data.temp_opti_mini, data.temp_opti_maxi, '°C')}/>
-              : <Stat icon={Thermometer} label="Température supportée"
-                      value={formatRange(data.temp_mini, data.temp_maxi, '°C')}/>}
+              ? <Stat icon={Thermometer} label={t('Température idéale', 'Ideal temperature')}
+                      value={formatRange(data.temp_opti_mini, data.temp_opti_maxi, '°C', locale)}/>
+              : <Stat icon={Thermometer} label={t('Température supportée', 'Tolerated temperature')}
+                      value={formatRange(data.temp_mini, data.temp_maxi, '°C', locale)}/>}
           </div>
 
           <section className="card mt-8 space-y-6 p-6" aria-labelledby="eau-title">
             <div className="flex items-baseline justify-between gap-3">
-              <h2 id="eau-title" className="text-lg font-semibold">Paramètres de l&apos;eau</h2>
-              <Link href="/cours/parametres-eau" className="text-xs text-muted hover:text-accent-glow">Comprendre ces valeurs</Link>
+              <h2 id="eau-title" className="text-lg font-semibold">{t('Paramètres de l\'eau', 'Water parameters')}</h2>
+              <Link href={href('/cours/parametres-eau')} className="text-xs text-muted hover:text-accent-glow">
+                {t('Comprendre ces valeurs', 'Understand these values')}
+              </Link>
             </div>
             <RangeBar label="pH" min={data.ph_mini} max={data.ph_maxi} scaleMin={4} scaleMax={9}/>
-            <Water label="Dureté carbonatée (KH)" min={data.kh_mini} max={data.kh_maxi} scaleMin={0} scaleMax={25} unit="°"/>
-            <RangeBar label="Température" min={data.temp_mini} max={data.temp_maxi} scaleMin={0} scaleMax={35} unit="°C"
+            <Water label={t('Dureté carbonatée (KH)', 'Carbonate hardness (KH)')} min={data.kh_mini} max={data.kh_maxi} scaleMin={0} scaleMax={25} unit="°"/>
+            <RangeBar label={t('Température', 'Temperature')} min={data.temp_mini} max={data.temp_maxi} scaleMin={0} scaleMax={35} unit="°C"
                       optiMin={data.temp_opti_mini} optiMax={data.temp_opti_maxi}/>
           </section>
 
           <dl className="mt-8 divide-y divide-border/70 border-y border-border/70">
-            <Row label="Emplacement">{liste(data.positions)}</Row>
-            <Row label="Multiplication">{liste(data.multiplication)}</Row>
-            {data.usages.length > 0 && <Row label="Atouts">{liste(data.usages)}</Row>}
-            <Row label="Culture hors de l'eau">{data.emergee == null ? null : data.emergee ? 'possible' : 'non'}</Row>
+            <Row label={t('Emplacement', 'Position')}>{liste(data.positions, term)}</Row>
+            <Row label={t('Multiplication', 'Propagation')}>{liste(data.multiplication, term)}</Row>
+            {data.usages.length > 0 && <Row label={t('Atouts', 'Uses')}>{liste(data.usages, term)}</Row>}
+            <Row label={t('Culture hors de l\'eau', 'Grows emersed')}>
+              {data.emergee == null ? null : data.emergee ? t('possible', 'yes') : t('non', 'no')}
+            </Row>
           </dl>
         </Reveal>
       </div>

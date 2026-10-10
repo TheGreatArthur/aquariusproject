@@ -1,10 +1,11 @@
-const nombre = new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 1 });
+import { useI18n } from '@/components/I18nProvider';
 
 /**
  * Plage de tolérance (min–max) positionnée sur une échelle de référence ; la plage optimale facultative
  * (`optiMin`–`optiMax`) est tracée plus franchement à l'intérieur
  */
 export default function RangeBar ({ label, min, max, scaleMin, scaleMax, unit = '', optiMin, optiMax }) {
+  const { t, intl } = useI18n();
   if (min == null || max == null)
     return null;
 
@@ -12,7 +13,7 @@ export default function RangeBar ({ label, min, max, scaleMin, scaleMax, unit = 
   const left = clamp(min);
   const width = Math.max(clamp(max) - left, 2);
   const optimum = optiMin != null && optiMax != null;
-  const fmt = (v) => nombre.format(v);
+  const fmt = (v) => v.toLocaleString(intl, { maximumFractionDigits: 1 });
 
   return (
     <div>
@@ -20,12 +21,14 @@ export default function RangeBar ({ label, min, max, scaleMin, scaleMax, unit = 
         <span className="text-muted">{label}</span>
         <span className="font-display font-medium tabular-nums text-foreground">
           {fmt(min)} – {fmt(max)}{unit}
-          {optimum && <span className="ml-2 font-sans text-xs font-normal text-muted">idéal {fmt(optiMin)}–{fmt(optiMax)}{unit}</span>}
+          {optimum && <span className="ml-2 font-sans text-xs font-normal text-muted">{t('idéal', 'ideal')} {fmt(optiMin)}–{fmt(optiMax)}{unit}</span>}
         </span>
       </div>
       <div className="relative mt-2 h-2 rounded-full bg-surface-elevated" role="img"
-           aria-label={`${label} : de ${fmt(min)} à ${fmt(max)}${unit}`
-             + (optimum ? `, idéal de ${fmt(optiMin)} à ${fmt(optiMax)}${unit}` : '')}>
+           aria-label={t(`${label} : de ${fmt(min)} à ${fmt(max)}${unit}`
+             + (optimum ? `, idéal de ${fmt(optiMin)} à ${fmt(optiMax)}${unit}` : ''),
+           `${label}: ${fmt(min)} to ${fmt(max)}${unit}`
+             + (optimum ? `, ideal ${fmt(optiMin)} to ${fmt(optiMax)}${unit}` : ''))}>
         <div
           className={optimum ? 'absolute inset-y-0 rounded-full bg-accent/30' : 'absolute inset-y-0 rounded-full bg-accent'}
           style={{ left: `${left}%`, width: `${width}%` }}

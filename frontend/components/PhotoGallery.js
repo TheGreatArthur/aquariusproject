@@ -4,11 +4,14 @@ import { useState } from 'react';
 import Image from 'next/image';
 import clsx from 'clsx';
 
+import { useI18n } from '@/components/I18nProvider';
+
 /**
  * Photo principale et vignettes ; `credits` (facultatif, dans l'ordre des photos) affiche l'auteur et la licence
  * de la photo visible : { auteur, licence, licence_url, source }
  */
 export default function PhotoGallery ({ images, alt, credits }) {
+  const { t } = useI18n();
   const [active, setActive] = useState(0);
   const credit = credits?.[active];
 
@@ -28,7 +31,7 @@ export default function PhotoGallery ({ images, alt, credits }) {
 
       {credit && (
         <p className="mt-2 text-xs text-muted">
-          Photo : <a href={credit.source} target="_blank" rel="noopener noreferrer"
+          {t('Photo :', 'Photo:')} <a href={credit.source} target="_blank" rel="noopener noreferrer"
                      className="underline-offset-4 hover:text-accent-glow hover:underline">{credit.auteur}</a>
           {', '}
           {credit.licence_url ? (
@@ -41,7 +44,7 @@ export default function PhotoGallery ({ images, alt, credits }) {
       )}
 
       {images.length > 1 && (
-        <div className="mt-3 flex gap-3" role="group" aria-label="Photos">
+        <div className="mt-3 flex gap-3" role="group" aria-label={t('Photos', 'Photos')}>
           {images.map((src, i) => (
             <button
               key={src}

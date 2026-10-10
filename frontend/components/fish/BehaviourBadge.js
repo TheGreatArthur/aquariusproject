@@ -1,8 +1,10 @@
 import clsx from 'clsx';
 
+import { useI18n } from '@/components/I18nProvider';
 import { behaviourTone, TONE_CLASSES } from '@/lib/fish';
 
 export default function BehaviourBadge ({ comportement, className }) {
+  const { term } = useI18n();
   if (!comportement)
     return null;
   return (
@@ -11,7 +13,7 @@ export default function BehaviourBadge ({ comportement, className }) {
       TONE_CLASSES[behaviourTone(comportement)],
       className,
     )}>
-      {comportement}
+      {term(comportement)}
     </span>
   );
 }

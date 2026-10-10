@@ -1,14 +1,19 @@
 import Link from 'next/link';
 
-export default function NotFound () {
+import { getI18n } from '@/lib/i18n-server';
+
+export default async function NotFound () {
+  const { t, href } = await getI18n();
   return (
     <div className="container flex min-h-[70vh] flex-col items-center justify-center pt-24 text-center">
-      <p className="eyebrow">Erreur 404</p>
-      <h1 className="mt-4 text-5xl font-semibold sm:text-6xl">Ce poisson s&apos;est échappé.</h1>
-      <p className="mt-4 max-w-md text-muted">La page demandée n&apos;existe pas ou a été déplacée.</p>
+      <p className="eyebrow">{t('Erreur 404', 'Error 404')}</p>
+      <h1 className="mt-4 text-5xl font-semibold sm:text-6xl">{t('Ce poisson s\'est échappé.', 'This fish got away.')}</h1>
+      <p className="mt-4 max-w-md text-muted">
+        {t('La page demandée n\'existe pas ou a été déplacée.', 'The page you asked for does not exist or has moved.')}
+      </p>
       <div className="mt-8 flex gap-3">
-        <Link href="/" className="btn-primary">Retour à l&apos;accueil</Link>
-        <Link href="/poissons" className="btn-ghost">Voir les poissons</Link>
+        <Link href={href('/')} className="btn-primary">{t('Retour à l\'accueil', 'Back to home')}</Link>
+        <Link href={href('/poissons')} className="btn-ghost">{t('Voir les poissons', 'Browse the fish')}</Link>
       </div>
     </div>
   );

@@ -1,6 +1,8 @@
 import clsx from 'clsx';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
+import { useI18n } from '@/components/I18nProvider';
+
 /**
  * Numéros de page à afficher, avec des ellipses : 1 … 4 5 6 … 12
  */
@@ -17,6 +19,7 @@ function pageItems (current, total) {
 }
 
 export default function Pagination ({ currentPage, totalPages, onPageChange }) {
+  const { t } = useI18n();
   if (totalPages <= 1)
     return null;
 
@@ -25,7 +28,7 @@ export default function Pagination ({ currentPage, totalPages, onPageChange }) {
   return (
     <nav className="flex items-center justify-center gap-1.5" aria-label="Pagination">
       <button type="button" className={arrow} onClick={() => onPageChange(currentPage - 1)}
-              disabled={currentPage === 1} aria-label="Page précédente">
+              disabled={currentPage === 1} aria-label={t('Page précédente', 'Previous page')}>
         <ChevronLeft className="h-4 w-4"/>
       </button>
 
@@ -49,7 +52,7 @@ export default function Pagination ({ currentPage, totalPages, onPageChange }) {
         ))}
 
       <button type="button" className={arrow} onClick={() => onPageChange(currentPage + 1)}
-              disabled={currentPage === totalPages} aria-label="Page suivante">
+              disabled={currentPage === totalPages} aria-label={t('Page suivante', 'Next page')}>
         <ChevronRight className="h-4 w-4"/>
       </button>
     </nav>

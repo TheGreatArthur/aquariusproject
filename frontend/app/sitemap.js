@@ -1,4 +1,5 @@
 import { COURS } from '@/content/cours';
+import { localize } from '@/lib/i18n';
 import { BACKEND_URL, SITE_URL } from '@/lib/site';
 
 const PAGES = ['', '/poissons', '/invertebres', '/plantes', '/simulation', '/cours', '/contact'];
@@ -16,5 +17,9 @@ async function fiches (route, liste) {
 
 export default async function sitemap () {
   const especes = (await Promise.all(CATALOGUES.map(([route, liste]) => fiches(route, liste)))).flat();
-  return [...PAGES, ...COURS.map(({ slug }) => `/cours/${slug}`), ...especes].map((path) => ({ url: `${SITE_URL}${path}` }));
+  // Chaque page en français, avec son adresse anglaise (/en/...)
+  return [...PAGES, ...COURS.map(({ slug }) => `/cours/${slug}`), ...especes].map((path) => ({
+    url: `${SITE_URL}${path}`,
+    alternates: { languages: { en: `${SITE_URL}${localize(path || '/', 'en')}` } },
+  }));
 }

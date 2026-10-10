@@ -6,6 +6,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- **English version and light theme** ([ADR 0015](docs/adr/0015-english-version-and-light-theme.md)): the interface
+  under `/en` (French stays at the root), with page metadata, `hreflang` alternates, English sitemap URLs, translated
+  compatibility alerts, category values, country and ecoregion names; species texts and the practical guide stay in
+  French. A light theme that follows `prefers-color-scheme` until the visitor picks one in the header.
 - **End-to-end tests** (Playwright, `npm run e2e`, own CI job): catalogue → species page → simulator → alerts, on a
   database built from the versioned data files.
 - **SEO**: `sitemap.xml` with every species page, `robots.txt`, Open Graph and Twitter cards (site image, and each

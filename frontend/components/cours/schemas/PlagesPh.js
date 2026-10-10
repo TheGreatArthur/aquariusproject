@@ -3,6 +3,8 @@
 import Link from 'next/link';
 import useSWR from 'swr';
 
+import { useI18n } from '@/components/I18nProvider';
+
 const MIN = 4;
 const MAX = 9.5;
 const pos = (ph) => `${((ph - MIN) / (MAX - MIN)) * 100}%`;
@@ -21,6 +23,7 @@ const ZONES = [
  */
 export default function PlagesPh ({ especes }) {
   const { data, error } = useSWR('/api/poissons');
+  const { href } = useI18n();
 
   if (error)
     return <p className="card p-5 text-sm text-muted">Les plages des espèces n&apos;ont pas pu être chargées.</p>;
@@ -47,7 +50,7 @@ export default function PlagesPh ({ especes }) {
         ))}
         {lignes.map((p) => (
           <li key={p.id} className="grid gap-1 sm:grid-cols-[11rem_1fr] sm:items-center sm:gap-4">
-            <Link href={`/poissons/${p.id}`} className="flex min-w-0 items-baseline justify-between gap-2 text-sm hover:text-accent-glow sm:block">
+            <Link href={href(`/poissons/${p.id}`)} className="flex min-w-0 items-baseline justify-between gap-2 text-sm hover:text-accent-glow sm:block">
               <span className="block truncate">{p.nom_commun}</span>
               <span className="block text-xs text-muted">GH&nbsp;{nombre.format(p.gh_mini)}-{nombre.format(p.gh_maxi)}&nbsp;°dGH</span>
             </Link>

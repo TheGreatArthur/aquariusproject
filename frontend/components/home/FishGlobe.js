@@ -9,6 +9,7 @@ import { geoGraticule10, geoOrthographic, geoPath } from 'd3-geo';
 import { feature } from 'topojson-client';
 import { ArrowLeft, ExternalLink, Minus, Plus, RotateCcw } from 'lucide-react';
 
+import { useI18n } from '@/components/I18nProvider';
 import Reveal from '@/components/Reveal';
 import { fishImage } from '@/lib/fish';
 import {
@@ -27,6 +28,25 @@ const SPIN = 4; // degrés par seconde, tant que personne ne touche au globe
 const FLIGHT = 700; // durée du recentrage sur une zone choisie (ms)
 const FOCUS_ZOOM = 2.2; // zoom minimal sur une zone choisie, pour distinguer ses observations
 const graticule = geoGraticule10();
+
+// English names of the FEOW realms and major habitat types (the zone names come in English as nom_feow)
+const REALMS_EN = {
+  Afrotropical: 'Afrotropical', Australasien: 'Australasian', Indomalais: 'Indo-Malayan', Néarctique: 'Nearctic',
+  Néotropical: 'Neotropical', Paléarctique: 'Palearctic',
+};
+const HABITATS_EN = {
+  'deltas de grands fleuves': 'large river deltas',
+  'eaux de montagne': 'montane freshwaters',
+  'eaux des régions arides et bassins fermés': 'xeric freshwaters and endorheic basins',
+  'fleuves côtiers tempérés': 'temperate coastal rivers',
+  'fleuves côtiers tropicaux et subtropicaux': 'tropical and subtropical coastal rivers',
+  'grands lacs': 'large lakes',
+  'plaines inondables et zones humides tempérées': 'temperate floodplain rivers and wetlands',
+  'plaines inondables et zones humides tropicales et subtropicales': 'tropical and subtropical floodplain rivers and wetlands',
+  'rivières d\'altitude tempérées': 'temperate upland rivers',
+  'rivières d\'altitude tropicales et subtropicales': 'tropical and subtropical upland rivers',
+  'îles océaniques': 'oceanic islands',
+};
 
 /** Netteté du canevas : la densité de l'écran, plafonnée à 2 (au-delà, le dessin coûte plus qu'il ne gagne) */
 const pixelRatio = () => Math.min(window.devicePixelRatio || 1, 2);
@@ -49,6 +69,7 @@ function useNearScreen (ref) {
 }
 
 function ZoneList ({ zones, onSelect }) {
+  const { t } = useI18n();
   const groups = useMemo(() => zonesByRealm(zones), [zones]);
   const especes = useMemo(() => new Set(zones.flatMap((z) => z.especes)).size, [zones]);
 
@@ -56,20 +77,21 @@ function ZoneList ({ zones, onSelect }) {
     <>
       <div className="border-b border-border/70 p-5 sm:p-6">
         <p className="font-display text-xl font-semibold">
-          <span className="tabular-nums">{zones.length}</span> zones, <span className="tabular-nums">{especes}</span> espèces
+          <span className="tabular-nums">{zones.length}</span> zones, <span className="tabular-nums">{especes}</span>{' '}
+          {t('espèces', 'species')}
         </p>
-        <p className="mt-1 text-sm text-muted">Touchez un repère sur le globe ou choisissez une zone.</p>
+        <p className="mt-1 text-sm text-muted">{t('Touchez un repère sur le globe ou choisissez une zone.', 'Tap a marker on the globe or pick a zone.')}</p>
       </div>
       <div className="min-h-0 flex-1 space-y-6 overflow-y-auto p-5 [scrollbar-width:thin] sm:p-6">
         {groups.map(({ royaume, zones: liste }) => (
-          <section key={royaume} aria-label={`Domaine ${royaume}`}>
-            <h4 className="text-xs uppercase tracking-wider text-muted">{royaume}</h4>
+          <section key={royaume} aria-label={t(`Domaine ${royaume}`, `${REALMS_EN[royaume] ?? royaume} realm`)}>
+            <h4 className="text-xs uppercase tracking-wider text-muted">{t(royaume, REALMS_EN[royaume] ?? royaume)}</h4>
             <ul className="mt-3 flex flex-wrap gap-2">
               {liste.map((zone) => (
                 <li key={zone.id}>
                   <button type="button" onClick={() => onSelect(zone)}
                           className="chip gap-1.5 hover:border-accent/50 hover:text-foreground">
-                    {zone.nom}
+                    {t(zone.nom, zone.nom_feow)}
                     <span className="tabular-nums text-accent-glow">{zone.especes.length}</span>
                   </button>
                 </li>
@@ -83,6 +105,7 @@ function ZoneList ({ zones, onSelect }) {
 }
 
 function ZoneDetails ({ zone, poissons, onBack }) {
+  const { t, href } = useI18n();
   const fish = zoneFish(zone, poissons);
 
   return (
@@ -90,21 +113,22 @@ function ZoneDetails ({ zone, poissons, onBack }) {
       <div className="border-b border-border/70 p-5 sm:p-6">
         <button type="button" onClick={onBack}
                 className="inline-flex items-center gap-1.5 text-sm text-muted transition hover:text-foreground">
-          <ArrowLeft className="h-4 w-4"/> Toutes les zones
+          <ArrowLeft className="h-4 w-4"/> {t('Toutes les zones', 'All zones')}
         </button>
-        <h3 className="mt-3 text-xl font-semibold sm:text-2xl" aria-live="polite">{zone.nom}</h3>
+        <h3 className="mt-3 text-xl font-semibold sm:text-2xl" aria-live="polite">{t(zone.nom, zone.nom_feow)}</h3>
         <p className="mt-1 text-sm text-muted first-letter:uppercase">
-          {zone.habitat}, domaine {zone.royaume.toLowerCase()}
+          {t(`${zone.habitat}, domaine ${zone.royaume.toLowerCase()}`,
+            `${HABITATS_EN[zone.habitat] ?? zone.habitat}, ${REALMS_EN[zone.royaume] ?? zone.royaume} realm`)}
         </p>
         <p className="mt-3 text-sm">
           <span className="font-display text-lg font-semibold tabular-nums">{zone.especes.length}</span>
-          {zone.especes.length > 1 ? ' espèces du catalogue' : ' espèce du catalogue'}
+          {zone.especes.length > 1 ? t(' espèces du catalogue', ' species in the catalogue') : t(' espèce du catalogue', ' species in the catalogue')}
         </p>
       </div>
       <ul className="min-h-0 flex-1 divide-y divide-border/60 overflow-y-auto [scrollbar-width:thin]">
         {fish.map((p) => (
           <li key={p.id}>
-            <Link href={`/poissons/${p.id}`}
+            <Link href={href(`/poissons/${p.id}`)}
                   className="flex items-center gap-4 px-5 py-3 transition hover:bg-surface-elevated/60 sm:px-6">
               <span className="relative aspect-[4/3] w-16 shrink-0 overflow-hidden rounded-lg bg-surface-elevated">
                 <Image src={fishImage(p)} alt="" fill sizes="64px" className="object-cover"/>
@@ -118,10 +142,10 @@ function ZoneDetails ({ zone, poissons, onBack }) {
         ))}
       </ul>
       <p className="border-t border-border/70 px-5 py-3 text-xs text-muted sm:px-6">
-        Nom FEOW&nbsp;: {zone.nom_feow}.{' '}
+        {t('Nom FEOW', 'FEOW name')}&nbsp;: {zone.nom_feow}.{' '}
         <a href={zone.url} target="_blank" rel="noopener noreferrer"
            className="inline-flex items-center gap-1 underline-offset-4 hover:text-accent-glow hover:underline">
-          Fiche de l&apos;écorégion <ExternalLink className="h-3 w-3"/>
+          {t('Fiche de l\'écorégion', 'Ecoregion profile')} <ExternalLink className="h-3 w-3"/>
         </a>
       </p>
     </>
@@ -135,6 +159,7 @@ export default function FishGlobe () {
   const sectionRef = useRef(null);
   const near = useNearScreen(sectionRef);
   const reduceMotion = useReducedMotion();
+  const { t } = useI18n();
 
   const { data: poissonsData } = useSWR(near ? '/api/poissons' : null);
   const { data: ecoregions } = useSWR(near ? '/maps/ecoregions.json' : null);
@@ -422,10 +447,12 @@ export default function FishGlobe () {
   return (
     <section ref={sectionRef} className="container py-24" aria-labelledby="globe-title">
       <Reveal className="max-w-2xl">
-        <h2 id="globe-title" className="text-3xl font-semibold sm:text-4xl">D&apos;où viennent vos poissons&nbsp;?</h2>
+        <h2 id="globe-title" className="text-3xl font-semibold sm:text-4xl">{t('D\'où viennent vos poissons\u00a0?', 'Where do your fish come from?')}</h2>
         <p className="mt-4 text-base text-muted sm:text-lg">
-          Faites tourner le globe et touchez une zone&nbsp;: les espèces du catalogue qui y vivent à l&apos;état
-          sauvage s&apos;affichent, avec leurs observations.
+          {t('Faites tourner le globe et touchez une zone\u00a0: les espèces du catalogue qui y vivent à l\'état '
+            + 'sauvage s\'affichent, avec leurs observations.',
+          'Spin the globe and tap a zone: the catalogue species that live there in the wild appear, with their '
+            + 'observations.')}
         </p>
       </Reveal>
 
@@ -437,7 +464,9 @@ export default function FishGlobe () {
               ref={canvasRef}
               tabIndex={0}
               role="application"
-              aria-label="Globe des zones d'eau douce. Glissez ou utilisez les flèches pour le faire tourner, + et − pour zoomer. Les zones sont aussi listées à côté."
+              aria-label={t('Globe des zones d\'eau douce. Glissez ou utilisez les flèches pour le faire tourner, + et − pour zoomer. '
+                + 'Les zones sont aussi listées à côté.', 'Globe of freshwater zones. Drag or use the arrow keys to spin it, + and − '
+                + 'to zoom. The zones are also listed alongside.')}
               className="absolute inset-0 h-full w-full cursor-grab touch-none rounded-full active:cursor-grabbing"
               style={tooltip ? { cursor: 'pointer' } : undefined}
               onPointerDown={onPointerDown}
@@ -450,17 +479,17 @@ export default function FishGlobe () {
             {tooltip && (
               <div className="pointer-events-none absolute z-10 -translate-x-1/2 -translate-y-full whitespace-nowrap rounded-lg border border-border bg-surface px-2.5 py-1 text-xs shadow-lg"
                    style={{ left: tooltip.x, top: tooltip.y - tooltip.r - 6 }}>
-                {tooltip.zone.nom} <span className="tabular-nums text-accent-glow">{tooltip.zone.especes.length}</span>
+                {t(tooltip.zone.nom, tooltip.zone.nom_feow)} <span className="tabular-nums text-accent-glow">{tooltip.zone.especes.length}</span>
               </div>
             )}
             <div className="absolute bottom-1 right-1 flex flex-col gap-1.5 sm:bottom-3 sm:right-3">
-              <button type="button" onClick={() => zoomBy(1.4)} className="btn-ghost !p-2" aria-label="Zoomer">
+              <button type="button" onClick={() => zoomBy(1.4)} className="btn-ghost !p-2" aria-label={t('Zoomer', 'Zoom in')}>
                 <Plus className="h-4 w-4"/>
               </button>
-              <button type="button" onClick={() => zoomBy(1 / 1.4)} className="btn-ghost !p-2" aria-label="Dézoomer">
+              <button type="button" onClick={() => zoomBy(1 / 1.4)} className="btn-ghost !p-2" aria-label={t('Dézoomer', 'Zoom out')}>
                 <Minus className="h-4 w-4"/>
               </button>
-              <button type="button" onClick={reset} className="btn-ghost !p-2" aria-label="Revenir à la vue de départ">
+              <button type="button" onClick={reset} className="btn-ghost !p-2" aria-label={t('Revenir à la vue de départ', 'Back to the starting view')}>
                 <RotateCcw className="h-4 w-4"/>
               </button>
             </div>
@@ -468,7 +497,7 @@ export default function FishGlobe () {
           <p className="mt-6 text-center text-xs text-muted">
             Zones&nbsp;: <a href="https://www.feow.org" target="_blank" rel="noopener noreferrer"
                              className="underline-offset-4 hover:text-accent-glow hover:underline">Freshwater Ecoregions of the World</a>,
-            {' '}© 2008 The Nature Conservancy et World Wildlife Fund, Inc. Observations&nbsp;: GBIF.
+            {' '}© 2008 The Nature Conservancy {t('et', 'and')} World Wildlife Fund, Inc. Observations&nbsp;: GBIF.
           </p>
         </Reveal>
 

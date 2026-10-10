@@ -4,6 +4,7 @@
 
 import { typo } from '@/lib/cours/texte';
 import { searchKey } from '@/lib/fish';
+import { translator } from '@/lib/i18n';
 
 /** Photos des plantes, dans public/plants */
 export const plantPhoto = (fichier) => `/plants/${fichier}`;
@@ -13,31 +14,32 @@ export const plantImage = (p) => plantPhoto((p.image ?? p.images?.[0])?.fichier 
 
 /** Port de la plante : libellé d'une fiche, et libellé des filtres de la liste */
 export const TYPES = {
-  épiphyte: { label: 'Épiphyte', filtre: 'Épiphytes' },
-  mousse: { label: 'Mousse', filtre: 'Mousses' },
-  rosette: { label: 'Rosette', filtre: 'Rosettes' },
-  tige: { label: 'Plante à tiges', filtre: 'Plantes à tiges' },
-  tapissante: { label: 'Tapissante', filtre: 'Tapissantes' },
-  flottante: { label: 'Flottante', filtre: 'Flottantes' },
-  rhizome: { label: 'À rhizome', filtre: 'À rhizome' },
+  épiphyte: { label: 'Épiphyte', filtre: 'Épiphytes', en: 'Epiphyte', filter: 'Epiphytes' },
+  mousse: { label: 'Mousse', filtre: 'Mousses', en: 'Moss', filter: 'Mosses' },
+  rosette: { label: 'Rosette', filtre: 'Rosettes', en: 'Rosette', filter: 'Rosettes' },
+  tige: { label: 'Plante à tiges', filtre: 'Plantes à tiges', en: 'Stem plant', filter: 'Stem plants' },
+  tapissante: { label: 'Tapissante', filtre: 'Tapissantes', en: 'Carpeting', filter: 'Carpeting' },
+  flottante: { label: 'Flottante', filtre: 'Flottantes', en: 'Floating', filter: 'Floating' },
+  rhizome: { label: 'À rhizome', filtre: 'À rhizome', en: 'Rhizome', filter: 'Rhizomes' },
 };
 
 /** Types présents dans la liste, dans l'ordre des filtres */
 export const typesPresents = (plantes) => Object.keys(TYPES).filter((t) => plantes.some((p) => p.type === t));
 
-const nombre = new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 1 });
-
-/** « 5–15 cm », « 6 cm » si les bornes sont égales, null sans valeur */
-export function formatRange (min, max, unit = '') {
+/** « 5–15 cm », « 6 cm » si les bornes sont égales, null sans valeur ; nombres dans la langue de la page */
+export function formatRange (min, max, unit = '', locale) {
   if (min == null || max == null)
     return null;
-  const fmt = (v) => nombre.format(v);
+  const fmt = (v) => v.toLocaleString(translator(locale).intl, { maximumFractionDigits: 1 });
   const suffix = unit ? ` ${unit}` : '';
   return min === max ? `${fmt(min)}${suffix}` : `${fmt(min)}–${fmt(max)}${suffix}`;
 }
 
-/** « faible à forte », ou un seul niveau */
-export const lightLabel = (min, max) => (min === max ? min : `${min} à ${max}`);
+/** « faible à forte » (« low to high »), ou un seul niveau */
+export function lightLabel (min, max, locale) {
+  const { t, term } = translator(locale);
+  return min === max ? term(min) : t(`${min} à ${max}`, `${term(min)} to ${term(max)}`);
+}
 
 /** Couleur du badge de difficulté */
 export function difficultyTone (difficulte = '') {
@@ -54,7 +56,8 @@ export function matchesPlantSearch (p, terme) {
   const mots = searchKey(terme).split(/\s+/).filter(Boolean);
   if (!mots.length)
     return true;
-  const texte = searchKey([p.nom_commun, p.nom_scientifique, p.famille, TYPES[p.type]?.label]
+  const texte = searchKey([p.nom_commun, p.nom_scientifique, p.famille, TYPES[p.type]?.label,
+    TYPES[p.type]?.en]
     .filter(Boolean).join(' '));
   return mots.every((mot) => texte.includes(mot));
 }

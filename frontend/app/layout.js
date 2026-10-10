@@ -4,42 +4,64 @@
 
 import { Inter, Space_Grotesk } from 'next/font/google';
 
+import { I18nProvider } from '@/components/I18nProvider';
 import Providers from '@/components/Providers';
 import { SITE_URL } from '@/lib/site';
 import SiteFooter from '@/components/SiteFooter';
 import SiteHeader from '@/components/SiteHeader';
+import { THEME_SCRIPT } from '@/components/ThemeToggle';
+import { localize } from '@/lib/i18n';
+import { getI18n } from '@/lib/i18n-server';
 import './globals.css';
+import './theme.css';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
 const display = Space_Grotesk({ subsets: ['latin'], variable: '--font-display', display: 'swap' });
 
-export const metadata = {
-  // Les images de partage (opengraph-image.jpg, photo de chaque fiche) deviennent des adresses absolues
-  metadataBase: new URL(SITE_URL),
-  openGraph: { siteName: 'Aquarius', locale: 'fr_FR', type: 'website' },
-  twitter: { card: 'summary_large_image' },
-  title: {
-    default: 'Aquarius · Composez un aquarium en harmonie',
-    template: '%s · Aquarius',
-  },
-  description: 'Catalogue de poissons d\'aquarium d\'eau douce et simulateur de compatibilité : '
-    + 'paramètres d\'eau, population et cohabitation.',
-};
+export async function generateMetadata () {
+  const { t, path } = await getI18n();
+  return {
+    // Les images de partage (opengraph-image.jpg, photo de chaque fiche) deviennent des adresses absolues
+    metadataBase: new URL(SITE_URL),
+    openGraph: { siteName: 'Aquarius', locale: t('fr_FR', 'en_GB'), type: 'website' },
+    twitter: { card: 'summary_large_image' },
+    title: {
+      default: t('Aquarius · Composez un aquarium en harmonie', 'Aquarius · Build a balanced aquarium'),
+      template: '%s · Aquarius',
+    },
+    description: t(
+      'Catalogue de poissons d\'aquarium d\'eau douce et simulateur de compatibilité : '
+        + 'paramètres d\'eau, population et cohabitation.',
+      'Freshwater aquarium fish catalogue and compatibility simulator: water parameters, stocking and tankmates.',
+    ),
+    alternates: { languages: { fr: path, en: localize(path, 'en'), 'x-default': path } },
+  };
+}
 
 export const viewport = {
-  themeColor: '#050B12',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#F6FAFC' },
+    { media: '(prefers-color-scheme: dark)', color: '#050B12' },
+  ],
 };
 
-export default function RootLayout ({ children }) {
+export default async function RootLayout ({ children }) {
+  const { locale, t } = await getI18n();
   return (
-    <html lang="fr" className={`${inter.variable} ${display.variable}`}>
+    <html lang={locale} className={`${inter.variable} ${display.variable}`} suppressHydrationWarning>
+      <head>
+        {/* Thème choisi ou celui du système, appliqué avant le premier affichage */}
+        <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }}/>
+      </head>
       <body className="grain flex min-h-screen flex-col">
-        <a href="#contenu" className="skip-link">Aller au contenu</a>
-        <Providers>
-          <SiteHeader/>
-          <main id="contenu" tabIndex={-1} className="flex-1 focus:outline-none">{children}</main>
-          <SiteFooter/>
-        </Providers>
+        <a href="#contenu" className="skip-link">{t('Aller au contenu', 'Skip to content')}</a>
+        <I18nProvider locale={locale}>
+          <Providers>
+            <SiteHeader/>
+            <main id="contenu" tabIndex={-1} className="flex-1 focus:outline-none">{children}</main>
+            <SiteFooter/>
+          </Providers>
+        </I18nProvider>
       </body>
     </html>
   );
