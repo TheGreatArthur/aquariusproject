@@ -38,13 +38,13 @@ function bacEnregistre () {
  * Rendu seulement dans le navigateur (voir page.js) : le bac enregistré est lu dès le premier rendu.
  */
 export default function Simulator () {
-  const { t, href, locale } = useI18n();
+  const { t, href, locale, api } = useI18n();
   const [contenu, setContenu] = useState(bacEnregistre);
   const [eau, setEau] = useState(() => lsGet('form_data') ?? {});
 
-  const poissons = useSWR(TYPES.poisson.api);
-  const plantes = useSWR(TYPES.plante.api);
-  const invertebres = useSWR(TYPES.invertebre.api);
+  const poissons = useSWR(api(TYPES.poisson.api));
+  const plantes = useSWR(api(TYPES.plante.api));
+  const invertebres = useSWR(api(TYPES.invertebre.api));
 
   useEffect(() => { lsSet('bac', contenu); }, [contenu]);
   useEffect(() => { lsSet('form_data', eau); }, [eau]);

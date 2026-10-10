@@ -1,0 +1,254 @@
+{
+  "Atya gabonensis": {
+    "nom_commun": "African fan shrimp",
+    "profil": {
+      "repartition": "West and Central Africa, from Senegal to the Congo, and the Atlantic slope of northern South America (Brazil, Suriname, Venezuela)",
+      "presentation": "This large African shrimp spreads fans at the tips of its legs to catch particles carried by the current. Its colour may be bluish, beige or grey, with much individual variation. Despite its imposing size, it feeds by filtering rather than hunting small fish.",
+      "habitat": "It lives in fast, well-oxygenated river water, over pebble and rock beds swept by the current. The water is warm (24 to 30 °C) and close to neutral. By day it stays under cover and only comes out at nightfall, when its predators are less active.",
+      "comportement": "Peaceful, it lives in colonies of dozens of individuals and ignores other species. At night it settles in the current, fans spread, to filter suspended particles: despite its size, it does not attack fish.",
+      "maintenance": "Provide rocky perches in a well-stirred, well-oxygenated area, and sheltered refuges for moulting. Open space lets it take up position facing the current.",
+      "alimentation": "Supply fine food held in suspension: water that looks very clean does not guarantee that this shrimp finds enough to eat.",
+      "reproduction": "Its life cycle cannot be completed in a purely freshwater aquarium."
+    }
+  },
+  "Atyaephyra desmarestii": {
+    "nom_commun": "Desmarest's shrimp",
+    "profil": {
+      "repartition": "Western Mediterranean basin (North Africa and southern Europe, including Corsica and Sardinia), then much of Europe via the canals",
+      "presentation": "Found in European and North African waterways, Desmarest's shrimp lives among submerged vegetation. The young are almost transparent; adults can turn brown, red or slightly bluish. Large females often develop more visible marbling.",
+      "habitat": "It lives among the vegetation of streams and rivers, in rather calcareous water (pH 7 to 8.5) and over a wide temperature range, from 6 to 28 °C. Starting from the western Mediterranean, it reached Germany and then Poland through the canals; it seems to be declining in southern France because of droughts and small streams drying up.",
+      "comportement": "Peaceful and fairly lively, it lives in colonies near the bottom and is mostly active at night. Small and shy, it hides when larger animals are around and takes no interest in other species. It sorts through debris and biofilm on plants and decor.",
+      "maintenance": "A planted species tank makes this shy, mostly nocturnal shrimp easier to watch. Roots, leaves and shelters keep it away from predators and protect moulting individuals.",
+      "alimentation": "It picks algae and microorganisms off the decor and accepts food made for dwarf shrimp.",
+      "reproduction": "Breeding goes through several larval stages and needs more preparation than that of Neocaridina."
+    }
+  },
+  "Atyopsis moluccensis": {
+    "nom_commun": "Bamboo shrimp",
+    "profil": {
+      "repartition": "Southeast Asia, from Sri Lanka to the Philippines: Thailand, Malaysia, Indonesia (Sumatra, Borneo)",
+      "presentation": "The bamboo shrimp often sits still on a stone or a root, its fans open in the current. Its colours range from beige to brown or green; the stripes along its sides remain a telltale mark. Its legs let it grip firmly in the streams of Southeast Asia.",
+      "habitat": "It favours fast, well-oxygenated water in currents and rapids, sometimes near waterfalls, over beds of rock, pebbles, wood or leaves carried by the current. The water is warm (24 to 28 °C) and close to neutral.",
+      "comportement": "Calm and peaceful, it lives in colonies on the bottom and leaves its hiding places mostly at night. It sits in the current to filter plankton with its fans and pays no attention to other animals.",
+      "maintenance": "Provide a steady current, good oxygenation and accessible perches, with refuges for moulting. It can live with peaceful fish that do not threaten it.",
+      "alimentation": "Give very finely crumbled food or small suitable prey, carried by the current to its fans.",
+      "reproduction": "The adults live in fresh water, but the larvae need salt water to develop."
+    }
+  },
+  "Cambarellus patzcuarensis": {
+    "nom_commun": "Mexican dwarf orange crayfish (CPO)",
+    "profil": {
+      "repartition": "Mexico (Michoacán): Lake Pátzcuaro, in the Río Grande de Santiago basin",
+      "presentation": "Native to the shallow shores of Lake Pátzcuaro in Mexico, this small crayfish comes in brown or orange coats. The orange line is known as CPO; this trade colour does not refer to another species.",
+      "habitat": "It lives in shallow water along the lake shore, in calm or still water that is alkaline (pH 7.5 to 8.9) with variable temperatures (15 to 30 °C). Listed as endangered by the IUCN since 2010, it suffers from water abstraction and pollution across a very small range.",
+      "comportement": "It lives in large groups scattered through the vegetation and is active by day. Like other crayfish it defends a small territory, but it is rather peaceful towards its own kind.",
+      "maintenance": "Heavily planted decor with leaves and plenty of shelters makes care easier. Keep separate refuges for moulting and watch the interactions, even though this crayfish is usually easier to keep with others than the large species.",
+      "alimentation": "It accepts foods made for crayfish.",
+      "reproduction": "It can breed in fresh water. The young hatch fully formed and shelter among plants and leaf litter."
+    }
+  },
+  "Cambarellus puer": {
+    "nom_commun": "Cajun dwarf crayfish",
+    "profil": {
+      "repartition": "Southern United States: Mississippi basin and the bayous of Texas (Buffalo Bayou)",
+      "presentation": "Brown and inconspicuous, this dwarf crayfish blends into muddy bottoms and plant debris. It frequents areas where plants and piled-up leaves provide both food and shelter.",
+      "habitat": "It lives in slow or still water choked with aquatic and marsh plants, branches and decaying matter, over humus and mud. It keeps close to leaf piles and plants, where it finds food and cover.",
+      "comportement": "It lives in colonies on the bottom, is active by day and rather calm. Territorial, it does not tolerate intruders of similar habits, but ignores other animals. Being small, it hides when larger neighbours are around.",
+      "maintenance": "Spread hiding places across the floor rather than gathering all shelters in one spot. Territorial disputes remain possible; freshly moulted individuals must be able to retreat.",
+      "alimentation": "The source describes a carnivorous diet. Give portions on the bottom suited to its small size.",
+      "reproduction": "It breeds in fresh water, and the young hatch fully formed. Dense vegetation gives them more places to hide."
+    }
+  },
+  "Caridina multidentata": {
+    "nom_commun": "Amano shrimp",
+    "profil": {
+      "repartition": "Japan (including Kyūshū) and Taiwan",
+      "presentation": "The Amano shrimp actively explores plants and decor to pick its food from them. Females grow clearly larger than males, whose abdomen bears a pattern of small dots. It stays peaceful, but its size does not protect it from large predators.",
+      "habitat": "The adults live in fresh water, at 16 to 28 °C, neutral to alkaline (pH 7 to 8.3). The larvae need salt water to develop, before the young return to fresh water.",
+      "comportement": "Peaceful and rather calm, it lives in colonies on the bottom and is active by day, tirelessly exploring plants and decor. Being small, it hides when larger animals are around and ignores other species.",
+      "maintenance": "Keep it in a group in a tank offering plants, roots and refuges for moulting. Avoid fish and crustaceans able to catch it.",
+      "alimentation": "It eats algae, microorganisms and plant matter, and accepts shrimp food. Do not rely on it alone to clean the tank.",
+      "reproduction": "The eggs are carried under the abdomen. The larvae need salt water, so eggs laid in fresh water do not guarantee viable young."
+    }
+  },
+  "Cherax snowden": {
+    "nom_commun": "Cherax snowden",
+    "profil": {
+      "repartition": "Indonesia: Vogelkop (Kepala Burung) Peninsula, in West Papua, on the island of New Guinea",
+      "presentation": "This large crayfish shows green and orange tones. It lives in well-oxygenated water over rocky bottoms and defends its territory vigorously. Keeping it means thinking about the whole population of the tank.",
+      "habitat": "It usually lives less than a metre deep, in well-oxygenated water with varied currents, near rapids and waterfalls, over rocky bottoms strewn with pebbles, wood and leaves. The water is neutral (pH 7 to 7.5) and warm (22 to 28 °C).",
+      "comportement": "It lives alone or in groups on the bottom and is mostly active at night. Highly territorial, it tolerates no intrusion into its area and can fight its territorial neighbours fiercely.",
+      "maintenance": "Offer generous space, separate refuges and decor that marks out several zones. Keeping it with other territorial animals leads to fights; moulting calls for especially safe shelters.",
+      "alimentation": "It is omnivorous with a leaning towards plants. Include a plant part in a varied diet.",
+      "reproduction": "The whole cycle takes place in fresh water. Fully formed young leave the mother and look for small shelters."
+    }
+  },
+  "Clea helena": {
+    "nom_commun": "Assassin snail",
+    "profil": {
+      "repartition": "Tropical Southeast Asia: Thailand, Cambodia, Vietnam, Malaysia and Sumatra; introduced in Singapore",
+      "presentation": "The assassin snail has a yellowish shell banded with reddish brown. Unlike snails that mainly graze algae, it catches other gastropods and also eats dead animal matter. The trade uses several names, to be checked against the taxonomy given on this page.",
+      "habitat": "It lives in the oxygenated water of lakes, rivers and streams, between 22 and 28 °C, and avoids both still and brackish water. It belongs to the same family as the marine whelks, but lives only in fresh water.",
+      "comportement": "Solitary and active by day, it is a predatory snail: it catches other snails and also feeds on carrion. It readily buries itself in the substrate.",
+      "maintenance": "Provide a substrate it can burrow into. It cannot be kept if every other snail in the tank must be protected: its predatory diet has to be taken into account.",
+      "alimentation": "Offer suitable animal food; its diet must not be confused with that of an algae-grazing nerite.",
+      "reproduction": "The sexes are separate. The female lays its eggs one by one in capsules; the young stay hidden in the substrate."
+    }
+  },
+  "Clithon diadema": {
+    "nom_commun": "Diadem nerite",
+    "profil": {
+      "repartition": "Southeast Asia: Indonesia (Bali, Java), the Philippines and Thailand",
+      "presentation": "This small snail shows variable patterns, often yellow or orange and black. The horns seen on some shells are not constant: they may be missing or wear down with age. A photo of a striped nerite is therefore not enough to confirm this species.",
+      "habitat": "It lives near the surface in mangroves and slow-flowing streams, on rocks and submerged roots, and tolerates the large swings in salinity caused by the tides. In Indonesia these habitats are threatened by river pollution and the conversion of coastal mangroves.",
+      "comportement": "Solitary and active by day, it grazes algae on rocks and roots without disturbing the other residents.",
+      "maintenance": "Add individuals to a tank that is already mature, with algae available on the surfaces. Fit a lid and avoid fish, crabs or crayfish that hunt snails.",
+      "alimentation": "It mainly grazes algae; make sure each individual has enough to eat.",
+      "reproduction": "Its egg capsules do not lead to full breeding in fresh water: the larvae develop at sea."
+    }
+  },
+  "Geosesarma dennerle": {
+    "nom_commun": "Vampire crab",
+    "profil": {
+      "repartition": "Endemic to the island of Java (Indonesia)",
+      "presentation": "The vampire crab combines a purple body with yellow or orange eyes. Native to Java, it lives in contact with damp land. Its small size and colour must not lead to keeping it as a mere bottom dweller in an aquarium.",
+      "habitat": "This small, mostly terrestrial crab lives in dense vegetation, under and between rocks near streams, and sometimes digs burrows in soft soil. According to local collectors, its populations are declining: collecting it for the hobby is not sustainable.",
+      "comportement": "Nocturnal, it lives in small groups and defends its territory. It hunts small insects and larvae and helps recycle decaying plant matter.",
+      "maintenance": "Set up a dedicated paludarium with an accessible land area, hiding places and a water area. Refuges are essential during moults. Look for animals of documented origin.",
+      "alimentation": "It is omnivorous with a preference for meaty foods.",
+      "reproduction": "The female carries the eggs under her abdomen. Fully formed little crabs appear and scatter through the decor."
+    }
+  },
+  "Limnopilos naiyanetri": {
+    "nom_commun": "Thai micro crab",
+    "profil": {
+      "repartition": "Thailand",
+      "presentation": "The Thai micro crab has a small round carapace and thin, hairy legs. It lives hidden among roots and submerged vegetation. Discreet and mostly nocturnal, it is best watched in a planted tank where large fish cannot catch it.",
+      "habitat": "This fully aquatic micro crab lives hidden among roots and submerged vegetation. The sources consulted say nothing more about its natural habitat.",
+      "comportement": "Peaceful, discreet and mostly nocturnal, it spends the day hidden in roots and mosses. It picks biofilm, algae and debris and leaves the other residents alone.",
+      "maintenance": "Prepare a mature aquarium rich in mosses, roots and refuges. Protect the small individuals from predators and keep water conditions steady. Unlike the semi-terrestrial vampire crabs, this species is kept underwater.",
+      "alimentation": "It picks biofilm, algae and debris, and accepts small sinking foods made for invertebrates.",
+      "reproduction": "The source gives no successful, repeatable breeding method in the aquarium; raising the larvae remains to be documented."
+    }
+  },
+  "Macrobrachium assamense": {
+    "nom_commun": "Red claw shrimp",
+    "profil": {
+      "repartition": "South Asia: northeastern India, Bangladesh and Myanmar",
+      "presentation": "This large-clawed shrimp is often confused with Macrobrachium hendersoni. The grooves at the tips of the claws and the fine grey-white hairs of adult males are the marks described by the source. Its opportunistic behaviour calls for more caution than with dwarf shrimp.",
+      "habitat": "It lives in streams with pebble and rock beds, in neutral to alkaline water (pH 7 to 8.3) at 14 to 28 °C.",
+      "comportement": "Active by day, it lives in small groups. Hardy and opportunistic, it attacks smaller fish and crustaceans within reach, and cannibalism is known when food runs short. A poor swimmer as an adult, it mostly gets around by walking.",
+      "maintenance": "Build caves among pebbles and roots, with separate living areas. Avoid small animals that could become prey and watch how the individuals get along.",
+      "alimentation": "Give a varied diet including mollusc and fish flesh and suitable prepared foods.",
+      "reproduction": "The source describes breeding in fresh water. The decor must let young and adults find separate refuges."
+    }
+  },
+  "Marisa cornuarietis": {
+    "nom_commun": "Giant ramshorn snail",
+    "profil": {
+      "repartition": "Northern South America and southern Central America; introduced in the United States, Cuba, Egypt, Spain and the West Indies",
+      "presentation": "The giant ramshorn snail has a flat-coiled shell, yellow to brown and marked with dark bands. Although it looks like a large planorbid, its appetite for plants greatly changes how the tank can be set up.",
+      "habitat": "It lives in shallow, calm water in rivers, ponds, lakes and marshes, between 13 and 30 °C. In heavily vegetated areas it can exceed 150 individuals per square metre.",
+      "comportement": "Active by day, it has no particular social ties. Omnivorous with a clear liking for plants, it eats aquatic plants and may attack other snails, their eggs and their young when short of food.",
+      "maintenance": "Allow for the risk of plants being eaten and uprooted. It does not suit a project meant to keep delicate vegetation.",
+      "alimentation": "It is omnivorous with a herbivorous leaning. Vary plant foods and suitable prepared foods rather than letting it depend on the plants of the decor.",
+      "reproduction": "The sexes are separate. The eggs are laid below the surface on submerged supports, and the whole cycle takes place in fresh water."
+    }
+  },
+  "Neocaridina davidi": {
+    "nom_commun": "Red cherry shrimp",
+    "profil": {
+      "repartition": "East Asia: China, Korea and Japan",
+      "presentation": "The red cherry is a red line of Neocaridina davidi, not a separate species. This small shrimp roams plants and decor, where it picks part of its food. This page presents the trade strain without artificially splitting the species by colour.",
+      "habitat": "It lives in the fresh waters of East Asia, at very variable temperatures (4 to 28 °C) and a pH of 6 to 8. The red cherry is a red aquarium-bred line of the species, not a separate species.",
+      "comportement": "Peaceful and lively, it lives in colonies near the bottom and is active by day. It explores plants and decor in search of debris and biofilm. Being small, it hides when larger neighbours are around and ignores other species.",
+      "maintenance": "Keep it in a group in a planted tank with roots and fine hiding places. Large fish can catch it; the young especially benefit from protective decor.",
+      "alimentation": "It eats algae, microorganisms and plant debris, topped up if needed with shrimp food.",
+      "reproduction": "The whole cycle can take place in fresh water. The young hatch fully formed and quickly explore the surfaces of the tank."
+    }
+  },
+  "Neocaridina palmata": {
+    "nom_commun": "Neocaridina palmata",
+    "profil": {
+      "repartition": "China",
+      "presentation": "Neocaridina palmata is a small, active shrimp that lives in colonies near the bottom. Its colouring varies between populations and aquarium-bred lines. The photos on this page show the species, without guaranteeing the Blue Pearl line: the aquarium parameters come from the profile of the latter. The size given for this form is two and a half to three and a half centimetres.",
+      "habitat": "It lives in fresh water at 10 to 30 °C, with a pH of 6 to 8.5. Its colouring varies between populations; the Blue Pearl is an aquarium-bred line.",
+      "comportement": "Lively and peaceful, it lives in colonies near the bottom and is active by day. It grazes algae and biofilm on plants. Being small, it hides when larger neighbours are around and ignores other species.",
+      "maintenance": "The source recommends at least five individuals in an aquarium of at least twenty litres. Plants, leaves and roots add refuges, especially useful after moults. Large fish and crustaceans can catch these small shrimp; to watch the colony and keep the young, favour a species tank or small tankmates with no predatory habits.",
+      "alimentation": "It looks for algae and microorganisms on plants and decor. Decaying leaves provide feeding surfaces, and dwarf shrimp foods complete these resources. Giving small portions limits leftovers that could foul the water.",
+      "reproduction": "The female carries her eggs under the abdomen. After several weeks of incubation the young are already formed and independent: the documented form breeds entirely in fresh water. The juveniles benefit from plants and fine refuges; successful breeding does not protect them from the other residents of the tank."
+    }
+  },
+  "Neritina pulligera": {
+    "nom_commun": "Dark nerite",
+    "profil": {
+      "repartition": "Tropical Indo-Pacific: Pacific islands, the Philippines, Indonesia, Malaysia, Thailand, northern Australia and Madagascar; reported in Hawaii",
+      "presentation": "The dark nerite grazes rocks and submerged roots, often near the surface. Its shell colour varies, which makes identification harder. A trade name such as “algae-eating snail” is not enough to recognise the species.",
+      "habitat": "It lives very close to the surface, on rocky areas and submerged roots of rivers, in moderately flowing water that is neutral to alkaline (pH 7 to 8.5). It can briefly leave the water.",
+      "comportement": "Active by day, alone or in groups, it grazes the growth on rocks and roots and withdraws into its shell when threatened.",
+      "maintenance": "Prepare a mature tank offering algae-covered surfaces and a lid to limit escapes. Animals weakened by transport must be able to feed as soon as they arrive.",
+      "alimentation": "It mainly eats algae; check how much food is really available in the tank.",
+      "reproduction": "The larvae develop in the sea. Eggs seen in fresh water do not directly produce a new population of snails."
+    }
+  },
+  "Procambarus alleni": {
+    "nom_commun": "Florida blue crayfish",
+    "profil": {
+      "repartition": "United States: Florida",
+      "presentation": "The Florida blue crayfish owes its very bright coat to a selected form: wild populations are rather brownish. Males are larger with narrower claws, while females are stockier.",
+      "habitat": "It lives in water of 18 to 30 °C, slightly alkaline (pH 7.5 to 8), over sand and humus. Wild populations are rather brown: the bright blue coat is a selected form.",
+      "comportement": "Nocturnal, it lives in small groups on the bottom and is rather calm, but tolerates no intrusion into its territory and can fight its territorial neighbours fiercely.",
+      "maintenance": "Prefer a species aquarium with caves and separate refuges. It may attack fish and crustaceans and damage plants. Keeping adults together remains risky, especially males.",
+      "alimentation": "The source describes it as omnivorous; give varied food on the bottom.",
+      "reproduction": "It breeds in fresh water. Cannibalism means a great many shelters are needed to have any hope of keeping the young."
+    }
+  },
+  "Vittina semiconica": {
+    "nom_commun": "Vittina semiconica",
+    "profil": {
+      "repartition": "Endemic to the island of Java (Indonesia), according to Fishipedia",
+      "presentation": "This nerite from Java has an orange-brown shell crossed by broken black bands. It often lives near the surface, in mangroves and slow coastal streams. Its variable patterns call for a more precise identification than a generic trade name.",
+      "habitat": "It lives near the surface in mangroves and slow-flowing coastal streams, preferably on rocky areas, sometimes alongside snails of the genera Melanoides or Tarebia.",
+      "comportement": "Solitary and active by day, it grazes algae on rocks and withdraws into its shell or a crevice when in danger.",
+      "maintenance": "A mature tank with a lid limits the risks of starvation and escape. Avoid snail-hunting fish and check individuals weakened by transport.",
+      "alimentation": "It grazes algae; the suitable fresh vegetables described by the source can be used as a supplement.",
+      "reproduction": "The eggs are laid on surfaces. The larvae continue their development at sea before the young return to fresh water."
+    }
+  },
+  "Vittina turrita": {
+    "nom_commun": "Turrita nerite",
+    "profil": {
+      "repartition": "Pacific islands (Fiji, Vanuatu, Solomon Islands, Micronesia, New Caledonia, French Polynesia) and the Philippines (Palawan); also reported in South Asia",
+      "presentation": "This nerite usually bears yellow and black diagonal stripes. It grazes submerged surfaces near the surface and is hard to tell apart with certainty from some related species. This page keeps the source's name and its taxonomic match.",
+      "habitat": "It lives very close to the surface, on rocky areas and submerged roots, in moderately flowing water that is neutral to alkaline (pH 7 to 8.5). It can briefly leave the water.",
+      "comportement": "Active by day, alone or in groups, it grazes algae on rocks and roots and withdraws into its shell when threatened.",
+      "maintenance": "A mature, covered aquarium gives it food and keeps it from escaping. Avoid fish that specialise in eating snails and check the condition of newly bought individuals.",
+      "alimentation": "Algae are its main food. Suitable fresh vegetables can supplement the diet described by the source.",
+      "reproduction": "The life cycle includes a larval stage at sea and cannot be completed entirely in fresh water."
+    }
+  },
+  "Vittina variegata": {
+    "nom_commun": "Tattooed nerite",
+    "profil": {
+      "repartition": "Western Pacific, from Japan to Samoa: the Philippines, Indonesia, northern Australia, Melanesia and Micronesia",
+      "presentation": "The shell of this nerite mixes yellow and black in irregular patterns, sometimes merged into broad bands. It lives on the rocks of rivers and island streams in the Pacific. Individuals are easily confused with other nerites in the trade.",
+      "habitat": "It is abundant on the rocky stretches of rivers and coastal streams, in well-oxygenated water, including strong currents, and avoids brackish water.",
+      "comportement": "Active by day, alone or in groups, it grazes algae on rocks and withdraws into its shell when in danger.",
+      "maintenance": "Provide rocky surfaces rich in algae and well-oxygenated water with some current. A new tank short on food can weaken these snails.",
+      "alimentation": "It mostly grazes algae; suitable fresh vegetables can supplement the food available.",
+      "reproduction": "The larvae are carried out to sea, then the young climb back up the rivers. Full breeding does not happen in fresh water."
+    }
+  },
+  "Vittina waigiensis": {
+    "nom_commun": "Waigeo nerite",
+    "profil": {
+      "repartition": "Indonesia (Sulawesi, western New Guinea) and the Philippines (Palawan)",
+      "presentation": "The Waigeo nerite has a smooth, elongated shell with yellow, orange or reddish bands and black patterns. The markings vary greatly from one individual to another. It lives in estuaries, mangroves and coastal streams.",
+      "habitat": "It lives near the surface, in the fresh and brackish water of estuaries, mangroves and slow-flowing coastal streams.",
+      "comportement": "Alone or in groups and active by day, it grazes algae on rocks near the surface.",
+      "maintenance": "Keep it in a mature, covered tank with enough algae on the surfaces. Avoid snail-eating fish; keep an eye on animals that explore the surface.",
+      "alimentation": "Algae are its main food. Suitable plant food can supplement the diet.",
+      "reproduction": "The egg capsules release larvae that develop at sea. The adults can live in fresh water without completing their whole cycle there."
+    }
+  }
+}

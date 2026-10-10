@@ -6,8 +6,8 @@ import { useI18n } from '@/components/I18nProvider';
 import { RULES } from '@/lib/compat';
 
 export default function HomeStats () {
-  const { t } = useI18n();
-  const { data: poissons } = useSWR('/api/poissons');
+  const { t, api } = useI18n();
+  const { data: poissons } = useSWR(api('/api/poissons'));
   const { data: familles } = useSWR('/api/poissons/familles');
 
   const stats = [

@@ -49,7 +49,7 @@ export function CatalogueSkeleton () {
 export default function Catalogue () {
   const params = useSearchParams(); // Paramètres d'URL
   const router = useRouter();
-  const { t, href, locale } = useI18n();
+  const { t, href, locale, api } = useI18n();
   const { path } = splitLocale(usePathname());
 
   const [terme, setTerme] = useState('');
@@ -57,7 +57,7 @@ export default function Catalogue () {
   const type = params.get('type') ?? '';
 
   // La liste complète est chargée une fois et filtrée dans le navigateur
-  const { data, error, isLoading } = useSWR('/api/plantes');
+  const { data, error, isLoading } = useSWR(api('/api/plantes'));
 
   // La page courante ne vaut que pour la recherche en cours : toute nouvelle recherche repart de la page 1
   const recherche = `${type}|${terme}`;

@@ -11,8 +11,8 @@ import Reveal from '@/components/Reveal';
 import { FEATURED_FAMILIES, familyHref } from '@/lib/families';
 
 export default function FamilyGrid () {
-  const { t, href, term } = useI18n();
-  const { data } = useSWR('/api/poissons');
+  const { t, href, term, api } = useI18n();
+  const { data } = useSWR(api('/api/poissons'));
 
   // Nombre d'espèces par famille (clé en minuscules)
   const counts = {};

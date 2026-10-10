@@ -39,8 +39,8 @@ function Row ({ label, children }) {
 export default function Poisson ({ params }) {
   const { id } = use(params);
   const router = useRouter();
-  const { t, href, term } = useI18n();
-  const { data, error, isLoading } = useSWR(`/api/poissons/${id}`);
+  const { t, href, term, api } = useI18n();
+  const { data, error, isLoading } = useSWR(api(`/api/poissons/${id}`));
 
   // Ouverte depuis un lien partagé, la fiche n'a pas de page précédente dans le site : retour au catalogue
   const retour = () => (hasPreviousPage() ? router.back() : router.push(href('/poissons')));

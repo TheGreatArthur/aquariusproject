@@ -180,9 +180,9 @@ export default function FishGlobe () {
   const sectionRef = useRef(null);
   const near = useNearScreen(sectionRef);
   const reduceMotion = useReducedMotion();
-  const { t } = useI18n();
+  const { t, api } = useI18n();
 
-  const { data: poissonsData } = useSWR(near ? '/api/poissons' : null);
+  const { data: poissonsData } = useSWR(near ? api('/api/poissons') : null);
   const { data: ecoregions } = useSWR(near ? '/maps/ecoregions.json' : null);
   // Fond de carte allégé au 1:110m (scripts/build-globe-map.sh) : le globe est redessiné à chaque image
   const { data: topo } = useSWR(near ? '/maps/globe-110m.json' : null);

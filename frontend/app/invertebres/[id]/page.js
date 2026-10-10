@@ -47,8 +47,8 @@ function Water ({ label, min, max, scaleMin, scaleMax, unit }) {
 export default function Invertebre ({ params }) {
   const { id } = use(params);
   const router = useRouter();
-  const { t, href, term, locale } = useI18n();
-  const { data, error, isLoading } = useSWR(`/api/invertebres/${id}`);
+  const { t, href, term, locale, api } = useI18n();
+  const { data, error, isLoading } = useSWR(api(`/api/invertebres/${id}`));
 
   // Ouverte depuis un lien partagé, la fiche n'a pas de page précédente dans le site : retour au catalogue
   const retour = () => (hasPreviousPage() ? router.back() : router.push(href('/invertebres')));

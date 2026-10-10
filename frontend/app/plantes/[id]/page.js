@@ -48,8 +48,8 @@ function Water ({ label, min, max, ...scale }) {
 export default function Plante ({ params }) {
   const { id } = use(params);
   const router = useRouter();
-  const { t, href, term, locale } = useI18n();
-  const { data, error, isLoading } = useSWR(`/api/plantes/${id}`);
+  const { t, href, term, locale, api } = useI18n();
+  const { data, error, isLoading } = useSWR(api(`/api/plantes/${id}`));
 
   // Ouverte depuis un lien partagé, la fiche n'a pas de page précédente dans le site : retour au catalogue
   const retour = () => (hasPreviousPage() ? router.back() : router.push(href('/plantes')));

@@ -22,8 +22,8 @@ const ZONES = [
  * @param {{ especes: string[] }} props noms scientifiques, dans l'ordre d'affichage
  */
 export default function PlagesPh ({ especes }) {
-  const { data, error } = useSWR('/api/poissons');
-  const { href } = useI18n();
+  const { href, api } = useI18n();
+  const { data, error } = useSWR(api('/api/poissons'));
 
   if (error)
     return <p className="card p-5 text-sm text-muted">Les plages des espèces n&apos;ont pas pu être chargées.</p>;

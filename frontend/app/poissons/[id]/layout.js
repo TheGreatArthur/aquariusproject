@@ -7,9 +7,9 @@ import { BACKEND_URL } from '@/lib/site';
 
 export async function generateMetadata ({ params }) {
   const { id } = await params;
-  const { t } = await getI18n();
+  const { t, api } = await getI18n();
   try {
-    const res = await fetch(`${BACKEND_URL}/poissons/${encodeURIComponent(id)}`, { next: { revalidate: 3600 } });
+    const res = await fetch(api(`${BACKEND_URL}/poissons/${encodeURIComponent(id)}`), { next: { revalidate: 3600 } });
     if (!res.ok)
       return { title: t('Poisson introuvable', 'Fish not found', '魚が見つかりません') };
     const p = await res.json();

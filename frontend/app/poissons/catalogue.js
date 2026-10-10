@@ -49,7 +49,7 @@ export function CatalogueSkeleton () {
 export default function Catalogue () {
   const params = useSearchParams(); // Paramètres d'URL
   const router = useRouter();
-  const { t, href, term } = useI18n();
+  const { t, href, term, api } = useI18n();
   // Le chemin sans /en : href() remet la langue de la page
   const { path } = splitLocale(usePathname());
 
@@ -58,7 +58,7 @@ export default function Catalogue () {
   const famille = params.get('famille') ?? '';
 
   // La liste complète est chargée une fois (même cache que le simulateur) et filtrée dans le navigateur
-  const { data, error, isLoading } = useSWR('/api/poissons');
+  const { data, error, isLoading } = useSWR(api('/api/poissons'));
   const { data: dataFamilles } = useSWR('/api/poissons/familles');
 
   // La page courante ne vaut que pour la recherche en cours : toute nouvelle recherche repart de la page 1
