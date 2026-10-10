@@ -1,3 +1,5 @@
+import json
+
 import pytest
 
 import translations
@@ -43,3 +45,41 @@ def test_translate_merges_profile_and_ignores_unknown_fields(english):
     assert translations.translate({**item, 'nom_scientifique': 'Pterophyllum scalare'}, 'fish', 'en').get('inconnu') \
         is None
 
+
+
+def _sources(catalogue: str) -> dict[str, dict]:
+    """ French species of a catalogue, by scientific name, with their texts at the top level """
+    data = translations.TRANSLATIONS_DIR.parent
+    read = lambda folder: [json.loads(f.read_text(encoding='utf-8')) for f in (data / folder).glob('*.json')]  # noqa: E731
+    if catalogue == 'fish':
+        species = {d['nom_scientifique']: d for d in read('profiles')}
+        for d in read('fish'):
+            species.setdefault(d['nom_scientifique'], {})
+        return species
+    if catalogue == 'invertebrates':
+        return {d['nom_scientifique']: d['profil'] for d in read('invertebrates')}
+    return {d['nom_scientifique']: d for d in read('plants')}
+
+
+TEXTS = {
+    'fish': ('repartition', 'presentation', 'habitat', 'comportement'),
+    'invertebrates': ('repartition', 'presentation', 'habitat', 'comportement', 'maintenance', 'alimentation',
+                      'reproduction'),
+    'plants': ('origine', 'presentation', 'culture'),
+}
+
+
+@pytest.mark.parametrize('catalogue', translations.CATALOGUES)
+@pytest.mark.parametrize('lang', translations.LANGUAGES)
+def test_every_species_is_translated(lang, catalogue):
+    """ Every species of the versioned data has a common name and all its texts in English and Japanese """
+    translations.load.cache_clear()
+    traduites = translations.load(lang, catalogue)
+    manques = []
+    for nom, source in _sources(catalogue).items():
+        entry = traduites.get(nom, {})
+        textes = entry.get('profil', {}) if catalogue != 'plants' else entry
+        manques += [f'{nom}: nom_commun'] if not entry.get('nom_commun') else []
+        manques += [f'{nom}: {champ}' for champ in TEXTS[catalogue] if source.get(champ) and not textes.get(champ)]
+
+    assert manques == []
