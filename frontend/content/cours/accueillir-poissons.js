@@ -11,7 +11,7 @@ const cours = {
       blocs: [
         {
           type: 'p',
-          texte: 'Renseignez-vous sur chaque espèce avant de l\'acheter : taille adulte, eau, vie en banc ou en solitaire, tempérament. Certaines espèces doivent vivre en groupe, d\'autres sont territoriales ou agressives et ne supportent pas leurs voisines. Le [simulateur](/simulation/starting) croise ces informations pour vous et signale les cohabitations à risque.',
+          texte: 'Renseignez-vous sur chaque espèce avant de l\'acheter : taille adulte, eau, vie en banc ou en solitaire, tempérament. Certaines espèces doivent vivre en groupe, d\'autres sont territoriales ou agressives et ne supportent pas leurs voisines. Le [simulateur](/simulation) croise ces informations pour vous et signale les cohabitations à risque.',
         },
         {
           type: 'p',

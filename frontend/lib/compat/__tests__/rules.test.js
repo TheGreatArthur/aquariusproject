@@ -1,16 +1,18 @@
 import { describe, expect, it } from 'vitest';
 
 import { commonRanges, evaluate, issuesIfAdded, RULES } from '@/lib/compat';
+import { espece, pointsInvertebre } from '@/lib/compat/especes';
 import {
-  cardinalis, channa, combattant, danioRerio, discus, fish, guppy, labeo, neon, rasboraNain, scalaire, silureDeVerre,
+  cardinalis, channa, combattant, danioRerio, discus, fish, guppy, invertebre, labeo, neon, plante, rasboraNain,
+  scalaire, silureDeVerre,
 } from './fixtures';
 
 const ENV = { litrage: 400 };
 const rules = (panier, env = ENV) => evaluate(panier, env).issues.map((i) => `${i.rule}:${i.severity}`);
 
 describe('engine', () => {
-  it('exposes the 14 rules', () => {
-    expect(RULES).toHaveLength(14);
+  it('exposes the 23 rules', () => {
+    expect(RULES).toHaveLength(23);
   });
 
   it('is compatible for a peaceful South American school', () => {
@@ -163,5 +165,100 @@ describe('issuesIfAdded', () => {
 
   it('ignores conflicts that already exist and under-sized groups', () => {
     expect(issuesIfAdded([cardinalis(4)], neon(0), ENV)).toEqual({ severity: null, messages: [] });
+  });
+});
+
+describe('species of the three catalogues', () => {
+  it('gives each species a unique id and the field names of a fish', () => {
+    const cherry = espece('invertebre', { id: 7, nom_commun: 'Red Cherry', famille: 'Atyidae', comportement: 'pacifique',
+      mode_vie: 'colonie', zone_geo: 'Asie', taille: 3, nb_individus: null });
+    const anubias = espece('plante', { id: 7, nom_commun: 'Anubias', famille: 'Araceae' });
+
+    expect([cherry.id, anubias.id, espece('poisson', { id: 7 }).id]).toEqual(['invertebre-7', 'plante-7', 'poisson-7']);
+    expect(cherry).toMatchObject({ ref: 7, nom_famille: 'Atyidae', nom_comportement: 'pacifique', nb_individus: 1 });
+    expect([cherry.points, anubias.points]).toEqual([1, 0]);
+  });
+
+  it('counts one point per 3 cm of invertebrate', () => {
+    expect([pointsInvertebre(3), pointsInvertebre(5.5), pointsInvertebre(15), pointsInvertebre(null)]).toEqual([1, 2, 5, 1]);
+  });
+
+  it('ignores plants in the fish rules and parameters a species does not give', () => {
+    const result = evaluate([cardinalis(), plante({ ph_mini: 5, ph_maxi: 8 }), invertebre({ ph_mini: 6, ph_maxi: 7 })], ENV);
+
+    expect(result.ranges).toEqual({ ph: [6, 6.5], gh: [3, 12], temp: [25, 28] });
+    expect(result.issues.filter((i) => i.rule === 'agressivite')).toEqual([]);
+    expect(commonRanges([plante()]).gh).toBeUndefined();
+  });
+});
+
+describe('0. water and volume of the tank', () => {
+  it('blocks a species outside the water or too big for the tank', () => {
+    const env = { litrage: 60, pH: 7.8, tempMoyenne: 26 };
+
+    expect(evaluate([cardinalis()], env).issues.find((i) => i.rule === 'eau').message)
+      .toBe('Cardinalis ne convient pas à votre bac (pH 4–6.5, bac d\'au moins 100 L).');
+    expect(rules([neon()], { litrage: 100 })).not.toContain('eau:error');
+  });
+});
+
+describe('15-19. invertebrates', () => {
+  it('warns that an omnivorous fish three times bigger eats shrimps', () => {
+    const gourami = fish({ nom_commun: 'Gourami', regime: 'omnivore', taille: 12 });
+
+    expect(rules([gourami, invertebre()])).toContain('crevettes:warning');
+    expect(rules([neon(), invertebre()])).not.toContain('crevettes:warning');
+  });
+
+  it('lets big crayfish hunt every smaller animal and dwarf ones only shrimps', () => {
+    const cherax = invertebre({ nom_commun: 'Cherax', groupe: 'écrevisse', regime: 'omnivore', taille: 15 }, 1);
+    const cpo = invertebre({ nom_commun: 'CPO', groupe: 'écrevisse', regime: 'omnivore', taille: 4 }, 2);
+    const nerite = invertebre({ nom_commun: 'Nérite', groupe: 'escargot', regime: 'brouteur', taille: null }, 1);
+
+    const big = evaluate([cherax, neon(), nerite], ENV).issues.find((i) => i.rule === 'chasseurs');
+    expect(big.message).toContain('Néon Bleu et Nérite');
+    expect(rules([cpo, neon()])).not.toContain('chasseurs:warning');
+    expect(rules([cpo, invertebre()])).toContain('chasseurs:warning');
+  });
+
+  it('blocks an assassin snail with other snails', () => {
+    const assassin = invertebre({ nom_commun: 'Escargot assassin', groupe: 'escargot', regime: 'carnivore', taille: null }, 1);
+    const nerite = invertebre({ nom_commun: 'Nérite', groupe: 'escargot', regime: 'brouteur', taille: null }, 1);
+
+    expect(rules([assassin, nerite])).toContain('escargots:error');
+    expect(rules([assassin, neon()])).not.toContain('escargots:error');
+  });
+
+  it('asks for a land area and tells when larves need brackish water', () => {
+    const vampire = invertebre({ nom_commun: 'Crabe vampire', groupe: 'crabe', installation: 'aquaterrarium' }, 3);
+    const amano = invertebre({ nom_commun: 'Amano', reproduction: 'larves en eau saumâtre' });
+
+    expect(rules([vampire])).toContain('aquaterrarium:warning');
+    expect(rules([amano])).toContain('larves:info');
+  });
+});
+
+describe('20-22. plants', () => {
+  it('warns when plants share no light level', () => {
+    const rotala = plante({ nom_commun: 'Rotala', lumiere_mini: 'forte', lumiere_maxi: 'très forte' });
+    const anubias = plante({ nom_commun: 'Anubias', lumiere_mini: 'très faible', lumiere_maxi: 'faible' });
+
+    expect(rules([rotala, anubias])).toContain('lumiere:warning');
+    expect(rules([rotala, plante()])).not.toContain('lumiere:warning');
+  });
+
+  it('tells which plants need CO2', () => {
+    expect(rules([plante({ co2: 'élevé' })])).toContain('co2:info');
+  });
+
+  it('warns about plant eaters, except for tough plants', () => {
+    const dollar = fish({ nom_commun: 'Dollar argenté', nom_famille: 'Serrasalmidae', regime: 'herbivore', taille: 15 });
+    const anubias = plante({ nom_commun: 'Anubias', usages: ['résiste aux cichlidés'] });
+
+    expect(rules([dollar, plante()])).toContain('herbivores:warning');
+    expect(rules([dollar, anubias])).not.toContain('herbivores:warning');
+    // Les loricariidés broutent les algues, pas les plantes
+    expect(rules([fish({ nom_famille: 'Loricariidae', regime: 'herbivore, alguivore' }), plante()]))
+      .not.toContain('herbivores:warning');
   });
 });

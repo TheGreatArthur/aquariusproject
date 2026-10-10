@@ -40,8 +40,10 @@ export default function Verdict ({ verdict, issues, ranges }) {
             {RANGES.map(({ key, label: name, unit }) => (
               <div key={key} className="rounded-lg bg-surface-elevated px-2.5 py-1.5">
                 <dt className="text-xs text-muted">{name}</dt>
-                <dd className={clsx('font-medium tabular-nums', !ranges[key] && 'text-danger')}>
-                  {ranges[key] ? `${ranges[key][0]}–${ranges[key][1]}${unit}` : 'aucune'}
+                {/* undefined : aucune espèce du bac ne donne ce paramètre (le GH des plantes) */}
+                <dd className={clsx('font-medium tabular-nums', ranges[key] === null && 'text-danger',
+                  ranges[key] === undefined && 'text-muted')}>
+                  {ranges[key] ? `${ranges[key][0]}–${ranges[key][1]}${unit}` : ranges[key] === null ? 'aucune' : '–'}
                 </dd>
               </div>
             ))}

@@ -129,7 +129,7 @@ const cours = {
           type: 'encadre',
           ton: 'danger',
           titre: 'Le « syndrome du bac neuf »',
-          texte: 'Trop de poissons dans un bac qui n\'a pas cyclé, ou trop de poissons ajoutés d\'un coup, provoquent une montée d\'ammoniaque et de nitrites que le filtre ne peut pas encore traiter : poissons malades, voire morts dans les premières semaines. Calculez la charge de votre future population avec [le simulateur](/simulation/starting) avant d\'acheter.',
+          texte: 'Trop de poissons dans un bac qui n\'a pas cyclé, ou trop de poissons ajoutés d\'un coup, provoquent une montée d\'ammoniaque et de nitrites que le filtre ne peut pas encore traiter : poissons malades, voire morts dans les premières semaines. Calculez la charge de votre future population avec [le simulateur](/simulation) avant d\'acheter.',
         },
       ],
     },

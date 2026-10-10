@@ -22,7 +22,7 @@ export default function CallToAction () {
             Testez une population avant d&apos;acheter vos poissons : c&apos;est gratuit et vos choix restent
             enregistrés dans votre navigateur.
           </p>
-          <Link href="/simulation/starting" className="btn-primary mt-8 !px-6 !py-3 text-base">
+          <Link href="/simulation" className="btn-primary mt-8 !px-6 !py-3 text-base">
             Simuler un bac <ArrowRight className="h-4 w-4"/>
           </Link>
         </div>

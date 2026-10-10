@@ -49,7 +49,7 @@ export default function GuidePratique () {
         </ol>
 
         <p className="mt-10 max-w-2xl text-sm text-muted">
-          Prêt à composer votre bac&nbsp;? Le <Link href="/simulation/starting" className="text-accent-glow hover:underline">simulateur</Link> vérifie
+          Prêt à composer votre bac&nbsp;? Le <Link href="/simulation" className="text-accent-glow hover:underline">simulateur</Link> vérifie
           l&apos;eau, la population et les cohabitations de votre future sélection.
         </p>
       </section>

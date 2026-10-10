@@ -7,7 +7,7 @@
  * @param {string} rule Identifiant de la règle
  * @param {'error'|'warning'|'info'} severity Gravité
  * @param {string} message Message affiché
- * @param {number[]} ids Poissons concernés
+ * @param {(number|string)[]} ids Espèces concernées
  */
 export const issue = (rule, severity, message, ids) => ({ rule, severity, message, ids });
 
