@@ -2,7 +2,7 @@
  * Titre et description de chaque fiche, calculés côté serveur (la page elle-même est rendue dans le navigateur)
  */
 
-const BACKEND_URL = process.env.BACKEND_URL || 'http://localhost:5001';
+import { BACKEND_URL } from '@/lib/site';
 
 export async function generateMetadata ({ params }) {
   const { id } = await params;
@@ -11,11 +11,12 @@ export async function generateMetadata ({ params }) {
     if (!res.ok)
       return { title: 'Poisson introuvable' };
     const p = await res.json();
-    return {
-      title: p.nom_commun,
-      description: `${p.nom_commun} (${p.nom_scientifique}, ${p.nom_famille}) : taille, volume minimum, `
-        + 'paramètres d\'eau, comportement et habitat naturel.',
-    };
+    const image = p.images?.[0] && `/images/${p.images[0]}`;
+    const title = p.nom_commun;
+    const description = `${p.nom_commun} (${p.nom_scientifique}, ${p.nom_famille}) : taille, volume minimum, `
+      + 'paramètres d\'eau, comportement et habitat naturel.';
+    // L'objet openGraph d'une fiche remplace celui du site : il reprend le titre et la description
+    return { title, description, openGraph: { title, description, images: image ? [image] : undefined } };
   } catch {
     return { title: 'Fiche poisson' }; // API indisponible : la page affichera son propre message
   }

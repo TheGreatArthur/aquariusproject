@@ -6,6 +6,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- **End-to-end tests** (Playwright, `npm run e2e`, own CI job): catalogue → species page → simulator → alerts, on a
+  database built from the versioned data files.
+- **SEO**: `sitemap.xml` with every species page, `robots.txt`, Open Graph and Twitter cards (site image, and each
+  species' photo on its page), canonical URL from `NEXT_PUBLIC_SITE_URL`.
 - **Missing data completed** ([report](docs/data/data-completion-2026-10-10.md)): free-licensed Commons photos with
   their credits for 115 of the 135 workbook fish, whose pictures had no known author or licence (the old images are
   removed; 20 species have no usable free photo yet); French names for 44 plants (GBIF vernacular names, Wikidata);
@@ -96,6 +100,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.env.example` for the front end; backend config driven by `AQUARIUS_DSN` / `AQUARIUS_EXCEL_FILE`.
 
 ### Changed
+- `.DS_Store` files are no longer tracked; ADR 0001 describes the current stack.
 - Range bars write French decimals (6,5) like the course pages, and can show an ideal band inside the tolerated
   range. The gallery, range bar and prose components moved out of `components/fish/` to be shared.
 - The header keeps its five links on one line between 768 and 1024 px (the Instagram icon shows from 1024 px).

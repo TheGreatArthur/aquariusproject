@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "test": "vitest run"
+    "test": "vitest run",
+    "e2e": "playwright test"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -23,6 +24,7 @@
     "topojson-client": "^3.1.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.0",
     "autoprefixer": "^10.6.1",
     "eslint": "9.39.5",
     "eslint-config-next": "16.3.8",
