@@ -36,9 +36,11 @@
 - **Modern, responsive UI** — dark theme with Tailwind CSS, subtle scroll animations,
   respecting *reduced motion*.
 - **Family showcase** on the home page linking to each family's fish.
-- **Tank simulator** — enter your tank volume, pH, GH and temperature and build a population checked by
-  [14 compatibility rules](docs/compatibility-rules.md) (shared water, predation, temperament, current, group
-  size, overpopulation…) with blocking / warning / info levels; each species shows its risks before you add it.
+- **Tank simulator** — enter your tank volume and water (or pick a typical water), then add fish, plants and
+  invertebrates from one searchable list; the tank is checked by [23 compatibility rules](docs/compatibility-rules.md)
+  (shared water, predation, shrimps eaten by fish, crayfish and assassin snails, plant light and plant eaters,
+  temperament, current, group size, overpopulation…) with blocking / warning / info levels, and each species shows
+  its risks before you add it ([ADR 0014](docs/adr/0014-simulator-fish-plants-invertebrates.md)).
 - **Practical guide** — six French courses (nitrogen cycle, water parameters, equipment, plants and decor,
   maintenance, introducing and feeding fish) with diagrams computed from published formulas, two calculators
   (free ammonia, equipment for a given volume) and the sources of every figure.
@@ -158,11 +160,11 @@ CI runs the same checks on every pull request and on pushes to `main`.
 - [0011 — More fish: species added as data files, with the workbook's house rules](docs/adr/0011-fish-added-as-data-files.md)
 - [0012 — Invertebrates stored and served like fish](docs/adr/0012-invertebrates-like-fish.md)
 - [0013 — Plant pages built like fish pages, with a native range map](docs/adr/0013-plants-like-fish-native-range.md)
+- [0014 — One simulator for fish, plants and invertebrates](docs/adr/0014-simulator-fish-plants-invertebrates.md)
 
 ## Roadmap & known limitations
 
 - [ ] Deploy a public demo
-- [ ] Plants in the simulator (light, CO₂ and water shared with the fish)
 - [ ] End-to-end tests in a browser (the compatibility rules and search helpers have unit tests)
 - The UI is in French only, dark theme only.
 - Compatibility rules run in the browser and are indicative, not expert advice.

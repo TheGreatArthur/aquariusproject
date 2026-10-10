@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    // Ancienne adresse du simulateur, encore citée dans des liens partagés
+    async redirects() {
+        return [{ source: '/simulation/starting', destination: '/simulation', permanent: true }];
+    },
     async rewrites() {
         return [
             {

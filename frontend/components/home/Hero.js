@@ -49,7 +49,7 @@ export default function Hero () {
           </motion.p>
 
           <motion.div className="mt-9 flex flex-wrap gap-3" {...item(0.24)}>
-            <Link href="/simulation/starting" className="btn-primary !px-6 !py-3 text-base">
+            <Link href="/simulation" className="btn-primary !px-6 !py-3 text-base">
               Simuler un bac <ArrowRight className="h-4 w-4"/>
             </Link>
             <Link href="/poissons" className="btn-ghost !px-6 !py-3 text-base">

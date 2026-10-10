@@ -8,7 +8,7 @@ const SCHEMAS = ['CalculateurAmmoniac', 'CalculateurEquipement', 'CourbeOxygene'
   'PlagesPh', 'PlanAquarium', 'TableauAmmoniac', 'TableauCo2'];
 const ICONES = ['Beaker', 'CalendarCheck', 'Fish', 'Leaf', 'RefreshCw', 'Thermometer'];
 const BLOCS = ['p', 'liste', 'etapes', 'flux', 'colonnes', 'tableau', 'encadre', 'figure'];
-const PAGES = ['/poissons', '/plantes', '/simulation/starting', '/cours'];
+const PAGES = ['/poissons', '/plantes', '/simulation', '/cours'];
 
 describe('typographie', () => {
   it('insère des espaces insécables avant la ponctuation haute et dans les guillemets', () => {
@@ -16,13 +16,13 @@ describe('typographie', () => {
   });
 
   it('découpe le balisage léger', () => {
-    expect(segments('Le **KH**, *Nitrospira* et [le simulateur](/simulation/starting).')).toEqual([
+    expect(segments('Le **KH**, *Nitrospira* et [le simulateur](/simulation).')).toEqual([
       { type: 'texte', texte: 'Le ' },
       { type: 'gras', texte: 'KH' },
       { type: 'texte', texte: ', ' },
       { type: 'italique', texte: 'Nitrospira' },
       { type: 'texte', texte: ' et ' },
-      { type: 'lien', texte: 'le simulateur', href: '/simulation/starting' },
+      { type: 'lien', texte: 'le simulateur', href: '/simulation' },
       { type: 'texte', texte: '.' },
     ]);
   });

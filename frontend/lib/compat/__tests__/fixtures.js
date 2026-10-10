@@ -2,6 +2,8 @@
  * Poissons de test, calqués sur les fiches réelles de la base (format de l'API)
  */
 
+import { espece } from '@/lib/compat/especes';
+
 let nextId = 1000;
 
 export function fish (overrides = {}) {
@@ -91,4 +93,23 @@ export const rasboraNain = (q = 8) => fish({
   id: 40, nom_commun: 'Rasbora nain', nom_famille: 'Danionidae', nom_robustesse: 'fragile', nom_zone_geo: 'Asie',
   taille: 2, nb_individus: 8, points: 2, litrage_mini: 40, ph_mini: 5.5, ph_maxi: 7, gh_mini: 2, gh_maxi: 10,
   temp_mini: 24, temp_maxi: 28, quantite: q,
+});
+
+/** Invertébré et plante au format de l'API, passés par espece() comme dans le simulateur */
+export const invertebre = (overrides = {}, q = 5) => ({
+  ...espece('invertebre', {
+    id: nextId++, nom_commun: 'Crevette', groupe: 'crevette', famille: 'Atyidae', comportement: 'pacifique',
+    mode_vie: 'colonie', regime: 'détritivore', installation: 'aquarium', reproduction: 'en eau douce', taille: 3,
+    nb_individus: 5, litrage_mini: 20, ph_mini: 6.5, ph_maxi: 7.5, gh_mini: null, gh_maxi: null, temp_mini: 20,
+    temp_maxi: 28, zone_geo: 'Asie', ...overrides,
+  }),
+  quantite: q,
+});
+
+export const plante = (overrides = {}) => ({
+  ...espece('plante', {
+    id: nextId++, nom_commun: 'Plante', famille: 'Araceae', type: 'tige', lumiere_mini: 'faible', lumiere_maxi: 'forte',
+    co2: null, usages: [], ph_mini: 6, ph_maxi: 8, temp_mini: 18, temp_maxi: 30, ...overrides,
+  }),
+  quantite: 1,
 });

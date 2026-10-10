@@ -122,6 +122,8 @@ def test_list_invertebres_with_main_photo(client):
     amano = next(i for i in invertebres if i['nom_scientifique'] == 'Caridina multidentata')
     assert amano['image'] == 'caridina-multidentata-1.jpg'
     assert (amano['groupe'], amano['comportement'], amano['litrage_mini']) == ('crevette', 'pacifique', 60)
+    # Champs lus par les règles du simulateur
+    assert (amano['regime'], amano['reproduction']) == ('détritivore', 'larves en eau saumâtre')
     # La fiche descriptive n'est renvoyée que sur le détail, comme pour les poissons
     assert 'profil' not in amano and 'credits' not in amano
 

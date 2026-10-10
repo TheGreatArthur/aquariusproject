@@ -59,7 +59,7 @@ def get_familles():
 # Champs de la liste des plantes : les textes et les sources ne sont renvoyés que sur le détail
 PLANTE_LISTE = (
     'id', 'nom_scientifique', 'nom_commun', 'famille', 'type', 'positions', 'difficulte', 'croissance', 'lumiere_mini',
-    'lumiere_maxi', 'co2', 'ph_mini', 'ph_maxi', 'temp_mini', 'temp_maxi', 'hauteur_mini', 'hauteur_maxi',
+    'lumiere_maxi', 'co2', 'ph_mini', 'ph_maxi', 'temp_mini', 'temp_maxi', 'hauteur_mini', 'hauteur_maxi', 'usages',
 )
 
 
@@ -84,7 +84,8 @@ def get_plante(id: int):
 # Champs de la liste des invertébrés, comme pour les poissons : la fiche descriptive n'est renvoyée que sur le détail
 INVERTEBRE_LISTE = (
     'id', 'nom_scientifique', 'nom_commun', 'variete', 'groupe', 'famille', 'installation', 'comportement', 'mode_vie',
-    'taille', 'litrage_mini', 'nb_individus', 'ph_mini', 'ph_maxi', 'temp_mini', 'temp_maxi',
+    'taille', 'litrage_mini', 'nb_individus', 'ph_mini', 'ph_maxi', 'gh_mini', 'gh_maxi', 'temp_mini', 'temp_maxi',
+    'regime', 'zone_geo', 'reproduction',
 )
 
 

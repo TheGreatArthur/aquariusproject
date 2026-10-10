@@ -2,8 +2,12 @@
  * Règles de cohabitation entre espèces : prédation, tempérament, familles, biotope
  */
 
+import { estAnimal } from '../especes';
 import { estCarnivore, NIVEAU_PREDATEUR, niveauComportement } from '../levels';
 import { issue, liste } from '../utils';
+
+// Animaux de taille connue (la taille de beaucoup d'escargots n'est pas renseignée)
+const mesures = (panier) => panier.filter((p) => estAnimal(p) && p.taille);
 
 // Paires de familles qui ne cohabitent pas, avec la raison affichée
 export const FAMILLES_INCOMPATIBLES = [
@@ -18,8 +22,8 @@ export const RATIO_BOUCHE = 3;
 
 /** 2. Un prédateur déclaré mange les poissons qui font au plus la moitié de sa taille */
 export function predateur (panier) {
-  return panier.filter((p) => niveauComportement(p) === NIVEAU_PREDATEUR).flatMap((p) => {
-    const proies = panier.filter((q) => q.id !== p.id && q.taille <= p.taille / 2);
+  return mesures(panier).filter((p) => niveauComportement(p) === NIVEAU_PREDATEUR).flatMap((p) => {
+    const proies = mesures(panier).filter((q) => q.id !== p.id && q.taille <= p.taille / 2);
     return proies.length
       ? [issue('predateur', 'error',
         `${p.nom_commun} est un prédateur (${p.taille} cm) : il mangera ${liste(proies.map((q) => q.nom_commun))}.`,
@@ -33,11 +37,8 @@ export function predateur (panier) {
  * Les prédateurs déclarés relèvent de la règle 2 ; les carnivores pacifiques (discus…) sont exclus.
  */
 export function bouche (panier) {
-  return panier.filter((p) => {
-    const niveau = niveauComportement(p);
-    return estCarnivore(p) && niveau > 0 && niveau < NIVEAU_PREDATEUR;
-  }).flatMap((p) => {
-    const proies = panier.filter((q) => q.id !== p.id && p.taille >= RATIO_BOUCHE * q.taille);
+  return mesures(panier).filter(gobeur).flatMap((p) => {
+    const proies = mesures(panier).filter((q) => q.id !== p.id && p.taille >= RATIO_BOUCHE * q.taille);
     return proies.length
       ? [issue('bouche', 'warning',
         `${p.nom_commun} (${p.taille} cm, carnivore) peut gober ${liste(proies.map((q) => `${q.nom_commun} (${q.taille} cm)`))}.`,
@@ -46,8 +47,15 @@ export function bouche (panier) {
   });
 }
 
+/** Carnivore non pacifique, qui n'est pas un prédateur déclaré (règle 3) */
+export function gobeur (p) {
+  const niveau = niveauComportement(p);
+  return estCarnivore(p) && niveau > 0 && niveau < NIVEAU_PREDATEUR;
+}
+
 /** 4. Écart de tempérament d'au moins 2 niveaux : les plus agressifs harcèlent les plus calmes */
-export function agressivite (panier) {
+export function agressivite (tout) {
+  const panier = tout.filter(estAnimal);
   if (panier.length < 2)
     return [];
   const niveaux = panier.map(niveauComportement);
@@ -77,7 +85,8 @@ export function familles (panier) {
 }
 
 /** 6. Bac biotope : toutes les espèces viennent de la même région (information positive) */
-export function biotope (panier) {
+export function biotope (tout) {
+  const panier = tout.filter(estAnimal);
   const zones = new Set(panier.map((p) => p.nom_zone_geo));
   const [zone] = zones;
   return panier.length >= 2 && zones.size === 1 && zone && zone !== 'International'

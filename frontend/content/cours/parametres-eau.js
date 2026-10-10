@@ -51,7 +51,7 @@ const cours = {
               'Poecilia reticulata', 'Xiphophorus maculatus', 'Aulonocara baenschi', 'Neolamprologus brichardi',
             ],
           },
-          legende: 'Plages de pH de quelques espèces du catalogue, avec leur dureté (GH, en °dGH). Un bac commun réunit des espèces dont les plages se recouvrent : c\'est ce que vérifie [le simulateur](/simulation/starting).',
+          legende: 'Plages de pH de quelques espèces du catalogue, avec leur dureté (GH, en °dGH). Un bac commun réunit des espèces dont les plages se recouvrent : c\'est ce que vérifie [le simulateur](/simulation).',
         },
         {
           type: 'encadre',

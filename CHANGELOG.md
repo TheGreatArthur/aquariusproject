@@ -6,6 +6,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- **Simulator for fish, plants and invertebrates** ([ADR 0014](docs/adr/0014-simulator-fish-plants-invertebrates.md)):
+  one `/simulation` page (the old `/simulation/starting` redirects to it) with the tank and its water on top (typical
+  waters in one click), one searchable list with a tab per catalogue and the tank beside it, plus a tank bar at the
+  bottom of the screen on phones. Nine new rules (shrimps eaten by fish, crayfish and carnivorous shrimps, assassin
+  snail, land area, larvae in brackish water, shared light, CO₂, plant eaters); species that do not suit the water stay
+  in the tank, blocked with the reason, instead of disappearing. The invertebrate and plant lists of the API give the
+  fields these rules read.
 - **Plants like fish, with their native range** ([ADR 0013](docs/adr/0013-plants-like-fish-native-range.md)): the
   plant catalogue grows from 10 to 132 references (species, forms and cultivars from Flowgrow, three free photos
   each from Wikimedia Commons or iNaturalist, [report](docs/data/plant-expansion-2026-10-04.md)) and its pages are
