@@ -17,9 +17,9 @@ async function fiches (route, liste) {
 
 export default async function sitemap () {
   const especes = (await Promise.all(CATALOGUES.map(([route, liste]) => fiches(route, liste)))).flat();
-  // Chaque page en français, avec son adresse anglaise (/en/...)
+  // Chaque page en français, avec ses adresses anglaise (/en/...) et japonaise (/ja/...)
   return [...PAGES, ...COURS.map(({ slug }) => `/cours/${slug}`), ...especes].map((path) => ({
     url: `${SITE_URL}${path}`,
-    alternates: { languages: { en: `${SITE_URL}${localize(path || '/', 'en')}` } },
+    alternates: { languages: Object.fromEntries(['en', 'ja'].map((l) => [l, `${SITE_URL}${localize(path || '/', l)}`])) },
   }));
 }

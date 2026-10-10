@@ -28,7 +28,7 @@ export default function Pagination ({ currentPage, totalPages, onPageChange }) {
   return (
     <nav className="flex items-center justify-center gap-1.5" aria-label="Pagination">
       <button type="button" className={arrow} onClick={() => onPageChange(currentPage - 1)}
-              disabled={currentPage === 1} aria-label={t('Page précédente', 'Previous page')}>
+              disabled={currentPage === 1} aria-label={t('Page précédente', 'Previous page', '前のページ')}>
         <ChevronLeft className="h-4 w-4"/>
       </button>
 
@@ -52,7 +52,7 @@ export default function Pagination ({ currentPage, totalPages, onPageChange }) {
         ))}
 
       <button type="button" className={arrow} onClick={() => onPageChange(currentPage + 1)}
-              disabled={currentPage === totalPages} aria-label={t('Page suivante', 'Next page')}>
+              disabled={currentPage === totalPages} aria-label={t('Page suivante', 'Next page', '次のページ')}>
         <ChevronRight className="h-4 w-4"/>
       </button>
     </nav>

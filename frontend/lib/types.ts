@@ -2,7 +2,7 @@
  * Shapes shared by the catalogues and the compatibility engine. Field names are those of the API (French).
  */
 
-export type Locale = 'fr' | 'en';
+export type Locale = 'fr' | 'en' | 'ja';
 
 /** Catalogue a species comes from */
 export type Kind = 'poisson' | 'invertebre' | 'plante';

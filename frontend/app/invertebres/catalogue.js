@@ -11,7 +11,7 @@ import { useI18n } from '@/components/I18nProvider';
 import PageHeader from '@/components/PageHeader';
 import Pagination from '@/components/Pagination';
 import { splitLocale } from '@/lib/i18n';
-import { GROUPS, GROUPS_EN, matchesInvertebrateSearch } from '@/lib/invertebrates';
+import { GROUPS, GROUPS_EN, GROUPS_JA, matchesInvertebrateSearch } from '@/lib/invertebrates';
 
 const INVERTEBRES_PER_PAGE = 12;
 
@@ -20,16 +20,17 @@ export function CatalogueHeader ({ count }) {
   const { t } = useI18n();
   return (
     <PageHeader
-      eyebrow={t('Catalogue', 'Catalogue')}
-      title={t('Les invertébrés', 'Invertebrates')}
+      eyebrow={t('Catalogue', 'Catalogue', '図鑑')}
+      title={t('Les invertébrés', 'Invertebrates', '無脊椎動物')}
       aside={count != null && (
         <p className="text-sm text-muted">
-          <span className="font-display text-2xl font-semibold text-foreground">{count}</span> {t('espèces', 'species')}
+          <span className="font-display text-2xl font-semibold text-foreground">{count}</span> {t('espèces', 'species', '種')}
         </p>
       )}
     >
       {t('Crevettes, crabes, escargots et écrevisses : recherchez par nom commun, nom scientifique, famille ou comportement.',
-        'Shrimp, crabs, snails and crayfish: search by common name, scientific name, family or behaviour.')}
+        'Shrimp, crabs, snails and crayfish: search by common name, scientific name, family or behaviour.',
+        'エビ、カニ、貝、ザリガニ：和名、学名、科、性格で検索できます。')}
     </PageHeader>
   );
 }
@@ -101,24 +102,24 @@ export default function Catalogue () {
         {/* Filtres */}
         <div className="sticky top-16 z-30 -mx-4 border-b border-border/60 bg-background/85 px-4 py-4 backdrop-blur-xl sm:mx-0 sm:rounded-2xl sm:border sm:px-5">
           <label className="relative block">
-            <span className="sr-only">{t('Rechercher un invertébré', 'Search for an invertebrate')}</span>
+            <span className="sr-only">{t('Rechercher un invertébré', 'Search for an invertebrate', '無脊椎動物を検索')}</span>
             <Search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted"/>
             <input
               type="search"
               className="input !rounded-full !pl-11"
-              placeholder={t('Amano, Red Cherry, Neritidae, pacifique…', 'Amano, Red Cherry, Neritidae, snail…')}
+              placeholder={t('Amano, Red Cherry, Neritidae, pacifique…', 'Amano, Red Cherry, Neritidae, snail…', 'ヤマトヌマエビ、レッドチェリー、アマオブネガイ科、貝…')}
               value={terme}
               onChange={(e) => onSearch(e.target.value)}
             />
           </label>
 
-          <div className="mt-3 flex gap-2 overflow-x-auto pb-1 [scrollbar-width:thin]" role="group" aria-label={t('Filtrer par groupe', 'Filter by group')}>
+          <div className="mt-3 flex gap-2 overflow-x-auto pb-1 [scrollbar-width:thin]" role="group" aria-label={t('Filtrer par groupe', 'Filter by group', 'グループで絞り込む')}>
             <button
               type="button"
               className={clsx('chip shrink-0', !groupe && 'chip-active')}
               onClick={() => chooseGroupe('')}
             >
-              {t('Tous', 'All')}
+              {t('Tous', 'All', 'すべて')}
             </button>
             {Object.entries(GROUPS).map(([key, label]) => (
               <button
@@ -127,7 +128,7 @@ export default function Catalogue () {
                 className={clsx('chip shrink-0', groupe === key && 'chip-active')}
                 onClick={() => chooseGroupe(key)}
               >
-                {t(label, GROUPS_EN[key])}
+                {t(label, GROUPS_EN[key], GROUPS_JA[key])}
               </button>
             ))}
           </div>
@@ -135,9 +136,9 @@ export default function Catalogue () {
 
         {groupe && (
           <p className="mt-6 flex items-center gap-2 text-sm text-muted">
-            {t('Groupe :', 'Group:')} <span className="text-foreground">{t(GROUPS[groupe], GROUPS_EN[groupe]) ?? groupe}</span>
+            {t('Groupe :', 'Group:', 'グループ：')} <span className="text-foreground">{t(GROUPS[groupe], GROUPS_EN[groupe], GROUPS_JA[groupe]) ?? groupe}</span>
             <button type="button" onClick={() => chooseGroupe('')} className="rounded-full p-1 hover:text-foreground"
-                    aria-label={t('Retirer le filtre de groupe', 'Remove the group filter')}>
+                    aria-label={t('Retirer le filtre de groupe', 'Remove the group filter', 'グループの絞り込みを解除')}>
               <X className="h-4 w-4"/>
             </button>
           </p>
@@ -146,15 +147,15 @@ export default function Catalogue () {
         {/* Résultats */}
         {error ? (
           <p className="card mt-10 p-8 text-center text-danger">
-            {t('Impossible de charger les invertébrés. Vérifiez que l\'API est démarrée.', 'Could not load the invertebrates. Check that the API is running.')}
+            {t('Impossible de charger les invertébrés. Vérifiez que l\'API est démarrée.', 'Could not load the invertebrates. Check that the API is running.', '無脊椎動物を読み込めませんでした。API が起動しているか確認してください。')}
           </p>
         ) : isLoading ? (
           <CatalogueSkeleton/>
         ) : invertebres.length === 0 ? (
           <div className="card mt-10 p-10 text-center">
-            <p className="font-display text-xl">{t('Aucun invertébré trouvé', 'No invertebrate found')}</p>
+            <p className="font-display text-xl">{t('Aucun invertébré trouvé', 'No invertebrate found', '該当する無脊椎動物はありません')}</p>
             <p className="mt-2 text-sm text-muted">
-              {t('Essayez un autre terme ou retirez le filtre de groupe.', 'Try another term or remove the group filter.')}
+              {t('Essayez un autre terme ou retirez le filtre de groupe.', 'Try another term or remove the group filter.', '別の言葉で検索するか、グループの絞り込みを解除してください。')}
             </p>
           </div>
         ) : (

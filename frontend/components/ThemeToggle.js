@@ -29,8 +29,8 @@ export default function ThemeToggle () {
   };
 
   return (
-    <button type="button" onClick={toggle} title={t('Thème clair ou sombre', 'Light or dark theme')}
-            aria-label={t('Changer de thème', 'Switch theme')}
+    <button type="button" onClick={toggle} title={t('Thème clair ou sombre', 'Light or dark theme', 'ライト／ダークテーマ')}
+            aria-label={t('Changer de thème', 'Switch theme', 'テーマを切り替え')}
             className="inline-flex rounded-full p-2 text-muted transition hover:text-accent-glow">
       <Sun className="h-5 w-5 [[data-theme=light]_&]:hidden"/>
       <Moon className="hidden h-5 w-5 [[data-theme=light]_&]:block"/>

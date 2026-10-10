@@ -5,7 +5,8 @@ export async function generateMetadata () {
   return {
     title: 'Contact',
     description: t('Une question, une erreur dans une fiche ou une espèce à ajouter : écrivez à l\'équipe Aquarius.',
-      'A question, a mistake in a profile or a species to add: write to the Aquarius team.'),
+      'A question, a mistake in a profile or a species to add: write to the Aquarius team.',
+      'ご質問、図鑑の誤り、追加してほしい種があれば、Aquarius チームまでご連絡ください。'),
   };
 }
 

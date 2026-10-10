@@ -49,29 +49,28 @@ export default async function CoursPage ({ params }) {
   return (
     <>
       <PageHeader
-        eyebrow={t('Guide pratique', 'Practical guide')}
+        eyebrow={t('Guide pratique', 'Practical guide', '実践ガイド')}
         title={cours.titre}
         aside={(
           <p className="flex items-center gap-2 text-sm text-muted">
-            <Clock className="h-4 w-4 text-accent"/> {tempsDeLecture(cours)}&nbsp;{t('min de lecture', 'min read')}
+            <Clock className="h-4 w-4 text-accent"/> {tempsDeLecture(cours)}&nbsp;{t('min de lecture', 'min read', '分で読めます')}
           </p>
         )}
       >
         <Texte>{cours.resume}</Texte>
-        {locale === 'en' && <span className="mt-2 block text-sm">This lesson is written in French.</span>}
       </PageHeader>
 
       <div className="container grid gap-10 lg:grid-cols-[13rem_minmax(0,1fr)] lg:gap-14">
         {/* Sommaire : replié sur mobile, fixe sur grand écran */}
         <details className="card p-4 lg:hidden">
-          <summary className="cursor-pointer font-medium">{t('Sommaire', 'Contents')}</summary>
+          <summary className="cursor-pointer font-medium">{t('Sommaire', 'Contents', '目次')}</summary>
           <div className="mt-3"><Sommaire sections={cours.sections}/></div>
         </details>
-        <nav aria-label={t('Sommaire', 'Contents')} className="hidden lg:sticky lg:top-24 lg:block lg:self-start">
-          <p className="mb-3 text-sm font-medium">{t('Sommaire', 'Contents')}</p>
+        <nav aria-label={t('Sommaire', 'Contents', '目次')} className="hidden lg:sticky lg:top-24 lg:block lg:self-start">
+          <p className="mb-3 text-sm font-medium">{t('Sommaire', 'Contents', '目次')}</p>
           <Sommaire sections={cours.sections}/>
           <Link href={href('/cours')} className="mt-6 inline-flex items-center gap-2 text-sm text-muted hover:text-foreground">
-            <ArrowLeft className="h-4 w-4"/> {t('Tous les cours', 'All lessons')}
+            <ArrowLeft className="h-4 w-4"/> {t('Tous les cours', 'All lessons', 'すべてのレッスン')}
           </Link>
         </nav>
 
@@ -84,7 +83,7 @@ export default async function CoursPage ({ params }) {
           ))}
 
           <section aria-labelledby="retenir-titre" className="card border-accent/30 p-6">
-            <h2 id="retenir-titre" className="text-xl font-semibold">{t('À retenir', 'Key points')}</h2>
+            <h2 id="retenir-titre" className="text-xl font-semibold">{t('À retenir', 'Key points', 'ポイント')}</h2>
             <ul className="mt-4 space-y-3">
               {cours.aRetenir.map((point) => (
                 <li key={point} className="flex gap-3">
@@ -109,20 +108,21 @@ export default async function CoursPage ({ params }) {
             </ul>
             <p className="mt-4 text-xs text-muted">
               {t('Textes rédigés par Aquarius à partir de ces sources. Ils ne remplacent pas l\'avis d\'un vétérinaire.',
-                'Written by Aquarius from these sources. They do not replace a vet\'s advice.')}
+                'Written by Aquarius from these sources. They do not replace a vet\'s advice.',
+                'これらの出典をもとに Aquarius が執筆しました。獣医師の助言に代わるものではありません。')}
             </p>
           </section>
 
-          <nav aria-label={t('Cours suivant et précédent', 'Next and previous lessons')} className="grid gap-4 border-t border-border pt-8 sm:grid-cols-2">
+          <nav aria-label={t('Cours suivant et précédent', 'Next and previous lessons', '次のレッスンと前のレッスン')} className="grid gap-4 border-t border-border pt-8 sm:grid-cols-2">
             {precedent ? (
               <Link href={href(`/cours/${precedent.slug}`)} className="card card-hover p-5">
-                <span className="flex items-center gap-2 text-sm text-muted"><ArrowLeft className="h-4 w-4"/> {t('Cours précédent', 'Previous lesson')}</span>
+                <span className="flex items-center gap-2 text-sm text-muted"><ArrowLeft className="h-4 w-4"/> {t('Cours précédent', 'Previous lesson', '前のレッスン')}</span>
                 <span className="mt-1 block font-display font-semibold">{precedent.titre}</span>
               </Link>
             ) : <span/>}
             {suivant && (
               <Link href={href(`/cours/${suivant.slug}`)} className="card card-hover p-5 text-right">
-                <span className="flex items-center justify-end gap-2 text-sm text-muted">{t('Cours suivant', 'Next lesson')} <ArrowRight className="h-4 w-4"/></span>
+                <span className="flex items-center justify-end gap-2 text-sm text-muted">{t('Cours suivant', 'Next lesson', '次のレッスン')} <ArrowRight className="h-4 w-4"/></span>
                 <span className="mt-1 block font-display font-semibold">{suivant.titre}</span>
               </Link>
             )}

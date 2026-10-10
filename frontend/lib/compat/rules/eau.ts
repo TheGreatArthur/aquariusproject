@@ -8,10 +8,10 @@ import type { Environment, Locale, Ranges, Species, WaterKey } from '@/lib/types
 import { plageCourant } from '../levels';
 import { formatRange, issue, paires } from '../utils';
 
-export const PARAMETRES: { key: WaterKey, label: string, en: string, unit: string }[] = [
-  { key: 'ph', label: 'pH', en: 'pH', unit: '' },
-  { key: 'gh', label: 'GH', en: 'GH', unit: '°' },
-  { key: 'temp', label: 'température', en: 'temperature', unit: ' °C' },
+export const PARAMETRES: { key: WaterKey, label: string, en: string, ja: string, unit: string }[] = [
+  { key: 'ph', label: 'pH', en: 'pH', ja: 'pH', unit: '' },
+  { key: 'gh', label: 'GH', en: 'GH', ja: 'GH', unit: '°' },
+  { key: 'temp', label: 'température', en: 'temperature', ja: '水温', unit: ' °C' },
 ];
 
 // Espèces dont la fiche donne ce paramètre (pas de GH pour les plantes ni pour la plupart des invertébrés)
@@ -48,7 +48,7 @@ export function parametres (panier: Species[], { locale }: Environment = {}) {
   const ranges = commonRanges(panier);
   if (!ranges || panier.length < 2)
     return [];
-  return PARAMETRES.filter(({ key }) => ranges[key] === null).map(({ key, label, en, unit }) => {
+  return PARAMETRES.filter(({ key }) => ranges[key] === null).map(({ key, label, en, ja, unit }) => {
     // Les deux espèces responsables : le minimum le plus haut et le maximum le plus bas
     const haut = avec(panier, key).reduce((a, b) => (mini(b, key) > mini(a, key) ? b : a));
     const bas = avec(panier, key).reduce((a, b) => (maxi(b, key) < maxi(a, key) ? b : a));
@@ -56,7 +56,9 @@ export function parametres (panier: Species[], { locale }: Environment = {}) {
       t(`Pas de ${label} commun : ${haut.nom_commun} (${plage(haut, key, unit)}) et ${bas.nom_commun} `
         + `(${plage(bas, key, unit)}) ne peuvent pas vivre dans la même eau.`,
       `No common ${en}: ${haut.nom_commun} (${plage(haut, key, unit, locale)}) and ${bas.nom_commun} `
-        + `(${plage(bas, key, unit, locale)}) cannot live in the same water.`),
+        + `(${plage(bas, key, unit, locale)}) cannot live in the same water.`,
+      `${ja}の共通範囲がありません：${haut.nom_commun}（${plage(haut, key, unit, locale)}）と${bas.nom_commun}`
+        + `（${plage(bas, key, unit, locale)}）は同じ水では飼えません。`),
       [haut.id, bas.id]);
   });
 }
@@ -71,12 +73,13 @@ export function votreEau (panier: Species[], { litrage, pH, gH, tempMoyenne, loc
         const valeur = eau[key];
         return valeur != null && p[`${key}_mini`] != null && (valeur < mini(p, key) || valeur > maxi(p, key));
       })
-      .map(({ key, label, en, unit }) => `${t(label, en)} ${plage(p, key, unit, locale)}`);
+      .map(({ key, label, en, ja, unit }) => `${t(label, en, ja)} ${plage(p, key, unit, locale)}`);
     if (litrage && (p.litrage_mini ?? 0) > litrage)
-      hors.push(t(`bac d'au moins ${p.litrage_mini} L`, `tank of at least ${p.litrage_mini} L`));
+      hors.push(t(`bac d'au moins ${p.litrage_mini} L`, `tank of at least ${p.litrage_mini} L`, `${p.litrage_mini} L 以上の水槽`));
     return hors.length
       ? [issue('eau', 'error', t(`${p.nom_commun} ne convient pas à votre bac (${hors.join(', ')}).`,
-        `${p.nom_commun} does not suit your tank (${hors.join(', ')}).`), [p.id])]
+        `${p.nom_commun} does not suit your tank (${hors.join(', ')}).`,
+        `${p.nom_commun}はあなたの水槽に合いません（${hors.join('、')}）。`), [p.id])]
       : [];
   });
 }
@@ -92,7 +95,8 @@ export function courant (panier: Species[], { locale }: Environment = {}) {
     const nom = (p: Species) => `${p.nom_commun} (${term(p.nom_courant)})`;
     return [issue('courant', 'warning',
       t(`Courant incompatible : ${nom(a)} et ${nom(b)} n'ont pas besoin du même brassage.`,
-        `Incompatible current: ${nom(a)} and ${nom(b)} need different water flow.`),
+        `Incompatible current: ${nom(a)} and ${nom(b)} need different water flow.`,
+        `水流が合いません：${nom(a)}と${nom(b)}は必要な水流が異なります。`),
       [a.id, b.id])];
   });
 }

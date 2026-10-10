@@ -23,9 +23,10 @@ const Simulator = dynamic(() => import('./simulator'), {
 export default function SimulationPage () {
   const { t } = useI18n();
   return <>
-    <PageHeader eyebrow={t('Simulateur', 'Simulator')} title={t('Composez votre aquarium', 'Build your aquarium')}>
+    <PageHeader eyebrow={t('Simulateur', 'Simulator', 'シミュレーター')} title={t('Composez votre aquarium', 'Build your aquarium', '水槽をつくろう')}>
       {t('Indiquez votre bac, puis ajoutez poissons, plantes et invertébrés : chaque ajout est vérifié avant d\'entrer.',
-        'Describe your tank, then add fish, plants and invertebrates: every addition is checked before it goes in.')}
+        'Describe your tank, then add fish, plants and invertebrates: every addition is checked before it goes in.',
+        '水槽の条件を入力し、魚、水草、無脊椎動物を追加しましょう。追加するたびに相性をチェックします。')}
     </PageHeader>
     <Simulator/>
   </>;

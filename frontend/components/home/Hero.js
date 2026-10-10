@@ -39,26 +39,28 @@ export default function Hero () {
       <div className="container">
         <div className="max-w-4xl">
           <motion.p className="eyebrow" {...item(0)}>
-            <Fish className="h-4 w-4"/> {t('Aquariophilie d\'eau douce', 'Freshwater fishkeeping')}
+            <Fish className="h-4 w-4"/> {t('Aquariophilie d\'eau douce', 'Freshwater fishkeeping', '淡水アクアリウム')}
           </motion.p>
 
           <motion.h1 className="mt-5 text-hero font-semibold" {...item(0.08)}>
-            {t('Composez un aquarium qui vit en ', 'Build an aquarium that lives in ')}
-            <span className="text-accent">{t('harmonie', 'harmony')}</span>.
+            {t('Composez un aquarium qui vit en ', 'Build an aquarium that lives in ', '')}
+            <span className="text-accent">{t('harmonie', 'harmony', '調和')}</span>
+            {t('.', '.', 'のとれた水槽をつくろう。')}
           </motion.h1>
 
           <motion.p className="mt-6 max-w-xl text-lg text-muted" {...item(0.16)}>
             {t('Choisissez vos poissons selon le volume et l\'eau de votre bac. Aquarius signale les cohabitations '
               + 'à risque avant l\'achat.',
-            'Choose your fish for the volume and water of your tank. Aquarius flags risky tankmates before you buy.')}
+            'Choose your fish for the volume and water of your tank. Aquarius flags risky tankmates before you buy.',
+            '水槽の容量と水質に合わせて魚を選びましょう。Aquarius は購入前に相性の悪い組み合わせを知らせます。')}
           </motion.p>
 
           <motion.div className="mt-9 flex flex-wrap gap-3" {...item(0.24)}>
             <Link href={href('/simulation')} className="btn-primary !px-6 !py-3 text-base">
-              {t('Simuler un bac', 'Plan a tank')} <ArrowRight className="h-4 w-4"/>
+              {t('Simuler un bac', 'Plan a tank', '水槽をシミュレート')} <ArrowRight className="h-4 w-4"/>
             </Link>
             <Link href={href('/poissons')} className="btn-ghost !px-6 !py-3 text-base">
-              {t('Explorer les espèces', 'Explore the species')}
+              {t('Explorer les espèces', 'Explore the species', '種を探す')}
             </Link>
           </motion.div>
         </div>

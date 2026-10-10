@@ -12,6 +12,8 @@ const STEPS = [
     text: 'Volume du bac, pH, GH et température : seules les espèces adaptées restent proposées.',
     titleEn: 'Describe your water',
     textEn: 'Tank volume, pH, GH and temperature: only suitable species stay on offer.',
+    titleJa: '水質を入力',
+    textJa: '水槽の容量、pH、GH、水温を入力すると、条件に合う種だけが候補に残ります。',
   },
   {
     icon: ListChecks,
@@ -19,6 +21,8 @@ const STEPS = [
     text: 'Ajoutez des espèces et ajustez leur nombre, groupe minimum compris.',
     titleEn: 'Choose your stock',
     textEn: 'Add species and adjust their numbers, minimum group size included.',
+    titleJa: '生体を選ぶ',
+    textJa: '種を追加して数を調整します。最小飼育数も考慮されます。',
   },
   {
     icon: ShieldCheck,
@@ -26,6 +30,8 @@ const STEPS = [
     text: 'Surpopulation, agressivité, prédation ou familles incompatibles : chaque risque est signalé.',
     titleEn: 'Check compatibility',
     textEn: 'Overstocking, aggression, predation or incompatible families: every risk is flagged.',
+    titleJa: '相性をチェック',
+    textJa: '過密、攻撃性、捕食、相性の悪い科など、あらゆるリスクを知らせます。',
   },
 ];
 
@@ -37,19 +43,19 @@ export default async function HowItWorks () {
         <div>
           <Reveal className="max-w-xl">
             <h2 id="how-title" className="text-3xl font-semibold sm:text-4xl">
-              {t('Trois étapes pour un bac équilibré.', 'Three steps to a balanced tank.')}
+              {t('Trois étapes pour un bac équilibré.', 'Three steps to a balanced tank.', 'バランスのよい水槽への3ステップ。')}
             </h2>
           </Reveal>
 
           <ol className="mt-10 max-w-xl space-y-8">
-            {STEPS.map(({ icon: Icon, title, text, titleEn, textEn }, i) => (
+            {STEPS.map(({ icon: Icon, title, text, titleEn, textEn, titleJa, textJa }, i) => (
               <Reveal as="li" key={title} delay={i * 0.08} className="flex gap-5">
                 <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent">
                   <Icon className="h-5 w-5"/>
                 </span>
                 <div>
-                  <h3 className="text-lg font-semibold">{t(title, titleEn)}</h3>
-                  <p className="mt-1 text-sm text-muted">{t(text, textEn)}</p>
+                  <h3 className="text-lg font-semibold">{t(title, titleEn, titleJa)}</h3>
+                  <p className="mt-1 text-sm text-muted">{t(text, textEn, textJa)}</p>
                 </div>
               </Reveal>
             ))}
@@ -65,7 +71,8 @@ export default async function HowItWorks () {
           <Image
             src="/simulateur-apercu.webp"
             alt={t('Le simulateur : eau d\'un bac de 200 litres et verdict « compatible, avec des points à surveiller »',
-              'The simulator: water of a 200-litre tank and the verdict "compatible, with points to watch"')}
+              'The simulator: water of a 200-litre tank and the verdict "compatible, with points to watch"',
+              'シミュレーター：200リットル水槽の水質と「相性良好、ただし注意点あり」の判定')}
             width={768}
             height={1184}
             sizes="(min-width: 1024px) 26rem, 24rem"

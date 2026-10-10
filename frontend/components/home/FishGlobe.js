@@ -29,7 +29,8 @@ const FLIGHT = 700; // durée du recentrage sur une zone choisie (ms)
 const FOCUS_ZOOM = 2.2; // zoom minimal sur une zone choisie, pour distinguer ses observations
 const graticule = geoGraticule10();
 
-// English names of the FEOW realms and major habitat types (the zone names come in English as nom_feow)
+// English names of the FEOW realms and major habitat types (the zone names come in English as nom_feow,
+// in Japanese as nom_ja)
 const REALMS_EN = {
   Afrotropical: 'Afrotropical', Australasien: 'Australasian', Indomalais: 'Indo-Malayan', Néarctique: 'Nearctic',
   Néotropical: 'Neotropical', Paléarctique: 'Palearctic',
@@ -46,6 +47,25 @@ const HABITATS_EN = {
   'rivières d\'altitude tempérées': 'temperate upland rivers',
   'rivières d\'altitude tropicales et subtropicales': 'tropical and subtropical upland rivers',
   'îles océaniques': 'oceanic islands',
+};
+
+// Japanese names of the same realms and habitat types
+const REALMS_JA = {
+  Afrotropical: 'アフリカ熱帯', Australasien: 'オーストラリア', Indomalais: 'インド・マレー', Néarctique: '新北',
+  Néotropical: '新熱帯', Paléarctique: '旧北',
+};
+const HABITATS_JA = {
+  'deltas de grands fleuves': '大河のデルタ',
+  'eaux de montagne': '山地の淡水',
+  'eaux des régions arides et bassins fermés': '乾燥地の淡水と内陸流域',
+  'fleuves côtiers tempérés': '温帯の沿岸河川',
+  'fleuves côtiers tropicaux et subtropicaux': '熱帯・亜熱帯の沿岸河川',
+  'grands lacs': '大湖',
+  'plaines inondables et zones humides tempérées': '温帯の氾濫原河川と湿地',
+  'plaines inondables et zones humides tropicales et subtropicales': '熱帯・亜熱帯の氾濫原河川と湿地',
+  'rivières d\'altitude tempérées': '温帯の山地河川',
+  'rivières d\'altitude tropicales et subtropicales': '熱帯・亜熱帯の山地河川',
+  'îles océaniques': '海洋島',
 };
 
 /** Netteté du canevas : la densité de l'écran, plafonnée à 2 (au-delà, le dessin coûte plus qu'il ne gagne) */
@@ -78,20 +98,20 @@ function ZoneList ({ zones, onSelect }) {
       <div className="border-b border-border/70 p-5 sm:p-6">
         <p className="font-display text-xl font-semibold">
           <span className="tabular-nums">{zones.length}</span> zones, <span className="tabular-nums">{especes}</span>{' '}
-          {t('espèces', 'species')}
+          {t('espèces', 'species', '種')}
         </p>
-        <p className="mt-1 text-sm text-muted">{t('Touchez un repère sur le globe ou choisissez une zone.', 'Tap a marker on the globe or pick a zone.')}</p>
+        <p className="mt-1 text-sm text-muted">{t('Touchez un repère sur le globe ou choisissez une zone.', 'Tap a marker on the globe or pick a zone.', '地球儀の目印をタップするか、ゾーンを選んでください。')}</p>
       </div>
       <div className="min-h-0 flex-1 space-y-6 overflow-y-auto p-5 [scrollbar-width:thin] sm:p-6">
         {groups.map(({ royaume, zones: liste }) => (
-          <section key={royaume} aria-label={t(`Domaine ${royaume}`, `${REALMS_EN[royaume] ?? royaume} realm`)}>
-            <h4 className="text-xs uppercase tracking-wider text-muted">{t(royaume, REALMS_EN[royaume] ?? royaume)}</h4>
+          <section key={royaume} aria-label={t(`Domaine ${royaume}`, `${REALMS_EN[royaume] ?? royaume} realm`, `${REALMS_JA[royaume] ?? royaume}区`)}>
+            <h4 className="text-xs uppercase tracking-wider text-muted">{t(royaume, REALMS_EN[royaume] ?? royaume, REALMS_JA[royaume] ?? royaume)}</h4>
             <ul className="mt-3 flex flex-wrap gap-2">
               {liste.map((zone) => (
                 <li key={zone.id}>
                   <button type="button" onClick={() => onSelect(zone)}
                           className="chip gap-1.5 hover:border-accent/50 hover:text-foreground">
-                    {t(zone.nom, zone.nom_feow)}
+                    {t(zone.nom, zone.nom_feow, zone.nom_ja)}
                     <span className="tabular-nums text-accent-glow">{zone.especes.length}</span>
                   </button>
                 </li>
@@ -113,16 +133,17 @@ function ZoneDetails ({ zone, poissons, onBack }) {
       <div className="border-b border-border/70 p-5 sm:p-6">
         <button type="button" onClick={onBack}
                 className="inline-flex items-center gap-1.5 text-sm text-muted transition hover:text-foreground">
-          <ArrowLeft className="h-4 w-4"/> {t('Toutes les zones', 'All zones')}
+          <ArrowLeft className="h-4 w-4"/> {t('Toutes les zones', 'All zones', 'すべてのゾーン')}
         </button>
-        <h3 className="mt-3 text-xl font-semibold sm:text-2xl" aria-live="polite">{t(zone.nom, zone.nom_feow)}</h3>
+        <h3 className="mt-3 text-xl font-semibold sm:text-2xl" aria-live="polite">{t(zone.nom, zone.nom_feow, zone.nom_ja)}</h3>
         <p className="mt-1 text-sm text-muted first-letter:uppercase">
           {t(`${zone.habitat}, domaine ${zone.royaume.toLowerCase()}`,
-            `${HABITATS_EN[zone.habitat] ?? zone.habitat}, ${REALMS_EN[zone.royaume] ?? zone.royaume} realm`)}
+            `${HABITATS_EN[zone.habitat] ?? zone.habitat}, ${REALMS_EN[zone.royaume] ?? zone.royaume} realm`,
+            `${HABITATS_JA[zone.habitat] ?? zone.habitat}、${REALMS_JA[zone.royaume] ?? zone.royaume}区`)}
         </p>
         <p className="mt-3 text-sm">
           <span className="font-display text-lg font-semibold tabular-nums">{zone.especes.length}</span>
-          {zone.especes.length > 1 ? t(' espèces du catalogue', ' species in the catalogue') : t(' espèce du catalogue', ' species in the catalogue')}
+          {zone.especes.length > 1 ? t(' espèces du catalogue', ' species in the catalogue', '種が図鑑に掲載') : t(' espèce du catalogue', ' species in the catalogue', '種が図鑑に掲載')}
         </p>
       </div>
       <ul className="min-h-0 flex-1 divide-y divide-border/60 overflow-y-auto [scrollbar-width:thin]">
@@ -142,10 +163,10 @@ function ZoneDetails ({ zone, poissons, onBack }) {
         ))}
       </ul>
       <p className="border-t border-border/70 px-5 py-3 text-xs text-muted sm:px-6">
-        {t('Nom FEOW', 'FEOW name')}&nbsp;: {zone.nom_feow}.{' '}
+        {t('Nom FEOW', 'FEOW name', 'FEOW での名称')}&nbsp;: {zone.nom_feow}.{' '}
         <a href={zone.url} target="_blank" rel="noopener noreferrer"
            className="inline-flex items-center gap-1 underline-offset-4 hover:text-accent-glow hover:underline">
-          {t('Fiche de l\'écorégion', 'Ecoregion profile')} <ExternalLink className="h-3 w-3"/>
+          {t('Fiche de l\'écorégion', 'Ecoregion profile', 'エコリージョンの詳細')} <ExternalLink className="h-3 w-3"/>
         </a>
       </p>
     </>
@@ -447,12 +468,13 @@ export default function FishGlobe () {
   return (
     <section ref={sectionRef} className="container py-24" aria-labelledby="globe-title">
       <Reveal className="max-w-2xl">
-        <h2 id="globe-title" className="text-3xl font-semibold sm:text-4xl">{t('D\'où viennent vos poissons\u00a0?', 'Where do your fish come from?')}</h2>
+        <h2 id="globe-title" className="text-3xl font-semibold sm:text-4xl">{t('D\'où viennent vos poissons\u00a0?', 'Where do your fish come from?', 'あなたの魚はどこから来たのでしょう？')}</h2>
         <p className="mt-4 text-base text-muted sm:text-lg">
           {t('Faites tourner le globe et touchez une zone\u00a0: les espèces du catalogue qui y vivent à l\'état '
             + 'sauvage s\'affichent, avec leurs observations.',
           'Spin the globe and tap a zone: the catalogue species that live there in the wild appear, with their '
-            + 'observations.')}
+            + 'observations.',
+          '地球儀を回してゾーンをタップすると、そこに自然分布する図鑑の種が観察記録とともに表示されます。')}
         </p>
       </Reveal>
 
@@ -466,7 +488,7 @@ export default function FishGlobe () {
               role="application"
               aria-label={t('Globe des zones d\'eau douce. Glissez ou utilisez les flèches pour le faire tourner, + et − pour zoomer. '
                 + 'Les zones sont aussi listées à côté.', 'Globe of freshwater zones. Drag or use the arrow keys to spin it, + and − '
-                + 'to zoom. The zones are also listed alongside.')}
+                + 'to zoom. The zones are also listed alongside.', '淡水域ゾーンの地球儀。ドラッグまたは矢印キーで回転、+ と − でズームできます。ゾーンは横の一覧にもあります。')}
               className="absolute inset-0 h-full w-full cursor-grab touch-none rounded-full active:cursor-grabbing"
               style={tooltip ? { cursor: 'pointer' } : undefined}
               onPointerDown={onPointerDown}
@@ -479,17 +501,17 @@ export default function FishGlobe () {
             {tooltip && (
               <div className="pointer-events-none absolute z-10 -translate-x-1/2 -translate-y-full whitespace-nowrap rounded-lg border border-border bg-surface px-2.5 py-1 text-xs shadow-lg"
                    style={{ left: tooltip.x, top: tooltip.y - tooltip.r - 6 }}>
-                {t(tooltip.zone.nom, tooltip.zone.nom_feow)} <span className="tabular-nums text-accent-glow">{tooltip.zone.especes.length}</span>
+                {t(tooltip.zone.nom, tooltip.zone.nom_feow, tooltip.zone.nom_ja)} <span className="tabular-nums text-accent-glow">{tooltip.zone.especes.length}</span>
               </div>
             )}
             <div className="absolute bottom-1 right-1 flex flex-col gap-1.5 sm:bottom-3 sm:right-3">
-              <button type="button" onClick={() => zoomBy(1.4)} className="btn-ghost !p-2" aria-label={t('Zoomer', 'Zoom in')}>
+              <button type="button" onClick={() => zoomBy(1.4)} className="btn-ghost !p-2" aria-label={t('Zoomer', 'Zoom in', '拡大')}>
                 <Plus className="h-4 w-4"/>
               </button>
-              <button type="button" onClick={() => zoomBy(1 / 1.4)} className="btn-ghost !p-2" aria-label={t('Dézoomer', 'Zoom out')}>
+              <button type="button" onClick={() => zoomBy(1 / 1.4)} className="btn-ghost !p-2" aria-label={t('Dézoomer', 'Zoom out', '縮小')}>
                 <Minus className="h-4 w-4"/>
               </button>
-              <button type="button" onClick={reset} className="btn-ghost !p-2" aria-label={t('Revenir à la vue de départ', 'Back to the starting view')}>
+              <button type="button" onClick={reset} className="btn-ghost !p-2" aria-label={t('Revenir à la vue de départ', 'Back to the starting view', '最初の表示に戻る')}>
                 <RotateCcw className="h-4 w-4"/>
               </button>
             </div>
@@ -497,7 +519,7 @@ export default function FishGlobe () {
           <p className="mt-6 text-center text-xs text-muted">
             Zones&nbsp;: <a href="https://www.feow.org" target="_blank" rel="noopener noreferrer"
                              className="underline-offset-4 hover:text-accent-glow hover:underline">Freshwater Ecoregions of the World</a>,
-            {' '}© 2008 The Nature Conservancy {t('et', 'and')} World Wildlife Fund, Inc. Observations&nbsp;: GBIF.
+            {' '}© 2008 The Nature Conservancy {t('et', 'and', 'および')} World Wildlife Fund, Inc. Observations&nbsp;: GBIF.
           </p>
         </Reveal>
 

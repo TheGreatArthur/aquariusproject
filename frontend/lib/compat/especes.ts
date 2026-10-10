@@ -10,10 +10,10 @@ import type { ApiItem, CatalogueSpecies, Kind } from '@/lib/types';
  */
 export const pointsInvertebre = (taille?: number | null) => Math.max(1, Math.ceil((taille ?? 0) / 3));
 
-export const TYPES: Record<Kind, { label: string, en: string, api: string, liste: string, page: string }> = {
-  poisson: { label: 'Poissons', en: 'Fish', api: '/api/poissons', liste: 'poissons', page: '/poissons' },
-  invertebre: { label: 'Invertébrés', en: 'Invertebrates', api: '/api/invertebres', liste: 'invertebres', page: '/invertebres' },
-  plante: { label: 'Plantes', en: 'Plants', api: '/api/plantes', liste: 'plantes', page: '/plantes' },
+export const TYPES: Record<Kind, { label: string, en: string, ja: string, api: string, liste: string, page: string }> = {
+  poisson: { label: 'Poissons', en: 'Fish', ja: '魚', api: '/api/poissons', liste: 'poissons', page: '/poissons' },
+  invertebre: { label: 'Invertébrés', en: 'Invertebrates', ja: '無脊椎動物', api: '/api/invertebres', liste: 'invertebres', page: '/invertebres' },
+  plante: { label: 'Plantes', en: 'Plants', ja: '水草', api: '/api/plantes', liste: 'plantes', page: '/plantes' },
 };
 
 // Les poissons de test et ceux d'un ancien bac n'ont pas de type

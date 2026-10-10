@@ -7,7 +7,7 @@ import { useI18n } from '@/components/I18nProvider';
 import { fishImage } from '@/lib/fish';
 
 export default function FishCard ({ poisson: p, priority = false }) {
-  const { t, href } = useI18n();
+  const { t, href, term } = useI18n();
   // Sans nom commun, la base reprend le nom scientifique : on ne l'affiche qu'une fois
   const sansNomCommun = p.nom_commun.trim().toLowerCase() === p.nom_scientifique.trim().toLowerCase();
 
@@ -34,20 +34,20 @@ export default function FishCard ({ poisson: p, priority = false }) {
 
         <div className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1">
           <BehaviourBadge comportement={p.nom_comportement}/>
-          <span className="truncate text-xs text-muted">{p.nom_famille}</span>
+          <span className="truncate text-xs text-muted">{term(p.nom_famille)}</span>
         </div>
 
         <dl className="mt-auto grid grid-cols-3 gap-1 border-t border-border/70 pt-3 text-[0.7rem] tabular-nums text-muted sm:mt-4 sm:gap-2 sm:pt-4 sm:text-xs">
-          <div className="flex items-center gap-1 sm:gap-1.5" title={t('Taille adulte', 'Adult size')}>
-            <Ruler className="hidden h-3.5 w-3.5 shrink-0 text-accent sm:block"/><dt className="sr-only">{t('Taille', 'Size')}</dt>
+          <div className="flex items-center gap-1 sm:gap-1.5" title={t('Taille adulte', 'Adult size', '成体のサイズ')}>
+            <Ruler className="hidden h-3.5 w-3.5 shrink-0 text-accent sm:block"/><dt className="sr-only">{t('Taille', 'Size', 'サイズ')}</dt>
             <dd className="whitespace-nowrap">{p.taille}&nbsp;cm</dd>
           </div>
-          <div className="flex items-center gap-1 sm:gap-1.5" title={t('Volume minimum', 'Minimum volume')}>
+          <div className="flex items-center gap-1 sm:gap-1.5" title={t('Volume minimum', 'Minimum volume', '最小水量')}>
             <Droplet className="hidden h-3.5 w-3.5 shrink-0 text-accent sm:block"/><dt className="sr-only">Volume</dt>
             <dd className="whitespace-nowrap">{p.litrage_mini}&nbsp;L</dd>
           </div>
-          <div className="flex items-center gap-1 sm:gap-1.5" title={t('Température', 'Temperature')}>
-            <Thermometer className="hidden h-3.5 w-3.5 shrink-0 text-accent sm:block"/><dt className="sr-only">{t('Température', 'Temperature')}</dt>
+          <div className="flex items-center gap-1 sm:gap-1.5" title={t('Température', 'Temperature', '水温')}>
+            <Thermometer className="hidden h-3.5 w-3.5 shrink-0 text-accent sm:block"/><dt className="sr-only">{t('Température', 'Temperature', '水温')}</dt>
             <dd className="whitespace-nowrap">{p.temp_mini}–{p.temp_maxi}°</dd>
           </div>
         </dl>
