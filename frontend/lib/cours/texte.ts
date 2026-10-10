@@ -1,21 +1,25 @@
 /**
- * Texte des cours : typographie française et balisage léger.
+ * Texte des cours : typographie et balisage léger.
  *
- * Les cours sont écrits en chaînes simples (content/cours/*.js). On y utilise :
- * **gras**, *italique* (noms d'espèces) et [lien](/chemin ou https://…).
+ * Les cours sont écrits en chaînes simples (content/cours/*.js, en anglais dans en/, en japonais dans ja/). On y
+ * utilise : **gras**, *italique* (noms d'espèces) et [lien](/chemin ou https://…).
  */
+
+import type { Locale } from '@/lib/types';
 
 const NBSP = ' ';
 
 /**
- * Espaces insécables de la typographie française : avant « : ; ? ! % » et à l'intérieur des guillemets,
- * ainsi qu'entre un nombre et son unité courante, pour qu'une ligne ne commence jamais par un signe isolé.
+ * Espaces insécables entre un nombre et son unité courante, et, en français seulement, avant « : ; ? ! % » et à
+ * l'intérieur des guillemets, pour qu'une ligne ne commence jamais par un signe isolé.
  */
-export function typo (texte: string) {
-  return texte
+export function typo (texte: string, locale: Locale = 'fr') {
+  const unites = texte.replace(/(\d) (°C|°dGH|°dKH|°f|°d|mg\/L|L\b|W\b|cm\b|mm\b|h\b|min\b|%|lm)/g, `$1${NBSP}$2`);
+  if (locale !== 'fr')
+    return unites;
+  return unites
     .replace(/ ([:;?!%»])/g, `${NBSP}$1`)
-    .replace(/« /g, `«${NBSP}`)
-    .replace(/(\d) (°C|°dGH|°dKH|°f|°d|mg\/L|L\b|W\b|cm\b|mm\b|h\b|min\b|%|lm)/g, `$1${NBSP}$2`);
+    .replace(/« /g, `«${NBSP}`);
 }
 
 /** Bloc d'un cours (paragraphe, liste, tableau, schéma...) : seules ses chaînes sont lues ici */
@@ -44,8 +48,8 @@ export interface Segment {
 const BALISE = /(\*\*[^*]+\*\*|\*[^*]+\*|\[[^\]]+\]\([^)\s]+\))/;
 
 /** Découpe une chaîne balisée en segments à afficher */
-export function segments (source: string): Segment[] {
-  return typo(source).split(BALISE).filter(Boolean).map((morceau) => {
+export function segments (source: string, locale?: Locale): Segment[] {
+  return typo(source, locale).split(BALISE).filter(Boolean).map((morceau) => {
     if (morceau.startsWith('**') && morceau.endsWith('**'))
       return { type: 'gras', texte: morceau.slice(2, -2) };
     if (morceau.startsWith('*') && morceau.endsWith('*') && morceau.length > 2)
@@ -78,8 +82,9 @@ export function chainesDuCours (cours: Cours) {
   return chaines.filter((c): c is string => typeof c === 'string');
 }
 
-/** Temps de lecture en minutes, à 200 mots par minute */
-export function tempsDeLecture (cours: Cours) {
-  const mots = chainesDuCours(cours).map(texteBrut).join(' ').split(/\s+/).filter(Boolean).length;
-  return Math.max(1, Math.round(mots / 200));
+/** Temps de lecture en minutes : 200 mots par minute, ou 500 caractères par minute en japonais */
+export function tempsDeLecture (cours: Cours, locale?: Locale) {
+  const texte = chainesDuCours(cours).map((c) => texteBrut(c)).join(' ');
+  const quantite = locale === 'ja' ? texte.replace(/\s+/g, '').length / 500 : texte.split(/\s+/).filter(Boolean).length / 200;
+  return Math.max(1, Math.round(quantite));
 }

@@ -74,17 +74,17 @@ export const rangeFromKew = (p: ApiItem) => p.sources.some((s: { nom: string }) 
  * Fiche « Dans la nature » d'une plante, avec les champs de celle d'un poisson (voir FishProfile). L'auteur relevé
  * sur GBIF est celui du nom d'usage : il n'accompagne pas le nom valide quand la plante a été renommée.
  */
-export function plantProfil (p: ApiItem) {
+export function plantProfil (p: ApiItem, locale?: Locale) {
   return {
     nom_valide: p.nom_valide,
     auteur: p.nom_valide ? null : p.auteur,
     classification: p.ordre ? `${p.ordre} › ${p.famille}` : p.famille,
     uicn: p.uicn,
-    repartition: typo(p.origine),
+    repartition: typo(p.origine, locale),
     pays: p.pays ?? [],
     introduits: p.introduits ?? [],
     points: p.points ?? [],
-    presentation: typo(p.presentation),
+    presentation: typo(p.presentation, locale),
     sources: p.sources,
   };
 }

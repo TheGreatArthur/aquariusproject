@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowRight, CheckCircle2, Clock, ExternalLink } from 'lucide
 import Bloc from '@/components/cours/Blocs';
 import Texte from '@/components/cours/Texte';
 import PageHeader from '@/components/PageHeader';
-import { COURS, getCours } from '@/content/cours';
+import { COURS, getCours, listeDesCours } from '@/content/cours';
 import { getI18n } from '@/lib/i18n-server';
 import { tempsDeLecture, texteBrut } from '@/lib/cours/texte';
 
@@ -17,7 +17,8 @@ export function generateStaticParams () {
 
 export async function generateMetadata ({ params }) {
   const { slug } = await params;
-  const cours = getCours(slug);
+  const { locale } = await getI18n();
+  const cours = getCours(slug, locale);
   return cours ? { title: cours.titre, description: texteBrut(cours.resume) } : {};
 }
 
@@ -37,14 +38,15 @@ function Sommaire ({ sections }) {
 
 export default async function CoursPage ({ params }) {
   const { slug } = await params;
-  const cours = getCours(slug);
+  const { t, href, locale } = await getI18n();
+  const cours = getCours(slug, locale);
   if (!cours)
     notFound();
 
-  const { t, href, locale } = await getI18n();
-  const index = COURS.indexOf(cours);
-  const precedent = COURS[index - 1];
-  const suivant = COURS[index + 1];
+  const liste = listeDesCours(locale);
+  const index = liste.indexOf(cours);
+  const precedent = liste[index - 1];
+  const suivant = liste[index + 1];
 
   return (
     <>
@@ -53,7 +55,7 @@ export default async function CoursPage ({ params }) {
         title={cours.titre}
         aside={(
           <p className="flex items-center gap-2 text-sm text-muted">
-            <Clock className="h-4 w-4 text-accent"/> {tempsDeLecture(cours)}&nbsp;{t('min de lecture', 'min read', '分で読めます')}
+            <Clock className="h-4 w-4 text-accent"/> {tempsDeLecture(cours, locale)}&nbsp;{t('min de lecture', 'min read', '分で読めます')}
           </p>
         )}
       >
@@ -95,7 +97,7 @@ export default async function CoursPage ({ params }) {
           </section>
 
           <section aria-labelledby="sources-titre">
-            <h2 id="sources-titre" className="text-sm font-medium text-muted">Sources</h2>
+            <h2 id="sources-titre" className="text-sm font-medium text-muted">{t('Sources', 'Sources', '出典')}</h2>
             <ul className="mt-3 space-y-1.5 text-sm">
               {cours.sources.map(({ nom, url }) => (
                 <li key={url}>

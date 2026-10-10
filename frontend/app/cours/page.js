@@ -5,7 +5,7 @@ import { ICONES } from '@/components/cours/icones';
 import Texte from '@/components/cours/Texte';
 import PageHeader from '@/components/PageHeader';
 import Reveal from '@/components/Reveal';
-import { COURS } from '@/content/cours';
+import { listeDesCours } from '@/content/cours';
 import { getI18n } from '@/lib/i18n-server';
 import { tempsDeLecture } from '@/lib/cours/texte';
 
@@ -32,7 +32,7 @@ export default async function GuidePratique () {
 
       <section className="container" aria-label={t('Cours', 'Lessons', 'レッスン')}>
         <ol className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {COURS.map((cours, i) => {
+          {listeDesCours(locale).map((cours, i) => {
             const Icone = ICONES[cours.icone];
             return (
               <Reveal as="li" key={cours.slug} delay={(i % 3) * 0.06}>
@@ -44,7 +44,7 @@ export default async function GuidePratique () {
                   <p className="mt-2 flex-1 text-sm text-muted"><Texte>{cours.resume}</Texte></p>
                   <p className="mt-5 flex items-center justify-between border-t border-border/70 pt-4 text-xs text-muted">
                     <span className="flex items-center gap-1.5">
-                      <Clock className="h-3.5 w-3.5 text-accent"/> {tempsDeLecture(cours)}&nbsp;min
+                      <Clock className="h-3.5 w-3.5 text-accent"/> {tempsDeLecture(cours, locale)}&nbsp;{t('min', 'min', '分')}
                     </span>
                     <span className="flex items-center gap-1 text-foreground/80 group-hover:text-accent-glow">
                       {t('Lire', 'Read', '読む')} <ArrowRight className="h-3.5 w-3.5"/>

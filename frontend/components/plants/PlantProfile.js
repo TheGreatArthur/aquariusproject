@@ -68,10 +68,10 @@ function RangeFacts ({ plante: p }) {
  * classification, statut UICN, carte de répartition), puis « En aquarium » (culture) et les sources
  */
 export default function PlantProfile ({ plante }) {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
   return (
     <>
-      <FishProfile profil={plantProfil(plante)} nomScientifique={plante.nom_scientifique} withSources={false}
+      <FishProfile profil={plantProfil(plante, locale)} nomScientifique={plante.nom_scientifique} withSources={false}
                    habitatAside={<RangeFacts plante={plante}/>}/>
 
       <section className="mt-24" aria-labelledby="aquarium-title">
@@ -83,7 +83,7 @@ export default function PlantProfile ({ plante }) {
           <Reveal>
             <Block icon={Sprout} title={t('Culture en aquarium', 'Growing in the aquarium', '水槽での栽培')} id="culture-title">
               <div className="mt-5 max-w-3xl space-y-4 text-[0.95rem] leading-relaxed text-foreground/85">
-                <Prose text={typo(plante.culture)}/>
+                <Prose text={typo(plante.culture, locale)}/>
               </div>
             </Block>
           </Reveal>

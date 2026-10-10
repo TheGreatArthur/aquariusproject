@@ -1,4 +1,5 @@
 import { oxygeneSaturation } from '@/lib/cours/chimie';
+import { getI18n } from '@/lib/i18n-server';
 
 const L = 640;
 const H = 280;
@@ -11,10 +12,11 @@ const SEUIL_OATA = 6;
 
 const x = (t) => M.gauche + ((t - T_MIN) / (T_MAX - T_MIN)) * (L - M.gauche - M.droite);
 const y = (o) => H - M.bas - ((o - O_MIN) / (O_MAX - O_MIN)) * (H - M.haut - M.bas);
-const nombre = new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 1 });
 
 /** Oxygène dissous à saturation selon la température (Benson et Krause, tables USGS) */
-export default function CourbeOxygene () {
+export default async function CourbeOxygene () {
+  const { t, intl } = await getI18n();
+  const nombre = new Intl.NumberFormat(intl, { maximumFractionDigits: 1 });
   const points = Array.from({ length: (T_MAX - T_MIN) * 2 + 1 }, (_, i) => T_MIN + i / 2);
   const d = points.map((t, i) => `${i ? 'L' : 'M'}${x(t).toFixed(1)},${y(oxygeneSaturation(t)).toFixed(1)}`).join(' ');
   const reperes = [20, 25, 30];
@@ -22,10 +24,12 @@ export default function CourbeOxygene () {
   return (
     <div className="card p-4 sm:p-6">
       <svg viewBox={`0 0 ${L} ${H}`} className="w-full" role="img"
-           aria-label={`L'eau à saturation contient ${reperes.map((t) => `${nombre.format(oxygeneSaturation(t))} mg/L à ${t} °C`).join(', ')}.`}>
+           aria-label={t(`L'eau à saturation contient ${reperes.map((c) => `${nombre.format(oxygeneSaturation(c))} mg/L à ${c} °C`).join(', ')}.`,
+             `Saturated water holds ${reperes.map((c) => `${nombre.format(oxygeneSaturation(c))} mg/L at ${c} °C`).join(', ')}.`,
+             `飽和した水に溶ける酸素は ${reperes.map((c) => `${c} °C で ${nombre.format(oxygeneSaturation(c))} mg/L`).join('、')} である。`)}>
         {/* Plage tropicale courante */}
         <rect x={x(24)} y={M.haut} width={x(28) - x(24)} height={H - M.haut - M.bas} className="fill-accent/10"/>
-        <text x={(x(24) + x(28)) / 2} y={M.haut + 16} textAnchor="middle" className="fill-accent-glow text-[14px]">bac tropical</text>
+        <text x={(x(24) + x(28)) / 2} y={M.haut + 16} textAnchor="middle" className="fill-accent-glow text-[14px]">{t('bac tropical', 'tropical tank', '熱帯魚水槽')}</text>
 
         {[6, 7, 8, 9, 10].map((o) => (
           <g key={o}>
@@ -40,7 +44,7 @@ export default function CourbeOxygene () {
 
         {/* Minimum recommandé par l'OATA */}
         <line x1={M.gauche} x2={L - M.droite} y1={y(SEUIL_OATA)} y2={y(SEUIL_OATA)} className="stroke-danger" strokeWidth="2" strokeDasharray="8 6"/>
-        <text x={L - M.droite} y={y(SEUIL_OATA) - 8} textAnchor="end" className="fill-danger text-[14px]">minimum conseillé : 6&nbsp;mg/L</text>
+        <text x={L - M.droite} y={y(SEUIL_OATA) - 8} textAnchor="end" className="fill-danger text-[14px]">{t('minimum conseillé\u00a0: 6\u00a0mg/L', 'recommended minimum: 6\u00a0mg/L', '推奨される最低値：6\u00a0mg/L')}</text>
 
         <path d={d} fill="none" strokeWidth="3.5" strokeLinecap="round" className="stroke-accent"/>
         {reperes.map((t) => (
