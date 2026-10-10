@@ -1,6 +1,7 @@
 # 0001. Next.js front end + Flask API
 Date: 2026-09-27
-Status: Accepted (UI library choice superseded by [0003](0003-ui-redesign-tailwind.md))
+Status: Accepted (UI library superseded by [0003](0003-ui-redesign-tailwind.md), versions updated by
+[0007](0007-nextjs-16-react-19.md))
 
 > Documented retroactively: the decision was taken when the project started (2023).
 
@@ -16,7 +17,8 @@ learning exercise in building a decoupled front end / back end.
   to one origin.
 - **Back end:** Flask + Flask-SQLAlchemy (SQLAlchemy 2 typed models), exposing JSON endpoints.
 - **Validation logic** (over/under-population, cohabitation, predation) lives in the front end
-  (`frontend/lib/validations`) because it only works on the user's basket.
+  (`frontend/lib/validations`, now [`frontend/lib/compat`](../../frontend/lib/compat)) because it only works on the
+  user's basket.
 
 ## Alternatives considered
 - **Next.js only (API routes + Prisma):** one language and one deployment, but the team already
@@ -30,3 +32,8 @@ learning exercise in building a decoupled front end / back end.
 - ✅ The `/api` rewrite avoids CORS issues in the browser.
 - ❌ Two runtimes (Node + Python) to install and run; mitigated by `make dev`.
 - ❌ Business rules in the browser can be bypassed; acceptable since nothing is persisted.
+
+## Current state (2026-10)
+The split between a Next.js front end and a Flask API still holds. The front end now runs Next.js 16 and React 19
+([0007](0007-nextjs-16-react-19.md)) with Tailwind CSS ([0003](0003-ui-redesign-tailwind.md)), still in JavaScript;
+the API serves fish, plants and invertebrates loaded from the workbook and from versioned JSON files.
