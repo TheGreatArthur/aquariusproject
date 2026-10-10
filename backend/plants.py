@@ -29,6 +29,9 @@ CROISSANCES = ('très lente', 'lente', 'moyenne', 'rapide', 'très rapide')
 LUMIERES = ('très faible', 'faible', 'moyenne', 'forte', 'très forte')
 CO2 = ('faible', 'moyen', 'élevé')
 UICN = ('LC', 'NT', 'VU', 'EN', 'CR', 'EW', 'EX', 'DD', 'NE')
+# Besoin en CO2 d'après la concentration minimale conseillée par Flowgrow (mg/l), calé sur Tropica : les plantes
+# dont Tropica donne le besoin (faible) ont un minimum Flowgrow de 5 à 15 mg/l
+CO2_MINIMUMS = ((15, 'faible'), (20, 'moyen'))
 
 # Champs repris de Flowgrow tels quels
 FLOWGROW_FIELDS = (
@@ -42,6 +45,13 @@ REQUIRED = ('famille', 'type', 'difficulte', 'croissance', 'lumiere_mini', 'lumi
             'temp_mini', 'temp_maxi')
 
 
+def co2_level(minimum: float | None) -> str | None:
+    """ 'faible', 'moyen' ou 'élevé' d'après la concentration minimale de CO2 conseillée (mg/l) """
+    if minimum is None:
+        return None
+    return next((level for limit, level in CO2_MINIMUMS if minimum <= limit), 'élevé')
+
+
 def merge(fiche: dict, collected: dict, points: list | None = None) -> dict:
     """ Valeurs d'une plante pour la base : fiche rédigée + données collectées (+ points de la carte) """
     flowgrow, tropica, gbif, aire = (collected.get(k, {}) for k in ('flowgrow', 'tropica', 'gbif', 'aire'))
@@ -51,7 +61,8 @@ def merge(fiche: dict, collected: dict, points: list | None = None) -> dict:
     # Hauteur moyenne deux mois après la plantation (Tropica), à défaut la hauteur indiquée par Flowgrow
     for field in ('hauteur_mini', 'hauteur_maxi'):
         values[field] = tropica.get(field, flowgrow.get(field))
-    values['co2'] = tropica.get('co2')
+    # Besoin en CO2 de Tropica, à défaut déduit de la concentration minimale conseillée par Flowgrow
+    values['co2'] = tropica.get('co2') or co2_level(flowgrow.get('co2_mini'))
     # Classification actuelle selon GBIF, à défaut celle de Flowgrow
     values['famille'] = gbif.get('famille') or flowgrow.get('famille')
     values['ordre'] = gbif.get('ordre') or flowgrow.get('ordre')

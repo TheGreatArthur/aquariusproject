@@ -62,6 +62,10 @@ USAGES = {
     'Nano tanks': ([], ['nano-aquarium']),
     'Cichlid proof plant': ([], ['résiste aux cichlidés']),
     'Plant for spawning': ([], ['frayère']),
+    'Specimen plant': ([], ['plante isolée']),
+    'Accent (red)': ([], ['accent coloré']),
+    'Street (Dutch style)': ([], ['rue hollandaise']),
+    'Semi-emersed plant for open tanks': ([], ['bac ouvert']),
 }
 
 MULTIPLICATIONS = {
@@ -74,6 +78,7 @@ MULTIPLICATIONS = {
     'Cuttings': 'boutures',
     'Fragmentation': 'fragmentation',
     'Seeds': 'graines',
+    'Spores': 'spores',
 }
 
 # Port de la plante (pictogrammes Flowgrow), du plus caractéristique au plus général
@@ -81,12 +86,16 @@ PORTS = {
     'moss / liverwort or fern prothallium': 'mousse',
     'epiphyte or epilith': 'épiphyte',
     'free-floating submerged plant': 'flottante',
+    'free-floating (surface)': 'flottante',
     'floating plant': 'flottante',
     'stem': 'tige',
     'rosette': 'rosette',
     'rhizome or creeping stem': 'rhizome',
 }
 PRIORITE_PORTS = ('mousse', 'épiphyte', 'flottante', 'tige', 'rosette', 'rhizome')
+# Pictogrammes qui précisent un port déjà donné (bulbe, tubercule, feuilles flottantes d'une plante enracinée)
+PORTS_IGNORES = ('fern', 'rooting plant with floating leaves', 'tuber', 'onion', 'emergent aquatic plant')
+
 
 
 # --- Analyse des valeurs ----------------------------------------------------------------------------
@@ -189,6 +198,7 @@ def flowgrow_values(raw: dict) -> tuple[dict, list[str]]:
     put(('temp_mini', 'temp_maxi'), parse_range(raw.get('Temperature tolerance')))
     put(('temp_opti_mini', 'temp_opti_maxi'), parse_range(raw.get('Optimum temperature')))
     put(('hauteur_mini', 'hauteur_maxi'), parse_range(raw.get('Height')))
+    put(('co2_mini', 'co2_maxi'), parse_range(raw.get('Carbon dioxide (CO2)')))
     put(('lumiere_mini', 'lumiere_maxi'), parse_levels(raw.get('Light'), LUMIERES))
 
     for field, label, table in (('difficulte', 'Difficulty', DIFFICULTES), ('croissance', 'Growth', CROISSANCES)):
@@ -208,7 +218,7 @@ def flowgrow_values(raw: dict) -> tuple[dict, list[str]]:
     values['multiplication'] = unique(multiplication)
 
     ports = [PORTS[p] for p in raw.get('ports', []) if p in PORTS]
-    warnings += [f'port inconnu : {p!r}' for p in raw.get('ports', []) if p not in PORTS and p != 'fern']
+    warnings += [f'port inconnu : {p!r}' for p in raw.get('ports', []) if p not in PORTS and p not in PORTS_IGNORES]
     values['type'] = main_type(ports, values['usages'])
 
     emersed = (raw.get('Can grow emersed?') or '').lower()
