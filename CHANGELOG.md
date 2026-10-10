@@ -6,6 +6,14 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- **Missing data completed** ([report](docs/data/data-completion-2026-10-10.md)): free-licensed Commons photos with
+  their credits for 115 of the 135 workbook fish, whose pictures had no known author or licence (the old images are
+  removed; 20 species have no usable free photo yet); French names for 44 plants (GBIF vernacular names, Wikidata);
+  a CO₂ need for every plant (Tropica, otherwise derived from Flowgrow's advised concentration) and 34 more Tropica
+  heights; floating plants filed as floating; shell sizes for the eight snails. Values that no source gives stay
+  empty and are listed in the report.
+- `import_excel.py` runs as a `main()` function, now covered by tests that import a small workbook twice (95 %
+  coverage, up from 44 %).
 - **Simulator for fish, plants and invertebrates** ([ADR 0014](docs/adr/0014-simulator-fish-plants-invertebrates.md)):
   one `/simulation` page (the old `/simulation/starting` redirects to it) with the tank and its water on top (typical
   waters in one click), one searchable list with a tab per catalogue and the tank beside it, plus a tank bar at the
