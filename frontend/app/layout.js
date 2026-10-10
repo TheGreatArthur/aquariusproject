@@ -5,6 +5,7 @@
 import { Inter, Space_Grotesk } from 'next/font/google';
 
 import Providers from '@/components/Providers';
+import { SITE_URL } from '@/lib/site';
 import SiteFooter from '@/components/SiteFooter';
 import SiteHeader from '@/components/SiteHeader';
 import './globals.css';
@@ -13,6 +14,10 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'sw
 const display = Space_Grotesk({ subsets: ['latin'], variable: '--font-display', display: 'swap' });
 
 export const metadata = {
+  // Les images de partage (opengraph-image.jpg, photo de chaque fiche) deviennent des adresses absolues
+  metadataBase: new URL(SITE_URL),
+  openGraph: { siteName: 'Aquarius', locale: 'fr_FR', type: 'website' },
+  twitter: { card: 'summary_large_image' },
   title: {
     default: 'Aquarius · Composez un aquarium en harmonie',
     template: '%s · Aquarius',
