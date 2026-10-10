@@ -6,14 +6,14 @@ import { useI18n } from '@/components/I18nProvider';
 import { RULES } from '@/lib/compat';
 
 export default function HomeStats () {
-  const { t } = useI18n();
-  const { data: poissons } = useSWR('/api/poissons');
+  const { t, api } = useI18n();
+  const { data: poissons } = useSWR(api('/api/poissons'));
   const { data: familles } = useSWR('/api/poissons/familles');
 
   const stats = [
-    { value: poissons?.poissons.length, label: t('espèces référencées', 'species listed') },
-    { value: familles?.familles.length, label: t('familles', 'families') },
-    { value: RULES.length, label: t('règles de compatibilité', 'compatibility rules') },
+    { value: poissons?.poissons.length, label: t('espèces référencées', 'species listed', '掲載種') },
+    { value: familles?.familles.length, label: t('familles', 'families', '科') },
+    { value: RULES.length, label: t('règles de compatibilité', 'compatibility rules', '相性ルール') },
   ];
 
   return (

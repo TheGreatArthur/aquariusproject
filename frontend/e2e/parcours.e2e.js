@@ -52,7 +52,7 @@ test('le site publie un sitemap avec les fiches', async ({ request }) => {
   expect(sitemap).toMatch(/\/plantes\/\d+<\/loc>/);
 });
 
-test('la version anglaise traduit l’interface et garde la langue dans les liens', async ({ page }) => {
+test('la version anglaise traduit l’interface et les espèces, et garde la langue dans les liens', async ({ page }) => {
   await page.goto('/en/simulation');
   await expect(page.locator('html')).toHaveAttribute('lang', 'en');
   await expect(page.getByRole('heading', { level: 1, name: 'Build your aquarium' })).toBeVisible();
@@ -61,16 +61,33 @@ test('la version anglaise traduit l’interface et garde la langue dans les lien
   await page.getByRole('tab', { name: /Invertebrates/ }).click();
   const search = page.getByRole('searchbox', { name: 'Search for a species' });
   await search.fill('assassin');
-  await page.getByRole('button', { name: 'Add Escargot assassin to the tank' }).click();
-  await search.fill('nérite tachetée');
-  await page.getByRole('button', { name: 'Add Nérite tachetée to the tank' }).click();
-  await expect(page.getByRole('status')).toContainText('Escargot assassin eats other snails: Nérite tachetée.');
+  await page.getByRole('button', { name: 'Add Assassin snail to the tank' }).click();
+  await search.fill('turrita');
+  await page.getByRole('button', { name: 'Add Turrita nerite to the tank' }).click();
+  await expect(page.getByRole('status')).toContainText('Assassin snail eats other snails: Turrita nerite.');
 
   await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'Fish' }).click();
   await expect(page).toHaveURL(/\/en\/poissons$/);
-  await page.getByRole('link', { name: 'Version française' }).click();
+  const header = page.getByRole('banner');
+  await header.getByRole('button', { name: 'Language' }).click();
+  await header.getByRole('link', { name: 'Français' }).click();
   await expect(page).toHaveURL(/\/poissons$/);
   await expect(page.getByRole('heading', { level: 1, name: 'Les poissons' })).toBeVisible();
+});
+
+test('la version japonaise traduit les fiches et le guide pratique', async ({ page }) => {
+  await page.goto('/ja/plantes');
+  await expect(page.locator('html')).toHaveAttribute('lang', 'ja');
+  await page.getByRole('searchbox', { name: '水草を検索' }).fill('anubias');
+  await page.getByRole('link', { name: /アヌビアス・ナナ/ }).click();
+
+  await expect(page).toHaveURL(/\/ja\/plantes\/\d+$/);
+  await expect(page.getByRole('heading', { level: 1, name: 'アヌビアス・ナナ' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: '水槽での育て方', exact: true })).toBeVisible();
+
+  await page.goto('/ja/cours/cycle-azote');
+  await expect(page.getByRole('heading', { level: 1, name: '窒素循環' })).toBeVisible();
+  await expect(page.getByRole('link', { name: '水質', exact: true })).toHaveAttribute('href', '/ja/cours/parametres-eau#durete');
 });
 
 test('le thème clair se choisit et reste enregistré', async ({ page }) => {

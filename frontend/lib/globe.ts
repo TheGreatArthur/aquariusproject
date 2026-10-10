@@ -12,6 +12,7 @@ export interface Zone {
   id: number;
   nom: string;
   nom_feow: string;
+  nom_ja: string;
   royaume: string;
   habitat: string;
   url: string;

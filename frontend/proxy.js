@@ -3,8 +3,8 @@ import { NextResponse } from 'next/server';
 import { DEFAULT_LOCALE, LOCALE_HEADER, PATH_HEADER, splitLocale } from '@/lib/i18n';
 
 /**
- * /en/... serves the same pages as the French site (rewrite), with the language passed to server components in a
- * request header. The header is always overwritten, so a client cannot pick the language of a French URL.
+ * /en/... and /ja/... serve the same pages as the French site (rewrite), with the language passed to server
+ * components in a request header. The header is always overwritten, so a client cannot pick the language of a French URL.
  */
 export function proxy (request) {
   const { locale, path } = splitLocale(request.nextUrl.pathname);

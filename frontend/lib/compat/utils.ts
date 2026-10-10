@@ -12,10 +12,12 @@ export const issue = (rule: string, severity: Severity, message: string, ids: Is
 /** Toutes les paires distinctes d'une liste */
 export const paires = <T>(items: T[]): [T, T][] => items.flatMap((a, i) => items.slice(i + 1).map((b): [T, T] => [a, b]));
 
-/** 'a', 'a et b', 'a, b et c' ('a, b and c' in English) */
+/** 'a', 'a et b', 'a, b et c' ('a, b and c' in English, 'a、bとc' in Japanese) */
 export function liste (noms: string[], locale?: Locale) {
-  return noms.length < 2 ? noms.join('')
-    : `${noms.slice(0, -1).join(', ')} ${translator(locale).t('et', 'and')} ${noms.at(-1)}`;
+  if (noms.length < 2)
+    return noms.join('');
+  const debut = noms.slice(0, -1);
+  return translator(locale).t(`${debut.join(', ')} et `, `${debut.join(', ')} and `, `${debut.join('、')}と`) + noms.at(-1);
 }
 
 const formats: Record<string, Intl.NumberFormat> = {};

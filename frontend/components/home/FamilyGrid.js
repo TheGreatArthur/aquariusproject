@@ -11,8 +11,8 @@ import Reveal from '@/components/Reveal';
 import { FEATURED_FAMILIES, familyHref } from '@/lib/families';
 
 export default function FamilyGrid () {
-  const { t, href } = useI18n();
-  const { data } = useSWR('/api/poissons');
+  const { t, href, term, api } = useI18n();
+  const { data } = useSWR(api('/api/poissons'));
 
   // Nombre d'espèces par famille (clé en minuscules)
   const counts = {};
@@ -24,11 +24,11 @@ export default function FamilyGrid () {
       <Reveal className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
         <div className="max-w-xl">
           <h2 id="familles-title" className="text-3xl font-semibold sm:text-4xl">
-            {t('Des tétras aux cichlidés, trouvez vos futurs pensionnaires.', 'From tetras to cichlids, find your future residents.')}
+            {t('Des tétras aux cichlidés, trouvez vos futurs pensionnaires.', 'From tetras to cichlids, find your future residents.', 'テトラからシクリッドまで、水槽の新しい仲間を見つけましょう。')}
           </h2>
         </div>
         <Link href={href('/poissons')} className="btn-ghost self-start md:self-auto">
-          {t('Toutes les espèces', 'All species')} <ArrowUpRight className="h-4 w-4"/>
+          {t('Toutes les espèces', 'All species', 'すべての種')} <ArrowUpRight className="h-4 w-4"/>
         </Link>
       </Reveal>
 
@@ -59,14 +59,14 @@ export default function FamilyGrid () {
               <div className="relative p-4 sm:p-5">
                 <div className="flex items-center justify-between gap-3">
                   <h3 className={clsx('min-w-0 font-semibold', i === 0 ? 'text-2xl' : 'text-[0.95rem] sm:text-lg')}>
-                    {f.nom}
+                    {term(f.nom)}
                   </h3>
                   <ArrowUpRight className="hidden h-5 w-5 shrink-0 text-accent opacity-0 transition group-hover:opacity-100 sm:block"/>
                 </div>
-                <p className="mt-1 hidden text-sm text-foreground/75 sm:line-clamp-2">{t(f.description, f.en)}</p>
+                <p className="mt-1 hidden text-sm text-foreground/75 sm:line-clamp-2">{t(f.description, f.en, f.ja)}</p>
                 {counts[f.nom.toLowerCase()] && (
                   <p className="mt-2 text-xs font-medium text-accent-glow sm:mt-3">
-                    {counts[f.nom.toLowerCase()]} {t('espèces', 'species')}
+                    {counts[f.nom.toLowerCase()]} {t('espèces', 'species', '種')}
                   </p>
                 )}
               </div>

@@ -29,7 +29,9 @@ export function lumiere (panier: Species[], { locale }: Environment = {}) {
     ? [issue('lumiere', 'warning', t(`Éclairage incompatible : ${forte.nom_commun} demande une lumière au moins `
       + `${forte.lumiere_mini}, ${faible.nom_commun} au plus ${faible.lumiere_maxi}.`,
     `Incompatible lighting: ${forte.nom_commun} needs at least ${term(forte.lumiere_mini)} light, `
-      + `${faible.nom_commun} at most ${term(faible.lumiere_maxi)}.`), [forte.id, faible.id])]
+      + `${faible.nom_commun} at most ${term(faible.lumiere_maxi)}.`,
+    `照明が合いません：${forte.nom_commun}は${term(forte.lumiere_mini)}以上の光量、`
+      + `${faible.nom_commun}は${term(faible.lumiere_maxi)}以下の光量を必要とします。`), [forte.id, faible.id])]
     : [];
 }
 
@@ -39,7 +41,8 @@ export function co2 (panier: Species[], { locale }: Environment = {}) {
   const exigeantes = plantes(panier).filter((p) => p.co2 === 'élevé');
   return exigeantes.length
     ? [issue('co2', 'info', t(`${liste(exigeantes.map((p) => p.nom_commun))} : prévoyez un apport de CO₂.`,
-      `${liste(exigeantes.map((p) => p.nom_commun), locale)}: plan for CO₂ injection.`), [])]
+      `${liste(exigeantes.map((p) => p.nom_commun), locale)}: plan for CO₂ injection.`,
+      `${liste(exigeantes.map((p) => p.nom_commun), locale)}：CO₂ の添加を検討してください。`), [])]
     : [];
 }
 
@@ -56,7 +59,9 @@ export function herbivores (panier: Species[], { locale }: Environment = {}) {
       + `${mangeurs.length > 1 ? 'mangent' : 'mange'} les plantes tendres : `
       + `${liste(tendres.map((p) => p.nom_commun))}. Préférez des plantes coriaces (Anubias, fougère de Java).`,
     `${liste(mangeurs.map((p) => p.nom_commun), locale)} ${mangeurs.length > 1 ? 'eat' : 'eats'} soft plants: `
-      + `${liste(tendres.map((p) => p.nom_commun), locale)}. Prefer tough plants (Anubias, Java fern).`),
+      + `${liste(tendres.map((p) => p.nom_commun), locale)}. Prefer tough plants (Anubias, Java fern).`,
+    `${liste(mangeurs.map((p) => p.nom_commun), locale)}は柔らかい水草を食べます：`
+      + `${liste(tendres.map((p) => p.nom_commun), locale)}。丈夫な水草（アヌビアス、ミクロソリウム）を選んでください。`),
       [...mangeurs, ...tendres].map((p) => p.id))]
     : [];
 }

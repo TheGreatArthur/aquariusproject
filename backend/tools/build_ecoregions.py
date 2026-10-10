@@ -5,8 +5,8 @@ Freshwater Ecoregions of the World (FEOW, Abell et al. 2008, The Nature Conserva
 les eaux douces du monde en 426 écorégions dessinées d'après leurs faunes de poissons. L'outil range dans ces
 écorégions les points de la carte de répartition de chaque espèce (`data/occurrences.json` et `localites` des
 fiches), puis écrit `frontend/public/maps/ecoregions.json` : pour chaque écorégion habitée, son numéro, son nom
-(et sa traduction de `data/ecoregions_fr.json`), son domaine biogéographique, son type d'habitat, un point
-d'ancrage pour le globe, ses espèces et leurs observations.
+(et ses traductions de `data/ecoregions_fr.json` et `data/ecoregions_ja.json`), son domaine biogéographique, son
+type d'habitat, un point d'ancrage pour le globe, ses espèces et leurs observations.
 
 Les conditions d'utilisation de FEOW (usage non commercial ou éducatif, citation et lien vers www.feow.org,
 aucune modification) excluent de redistribuer des contours simplifiés : le shapefile ne sert qu'au calcul,
@@ -30,6 +30,7 @@ from tools.fetch_sources import download, fetch
 BACKEND_DIR = Path(__file__).resolve().parent.parent
 CACHE_DIR = BACKEND_DIR / '.cache' / 'feow'
 TRANSLATIONS_FILE = BACKEND_DIR / 'data' / 'ecoregions_fr.json'
+JAPANESE_FILE = BACKEND_DIR / 'data' / 'ecoregions_ja.json'
 OUTPUT_FILE = BACKEND_DIR.parent / 'frontend' / 'public' / 'maps' / 'ecoregions.json'
 
 SHAPEFILE_URL = 'https://feow.org/files/downloads/GIS_hs_snapped.zip'
@@ -198,8 +199,9 @@ def anchor(shapes: list[tuple[int, object]], region: int, points: list) -> list[
 
 
 def build(shapes, regions_info: dict[int, dict], points_by_species: dict[str, list],
-          translations: dict[str, str]) -> tuple[dict, list[str]]:
-    """ Contenu de ecoregions.json et avertissements """
+          translations: dict[str, str], japanese: dict[str, str] | None = None) -> tuple[dict, list[str]]:
+    """ Contenu de ecoregions.json et avertissements ; `japanese` donne le nom japonais de chaque écorégion """
+    japanese = japanese or {}
     locator = Locator(shapes)
     zones: dict[int, dict] = {}
     warnings = []
@@ -224,6 +226,7 @@ def build(shapes, regions_info: dict[int, dict], points_by_species: dict[str, li
             id=region,
             nom=translations.get(str(region)) or info.get('nom', str(region)),
             nom_feow=info.get('nom'),
+            nom_ja=japanese.get(str(region)) or info.get('nom', str(region)),
             royaume=translate(info.get('royaume'), ROYAUMES, warnings),
             habitat=translate(info.get('habitat'), HABITATS, warnings),
             url=DETAILS_URL.format(region),
@@ -236,7 +239,8 @@ def build(shapes, regions_info: dict[int, dict], points_by_species: dict[str, li
 
 def main() -> int:
     translations = json.loads(TRANSLATIONS_FILE.read_text(encoding='utf-8')) if TRANSLATIONS_FILE.exists() else {}
-    data, warnings = build(load_shapes(shapefile_path()), ecoregion_list(), species_points(), translations)
+    japanese = json.loads(JAPANESE_FILE.read_text(encoding='utf-8')) if JAPANESE_FILE.exists() else {}
+    data, warnings = build(load_shapes(shapefile_path()), ecoregion_list(), species_points(), translations, japanese)
     OUTPUT_FILE.write_text(json.dumps(data, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
     species = Counter(name for zone in data['zones'] for name in zone['especes'])
     print(f"{len(data['zones'])} écorégions, {len(species)} espèces, "

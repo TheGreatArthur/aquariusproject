@@ -31,7 +31,7 @@ export default function PhotoGallery ({ images, alt, credits }) {
 
       {credit && (
         <p className="mt-2 text-xs text-muted">
-          {t('Photo :', 'Photo:')} <a href={credit.source} target="_blank" rel="noopener noreferrer"
+          {t('Photo :', 'Photo:', '写真：')} <a href={credit.source} target="_blank" rel="noopener noreferrer"
                      className="underline-offset-4 hover:text-accent-glow hover:underline">{credit.auteur}</a>
           {', '}
           {credit.licence_url ? (
@@ -44,7 +44,7 @@ export default function PhotoGallery ({ images, alt, credits }) {
       )}
 
       {images.length > 1 && (
-        <div className="mt-3 flex gap-3" role="group" aria-label={t('Photos', 'Photos')}>
+        <div className="mt-3 flex gap-3" role="group" aria-label={t('Photos', 'Photos', '写真')}>
           {images.map((src, i) => (
             <button
               key={src}

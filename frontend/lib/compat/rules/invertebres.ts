@@ -31,7 +31,9 @@ export function crevettes (panier: Species[], { locale }: Environment = {}) {
         t(`${p.nom_commun} (${p.taille} cm) mange les petites crevettes, surtout les jeunes : `
           + `${liste(mangees.map((q) => q.nom_commun))}. Prévoyez des cachettes denses (mousses, plantes fines).`,
         `${p.nom_commun} (${p.taille} cm) eats small shrimp, especially the young: `
-          + `${liste(mangees.map((q) => q.nom_commun), locale)}. Provide dense cover (mosses, fine-leaved plants).`),
+          + `${liste(mangees.map((q) => q.nom_commun), locale)}. Provide dense cover (mosses, fine-leaved plants).`,
+        `${p.nom_commun}（${p.taille} cm）は小型のエビ、特に稚エビを食べます：`
+          + `${liste(mangees.map((q) => q.nom_commun), locale)}。コケや細葉の水草で隠れ家を多く用意してください。`),
         [p.id, ...mangees.map((q) => q.id)])]
       : [];
   });
@@ -50,7 +52,9 @@ export function chasseurs (panier: Species[], { locale }: Environment = {}) {
           t(`${p.nom_commun} (${p.taille} cm) attrape la nuit ${grande ? 'les animaux plus petits' : 'les crevettes en mue'} : `
             + `${liste(proies.map((q) => q.nom_commun))}.`,
           `${p.nom_commun} (${p.taille} cm) catches ${grande ? 'smaller animals' : 'moulting shrimp'} at night: `
-            + `${liste(proies.map((q) => q.nom_commun), locale)}.`), [p.id, ...proies.map((q) => q.id)])]
+            + `${liste(proies.map((q) => q.nom_commun), locale)}.`,
+          `${p.nom_commun}（${p.taille} cm）は夜間に${grande ? '小さな生き物' : '脱皮中のエビ'}を捕まえます：`
+            + `${liste(proies.map((q) => q.nom_commun), locale)}。`), [p.id, ...proies.map((q) => q.id)])]
         : [];
     });
 }
@@ -62,7 +66,8 @@ export function escargots (panier: Species[], { locale }: Environment = {}) {
     const proies = invertebres(panier, 'escargot').filter((q) => q.id !== p.id);
     return proies.length
       ? [issue('escargots', 'error', t(`${p.nom_commun} mange les autres escargots : ${liste(proies.map((q) => q.nom_commun))}.`,
-        `${p.nom_commun} eats other snails: ${liste(proies.map((q) => q.nom_commun), locale)}.`),
+        `${p.nom_commun} eats other snails: ${liste(proies.map((q) => q.nom_commun), locale)}.`,
+        `${p.nom_commun}はほかの貝を食べます：${liste(proies.map((q) => q.nom_commun), locale)}。`),
       [p.id, ...proies.map((q) => q.id)])]
       : [];
   });
@@ -73,7 +78,8 @@ export function aquaterrarium (panier: Species[], { locale }: Environment = {}) 
   const { t } = translator(locale);
   return invertebres(panier).filter((p) => p.installation === 'aquaterrarium').map((p) => issue('aquaterrarium',
     'warning', t(`${p.nom_commun} vit en aquaterrarium : prévoyez une partie terrestre et un couvercle étanche.`,
-      `${p.nom_commun} lives in a paludarium: provide a land area and a tight-fitting lid.`), [p.id]));
+      `${p.nom_commun} lives in a paludarium: provide a land area and a tight-fitting lid.`,
+      `${p.nom_commun}はアクアテラリウムで暮らします：陸地と隙間のないふたを用意してください。`), [p.id]));
 }
 
 /** 19. Larves qui ne se développent qu'en eau saumâtre ou en mer : pas de reproduction dans le bac */
@@ -84,6 +90,8 @@ export function larves (panier: Species[], { locale }: Environment = {}) {
     ? [issue('larves', 'info', t(`Pas de reproduction en eau douce pour ${liste(especes.map((p) => p.nom_commun))} : `
       + 'les larves ont besoin d\'eau saumâtre ou de mer.',
     `No breeding in fresh water for ${liste(especes.map((p) => p.nom_commun), locale)}: `
-      + 'the larvae need brackish or sea water.'), [])]
+      + 'the larvae need brackish or sea water.',
+    `${liste(especes.map((p) => p.nom_commun), locale)}は淡水では繁殖しません：`
+      + '幼生は汽水または海水を必要とします。'), [])]
     : [];
 }

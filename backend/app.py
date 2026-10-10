@@ -1,4 +1,6 @@
 """ API Flask d'Aquarius : catalogue des poissons, familles, invertébrés et plantes
+
+Chaque route accepte `?lang=en` ou `?lang=ja` pour les noms communs et les textes des espèces (translations.py).
 """
 
 from flask import Flask, request
@@ -8,6 +10,7 @@ from sqlalchemy import func, or_
 
 from config import DSN
 from models import Poisson, Genre, Famille, Comportement, Invertebre, Plante
+from translations import language, translate
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = DSN
@@ -35,7 +38,8 @@ def poissons():
         # Filtrage exact sur le nom de la famille, sans tenir compte de la casse
         rq = rq.join(Famille).where(func.lower(Famille.nom) == fam.lower())
 
-    return {'poissons': [p.as_dict() for p in db.session.scalars(rq)]}
+    lang = language()
+    return {'poissons': [translate(p.as_dict(), 'fish', lang) for p in db.session.scalars(rq)]}
 
 
 @app.route('/poissons/<int:id>')
@@ -46,7 +50,8 @@ def get_poisson(id: int):
         return 'Fish not found', 404
 
     # La fiche descriptive n'est renvoyée que sur le détail, pas dans la liste (textes longs, points de carte)
-    return {**poisson.as_dict(), 'profil': poisson.profil.as_dict() if poisson.profil else None}
+    return translate({**poisson.as_dict(), 'profil': poisson.profil.as_dict() if poisson.profil else None}, 'fish',
+                     language())
 
 
 @app.route('/poissons/familles')
@@ -67,7 +72,9 @@ PLANTE_LISTE = (
 def plantes():
     """ Liste des plantes, avec leur photo principale """
     liste = db.session.scalars(db.select(Plante).order_by(Plante.nom_commun))
-    return {'plantes': [{**{k: getattr(p, k) for k in PLANTE_LISTE}, 'image': p.images[0] if p.images else None}
+    lang = language()
+    return {'plantes': [translate({**{k: getattr(p, k) for k in PLANTE_LISTE},
+                                   'image': p.images[0] if p.images else None}, 'plants', lang)
                         for p in liste]}
 
 
@@ -78,7 +85,7 @@ def get_plante(id: int):
     if not plante:
         return 'Plant not found', 404
 
-    return plante.as_dict()
+    return translate(plante.as_dict(), 'plants', language())
 
 
 # Champs de la liste des invertébrés, comme pour les poissons : la fiche descriptive n'est renvoyée que sur le détail
@@ -93,7 +100,9 @@ INVERTEBRE_LISTE = (
 def invertebres():
     """ Liste des invertébrés (crevettes, crabes, escargots, écrevisses), avec leur photo principale """
     liste = db.session.scalars(db.select(Invertebre).order_by(Invertebre.nom_commun))
-    return {'invertebres': [{**{k: getattr(i, k) for k in INVERTEBRE_LISTE}, 'image': i.images[0] if i.images else None}
+    lang = language()
+    return {'invertebres': [translate({**{k: getattr(i, k) for k in INVERTEBRE_LISTE},
+                                       'image': i.images[0] if i.images else None}, 'invertebrates', lang)
                             for i in liste]}
 
 
@@ -104,4 +113,4 @@ def get_invertebre(id: int):
     if not invertebre:
         return 'Invertebrate not found', 404
 
-    return invertebre.as_dict()
+    return translate(invertebre.as_dict(), 'invertebrates', language())

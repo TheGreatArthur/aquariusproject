@@ -17,14 +17,14 @@ export const plantPhoto = (fichier: string) => `/plants/${fichier}`;
 export const plantImage = (p: { image?: Photo, images?: Photo[] }) => plantPhoto((p.image ?? p.images?.[0])?.fichier ?? '');
 
 /** Port de la plante : libellé d'une fiche, et libellé des filtres de la liste */
-export const TYPES: Record<string, { label: string, filtre: string, en: string, filter: string }> = {
-  épiphyte: { label: 'Épiphyte', filtre: 'Épiphytes', en: 'Epiphyte', filter: 'Epiphytes' },
-  mousse: { label: 'Mousse', filtre: 'Mousses', en: 'Moss', filter: 'Mosses' },
-  rosette: { label: 'Rosette', filtre: 'Rosettes', en: 'Rosette', filter: 'Rosettes' },
-  tige: { label: 'Plante à tiges', filtre: 'Plantes à tiges', en: 'Stem plant', filter: 'Stem plants' },
-  tapissante: { label: 'Tapissante', filtre: 'Tapissantes', en: 'Carpeting', filter: 'Carpeting' },
-  flottante: { label: 'Flottante', filtre: 'Flottantes', en: 'Floating', filter: 'Floating' },
-  rhizome: { label: 'À rhizome', filtre: 'À rhizome', en: 'Rhizome', filter: 'Rhizomes' },
+export const TYPES: Record<string, { label: string, filtre: string, en: string, filter: string, ja: string, filterJa: string }> = {
+  épiphyte: { label: 'Épiphyte', filtre: 'Épiphytes', en: 'Epiphyte', filter: 'Epiphytes', ja: '着生植物', filterJa: '着生植物' },
+  mousse: { label: 'Mousse', filtre: 'Mousses', en: 'Moss', filter: 'Mosses', ja: 'コケ', filterJa: 'コケ' },
+  rosette: { label: 'Rosette', filtre: 'Rosettes', en: 'Rosette', filter: 'Rosettes', ja: 'ロゼット型', filterJa: 'ロゼット型' },
+  tige: { label: 'Plante à tiges', filtre: 'Plantes à tiges', en: 'Stem plant', filter: 'Stem plants', ja: '有茎草', filterJa: '有茎草' },
+  tapissante: { label: 'Tapissante', filtre: 'Tapissantes', en: 'Carpeting', filter: 'Carpeting', ja: '前景草', filterJa: '前景草' },
+  flottante: { label: 'Flottante', filtre: 'Flottantes', en: 'Floating', filter: 'Floating', ja: '浮草', filterJa: '浮草' },
+  rhizome: { label: 'À rhizome', filtre: 'À rhizome', en: 'Rhizome', filter: 'Rhizomes', ja: '根茎植物', filterJa: '根茎植物' },
 };
 
 /** Types présents dans la liste, dans l'ordre des filtres */
@@ -43,7 +43,7 @@ export function formatRange (min: number | null | undefined, max: number | null 
 /** « faible à forte » (« low to high »), ou un seul niveau */
 export function lightLabel (min: string, max: string, locale?: Locale) {
   const { t, term } = translator(locale);
-  return min === max ? term(min) : t(`${min} à ${max}`, `${term(min)} to ${term(max)}`);
+  return min === max ? term(min) : t(`${min} à ${max}`, `${term(min)} to ${term(max)}`, `${term(min)}〜${term(max)}`);
 }
 
 /** Couleur du badge de difficulté */
@@ -62,7 +62,7 @@ export function matchesPlantSearch (p: ApiItem, terme: string) {
   if (!mots.length)
     return true;
   const texte = searchKey([p.nom_commun, p.nom_scientifique, p.famille, TYPES[p.type]?.label,
-    TYPES[p.type]?.en]
+    TYPES[p.type]?.en, TYPES[p.type]?.ja]
     .filter(Boolean).join(' '));
   return mots.every((mot) => texte.includes(mot));
 }
@@ -74,17 +74,17 @@ export const rangeFromKew = (p: ApiItem) => p.sources.some((s: { nom: string }) 
  * Fiche « Dans la nature » d'une plante, avec les champs de celle d'un poisson (voir FishProfile). L'auteur relevé
  * sur GBIF est celui du nom d'usage : il n'accompagne pas le nom valide quand la plante a été renommée.
  */
-export function plantProfil (p: ApiItem) {
+export function plantProfil (p: ApiItem, locale?: Locale) {
   return {
     nom_valide: p.nom_valide,
     auteur: p.nom_valide ? null : p.auteur,
     classification: p.ordre ? `${p.ordre} › ${p.famille}` : p.famille,
     uicn: p.uicn,
-    repartition: typo(p.origine),
+    repartition: typo(p.origine, locale),
     pays: p.pays ?? [],
     introduits: p.introduits ?? [],
     points: p.points ?? [],
-    presentation: typo(p.presentation),
+    presentation: typo(p.presentation, locale),
     sources: p.sources,
   };
 }

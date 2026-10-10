@@ -19,6 +19,7 @@ export const FAMILLES_INCOMPATIBLES = [
     familles: ['Osphronemidae', 'Poeciliidae'],
     raison: 'les gouramis et combattants s\'en prennent aux nageoires colorées des vivipares',
     reason: 'gouramis and bettas nip the colourful fins of livebearers',
+    riyu: 'グラミーやベタは卵胎生魚の色鮮やかなひれをかじります',
   },
 ];
 
@@ -33,7 +34,8 @@ export function predateur (panier: Species[], { locale }: Environment = {}) {
     return proies.length
       ? [issue('predateur', 'error',
         t(`${p.nom_commun} est un prédateur (${p.taille} cm) : il mangera ${liste(proies.map((q) => q.nom_commun))}.`,
-          `${p.nom_commun} is a predator (${p.taille} cm): it will eat ${liste(proies.map((q) => q.nom_commun), locale)}.`),
+          `${p.nom_commun} is a predator (${p.taille} cm): it will eat ${liste(proies.map((q) => q.nom_commun), locale)}.`,
+          `${p.nom_commun}は捕食魚（${p.taille} cm）で、${liste(proies.map((q) => q.nom_commun), locale)}を食べてしまいます。`),
         [p.id, ...proies.map((q) => q.id)])]
       : [];
   });
@@ -51,7 +53,9 @@ export function bouche (panier: Species[], { locale }: Environment = {}) {
       ? [issue('bouche', 'warning',
         t(`${p.nom_commun} (${p.taille} cm, carnivore) peut gober ${liste(proies.map((q) => `${q.nom_commun} (${q.taille} cm)`))}.`,
           `${p.nom_commun} (${p.taille} cm, carnivore) can swallow `
-          + `${liste(proies.map((q) => `${q.nom_commun} (${q.taille} cm)`), locale)}.`),
+          + `${liste(proies.map((q) => `${q.nom_commun} (${q.taille} cm)`), locale)}.`,
+          `${p.nom_commun}（${p.taille} cm、肉食）は`
+          + `${liste(proies.map((q) => `${q.nom_commun}（${q.taille} cm）`), locale)}を丸呑みするおそれがあります。`),
         [p.id, ...proies.map((q) => q.id)])]
       : [];
   });
@@ -79,20 +83,22 @@ export function agressivite (tout: Species[], { locale }: Environment = {}) {
   const nom = (p: Species) => `${p.nom_commun} (${term(p.nom_comportement)})`;
   return [issue('agressivite', 'warning',
     t(`Tempéraments trop différents : ${liste(agressifs.map(nom))} risque de harceler ${liste(calmes.map(nom))}.`,
-      `Temperaments too far apart: ${liste(agressifs.map(nom), locale)} may harass ${liste(calmes.map(nom), locale)}.`),
+      `Temperaments too far apart: ${liste(agressifs.map(nom), locale)} may harass ${liste(calmes.map(nom), locale)}.`,
+      `性格の差が大きすぎます：${liste(agressifs.map(nom), locale)}が${liste(calmes.map(nom), locale)}を攻撃するおそれがあります。`),
     [...agressifs, ...calmes].map((p) => p.id))];
 }
 
 /** 14. Familles connues pour ne pas cohabiter */
 export function familles (panier: Species[], { locale }: Environment = {}) {
   const { t } = translator(locale);
-  return FAMILLES_INCOMPATIBLES.flatMap(({ familles: [fa, fb], raison, reason }) => {
+  return FAMILLES_INCOMPATIBLES.flatMap(({ familles: [fa, fb], raison, reason, riyu }) => {
     const a = panier.filter((p) => p.nom_famille === fa);
     const b = panier.filter((p) => p.nom_famille === fb);
     return a.length && b.length
       ? [issue('familles', 'error',
         t(`${liste(a.map((p) => p.nom_commun))} et ${liste(b.map((p) => p.nom_commun))} : ${raison}.`,
-          `${liste(a.map((p) => p.nom_commun), locale)} and ${liste(b.map((p) => p.nom_commun), locale)}: ${reason}.`),
+          `${liste(a.map((p) => p.nom_commun), locale)} and ${liste(b.map((p) => p.nom_commun), locale)}: ${reason}.`,
+          `${liste(a.map((p) => p.nom_commun), locale)}と${liste(b.map((p) => p.nom_commun), locale)}：${riyu}。`),
         [...a, ...b].map((p) => p.id))]
       : [];
   });
@@ -106,6 +112,7 @@ export function biotope (tout: Species[], { locale }: Environment = {}) {
   const [zone] = zones;
   return panier.length >= 2 && zones.size === 1 && zone && zone !== 'International'
     ? [issue('biotope', 'info', t(`Bac biotope : toutes les espèces viennent de la région ${zone}.`,
-      `Biotope tank: every species comes from ${term(zone)}.`), [])]
+      `Biotope tank: every species comes from ${term(zone)}.`,
+      `ビオトープ水槽：すべての種が${term(zone)}の出身です。`), [])]
     : [];
 }

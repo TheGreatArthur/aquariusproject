@@ -21,14 +21,16 @@ export default function RangeBar ({ label, min, max, scaleMin, scaleMax, unit = 
         <span className="text-muted">{label}</span>
         <span className="font-display font-medium tabular-nums text-foreground">
           {fmt(min)} – {fmt(max)}{unit}
-          {optimum && <span className="ml-2 font-sans text-xs font-normal text-muted">{t('idéal', 'ideal')} {fmt(optiMin)}–{fmt(optiMax)}{unit}</span>}
+          {optimum && <span className="ml-2 font-sans text-xs font-normal text-muted">{t('idéal', 'ideal', '理想')} {fmt(optiMin)}–{fmt(optiMax)}{unit}</span>}
         </span>
       </div>
       <div className="relative mt-2 h-2 rounded-full bg-surface-elevated" role="img"
            aria-label={t(`${label} : de ${fmt(min)} à ${fmt(max)}${unit}`
              + (optimum ? `, idéal de ${fmt(optiMin)} à ${fmt(optiMax)}${unit}` : ''),
            `${label}: ${fmt(min)} to ${fmt(max)}${unit}`
-             + (optimum ? `, ideal ${fmt(optiMin)} to ${fmt(optiMax)}${unit}` : ''))}>
+             + (optimum ? `, ideal ${fmt(optiMin)} to ${fmt(optiMax)}${unit}` : ''),
+           `${label}：${fmt(min)}〜${fmt(max)}${unit}`
+             + (optimum ? `、理想は${fmt(optiMin)}〜${fmt(optiMax)}${unit}` : ''))}>
         <div
           className={optimum ? 'absolute inset-y-0 rounded-full bg-accent/30' : 'absolute inset-y-0 rounded-full bg-accent'}
           style={{ left: `${left}%`, width: `${width}%` }}

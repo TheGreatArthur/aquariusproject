@@ -23,18 +23,20 @@ export async function generateMetadata () {
   return {
     // Les images de partage (opengraph-image.jpg, photo de chaque fiche) deviennent des adresses absolues
     metadataBase: new URL(SITE_URL),
-    openGraph: { siteName: 'Aquarius', locale: t('fr_FR', 'en_GB'), type: 'website' },
+    openGraph: { siteName: 'Aquarius', locale: t('fr_FR', 'en_GB', 'ja_JP'), type: 'website' },
     twitter: { card: 'summary_large_image' },
     title: {
-      default: t('Aquarius · Composez un aquarium en harmonie', 'Aquarius · Build a balanced aquarium'),
+      default: t('Aquarius · Composez un aquarium en harmonie', 'Aquarius · Build a balanced aquarium',
+        'Aquarius · 調和のとれた水槽づくり'),
       template: '%s · Aquarius',
     },
     description: t(
       'Catalogue de poissons d\'aquarium d\'eau douce et simulateur de compatibilité : '
         + 'paramètres d\'eau, population et cohabitation.',
       'Freshwater aquarium fish catalogue and compatibility simulator: water parameters, stocking and tankmates.',
+      '淡水観賞魚の図鑑と相性シミュレーター：水質、飼育数、混泳をチェック。',
     ),
-    alternates: { languages: { fr: path, en: localize(path, 'en'), 'x-default': path } },
+    alternates: { languages: { fr: path, en: localize(path, 'en'), ja: localize(path, 'ja'), 'x-default': path } },
   };
 }
 
@@ -54,7 +56,7 @@ export default async function RootLayout ({ children }) {
         <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }}/>
       </head>
       <body className="grain flex min-h-screen flex-col">
-        <a href="#contenu" className="skip-link">{t('Aller au contenu', 'Skip to content')}</a>
+        <a href="#contenu" className="skip-link">{t('Aller au contenu', 'Skip to content', '本文へ移動')}</a>
         <I18nProvider locale={locale}>
           <Providers>
             <SiteHeader/>

@@ -19,14 +19,15 @@ export default async function CallToAction () {
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-r from-background via-background/85 to-background/30"/>
         <div className="max-w-lg">
-          <h2 className="text-3xl font-semibold sm:text-4xl">{t('Prêt à imaginer votre prochain bac\u00a0?', 'Ready to plan your next tank?')}</h2>
+          <h2 className="text-3xl font-semibold sm:text-4xl">{t('Prêt à imaginer votre prochain bac\u00a0?', 'Ready to plan your next tank?', '次の水槽を計画してみませんか？')}</h2>
           <p className="mt-4 text-muted">
             {t('Testez une population avant d\'acheter vos poissons : c\'est gratuit et vos choix restent '
               + 'enregistrés dans votre navigateur.',
-            'Try out a stocking plan before buying your fish: it is free and your choices stay saved in your browser.')}
+            'Try out a stocking plan before buying your fish: it is free and your choices stay saved in your browser.',
+            '魚を買う前に組み合わせを試せます。無料で、選んだ内容はブラウザに保存されます。')}
           </p>
           <Link href={href('/simulation')} className="btn-primary mt-8 !px-6 !py-3 text-base">
-            {t('Simuler un bac', 'Plan a tank')} <ArrowRight className="h-4 w-4"/>
+            {t('Simuler un bac', 'Plan a tank', '水槽をシミュレート')} <ArrowRight className="h-4 w-4"/>
           </Link>
         </div>
       </Reveal>
