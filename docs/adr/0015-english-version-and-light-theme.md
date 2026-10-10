@@ -17,7 +17,7 @@ separate content job.
   internal links in the page language.
 - **What is translated**: navigation, pages, metadata, catalogue filters, the simulator and the messages of the 23
   compatibility rules (the engine reads `locale` from the tank environment), the category values from the API
-  (behaviour, diet, current, light... in `lib/glossary.js`), country names (`name` from Natural Earth in the base
+  (behaviour, diet, current, light... in `lib/glossary.ts`), country names (`name` from Natural Earth in the base
   map), ecoregion names (FEOW's own English names).
 - **What stays French**: species common names and texts, family names and the practical guide; English pages say so.
 - **The language switch is a full page load**: the root layout, which carries `<html lang>` and the language, is not

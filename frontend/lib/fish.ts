@@ -2,11 +2,17 @@
  * Utilitaires d'affichage des poissons
  */
 
+type WithImages = { id: number | string, images?: string[] };
+
+/** Champs lus par la recherche */
+type Searchable = Partial<Record<'nom_commun' | 'nom_scientifique' | 'nom_famille' | 'nom_genre' | 'nom_comportement',
+  string | null>>;
+
 /** Image principale d'un poisson */
-export const fishImage = (p) => `/images/${p.images?.[0] ?? `${p.id}.jpg`}`;
+export const fishImage = (p: WithImages) => `/images/${p.images?.[0] ?? `${p.id}.jpg`}`;
 
 /** Toutes les images d'un poisson */
-export const fishImages = (p) => (p.images?.length ? p.images : [`${p.id}.jpg`]).map((img) => `/images/${img}`);
+export const fishImages = (p: WithImages) => (p.images?.length ? p.images : [`${p.id}.jpg`]).map((img) => `/images/${img}`);
 
 /** Texte ramené en minuscules sans accents, pour comparer « Pléco » et « pleco » */
 export const searchKey = (text = '') => text.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
@@ -15,7 +21,7 @@ export const searchKey = (text = '') => text.normalize('NFD').replace(/\p{Diacri
  * Recherche rapide : chaque mot saisi doit apparaître dans le nom commun, le nom scientifique,
  * la famille, le genre ou le comportement, n'importe où dans le texte et sans tenir compte des accents
  */
-export function matchesSearch (p, terme) {
+export function matchesSearch (p: Searchable, terme: string) {
   const mots = searchKey(terme).split(/\s+/).filter(Boolean);
   if (!mots.length)
     return true;
@@ -24,11 +30,10 @@ export function matchesSearch (p, terme) {
   return mots.every((mot) => texte.includes(mot));
 }
 
-/**
- * Ton de couleur associé à un comportement (pacifique, agressif, prédateur...)
- * @returns {'calm'|'warn'|'danger'}
- */
-export function behaviourTone (comportement = '') {
+export type Tone = 'calm' | 'warn' | 'danger';
+
+/** Ton de couleur associé à un comportement (pacifique, agressif, prédateur...) */
+export function behaviourTone (comportement = ''): Tone {
   const c = comportement.toLowerCase();
   if (c.includes('prédateur') || c.startsWith('agressif'))
     return 'danger';
@@ -37,7 +42,7 @@ export function behaviourTone (comportement = '') {
   return 'calm';
 }
 
-export const TONE_CLASSES = {
+export const TONE_CLASSES: Record<Tone, string> = {
   calm: 'border-success/30 bg-success/10 text-success',
   warn: 'border-warning/30 bg-warning/10 text-warning',
   danger: 'border-danger/30 bg-danger/10 text-danger',

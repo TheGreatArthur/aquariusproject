@@ -11,7 +11,7 @@ const KELVIN = 273.15;
  * pKa = 0,09018 + 2729,92 / T (T en kelvins), fraction = 1 / (1 + 10^(pKa − pH)).
  * @returns {number} fraction entre 0 et 1
  */
-export function fractionAmmoniac (pH, temperature) {
+export function fractionAmmoniac (pH: number, temperature: number) {
   const pKa = 0.09018 + 2729.92 / (temperature + KELVIN);
   return 1 / (1 + 10 ** (pKa - pH));
 }
@@ -22,7 +22,7 @@ export function fractionAmmoniac (pH, temperature) {
  * d'autres acides (tourbe, bois, acides humiques) font baisser le pH.
  * @param {number} kh dureté carbonatée en degrés allemands (°dKH)
  */
-export function co2DepuisKhPh (kh, pH) {
+export function co2DepuisKhPh (kh: number, pH: number) {
   return 3 * kh * 10 ** (7 - pH);
 }
 
@@ -30,7 +30,7 @@ export function co2DepuisKhPh (kh, pH) {
  * Oxygène dissous à saturation dans l'eau douce, en mg/L, sous 1 atmosphère.
  * Benson et Krause (1984), équation reprise par l'USGS (tables DOTABLES) et les Standard Methods (APHA).
  */
-export function oxygeneSaturation (temperature) {
+export function oxygeneSaturation (temperature: number) {
   const T = temperature + KELVIN;
   const ln = -139.34411 + 1.575701e5 / T - 6.642308e7 / T ** 2 + 1.2438e10 / T ** 3 - 8.621949e11 / T ** 4;
   return Math.exp(ln);
@@ -41,13 +41,13 @@ export const MG_CACO3_PAR_DGH = 17.848;
 export const MG_CACO3_PAR_DEGRE_FRANCAIS = 10;
 
 /** Degrés allemands (°dGH ou °dKH) vers degrés français (°f) */
-export const dghVersDegreFrancais = (dgh) => (dgh * MG_CACO3_PAR_DGH) / MG_CACO3_PAR_DEGRE_FRANCAIS;
+export const dghVersDegreFrancais = (dgh: number) => (dgh * MG_CACO3_PAR_DGH) / MG_CACO3_PAR_DEGRE_FRANCAIS;
 
 /** Degrés français (°f, le TH des analyses d'eau en France) vers degrés allemands */
-export const degreFrancaisVersDgh = (f) => (f * MG_CACO3_PAR_DEGRE_FRANCAIS) / MG_CACO3_PAR_DGH;
+export const degreFrancaisVersDgh = (f: number) => (f * MG_CACO3_PAR_DEGRE_FRANCAIS) / MG_CACO3_PAR_DGH;
 
 /** Arrondi à n décimales, pour l'affichage */
-export const arrondi = (valeur, decimales = 1) => {
+export const arrondi = (valeur: number, decimales = 1) => {
   const p = 10 ** decimales;
   return Math.round(valeur * p) / p;
 };

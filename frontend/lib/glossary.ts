@@ -3,7 +3,7 @@
  * Species names, descriptions and family names stay as the API gives them.
  */
 
-const EN = {
+const EN: Record<string, string> = {
   // Behaviour and social life
   'pacifique': 'peaceful',
   'peu agressif': 'slightly aggressive',
@@ -100,7 +100,9 @@ const EN = {
  * Category value in the page language. Compound values are translated part by part:
  * term('carnivore et omnivore', 'en') -> 'carnivore and omnivore'; unknown values are returned as they are.
  */
-export function term (value, locale) {
+export function term (value: string, locale?: string): string;
+export function term (value: string | null | undefined, locale?: string): string | null | undefined;
+export function term (value: string | null | undefined, locale?: string) {
   if (locale !== 'en' || value == null)
     return value;
   return EN[value] ?? String(value).split(/(, | et )/)

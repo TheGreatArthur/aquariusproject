@@ -35,5 +35,7 @@ learning exercise in building a decoupled front end / back end.
 
 ## Current state (2026-10)
 The split between a Next.js front end and a Flask API still holds. The front end now runs Next.js 16 and React 19
-([0007](0007-nextjs-16-react-19.md)) with Tailwind CSS ([0003](0003-ui-redesign-tailwind.md)), still in JavaScript;
-the API serves fish, plants and invertebrates loaded from the workbook and from versioned JSON files.
+([0007](0007-nextjs-16-react-19.md)) with Tailwind CSS ([0003](0003-ui-redesign-tailwind.md)). It is moving to
+TypeScript one part at a time ([0016](0016-typescript-incremental-migration.md)): `lib/`, including the
+compatibility engine, is TypeScript in strict mode, pages and components are still JavaScript. The interface also
+exists in English under `/en` ([0015](0015-english-version-and-light-theme.md)). The API serves fish, plants and invertebrates loaded from the workbook and from versioned JSON files.

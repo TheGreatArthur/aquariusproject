@@ -2,14 +2,16 @@
  * Règles de cohabitation entre espèces : prédation, tempérament, familles, biotope
  */
 
+import { translator } from '@/lib/i18n';
+import type { CatalogueSpecies, Environment, Species } from '@/lib/types';
+
 import { estAnimal } from '../especes';
 import { estCarnivore, NIVEAU_PREDATEUR, niveauComportement } from '../levels';
-import { translator } from '@/lib/i18n';
-
 import { issue, liste } from '../utils';
 
 // Animaux de taille connue (la taille de beaucoup d'escargots n'est pas renseignée)
-const mesures = (panier) => panier.filter((p) => estAnimal(p) && p.taille);
+type Measured = Species & { taille: number };
+const mesures = (panier: Species[]) => panier.filter((p): p is Measured => estAnimal(p) && !!p.taille);
 
 // Paires de familles qui ne cohabitent pas, avec la raison affichée
 export const FAMILLES_INCOMPATIBLES = [
@@ -24,7 +26,7 @@ export const FAMILLES_INCOMPATIBLES = [
 export const RATIO_BOUCHE = 3;
 
 /** 2. Un prédateur déclaré mange les poissons qui font au plus la moitié de sa taille */
-export function predateur (panier, { locale } = {}) {
+export function predateur (panier: Species[], { locale }: Environment = {}) {
   const { t } = translator(locale);
   return mesures(panier).filter((p) => niveauComportement(p) === NIVEAU_PREDATEUR).flatMap((p) => {
     const proies = mesures(panier).filter((q) => q.id !== p.id && q.taille <= p.taille / 2);
@@ -41,7 +43,7 @@ export function predateur (panier, { locale } = {}) {
  * 3. Taille de bouche : un carnivore non pacifique avale les poissons 3 fois plus petits que lui.
  * Les prédateurs déclarés relèvent de la règle 2 ; les carnivores pacifiques (discus…) sont exclus.
  */
-export function bouche (panier, { locale } = {}) {
+export function bouche (panier: Species[], { locale }: Environment = {}) {
   const { t } = translator(locale);
   return mesures(panier).filter(gobeur).flatMap((p) => {
     const proies = mesures(panier).filter((q) => q.id !== p.id && p.taille >= RATIO_BOUCHE * q.taille);
@@ -56,13 +58,13 @@ export function bouche (panier, { locale } = {}) {
 }
 
 /** Carnivore non pacifique, qui n'est pas un prédateur déclaré (règle 3) */
-export function gobeur (p) {
+export function gobeur (p: CatalogueSpecies) {
   const niveau = niveauComportement(p);
   return estCarnivore(p) && niveau > 0 && niveau < NIVEAU_PREDATEUR;
 }
 
 /** 4. Écart de tempérament d'au moins 2 niveaux : les plus agressifs harcèlent les plus calmes */
-export function agressivite (tout, { locale } = {}) {
+export function agressivite (tout: Species[], { locale }: Environment = {}) {
   const { t, term } = translator(locale);
   const panier = tout.filter(estAnimal);
   if (panier.length < 2)
@@ -74,7 +76,7 @@ export function agressivite (tout, { locale } = {}) {
     return [];
   const agressifs = panier.filter((p) => niveauComportement(p) >= min + 2);
   const calmes = panier.filter((p) => niveauComportement(p) <= max - 2);
-  const nom = (p) => `${p.nom_commun} (${term(p.nom_comportement)})`;
+  const nom = (p: Species) => `${p.nom_commun} (${term(p.nom_comportement)})`;
   return [issue('agressivite', 'warning',
     t(`Tempéraments trop différents : ${liste(agressifs.map(nom))} risque de harceler ${liste(calmes.map(nom))}.`,
       `Temperaments too far apart: ${liste(agressifs.map(nom), locale)} may harass ${liste(calmes.map(nom), locale)}.`),
@@ -82,7 +84,7 @@ export function agressivite (tout, { locale } = {}) {
 }
 
 /** 14. Familles connues pour ne pas cohabiter */
-export function familles (panier, { locale } = {}) {
+export function familles (panier: Species[], { locale }: Environment = {}) {
   const { t } = translator(locale);
   return FAMILLES_INCOMPATIBLES.flatMap(({ familles: [fa, fb], raison, reason }) => {
     const a = panier.filter((p) => p.nom_famille === fa);
@@ -97,7 +99,7 @@ export function familles (panier, { locale } = {}) {
 }
 
 /** 6. Bac biotope : toutes les espèces viennent de la même région (information positive) */
-export function biotope (tout, { locale } = {}) {
+export function biotope (tout: Species[], { locale }: Environment = {}) {
   const { t, term } = translator(locale);
   const panier = tout.filter(estAnimal);
   const zones = new Set(panier.map((p) => p.nom_zone_geo));

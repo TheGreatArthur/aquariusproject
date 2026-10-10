@@ -5,6 +5,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed
+- **TypeScript, starting with `lib/`** ([ADR 0016](docs/adr/0016-typescript-incremental-migration.md)): every module
+  of `frontend/lib/` (compatibility engine and rules, catalogue helpers, globe, guide texts, languages) is TypeScript
+  in strict mode, with shared types in `lib/types.ts`; pages and components stay JavaScript (`allowJs`) until their
+  turn. `npm run typecheck` runs in CI.
+
 ### Added
 - **English version and light theme** ([ADR 0015](docs/adr/0015-english-version-and-light-theme.md)): the interface
   under `/en` (French stays at the root), with page metadata, `hreflang` alternates, English sitemap URLs, translated

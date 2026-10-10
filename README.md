@@ -93,8 +93,8 @@ The data is maintained in an Excel workbook and loaded with `make import`. See t
 
 ## Tech stack
 
-- **Front end:** Next.js 16, React 19, Tailwind CSS, Framer Motion, lucide-react, SWR,
-  react-hook-form, EmailJS
+- **Front end:** Next.js 16, React 19, TypeScript (`lib/`, strict) and JavaScript, Tailwind CSS, Framer Motion,
+  lucide-react, SWR, react-hook-form, EmailJS
 - **Back end:** Python 3.11, Flask, SQLAlchemy 2, Alembic, openpyxl; BeautifulSoup and Pillow for the data tools
 - **Quality:** pytest + pytest-cov, ruff, Vitest, ESLint, Playwright, GitHub Actions
 
@@ -170,6 +170,7 @@ CI runs the same checks on every pull request and on pushes to `main`.
 - [0013 — Plant pages built like fish pages, with a native range map](docs/adr/0013-plants-like-fish-native-range.md)
 - [0014 — One simulator for fish, plants and invertebrates](docs/adr/0014-simulator-fish-plants-invertebrates.md)
 - [0015 — English version under /en and a light theme](docs/adr/0015-english-version-and-light-theme.md)
+- [0016 — Incremental migration of the front end to TypeScript](docs/adr/0016-typescript-incremental-migration.md)
 
 ## Roadmap & known limitations
 
