@@ -5,6 +5,8 @@
 import clsx from 'clsx';
 import { AlertOctagon, AlertTriangle, CheckCircle2, Info } from 'lucide-react';
 
+import { plageFr } from '@/lib/compat/utils';
+
 const SEVERITIES = {
   error: { label: 'Bloquant', icon: AlertOctagon, text: 'text-danger', dot: 'bg-danger' },
   warning: { label: 'À surveiller', icon: AlertTriangle, text: 'text-warning', dot: 'bg-warning' },
@@ -43,7 +45,7 @@ export default function Verdict ({ verdict, issues, ranges }) {
                 {/* undefined : aucune espèce du bac ne donne ce paramètre (le GH des plantes) */}
                 <dd className={clsx('font-medium tabular-nums', ranges[key] === null && 'text-danger',
                   ranges[key] === undefined && 'text-muted')}>
-                  {ranges[key] ? `${ranges[key][0]}–${ranges[key][1]}${unit}` : ranges[key] === null ? 'aucune' : '–'}
+                  {ranges[key] ? plageFr(...ranges[key], unit) : ranges[key] === null ? 'aucune' : '–'}
                 </dd>
               </div>
             ))}

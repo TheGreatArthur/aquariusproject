@@ -197,7 +197,7 @@ describe('0. water and volume of the tank', () => {
     const env = { litrage: 60, pH: 7.8, tempMoyenne: 26 };
 
     expect(evaluate([cardinalis()], env).issues.find((i) => i.rule === 'eau').message)
-      .toBe('Cardinalis ne convient pas à votre bac (pH 4–6.5, bac d\'au moins 100 L).');
+      .toBe('Cardinalis ne convient pas à votre bac (pH 4–6,5, bac d\'au moins 100 L).');
     expect(rules([neon()], { litrage: 100 })).not.toContain('eau:error');
   });
 });

@@ -6,6 +6,7 @@ import { AlertOctagon, AlertTriangle, Plus, Search } from 'lucide-react';
 
 import BehaviourBadge from '@/components/fish/BehaviourBadge';
 import { issuesIfAdded, TYPES } from '@/lib/compat';
+import { plageFr as plage } from '@/lib/compat/utils';
 import { votreEau } from '@/lib/compat/rules/eau';
 import { fishImage, matchesSearch } from '@/lib/fish';
 import { GROUPS, invertebrateImage } from '@/lib/invertebrates';
@@ -24,7 +25,6 @@ const IMAGES = {
   invertebre: invertebrateImage,
 };
 
-const plage = (min, max, unit = '') => (min == null ? '–' : `${min}–${max}${unit}`);
 
 /** Catégorie affichée sous le nom, et quatre repères adaptés au type d'espèce */
 function reperes (p) {
@@ -77,7 +77,7 @@ export default function Especes ({ catalogue, bac, environnement, onAdd }) {
         <label className="relative block flex-1">
           <span className="sr-only">Rechercher une espèce</span>
           <Search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted"/>
-          <input type="search" className="input !rounded-full !pl-11" placeholder="Nom, nom scientifique ou famille"
+          <input type="search" className="input !rounded-full !pl-11" name="recherche" placeholder="Néon, Anubias, Neritidae…"
                  value={terme} onChange={(e) => setTerme(e.target.value)}/>
         </label>
         <label className="flex shrink-0 items-center gap-2 text-sm text-muted">

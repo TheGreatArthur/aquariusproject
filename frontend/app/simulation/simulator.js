@@ -85,7 +85,7 @@ export default function Simulator () {
             <label key={name} htmlFor={name}>
               <span className="label">{label}</span>
               <span className="relative block">
-                <input id={name} className="input pr-10 tabular-nums" inputMode="decimal" autoComplete="off"
+                <input id={name} name={name} className="input pr-10 tabular-nums" inputMode="decimal" autoComplete="off"
                        placeholder={placeholder} value={eau[name] ?? ''}
                        onChange={(e) => setEau({ ...eau, [name]: e.target.value.replace(',', '.') })}/>
                 {unit && <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-xs text-muted">{unit}</span>}

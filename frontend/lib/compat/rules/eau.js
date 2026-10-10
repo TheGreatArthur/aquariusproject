@@ -3,7 +3,7 @@
  */
 
 import { plageCourant } from '../levels';
-import { issue, paires } from '../utils';
+import { issue, paires, plageFr } from '../utils';
 
 export const PARAMETRES = [
   { key: 'ph', label: 'pH', unit: '' },
@@ -32,7 +32,7 @@ export function commonRanges (panier) {
   }));
 }
 
-const plage = (p, key, unit) => `${p[`${key}_mini`]}–${p[`${key}_maxi`]}${unit}`;
+const plage = (p, key, unit) => plageFr(p[`${key}_mini`], p[`${key}_maxi`], unit);
 
 /** 1. Les espèces doivent partager une plage commune de pH, de GH et de température */
 export function parametres (panier) {
