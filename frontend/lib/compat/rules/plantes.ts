@@ -2,9 +2,10 @@
  * Règles propres aux plantes : éclairage commun, CO2, animaux qui mangent les plantes
  */
 
-import { estAnimal, estPoisson } from '../especes';
 import { translator } from '@/lib/i18n';
+import type { Environment, Species } from '@/lib/types';
 
+import { estAnimal, estPoisson } from '../especes';
 import { issue, liste } from '../utils';
 import { TAILLE_GRANDE_ECREVISSE } from './invertebres';
 
@@ -13,11 +14,11 @@ export const LUMIERES = ['très faible', 'faible', 'moyenne', 'forte', 'très fo
 // Poissons herbivores qui mangent les plantes, et pas seulement les algues (les loricariidés broutent les algues)
 export const FAMILLES_MANGEUSES = ['Serrasalmidae', 'Cichlidae africain', 'Cichlidae américain'];
 
-const plantes = (panier) => panier.filter((p) => p.kind === 'plante');
-const niveau = (lumiere) => LUMIERES.indexOf(lumiere);
+const plantes = (panier: Species[]) => panier.filter((p) => p.kind === 'plante');
+const niveau = (lumiere?: string) => LUMIERES.indexOf(lumiere ?? '');
 
 /** 20. Les plantes doivent partager un niveau d'éclairage */
-export function lumiere (panier, { locale } = {}) {
+export function lumiere (panier: Species[], { locale }: Environment = {}) {
   const { t, term } = translator(locale);
   const especes = plantes(panier);
   if (especes.length < 2)
@@ -33,7 +34,7 @@ export function lumiere (panier, { locale } = {}) {
 }
 
 /** 21. Plantes exigeantes en CO2 : un diffuseur est nécessaire */
-export function co2 (panier, { locale } = {}) {
+export function co2 (panier: Species[], { locale }: Environment = {}) {
   const { t } = translator(locale);
   const exigeantes = plantes(panier).filter((p) => p.co2 === 'élevé');
   return exigeantes.length
@@ -43,12 +44,12 @@ export function co2 (panier, { locale } = {}) {
 }
 
 /** 22. Animaux qui mangent les plantes tendres (celles qui résistent aux cichlidés sont épargnées) */
-export function herbivores (panier, { locale } = {}) {
+export function herbivores (panier: Species[], { locale }: Environment = {}) {
   const { t } = translator(locale);
   const tendres = plantes(panier).filter((p) => !(p.usages ?? []).includes('résiste aux cichlidés'));
   const mangeurs = panier.filter((p) => estAnimal(p) && (
-    (estPoisson(p) && /herbivore/.test(p.regime ?? '') && FAMILLES_MANGEUSES.includes(p.nom_famille))
-    || (p.groupe === 'écrevisse' && p.taille >= TAILLE_GRANDE_ECREVISSE)
+    (estPoisson(p) && /herbivore/.test(p.regime ?? '') && FAMILLES_MANGEUSES.includes(p.nom_famille ?? ''))
+    || (p.groupe === 'écrevisse' && (p.taille ?? 0) >= TAILLE_GRANDE_ECREVISSE)
     || (p.groupe === 'escargot' && p.regime === 'omnivore')));
   return tendres.length && mangeurs.length
     ? [issue('herbivores', 'warning', t(`${liste(mangeurs.map((p) => p.nom_commun))} `

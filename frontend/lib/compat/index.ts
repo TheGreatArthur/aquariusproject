@@ -10,12 +10,13 @@ import { commonRanges, courant, parametres, votreEau } from './rules/eau';
 import { aquaterrarium, chasseurs, crevettes, escargots, larves } from './rules/invertebres';
 import { co2, herbivores, lumiere } from './rules/plantes';
 import { agressifs, couple, delicate, harem, solitaire, souspopulation, surpopulation } from './rules/population';
+import type { CatalogueSpecies, Environment, Issue, Ranges, Rule, Severity, Species } from '@/lib/types';
 
 export { commonRanges } from './rules/eau';
 export { espece, estAnimal, TYPES } from './especes';
 export { totalPoints } from './rules/population';
 
-export const RULES = [
+export const RULES: Rule[] = [
   votreEau,       // 0. Eau et volume saisis pour le bac
   parametres,     // 1. Plages de pH, GH et température communes
   predateur,      // 2. Prédateur déclaré avec des poissons deux fois plus petits
@@ -41,13 +42,18 @@ export const RULES = [
   herbivores,     // 22. Animaux qui mangent les plantes tendres
 ];
 
-const GRAVITE = { error: 2, warning: 1, info: 0 };
+const GRAVITE: Record<Severity, number> = { error: 2, warning: 1, info: 0 };
 
-/**
- * Évalue un bac
- * @returns {{ok: boolean, verdict: 'ok'|'warning'|'error', issues: object[], ids: number[], ranges: object|null}}
- */
-export function evaluate (panier, environnement = {}) {
+export interface Evaluation {
+  ok: boolean;
+  verdict: 'ok' | 'warning' | 'error';
+  issues: Issue[];
+  ids: Issue['ids'];
+  ranges: Ranges | null;
+}
+
+/** Évalue un bac */
+export function evaluate (panier: Species[], environnement: Environment = {}): Evaluation {
   const issues = RULES.flatMap((rule) => rule(panier, environnement))
     .sort((a, b) => GRAVITE[b.severity] - GRAVITE[a.severity]);
   const verdict = issues.some((i) => i.severity === 'error') ? 'error'
@@ -56,14 +62,12 @@ export function evaluate (panier, environnement = {}) {
   return { ok: verdict !== 'error', verdict, issues, ids, ranges: commonRanges(panier) };
 }
 
-/**
- * Nouveaux problèmes qu'entraînerait l'ajout d'une espèce (avec son groupe minimum), avant de l'ajouter
- * @returns {{severity: 'error'|'warning'|null, messages: string[]}}
- */
-export function issuesIfAdded (panier, poisson, environnement = {}) {
+/** Nouveaux problèmes qu'entraînerait l'ajout d'une espèce (avec son groupe minimum), avant de l'ajouter */
+export function issuesIfAdded (panier: Species[], poisson: CatalogueSpecies, environnement: Environment = {})
+  : { severity: 'error' | 'warning' | null, messages: string[] } {
   // L'eau du bac (règle 0) est affichée à part dans la liste : seuls comptent les conflits avec les autres espèces
   const present = panier.find((p) => p.id === poisson.id);
-  const apres = present
+  const apres: Species[] = present
     ? panier.map((p) => (p.id === poisson.id ? { ...p, quantite: p.quantite + 1 } : p))
     : [...panier, { ...poisson, quantite: Math.max(1, poisson.nb_individus ?? 1) }];
 

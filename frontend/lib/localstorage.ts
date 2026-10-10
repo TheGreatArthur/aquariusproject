@@ -5,12 +5,8 @@
  * dans ces cas la lecture renvoie null et l'enregistrement est ignoré, sans casser la page.
  */
 
-/**
- * Lecture depuis le stockage local
- * @param {string} key
- * @returns {any|null}
- */
-export function lsGet (key) {
+/** Lecture depuis le stockage local */
+export function lsGet (key: string): any {
   if (typeof window == 'undefined')
     return null;
   try {
@@ -21,12 +17,8 @@ export function lsGet (key) {
   }
 }
 
-/**
- * Enregistrement dans le stockage local
- * @param {string} key
- * @param {any} obj
- */
-export function lsSet (key, obj) {
+/** Enregistrement dans le stockage local */
+export function lsSet (key: string, obj: unknown) {
   if (typeof window == 'undefined')
     return;
   try {

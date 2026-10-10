@@ -17,6 +17,6 @@ export const CHAUFFAGES = [
 ];
 
 /** Puissance de chauffage indicative pour un volume en litres, ou null au-delà du tableau */
-export function chauffagePourVolume (litres) {
+export function chauffagePourVolume (litres: number) {
   return CHAUFFAGES.find(({ litresMax }) => litres <= litresMax)?.watts ?? null;
 }

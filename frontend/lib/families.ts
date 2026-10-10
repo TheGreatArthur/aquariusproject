@@ -55,4 +55,4 @@ export const FEATURED_FAMILIES = [
 ];
 
 /** Lien vers la liste des poissons filtrée sur une famille */
-export const familyHref = (nom) => `/poissons?famille=${encodeURIComponent(nom)}`;
+export const familyHref = (nom: string) => `/poissons?famille=${encodeURIComponent(nom)}`;

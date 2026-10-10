@@ -3,7 +3,7 @@
 The simulator (`/simulation`) mixes fish, plants and invertebrates. It lists first the species that suit the tank
 (volume, and pH / GH / temperature when given); species that do not suit it can still be shown and added, and rule 0
 then blocks them. 23 rules check the tank. Each species gets an id unique across the three catalogues and the field
-names of a fish ([`especes.js`](../frontend/lib/compat/especes.js)); a parameter a species does not give (the GH of
+names of a fish ([`especes.ts`](../frontend/lib/compat/especes.ts)); a parameter a species does not give (the GH of
 plants and of most invertebrates, the size of many snails) is ignored instead of read as 0.
 Code: [`frontend/lib/compat`](../frontend/lib/compat) · tests: `npm test` in `frontend/`.
 
