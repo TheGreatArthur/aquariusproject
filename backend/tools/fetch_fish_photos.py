@@ -1,5 +1,6 @@
 """
-Photos Wikimedia Commons des poissons décrits par fichier (`data/fish/<espèce>.json`)
+Photos Wikimedia Commons des poissons décrits par fichier (`data/fish/<espèce>.json`) et des poissons du classeur
+(`data/workbook_photos.json` : titres Commons par espèce, sous le slug du nom scientifique)
 
 - `--candidats [espèce...]` : liste les photos libres des catégories Commons de chaque espèce (nom du catalogue,
   nom valide de FishBase et de GBIF), les plus prometteuses d'abord, dans `.cache/commons/candidats/`, pour
@@ -15,12 +16,22 @@ import json
 import sys
 from pathlib import Path
 
-from fish_data import FISH_DIR, PHOTOS_FILE
+from fish_data import DATA_DIR, FISH_DIR, PHOTOS_FILE
 from tools.commons import candidates, download_photos
 from tools.fetch_sources import CACHE_DIR, GBIF_SPECIES_RANKS, SERIOUSLYFISH_SLUGS, slug
 
 IMAGES_DIR = Path(__file__).resolve().parents[2] / 'frontend' / 'public' / 'images'
 CANDIDATES_DIR = CACHE_DIR.parent / 'commons' / 'candidats'
+WORKBOOK_PHOTOS = DATA_DIR / 'workbook_photos.json'
+
+
+def photo_lists() -> dict[str, list[str]]:
+    """ Titres Commons à télécharger par espèce : poissons décrits par fichier, puis poissons du classeur """
+    lists = {path.stem: json.loads(path.read_text(encoding='utf-8')).get('photos', [])
+             for path in sorted(FISH_DIR.glob('*.json'))}
+    if WORKBOOK_PHOTOS.exists():
+        lists.update(json.loads(WORKBOOK_PHOTOS.read_text(encoding='utf-8')))
+    return lists
 
 
 def categories(name: str) -> list[str]:
@@ -51,14 +62,12 @@ def list_candidates(stems: list[str]) -> None:
 def download(stems: list[str]) -> int:
     credits = json.loads(PHOTOS_FILE.read_text(encoding='utf-8')) if PHOTOS_FILE.exists() else {}
     failed = 0
-    for path in sorted(FISH_DIR.glob('*.json')):
-        if stems and path.stem not in stems:
+    for stem, titles in photo_lists().items():
+        if stems and stem not in stems:
             continue
-        fish = json.loads(path.read_text(encoding='utf-8'))
-        credits[path.stem], errors = download_photos(path.stem, fish.get('photos', []), IMAGES_DIR,
-                                                     credits.get(path.stem, []))
+        credits[stem], errors = download_photos(stem, titles, IMAGES_DIR, credits.get(stem, []))
         for error in errors:
-            print(f'  ! {path.stem} : {error}')
+            print(f'  ! {stem} : {error}')
         failed += bool(errors)
         # Écrit après chaque poisson : une interruption ne fait pas retélécharger les photos déjà enregistrées
         write_credits(credits)
@@ -68,8 +77,9 @@ def download(stems: list[str]) -> int:
 
 
 def write_credits(credits: dict[str, list[dict]]) -> dict[str, list[dict]]:
-    # Les fiches supprimées disparaissent aussi des crédits
-    credits = {k: credits[k] for k in sorted(credits) if (FISH_DIR / f'{k}.json').exists()}
+    # Les espèces retirées disparaissent aussi des crédits
+    listed = photo_lists()
+    credits = {k: credits[k] for k in sorted(credits) if k in listed}
     PHOTOS_FILE.write_text(json.dumps(credits, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     return credits
 

@@ -2,6 +2,7 @@
 Script de création et d'initialisation de la base
 """
 
+import json
 from pathlib import Path
 
 from openpyxl import load_workbook
@@ -12,7 +13,7 @@ from config import DSN, EXCEL_FILE
 from corrections import apply_corrections
 from models import NOMENCLATURES, Poisson
 from models.meta import create_schema, get_engine
-from fish_data import load_fish, upsert_fish
+from fish_data import PHOTOS_FILE, load_fish, upsert_fish
 from invertebrates import load_invertebrates, upsert_invertebrates
 from plants import load_plants, upsert_plants
 from normalize import (
@@ -20,6 +21,7 @@ from normalize import (
     normalize_zone,
 )
 from profiles import load_occurrences, load_profiles, upsert_profiles
+from tools.fetch_sources import slug
 from utils import get_or_create_id
 
 engine = get_engine(DSN)
@@ -74,13 +76,15 @@ def parse_row(row: tuple) -> dict:
     )
 
 
-def to_params(db, fish: dict) -> dict:
-    """ Remplace les libellés de nomenclature par leurs ids (créés au besoin)
+def to_params(db, fish: dict, credits: list[dict] = ()) -> dict:
+    """ Remplace les libellés de nomenclature par leurs ids (créés au besoin). Les photos libres choisies pour le
+    poisson (`data/workbook_photos.json`, crédits dans `data/fish_photos.json`) remplacent celles du classeur.
     """
     params = {k: v for k, v in fish.items() if k != 'code'}
     for cls, field, column in NOMENCLATURES:
         params[column] = get_or_create_id(db, cls, nom=params.pop(field))
-    params['images'] = get_images(fish['code'])
+    params['images'] = [c['fichier'] for c in credits] or get_images(fish['code'])
+    params['credits'] = list(credits) or None
     return params
 
 
@@ -92,27 +96,31 @@ def delete_unused_nomenclatures(db) -> None:
         db.execute(delete(cls).where(cls.id.not_in(used)))
 
 
-if __name__ == '__main__':
+def main(excel_file: str = EXCEL_FILE) -> None:
+    """ Crée les tables manquantes puis importe le classeur, les poissons, plantes et invertébrés décrits par fichier
+    """
     # Création des tables manquantes
     for column in create_schema(engine):
         print('Colonne ajoutée :', column)
 
     try:
-        wb = load_workbook(filename=EXCEL_FILE)
+        wb = load_workbook(filename=excel_file)
     except PermissionError:
         print("Vous devez fermer Excel d'abord")
-        exit()
+        return
     except FileNotFoundError:
         print("Classeur Excel non trouvé !")
-        exit()
+        return
 
     ws = wb.active
 
+    photos = json.loads(PHOTOS_FILE.read_text(encoding='utf-8'))
     with Session(engine) as db:
         for row in ws.iter_rows(min_row=2, values_only=True):
             fish = parse_row(row)
             excel_name = fish['nom_scientifique']
-            params = to_params(db, apply_corrections(fish))
+            fish = apply_corrections(fish)
+            params = to_params(db, fish, photos.get(slug(fish['nom_scientifique']), ()))
             # Un poisson renommé par corrections.py garde sa ligne (et son id) : recherche aussi sous l'ancien nom
             poisson = (db.scalar(select(Poisson).filter_by(nom_scientifique=params['nom_scientifique']))
                        or db.scalar(select(Poisson).filter_by(nom_scientifique=excel_name)))
@@ -135,3 +143,7 @@ if __name__ == '__main__':
         upsert_plants(db, load_plants())
         upsert_invertebrates(db, load_invertebrates())
         db.commit()
+
+
+if __name__ == '__main__':
+    main()

@@ -1,4 +1,13 @@
 {
+  "aborichthys-elongatus": [
+    {
+      "fichier": "aborichthys-elongatus-1.jpg",
+      "auteur": "Ryan Thoni",
+      "licence": "CC BY 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Aborichthys_elongatus.jpg"
+    }
+  ],
   "abramites-hypselonotus": [
     {
       "fichier": "abramites-hypselonotus-1.jpg",
@@ -20,6 +29,22 @@
       "licence": "CC BY-SA 3.0",
       "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
       "source": "https://commons.wikimedia.org/wiki/File:Abramites_hypselonotus.jpg"
+    }
+  ],
+  "acnodon-normani": [
+    {
+      "fichier": "acnodon-normani-1.jpg",
+      "auteur": "Brent Tibbatts",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Acnodon_normani.jpg"
+    },
+    {
+      "fichier": "acnodon-normani-2.jpg",
+      "auteur": "Gabriel Lelis Togni",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Acnodon_normani_Brazil.jpg"
     }
   ],
   "agamyxis-pectinifrons": [
@@ -77,6 +102,22 @@
       "source": "https://commons.wikimedia.org/wiki/File:Convict_cichlid_(Amatitlania_nigrofasciata).jpg"
     }
   ],
+  "ambastaia-sidthimunki": [
+    {
+      "fichier": "ambastaia-sidthimunki-1.jpg",
+      "auteur": "Stefan Maurer",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Schachbrettschmerle.jpg"
+    },
+    {
+      "fichier": "ambastaia-sidthimunki-2.jpg",
+      "auteur": "NasserHalaweh",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cobitidae_Ambastaia_sidthimunki_1.jpg"
+    }
+  ],
   "ameca-splendens": [
     {
       "fichier": "ameca-splendens-1.jpg",
@@ -121,6 +162,29 @@
       "licence": "CC0",
       "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "source": "https://commons.wikimedia.org/wiki/File:78Ambassis_interrupta_Anabas_testudineus_22.jpg"
+    }
+  ],
+  "ancistrus-dolichopterus": [
+    {
+      "fichier": "ancistrus-dolichopterus-1.jpg",
+      "auteur": "Graf zu Pappenheim",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ancistrus_vor_Welsh%C3%B6hle.jpg"
+    },
+    {
+      "fichier": "ancistrus-dolichopterus-2.jpg",
+      "auteur": "Graf zu Pappenheim",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Blauer_Antennenwels_Nahaufnahme.jpg"
+    },
+    {
+      "fichier": "ancistrus-dolichopterus-3.jpg",
+      "auteur": "Graf zu Pappenheim",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ancistrus_Rivalit%C3%A4t_vor_Welsh%C3%B6hle_2.jpg"
     }
   ],
   "andinoacara-pulcher": [
@@ -208,6 +272,45 @@
       "source": "https://commons.wikimedia.org/wiki/File:The_complete_aquarium_book;_the_care_and_breeding_of_goldfish_and_tropical_fishes_(1936)_(20049231384).jpg"
     }
   ],
+  "aphyosemion-australe": [
+    {
+      "fichier": "aphyosemion-australe-1.jpg",
+      "auteur": "KKPCW",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Aphyosemion_australe_in_Higashiyama_Zoo.jpg"
+    },
+    {
+      "fichier": "aphyosemion-australe-2.jpg",
+      "auteur": "Alexander Prokoshev",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Aphyosemion_australe_gold.jpg"
+    },
+    {
+      "fichier": "aphyosemion-australe-3.jpg",
+      "auteur": "lienyuan lee",
+      "licence": "CC BY 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:%E6%97%97%E5%B0%BE%E7%90%B4%E5%B0%87%E9%AD%9A_Aphyosemion_australe_-_panoramio.jpg"
+    }
+  ],
+  "aphyosemion-striatum": [
+    {
+      "fichier": "aphyosemion-striatum-1.jpg",
+      "auteur": "Alexander Prokoshev",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Aphyosemion_striatum_pair.jpg"
+    },
+    {
+      "fichier": "aphyosemion-striatum-2.jpg",
+      "auteur": "Alexander Prokoshev",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Aphyosemion_striatum_(tmp_placeholder).jpg"
+    }
+  ],
   "apistogramma-agassizii": [
     {
       "fichier": "apistogramma-agassizii-1.jpg",
@@ -252,6 +355,29 @@
       "licence": "CC BY-SA 3.0",
       "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
       "source": "https://commons.wikimedia.org/wiki/File:Apistogramma_Borellii_opal.jpg"
+    }
+  ],
+  "apistogramma-cacatuoides": [
+    {
+      "fichier": "apistogramma-cacatuoides-1.jpg",
+      "auteur": "Waylah",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Adult_male_Apistogramma_Cacatuoides.jpg"
+    },
+    {
+      "fichier": "apistogramma-cacatuoides-2.jpg",
+      "auteur": "Ventus55",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Kakadu_Zwergbuntbarsch.jpg"
+    },
+    {
+      "fichier": "apistogramma-cacatuoides-3.jpg",
+      "auteur": "Redspider",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Apistogramma_cacatuoides.jpg"
     }
   ],
   "apistogramma-hongsloi": [
@@ -321,6 +447,29 @@
       "licence": "CC BY-SA 4.0",
       "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
       "source": "https://commons.wikimedia.org/wiki/File:Apistogramma_trifasciata_male_4.jpg"
+    }
+  ],
+  "aplocheilus-lineatus": [
+    {
+      "fichier": "aplocheilus-lineatus-1.jpg",
+      "auteur": "פעיל למען זכויות אדם",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Aplocheilus_lineatus..jpg"
+    },
+    {
+      "fichier": "aplocheilus-lineatus-2.jpg",
+      "auteur": "Graf zu Pappenheim",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Steifenhechtling_14.jpg"
+    },
+    {
+      "fichier": "aplocheilus-lineatus-3.jpg",
+      "auteur": "Graf zu Pappenheim",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Steifenhechtling_16.jpg"
     }
   ],
   "aplocheilus-panchax": [
@@ -415,6 +564,29 @@
       "source": "https://commons.wikimedia.org/wiki/File:Aquarium_Paradise,_Bangalore_(2025)_32.jpg"
     }
   ],
+  "astyanax-jordani": [
+    {
+      "fichier": "astyanax-jordani-1.jpg",
+      "auteur": "lwolfartist",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Fish_national_aquarium_-_23709055388.jpg"
+    },
+    {
+      "fichier": "astyanax-jordani-2.jpg",
+      "auteur": "James St. John",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Astyanax_fasciatus_(Mexican_blind_cavefish)_3.jpg"
+    },
+    {
+      "fichier": "astyanax-jordani-3.jpg",
+      "auteur": "Photograph by Mike Peel ( www.mikepeel.net ).",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Long_Island_Aquarium_2018_038.jpg"
+    }
+  ],
   "aulonocara-jacobfreibergi": [
     {
       "fichier": "aulonocara-jacobfreibergi-1.jpg",
@@ -438,6 +610,47 @@
       "source": "https://commons.wikimedia.org/wiki/File:Aulonocara_hansbaenschi_couple_RB4.jpg"
     }
   ],
+  "aulonocara-steveni": [
+    {
+      "fichier": "aulonocara-steveni-1.jpg",
+      "auteur": "Lerdsuwa",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Aulonocara_steveni_Usisya.jpg"
+    }
+  ],
+  "aulonocara-stuartgranti": [
+    {
+      "fichier": "aulonocara-stuartgranti-1.jpg",
+      "auteur": "Photograph by Mike Peel ( www.mikepeel.net ).",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Frankfurt_Zoo_-_Aulonocara_stuartgranti_Usisya.jpg"
+    },
+    {
+      "fichier": "aulonocara-stuartgranti-2.jpg",
+      "auteur": "Photograph by Mike Peel ( www.mikepeel.net ).",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Frankfurt_Zoo_-_Aulonocara_stuartgranti_Usisya_2.jpg"
+    },
+    {
+      "fichier": "aulonocara-stuartgranti-3.jpg",
+      "auteur": "Riftreef at English Wikipedia",
+      "licence": "CC BY 2.5",
+      "licence_url": "https://creativecommons.org/licenses/by/2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Aulonocara_jacobfreigi.jpg"
+    }
+  ],
+  "austrolebias-nigripinnis": [
+    {
+      "fichier": "austrolebias-nigripinnis-1.jpg",
+      "auteur": "Catxx",
+      "licence": "CC BY 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Austrolebias_nigripinnis992.jpg"
+    }
+  ],
   "axelrodia-riesei": [
     {
       "fichier": "axelrodia-riesei-1.jpg",
@@ -445,6 +658,22 @@
       "licence": "CC BY-SA 2.0",
       "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
       "source": "https://commons.wikimedia.org/wiki/File:Pfeffersalmler_Axelrodia_riesei_(16467043916).jpg"
+    }
+  ],
+  "badis-badis": [
+    {
+      "fichier": "badis-badis-1.jpg",
+      "auteur": "Kennyannydenny",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Blauwe_badis_(man).jpg"
+    },
+    {
+      "fichier": "badis-badis-2.jpg",
+      "auteur": "Kennyannydenny",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Blauwe_badis_(vrouw).jpg"
     }
   ],
   "balantiocheilos-melanopterus": [
@@ -516,6 +745,31 @@
       "source": "https://commons.wikimedia.org/wiki/File:Micro_Zoo_de_Saint_Malo_-_Barbonymus_schwanenfeldii_01.jpg"
     }
   ],
+  "baryancistrus-chrysolomus": [
+    {
+      "fichier": "baryancistrus-chrysolomus-1.jpg",
+      "auteur": "5snake5",
+      "licence": "CC0",
+      "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Baryancistrus_chrysolomus_L-_047_mouth.jpg"
+    },
+    {
+      "fichier": "baryancistrus-chrysolomus-2.jpg",
+      "auteur": "5snake5",
+      "licence": "CC0",
+      "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Baryancistrus_chrysolomus_L-047,_4_of_them.jpg"
+    }
+  ],
+  "beaufortia-leveretti": [
+    {
+      "fichier": "beaufortia-leveretti-1.jpg",
+      "auteur": "Leo-nie-weh-oh",
+      "licence": "Public domain",
+      "licence_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Beaufortia_leveretti.JPG"
+    }
+  ],
   "bedotia-madagascariensis": [
     {
       "fichier": "bedotia-madagascariensis-1.jpg",
@@ -562,6 +816,15 @@
       "source": "https://commons.wikimedia.org/wiki/File:Betta_albimarginata_060311_11.jpg"
     }
   ],
+  "betta-bellica": [
+    {
+      "fichier": "betta-bellica-1.jpg",
+      "auteur": "BS Thurner Hof",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Betta_albimarginata_060311_8.jpg"
+    }
+  ],
   "betta-imbellis": [
     {
       "fichier": "betta-imbellis-1.jpg",
@@ -585,6 +848,15 @@
       "source": "https://commons.wikimedia.org/wiki/File:Betta_imbellis_(male)_20100512_2.jpg"
     }
   ],
+  "betta-mahachaiensis": [
+    {
+      "fichier": "betta-mahachaiensis-1.jpg",
+      "auteur": "StarboundBettas",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Betta_mahachaiensis_Spadetail.jpg"
+    }
+  ],
   "betta-smaragdina": [
     {
       "fichier": "betta-smaragdina-1.jpg",
@@ -592,6 +864,29 @@
       "licence": "CC BY-SA 3.0",
       "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
       "source": "https://commons.wikimedia.org/wiki/File:Betta_smaragdina_pair1.jpg"
+    }
+  ],
+  "betta-splendens": [
+    {
+      "fichier": "betta-splendens-1.jpg",
+      "auteur": "Henryk Niestrój",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Bojownik_syjamski.jpg"
+    },
+    {
+      "fichier": "betta-splendens-2.jpg",
+      "auteur": "Daniella Vereeken",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:DVJ_Betta_splendens_003.jpg"
+    },
+    {
+      "fichier": "betta-splendens-3.jpg",
+      "auteur": "Denise Chan",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Betta-splendens-male.jpg"
     }
   ],
   "biotodoma-cupido": [
@@ -624,6 +919,52 @@
       "licence": "CC BY-SA 3.0",
       "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
       "source": "https://commons.wikimedia.org/wiki/File:Boehlkea_fredcochui_malefemale.jpg"
+    }
+  ],
+  "boraras-brigittae": [
+    {
+      "fichier": "boraras-brigittae-1.jpg",
+      "auteur": "JoKrimmel",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Borasasb_(cropped).jpg"
+    },
+    {
+      "fichier": "boraras-brigittae-2.jpg",
+      "auteur": "Fantomeno 14",
+      "licence": "CC0",
+      "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Rasbora-orn%C3%A9-3-min-2617071259.jpg"
+    },
+    {
+      "fichier": "boraras-brigittae-3.jpg",
+      "auteur": "Atulbhats",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Boraras_brigittae.jpg"
+    }
+  ],
+  "boraras-maculatus": [
+    {
+      "fichier": "boraras-maculatus-1.jpg",
+      "auteur": "R.workoran",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:LK-%E0%B8%8B%E0%B8%B4%E0%B8%A7%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A21_(cropped).jpg"
+    },
+    {
+      "fichier": "boraras-maculatus-2.jpg",
+      "auteur": "Atulbhats",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Boraras_Maculata.jpg"
+    },
+    {
+      "fichier": "boraras-maculatus-3.jpg",
+      "auteur": "NasserHalaweh",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cyprinidae_Boraras_maculatus_1.jpg"
     }
   ],
   "boraras-merah": [
@@ -764,6 +1105,40 @@
       "source": "https://commons.wikimedia.org/wiki/File:Beilbauchsalmler.jpg"
     }
   ],
+  "celestichthys-erythromicron": [
+    {
+      "fichier": "celestichthys-erythromicron-1.jpg",
+      "auteur": "Cantospira",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:D.erythromicron_crop.jpg"
+    }
+  ],
+  "channa-asiatica": [
+    {
+      "fichier": "channa-asiatica-1.jpg",
+      "auteur": "Jokuyken15",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Channa_asiatica_red.jpg"
+    }
+  ],
+  "channa-bleheri": [
+    {
+      "fichier": "channa-bleheri-1.jpg",
+      "auteur": "Mar11",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Channa_Bleheri_juvenile.jpg"
+    },
+    {
+      "fichier": "channa-bleheri-2.jpg",
+      "auteur": "Mirko Hartig",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Channa_bleheri.jpg"
+    }
+  ],
   "chilodus-punctatus": [
     {
       "fichier": "chilodus-punctatus-1.jpg",
@@ -810,6 +1185,52 @@
       "licence": "CC BY 1.0",
       "licence_url": "https://creativecommons.org/licenses/by/1.0",
       "source": "https://commons.wikimedia.org/wiki/File:Pseudotropheus_Saulosi_V_bekje_vol.jpg"
+    }
+  ],
+  "chromobotia-macracanthus": [
+    {
+      "fichier": "chromobotia-macracanthus-1.jpg",
+      "auteur": "Vlad Butsky from San Jose, CA, USA",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Chromobotia_macracanthus.jpg"
+    },
+    {
+      "fichier": "chromobotia-macracanthus-2.jpg",
+      "auteur": "Gpasques",
+      "licence": "CC0",
+      "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Chromobotia_macracanthus_Aquarium_Nancy.jpg"
+    },
+    {
+      "fichier": "chromobotia-macracanthus-3.jpg",
+      "auteur": "BACbKA",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:2015-09-13-223-Tiger-loach.jpg"
+    }
+  ],
+  "cichla-ocellaris": [
+    {
+      "fichier": "cichla-ocellaris-1.jpg",
+      "auteur": "Petruss",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cichla_ocellaris.jpg"
+    },
+    {
+      "fichier": "cichla-ocellaris-2.jpg",
+      "auteur": "Karelj",
+      "licence": "Public domain",
+      "licence_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Cichla_ocellaris_Dvur_zoo_2.jpg"
+    },
+    {
+      "fichier": "cichla-ocellaris-3.jpg",
+      "auteur": "Karelj",
+      "licence": "Public domain",
+      "licence_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Cichla_ocellaris_Dvur_zoo_3.jpg"
     }
   ],
   "cleithracara-maronii": [
@@ -876,6 +1297,29 @@
       "source": "https://commons.wikimedia.org/wiki/File:Corydoras-adolfoi-alone.jpg"
     }
   ],
+  "corydoras-aeneus": [
+    {
+      "fichier": "corydoras-aeneus-1.jpg",
+      "auteur": "h080",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Corydoras_aeneus_h080.jpg"
+    },
+    {
+      "fichier": "corydoras-aeneus-2.jpg",
+      "auteur": "Warrieboy",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Corydoras_aeneus_12.jpg"
+    },
+    {
+      "fichier": "corydoras-aeneus-3.jpg",
+      "auteur": "Henryk Niestrój",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Kirysek_spi%C5%BCowy.jpg"
+    }
+  ],
   "corydoras-arcuatus": [
     {
       "fichier": "corydoras-arcuatus-1.jpg",
@@ -899,6 +1343,61 @@
       "licence": "CC BY 3.0",
       "licence_url": "https://creativecommons.org/licenses/by/3.0",
       "source": "https://commons.wikimedia.org/wiki/File:Corydoras_duplicareus.jpg"
+    }
+  ],
+  "corydoras-habrosus": [
+    {
+      "fichier": "corydoras-habrosus-1.jpg",
+      "auteur": "D.W.",
+      "licence": "CC0",
+      "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Corydoras_habrosus-Weibchen.jpg"
+    },
+    {
+      "fichier": "corydoras-habrosus-2.jpg",
+      "auteur": "D.W.",
+      "licence": "CC0",
+      "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Corydoras_habrosus_-_M%C3%A4nnchen_und_Weibchen.jpg"
+    },
+    {
+      "fichier": "corydoras-habrosus-3.jpg",
+      "auteur": "D.W.",
+      "licence": "CC0",
+      "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Corydoras-habrosus-M%C3%A4nnchen.jpeg"
+    }
+  ],
+  "corydoras-hastatus": [
+    {
+      "fichier": "corydoras-hastatus-1.jpg",
+      "auteur": "AquariaNR",
+      "licence": "CC BY-SA 3.0 de",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Corydoras_hastatus.jpg"
+    }
+  ],
+  "corydoras-julii": [
+    {
+      "fichier": "corydoras-julii-1.jpg",
+      "auteur": "Kai Schreiber",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Corydoras_julii.jpg"
+    },
+    {
+      "fichier": "corydoras-julii-2.jpg",
+      "auteur": "Merlin Senger at de.wikipedia",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Juliipanzerwels_(Corydoras_Julii)_im_Aquarium.jpg"
+    },
+    {
+      "fichier": "corydoras-julii-3.jpg",
+      "auteur": "NasserHalaweh",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Callichthyidae_Corydoras_julii_1.jpg"
     }
   ],
   "corydoras-leucomelas": [
@@ -965,6 +1464,52 @@
       "source": "https://commons.wikimedia.org/wiki/File:Kirysek_pstry_(Corydoras_paleatus).JPG"
     }
   ],
+  "corydoras-panda": [
+    {
+      "fichier": "corydoras-panda-1.jpg",
+      "auteur": "PRODornenwolf",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Corydoras_panda_Dornenwolf.jpg"
+    },
+    {
+      "fichier": "corydoras-panda-2.jpg",
+      "auteur": "Giniro",
+      "licence": "CC BY 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Corydoras_panda.JPG"
+    },
+    {
+      "fichier": "corydoras-panda-3.jpg",
+      "auteur": "Chronotopian",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Panda_Corydoras.jpg"
+    }
+  ],
+  "corydoras-pygmaeus": [
+    {
+      "fichier": "corydoras-pygmaeus-1.jpg",
+      "auteur": "Anastasiya Lvova",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:%D0%9E%D0%B1%D0%B8%D1%82%D0%B0%D1%82%D0%B5%D0%BB%D0%B8_%D0%BF%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%9E%D0%BA%D0%B5%D0%B0%D0%BD%D0%B0%D1%80%D0%B8%D1%83%D0%BC%D0%B0_10_(cropped).jpg"
+    },
+    {
+      "fichier": "corydoras-pygmaeus-2.jpg",
+      "auteur": "Softepaul",
+      "licence": "CC0",
+      "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:PXL_20260810_003453528~2.jpg"
+    },
+    {
+      "fichier": "corydoras-pygmaeus-3.jpg",
+      "auteur": "AquaTuer",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:C.pygmaeus.jpg"
+    }
+  ],
   "corydoras-schwartzi": [
     {
       "fichier": "corydoras-schwartzi-1.jpg",
@@ -986,6 +1531,61 @@
       "licence": "Public domain",
       "licence_url": null,
       "source": "https://commons.wikimedia.org/wiki/File:Corydoras_schwartzi_m.jpg"
+    }
+  ],
+  "corydoras-sterbai": [
+    {
+      "fichier": "corydoras-sterbai-1.jpg",
+      "auteur": "Matthew Mannell",
+      "licence": "Public domain",
+      "licence_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Corydoras_Sterbai.jpg"
+    },
+    {
+      "fichier": "corydoras-sterbai-2.jpg",
+      "auteur": "Xocolatl ( talk ) 19:55, 30 January 2013 (UTC)",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Engelantennenwelse.jpg"
+    },
+    {
+      "fichier": "corydoras-sterbai-3.jpg",
+      "auteur": "User:D.W.",
+      "licence": "CC0",
+      "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Corydoras_sterbai_-_Kopf.jpeg"
+    }
+  ],
+  "corydoras-trilineatus": [
+    {
+      "fichier": "corydoras-trilineatus-1.jpg",
+      "auteur": "Bob Jenkins",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Corydoras_trilineatus,_2010.jpg"
+    },
+    {
+      "fichier": "corydoras-trilineatus-2.jpg",
+      "auteur": "Soulkeeper",
+      "licence": "Public domain",
+      "licence_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Corydoras_trilineatus3.jpg"
+    },
+    {
+      "fichier": "corydoras-trilineatus-3.jpg",
+      "auteur": "Sychriscar",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Corydo.JPG"
+    }
+  ],
+  "corydoras-weitzmani": [
+    {
+      "fichier": "corydoras-weitzmani-1.jpg",
+      "auteur": "NasserHalaweh",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Callichthyidae_Corydoras_weitzmani_1.jpg"
     }
   ],
   "crossocheilus-langei": [
@@ -1073,6 +1673,15 @@
       "source": "https://commons.wikimedia.org/wiki/File:Cyprichromis_leptosoma_(Wroclaw_zoo)-3.JPG"
     }
   ],
+  "danio-albolineatus": [
+    {
+      "fichier": "danio-albolineatus-1.jpg",
+      "auteur": "Sc99cs at English Wikipedia ( Original text: Steven Coburn sc99cs )",
+      "licence": "Public domain",
+      "licence_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Danio_albolineatus.jpg"
+    }
+  ],
   "danio-choprae": [
     {
       "fichier": "danio-choprae-1.jpg",
@@ -1096,6 +1705,15 @@
       "source": "https://commons.wikimedia.org/wiki/File:Danio_choprai.jpg"
     }
   ],
+  "danio-jaintianensis": [
+    {
+      "fichier": "danio-jaintianensis-1.jpg",
+      "auteur": "Beta Mahatvaraj",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Danio_jaintianensis.jpg"
+    }
+  ],
   "danio-kyathit": [
     {
       "fichier": "danio-kyathit-1.jpg",
@@ -1110,6 +1728,68 @@
       "licence": "CC BY-SA 3.0",
       "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
       "source": "https://commons.wikimedia.org/wiki/File:Danio_kyathit2.jpg"
+    }
+  ],
+  "danio-margaritatus": [
+    {
+      "fichier": "danio-margaritatus-1.jpg",
+      "auteur": "Bread962",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Celestial_Pearl_Danio.jpg"
+    },
+    {
+      "fichier": "danio-margaritatus-2.jpg",
+      "auteur": "Cassius Chaerea",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:D%C3%A1nio_perlov%C3%A9.jpg"
+    },
+    {
+      "fichier": "danio-margaritatus-3.jpg",
+      "auteur": "Uccio D'Agostino",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Neocaridina_heteropoda,_Echinodorus_tenellus,_Danio_margaritatus_(Microrasbora_Galaxy,_Galaxy_Rasbora).jpg"
+    }
+  ],
+  "danio-rerio": [
+    {
+      "fichier": "danio-rerio-1.jpg",
+      "auteur": "DataBase Center for Life Science (DBCLS)",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:202101_Zebrafish.png"
+    },
+    {
+      "fichier": "danio-rerio-2.jpg",
+      "auteur": "Pogrebnoj-Alexandroff",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Danio_rerio.JPG"
+    },
+    {
+      "fichier": "danio-rerio-3.jpg",
+      "auteur": "Ffish.asia",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Zebradanio-P1219668.jpg"
+    }
+  ],
+  "danio-rerio-var-frankei": [
+    {
+      "fichier": "danio-rerio-var-frankei-1.jpg",
+      "auteur": "Roundish",
+      "licence": "CC0",
+      "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Leopard_danio_(cropped).jpg"
+    },
+    {
+      "fichier": "danio-rerio-var-frankei-2.jpg",
+      "auteur": "carolineCCB",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Leopard_Danio_(4050116019).jpg"
     }
   ],
   "dario-hysginon": [
@@ -1201,6 +1881,15 @@
       "source": "https://commons.wikimedia.org/wiki/File:Dianema_urostriata.JPG"
     }
   ],
+  "dicrossus-filamentosus": [
+    {
+      "fichier": "dicrossus-filamentosus-1.jpg",
+      "auteur": "Clinton & Charles Robertson",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Dicrossus_filamentosus.jpg"
+    }
+  ],
   "elassoma-evergladei": [
     {
       "fichier": "elassoma-evergladei-1.jpg",
@@ -1215,6 +1904,38 @@
       "licence": "CC BY-SA 4.0",
       "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
       "source": "https://commons.wikimedia.org/wiki/File:Elassoma_evergladei_male.png"
+    }
+  ],
+  "enigmatochromis-lucanusi": [
+    {
+      "fichier": "enigmatochromis-lucanusi-1.jpg",
+      "auteur": "WaylonSummers",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Enigmatochromis-lucanusi-FotoRiver-Fria-Guinea.jpg"
+    }
+  ],
+  "epalzeorhynchos-bicolor": [
+    {
+      "fichier": "epalzeorhynchos-bicolor-1.jpg",
+      "auteur": "Astellar87",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Epalzeorhynchos_bicolor1.jpg"
+    },
+    {
+      "fichier": "epalzeorhynchos-bicolor-2.jpg",
+      "auteur": "The original uploader was Caveman99 at German Wikipedia .",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Epalzeorhynchos_bicolor.jpg"
+    },
+    {
+      "fichier": "epalzeorhynchos-bicolor-3.jpg",
+      "auteur": "Astellar87",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Epalzeorhynchos_bicolor2.jpg"
     }
   ],
   "epalzeorhynchos-frenatum": [
@@ -1279,6 +2000,52 @@
       "source": "https://commons.wikimedia.org/wiki/File:Erpetoichthys_calabaricus_02.jpg"
     }
   ],
+  "farlowella-acus": [
+    {
+      "fichier": "farlowella-acus-1.jpg",
+      "auteur": "Cedricguppy - Loury Cédric",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Farlowella_acus_-_AquaPorteDoree_03.JPG"
+    },
+    {
+      "fichier": "farlowella-acus-2.jpg",
+      "auteur": "Cedricguppy - Loury Cédric",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Farlowella_acus_-_AquaPorteDoree_06.JPG"
+    },
+    {
+      "fichier": "farlowella-acus-3.jpg",
+      "auteur": "Cedricguppy - Loury Cédric",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Farlowella_acus_-_AquaPorteDoree_01.JPG"
+    }
+  ],
+  "fundulopanchax-gardneri": [
+    {
+      "fichier": "fundulopanchax-gardneri-1.jpg",
+      "auteur": "Alexander Prokoshev",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Fundulopanchax_gardneri_gardneri.JPG"
+    },
+    {
+      "fichier": "fundulopanchax-gardneri-2.jpg",
+      "auteur": "Alexander Prokoshev",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Fundulopanchax_gardneri.jpg"
+    },
+    {
+      "fichier": "fundulopanchax-gardneri-3.jpg",
+      "auteur": "Violaine2, France",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Fundulopanchax_gardneri.png"
+    }
+  ],
   "fundulopanchax-sjostedti": [
     {
       "fichier": "fundulopanchax-sjostedti-1.jpg",
@@ -1293,6 +2060,29 @@
       "licence": "CC BY-SA 4.0",
       "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
       "source": "https://commons.wikimedia.org/wiki/File:Fundulopanchax_sjostedti_%27Red_dwarf%27.jpg"
+    }
+  ],
+  "gambusia-holbrooki": [
+    {
+      "fichier": "gambusia-holbrooki-1.jpg",
+      "auteur": "JeffreyGammon",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:EasternMosquitoFishJG_Female.jpg"
+    },
+    {
+      "fichier": "gambusia-holbrooki-2.jpg",
+      "auteur": "Smithsonian Environmental Research Center",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Gambusia_holbrooki_(S0833)_(12597857535).jpg"
+    },
+    {
+      "fichier": "gambusia-holbrooki-3.jpg",
+      "auteur": "Original: JeffreyGammon ( Derivative work: Ellicrum )",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Gambusia_holbrooki_male.png"
     }
   ],
   "garra-rufa": [
@@ -1343,6 +2133,52 @@
       "source": "https://commons.wikimedia.org/wiki/File:Altifrons.jpg"
     }
   ],
+  "girardinus-metallicus": [
+    {
+      "fichier": "girardinus-metallicus-1.jpg",
+      "auteur": "Livebearerguy",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Girardinus_metallicus_(metal_girardinus)_(cropped).jpg"
+    },
+    {
+      "fichier": "girardinus-metallicus-2.jpg",
+      "auteur": "Livebearerguy",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Girardinus_metallicus_(metal_girardinus).jpg"
+    },
+    {
+      "fichier": "girardinus-metallicus-3.jpg",
+      "auteur": "Cardet co6cs",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Giraldinus_metalicus.jpg"
+    }
+  ],
+  "glossolepis-incisus": [
+    {
+      "fichier": "glossolepis-incisus-1.jpg",
+      "auteur": "Chrumps",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Glossolepis_incisus.jpg"
+    },
+    {
+      "fichier": "glossolepis-incisus-2.jpg",
+      "auteur": "Emőke Dénes",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Hal_-_Glossolepis_incisus_-_1.jpg"
+    },
+    {
+      "fichier": "glossolepis-incisus-3.jpg",
+      "auteur": "Горбунова М.С.",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Red_rainbowfish_in_the_Leningrad_zoo_2.jpg"
+    }
+  ],
   "gnathonemus-petersii": [
     {
       "fichier": "gnathonemus-petersii-1.jpg",
@@ -1364,6 +2200,22 @@
       "licence": "CC BY-SA 3.0",
       "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
       "source": "https://commons.wikimedia.org/wiki/File:Gnathonemus_petersii_IMG_3616_africa.JPG"
+    }
+  ],
+  "gymnocorymbus-ternetzi": [
+    {
+      "fichier": "gymnocorymbus-ternetzi-1.jpg",
+      "auteur": "emptyvi",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Gymnocorymbus_ternetzi.JPG"
+    },
+    {
+      "fichier": "gymnocorymbus-ternetzi-2.jpg",
+      "auteur": "Juan R. Lascorz",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:01.Gymnocorymbus_ternetzi.JPG"
     }
   ],
   "gymnogeophagus-balzanii": [
@@ -1410,6 +2262,29 @@
       "licence": "CC BY-SA 2.0",
       "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
       "source": "https://commons.wikimedia.org/wiki/File:Algae_eater_(2341779669).jpg"
+    }
+  ],
+  "hasemania-nana": [
+    {
+      "fichier": "hasemania-nana-1.jpg",
+      "auteur": "Hasemania_4.jpg : Filtropat derivative work: Kyknos ( talk )",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Hasemania_4_cropped.jpg"
+    },
+    {
+      "fichier": "hasemania-nana-2.jpg",
+      "auteur": "Juan R. Lascorz",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:01.Hasemania_nana.JPG"
+    },
+    {
+      "fichier": "hasemania-nana-3.jpg",
+      "auteur": "Malene Thyssen (User Malene )",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Kobbertetra_Hasemania_nana.jpg"
     }
   ],
   "helostoma-temminckii": [
@@ -1481,6 +2356,29 @@
       "source": "https://commons.wikimedia.org/wiki/File:Cichlidae_-_Hemichromis_lifalili.JPG"
     }
   ],
+  "hemigrammus-bleheri": [
+    {
+      "fichier": "hemigrammus-bleheri-1.jpg",
+      "auteur": "-serwacy01-",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:PEtbler.jpg"
+    },
+    {
+      "fichier": "hemigrammus-bleheri-2.jpg",
+      "auteur": "-serwacy01-",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Petbler.jpg"
+    },
+    {
+      "fichier": "hemigrammus-bleheri-3.jpg",
+      "auteur": "-serwacy01-",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Petitella_bleheri.jpg"
+    }
+  ],
   "hemigrammus-erythrozonus": [
     {
       "fichier": "hemigrammus-erythrozonus-1.jpg",
@@ -1529,6 +2427,29 @@
       "source": "https://commons.wikimedia.org/wiki/File:Hemigrammus_ocellifer,_Tapaj%C3%B3s.jpg"
     }
   ],
+  "hemigrammus-pulcher": [
+    {
+      "fichier": "hemigrammus-pulcher-1.jpg",
+      "auteur": "SOK",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Hemigrammus_pulcher_1.jpg"
+    },
+    {
+      "fichier": "hemigrammus-pulcher-2.jpg",
+      "auteur": "Jofre",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:H.pulcher_IMG_3268.jpg"
+    },
+    {
+      "fichier": "hemigrammus-pulcher-3.jpg",
+      "auteur": "Jofre",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:H.pulcher_IMG_3191.jpg"
+    }
+  ],
   "hemigrammus-rhodostomus": [
     {
       "fichier": "hemigrammus-rhodostomus-1.jpg",
@@ -1550,6 +2471,15 @@
       "licence": "CC BY-SA 4.0",
       "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
       "source": "https://commons.wikimedia.org/wiki/File:Petitellarhodostom.jpg"
+    }
+  ],
+  "hemigrammus-stictus": [
+    {
+      "fichier": "hemigrammus-stictus-1.jpg",
+      "auteur": "Clinton & Charles Robertson",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Hemigrammus_stictus.jpg"
     }
   ],
   "herichthys-cyanoguttatus": [
@@ -1596,6 +2526,187 @@
       "licence": "CC BY-SA 4.0",
       "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
       "source": "https://commons.wikimedia.org/wiki/File:Heros_efasciatus_in_the_Leningrad_zoo.jpg"
+    }
+  ],
+  "heterandria-formosa": [
+    {
+      "fichier": "heterandria-formosa-1.jpg",
+      "auteur": "Brian Gratwicke",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Dwarf_Livebearer_or_Least_Killifish_(Heterandria_formosa).jpg"
+    },
+    {
+      "fichier": "heterandria-formosa-2.jpg",
+      "auteur": "Jasmin.Kalcher",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Zwergk%C3%A4rpfling,_Midget_livebearer_(Heterandria_formosa)_1.jpg"
+    },
+    {
+      "fichier": "heterandria-formosa-3.jpg",
+      "auteur": "Jasmin.Kalcher",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Zwergk%C3%A4rpfling,_Midget_livebearer_(Heterandria_formosa)_3.jpg"
+    }
+  ],
+  "hypancistrus-zebra": [
+    {
+      "fichier": "hypancistrus-zebra-1.jpg",
+      "auteur": "Birger A",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Hypancistrus_zebra4305.jpg"
+    },
+    {
+      "fichier": "hypancistrus-zebra-2.jpg",
+      "auteur": "Peaceinpianos",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Hypancistrus_Zebra_Pleco_Juvenile.jpg"
+    }
+  ],
+  "hyphessobrycon-amandae": [
+    {
+      "fichier": "hyphessobrycon-amandae-1.jpg",
+      "auteur": "Cedricguppy - Loury Cédric",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Hyphessobrycon_amandae_-_AquaPorteDoree_03.JPG"
+    },
+    {
+      "fichier": "hyphessobrycon-amandae-2.jpg",
+      "auteur": "Cedricguppy - Loury Cédric",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Hyphessobrycon_amandae_-_AquaPorteDoree_02.JPG"
+    },
+    {
+      "fichier": "hyphessobrycon-amandae-3.jpg",
+      "auteur": "Cangadoba",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Hyphessobrycon0415.jpg"
+    }
+  ],
+  "hyphessobrycon-bentosi": [
+    {
+      "fichier": "hyphessobrycon-bentosi-1.jpg",
+      "auteur": "Holger Krisp",
+      "licence": "CC BY 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Schmucksalmler_Hyphessobrycon_bentosi.jpg"
+    }
+  ],
+  "hyphessobrycon-columbianus": [
+    {
+      "fichier": "hyphessobrycon-columbianus-1.jpg",
+      "auteur": "Marrabbio2",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Hyphessobrycon_colombianus.jpg"
+    }
+  ],
+  "hyphessobrycon-copelandi": [
+    {
+      "fichier": "hyphessobrycon-copelandi-1.jpg",
+      "auteur": "Gregoire Germeau",
+      "licence": "CC BY 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Megalamphodus_copelandi.jpg"
+    }
+  ],
+  "hyphessobrycon-eques": [
+    {
+      "fichier": "hyphessobrycon-eques-1.jpg",
+      "auteur": "Faucon",
+      "licence": "CC BY-SA 2.5",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Serpae_tetra.JPG"
+    },
+    {
+      "fichier": "hyphessobrycon-eques-2.jpg",
+      "auteur": "Francesco Loda",
+      "licence": "CC BY 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Hyphessobrycon_serpae_-_Serpae_Tetra.jpg"
+    },
+    {
+      "fichier": "hyphessobrycon-eques-3.jpg",
+      "auteur": "Douglas Lopes",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Hyphessobrycon_eques_347048436.jpg"
+    }
+  ],
+  "hyphessobrycon-erythrostigma": [
+    {
+      "fichier": "hyphessobrycon-erythrostigma-1.jpg",
+      "auteur": "5snake5",
+      "licence": "CC0",
+      "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Hyphessobrycon_erythrostigma_-_Kirschflecksalmer.jpg"
+    },
+    {
+      "fichier": "hyphessobrycon-erythrostigma-2.jpg",
+      "auteur": "Francesco Loda",
+      "licence": "CC BY 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Hyphessobrycon_erythrostigma_-_20090109.jpeg"
+    },
+    {
+      "fichier": "hyphessobrycon-erythrostigma-3.jpg",
+      "auteur": "H. Zell",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Hyphessobrycon_erythrostigma_-_Wilhelma_01.jpg"
+    }
+  ],
+  "hyphessobrycon-flammeus": [
+    {
+      "fichier": "hyphessobrycon-flammeus-1.jpg",
+      "auteur": "(c) Igor Balashov, some rights reserved (CC BY)",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Hyphessobrycon_flammeus,_%D0%91%D0%B5%D1%81%D0%B0%D1%80%D0%B0%D0%B1%D0%BA%D0%B0,_%D0%9A%D0%B8%D1%97%D0%B2,_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0,_02000_imported_from_iNaturalist_photo_319666874.jpg"
+    },
+    {
+      "fichier": "hyphessobrycon-flammeus-2.jpg",
+      "auteur": "CrazyD",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Roter_von_Rio_-_Hyphessobrycon_flammeus.jpg"
+    },
+    {
+      "fichier": "hyphessobrycon-flammeus-3.jpg",
+      "auteur": "Joel Bez",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Flame_tetra_v2.jpg"
+    }
+  ],
+  "hyphessobrycon-herbertaxelrodi": [
+    {
+      "fichier": "hyphessobrycon-herbertaxelrodi-1.jpg",
+      "auteur": "Juan R. Lascorz",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:04.Hyphessobrycon_herbertaxelrodi.JPG"
+    },
+    {
+      "fichier": "hyphessobrycon-herbertaxelrodi-2.jpg",
+      "auteur": "Juan R. Lascorz",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:13.Hyphessobrycon_herbertaxelrodi.JPG"
+    },
+    {
+      "fichier": "hyphessobrycon-herbertaxelrodi-3.jpg",
+      "auteur": "Atulbhats",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Black-Neon-Tetra.jpg"
     }
   ],
   "hyphessobrycon-megalopterus": [
@@ -1830,6 +2941,68 @@
       "source": "https://commons.wikimedia.org/wiki/File:Julidochromis_regani_(Wroclaw_zoo)-2.JPG"
     }
   ],
+  "kryptopterus-bicirrhis": [
+    {
+      "fichier": "kryptopterus-bicirrhis-1.jpg",
+      "auteur": "Brian Gratwicke from DC, USA",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Glass_Catfish_(Kryptopterus_bicirrhis)_(5110908628).jpg"
+    },
+    {
+      "fichier": "kryptopterus-bicirrhis-2.jpg",
+      "auteur": "JC7001",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Glass_Catfish_(Kryptopterus_bicirrhis)_(5520681894).jpg"
+    },
+    {
+      "fichier": "kryptopterus-bicirrhis-3.jpg",
+      "auteur": "SATOSHI TOMIYAMA",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Kryptopterus_bicirrhis_(4222100447).jpg"
+    }
+  ],
+  "kryptopterus-minor": [
+    {
+      "fichier": "kryptopterus-minor-1.jpg",
+      "auteur": "jacilluch",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Siluro_de_cristal_-_Glass_Catfish_(14059368040).jpg"
+    },
+    {
+      "fichier": "kryptopterus-minor-2.jpg",
+      "auteur": "Christophe cagé 06 Jully 2007",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Symphysodon_aequifasciatus_and_Kryptopterus_vitreolus03.jpg"
+    }
+  ],
+  "kryptopterus-vitreolus": [
+    {
+      "fichier": "kryptopterus-vitreolus-1.jpg",
+      "auteur": "Martin Fisch",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Glaswelse.jpg"
+    },
+    {
+      "fichier": "kryptopterus-vitreolus-2.jpg",
+      "auteur": "Tylwyth Eldar",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Aquarium_de_la_Porte_Dor%C3%A9e_-_Kryptopterus_vitreolus_01.jpg"
+    },
+    {
+      "fichier": "kryptopterus-vitreolus-3.jpg",
+      "auteur": "-serwacy01-",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Kryptopterus_vitreolus.jpg"
+    }
+  ],
   "labidochromis-caeruleus": [
     {
       "fichier": "labidochromis-caeruleus-1.jpg",
@@ -2000,6 +3173,38 @@
       "source": "https://commons.wikimedia.org/wiki/File:%E9%9D%9E%E6%B4%B2%E9%B3%B3%E5%87%B0_Melanochromis_auratus_-_panoramio.jpg"
     }
   ],
+  "melanotaenia-boesemani": [
+    {
+      "fichier": "melanotaenia-boesemani-1.jpg",
+      "auteur": "Cangadoba",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Melanotaenia_boesemani_-_IMG_0448.jpg"
+    },
+    {
+      "fichier": "melanotaenia-boesemani-2.jpg",
+      "auteur": "Tylwyth Eldar",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Aquarium_de_la_Porte_Dor%C3%A9e_-_Poisson_06.jpg"
+    }
+  ],
+  "melanotaenia-lacustris": [
+    {
+      "fichier": "melanotaenia-lacustris-1.jpg",
+      "auteur": "Горбунова М.С.",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Lake_Kutubu_rainbowfish_in_the_Leningrad_zoo.jpg"
+    },
+    {
+      "fichier": "melanotaenia-lacustris-2.jpg",
+      "auteur": "Klaus Rudloff",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Melanotaenia_lacustris.jpg"
+    }
+  ],
   "melanotaenia-praecox": [
     {
       "fichier": "melanotaenia-praecox-1.jpg",
@@ -2078,6 +3283,31 @@
       "source": "https://commons.wikimedia.org/wiki/File:Microctenopoma_ansorgii_3.jpg"
     }
   ],
+  "microdevario-kubotai": [
+    {
+      "fichier": "microdevario-kubotai-1.jpg",
+      "auteur": "BottomDog",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Microdevario_kubotai-hires.jpg"
+    },
+    {
+      "fichier": "microdevario-kubotai-2.jpg",
+      "auteur": "Lerdsuwa",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Microdevario_kubotai.jpg"
+    }
+  ],
+  "micropoecilia-picta": [
+    {
+      "fichier": "micropoecilia-picta-1.jpg",
+      "auteur": "Andrew Bogott",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Micropoecilia_picta_males.png"
+    }
+  ],
   "mikrogeophagus-altispinosus": [
     {
       "fichier": "mikrogeophagus-altispinosus-1.jpg",
@@ -2099,6 +3329,29 @@
       "licence": "CC BY-SA 2.0",
       "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
       "source": "https://commons.wikimedia.org/wiki/File:Bolivian_Ram.jpg"
+    }
+  ],
+  "mikrogeophagus-ramirezi": [
+    {
+      "fichier": "mikrogeophagus-ramirezi-1.jpg",
+      "auteur": "Sven Kullander",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Mikrogeophagus_ramirezi_male.jpg"
+    },
+    {
+      "fichier": "mikrogeophagus-ramirezi-2.jpg",
+      "auteur": "Sven Kullander",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Mikrogeophagus_ramirezi_female.jpg"
+    },
+    {
+      "fichier": "mikrogeophagus-ramirezi-3.jpg",
+      "auteur": "Aquakeeper14",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Blue_Ram_over_ceramic_imitation_coconut_(Male).JPG"
     }
   ],
   "misgurnus-anguillicaudatus": [
@@ -2168,6 +3421,15 @@
       "licence": "CC BY-SA 4.0",
       "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
       "source": "https://commons.wikimedia.org/wiki/File:Moenkhausia_sanctaefilomenae_-_T%C3%A9tra_yeux_rouge_-_Aqua_Porte_Dor%C3%A9e_03.JPG"
+    }
+  ],
+  "nandus-nebulosus": [
+    {
+      "fichier": "nandus-nebulosus-1.jpg",
+      "auteur": "R.workoran",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Bornean_leafish.jpg"
     }
   ],
   "nannacara-anomala": [
@@ -2287,6 +3549,29 @@
       "source": "https://commons.wikimedia.org/wiki/File:Nematobrycon_palmeri_1.jpg"
     }
   ],
+  "neolamprologus-brichardi": [
+    {
+      "fichier": "neolamprologus-brichardi-1.jpg",
+      "auteur": "Przemysław Malkowski",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Neolamprologus_brichardi_young.jpg"
+    },
+    {
+      "fichier": "neolamprologus-brichardi-2.jpg",
+      "auteur": "Bjoertvedt",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Neolamprologus_brichardi_LoroParqueTenerife_princess_of_burundi_IMG_5384.JPG"
+    },
+    {
+      "fichier": "neolamprologus-brichardi-3.jpg",
+      "auteur": "FakirNL",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Neolamprologus_brichardi_in_Ouwehands_Dierenpark.jpg"
+    }
+  ],
   "neolamprologus-leleupi": [
     {
       "fichier": "neolamprologus-leleupi-1.jpg",
@@ -2308,6 +3593,29 @@
       "licence": "CC BY 2.0",
       "licence_url": "https://creativecommons.org/licenses/by/2.0",
       "source": "https://commons.wikimedia.org/wiki/File:Lamprologus_leleupi_(4120053758).jpg"
+    }
+  ],
+  "neolamprologus-multifasciatus": [
+    {
+      "fichier": "neolamprologus-multifasciatus-1.jpg",
+      "auteur": "Marrabbio2",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Multifasciatus_male.jpg"
+    },
+    {
+      "fichier": "neolamprologus-multifasciatus-2.jpg",
+      "auteur": "Richard A. Ingebrigtsen",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Neolamprologus_multifasciatus_male.JPG"
+    },
+    {
+      "fichier": "neolamprologus-multifasciatus-3.jpg",
+      "auteur": "Marrabbio2",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Multi_babies.jpg"
     }
   ],
   "nimbochromis-venustus": [
@@ -2340,6 +3648,22 @@
       "licence": "CC BY-SA 3.0",
       "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
       "source": "https://commons.wikimedia.org/wiki/File:Nothobranchius_furzeri_GRZ.jpg"
+    }
+  ],
+  "nothobranchius-rachovii": [
+    {
+      "fichier": "nothobranchius-rachovii-1.jpg",
+      "auteur": "Andrew Bogott",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Nothobranchius_rachovii_Lower_Shire_River_MZMW_09-04_dark_background.png"
+    },
+    {
+      "fichier": "nothobranchius-rachovii-2.jpg",
+      "auteur": "Andrew Bogott",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Nothobranchius_rachovii_Lower_Shire_River_MZMW_09-04_light_background.png"
     }
   ],
   "oliotius-oligolepis": [
@@ -2390,6 +3714,107 @@
       "source": "https://commons.wikimedia.org/wiki/File:Daisy%27s_Ricefish.JPG"
     }
   ],
+  "osphronemus-goramy": [
+    {
+      "fichier": "osphronemus-goramy-1.jpg",
+      "auteur": "Qoki Doki",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Fish_in_an_aquarium_oh_boy_there_it_is.jpg"
+    },
+    {
+      "fichier": "osphronemus-goramy-2.jpg",
+      "auteur": "Vassil",
+      "licence": "CC0",
+      "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Aquarium_tropical_de_Pierrefitte-Nestalas_03082018_Gourami_g%C3%A9ant_2.jpg"
+    },
+    {
+      "fichier": "osphronemus-goramy-3.jpg",
+      "auteur": "Tiia Monto",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Giant_gourami.jpg"
+    }
+  ],
+  "otocinclus-affinis": [
+    {
+      "fichier": "otocinclus-affinis-1.jpg",
+      "auteur": "Cisamarc",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Macrotocinclus_affinis_resting.jpg"
+    },
+    {
+      "fichier": "otocinclus-affinis-2.jpg",
+      "auteur": "CTho",
+      "licence": "Public domain",
+      "licence_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Otocinclus2.jpg"
+    },
+    {
+      "fichier": "otocinclus-affinis-3.jpg",
+      "auteur": "Kichu66",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Otosek_przyuj%C5%9Bciowy_(Otocinclus_affinis).jpg"
+    }
+  ],
+  "otocinclus-arnoldi": [
+    {
+      "fichier": "otocinclus-arnoldi-1.jpg",
+      "auteur": "CHUCAO",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Otocinclus_arnoldi_(1).JPG"
+    },
+    {
+      "fichier": "otocinclus-arnoldi-2.jpg",
+      "auteur": "CHUCAO",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Otocinclus_arnoldi_(2).JPG"
+    },
+    {
+      "fichier": "otocinclus-arnoldi-3.jpg",
+      "auteur": "CHUCAO",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Otocinclus_arnoldi_(3).JPG"
+    }
+  ],
+  "otocinclus-macrospilus": [
+    {
+      "fichier": "otocinclus-macrospilus-1.jpg",
+      "auteur": "Rainer Schmitt, 2004",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Otocinclus_macrospilus_2.jpg"
+    }
+  ],
+  "panaque-nigrolineatus": [
+    {
+      "fichier": "panaque-nigrolineatus-1.jpg",
+      "auteur": "Neale Monks at en.wikipedia",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Panaque.JPG"
+    },
+    {
+      "fichier": "panaque-nigrolineatus-2.jpg",
+      "auteur": "Neale Monks",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Panaque_nigrolineatus.jpg"
+    },
+    {
+      "fichier": "panaque-nigrolineatus-3.jpg",
+      "auteur": "EvanBaldonado",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Royal_pleco_(Panaque_nigrolineatus)_at_the_California_Academy_of_Sciences.jpg"
+    }
+  ],
   "pangasianodon-hypophthalmus": [
     {
       "fichier": "pangasianodon-hypophthalmus-1.jpg",
@@ -2413,6 +3838,29 @@
       "source": "https://commons.wikimedia.org/wiki/File:Aquarium_tropical_de_Pierrefitte-Nestalas_03082018_Pangasianodon_hypophthalmus_2.jpg"
     }
   ],
+  "pangio-kuhlii": [
+    {
+      "fichier": "pangio-kuhlii-1.jpg",
+      "auteur": "Iidkk",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Kuhli_loach_in_aquarium.jpg"
+    },
+    {
+      "fichier": "pangio-kuhlii-2.jpg",
+      "auteur": "Robert Mollik",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:JugendlichesDornauge.jpg"
+    },
+    {
+      "fichier": "pangio-kuhlii-3.jpg",
+      "auteur": "Bonhilda at English Wikipedia",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Kuhli_loaches.jpg"
+    }
+  ],
   "pantodon-buchholzi": [
     {
       "fichier": "pantodon-buchholzi-1.jpg",
@@ -2434,6 +3882,75 @@
       "licence": "CC BY-SA 4.0",
       "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
       "source": "https://commons.wikimedia.org/wiki/File:Pantadon_fry_from_above.png"
+    }
+  ],
+  "paracheirodon-axelrodi": [
+    {
+      "fichier": "paracheirodon-axelrodi-1.jpg",
+      "auteur": "Henrique Pinto",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Waking_up.jpg"
+    },
+    {
+      "fichier": "paracheirodon-axelrodi-2.jpg",
+      "auteur": "Artūrs Grebstelis",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cardinal_tetras.jpg"
+    },
+    {
+      "fichier": "paracheirodon-axelrodi-3.jpg",
+      "auteur": "CHUCAO",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cardinal_Paracheirodon_axelrodi_(3).jpg"
+    }
+  ],
+  "paracheirodon-innesi": [
+    {
+      "fichier": "paracheirodon-innesi-1.jpg",
+      "auteur": "SOK",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Paracheirodon_innesi_neon_tetra.jpg"
+    },
+    {
+      "fichier": "paracheirodon-innesi-2.jpg",
+      "auteur": "Warrieboy",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Neon_tetra_333.jpg"
+    },
+    {
+      "fichier": "paracheirodon-innesi-3.jpg",
+      "auteur": "Graf zu Pappenheim",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Neonsalmler_Portr%C3%A4t_1.jpg"
+    }
+  ],
+  "paracheirodon-simulans": [
+    {
+      "fichier": "paracheirodon-simulans-1.jpg",
+      "auteur": "Sascha Biedermann",
+      "licence": "CC BY-SA 2.5",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Paracheirodon_simulans.jpg"
+    },
+    {
+      "fichier": "paracheirodon-simulans-2.jpg",
+      "auteur": "Cangadoba",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Paracheirodon_IMG_0423.jpg"
+    },
+    {
+      "fichier": "paracheirodon-simulans-3.jpg",
+      "auteur": "Christian Menke",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Blaue_Neons_im_Aquarium.jpg"
     }
   ],
   "parambassis-ranga": [
@@ -2473,6 +3990,15 @@
       "licence": "CC BY-SA 4.0",
       "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
       "source": "https://commons.wikimedia.org/wiki/File:Parosphromenus_deissneri_spawning_cave.png"
+    }
+  ],
+  "peckoltia-compta": [
+    {
+      "fichier": "peckoltia-compta-1.jpg",
+      "auteur": "Christian Dresel http://www.aquaristikfreaks.de",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Peckoltia_compta_L134.jpg"
     }
   ],
   "peckoltia-vittata": [
@@ -2624,6 +4150,15 @@
       "source": "https://commons.wikimedia.org/wiki/File:Ticto_barb_from_arpa_river.jpg"
     }
   ],
+  "petitella-georgiae": [
+    {
+      "fichier": "petitella-georgiae-1.jpg",
+      "auteur": "NasserHalaweh",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Characidae_Petitella_georgiae_1.jpg"
+    }
+  ],
   "phenacogrammus-interruptus": [
     {
       "fichier": "phenacogrammus-interruptus-1.jpg",
@@ -2670,6 +4205,29 @@
       "source": "https://commons.wikimedia.org/wiki/File:Pimelodus_pictus_25cm_2.jpg"
     }
   ],
+  "placidochromis-electra": [
+    {
+      "fichier": "placidochromis-electra-1.jpg",
+      "auteur": "Paolo Neo",
+      "licence": "Public domain",
+      "licence_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Placidochromis_electra_Under_the_sea_fish_underwater_life.jpg"
+    },
+    {
+      "fichier": "placidochromis-electra-2.jpg",
+      "auteur": "Paolo Neo",
+      "licence": "Public domain",
+      "licence_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Placidochromis_electra_Aquarium_fish_stock_photo.jpg"
+    },
+    {
+      "fichier": "placidochromis-electra-3.jpg",
+      "auteur": "Paolo Neo",
+      "licence": "Public domain",
+      "licence_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Placidochromis_electra_Sea_fish_on_white_background.jpg"
+    }
+  ],
   "platydoras-armatulus": [
     {
       "fichier": "platydoras-armatulus-1.jpg",
@@ -2693,6 +4251,68 @@
       "source": "https://commons.wikimedia.org/wiki/File:Platydoras_armatulus_2.jpg"
     }
   ],
+  "poecilia-latipinna": [
+    {
+      "fichier": "poecilia-latipinna-1.jpg",
+      "auteur": "(c) Nick Tobler (Cowturtle), some rights reserved (CC BY)",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Poecilia_latipinna,_I-75_N,_Fort_Lauderdale,_FL,_US_imported_from_iNaturalist_photo_360070481.jpg"
+    },
+    {
+      "fichier": "poecilia-latipinna-2.jpg",
+      "auteur": "(c) Nick Tobler (Cowturtle), some rights reserved (CC BY)",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Poecilia_latipinna,_Big_Cypress_National_Preserve,_Ochopee,_FL,_US_imported_from_iNaturalist_photo_266948484.jpg"
+    }
+  ],
+  "poecilia-reticulata": [
+    {
+      "fichier": "poecilia-reticulata-1.jpg",
+      "auteur": "Marrabbio2",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Guppy_femmina_snake.jpg"
+    },
+    {
+      "fichier": "poecilia-reticulata-2.jpg",
+      "auteur": "Fantomeno",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:31433727_xl-scaled-2273632863.jpg"
+    },
+    {
+      "fichier": "poecilia-reticulata-3.jpg",
+      "auteur": "Marrabbio2",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Guppy_male_moscow.jpg"
+    }
+  ],
+  "poecilia-sphenops": [
+    {
+      "fichier": "poecilia-sphenops-1.jpg",
+      "auteur": "Dnoerholm",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:PoeciliaSphenops.jpg"
+    },
+    {
+      "fichier": "poecilia-sphenops-2.jpg",
+      "auteur": "(c) James-LaFontaine, some rights reserved (CC BY)",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Poecilia_sphenops,_Florida,_US_imported_from_iNaturalist_photo_487744119.jpeg"
+    },
+    {
+      "fichier": "poecilia-sphenops-3.jpg",
+      "auteur": "Mr.Angelfish",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Chocolate_mollies(Poecilia_sphenops)_fish.jpg"
+    }
+  ],
   "poecilia-velifera": [
     {
       "fichier": "poecilia-velifera-1.jpg",
@@ -2714,6 +4334,22 @@
       "licence": "CC BY-SA 4.0",
       "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
       "source": "https://commons.wikimedia.org/wiki/File:PoeciliaVelifera.jpg"
+    }
+  ],
+  "poecilia-wingei": [
+    {
+      "fichier": "poecilia-wingei-1.jpg",
+      "auteur": "Marrabbio2",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Endler_male_1.jpg"
+    },
+    {
+      "fichier": "poecilia-wingei-2.jpg",
+      "auteur": "Usien",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Endlers_Guppy_Poecilia_wingei.JPG"
     }
   ],
   "pristella-maxillaris": [
@@ -2760,6 +4396,29 @@
       "licence": "Public domain",
       "licence_url": null,
       "source": "https://commons.wikimedia.org/wiki/File:Hyphessobrycon_anisitsi_albus.jpg"
+    }
+  ],
+  "pseudepiplatys-annulatus": [
+    {
+      "fichier": "pseudepiplatys-annulatus-1.jpg",
+      "auteur": "Dornenwolf",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ringelhechtling_-Epiplatys_annulatus.jpg"
+    },
+    {
+      "fichier": "pseudepiplatys-annulatus-2.jpg",
+      "auteur": "Oscar le poisson",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Epiplaty_annulatus_-_Panchax_%C3%A0_bandes.jpg"
+    },
+    {
+      "fichier": "pseudepiplatys-annulatus-3.jpg",
+      "auteur": "Andrew Bogott",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Epiplatys_annulatus.JPG"
     }
   ],
   "pseudomugil-furcatus": [
@@ -2824,6 +4483,91 @@
       "source": "https://commons.wikimedia.org/wiki/File:Pseudomugil_signifer_28436969.jpg"
     }
   ],
+  "pterophyllum-altum": [
+    {
+      "fichier": "pterophyllum-altum-1.jpg",
+      "auteur": "Konto na chwilę",
+      "licence": "CC BY-SA 1.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/1.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Pterophyllum_altum.jpg"
+    },
+    {
+      "fichier": "pterophyllum-altum-2.jpg",
+      "auteur": "Jeff Kubina",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Group_of_Pterophyllum_Altum.jpg"
+    },
+    {
+      "fichier": "pterophyllum-altum-3.jpg",
+      "auteur": "Luis Miguel Bugallo Sánchez ( Lmbuga Commons )( Lmbuga Galipedia ) Publicada por/ Publish by : Luis Miguel Bugallo Sánchez",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Peixes_99.jpg"
+    }
+  ],
+  "pterophyllum-scalare": [
+    {
+      "fichier": "pterophyllum-scalare-1.jpg",
+      "auteur": "Tobias Niepel",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Aquarium_at_Amsterdam_Zoo_-_Artis_(25673518534).jpg"
+    },
+    {
+      "fichier": "pterophyllum-scalare-2.jpg",
+      "auteur": "Cedricguppy - Loury Cédric",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Pterophyllum_scalare_-_%22Rio_Nanay%22_-_souche_sauvage_-_Aqua_Porte_Dor%C3%A9e_04.JPG"
+    },
+    {
+      "fichier": "pterophyllum-scalare-3.jpg",
+      "auteur": "Cedricguppy - Loury Cédric",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Pterophyllum_scalare_-_%22Rio_Nanay%22_-_souche_sauvage_-_Aqua_Porte_Dor%C3%A9e_02.JPG"
+    }
+  ],
+  "pterygoplichthys-gibbiceps": [
+    {
+      "fichier": "pterygoplichthys-gibbiceps-1.jpg",
+      "auteur": "Britta Beck",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Liberec_Botanischer_Garten_lub_2024-08_img26_Aquarium.jpg"
+    },
+    {
+      "fichier": "pterygoplichthys-gibbiceps-2.jpg",
+      "auteur": "AnatolyPm",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Pterygoplichthys_gibbiceps_in_tank.jpg"
+    },
+    {
+      "fichier": "pterygoplichthys-gibbiceps-3.jpg",
+      "auteur": "Karelj",
+      "licence": "Public domain",
+      "licence_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Pterygoplichthys_gibbiceps_1.jpg"
+    }
+  ],
+  "pterygoplichthys-joselimaianus": [
+    {
+      "fichier": "pterygoplichthys-joselimaianus-1.jpg",
+      "auteur": "5snake5",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Glyptoperichthys_joselimaianus_L-001.jpg"
+    },
+    {
+      "fichier": "pterygoplichthys-joselimaianus-2.jpg",
+      "auteur": "5snake5",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Glyptoperichthys_joselimaianus_L-001_a.jpg"
+    }
+  ],
   "pterygoplichthys-pardalis": [
     {
       "fichier": "pterygoplichthys-pardalis-1.jpg",
@@ -2847,6 +4591,29 @@
       "source": "https://commons.wikimedia.org/wiki/File:0023Janitor_fish_in_the_Philippines_and_Kanduli_01.jpg"
     }
   ],
+  "puntigrus-tetrazona": [
+    {
+      "fichier": "puntigrus-tetrazona-1.jpg",
+      "auteur": "André Karwath aka Aka",
+      "licence": "CC BY-SA 2.5",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Puntius_tetrazona_(aka).jpg"
+    },
+    {
+      "fichier": "puntigrus-tetrazona-2.jpg",
+      "auteur": "Faucon",
+      "licence": "CC BY-SA 2.5",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Puntius_tetrazona001.JPG"
+    },
+    {
+      "fichier": "puntigrus-tetrazona-3.jpg",
+      "auteur": "Editor General of Wiki",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Tiger_barb_fish.jpg"
+    }
+  ],
   "puntius-lateristriga": [
     {
       "fichier": "puntius-lateristriga-1.jpg",
@@ -2868,6 +4635,75 @@
       "licence": "CC BY-SA 3.0",
       "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
       "source": "https://commons.wikimedia.org/wiki/File:Punti_lateri_080503_8415_napo.jpg"
+    }
+  ],
+  "puntius-titteya": [
+    {
+      "fichier": "puntius-titteya-1.jpg",
+      "auteur": "Brian Gratwicke",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cherry_barb,_Puntius_titteya.jpg"
+    },
+    {
+      "fichier": "puntius-titteya-2.jpg",
+      "auteur": "Engineer111",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Male_Cherry_Barb_700.jpg"
+    },
+    {
+      "fichier": "puntius-titteya-3.jpg",
+      "auteur": "Jakub Friedl",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Puntius_titteya.JPG"
+    }
+  ],
+  "pygocentrus-cariba": [
+    {
+      "fichier": "pygocentrus-cariba-1.jpg",
+      "auteur": "Gatorfan252525",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Close-up_of_a_piranha_at_Georgia_Aquarium_(cropped).jpg"
+    },
+    {
+      "fichier": "pygocentrus-cariba-2.jpg",
+      "auteur": "Laura Wolf",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Pygocentrus_Cariba_at_the_Georgia_Aquarium.jpg"
+    },
+    {
+      "fichier": "pygocentrus-cariba-3.jpg",
+      "auteur": "Sesamehoneytart",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Pygocentrus_cariba.JPG"
+    }
+  ],
+  "pygocentrus-nattereri": [
+    {
+      "fichier": "pygocentrus-nattereri-1.jpg",
+      "auteur": "Luc Viatour",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Piranha_Luc_Viatour.jpg"
+    },
+    {
+      "fichier": "pygocentrus-nattereri-2.jpg",
+      "auteur": "Arnaud 25",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Grand_aquarium_Saint-Malo_019.jpg"
+    },
+    {
+      "fichier": "pygocentrus-nattereri-3.jpg",
+      "auteur": "Thesupermat",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Piranha_rouge.JPG"
     }
   ],
   "rasbora-borapetensis": [
@@ -2994,6 +4830,22 @@
       "source": "https://commons.wikimedia.org/wiki/File:Aquarium_tropical_de_Pierrefitte-Nestalas_03082018_Barbus_crayon_2.jpg"
     }
   ],
+  "satanoperca-daemon": [
+    {
+      "fichier": "satanoperca-daemon-1.jpg",
+      "auteur": "lwolfartist",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Fish_Georgia_aquarium_-_37529483172.jpg"
+    },
+    {
+      "fichier": "satanoperca-daemon-2.jpg",
+      "auteur": "Whaldener Endo",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Satanoperca_daemon_205600127.jpg"
+    }
+  ],
   "satanoperca-leucosticta": [
     {
       "fichier": "satanoperca-leucosticta-1.jpg",
@@ -3001,6 +4853,15 @@
       "licence": "CC BY-SA 2.5",
       "licence_url": "https://creativecommons.org/licenses/by-sa/2.5",
       "source": "https://commons.wikimedia.org/wiki/File:Satanoperca_leucosticta_(1).jpg"
+    }
+  ],
+  "sawbwa-resplendens": [
+    {
+      "fichier": "sawbwa-resplendens-1.jpg",
+      "auteur": "The Man On The Street at English Wikipedia",
+      "licence": "CC BY 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sawbwa_resplendens.jpg"
     }
   ],
   "sciaenochromis-fryeri": [
@@ -3024,6 +4885,15 @@
       "licence": "CC BY-SA 3.0",
       "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
       "source": "https://commons.wikimedia.org/wiki/File:Electric_blue_hap.jpg"
+    }
+  ],
+  "scobinancistrus-aureatus": [
+    {
+      "fichier": "scobinancistrus-aureatus-1.jpg",
+      "auteur": "Gabriel Lelis Togni",
+      "licence": "CC BY 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Scobinancistrus_aureatus.jpg"
     }
   ],
   "sewellia-lineolata": [
@@ -3070,6 +4940,29 @@
       "licence": "CC BY 3.0",
       "licence_url": "https://creativecommons.org/licenses/by/3.0",
       "source": "https://commons.wikimedia.org/wiki/File:Sphaerichthys_osphromenoides_Borneo.jpg"
+    }
+  ],
+  "symphysodon-aequifasciatus": [
+    {
+      "fichier": "symphysodon-aequifasciatus-1.jpg",
+      "auteur": "Cangadoba",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Discus_(1).jpg"
+    },
+    {
+      "fichier": "symphysodon-aequifasciatus-2.jpg",
+      "auteur": "Cangadoba",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Discus_(3).jpg"
+    },
+    {
+      "fichier": "symphysodon-aequifasciatus-3.jpg",
+      "auteur": "Bernard DUPONT from FRANCE",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Discus_(Symphysodon_aequifasciatus)_red_hybrid_(13533123013).jpg"
     }
   ],
   "synodontis-eupterus": [
@@ -3210,6 +5103,29 @@
       "source": "https://commons.wikimedia.org/wiki/File:Celebes_Rainbowfish.jpg"
     }
   ],
+  "thayeria-boehlkei": [
+    {
+      "fichier": "thayeria-boehlkei-1.jpg",
+      "auteur": "Kkonstan",
+      "licence": "CC BY 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Penguin_Tetra.jpg"
+    },
+    {
+      "fichier": "thayeria-boehlkei-2.jpg",
+      "auteur": "Juan R. Lascorz",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:02.Thayeria_boehlkei.JPG"
+    },
+    {
+      "fichier": "thayeria-boehlkei-3.jpg",
+      "auteur": "Andrew Gray",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Thayeria_boehlkei.jpg"
+    }
+  ],
   "thorichthys-meeki": [
     {
       "fichier": "thorichthys-meeki-1.jpg",
@@ -3231,6 +5147,29 @@
       "licence": "CC BY-SA 4.0",
       "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
       "source": "https://commons.wikimedia.org/wiki/File:Micro_Zoo_de_Saint_Malo_-_Thorichthys_meeki.jpg"
+    }
+  ],
+  "trichogaster-chuna": [
+    {
+      "fichier": "trichogaster-chuna-1.jpg",
+      "auteur": "Made be Uploader",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Colisa_chuna_male.jpg"
+    },
+    {
+      "fichier": "trichogaster-chuna-2.jpg",
+      "auteur": "Antoondommerholt at Dutch Wikipedia",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Colisasota_male.jpg"
+    },
+    {
+      "fichier": "trichogaster-chuna-3.jpg",
+      "auteur": "Sugeesh",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Honey_gaurami.jpg"
     }
   ],
   "trichogaster-fasciata": [
@@ -3265,6 +5204,52 @@
       "source": "https://commons.wikimedia.org/wiki/File:Colisa_labiosa_m.jpg"
     }
   ],
+  "trichogaster-lalius": [
+    {
+      "fichier": "trichogaster-lalius-1.jpg",
+      "auteur": "JanRehschuh",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Zwergfadenfisch-M%C3%A4nnchen_Colisa_Lalia_male_P101001.JPG"
+    },
+    {
+      "fichier": "trichogaster-lalius-2.jpg",
+      "auteur": "Usien",
+      "licence": "CC0",
+      "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Colisa_lalia_blue.JPG"
+    },
+    {
+      "fichier": "trichogaster-lalius-3.jpg",
+      "auteur": "Fred Hsu",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Colisa_lalia_Neon_Blue_4.jpg"
+    }
+  ],
+  "trichopodus-leerii": [
+    {
+      "fichier": "trichopodus-leerii-1.jpg",
+      "auteur": "Александр Сигачёв",
+      "licence": "CC0",
+      "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Grodno_Zoo_-_peartl_guorami.jpg"
+    },
+    {
+      "fichier": "trichopodus-leerii-2.jpg",
+      "auteur": "Bjoertvedt",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Trichogaster_leeri_IMG_3619_southeast_asia.JPG"
+    },
+    {
+      "fichier": "trichopodus-leerii-3.jpg",
+      "auteur": "Phalinn Ooi from Kuala Lumpur, Malaysia",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:London_Aquarium_(539798309).jpg"
+    }
+  ],
   "trichopodus-microlepis": [
     {
       "fichier": "trichopodus-microlepis-1.jpg",
@@ -3288,6 +5273,75 @@
       "source": "https://commons.wikimedia.org/wiki/File:Trichogaster_microlepis.jpg"
     }
   ],
+  "trichopodus-trichopterus": [
+    {
+      "fichier": "trichopodus-trichopterus-1.jpg",
+      "auteur": "Gourami Watcher",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Trichogaster_trichopterus_10.jpg"
+    },
+    {
+      "fichier": "trichopodus-trichopterus-2.jpg",
+      "auteur": "Sivahari",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Guara_fish.jpg"
+    },
+    {
+      "fichier": "trichopodus-trichopterus-3.jpg",
+      "auteur": "DefenderRegina",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Fadenfisch_braun_m%C3%A4nnlich_(2011).JPG"
+    }
+  ],
+  "trichopsis-pumila": [
+    {
+      "fichier": "trichopsis-pumila-1.jpg",
+      "auteur": "BEDO (Thailand)",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Trichopsis_pumila,.jpg"
+    },
+    {
+      "fichier": "trichopsis-pumila-2.jpg",
+      "auteur": "Dezinformator15",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sparkling_gourami.jpg"
+    },
+    {
+      "fichier": "trichopsis-pumila-3.jpg",
+      "auteur": "Zikamoi",
+      "licence": "CC BY 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Trichopsis_pumila4.jpg"
+    }
+  ],
+  "trichopsis-vittata": [
+    {
+      "fichier": "trichopsis-vittata-1.jpg",
+      "auteur": "Howard Jelks, U.S. Geological Survey",
+      "licence": "Public domain",
+      "licence_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Trichopsis_vittata_(USGS).jpg"
+    },
+    {
+      "fichier": "trichopsis-vittata-2.jpg",
+      "auteur": "BEDO (Thailand)",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Trichopsis_vittata.jpg"
+    },
+    {
+      "fichier": "trichopsis-vittata-3.jpg",
+      "auteur": "Aqmal-Naser et al. (2023)",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Trichopsis_vittata_(10.3897-BDJ.11.e100337)_Figure_27.jpg"
+    }
+  ],
   "trigonostigma-espei": [
     {
       "fichier": "trigonostigma-espei-1.jpg",
@@ -3309,6 +5363,45 @@
       "licence": "CC BY-SA 4.0",
       "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
       "source": "https://commons.wikimedia.org/wiki/File:Trigonostigma_espei_Thai.jpg"
+    }
+  ],
+  "trigonostigma-hengeli": [
+    {
+      "fichier": "trigonostigma-hengeli-1.jpg",
+      "auteur": "-serwacy01-",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:T_hengeli.jpg"
+    },
+    {
+      "fichier": "trigonostigma-hengeli-2.jpg",
+      "auteur": "NasserHalaweh",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cyprinidae_Trigonostigma_hengeli_1.jpg"
+    }
+  ],
+  "trigonostigma-heteromorpha": [
+    {
+      "fichier": "trigonostigma-heteromorpha-1.jpg",
+      "auteur": "Vassil",
+      "licence": "CC0",
+      "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Aquarium_tropical_de_Pierrefitte-Nestalas_03082018_Trigonostigma_heteromorpha_1.jpg"
+    },
+    {
+      "fichier": "trigonostigma-heteromorpha-2.jpg",
+      "auteur": "Roel Balingit",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Harlequin_rasboras_01.jpg"
+    },
+    {
+      "fichier": "trigonostigma-heteromorpha-3.jpg",
+      "auteur": "Juan R. Lascorz",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:02.Trigonostigma_heteromorpha.JPG"
     }
   ],
   "tropheus-moorii": [
@@ -3371,6 +5464,75 @@
       "licence": "CC BY-SA 4.0",
       "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
       "source": "https://commons.wikimedia.org/wiki/File:Xenotoca_eiseni_San_Marcos_Female.png"
+    }
+  ],
+  "xiphophorus-hellerii": [
+    {
+      "fichier": "xiphophorus-hellerii-1.jpg",
+      "auteur": "Usien",
+      "licence": "CC0",
+      "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Xiphophorus_helleri_Annanasschwerttaeger_Maennchen.JPG"
+    },
+    {
+      "fichier": "xiphophorus-hellerii-2.jpg",
+      "auteur": "Wojciech J. Płuciennik",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Xiphophorus_hellerii_lyretail_young_female_02.jpg"
+    },
+    {
+      "fichier": "xiphophorus-hellerii-3.jpg",
+      "auteur": "Ranjithsiji",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Red_Aquarium_Fish.JPG"
+    }
+  ],
+  "xiphophorus-maculatus": [
+    {
+      "fichier": "xiphophorus-maculatus-1.jpg",
+      "auteur": "Carlosar",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Two_Xiphophorus_maculatus_in_aquarium.jpg"
+    },
+    {
+      "fichier": "xiphophorus-maculatus-2.jpg",
+      "auteur": "Graf zu Pappenheim",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Platy_7.jpg"
+    },
+    {
+      "fichier": "xiphophorus-maculatus-3.jpg",
+      "auteur": "Graf zu Pappenheim",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Platy_6.jpg"
+    }
+  ],
+  "xiphophorus-variatus": [
+    {
+      "fichier": "xiphophorus-variatus-1.jpg",
+      "auteur": "Marrabbio2",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Xipho_variatus_maschio.jpg"
+    },
+    {
+      "fichier": "xiphophorus-variatus-2.jpg",
+      "auteur": "Adrian Torres B.",
+      "licence": "CC0",
+      "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Xiphophorus_variatus_331363362.jpg"
+    },
+    {
+      "fichier": "xiphophorus-variatus-3.jpg",
+      "auteur": "Livebearerguy",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Xiphophorus_variatus_La_laguna_(3).jpg"
     }
   ],
   "yasuhikotakia-modesta": [

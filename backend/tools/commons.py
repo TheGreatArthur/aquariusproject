@@ -37,7 +37,8 @@ def strip_markup(text: str | None) -> str:
 def cache_key(title: str) -> str:
     """ Nom du cache d'un titre : le slug seul confond les titres en écriture non latine (« 矮珍珠.jpg » et
     « Яванский мох.jpg » donnent tous deux « file-jpg ») et ceux qui ne diffèrent que par la casse """
-    return f'{slug(title)}-{hashlib.sha1(title.encode()).hexdigest()[:10]}'
+    # Le slug tronqué reste lisible ; l'empreinte distingue les titres (et les lots de titres très longs)
+    return f'{slug(title)[:80]}-{hashlib.sha1(title.encode()).hexdigest()[:10]}'
 
 
 def api(params: dict, cache_name: str) -> dict:
