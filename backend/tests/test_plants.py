@@ -6,7 +6,7 @@ from sqlalchemy import create_engine, select
 from sqlalchemy.orm import Session
 
 from models import Base, Plante
-from plants import load_plants, merge, upsert_plants, validate
+from plants import co2_level, load_plants, merge, upsert_plants, validate
 from tools.fetch_plants import FREE_LICENCE, PHOTOS_DIR, WORLD_MAP
 
 FICHE = dict(
@@ -80,6 +80,18 @@ def test_merge_prefers_gbif_taxonomy_and_falls_back_to_flowgrow():
 
     assert renamed['famille'] == 'Hypnaceae' and renamed['nom_valide'] == 'Ectropothecium barbieri'
     assert without_gbif['famille'] == 'Araceae' and without_gbif['ordre'] == 'Alismatales'
+
+
+@pytest.mark.parametrize('minimum, level', [(None, None), (0, 'faible'), (15, 'faible'), (20, 'moyen'), (25, 'élevé')])
+def test_co2_level_from_the_flowgrow_minimum(minimum, level):
+    assert co2_level(minimum) == level
+
+
+def test_tropica_co2_need_comes_before_the_flowgrow_concentration():
+    flowgrow = {**COLLECTED['flowgrow'], 'co2_mini': 25, 'co2_maxi': 40}
+
+    assert merge(FICHE, {**COLLECTED, 'flowgrow': flowgrow})['co2'] == 'faible'
+    assert merge(FICHE, {**COLLECTED, 'flowgrow': flowgrow, 'tropica': {}})['co2'] == 'élevé'
 
 
 def test_merge_without_tropica_keeps_flowgrow_height():

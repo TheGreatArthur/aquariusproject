@@ -10,6 +10,8 @@
       "temp_maxi": 30,
       "hauteur_mini": 10,
       "hauteur_maxi": 40,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "forte",
       "lumiere_maxi": "forte",
       "difficulte": "difficile",
@@ -17,7 +19,9 @@
       "positions": [
         "plan intermédiaire"
       ],
-      "usages": [],
+      "usages": [
+        "accent coloré"
+      ],
       "multiplication": [
         "boutures"
       ],
@@ -93,6 +97,8 @@
       "kh_maxi": 21,
       "temp_mini": 18,
       "temp_maxi": 30,
+      "co2_mini": 0,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -104,7 +110,7 @@
       "multiplication": [
         "boutures"
       ],
-      "type": "tige",
+      "type": "flottante",
       "emergee": true,
       "ordre": "Caryophyllales",
       "famille": "Amaranthaceae",
@@ -167,6 +173,8 @@
       "temp_maxi": 26,
       "hauteur_mini": 3,
       "hauteur_maxi": 10,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "faible",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -296,6 +304,8 @@
       "temp_maxi": 31,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 28,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "forte",
       "lumiere_maxi": "forte",
       "difficulte": "difficile",
@@ -304,7 +314,10 @@
         "arrière-plan",
         "plan intermédiaire"
       ],
-      "usages": [],
+      "usages": [
+        "accent coloré",
+        "rue hollandaise"
+      ],
       "multiplication": [
         "boutures"
       ],
@@ -313,6 +326,13 @@
       "ordre": "Myrtales",
       "famille": "Lythraceae",
       "regions": "West Africa, Central Africa, East Africa, Madagascan region"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Ammanniacrassicaulis(033B)/4449",
+      "hauteur_mini": 20,
+      "hauteur_maxi": 30,
+      "co2": "moyen",
+      "origine": "Africa"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/3989995",
@@ -393,6 +413,8 @@
       "temp_opti_maxi": 26,
       "hauteur_mini": 5,
       "hauteur_maxi": 10,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "faible",
       "lumiere_maxi": "forte",
       "difficulte": "très facile",
@@ -485,6 +507,8 @@
       "temp_opti_maxi": 32,
       "hauteur_mini": 30,
       "hauteur_maxi": 50,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -561,6 +585,8 @@
       "temp_opti_maxi": 26,
       "hauteur_mini": 10,
       "hauteur_maxi": 40,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -640,6 +666,8 @@
       "temp_opti_maxi": 25,
       "hauteur_mini": 20,
       "hauteur_maxi": 60,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -648,7 +676,9 @@
         "arrière-plan",
         "plan intermédiaire"
       ],
-      "usages": [],
+      "usages": [
+        "rue hollandaise"
+      ],
       "multiplication": [
         "boutures"
       ],
@@ -717,6 +747,8 @@
       "temp_opti_maxi": 28,
       "hauteur_mini": 10,
       "hauteur_maxi": 20,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "forte",
       "lumiere_maxi": "forte",
       "difficulte": "difficile",
@@ -816,6 +848,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 28,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "forte",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -889,6 +923,8 @@
       "temp_maxi": 25,
       "temp_opti_mini": 10,
       "temp_opti_maxi": 25,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -995,6 +1031,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 24,
       "temp_opti_maxi": 28,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -1075,6 +1113,8 @@
       "temp_maxi": 32,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 28,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -1176,6 +1216,8 @@
       "temp_maxi": 28,
       "temp_opti_mini": 23,
       "temp_opti_maxi": 28,
+      "co2_mini": 15,
+      "co2_maxi": 40,
       "lumiere_mini": "faible",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -1273,6 +1315,8 @@
       "temp_maxi": 27,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 25,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "faible",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -1292,6 +1336,13 @@
       "ordre": "Polypodiales",
       "famille": "Dryopteridaceae",
       "regions": "West Africa, Central Africa, East Africa, Southern Africa"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Bolbitisheudelotii(006)/4406",
+      "hauteur_mini": 15,
+      "hauteur_maxi": 30,
+      "co2": "moyen",
+      "origine": "Africa"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/2650967",
@@ -1373,6 +1424,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 23,
       "temp_opti_maxi": 27,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "difficile",
@@ -1390,6 +1443,13 @@
       "ordre": "Nymphaeales",
       "famille": "Cabombaceae",
       "regions": "Tropical South America"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Cabombaaquatica(015BDT)/4431",
+      "hauteur_mini": 20,
+      "hauteur_maxi": 30,
+      "co2": "faible",
+      "origine": "South America"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/3986548",
@@ -1457,6 +1517,8 @@
       "temp_maxi": 27,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 25,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -1555,6 +1617,8 @@
       "temp_maxi": 35,
       "temp_opti_mini": 24,
       "temp_opti_maxi": 30,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "difficile",
@@ -1563,7 +1627,9 @@
         "arrière-plan",
         "plan intermédiaire"
       ],
-      "usages": [],
+      "usages": [
+        "accent coloré"
+      ],
       "multiplication": [
         "boutures",
         "séparation des rejets"
@@ -1642,6 +1708,8 @@
       "kh_maxi": 21,
       "temp_mini": 4,
       "temp_maxi": 26,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -1764,6 +1832,8 @@
       "temp_opti_maxi": 20,
       "hauteur_mini": 10,
       "hauteur_maxi": 40,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -1907,6 +1977,8 @@
       "temp_maxi": 27,
       "temp_opti_mini": 18,
       "temp_opti_maxi": 23,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -1926,6 +1998,13 @@
       "ordre": "Brassicales",
       "famille": "Brassicaceae",
       "regions": "East Asia"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Cardaminelyrata(024)/4441",
+      "hauteur_mini": 20,
+      "hauteur_maxi": 30,
+      "co2": "moyen",
+      "origine": "Asia"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/3046246",
@@ -1988,6 +2067,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 10,
       "temp_opti_maxi": 30,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "très facile",
@@ -2234,6 +2315,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 15,
       "temp_opti_maxi": 30,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "très facile",
@@ -2369,6 +2452,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 28,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -2379,10 +2464,12 @@
         "en surface"
       ],
       "usages": [
-        "frayère"
+        "frayère",
+        "plante isolée"
       ],
       "multiplication": [
-        "plantules sur les feuilles"
+        "plantules sur les feuilles",
+        "spores"
       ],
       "type": "flottante",
       "emergee": true,
@@ -2476,6 +2563,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 28,
+      "co2_mini": 0,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -2487,9 +2576,10 @@
         "frayère"
       ],
       "multiplication": [
-        "plantules sur les feuilles"
+        "plantules sur les feuilles",
+        "spores"
       ],
-      "type": "rosette",
+      "type": "flottante",
       "emergee": true,
       "ordre": "Polypodiales",
       "famille": "Pteridaceae",
@@ -2576,6 +2666,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 28,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -2586,16 +2678,25 @@
         "en surface"
       ],
       "usages": [
-        "frayère"
+        "frayère",
+        "plante isolée"
       ],
       "multiplication": [
-        "plantules sur les feuilles"
+        "plantules sur les feuilles",
+        "spores"
       ],
       "type": "flottante",
       "emergee": true,
       "ordre": "Polypodiales",
       "famille": "Pteridaceae",
       "regions": "South Asia, Southeast Asia, East Asia, Australia, Oceana, North America, Central America, Caribbean Islands, Tropical South America"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Ceratopteristhalictroides(005A)/4405",
+      "hauteur_mini": 15,
+      "hauteur_maxi": 30,
+      "co2": "faible",
+      "origine": "Asia"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/2651586",
@@ -2711,6 +2812,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 28,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -2797,6 +2900,8 @@
       "temp_maxi": 25,
       "temp_opti_mini": 18,
       "temp_opti_maxi": 23,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -2884,6 +2989,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 23,
       "temp_opti_maxi": 26,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -2892,7 +2999,9 @@
         "arrière-plan",
         "plan intermédiaire"
       ],
-      "usages": [],
+      "usages": [
+        "plante isolée"
+      ],
       "multiplication": [
         "séparation des rejets"
       ],
@@ -2901,6 +3010,13 @@
       "ordre": "Asparagales",
       "famille": "Amaryllidaceae",
       "regions": "Central Africa"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Crinumcalamistratum(094A)/4541",
+      "hauteur_mini": 20,
+      "hauteur_maxi": 30,
+      "co2": "faible",
+      "origine": "Africa"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/2853952",
@@ -2956,6 +3072,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 24,
       "temp_opti_maxi": 28,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -2964,7 +3082,9 @@
         "arrière-plan",
         "plan intermédiaire"
       ],
-      "usages": [],
+      "usages": [
+        "plante isolée"
+      ],
       "multiplication": [
         "graines",
         "séparation des rejets"
@@ -3042,6 +3162,8 @@
       "temp_maxi": 32,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 29,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "faible",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -3050,7 +3172,9 @@
         "arrière-plan",
         "plan intermédiaire"
       ],
-      "usages": [],
+      "usages": [
+        "plante isolée"
+      ],
       "multiplication": [
         "graines",
         "séparation des rejets"
@@ -3060,6 +3184,13 @@
       "ordre": "Asparagales",
       "famille": "Amaryllidaceae",
       "regions": "Southeast Asia"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Crinumthaianum(093)/4537",
+      "hauteur_mini": 20,
+      "hauteur_maxi": 30,
+      "co2": "faible",
+      "origine": "Asia"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/2853596",
@@ -3115,6 +3246,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 26,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "faible",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -3194,6 +3327,8 @@
       "kh_maxi": 7,
       "temp_mini": 20,
       "temp_maxi": 26,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "forte",
       "lumiere_maxi": "forte",
       "difficulte": "difficile",
@@ -3203,7 +3338,9 @@
         "premier plan"
       ],
       "usages": [
-        "nano-aquarium"
+        "accent coloré",
+        "nano-aquarium",
+        "rue hollandaise"
       ],
       "multiplication": [
         "boutures"
@@ -3269,6 +3406,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 26,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "difficile",
@@ -3278,7 +3417,8 @@
         "premier plan"
       ],
       "usages": [
-        "nano-aquarium"
+        "nano-aquarium",
+        "rue hollandaise"
       ],
       "multiplication": [
         "boutures"
@@ -3342,6 +3482,8 @@
       "kh_maxi": 21,
       "temp_mini": 4,
       "temp_maxi": 30,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "faible",
       "lumiere_maxi": "forte",
       "difficulte": "très facile",
@@ -3558,6 +3700,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 24,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "très facile",
@@ -3575,6 +3719,13 @@
       "ordre": "Alismatales",
       "famille": "Hydrocharitaceae",
       "regions": "Southern South America"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Egeriadensa(058BDT)/4506",
+      "hauteur_mini": 20,
+      "hauteur_maxi": 30,
+      "co2": "faible",
+      "origine": "Cosmopolitan"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/5329260",
@@ -3689,6 +3840,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 15,
       "temp_opti_maxi": 26,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "très facile",
@@ -3767,6 +3920,8 @@
       "temp_maxi": 33,
       "temp_opti_mini": 15,
       "temp_opti_maxi": 24,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -3776,7 +3931,9 @@
         "plan intermédiaire",
         "en surface"
       ],
-      "usages": [],
+      "usages": [
+        "bac ouvert"
+      ],
       "multiplication": [
         "boutures"
       ],
@@ -3864,6 +4021,8 @@
       "temp_maxi": 33,
       "temp_opti_mini": 25,
       "temp_opti_maxi": 30,
+      "co2_mini": 0,
+      "co2_maxi": 40,
       "lumiere_mini": "forte",
       "lumiere_maxi": "forte",
       "difficulte": "difficile",
@@ -3875,7 +4034,7 @@
       "multiplication": [
         "stolons"
       ],
-      "type": "rosette",
+      "type": "flottante",
       "emergee": true,
       "ordre": "Commelinales",
       "famille": "Pontederiaceae",
@@ -4084,6 +4243,8 @@
       "temp_maxi": 35,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 28,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -4179,6 +4340,8 @@
       "temp_maxi": 26,
       "temp_opti_mini": 16,
       "temp_opti_maxi": 26,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "difficile",
@@ -4288,6 +4451,8 @@
       "temp_maxi": 28,
       "temp_opti_mini": 18,
       "temp_opti_maxi": 24,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -4421,6 +4586,8 @@
       "temp_maxi": 27,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 25,
+      "co2_mini": 15,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -4576,6 +4743,8 @@
       "temp_maxi": 27,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 25,
+      "co2_mini": 6,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -4652,6 +4821,8 @@
       "temp_maxi": 28,
       "temp_opti_mini": 10,
       "temp_opti_maxi": 25,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -4781,6 +4952,8 @@
       "temp_maxi": 28,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 25,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -4890,6 +5063,8 @@
       "kh_maxi": 7,
       "temp_mini": 18,
       "temp_maxi": 30,
+      "co2_mini": 25,
+      "co2_maxi": 40,
       "lumiere_mini": "forte",
       "lumiere_maxi": "forte",
       "difficulte": "difficile",
@@ -4910,6 +5085,13 @@
       "ordre": "Poales",
       "famille": "Eriocaulaceae",
       "regions": "Africa, South Asia, Southeast Asia, East Asia, Australia"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Eriocauloncinereum(091TC)/19547",
+      "hauteur_mini": 3,
+      "hauteur_maxi": 10,
+      "co2": "élevé",
+      "origine": "Cosmopolitan"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/2691022",
@@ -5010,6 +5192,8 @@
       "kh_maxi": 7,
       "temp_mini": 20,
       "temp_maxi": 30,
+      "co2_mini": 25,
+      "co2_maxi": 40,
       "lumiere_mini": "forte",
       "lumiere_maxi": "forte",
       "difficulte": "difficile",
@@ -5123,6 +5307,8 @@
       "temp_maxi": 26,
       "temp_opti_mini": 18,
       "temp_opti_maxi": 25,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "faible",
       "lumiere_maxi": "forte",
       "difficulte": "difficile",
@@ -5141,6 +5327,12 @@
       "type": "mousse",
       "ordre": "Dicranales",
       "famille": "Fissidentaceae"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Fissidensfontanus(002F)/4390",
+      "hauteur_mini": 3,
+      "hauteur_maxi": 5,
+      "co2": "moyen"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/5283137",
@@ -5222,6 +5414,8 @@
       "temp_maxi": 26,
       "temp_opti_mini": 10,
       "temp_opti_maxi": 22,
+      "co2_mini": 15,
+      "co2_maxi": 40,
       "lumiere_mini": "faible",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -5341,6 +5535,8 @@
       "temp_maxi": 26,
       "temp_opti_mini": 10,
       "temp_opti_maxi": 22,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "faible",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -5435,6 +5631,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 26,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "difficile",
@@ -5456,6 +5654,13 @@
       "ordre": "Lamiales",
       "famille": "Phrymaceae",
       "regions": "Australia, New Zealand"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Glossostigmaelatinoides(045ATC)/4470",
+      "hauteur_mini": 3,
+      "hauteur_maxi": 5,
+      "co2": "élevé",
+      "origine": "Australia"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/3730140",
@@ -5514,6 +5719,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 15,
       "temp_opti_maxi": 28,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -5521,7 +5728,9 @@
       "positions": [
         "arrière-plan"
       ],
-      "usages": [],
+      "usages": [
+        "bac ouvert"
+      ],
       "multiplication": [
         "boutures"
       ],
@@ -5598,6 +5807,8 @@
       "temp_maxi": 27,
       "temp_opti_mini": 15,
       "temp_opti_maxi": 25,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -5680,6 +5891,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 26,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -5776,6 +5989,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 26,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -5796,6 +6011,13 @@
       "ordre": "Alismatales",
       "famille": "Alismataceae",
       "regions": "Tropical South America"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Helanthiumbolivianum'Quadricostatus'(068)/4511",
+      "hauteur_mini": 10,
+      "hauteur_maxi": 15,
+      "co2": "faible",
+      "origine": "South America"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/2864513",
@@ -5874,6 +6096,8 @@
       "temp_opti_maxi": 26,
       "hauteur_mini": 5,
       "hauteur_maxi": 20,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -5951,6 +6175,8 @@
       "temp_opti_maxi": 27,
       "hauteur_mini": 30,
       "hauteur_maxi": 100,
+      "co2_mini": 3,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "très facile",
@@ -6024,6 +6250,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 25,
+      "co2_mini": 15,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -6041,6 +6269,13 @@
       "ordre": "Commelinales",
       "famille": "Pontederiaceae",
       "regions": "Tropical South America, Southern South America"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Heterantherazosterifolia(096TC)/4544",
+      "hauteur_mini": 20,
+      "hauteur_maxi": 30,
+      "co2": "moyen",
+      "origine": "South America"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/2766146",
@@ -6100,6 +6335,8 @@
       "temp_maxi": 28,
       "temp_opti_mini": 18,
       "temp_opti_maxi": 25,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -6116,6 +6353,13 @@
       "ordre": "Ericales",
       "famille": "Primulaceae",
       "regions": "Europe"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Hottoniapalustris(027)/4443",
+      "hauteur_mini": 10,
+      "hauteur_maxi": 20,
+      "co2": "faible",
+      "origine": "Europe/Asia"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/4006551",
@@ -6207,6 +6451,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 27,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "faible",
       "lumiere_maxi": "forte",
       "difficulte": "très facile",
@@ -6363,6 +6609,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 28,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "très facile",
@@ -6453,6 +6701,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 28,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "forte",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -6591,6 +6841,8 @@
       "temp_maxi": 27,
       "temp_opti_mini": 18,
       "temp_opti_maxi": 25,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "difficile",
@@ -6610,6 +6862,13 @@
       "ordre": "Apiales",
       "famille": "Araliaceae",
       "regions": "Africa, Australia, North America, Central America, Caribbean Islands, Tropical South America, Southern South America"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Hydrocotyleverticillata(039)/4457",
+      "hauteur_mini": 3,
+      "hauteur_maxi": 10,
+      "co2": "moyen",
+      "origine": "South America"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/3034602",
@@ -6728,6 +6987,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 24,
       "temp_opti_maxi": 28,
+      "co2_mini": 25,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -6800,6 +7061,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 24,
       "temp_opti_maxi": 28,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "très facile",
@@ -6808,7 +7071,10 @@
         "arrière-plan",
         "plan intermédiaire"
       ],
-      "usages": [],
+      "usages": [
+        "bac ouvert",
+        "rue hollandaise"
+      ],
       "multiplication": [
         "boutures"
       ],
@@ -6817,6 +7083,13 @@
       "ordre": "Lamiales",
       "famille": "Acanthaceae",
       "regions": "Southeast Asia"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Hygrophilacorymbosa(053BDT)/4490",
+      "hauteur_mini": 20,
+      "hauteur_maxi": 30,
+      "co2": "faible",
+      "origine": "Asia"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/5415353",
@@ -6879,6 +7152,8 @@
       "temp_maxi": 32,
       "temp_opti_mini": 25,
       "temp_opti_maxi": 28,
+      "co2_mini": 0,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -6890,7 +7165,7 @@
         "boutures",
         "séparation des rejets"
       ],
-      "type": "tige",
+      "type": "flottante",
       "emergee": true,
       "ordre": "Poales",
       "famille": "Poaceae",
@@ -6963,6 +7238,8 @@
       "temp_maxi": 26,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 25,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "faible",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -7058,6 +7335,8 @@
       "temp_maxi": 28,
       "temp_opti_mini": 18,
       "temp_opti_maxi": 25,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -7077,6 +7356,9 @@
       "ordre": "Poales",
       "famille": "Juncaceae",
       "regions": "North America, Central America, Caribbean Islands"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Juncusrepens(133FCLP)/31141"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/2701978",
@@ -7134,6 +7416,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 10,
       "temp_opti_maxi": 22,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "faible",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -7285,6 +7569,8 @@
       "temp_maxi": 26,
       "temp_opti_mini": 10,
       "temp_opti_maxi": 22,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "faible",
       "lumiere_maxi": "forte",
       "difficulte": "très facile",
@@ -7304,6 +7590,13 @@
       "ordre": "Hypnales",
       "famille": "Amblystegiaceae",
       "regions": "North Africa, Europe, North Asia, West Asia, Central Asia, Southeast Asia, East Asia, Australia, Oceana, North America, Central America, Caribbean Islands, Tropical South America, Southern South America"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Leptodictyumriparium(003ETC)/28671",
+      "hauteur_mini": 3,
+      "hauteur_maxi": 10,
+      "co2": "faible",
+      "origine": "Cosmopolitan"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/2673526",
@@ -7410,6 +7703,8 @@
       "temp_opti_maxi": 24,
       "hauteur_mini": 3,
       "hauteur_maxi": 6,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -7489,6 +7784,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 23,
       "temp_opti_maxi": 28,
+      "co2_mini": 15,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -7565,6 +7862,8 @@
       "temp_maxi": 35,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 27,
+      "co2_mini": 0,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -7577,11 +7876,18 @@
         "fragmentation",
         "stolons"
       ],
-      "type": "rosette",
+      "type": "flottante",
       "emergee": true,
       "ordre": "Alismatales",
       "famille": "Hydrocharitaceae",
       "regions": "Central America, Caribbean Islands, Tropical South America"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Limnobiumlaevigatum(063TC)/4761",
+      "hauteur_mini": 3,
+      "hauteur_maxi": 5,
+      "co2": "faible",
+      "origine": "South America"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/5329643",
@@ -7690,6 +7996,8 @@
       "temp_maxi": 27,
       "temp_opti_mini": 18,
       "temp_opti_maxi": 24,
+      "co2_mini": 0,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -7702,7 +8010,7 @@
         "fragmentation",
         "stolons"
       ],
-      "type": "rosette",
+      "type": "flottante",
       "emergee": true,
       "ordre": "Alismatales",
       "famille": "Hydrocharitaceae",
@@ -7766,6 +8074,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 28,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -7783,6 +8093,13 @@
       "ordre": "Lamiales",
       "famille": "Plantaginaceae",
       "regions": "South Asia, Southeast Asia"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Limnophilaaquatica(046)/4471",
+      "hauteur_mini": 20,
+      "hauteur_maxi": 30,
+      "co2": "faible",
+      "origine": "Asia"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/7471513",
@@ -7840,6 +8157,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 27,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "forte",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -7936,6 +8255,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 25,
       "temp_opti_maxi": 28,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -8008,6 +8329,8 @@
       "temp_maxi": 28,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 26,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -8109,6 +8432,8 @@
       "temp_maxi": 26,
       "temp_opti_mini": 18,
       "temp_opti_maxi": 24,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "forte",
       "lumiere_maxi": "forte",
       "difficulte": "difficile",
@@ -8129,6 +8454,13 @@
       "ordre": "Lamiales",
       "famille": "Plantaginaceae",
       "regions": "Europe"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Littorellauniflora(081TC)/18269",
+      "hauteur_mini": 3,
+      "hauteur_maxi": 5,
+      "co2": "faible",
+      "origine": "Cosmopolitan"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/5421111",
@@ -8213,6 +8545,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 26,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -8230,6 +8564,13 @@
       "ordre": "Asterales",
       "famille": "Campanulaceae",
       "regions": "North America, Central America, Tropical South America"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Lobeliacardinalis(053C)/4494",
+      "hauteur_mini": 20,
+      "hauteur_maxi": 30,
+      "co2": "faible",
+      "origine": "North America"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/5408269",
@@ -8297,6 +8638,8 @@
       "temp_maxi": 28,
       "temp_opti_mini": 24,
       "temp_opti_maxi": 26,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -8305,6 +8648,7 @@
         "plan intermédiaire"
       ],
       "usages": [
+        "accent coloré",
         "nano-aquarium"
       ],
       "multiplication": [
@@ -8370,6 +8714,8 @@
       "temp_maxi": 28,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 26,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -8378,6 +8724,7 @@
         "plan intermédiaire"
       ],
       "usages": [
+        "accent coloré",
         "nano-aquarium"
       ],
       "multiplication": [
@@ -8445,6 +8792,8 @@
       "temp_maxi": 27,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 25,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "forte",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -8453,7 +8802,10 @@
         "arrière-plan",
         "plan intermédiaire"
       ],
-      "usages": [],
+      "usages": [
+        "accent coloré",
+        "rue hollandaise"
+      ],
       "multiplication": [
         "graines",
         "boutures"
@@ -8463,6 +8815,13 @@
       "ordre": "Myrtales",
       "famille": "Onagraceae",
       "regions": "North America"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Ludwigiaglandulosa(035A)/4452",
+      "hauteur_mini": 15,
+      "hauteur_maxi": 30,
+      "co2": "moyen",
+      "origine": "North America"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/5421019",
@@ -8520,6 +8879,8 @@
       "temp_maxi": 32,
       "temp_opti_mini": 25,
       "temp_opti_maxi": 30,
+      "co2_mini": 0,
+      "co2_maxi": 40,
       "lumiere_mini": "forte",
       "lumiere_maxi": "forte",
       "difficulte": "difficile",
@@ -8532,7 +8893,7 @@
         "fragmentation",
         "boutures"
       ],
-      "type": "tige",
+      "type": "flottante",
       "emergee": true,
       "ordre": "Myrtales",
       "famille": "Onagraceae",
@@ -8608,6 +8969,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 23,
       "temp_opti_maxi": 25,
+      "co2_mini": 25,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -8627,6 +8990,13 @@
       "ordre": "Poales",
       "famille": "Mayacaceae",
       "regions": "North America, Central America, Caribbean Islands, Tropical South America"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Mayacafluviatilis(140BDT)/19792",
+      "hauteur_mini": 15,
+      "hauteur_maxi": 30,
+      "co2": "moyen",
+      "origine": "North America"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/2707865",
@@ -8713,6 +9083,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 23,
       "temp_opti_maxi": 25,
+      "co2_mini": 25,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -8798,6 +9170,8 @@
       "temp_maxi": 26,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 24,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -8818,6 +9192,13 @@
       "ordre": "Lamiales",
       "famille": "Linderniaceae",
       "regions": "North America, Central America, Tropical South America, Southern South America"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Micranthemumumbrosum(048)/4475",
+      "hauteur_mini": 10,
+      "hauteur_maxi": 15,
+      "co2": "moyen",
+      "origine": "North America"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/3172187",
@@ -8910,6 +9291,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 28,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "faible",
       "lumiere_maxi": "forte",
       "difficulte": "très facile",
@@ -9011,6 +9394,8 @@
       "kh_maxi": 14,
       "temp_mini": 18,
       "temp_maxi": 30,
+      "co2_mini": 15,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -9019,7 +9404,9 @@
         "arrière-plan",
         "plan intermédiaire"
       ],
-      "usages": [],
+      "usages": [
+        "bac ouvert"
+      ],
       "multiplication": [
         "graines",
         "boutures"
@@ -9029,6 +9416,12 @@
       "ordre": "Commelinales",
       "famille": "Commelinaceae",
       "regions": "South Asia, Southeast Asia, East Asia"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Murdanniakeisak(135)/4763",
+      "hauteur_mini": 5,
+      "hauteur_maxi": 20,
+      "origine": "Asia"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/2764809",
@@ -9099,6 +9492,8 @@
       "temp_maxi": 28,
       "temp_opti_mini": 15,
       "temp_opti_maxi": 25,
+      "co2_mini": 15,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -9108,7 +9503,9 @@
         "plan intermédiaire",
         "en surface"
       ],
-      "usages": [],
+      "usages": [
+        "rue hollandaise"
+      ],
       "multiplication": [
         "boutures"
       ],
@@ -9224,6 +9621,8 @@
       "temp_maxi": 32,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 30,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "faible",
       "lumiere_maxi": "forte",
       "difficulte": "très facile",
@@ -9341,6 +9740,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 28,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -9432,6 +9833,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 28,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -9507,6 +9910,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 24,
       "temp_opti_maxi": 28,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -9514,7 +9919,9 @@
       "positions": [
         "plan intermédiaire"
       ],
-      "usages": [],
+      "usages": [
+        "accent coloré"
+      ],
       "multiplication": [
         "stolons"
       ],
@@ -9583,6 +9990,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 24,
       "temp_opti_maxi": 28,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -9668,6 +10077,8 @@
       "temp_opti_maxi": 26,
       "hauteur_mini": 5,
       "hauteur_maxi": 15,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "difficile",
@@ -9738,6 +10149,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 24,
       "temp_opti_maxi": 30,
+      "co2_mini": 0,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -9815,6 +10228,8 @@
       "temp_maxi": 32,
       "temp_opti_mini": 24,
       "temp_opti_maxi": 31,
+      "co2_mini": 0,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -9915,6 +10330,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 26,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -10018,6 +10435,8 @@
       "temp_maxi": 32,
       "temp_opti_mini": 21,
       "temp_opti_maxi": 30,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -10128,6 +10547,8 @@
       "kh_maxi": 14,
       "temp_mini": 4,
       "temp_maxi": 28,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -10204,6 +10625,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 23,
       "temp_opti_maxi": 27,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -10212,7 +10635,9 @@
         "arrière-plan",
         "plan intermédiaire"
       ],
-      "usages": [],
+      "usages": [
+        "bac ouvert"
+      ],
       "multiplication": [
         "boutures"
       ],
@@ -10309,6 +10734,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 23,
       "temp_opti_maxi": 27,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -10400,6 +10827,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 24,
       "temp_opti_maxi": 28,
+      "co2_mini": 0,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -10413,11 +10842,18 @@
         "boutures",
         "séparation des rejets"
       ],
-      "type": "tige",
+      "type": "flottante",
       "emergee": true,
       "ordre": "Malpighiales",
       "famille": "Phyllanthaceae",
       "regions": "Central America, Tropical South America"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Phyllanthusfluitans(028TC)/22848",
+      "hauteur_mini": 3,
+      "hauteur_maxi": 5,
+      "co2": "faible",
+      "origine": "South America"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/5381811",
@@ -10483,6 +10919,8 @@
       "temp_maxi": 25,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 24,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -10557,6 +10995,8 @@
       "temp_maxi": 35,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 30,
+      "co2_mini": 0,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -10566,7 +11006,7 @@
       "multiplication": [
         "stolons"
       ],
-      "type": "rosette",
+      "type": "flottante",
       "emergee": true,
       "ordre": "Alismatales",
       "famille": "Araceae",
@@ -10757,6 +11197,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 24,
       "temp_opti_maxi": 28,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -10773,6 +11215,13 @@
       "ordre": "Lamiales",
       "famille": "Lamiaceae",
       "regions": "South Asia"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Pogostemondeccanensis(053F)/4496",
+      "hauteur_mini": 15,
+      "hauteur_maxi": 30,
+      "co2": "moyen",
+      "origine": "Asia"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/3900222",
@@ -10828,6 +11277,8 @@
       "temp_maxi": 28,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 25,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -10849,6 +11300,13 @@
       "ordre": "Lamiales",
       "famille": "Lamiaceae",
       "regions": "Southeast Asia"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Pogostemonhelferi(053H)/4499",
+      "hauteur_mini": 3,
+      "hauteur_maxi": 10,
+      "co2": "moyen",
+      "origine": "Asia"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/3900041",
@@ -10907,6 +11365,8 @@
       "temp_maxi": 28,
       "temp_opti_mini": 18,
       "temp_opti_maxi": 26,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -10980,6 +11440,8 @@
       "temp_maxi": 28,
       "temp_opti_mini": 18,
       "temp_opti_maxi": 26,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -11057,6 +11519,8 @@
       "temp_maxi": 28,
       "temp_opti_mini": 15,
       "temp_opti_maxi": 22,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -11216,6 +11680,8 @@
       "temp_maxi": 28,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 25,
+      "co2_mini": 15,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -11224,7 +11690,9 @@
         "arrière-plan",
         "plan intermédiaire"
       ],
-      "usages": [],
+      "usages": [
+        "accent coloré"
+      ],
       "multiplication": [
         "boutures"
       ],
@@ -11299,6 +11767,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 28,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -11317,6 +11787,13 @@
       "ordre": "Ranunculales",
       "famille": "Ranunculaceae",
       "regions": "Australia"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Ranunculusinundatus(022CTC)/18225",
+      "hauteur_mini": 5,
+      "hauteur_maxi": 5,
+      "co2": "moyen",
+      "origine": "Australia"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/3925689",
@@ -11372,6 +11849,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 27,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -11392,6 +11871,13 @@
       "ordre": "Marchantiales",
       "famille": "Ricciaceae",
       "regions": "Europe, Asia, North America"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Ricciafluitans(001TC)/4386",
+      "hauteur_mini": 3,
+      "hauteur_maxi": 5,
+      "co2": "moyen",
+      "origine": "Cosmopolitan"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/8244689",
@@ -11484,6 +11970,8 @@
       "temp_maxi": 27,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 25,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -11557,6 +12045,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 28,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "forte",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -11566,7 +12056,8 @@
         "premier plan"
       ],
       "usages": [
-        "nano-aquarium"
+        "nano-aquarium",
+        "rue hollandaise"
       ],
       "multiplication": [
         "boutures"
@@ -11662,6 +12153,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 24,
       "temp_opti_maxi": 28,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "difficile",
@@ -11670,7 +12163,10 @@
         "arrière-plan",
         "plan intermédiaire"
       ],
-      "usages": [],
+      "usages": [
+        "accent coloré",
+        "rue hollandaise"
+      ],
       "multiplication": [
         "boutures"
       ],
@@ -11679,6 +12175,13 @@
       "ordre": "Myrtales",
       "famille": "Lythraceae",
       "regions": "Asia, South Asia, Southeast Asia"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Rotalamacrandra(032TC)/4445",
+      "hauteur_mini": 20,
+      "hauteur_maxi": 30,
+      "co2": "élevé",
+      "origine": "Asia"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/3989204",
@@ -11737,6 +12240,8 @@
       "temp_opti_maxi": 28,
       "hauteur_mini": 20,
       "hauteur_maxi": 80,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -11832,6 +12337,8 @@
       "temp_maxi": 25,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 24,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -11913,6 +12420,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 18,
       "temp_opti_maxi": 28,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "faible",
       "lumiere_maxi": "forte",
       "difficulte": "très facile",
@@ -11930,6 +12439,13 @@
       "ordre": "Alismatales",
       "famille": "Alismataceae",
       "regions": "North America, Tropical South America"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Sagittariasubulata(079)/4530",
+      "hauteur_mini": 5,
+      "hauteur_maxi": 30,
+      "co2": "moyen",
+      "origine": "South America"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/5329014",
@@ -11998,6 +12514,8 @@
       "temp_opti_maxi": 26,
       "hauteur_mini": 10,
       "hauteur_maxi": 15,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -12164,6 +12682,8 @@
       "temp_maxi": 27,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 25,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "forte",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -12172,7 +12692,9 @@
         "plan intermédiaire",
         "premier plan"
       ],
-      "usages": [],
+      "usages": [
+        "bac ouvert"
+      ],
       "multiplication": [
         "stolons",
         "boutures"
@@ -12245,6 +12767,8 @@
       "temp_maxi": 28,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 26,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "moyenne",
@@ -12320,6 +12844,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 4,
       "temp_opti_maxi": 30,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -12329,11 +12855,13 @@
         "plan intermédiaire",
         "en surface"
       ],
-      "usages": [],
+      "usages": [
+        "bac ouvert"
+      ],
       "multiplication": [
         "stolons"
       ],
-      "type": "rosette",
+      "type": "flottante",
       "emergee": true,
       "ordre": "Alismatales",
       "famille": "Hydrocharitaceae",
@@ -12432,6 +12960,8 @@
       "temp_maxi": 34,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 30,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "faible",
       "lumiere_maxi": "forte",
       "difficulte": "très facile",
@@ -12513,6 +13043,8 @@
       "temp_maxi": 29,
       "temp_opti_mini": 18,
       "temp_opti_maxi": 29,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "forte",
       "lumiere_maxi": "forte",
       "difficulte": "très difficile",
@@ -12601,6 +13133,8 @@
       "temp_maxi": 32,
       "temp_opti_mini": 22,
       "temp_opti_maxi": 30,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "facile",
@@ -12699,6 +13233,8 @@
       "temp_maxi": 32,
       "temp_opti_mini": 18,
       "temp_opti_maxi": 30,
+      "co2_mini": 5,
+      "co2_maxi": 40,
       "lumiere_mini": "faible",
       "lumiere_maxi": "forte",
       "difficulte": "très facile",
@@ -12881,6 +13417,8 @@
       "kh_maxi": 12,
       "temp_mini": 16,
       "temp_maxi": 28,
+      "co2_mini": 20,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "difficile",
@@ -12901,6 +13439,13 @@
       "ordre": "Lamiales",
       "famille": "Lentibulariaceae",
       "regions": "South Asia, Southeast Asia"
+    },
+    "tropica": {
+      "url": "https://tropica.com/en/plants/plantdetails/Utriculariagraminifolia(049BTC)/4480",
+      "hauteur_mini": 3,
+      "hauteur_maxi": 10,
+      "co2": "moyen",
+      "origine": "Asia"
     },
     "gbif": {
       "url": "https://www.gbif.org/species/7447672",
@@ -12963,6 +13508,8 @@
       "temp_maxi": 30,
       "temp_opti_mini": 20,
       "temp_opti_maxi": 28,
+      "co2_mini": 10,
+      "co2_maxi": 40,
       "lumiere_mini": "moyenne",
       "lumiere_maxi": "forte",
       "difficulte": "très facile",

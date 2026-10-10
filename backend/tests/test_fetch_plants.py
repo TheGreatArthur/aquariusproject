@@ -78,10 +78,16 @@ def test_flowgrow_page_is_translated():
         difficulte='très facile', croissance='lente',
         positions=['sur le décor', 'plan intermédiaire', 'premier plan'],
         usages=['résiste aux cichlidés', 'nano-aquarium'],
-        multiplication=['division du rhizome', 'séparation des rejets'],
+        multiplication=['division du rhizome', 'séparation des rejets', 'spores'],
         type='épiphyte', emergee=True, ordre='Alismatales', famille='Araceae', regions='Central Africa',
     )
-    assert warnings == ["multiplication inconnue : 'Spores'"]
+    assert warnings == []
+
+
+def test_flowgrow_unknown_label_is_reported():
+    _, warnings = fp.flowgrow_values(fp.parse_flowgrow(FLOWGROW.replace('Spores', 'Telepathy')))
+
+    assert warnings == ["multiplication inconnue : 'Telepathy'"]
 
 
 def test_flowgrow_aggregate_page_without_botanical_name_is_read(monkeypatch):
@@ -92,6 +98,18 @@ def test_flowgrow_aggregate_page_without_botanical_name_is_read(monkeypatch):
 
     assert not any('introuvable' in w for w in warnings)
     assert (values['ph_mini'], values['famille']) == (5, 'Araceae')
+
+
+def test_flowgrow_floating_plant_and_co2_concentration():
+    co2 = '<tr><td>Carbon dioxide (CO2)</td><td>20 to 40 mg/l</td></tr>'
+    floating = FLOWGROW.replace('rhizome or creeping stem', 'free-floating (surface)') \
+        .replace('<tr><td>pH value</td>', co2 + '<tr><td>pH value</td>')
+
+    values, warnings = fp.flowgrow_values(fp.parse_flowgrow(floating))
+
+    assert values['type'] == 'épiphyte' and (values['co2_mini'], values['co2_maxi']) == (20, 40)
+    assert not any('port inconnu' in w for w in warnings)
+    assert fp.main_type(['flottante', 'rosette'], []) == 'flottante'
 
 
 def test_flowgrow_unknown_level_is_reported():

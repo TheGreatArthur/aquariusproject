@@ -162,8 +162,9 @@ export default function Catalogue () {
         </div>
 
         <p className="mt-12 text-xs text-muted">
-          Paramètres de culture : Flowgrow. Hauteur : Flowgrow ou Tropica selon la fiche ; besoin en CO₂ : Tropica
-          lorsqu&apos;il est renseigné. Classification et statut UICN : GBIF. Aire d&apos;origine : liste mondiale des
+          Paramètres de culture : Flowgrow. Hauteur : Tropica, à défaut Flowgrow ; besoin en CO₂ : Tropica, à défaut
+          déduit de la concentration conseillée par Flowgrow. Noms français : noms vernaculaires de GBIF et Wikidata.
+          Classification et statut UICN : GBIF. Aire d&apos;origine : liste mondiale des
           plantes vasculaires de Kew (WCVP) et observations GBIF. Photos : Wikimedia Commons et iNaturalist, sous
           licence libre, avec leurs auteurs sur chaque fiche.
         </p>
