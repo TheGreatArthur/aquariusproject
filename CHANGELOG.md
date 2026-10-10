@@ -12,6 +12,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   turn. `npm run typecheck` runs in CI.
 
 ### Added
+- **Japanese version and translated content** ([ADR 0017](docs/adr/0017-japanese-and-translated-content.md)): the
+  whole site in Japanese under `/ja`; common names and texts of the 304 fish, 132 plants and 21 invertebrates in
+  English and Japanese, served by the API with `?lang=` (`backend/data/i18n/`); the six lessons of the practical
+  guide and their diagrams in both languages; Japanese country and ecoregion names. A language menu in the header
+  and a language list in the footer replace the Instagram links.
 - **English version and light theme** ([ADR 0015](docs/adr/0015-english-version-and-light-theme.md)): the interface
   under `/en` (French stays at the root), with page metadata, `hreflang` alternates, English sitemap URLs, translated
   compatibility alerts, category values, country and ecoregion names; species texts and the practical guide stay in

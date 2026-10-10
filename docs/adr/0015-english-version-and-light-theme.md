@@ -1,6 +1,6 @@
 # 0015. English version under /en and a light theme
 Date: 2026-10-10
-Status: Accepted
+Status: Accepted, extended by [0017](0017-japanese-and-translated-content.md) (Japanese, translated content)
 
 ## Context
 The site was French only and dark only. Visitors who do not read French could not use the catalogue or the

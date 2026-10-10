@@ -35,8 +35,9 @@
   filter by family.
 - **Modern, responsive UI** — dark and light themes (following the system until you pick one) with Tailwind CSS,
   subtle scroll animations, respecting *reduced motion*.
-- **French and English** — the interface, the simulator and its alerts in English under `/en`; species texts and the
-  practical guide stay in French ([ADR 0015](docs/adr/0015-english-version-and-light-theme.md)).
+- **French, English and Japanese** — the whole site under `/en` and `/ja`, with a language menu in the header:
+  interface, simulator alerts, species names and texts, and the practical guide
+  ([ADR 0015](docs/adr/0015-english-version-and-light-theme.md), [ADR 0017](docs/adr/0017-japanese-and-translated-content.md)).
 - **Family showcase** on the home page linking to each family's fish.
 - **Tank simulator** — enter your tank volume and water (or pick a typical water), then add fish, plants and
   invertebrates from one searchable list; the tank is checked by [23 compatibility rules](docs/compatibility-rules.md)
@@ -171,11 +172,12 @@ CI runs the same checks on every pull request and on pushes to `main`.
 - [0014 — One simulator for fish, plants and invertebrates](docs/adr/0014-simulator-fish-plants-invertebrates.md)
 - [0015 — English version under /en and a light theme](docs/adr/0015-english-version-and-light-theme.md)
 - [0016 — Incremental migration of the front end to TypeScript](docs/adr/0016-typescript-incremental-migration.md)
+- [0017 — Japanese version, translated species data and guide, language menu](docs/adr/0017-japanese-and-translated-content.md)
 
 ## Roadmap & known limitations
 
 - [ ] Deploy a public demo
-- In English, species names and texts and the practical guide are still in French.
+- Species texts exist in three languages: a correction must be made in each (`backend/data/i18n/`, `content/cours/`).
 - Compatibility rules run in the browser and are indicative, not expert advice.
 
 ## Credits & license
