@@ -8,19 +8,20 @@ module.exports = {
       screens: { '2xl': '1280px' },
     },
     extend: {
-      colors: {
-        background: '#050B12',
-        surface: '#0A141F',
-        'surface-elevated': '#101E2C',
-        border: '#1A2A3A',
-        foreground: '#E8F1F7',
-        muted: '#89A0B3',
-        accent: '#2DD4BF',
-        'accent-glow': '#5EEAD4',
-        danger: '#FB7185',
-        warning: '#FBBF24',
-        success: '#34D399',
-      },
+      // Theme tokens (app/theme.css), as RGB channels so opacity modifiers like bg-accent/30 keep working
+      colors: Object.fromEntries([
+        'background',
+        'surface',
+        'surface-elevated',
+        'border',
+        'foreground',
+        'muted',
+        'accent',
+        'accent-glow',
+        'danger',
+        'warning',
+        'success',
+      ].map((name) => [name, `rgb(var(--color-${name}) / <alpha-value>)`])),
       fontFamily: {
         sans: ['var(--font-inter)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         display: ['var(--font-display)', 'var(--font-inter)', 'ui-sans-serif', 'sans-serif'],

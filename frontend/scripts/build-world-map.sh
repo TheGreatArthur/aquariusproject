@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Builds public/maps/world-50m.json, the base map of the fish range maps:
-# countries (ISO 3166 alpha-3 code + French name), lakes and rivers from Natural Earth 1:50m (public domain),
+# countries (ISO 3166 alpha-3 code + French and English names), lakes and rivers from Natural Earth 1:50m (public domain),
 # simplified and packed as TopoJSON with mapshaper. French Guiana (GUF), part of France in the countries layer,
 # is added from the map units layer because FishBase lists it as a territory of its own.
 set -euo pipefail
@@ -20,10 +20,10 @@ npx -y mapshaper@0.7.70 \
      "$TMP/rivers_lake_centerlines.geojson" combine-files \
   -rename-layers pays,unites,lacs,fleuves \
   -filter 'GU_A3 == "GUF"' target=unites \
-  -each 'ADM0_A3 = GU_A3' target=unites \
+  -each 'ADM0_A3 = GU_A3, NAME_EN = "French Guiana"' target=unites \
   -merge-layers target=pays,unites name=pays force \
-  -filter-fields target=pays ADM0_A3,NAME_FR \
-  -rename-fields target=pays iso=ADM0_A3,nom=NAME_FR \
+  -filter-fields target=pays ADM0_A3,NAME_FR,NAME_EN \
+  -rename-fields target=pays iso=ADM0_A3,nom=NAME_FR,name=NAME_EN \
   -filter 'scalerank <= 4' target=lacs \
   -filter-fields target=lacs name \
   -rename-fields target=lacs nom=name \

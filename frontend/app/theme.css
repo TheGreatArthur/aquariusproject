@@ -1,0 +1,33 @@
+/*
+ * Colour themes: dark by default, light when <html data-theme="light"> (set before paint by the script in
+ * app/layout.js from the visitor's choice or prefers-color-scheme). Values are RGB channels for tailwind.config.js.
+ */
+
+:root {
+  --color-background: 5 11 18;
+  --color-surface: 10 20 31;
+  --color-surface-elevated: 16 30 44;
+  --color-border: 26 42 58;
+  --color-foreground: 232 241 247;
+  --color-muted: 137 160 179;
+  --color-accent: 45 212 191;
+  --color-accent-glow: 94 234 212;
+  --color-danger: 251 113 133;
+  --color-warning: 251 191 36;
+  --color-success: 52 211 153;
+}
+
+html[data-theme='light'] {
+  color-scheme: light;
+  --color-background: 246 250 252;
+  --color-surface: 255 255 255;
+  --color-surface-elevated: 232 240 245;
+  --color-border: 207 221 230;
+  --color-foreground: 11 26 38;
+  --color-muted: 74 96 114;
+  --color-accent: 13 148 136;
+  --color-accent-glow: 15 118 110;
+  --color-danger: 225 29 72;
+  --color-warning: 180 83 9;
+  --color-success: 4 120 87;
+}

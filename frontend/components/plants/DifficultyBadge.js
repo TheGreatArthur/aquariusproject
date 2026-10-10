@@ -1,9 +1,11 @@
 import clsx from 'clsx';
 
+import { useI18n } from '@/components/I18nProvider';
 import { TONE_CLASSES } from '@/lib/fish';
 import { difficultyTone } from '@/lib/plants';
 
 export default function DifficultyBadge ({ difficulte, className }) {
+  const { term } = useI18n();
   if (!difficulte)
     return null;
   return (
@@ -12,7 +14,7 @@ export default function DifficultyBadge ({ difficulte, className }) {
       TONE_CLASSES[difficultyTone(difficulte)],
       className,
     )}>
-      {difficulte}
+      {term(difficulte)}
     </span>
   );
 }

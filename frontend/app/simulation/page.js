@@ -2,6 +2,7 @@
 
 import dynamic from 'next/dynamic';
 
+import { useI18n } from '@/components/I18nProvider';
 import PageHeader from '@/components/PageHeader';
 
 // Le simulateur lit le bac enregistré dans le stockage local, que le serveur ne connaît pas :
@@ -20,9 +21,11 @@ const Simulator = dynamic(() => import('./simulator'), {
 });
 
 export default function SimulationPage () {
+  const { t } = useI18n();
   return <>
-    <PageHeader eyebrow="Simulateur" title="Composez votre aquarium">
-      Indiquez votre bac, puis ajoutez poissons, plantes et invertébrés : chaque ajout est vérifié avant d&apos;entrer.
+    <PageHeader eyebrow={t('Simulateur', 'Simulator')} title={t('Composez votre aquarium', 'Build your aquarium')}>
+      {t('Indiquez votre bac, puis ajoutez poissons, plantes et invertébrés : chaque ajout est vérifié avant d\'entrer.',
+        'Describe your tank, then add fish, plants and invertebrates: every addition is checked before it goes in.')}
     </PageHeader>
     <Simulator/>
   </>;

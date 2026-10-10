@@ -51,3 +51,36 @@ test('le site publie un sitemap avec les fiches', async ({ request }) => {
   expect(sitemap).toContain('/simulation</loc>');
   expect(sitemap).toMatch(/\/plantes\/\d+<\/loc>/);
 });
+
+test('la version anglaise traduit l’interface et garde la langue dans les liens', async ({ page }) => {
+  await page.goto('/en/simulation');
+  await expect(page.locator('html')).toHaveAttribute('lang', 'en');
+  await expect(page.getByRole('heading', { level: 1, name: 'Build your aquarium' })).toBeVisible();
+
+  await page.getByLabel(/Volume/).fill('60');
+  await page.getByRole('tab', { name: /Invertebrates/ }).click();
+  const search = page.getByRole('searchbox', { name: 'Search for a species' });
+  await search.fill('assassin');
+  await page.getByRole('button', { name: 'Add Escargot assassin to the tank' }).click();
+  await search.fill('nérite tachetée');
+  await page.getByRole('button', { name: 'Add Nérite tachetée to the tank' }).click();
+  await expect(page.getByRole('status')).toContainText('Escargot assassin eats other snails: Nérite tachetée.');
+
+  await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'Fish' }).click();
+  await expect(page).toHaveURL(/\/en\/poissons$/);
+  await page.getByRole('link', { name: 'Version française' }).click();
+  await expect(page).toHaveURL(/\/poissons$/);
+  await expect(page.getByRole('heading', { level: 1, name: 'Les poissons' })).toBeVisible();
+});
+
+test('le thème clair se choisit et reste enregistré', async ({ page }) => {
+  await page.emulateMedia({ colorScheme: 'dark' });
+  await page.goto('/');
+  const html = page.locator('html');
+  await expect(html).toHaveAttribute('data-theme', 'dark');
+
+  await page.getByRole('button', { name: 'Changer de thème' }).click();
+  await expect(html).toHaveAttribute('data-theme', 'light');
+  await page.reload();
+  await expect(html).toHaveAttribute('data-theme', 'light');
+});

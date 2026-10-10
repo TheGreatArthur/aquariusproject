@@ -3,12 +3,12 @@
  */
 
 export const NAV_LINKS = [
-  { href: '/poissons', label: 'Poissons' },
-  { href: '/invertebres', label: 'Invertébrés' },
-  { href: '/plantes', label: 'Plantes' },
-  { href: '/simulation', label: 'Simulation' },
-  { href: '/cours', label: 'Guide pratique' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/poissons', label: 'Poissons', en: 'Fish' },
+  { href: '/invertebres', label: 'Invertébrés', en: 'Invertebrates' },
+  { href: '/plantes', label: 'Plantes', en: 'Plants' },
+  { href: '/simulation', label: 'Simulation', en: 'Simulator' },
+  { href: '/cours', label: 'Guide pratique', en: 'Practical guide' },
+  { href: '/contact', label: 'Contact', en: 'Contact' },
 ];
 
 export const INSTAGRAM_URL = 'https://www.instagram.com/projet.aquarius.pro';

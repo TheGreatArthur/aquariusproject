@@ -5,10 +5,13 @@ import Link from 'next/link';
 import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowRight, Fish } from 'lucide-react';
 
+import { useI18n } from '@/components/I18nProvider';
+
 const EASE = [0.22, 1, 0.36, 1];
 
 export default function Hero () {
   const reduce = useReducedMotion();
+  const { t, href } = useI18n();
 
   // Mêmes états avec ou sans animations réduites, pour ne pas rester bloqué sur l'opacité 0 du rendu serveur
   const item = (delay) => ({
@@ -36,24 +39,26 @@ export default function Hero () {
       <div className="container">
         <div className="max-w-4xl">
           <motion.p className="eyebrow" {...item(0)}>
-            <Fish className="h-4 w-4"/> Aquariophilie d&apos;eau douce
+            <Fish className="h-4 w-4"/> {t('Aquariophilie d\'eau douce', 'Freshwater fishkeeping')}
           </motion.p>
 
           <motion.h1 className="mt-5 text-hero font-semibold" {...item(0.08)}>
-            Composez un aquarium qui vit en <span className="text-accent">harmonie</span>.
+            {t('Composez un aquarium qui vit en ', 'Build an aquarium that lives in ')}
+            <span className="text-accent">{t('harmonie', 'harmony')}</span>.
           </motion.h1>
 
           <motion.p className="mt-6 max-w-xl text-lg text-muted" {...item(0.16)}>
-            Choisissez vos poissons selon le volume et l&apos;eau de votre bac. Aquarius signale les cohabitations
-            à risque avant l&apos;achat.
+            {t('Choisissez vos poissons selon le volume et l\'eau de votre bac. Aquarius signale les cohabitations '
+              + 'à risque avant l\'achat.',
+            'Choose your fish for the volume and water of your tank. Aquarius flags risky tankmates before you buy.')}
           </motion.p>
 
           <motion.div className="mt-9 flex flex-wrap gap-3" {...item(0.24)}>
-            <Link href="/simulation" className="btn-primary !px-6 !py-3 text-base">
-              Simuler un bac <ArrowRight className="h-4 w-4"/>
+            <Link href={href('/simulation')} className="btn-primary !px-6 !py-3 text-base">
+              {t('Simuler un bac', 'Plan a tank')} <ArrowRight className="h-4 w-4"/>
             </Link>
-            <Link href="/poissons" className="btn-ghost !px-6 !py-3 text-base">
-              Explorer les espèces
+            <Link href={href('/poissons')} className="btn-ghost !px-6 !py-3 text-base">
+              {t('Explorer les espèces', 'Explore the species')}
             </Link>
           </motion.div>
         </div>

@@ -6,10 +6,12 @@ import useSWR from 'swr';
 import clsx from 'clsx';
 import { ArrowUpRight } from 'lucide-react';
 
+import { useI18n } from '@/components/I18nProvider';
 import Reveal from '@/components/Reveal';
 import { FEATURED_FAMILIES, familyHref } from '@/lib/families';
 
 export default function FamilyGrid () {
+  const { t, href } = useI18n();
   const { data } = useSWR('/api/poissons');
 
   // Nombre d'espèces par famille (clé en minuscules)
@@ -22,11 +24,11 @@ export default function FamilyGrid () {
       <Reveal className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
         <div className="max-w-xl">
           <h2 id="familles-title" className="text-3xl font-semibold sm:text-4xl">
-            Des tétras aux cichlidés, trouvez vos futurs pensionnaires.
+            {t('Des tétras aux cichlidés, trouvez vos futurs pensionnaires.', 'From tetras to cichlids, find your future residents.')}
           </h2>
         </div>
-        <Link href="/poissons" className="btn-ghost self-start md:self-auto">
-          Toutes les espèces <ArrowUpRight className="h-4 w-4"/>
+        <Link href={href('/poissons')} className="btn-ghost self-start md:self-auto">
+          {t('Toutes les espèces', 'All species')} <ArrowUpRight className="h-4 w-4"/>
         </Link>
       </Reveal>
 
@@ -43,7 +45,7 @@ export default function FamilyGrid () {
             )}
           >
             <Link
-              href={familyHref(f.nom)}
+              href={href(familyHref(f.nom))}
               className="group relative flex h-full flex-col justify-end overflow-hidden rounded-2xl border border-border"
             >
               <Image
@@ -61,10 +63,10 @@ export default function FamilyGrid () {
                   </h3>
                   <ArrowUpRight className="hidden h-5 w-5 shrink-0 text-accent opacity-0 transition group-hover:opacity-100 sm:block"/>
                 </div>
-                <p className="mt-1 hidden text-sm text-foreground/75 sm:line-clamp-2">{f.description}</p>
+                <p className="mt-1 hidden text-sm text-foreground/75 sm:line-clamp-2">{t(f.description, f.en)}</p>
                 {counts[f.nom.toLowerCase()] && (
                   <p className="mt-2 text-xs font-medium text-accent-glow sm:mt-3">
-                    {counts[f.nom.toLowerCase()]} espèces
+                    {counts[f.nom.toLowerCase()]} {t('espèces', 'species')}
                   </p>
                 )}
               </div>

@@ -5,23 +5,24 @@ import Link from 'next/link';
 import useSWR from 'swr';
 import clsx from 'clsx';
 
+import { useI18n } from '@/components/I18nProvider';
 import { espece, evaluate, TYPES } from '@/lib/compat';
 import { lsGet, lsSet } from '@/lib/localstorage';
 import Bac from './bac';
 import Especes from './especes';
 
 const FIELDS = [
-  { name: 'litrage', label: 'Volume', unit: 'L', placeholder: '120' },
-  { name: 'pH', label: 'pH', unit: '', placeholder: '7' },
-  { name: 'gH', label: 'GH', unit: '°', placeholder: '10' },
-  { name: 'tempMoyenne', label: 'Température', unit: '°C', placeholder: '25' },
+  { name: 'litrage', label: 'Volume', en: 'Volume', unit: 'L', placeholder: '120' },
+  { name: 'pH', label: 'pH', en: 'pH', unit: '', placeholder: '7' },
+  { name: 'gH', label: 'GH', en: 'GH', unit: '°', placeholder: '10' },
+  { name: 'tempMoyenne', label: 'Température', en: 'Temperature', unit: '°C', placeholder: '25' },
 ];
 
 // Eaux types, pour qui ne connaît pas encore la sienne
 const PROFILS = [
-  { label: 'Douce et acide', eau: { pH: '6.5', gH: '5', tempMoyenne: '26' } },
-  { label: 'Neutre', eau: { pH: '7', gH: '10', tempMoyenne: '25' } },
-  { label: 'Dure et alcaline', eau: { pH: '8', gH: '18', tempMoyenne: '25' } },
+  { label: 'Douce et acide', en: 'Soft and acidic', eau: { pH: '6.5', gH: '5', tempMoyenne: '26' } },
+  { label: 'Neutre', en: 'Neutral', eau: { pH: '7', gH: '10', tempMoyenne: '25' } },
+  { label: 'Dure et alcaline', en: 'Hard and alkaline', eau: { pH: '8', gH: '18', tempMoyenne: '25' } },
 ];
 
 /** Valeur numérique d'un champ ; undefined si vide ou invalide */
@@ -37,6 +38,7 @@ function bacEnregistre () {
  * Rendu seulement dans le navigateur (voir page.js) : le bac enregistré est lu dès le premier rendu.
  */
 export default function Simulator () {
+  const { t, href, locale } = useI18n();
   const [contenu, setContenu] = useState(bacEnregistre);
   const [eau, setEau] = useState(() => lsGet('form_data') ?? {});
 
@@ -47,7 +49,8 @@ export default function Simulator () {
   useEffect(() => { lsSet('bac', contenu); }, [contenu]);
   useEffect(() => { lsSet('form_data', eau); }, [eau]);
 
-  const environnement = Object.fromEntries(FIELDS.map(({ name }) => [name, nombre(eau[name])]));
+  // La langue de la page sert aux messages du moteur
+  const environnement = { ...Object.fromEntries(FIELDS.map(({ name }) => [name, nombre(eau[name])])), locale };
 
   // Les trois catalogues, au format du moteur (identifiants uniques entre catalogues)
   const catalogue = useMemo(() => Object.fromEntries([
@@ -77,13 +80,15 @@ export default function Simulator () {
       {/* Le bac : volume et eau */}
       <form className="card p-5 sm:p-6" onSubmit={(e) => e.preventDefault()} aria-labelledby="eau-title">
         <div className="flex flex-wrap items-baseline justify-between gap-3">
-          <h2 id="eau-title" className="text-lg font-semibold">Votre bac</h2>
-          <Link href="/cours/parametres-eau" className="text-xs text-muted hover:text-accent-glow">Comprendre ces valeurs</Link>
+          <h2 id="eau-title" className="text-lg font-semibold">{t('Votre bac', 'Your tank')}</h2>
+          <Link href={href('/cours/parametres-eau')} className="text-xs text-muted hover:text-accent-glow">
+            {t('Comprendre ces valeurs', 'Understand these values')}
+          </Link>
         </div>
         <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-4">
-          {FIELDS.map(({ name, label, unit, placeholder }) => (
+          {FIELDS.map(({ name, label, en, unit, placeholder }) => (
             <label key={name} htmlFor={name}>
-              <span className="label">{label}</span>
+              <span className="label">{t(label, en)}</span>
               <span className="relative block">
                 <input id={name} name={name} className="input pr-10 tabular-nums" inputMode="decimal" autoComplete="off"
                        placeholder={placeholder} value={eau[name] ?? ''}
@@ -94,16 +99,16 @@ export default function Simulator () {
           ))}
         </div>
         <div className="mt-4 flex flex-wrap items-center gap-2 text-sm">
-          <span className="mr-1 text-muted">Eau type :</span>
-          {PROFILS.map(({ label, eau: valeurs }) => (
+          <span className="mr-1 text-muted">{t('Eau type :', 'Typical water:')}</span>
+          {PROFILS.map(({ label, en, eau: valeurs }) => (
             <button key={label} type="button" onClick={() => setEau({ ...eau, ...valeurs })}
                     className={clsx('chip', Object.entries(valeurs).every(([k, v]) => eau[k] === v) && 'chip-active')}>
-              {label}
+              {t(label, en)}
             </button>
           ))}
           {FIELDS.some(({ name }) => eau[name]) && (
             <button type="button" onClick={() => setEau({})} className="ml-1 text-xs text-muted hover:text-foreground">
-              Effacer
+              {t('Effacer', 'Clear')}
             </button>
           )}
         </div>
@@ -111,7 +116,9 @@ export default function Simulator () {
 
       <div className="mt-8 grid items-start gap-8 lg:grid-cols-[1fr_24rem]">
         {erreur ? (
-          <p className="card p-8 text-center text-danger">Impossible de charger les espèces. Vérifiez que l&apos;API est démarrée.</p>
+          <p className="card p-8 text-center text-danger">
+            {t('Impossible de charger les espèces. Vérifiez que l\'API est démarrée.', 'Could not load the species. Check that the API is running.')}
+          </p>
         ) : (
           <Especes catalogue={catalogue} bac={bac} environnement={environnement} onAdd={ajouter}/>
         )}
