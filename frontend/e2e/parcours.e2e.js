@@ -45,6 +45,16 @@ test('l’ancienne adresse du simulateur y mène toujours', async ({ page }) => 
   await expect(page.getByRole('heading', { level: 1, name: 'Composez votre aquarium' })).toBeVisible();
 });
 
+test('les fiches sont rendues sur le serveur, et une espèce inconnue répond 404', async ({ request }) => {
+  const { plantes } = await (await request.get('/api/plantes')).json();
+  const plante = await (await request.get(`/api/plantes/${plantes[0].id}`)).json();
+  const html = (await (await request.get(`/plantes/${plante.id}`)).text()).replaceAll('&#x27;', '\'');
+
+  // Le texte de la fiche est dans le HTML envoyé, pas chargé ensuite par le navigateur
+  expect(html).toContain(plante.culture.split(/[*«]/)[0].slice(0, 30));
+  expect((await request.get('/plantes/999999')).status()).toBe(404);
+});
+
 test('le site publie un sitemap avec les fiches', async ({ request }) => {
   const sitemap = await (await request.get('/sitemap.xml')).text();
 
