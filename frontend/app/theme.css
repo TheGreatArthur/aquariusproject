@@ -15,6 +15,16 @@
   --color-danger: 251 113 133;
   --color-warning: 251 191 36;
   --color-success: 52 211 153;
+  /* Maps (home globe, range maps): sea behind a map, ocean of a globe, land, lakes and rivers, text on markers */
+  --color-map-sea: 4 10 17;
+  --color-map-ocean: 7 18 28;
+  --color-map-graticule: 16 32 46;
+  --color-map-land: 13 26 38;
+  --color-map-land-globe: 26 44 61;
+  --color-map-border: 28 46 64;
+  --color-map-lake: 21 73 106;
+  --color-map-river: 59 143 194;
+  --color-map-on-accent: 5 11 18;
 }
 
 html[data-theme='light'] {
@@ -30,4 +40,13 @@ html[data-theme='light'] {
   --color-danger: 225 29 72;
   --color-warning: 180 83 9;
   --color-success: 4 120 87;
+  --color-map-sea: 214 233 242;
+  --color-map-ocean: 205 228 239;
+  --color-map-graticule: 184 212 226;
+  --color-map-land: 248 250 247;
+  --color-map-land-globe: 226 234 236;
+  --color-map-border: 164 186 199;
+  --color-map-lake: 142 194 220;
+  --color-map-river: 47 125 173;
+  --color-map-on-accent: 255 255 255;
 }
