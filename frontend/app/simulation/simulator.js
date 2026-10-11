@@ -114,7 +114,7 @@ export default function Simulator () {
         </div>
       </form>
 
-      <div className="mt-8 grid items-start gap-8 lg:grid-cols-[1fr_24rem]">
+      <div className="mt-8 grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,1fr)_24rem]">
         {erreur ? (
           <p className="card p-8 text-center text-danger">
             {t('Impossible de charger les espèces. Vérifiez que l\'API est démarrée.', 'Could not load the species. Check that the API is running.', '種を読み込めませんでした。API が起動しているか確認してください。')}
