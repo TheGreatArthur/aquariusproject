@@ -5,3 +5,6 @@ venv/
 alembic.ini
 config.py
 .DS_Store
+
+# Liens locaux vers les projets Vercel (vercel link)
+.vercel

@@ -12,6 +12,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   turn. `npm run typecheck` runs in CI.
 
 ### Added
+- **Public demo on Vercel** ([ADR 0018](docs/adr/0018-demo-on-vercel.md)): the site and the API are two Vercel
+  projects built from GitHub. Without `config.py`, the API reads a versioned read-only snapshot of the database,
+  `backend/demo/aquarius.db`, refreshed with `make demo-db`; a test runs the API that way. Resized images are kept a
+  month to spare the image transformation quota, and `IMAGES_UNOPTIMIZED=1` serves the originals if it runs out.
 - **Japanese version and translated content** ([ADR 0017](docs/adr/0017-japanese-and-translated-content.md)): the
   whole site in Japanese under `/ja`; common names and texts of the 304 fish, 132 plants and 21 invertebrates in
   English and Japanese, served by the API with `?lang=` (`backend/data/i18n/`); the six lessons of the practical

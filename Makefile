@@ -7,7 +7,7 @@ BACKEND_PORT  ?= 5001
 FRONTEND_PORT ?= 3000
 
 .DEFAULT_GOAL := help
-.PHONY: help setup install dev backend frontend import profiles fish fish-photos invertebrates plants plants-fetch ecoregions sources occurrences images audit test lint build clean
+.PHONY: help setup install dev backend frontend import demo-db profiles fish fish-photos invertebrates plants plants-fetch ecoregions sources occurrences images audit test lint build clean
 
 help: ## Show available commands
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  make %-10s %s\n", $$1, $$2}'
@@ -42,6 +42,9 @@ frontend:
 
 import: setup ## Load backend/db.xlsx into the database
 	cd backend && venv/bin/python import_excel.py
+
+demo-db: setup ## Snapshot the local database for the online demo (backend/demo/aquarius.db, to commit)
+	cd backend && venv/bin/python -m tools.make_demo_db
 
 profiles: setup ## Load the fish profiles (backend/data) into an imported database
 	cd backend && venv/bin/python profiles.py
