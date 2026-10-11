@@ -3,14 +3,26 @@
 Chaque route accepte `?lang=en` ou `?lang=ja` pour les noms communs et les textes des espèces (translations.py).
 """
 
+import os
+from pathlib import Path
+
 from flask import Flask, request
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import func, or_
 
-from config import DSN
 from models import Poisson, Genre, Famille, Comportement, Invertebre, Plante
 from translations import language, translate
+
+# Instantané de la base pour la démo en ligne, ouvert en lecture seule (make demo-db)
+DEMO_DB = Path(__file__).resolve().parent / 'demo' / 'aquarius.db'
+DEMO_DSN = f'sqlite:///file:{DEMO_DB}?mode=ro&immutable=1&uri=true'
+
+try:
+    from config import DSN
+except ModuleNotFoundError:
+    # Déploiement (Vercel) : pas de config.py, l'API sert l'instantané sauf si AQUARIUS_DSN désigne une autre base
+    DSN = os.environ.get('AQUARIUS_DSN', DEMO_DSN)
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = DSN

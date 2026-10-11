@@ -2,6 +2,8 @@
 *.xlsx
 __pycache__
 *.db
+# Instantané versionné pour la démo en ligne (make demo-db)
+!demo/aquarius.db
 .coverage
 .pytest_cache/
 
