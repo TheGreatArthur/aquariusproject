@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
@@ -9,15 +8,8 @@ export default async function CallToAction () {
   const { t, href } = await getI18n();
   return (
     <section className="container pt-8">
-      <Reveal className="relative isolate overflow-hidden rounded-2xl border border-border px-6 py-16 sm:px-14">
-        <Image
-          src="/families/cichlidae-americain.jpg"
-          alt=""
-          fill
-          sizes="(min-width: 1280px) 1280px, 100vw"
-          className="-z-20 object-cover object-[center_35%]"
-        />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-background via-background/85 to-background/30"/>
+      {/* Sans photo : celle d'avant était déjà celle de la carte des cichlidés américains, juste au-dessus */}
+      <Reveal className="relative isolate overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-accent/15 via-surface to-surface px-6 py-16 sm:px-14">
         <div className="max-w-lg">
           <h2 className="text-3xl font-semibold sm:text-4xl">{t('Prêt à imaginer votre prochain bac\u00a0?', 'Ready to plan your next tank?', '次の水槽を計画してみませんか？')}</h2>
           <p className="mt-4 text-muted">

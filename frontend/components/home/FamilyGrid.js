@@ -54,6 +54,7 @@ export default function FamilyGrid () {
                 fill
                 sizes={i === 0 ? '(min-width: 1024px) 50vw, 100vw' : '(min-width: 1024px) 25vw, 50vw'}
                 className="object-cover transition duration-700 group-hover:scale-105"
+                style={f.position ? { objectPosition: f.position } : undefined}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"/>
               <div className="relative p-4 sm:p-5">
