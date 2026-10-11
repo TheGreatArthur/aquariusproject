@@ -53,8 +53,13 @@ function extent (points, countries) {
 }
 
 // Remplissage et contour des pays d'origine, des pays d'introduction (plantes) et des autres pays,
-// en couleurs du thème (app/theme.css) pour suivre le thème clair
-const FILL = { native: 'fill-accent/[.13]', introduced: 'fill-warning/[.1]', other: 'fill-map-land' };
+// en couleurs du thème (app/theme.css) pour suivre le thème clair. La teinte est mélangée à la couleur des terres :
+// transparente, elle laissait voir la mer et les pays d'origine ressemblaient à de l'eau
+const FILL = {
+  native: 'fill-[color-mix(in_srgb,rgb(var(--color-accent))_13%,rgb(var(--color-map-land)))]',
+  introduced: 'fill-[color-mix(in_srgb,rgb(var(--color-warning))_10%,rgb(var(--color-map-land)))]',
+  other: 'fill-map-land',
+};
 const STROKE = { native: 'stroke-accent-glow/[.45]', introduced: 'stroke-warning/[.4]', other: 'stroke-map-border' };
 const GLOBE_FILL = { native: 'fill-accent', introduced: 'fill-warning', other: 'fill-map-land-globe' };
 // Ordre de dessin : les pays d'origine en dernier, pour que leur contour reste visible
