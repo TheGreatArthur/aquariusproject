@@ -181,8 +181,10 @@ other authors). Moving them would change the family filters of the site, so it i
 ## Open questions
 
 - *Hemigrammus pulcher* is called "Tétra diamant", a name usually given to *Moenkhausia pittieri*.
-- Two fish share "Tétra pingouin" (*Thayeria boehlkei* and *T. ifati*) and two share "Corydoras nain"
-  (*C. pygmaeus* and *C. hastatus*).
+- ~~Two fish share "Tétra pingouin" (*Thayeria boehlkei* and *T. ifati*) and two share "Corydoras nain"
+  (*C. pygmaeus* and *C. hastatus*).~~ Resolved 2026-10-12: *T. ifati* is "Tétra pingouin ifati", *C. pygmaeus*
+  "Corydoras pygmée" and *Hyphessobrycon bentosi* "Tétra orné" (it shared "Tétra rosé" with *H. rosaceus*), after
+  their English names; a test keeps common names unique.
 - *Hyphessobrycon copelandi* is called "Yaya", the Guianese Creole name for any small tetra.
 - *Nandus nebulosus* keeps FishBase's pH 7.0–7.5, although it also lives in acidic peat swamps.
 - Some sizes are the usual adult size rather than the published maximum (*Betta splendens*, *Trichogaster*

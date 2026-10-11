@@ -27,7 +27,7 @@ describe('engine', () => {
 
     const bouche = result.issues.filter((i) => i.rule === 'bouche');
     expect(bouche).toHaveLength(1);
-    expect(bouche[0].message).toContain('Néon Bleu');
+    expect(bouche[0].message).toContain('Néon bleu');
     expect(bouche[0].message).toContain('Cardinalis');
   });
 
@@ -216,7 +216,7 @@ describe('15-19. invertebrates', () => {
     const nerite = invertebre({ nom_commun: 'Nérite', groupe: 'escargot', regime: 'brouteur', taille: null }, 1);
 
     const big = evaluate([cherax, neon(), nerite], ENV).issues.find((i) => i.rule === 'chasseurs');
-    expect(big.message).toContain('Néon Bleu et Nérite');
+    expect(big.message).toContain('Néon bleu et Nérite');
     expect(rules([cpo, neon()])).not.toContain('chasseurs:warning');
     expect(rules([cpo, invertebre()])).toContain('chasseurs:warning');
   });

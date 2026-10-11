@@ -16,6 +16,8 @@ def _range(field: str, low: float, high: float, reason: str) -> dict[str, tuple[
     return {f'{field}_mini': (low, reason), f'{field}_maxi': (high, reason)}
 
 
+CASE = 'French common names are lowercase after the first word, except proper nouns.'
+
 # nom_scientifique (tel qu'il est écrit dans le classeur) -> {champ: (nouvelle valeur, justification)}
 CORRECTIONS: dict[str, dict[str, tuple[object, str]]] = {
     'Cichla ocellaris': {
@@ -69,6 +71,27 @@ CORRECTIONS: dict[str, dict[str, tuple[object, str]]] = {
         ),
         **_range('gh', 3, 10, 'FB dH 5-12, SF 3-12 dGH; 1-3 was far softer than any published range.'),
         'comportement': ('peu agressif', 'SF: "very peaceful, relatively shy"; males only spar with each other.'),
+    },
+    'Hyphessobrycon bentosi': {
+        'nom_commun': (
+            'Tétra orné',
+            'Hyphessobrycon rosaceus is the "Tétra rosé"; both shared the name (English: ornate tetra).',
+        ),
+    },
+    'Paracheirodon innesi': {
+        'nom_commun': ('Néon bleu', 'Casing: ' + CASE),
+    },
+    'Hyphessobrycon eques': {
+        'nom_commun': ('Tétra joyau', 'Casing: ' + CASE),
+    },
+    'Hyphessobrycon erythrostigma': {
+        'nom_commun': ('Cœur saignant', 'Casing: ' + CASE),
+    },
+    'Hemigrammus stictus': {
+        'nom_commun': ('Queue sanglante', 'Casing: ' + CASE),
+    },
+    'Petitella georgiae': {
+        'nom_commun': ('Faux nez rouge', 'Casing: ' + CASE),
     },
 
     # --- Families (FishBase classification, keeping the site's "Cichlidae africain/américain" split) ---
@@ -157,6 +180,7 @@ CORRECTIONS: dict[str, dict[str, tuple[object, str]]] = {
         ),
     },
     'Melanotaenia boesemani': {
+        'nom_commun': ('Poisson arc-en-ciel', 'Casing: ' + CASE),
         'zone_geo': ('Océanie', 'Ajamaru lakes, New Guinea (FB lists it under Oceania).'),
         **_range('temp', 25, 30, 'FB 27-30 °C, SF 27-30 °C.'),
         **_range('ph', 7.0, 8.0, 'FB pH 7-8, SF 7-8; the lakes are hard and alkaline (pH 8-9).'),
@@ -178,6 +202,10 @@ CORRECTIONS: dict[str, dict[str, tuple[object, str]]] = {
         'taille': (2, 'FB max length 1.6 cm SL (about 2 cm TL).'),
     },
     'Thayeria ifati': {
+        'nom_commun': (
+            'Tétra pingouin ifati',
+            'Thayeria boehlkei is the "Tétra pingouin"; both shared the name (English: Ifati penguin tetra).',
+        ),
         'taille': (5, 'FB up to 5 cm SL, SF 50 mm SL.'),
     },
     'Hyphessobrycon heterorhabdus': {
@@ -188,6 +216,7 @@ CORRECTIONS: dict[str, dict[str, tuple[object, str]]] = {
         'taille': (4, 'FB 3.6 cm TL, SF 35 mm SL.'),
     },
     'Hyphessobrycon herbertaxelrodi': {
+        'nom_commun': ('Néon noir', 'Casing: ' + CASE),
         **_range('gh', 2, 12, 'SF 1-12 dGH, FB max 15. A minimum of 10 excluded soft water.'),
     },
     'Hemigrammus pulcher': {
@@ -228,6 +257,10 @@ CORRECTIONS: dict[str, dict[str, tuple[object, str]]] = {
         **_range('temp', 22, 28, 'FB 21-25 °C, SF 24-28 °C; 31 °C was above both.'),
     },
     'Corydoras pygmaeus': {
+        'nom_commun': (
+            'Corydoras pygmée',
+            'Corydoras hastatus is the "Corydoras nain"; both shared the name (English: pygmy corydoras).',
+        ),
         **_range('gh', 2, 10, 'SF 0-8 dGH, FB 2-25; a minimum of 6 dGH excluded soft water.'),
     },
     'Corydoras hastatus': {
