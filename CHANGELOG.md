@@ -5,6 +5,16 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Fixed
+- The simulator no longer scrolls sideways on phones (its two-column grid had no column sizes below `lg`).
+- The home page simulator preview was a French, dark-theme screenshot on every page: it is now the real verdict of an
+  example tank, computed by the compatibility engine from the catalogue data, in the page's language and theme.
+- Fish common names: three pairs of species shared a name (*Thayeria ifati* is now "Tétra pingouin ifati",
+  *Corydoras pygmaeus* "Corydoras pygmée", *Hyphessobrycon bentosi* "Tétra orné"), and eight names were
+  capitalised after the first word ("Néon Bleu" → "Néon bleu"). A test on the demo snapshot keeps the common names
+  of each catalogue unique.
+- The README counted 121 globe ecoregions; the globe shows 182.
+
 ### Changed
 - **TypeScript, starting with `lib/`** ([ADR 0016](docs/adr/0016-typescript-incremental-migration.md)): every module
   of `frontend/lib/` (compatibility engine and rules, catalogue helpers, globe, guide texts, languages) is TypeScript
