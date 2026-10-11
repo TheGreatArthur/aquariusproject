@@ -16,6 +16,7 @@ const PER_PAGE = 12;
 /**
  * Catalogue d'espèces (poissons, invertébrés, plantes) : recherche, filtre lu dans l'URL, pagination.
  * Les textes sont des triplets [fr, en, ja] ; `config` décrit le catalogue (voir app/<catalogue>/catalogue.js).
+ * `select` : filtre en liste déroulante plutôt qu'en pastilles (une rangée de 50 familles ne se parcourt pas sur un téléphone).
  */
 export default function Catalogue (config) {
   return (
@@ -53,7 +54,7 @@ function Skeleton () {
   );
 }
 
-function CatalogueContent ({ api: endpoint, liste, param, filterKey, options, label, matches, sort, Card, texts, children }) {
+function CatalogueContent ({ api: endpoint, liste, param, filterKey, options, label, matches, sort, select, Card, texts, children }) {
   const params = useSearchParams();
   const router = useRouter();
   const i18n = useI18n();
@@ -115,29 +116,43 @@ function CatalogueContent ({ api: endpoint, liste, param, filterKey, options, la
       <section className="container">
         {/* Filtres */}
         <div className="sticky top-16 z-30 -mx-4 border-b border-border/60 bg-background/85 px-4 py-4 backdrop-blur-xl sm:mx-0 sm:rounded-2xl sm:border sm:px-5">
-          <label className="relative block">
-            <span className="sr-only">{t(...texts.search)}</span>
-            <Search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted"/>
-            <input
-              type="search"
-              className="input !rounded-full !pl-11"
-              placeholder={t(...texts.placeholder)}
-              value={terme}
-              onChange={(e) => onSearch(e.target.value)}
-            />
-          </label>
+          <div className={clsx('grid gap-3', select && 'sm:grid-cols-[minmax(0,1fr)_16rem]')}>
+            <label className="relative block">
+              <span className="sr-only">{t(...texts.search)}</span>
+              <Search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted"/>
+              <input
+                type="search"
+                className="input !rounded-full !pl-11"
+                placeholder={t(...texts.placeholder)}
+                value={terme}
+                onChange={(e) => onSearch(e.target.value)}
+              />
+            </label>
 
-          <div className="mt-3 flex gap-2 overflow-x-auto pb-1 [scrollbar-width:thin]" role="group" aria-label={t(...texts.filter)}>
-            <button type="button" className={clsx('chip shrink-0', !filtre && 'chip-active')} onClick={() => choose('')}>
-              {t(...texts.all)}
-            </button>
-            {choix.map((v) => (
-              <button key={v} type="button" className={clsx('chip shrink-0', actif === v && 'chip-active')}
-                      onClick={() => choose(v)}>
-                {label(v, i18n)}
-              </button>
-            ))}
+            {select && (
+              <label className="block">
+                <span className="sr-only">{t(...texts.filter)}</span>
+                <select className="input !rounded-full" value={actif} onChange={(e) => choose(e.target.value)}>
+                  <option value="">{t(...texts.all)}</option>
+                  {choix.map((v) => <option key={v} value={v}>{label(v, i18n)}</option>)}
+                </select>
+              </label>
+            )}
           </div>
+
+          {!select && (
+            <div className="mt-3 flex gap-2 overflow-x-auto pb-1 [scrollbar-width:thin]" role="group" aria-label={t(...texts.filter)}>
+              <button type="button" className={clsx('chip shrink-0', !filtre && 'chip-active')} onClick={() => choose('')}>
+                {t(...texts.all)}
+              </button>
+              {choix.map((v) => (
+                <button key={v} type="button" className={clsx('chip shrink-0', actif === v && 'chip-active')}
+                        onClick={() => choose(v)}>
+                  {label(v, i18n)}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
         {filtre && (

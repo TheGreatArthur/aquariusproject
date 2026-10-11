@@ -13,7 +13,7 @@ const TEXTS = {
   placeholder: ['Néon, Corydoras, Cichlidae, pacifique…', 'Neon, Corydoras, Cichlidae, Betta…',
     'ネオンテトラ、コリドラス、カラシン科、ベタ…'],
   filter: ['Filtrer par famille', 'Filter by family', '科で絞り込む'],
-  all: ['Toutes', 'All', 'すべて'],
+  all: ['Toutes les familles', 'All families', 'すべての科'],
   current: ['Famille :', 'Family:', '科：'],
   remove: ['Retirer le filtre de famille', 'Remove the family filter', '科の絞り込みを解除'],
   error: ['Impossible de charger les poissons. Vérifiez que l\'API est démarrée.',
@@ -31,7 +31,7 @@ const Card = ({ item, priority }) => <FishCard poisson={item} priority={priority
 
 export default function PoissonsCatalogue () {
   return (
-    <Catalogue api="/api/poissons" liste="poissons" param="famille" filterKey="nom_famille"
+    <Catalogue api="/api/poissons" liste="poissons" param="famille" filterKey="nom_famille" select
                options={familles} label={nomFamille} matches={matchesSearch} Card={Card} texts={TEXTS}/>
   );
 }
