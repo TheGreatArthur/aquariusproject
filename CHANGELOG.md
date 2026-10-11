@@ -6,6 +6,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Changed
+- **Species pages rendered on the server** ([ADR 0019](docs/adr/0019-species-pages-rendered-on-the-server.md)):
+  the texts, water parameters and range of every fish, invertebrate and plant are in the HTML instead of being
+  fetched by the browser after a skeleton; the page and its metadata share one API request, and an unknown species
+  answers 404.
+- **One catalogue component** for fish, invertebrates and plants (search, URL filter, pagination), 24 species per
+  page instead of 12, and the 50 fish families in a drop-down list instead of a row of chips.
 - **TypeScript, starting with `lib/`** ([ADR 0016](docs/adr/0016-typescript-incremental-migration.md)): every module
   of `frontend/lib/` (compatibility engine and rules, catalogue helpers, globe, guide texts, languages) is TypeScript
   in strict mode, with shared types in `lib/types.ts`; pages and components stay JavaScript (`allowJs`) until their
