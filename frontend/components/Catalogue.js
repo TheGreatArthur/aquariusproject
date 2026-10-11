@@ -11,7 +11,7 @@ import PageHeader from '@/components/PageHeader';
 import Pagination from '@/components/Pagination';
 import { splitLocale } from '@/lib/i18n';
 
-const PER_PAGE = 12;
+const PER_PAGE = 24;
 
 /**
  * Catalogue d'espèces (poissons, invertébrés, plantes) : recherche, filtre lu dans l'URL, pagination.
