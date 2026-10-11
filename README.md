@@ -8,7 +8,7 @@
 
 ![Home page](docs/screenshots/home.png)
 
-**Live demo:** not deployed yet · **Portfolio page:** coming soon
+**Live demo:** [aquarius-demo.vercel.app](https://aquarius-demo.vercel.app) (API: [aquarius-api.vercel.app](https://aquarius-api.vercel.app/poissons/familles)) · **Portfolio page:** coming soon
 
 ## Features
 
@@ -156,7 +156,8 @@ CI runs the same checks on every pull request and on pushes to `main`.
 
 ## Deployment
 
-The demo runs on Vercel as two projects built from this repository ([ADR 0018](docs/adr/0018-demo-on-vercel.md)):
+The demo runs on Vercel as two projects built from this repository ([ADR 0018](docs/adr/0018-demo-on-vercel.md)),
+[aquarius-demo](https://aquarius-demo.vercel.app) for the site and [aquarius-api](https://aquarius-api.vercel.app) for the API:
 
 | Project | Root directory | Environment variables |
 |---|---|---|
