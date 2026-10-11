@@ -190,6 +190,7 @@ make import && make demo-db   # then commit backend/demo/aquarius.db
 - [0016 — Incremental migration of the front end to TypeScript](docs/adr/0016-typescript-incremental-migration.md)
 - [0017 — Japanese version, translated species data and guide, language menu](docs/adr/0017-japanese-and-translated-content.md)
 - [0018 — Public demo on Vercel, API reading a versioned database snapshot](docs/adr/0018-demo-on-vercel.md)
+- [0019 — Species pages rendered on the server, one catalogue component](docs/adr/0019-species-pages-rendered-on-the-server.md)
 
 ## Roadmap & known limitations
 
