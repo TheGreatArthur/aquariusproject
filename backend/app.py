@@ -6,12 +6,11 @@ Chaque route accepte `?lang=en` ou `?lang=ja` pour les noms communs et les texte
 import os
 from pathlib import Path
 
-from flask import Flask, request
+from flask import Flask
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import func, or_
 
-from models import Poisson, Genre, Famille, Comportement, Invertebre, Plante
+from models import Poisson, Famille, Invertebre, Plante
 from translations import language, translate
 
 # Instantané de la base pour la démo en ligne, ouvert en lecture seule (make demo-db)
@@ -33,25 +32,10 @@ CORS(app)
 
 @app.route('/poissons')
 def poissons():
-    """ Liste des poissons, avec recherche rapide (`q`) ou filtre sur la famille (`famille`)
+    """ Liste des poissons ; la recherche et le filtre par famille se font dans le navigateur, sur cette liste
     """
-    rq = db.select(Poisson)
-    if q := request.args.get('q'):
-        # Filtrage rapide sur le début des noms ; `%` et `_` sont cherchés tels quels
-        rq = rq.join(Famille).join(Genre).join(Comportement).where(
-            or_(
-                Poisson.nom_commun.istartswith(q, autoescape=True),
-                Poisson.nom_scientifique.istartswith(q, autoescape=True),
-                Famille.nom.istartswith(q, autoescape=True),
-                Genre.nom.istartswith(q, autoescape=True),
-                Comportement.nom.istartswith(q, autoescape=True),
-            ))
-    elif fam := request.args.get('famille'):
-        # Filtrage exact sur le nom de la famille, sans tenir compte de la casse
-        rq = rq.join(Famille).where(func.lower(Famille.nom) == fam.lower())
-
     lang = language()
-    return {'poissons': [translate(p.as_dict(), 'fish', lang) for p in db.session.scalars(rq)]}
+    return {'poissons': [translate(p.as_dict(), 'fish', lang) for p in db.session.scalars(db.select(Poisson))]}
 
 
 @app.route('/poissons/<int:id>')

@@ -83,8 +83,7 @@ The data is maintained in an Excel workbook and loaded with `make import`. See t
 
 | Endpoint | Description |
 |---|---|
-| `GET /poissons?q=<prefix>` | Quick search (common/scientific name, family, genus, behaviour) |
-| `GET /poissons?famille=<name>` | Fish of one family |
+| `GET /poissons` | All fish with their family, genus and behaviour names (the site searches and filters this list) |
 | `GET /poissons/<id>` | One fish, including its images |
 | `GET /poissons/familles` | All families, sorted |
 | `GET /invertebres` | All invertebrates with their main photo, sorted by common name |

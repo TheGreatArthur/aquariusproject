@@ -168,6 +168,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - README rewritten in English with architecture diagram and quick start.
 
 ### Removed
+- The API's quick search and family filter on `GET /poissons` (`?q=`, `?famille=`) and their five tests: the
+  site loads the full list once and searches and filters it in the browser, so nothing called them.
 - Cypress, installed but without any test (its binary download was already disabled in CI).
 
 ### Fixed
