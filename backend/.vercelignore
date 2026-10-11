@@ -1,0 +1,12 @@
+# Fichiers inutiles à l'API en ligne (déploiement Vercel depuis ce dossier)
+venv/
+__pycache__/
+.cache/
+.pytest_cache/
+.coverage
+*.xlsx
+/aquarius.db
+tests/
+alembic/
+data/plant_expansion/
+data/invertebrate_expansion/
