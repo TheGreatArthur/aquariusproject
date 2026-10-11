@@ -16,3 +16,10 @@ export async function getSpecies (catalogue: 'poissons' | 'invertebres' | 'plant
     notFound();
   return res?.ok ? res.json() : null;
 }
+
+/** A whole catalogue list read on the server, in the page's language; empty if the API cannot be reached */
+export async function getCatalogue (catalogue: 'poissons' | 'invertebres' | 'plantes'): Promise<ApiItem[]> {
+  const { api } = await getI18n();
+  const res = await fetch(api(`${BACKEND_URL}/${catalogue}`), { next: { revalidate: 3600 } }).catch(() => null);
+  return res?.ok ? (await res.json())[catalogue] : [];
+}

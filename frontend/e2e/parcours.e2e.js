@@ -55,6 +55,18 @@ test('les fiches sont rendues sur le serveur, et une espèce inconnue répond 40
   expect((await request.get('/plantes/999999')).status()).toBe(404);
 });
 
+test('un biotope réunit ses espèces et ouvre son bac d’exemple dans le simulateur', async ({ page }) => {
+  await page.goto('/biotopes');
+  await page.getByRole('link', { name: /Sources et marais de Floride/ }).click();
+
+  await expect(page.getByRole('heading', { level: 1, name: 'Sources et marais de Floride' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'L\'eau', exact: true })).toBeVisible();
+  await page.getByRole('button', { name: 'Ouvrir dans le simulateur' }).click();
+
+  await expect(page).toHaveURL(/\/simulation$/);
+  await expect(page.getByLabel(/Volume/)).toHaveValue('80');
+});
+
 test('le site publie un sitemap avec les fiches', async ({ request }) => {
   const sitemap = await (await request.get('/sitemap.xml')).text();
 
