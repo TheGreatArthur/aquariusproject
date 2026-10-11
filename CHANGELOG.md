@@ -6,6 +6,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Fixed
+- Home page family cards: each photo keeps its fish in view (the angelfish lost its head, the corydoras hid under the
+  text), and the call-to-action banner no longer reuses the American cichlid card's photo.
+- The home globe and the species range maps follow the light theme (map colours are theme tokens).
+- The home globe no longer traps the page on phones (a vertical swipe scrolls, a horizontal one spins, two fingers
+  zoom and turn it) and zooms with ctrl + wheel or trackpad pinch on computers.
 - The simulator no longer scrolls sideways on phones (its two-column grid had no column sizes below `lg`).
 - The home page simulator preview was a French, dark-theme screenshot on every page: it is now the real verdict of an
   example tank, computed by the compatibility engine from the catalogue data, in the page's language and theme.
