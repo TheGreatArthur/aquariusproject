@@ -1,7 +1,7 @@
-import Image from 'next/image';
 import { Droplets, ListChecks, ShieldCheck } from 'lucide-react';
 
 import HomeStats from '@/components/home/HomeStats';
+import SimulatorPreview from '@/components/home/SimulatorPreview';
 import Reveal from '@/components/Reveal';
 import { getI18n } from '@/lib/i18n-server';
 
@@ -66,18 +66,9 @@ export default async function HowItWorks () {
           </Reveal>
         </div>
 
-        {/* Capture réelle du simulateur : l'eau saisie et le verdict d'une population */}
+        {/* Bac d'exemple évalué par le moteur du simulateur */}
         <Reveal delay={0.1} className="mx-auto w-full max-w-sm lg:max-w-none">
-          <Image
-            src="/simulateur-apercu.webp"
-            alt={t('Le simulateur : eau d\'un bac de 200 litres et verdict « compatible, avec des points à surveiller »',
-              'The simulator: water of a 200-litre tank and the verdict "compatible, with points to watch"',
-              'シミュレーター：200リットル水槽の水質と「相性良好、ただし注意点あり」の判定')}
-            width={768}
-            height={1184}
-            sizes="(min-width: 1024px) 26rem, 24rem"
-            className="h-auto w-full rounded-2xl border border-border"
-          />
+          <SimulatorPreview/>
         </Reveal>
       </div>
     </section>
