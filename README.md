@@ -154,6 +154,21 @@ species page and through the simulator and its alerts.
 
 CI runs the same checks on every pull request and on pushes to `main`.
 
+## Deployment
+
+The demo runs on Vercel as two projects built from this repository ([ADR 0018](docs/adr/0018-demo-on-vercel.md)):
+
+| Project | Root directory | Environment variables |
+|---|---|---|
+| Site (Next.js) | `frontend` | `BACKEND_URL` = the API's address, `NEXT_PUBLIC_SITE_URL` = the site's address, optional `NEXT_PUBLIC_EMAILJS_*` |
+| API (Flask) | `backend` | none: without `config.py`, the API reads the snapshot `backend/demo/aquarius.db` |
+
+Both redeploy on every push to `main`. When the data changes, refresh the snapshot before merging:
+
+```bash
+make import && make demo-db   # then commit backend/demo/aquarius.db
+```
+
 ## Architecture decisions
 
 - [0001 — Next.js front end + Flask API](docs/adr/0001-tech-stack.md)
@@ -173,10 +188,10 @@ CI runs the same checks on every pull request and on pushes to `main`.
 - [0015 — English version under /en and a light theme](docs/adr/0015-english-version-and-light-theme.md)
 - [0016 — Incremental migration of the front end to TypeScript](docs/adr/0016-typescript-incremental-migration.md)
 - [0017 — Japanese version, translated species data and guide, language menu](docs/adr/0017-japanese-and-translated-content.md)
+- [0018 — Public demo on Vercel, API reading a versioned database snapshot](docs/adr/0018-demo-on-vercel.md)
 
 ## Roadmap & known limitations
 
-- [ ] Deploy a public demo
 - Species texts exist in three languages: a correction must be made in each (`backend/data/i18n/`, `content/cours/`).
 - Compatibility rules run in the browser and are indicative, not expert advice.
 
