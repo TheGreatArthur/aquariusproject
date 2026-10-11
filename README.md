@@ -28,7 +28,7 @@
   ([ADR 0009](docs/adr/0009-plants-scraped-data-and-free-photos.md)). The pages are built like the fish ones, with
   a range map of the native countries (World Checklist of Vascular Plants, Kew), the countries where the plant was
   introduced, and GBIF observations ([ADR 0013](docs/adr/0013-plants-like-fish-native-range.md)).
-- **World globe** on the home page — turn it in any direction, pick one of the 121 freshwater ecoregions where the
+- **World globe** on the home page — turn it in any direction, pick one of the 182 freshwater ecoregions where the
   catalogue fish live (Rio Negro, Lake Malawi, Mekong Delta…) and see its species and their observations
   ([ADR 0010](docs/adr/0010-home-globe-freshwater-ecoregions.md)).
 - **Instant search** by common name, scientific name, family, genus or behaviour (accents ignored), plus a

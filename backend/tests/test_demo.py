@@ -21,6 +21,15 @@ def test_snapshot_is_versioned_and_filled():
             assert connexion.execute(text(f'SELECT count(*) FROM {table}')).scalar() > 0, table
 
 
+@pytest.mark.parametrize('table', ['poisson', 'plante', 'invertebre'])
+def test_snapshot_common_names_are_unique(table):
+    # Deux espèces du même nom ne se distinguent pas dans la liste du simulateur
+    with create_engine(DEMO_DSN).connect() as connexion:
+        doublons = connexion.execute(text(
+            f'SELECT lower(nom_commun) FROM {table} GROUP BY lower(nom_commun) HAVING count(*) > 1')).scalars().all()
+    assert doublons == []
+
+
 def test_snapshot_is_read_only():
     with create_engine(DEMO_DSN).connect() as connexion, pytest.raises(OperationalError):
         connexion.execute(text('CREATE TABLE essai (x INTEGER)'))

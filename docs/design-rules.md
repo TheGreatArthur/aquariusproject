@@ -27,8 +27,9 @@ to every new page or component.
 ## Layout
 - The home hero holds four elements at most: eyebrow, headline (two lines on desktop), one sentence of
   subtext, two buttons.
-- Use real visuals: fish photos or real screenshots of the app (`public/simulateur-apercu.webp`), never
-  mock-ups built from divs.
+- Use real visuals: fish photos, or the app's own components fed with real data (the home page simulator preview
+  runs the compatibility engine on an example tank, so it follows the language and the theme), never mock-ups
+  built from divs or screenshots that only exist in one language and theme.
 - Grids are designed for phones too: two columns of fish cards and families below 640 px, and no empty
   cell in the family mosaic at any width.
 - Labels go in the card body, not as pills over photos.

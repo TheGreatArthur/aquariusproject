@@ -35,7 +35,7 @@ export const cardinalis = (q = 10) => fish({
 });
 
 export const neon = (q = 10) => fish({
-  id: 3, nom_commun: 'Néon Bleu', taille: 3, nb_individus: 10, points: 5, litrage_mini: 80,
+  id: 3, nom_commun: 'Néon bleu', taille: 3, nb_individus: 10, points: 5, litrage_mini: 80,
   ph_mini: 6, ph_maxi: 7.2, gh_mini: 4, gh_maxi: 10, temp_mini: 20, temp_maxi: 26, quantite: q,
 });
 
