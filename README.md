@@ -51,7 +51,9 @@
 - **Practical guide** — six French courses (nitrogen cycle, water parameters, equipment, plants and decor,
   maintenance, introducing and feeding fish) with diagrams computed from published formulas, two calculators
   (free ammonia, equipment for a given volume) and the sources of every figure.
-- **Contact form** sent through EmailJS.
+- **Contact form** posted to the API, which mails it over SMTP straight to the publisher's own mail server: no
+  third-party form service, no credentials in the browser, a honeypot against bots
+  ([ADR 0022](docs/adr/0022-contact-form-through-the-api.md)). Terms of use, legal notice and privacy policy at `/cgu`.
 
 | Fish list | Fish detail | Simulator |
 |---|---|---|
@@ -94,11 +96,12 @@ The data is maintained in an Excel workbook and loaded with `make import`. See t
 | `GET /invertebres/<id>` | One invertebrate, with its profile, photo credits and sources |
 | `GET /plantes` | All plants with their main photo, sorted by common name |
 | `GET /plantes/<id>` | One plant, with its texts, photo credits, sources, native and introduced countries and map points |
+| `POST /contact` | Contact form message (JSON: `nom`, `prenom`, `email`, `sujet`, `message`), mailed over SMTP; 400 with the invalid fields, 503 when no mail server is configured |
 
 ## Tech stack
 
 - **Front end:** Next.js 16, React 19, TypeScript (`lib/`, strict) and JavaScript, Tailwind CSS, Framer Motion,
-  lucide-react, SWR, react-hook-form, EmailJS
+  lucide-react, SWR, react-hook-form
 - **Back end:** Python 3.11, Flask, SQLAlchemy 2, Alembic, openpyxl; BeautifulSoup and Pillow for the data tools
 - **Quality:** pytest + pytest-cov, ruff, Vitest, ESLint, Playwright, GitHub Actions
 
@@ -139,7 +142,7 @@ Run `make help` for all commands. Configuration:
 | `AQUARIUS_DSN` | backend | `sqlite:///backend/aquarius.db` |
 | `AQUARIUS_EXCEL_FILE` | backend | `backend/db.xlsx` |
 | `BACKEND_URL` | `frontend/.env.local` | `http://localhost:5001` |
-| `NEXT_PUBLIC_EMAILJS_*` | `frontend/.env.local` | empty (contact form disabled) |
+| `CONTACT_SMTP_HOST`, `CONTACT_SMTP_PORT`, `CONTACT_SMTP_USER`, `CONTACT_SMTP_PASSWORD`, `CONTACT_TO`, `CONTACT_FROM` | backend (environment) | empty: the contact form answers that it is not connected yet. Port 465 (TLS, default) or 587 (STARTTLS); `CONTACT_FROM` defaults to the SMTP user |
 | `NEXT_PUBLIC_SITE_URL` | front-end build | `http://localhost:3000` (canonical URL of the sitemap and share images) |
 
 ## Tests
@@ -164,8 +167,8 @@ The demo runs on Vercel as two projects built from this repository ([ADR 0018](d
 
 | Project | Root directory | Environment variables |
 |---|---|---|
-| Site (Next.js) | `frontend` | `BACKEND_URL` = the API's address, `NEXT_PUBLIC_SITE_URL` = the site's address, optional `NEXT_PUBLIC_EMAILJS_*` |
-| API (Flask) | `backend` | none: without `config.py`, the API reads the snapshot `backend/demo/aquarius.db` |
+| Site (Next.js) | `frontend` | `BACKEND_URL` = the API's address, `NEXT_PUBLIC_SITE_URL` = the site's address |
+| API (Flask) | `backend` | the `CONTACT_*` mail server settings above; without `config.py`, the API reads the snapshot `backend/demo/aquarius.db` |
 
 Both redeploy on every push to `main`. When the data changes, refresh the snapshot before merging:
 
@@ -196,6 +199,7 @@ make import && make demo-db   # then commit backend/demo/aquarius.db
 - [0019 — Species pages rendered on the server, one catalogue component](docs/adr/0019-species-pages-rendered-on-the-server.md)
 - [0020 — Biotopes: natural habitats grouping species, written as data from published measurements](docs/adr/0020-biotopes.md)
 - [0021 — Biotope tank videos from YouTube, loaded on click, and five more habitats](docs/adr/0021-biotope-videos-and-more-habitats.md)
+- [0022 — Contact form sent by the API over SMTP to the publisher's mail server](docs/adr/0022-contact-form-through-the-api.md)
 
 ## Roadmap & known limitations
 
