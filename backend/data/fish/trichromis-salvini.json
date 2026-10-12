@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Trichromis salvini",
+  "nom_commun": "Cichlidé de Salvin",
+  "famille": "Cichlidae américain",
+  "genre": "Trichromis",
+  "zone_geo": "Amérique centrale",
+  "type_eau": "douce",
+  "ph_mini": 6.5,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 8.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 22,
+  "temp_maxi": 26,
+  "taille": 15.0,
+  "litrage_mini": 130,
+  "nb_individus": 2,
+  "points": 20,
+  "regime": "omnivore à tendance carnivore",
+  "mode_vie": "couple",
+  "comportement": "agressif",
+  "robustesse": "robuste",
+  "dispo": "courant",
+  "longevite": 12,
+  "courant": "modéré",
+  "photos": [
+    "File:Salvini4a.jpg",
+    "File:Fich2-4.jpg",
+    "File:Salpui3.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/cichlasoma-salvini/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Trichromis-salvini.html"
+    }
+  ]
+}

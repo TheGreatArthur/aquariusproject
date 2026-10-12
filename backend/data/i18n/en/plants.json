@@ -35,6 +35,12 @@
     "presentation": "Long leaves with wavy edges give this plant from Sri Lanka a supple, voluminous outline. In nature it lives in seasonal pools, but in the aquarium it can keep growing without an enforced rest. It flowers readily and suits planting alone or in a group in the background.",
     "culture": "Set aside a fairly large tank: the leaves can reach the surface and shade their neighbours. A nutrient-rich substrate and enough light help it grow; added CO₂ is not essential. Remove damaged leaves at their base. It is propagated by division or by seed."
   },
+  "Aponogeton natans": {
+    "nom_commun": "Floating aponogeton",
+    "origine": "India, Sri Lanka, Bangladesh and Myanmar: ponds, marshes and rice fields",
+    "presentation": "An aponogeton from South Asia that grows in ponds, marshes, rice fields and the still waters of Kerala's backwaters. As its name says (*natans*, \"swimming\"), it bears oval floating leaves on long petioles as well as submerged leaves.\n\nIt regrows each year from a small tuber. Its single white to pink flower spike rises above the water.",
+    "culture": "Easy, it grows quickly from the tuber under medium light. The floating leaves shade the tank: trim them to keep light for the other plants.\n\nAfter a few months of growth it often goes dormant and loses its leaves; leave the tuber in place, or keep it a few weeks somewhere cool before replanting it."
+  },
   "Bacopa australis": {
     "nom_commun": "Bacopa australis",
     "origine": "Tropical South America, southern South America",
@@ -184,6 +190,18 @@
     "origine": "Southeast Asia",
     "presentation": "This large bulbous plant grows long, smooth, ribbon-like leaves. Its root system becomes extensive in the substrate, while the foliage gradually takes up a lot of volume. It suits a spot where its outline can stay visible without being squeezed between groups of plants.",
     "culture": "Allow room in the substrate and around the plant. It is propagated by separating the young bulbs that appear at the base of the main bulb. Before replanting these young plants, the source recommends shortening their long roots. Its slow growth calls for patience rather than frequent moves."
+  },
+  "Cryptocoryne longicauda": {
+    "nom_commun": "Cryptocoryne longicauda",
+    "origine": "Borneo (Sarawak), southern Malay Peninsula (Johor) and Sumatra: acidic forest streams",
+    "presentation": "An aroid discovered in Sarawak by the Italian naturalist Odoardo Beccari and named in 1879; it was also described as *C. caudata* (Sarawak) and *C. johorensis* (Johor), now its synonyms. The plants sold under this name in the 1950s and 1960s actually belonged to another species, *C. fusca*.\n\nIt grows in shallow water in forest streams and rivers with acidic water, where it forms dense stands on mud or sandy loam, both submerged and emersed. Its most striking feature is its spathe: a cup-shaped, dark purple, wrinkled limb extended into a \"tail\" up to 20 cm long (*longicauda*, \"long-tailed\").",
+    "culture": "Rare in cultivation, it needs soft, acidic water (pH 5 to 6, 2 to 5 °dGH), warmth (26 to 28 °C) and low light. It grows slowly and prefers an old aquarium with a substrate rich in organic matter; crypt enthusiasts often grow it emersed, in pots.\n\nIt spreads by runners. Like other crypts, it may lose its leaves after a sudden change before regrowing from the rhizome."
+  },
+  "Cryptocoryne spiralis": {
+    "nom_commun": "Cryptocoryne spiralis",
+    "origine": "India: Western Ghats and Deccan Plateau, marshes and monsoon-flooded rivers",
+    "presentation": "An aroid endemic to India, mainly the west and south of the country. It owes its name to its spathe, whose limb is twisted into a spiral, a feature unique to the species.\n\nIt grows in marshes and on riverbanks flooded by the monsoon. When they dry out, the plant loses all its leaves and survives on the reserves of its buried rhizome, then regrows with the rains. Its lanceolate leaves are very variable: red petioles, wavy margins or entirely green forms.",
+    "culture": "Hardy, it tolerates hard water and grows slowly under medium light, in a rich substrate. Its long, narrow leaves suit the midground or the back of a small tank.\n\nA plant bought grown out of water often loses its leaves before adapting. In an aquarium, with no dry season, it grows all year round."
   },
   "Cryptocoryne wendtii": {
     "nom_commun": "Wendt's water trumpet",
@@ -418,6 +436,12 @@
     "origine": "North America, Central America, Caribbean",
     "presentation": "Its habit mixes that of a stem plant and a rosette: tufts of fine leaves appear at regular intervals along the shoots. Green under moderate light, this rush can take on reddish tones with more light and good feeding. It brings a grassy texture to the stand.",
     "culture": "It accepts several light levels and its steady growth stays fairly easy to control. Replant a piece of stem cut below a tuft of leaves; it does not need to have roots already. Trimming lets you use it at the back, in the middle or even lower in the tank. Watch for spot algae on its long-lived leaves."
+  },
+  "Lagenandra meeboldii": {
+    "nom_commun": "Lagenandra meeboldii",
+    "origine": "Southwestern India (Kerala, Karnataka): shaded, marshy banks of Western Ghats rivers",
+    "presentation": "An aroid from southwestern India, related to the crypts, that grows on the shaded, marshy banks of rivers in Kerala and Karnataka, up to 1,200 m above sea level. It is often out of the water and becomes submerged when the rivers rise during the monsoon.\n\nThe species is very variable: the red form grown in Europe has oval leaves with a slightly heart-shaped base, reddish brown to pink; other forms are green or have longer leaves. These plants were long kept only in paludariums, until it turned out that the red form also grows fully submerged.",
+    "culture": "Slow but easy, it needs medium to strong light, soft to moderately hard water (pH 6 to 7.5) between 22 and 26 °C, and a rich substrate; CO₂ helps it keep its colours. Place it in the midground or as a specimen plant.\n\nIt is propagated by dividing the rhizome or separating offshoots; it also grows very well out of the water, in a paludarium."
   },
   "Lemna trisulca": {
     "nom_commun": "Star duckweed",

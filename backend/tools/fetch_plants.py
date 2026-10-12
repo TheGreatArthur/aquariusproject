@@ -71,6 +71,7 @@ USAGES = {
 MULTIPLICATIONS = {
     'Splitting, cutting off daughter plants': 'séparation des rejets',
     'Rhizomteilung': 'division du rhizome',
+    'Rhizome division': 'division du rhizome',
     'Proliferating leaves': 'plantules sur les feuilles',
     'Proliferating roots': 'plantules sur les racines',
     'Proliferating inflorescences': 'plantules sur la hampe florale',

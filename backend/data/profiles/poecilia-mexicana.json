@@ -1,0 +1,34 @@
+{
+  "nom_scientifique": "Poecilia mexicana",
+  "nom_valide": null,
+  "auteur": "Steindachner, 1863",
+  "classification": "Cyprinodontiformes › Poeciliidae",
+  "uicn": "LC",
+  "repartition": "Versant atlantique de l'Amérique centrale, du Mexique (río San Juan) au Guatemala, au Belize et jusqu'au Costa Rica ; introduit dans plusieurs îles du Pacifique",
+  "pays": [
+    "BLZ",
+    "CRI",
+    "GTM",
+    "MEX",
+    "NIC"
+  ],
+  "emprise": [
+    -99.5,
+    13.5,
+    -86.0,
+    26.5
+  ],
+  "presentation": "Décrit en 1863 par Franz Steindachner, ce molly a longtemps été confondu avec *Poecilia sphenops*, dont il n'a été séparé à nouveau qu'en 1973 : ses dents internes n'ont qu'une pointe, contre trois chez *P. sphenops*. Il varie beaucoup de forme et de couleur selon les populations.\n\nLes femelles, plus trapues, dépassent 9 cm ; les mâles, plus fins, existent en plusieurs tailles adultes. Deux populations vivent dans des grottes aux eaux chargées d'hydrogène sulfuré, dans le Tabasco, et comptent parmi les poissons cavernicoles les mieux étudiés. Son croisement avec un autre molly a donné naissance au molly amazone (*P. formosa*), une espèce composée uniquement de femelles.",
+  "habitat": "Il vit dans des eaux peu profondes, calmes ou stagnantes, douces ou saumâtres : sources chaudes et leurs ruisseaux, canaux, fossés envahis d'herbes, mares de rivières, et jusque dans les cenotes du Yucatán.\n\nIl broute surtout les algues et les détritus qui couvrent le fond et les plantes.",
+  "comportement": "Paisible, il vit en groupe ; les mâles se disputent les femelles sans se blesser. On le garde avec un ou deux mâles pour plusieurs femelles, dans une eau dure et alcaline, avec d'autres poissons calmes de son milieu (porte-épées, platys, petits cichlidés comme *Thorichthys meeki*).\n\nVivipare, la femelle donne naissance à des alevins déjà formés. Il lui faut une part de nourriture végétale (algues, spiruline) en plus des petites proies.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Poecilia-mexicana.html"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/8400492"
+    }
+  ]
+}

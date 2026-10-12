@@ -572,6 +572,83 @@
       }
     ]
   },
+  "aponogeton-natans": {
+    "flowgrow": {
+      "url": "https://www.flowgrow.de/db/aquaticplants/aponogeton-natans",
+      "ph_mini": 5,
+      "ph_maxi": 8,
+      "kh_mini": 2,
+      "kh_maxi": 14,
+      "temp_mini": 20,
+      "temp_maxi": 31,
+      "temp_opti_mini": 20,
+      "temp_opti_maxi": 31,
+      "co2_mini": 0,
+      "co2_maxi": 40,
+      "lumiere_mini": "moyenne",
+      "lumiere_maxi": "forte",
+      "difficulte": "moyenne",
+      "croissance": "rapide",
+      "positions": [
+        "arrière-plan",
+        "plan intermédiaire"
+      ],
+      "usages": [],
+      "multiplication": [
+        "graines"
+      ],
+      "type": "rosette",
+      "emergee": false,
+      "ordre": "Alismatales",
+      "famille": "Aponogetonaceae",
+      "regions": "South Asia"
+    },
+    "gbif": {
+      "url": "https://www.gbif.org/species/5328578",
+      "statut": "ACCEPTED",
+      "auteur": "(L.) Engl. & K.Krause",
+      "ordre": "Alismatales",
+      "famille": "Aponogetonaceae",
+      "taxon": 5328578,
+      "embranchement": "Tracheophyta",
+      "uicn": "LC"
+    },
+    "aire": {
+      "source": "POWO",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:82958-1",
+      "nom": "Aponogeton natans",
+      "natif": [
+        "BGD",
+        "IND",
+        "LKA",
+        "MMR"
+      ],
+      "introduit": []
+    },
+    "photos": [
+      {
+        "fichier": "aponogeton-natans-1.jpg",
+        "auteur": "Yercaud-elango",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Aponogeton_natans-1-JNTBGRI-palode-kerala-India.jpg"
+      },
+      {
+        "fichier": "aponogeton-natans-2.jpg",
+        "auteur": "Wiethase",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Aponogeton_natans.JPG"
+      },
+      {
+        "fichier": "aponogeton-natans-3.jpg",
+        "auteur": "Lalithamba from India",
+        "licence": "CC BY 2.0",
+        "licence_url": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Aponogeton_natans(L.)_Engl.%5E_K.Kraus_-_Flickr_-_lalithamba.jpg"
+      }
+    ]
+  },
   "bacopa-australis": {
     "flowgrow": {
       "url": "https://www.flowgrow.de/db/aquaticplants/bacopa-australis",
@@ -3232,6 +3309,157 @@
         "licence_url": "https://creativecommons.org/licenses/by/4.0/",
         "source": "https://www.inaturalist.org/photos/329658069",
         "fichier": "crinum-thaianum-3.jpg"
+      }
+    ]
+  },
+  "cryptocoryne-longicauda": {
+    "flowgrow": {
+      "url": "https://www.flowgrow.de/db/aquaticplants/cryptocoryne-longicauda",
+      "ph_mini": 5,
+      "ph_maxi": 6,
+      "temp_mini": 25,
+      "temp_maxi": 30,
+      "temp_opti_mini": 26,
+      "temp_opti_maxi": 28,
+      "hauteur_mini": 20,
+      "hauteur_maxi": 50,
+      "lumiere_mini": "faible",
+      "lumiere_maxi": "moyenne",
+      "difficulte": "difficile",
+      "croissance": "lente",
+      "positions": [],
+      "usages": [],
+      "multiplication": [
+        "stolons"
+      ],
+      "type": "rosette",
+      "emergee": true,
+      "ordre": "Alismatales",
+      "famille": "Araceae",
+      "regions": "Southeast Asia"
+    },
+    "gbif": {
+      "url": "https://www.gbif.org/species/2869206",
+      "statut": "ACCEPTED",
+      "auteur": "Becc. ex Engl.",
+      "ordre": "Alismatales",
+      "famille": "Araceae",
+      "taxon": 2869206,
+      "embranchement": "Tracheophyta",
+      "uicn": "NT"
+    },
+    "aire": {
+      "source": "POWO",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:86710-1",
+      "nom": "Cryptocoryne longicauda",
+      "natif": [
+        "BRN",
+        "IDN",
+        "MYS",
+        "SGP"
+      ],
+      "introduit": []
+    },
+    "photos": [
+      {
+        "fichier": "cryptocoryne-longicauda-1.jpg",
+        "auteur": "Bernard DUPONT from FRANCE",
+        "licence": "CC BY-SA 2.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Aquatic_Aroids_(Cryptocoryne_longicauda)_(22721883354).jpg"
+      },
+      {
+        "fichier": "cryptocoryne-longicauda-2.jpg",
+        "auteur": "Bernard DUPONT from FRANCE",
+        "licence": "CC BY-SA 2.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Aquatic_Aroids_(Cryptocoryne_longicauda)_(23349905845).jpg"
+      },
+      {
+        "fichier": "cryptocoryne-longicauda-3.jpg",
+        "auteur": "Xema Romero",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Inflorescencia.jpg"
+      }
+    ]
+  },
+  "cryptocoryne-spiralis": {
+    "flowgrow": {
+      "url": "https://www.flowgrow.de/db/aquaticplants/cryptocoryne-spiralis-var-spiralis",
+      "ph_mini": 5,
+      "ph_maxi": 8,
+      "kh_mini": 2,
+      "kh_maxi": 20,
+      "temp_mini": 20,
+      "temp_maxi": 30,
+      "temp_opti_mini": 23,
+      "temp_opti_maxi": 28,
+      "co2_mini": 10,
+      "co2_maxi": 40,
+      "lumiere_mini": "faible",
+      "lumiere_maxi": "forte",
+      "difficulte": "facile",
+      "croissance": "moyenne",
+      "positions": [
+        "arrière-plan",
+        "plan intermédiaire"
+      ],
+      "usages": [
+        "plante isolée"
+      ],
+      "multiplication": [
+        "stolons",
+        "division du rhizome",
+        "séparation des rejets"
+      ],
+      "type": "rosette",
+      "emergee": true,
+      "ordre": "Alismatales",
+      "famille": "Araceae",
+      "regions": "South Asia"
+    },
+    "gbif": {
+      "url": "https://www.gbif.org/species/2869170",
+      "statut": "ACCEPTED",
+      "auteur": "(Retz.) Fisch. ex Wydler",
+      "ordre": "Alismatales",
+      "famille": "Araceae",
+      "taxon": 2869170,
+      "embranchement": "Tracheophyta",
+      "uicn": "LC"
+    },
+    "aire": {
+      "source": "POWO",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:86733-1",
+      "nom": "Cryptocoryne spiralis",
+      "natif": [
+        "BGD",
+        "IND"
+      ],
+      "introduit": []
+    },
+    "photos": [
+      {
+        "fichier": "cryptocoryne-spiralis-1.jpg",
+        "auteur": "Ruppia2000",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Fig._06_Cryptocoryne_spiralis.jpg"
+      },
+      {
+        "fichier": "cryptocoryne-spiralis-2.jpg",
+        "auteur": "Kephalian",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cryptocorne_spiralis_var_spiralis_submerged_growth.jpg"
+      },
+      {
+        "auteur": "S. More",
+        "licence": "CC0 1.0",
+        "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://www.inaturalist.org/photos/56273184",
+        "fichier": "cryptocoryne-spiralis-3.jpg"
       }
     ]
   },
@@ -7402,6 +7630,85 @@
         "licence_url": "https://creativecommons.org/licenses/by/4.0/",
         "source": "https://www.inaturalist.org/photos/504569100",
         "fichier": "juncus-repens-3.jpg"
+      }
+    ]
+  },
+  "lagenandra-meeboldii": {
+    "flowgrow": {
+      "url": "https://www.flowgrow.de/db/aquaticplants/lagenandra-meeboldii-rot-red",
+      "ph_mini": 6,
+      "ph_maxi": 7.5,
+      "kh_mini": 0,
+      "kh_maxi": 14,
+      "temp_mini": 12,
+      "temp_maxi": 28,
+      "temp_opti_mini": 22,
+      "temp_opti_maxi": 26,
+      "hauteur_mini": 10,
+      "hauteur_maxi": 20,
+      "co2_mini": 15,
+      "co2_maxi": 40,
+      "lumiere_mini": "moyenne",
+      "lumiere_maxi": "forte",
+      "difficulte": "facile",
+      "croissance": "lente",
+      "positions": [
+        "plan intermédiaire"
+      ],
+      "usages": [
+        "accent coloré",
+        "plante isolée"
+      ],
+      "multiplication": [
+        "division du rhizome",
+        "séparation des rejets"
+      ],
+      "type": "rosette",
+      "emergee": true,
+      "ordre": "Alismatales",
+      "famille": "Araceae",
+      "regions": "South Asia"
+    },
+    "gbif": {
+      "url": "https://www.gbif.org/species/2870421",
+      "statut": "ACCEPTED",
+      "auteur": "(Engl.) C.E.C.Fisch.",
+      "ordre": "Alismatales",
+      "famille": "Araceae",
+      "taxon": 2870421,
+      "embranchement": "Tracheophyta",
+      "uicn": "NE"
+    },
+    "aire": {
+      "source": "POWO",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:87401-1",
+      "nom": "Lagenandra meeboldii",
+      "natif": [
+        "IND"
+      ],
+      "introduit": []
+    },
+    "photos": [
+      {
+        "fichier": "lagenandra-meeboldii-1.jpg",
+        "auteur": "Krzysztof Ziarnek, Kenraiz",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Lagenandra_meeboldii_kz01.jpg"
+      },
+      {
+        "fichier": "lagenandra-meeboldii-2.jpg",
+        "auteur": "Yercaud-elango",
+        "licence": "CC BY 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Lagenandra_meeboldii-1-veda_aquarium-bengaluru-India.jpg"
+      },
+      {
+        "fichier": "lagenandra-meeboldii-3.jpg",
+        "auteur": "Yercaud-elango",
+        "licence": "CC BY 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Lagenandra_meeboldii-3-veda_aquarium-bengaluru-India.jpg"
       }
     ]
   },

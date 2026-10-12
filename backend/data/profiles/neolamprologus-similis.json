@@ -1,0 +1,29 @@
+{
+  "nom_scientifique": "Neolamprologus similis",
+  "nom_valide": null,
+  "auteur": "Büscher, 1992",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "NE",
+  "repartition": "Endémique du lac Tanganyika : sud du lac, côtes de la république démocratique du Congo et de la Tanzanie",
+  "pays": [
+    "COD",
+    "TZA"
+  ],
+  "presentation": "Décrit en 1992 par l'ichthyologiste suisse Heinz Büscher, ce petit lamprologue ne dépasse pas 5 cm. Son corps cuivré est barré de bandes verticales claires qui remontent jusque sur la tête et la nuque ; c'est ce qui le distingue de *N. multifasciatus*, plus petit, dont les bandes paraissent sombres.\n\nLes mâles sont nettement plus grands que les femelles et développent parfois une petite bosse frontale. Chaque femelle pond dans l'entrée d'une coquille vide, puis garde seule ses œufs et ses alevins.",
+  "habitat": "Il vit sur les grands lits de coquilles vides d'escargots (*Neothauma*) qui couvrent le fond sableux du lac, entre 10 et 45 m de profondeur, et plus rarement parmi les éboulis rocheux au-delà de 25 m. Il préfère nettement les coquilles aux cavités entre les pierres.\n\nL'eau y est celle du lac : très minéralisée, alcaline (pH proche de 9) et stable, entre 24 et 27 °C. Il se nourrit de minuscules crustacés (copépodes, ostracodes), de larves d'insectes et de filaments d'algues.",
+  "comportement": "Il vit en colonie : chaque poisson défend avec acharnement un territoire de quelques centimètres autour de sa coquille, au point de mordre la main de l'aquariophile. On lui donne beaucoup plus de coquilles que de poissons et plus de femelles que de mâles ; un mâle s'accouple souvent avec plusieurs femelles.\n\nIl cohabite avec des Tanganyikais qui occupent d'autres zones du bac : petits poissons des roches (*Neolamprologus brichardi*, petits *Julidochromis*) et poissons de pleine eau comme *Cyprichromis*. Proies vivantes ou congelées de préférence ; les aliments secs ne suffisent pas.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Neolamprologus-similis.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/neolamprologus-similis/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/2371819"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "nom_scientifique": "Cryptocoryne spiralis",
+  "nom_commun": "Cryptocoryne spiralis",
+  "flowgrow": "cryptocoryne-spiralis-var-spiralis",
+  "photos": [
+    "File:Fig. 06 Cryptocoryne spiralis.jpg",
+    "File:Cryptocorne spiralis var spiralis submerged growth.jpg"
+  ],
+  "origine": "Inde : Ghâts occidentaux et plateau du Deccan, marais et rivières à crue de mousson",
+  "presentation": "Aracée endémique de l'Inde, surtout de l'ouest et du sud du pays. Elle doit son nom à sa spathe, dont le limbe s'enroule en spirale, un caractère propre à l'espèce.\n\nElle pousse dans les marais et sur les berges des rivières que la mousson inonde. Quand ils s'assèchent, la plante perd toutes ses feuilles et survit grâce aux réserves de son rhizome enterré, puis repart avec les pluies. Ses feuilles lancéolées sont très variables : pétioles rouges, bords ondulés ou formes entièrement vertes.",
+  "culture": "Robuste, elle tolère une eau dure et pousse lentement sous une lumière moyenne, dans un sol riche. Ses longues feuilles étroites conviennent au plan intermédiaire ou à l'arrière d'un petit bac.\n\nUne plante achetée cultivée hors de l'eau perd souvent ses feuilles avant de s'adapter. En aquarium, sans saison sèche, elle pousse toute l'année.",
+  "sources": [
+    {
+      "nom": "Wikipédia (en) : Cryptocoryne spiralis",
+      "url": "https://en.wikipedia.org/wiki/Cryptocoryne_spiralis"
+    }
+  ],
+  "photos_externes": [
+    {
+      "source": "https://www.inaturalist.org/photos/56273184",
+      "occurrence": "https://www.gbif.org/occurrence/2460044181",
+      "url_original": "https://inaturalist-open-data.s3.amazonaws.com/photos/56273184/original.jpeg"
+    }
+  ]
+}

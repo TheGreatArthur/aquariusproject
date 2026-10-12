@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Trichromis salvini",
+  "nom_valide": null,
+  "auteur": "(Günther, 1862)",
+  "classification": "Cichliformes › Cichlidae",
+  "uicn": "LC",
+  "repartition": "Versant atlantique du sud du Mexique, du Guatemala et du Belize (dont le bassin de l'Usumacinta) ; introduit dans le sud de la Floride",
+  "pays": [
+    "BLZ",
+    "GTM",
+    "MEX"
+  ],
+  "presentation": "Seul représentant du genre *Trichromis*, créé en 2015 ; les analyses génétiques en font un proche parent des cichlidés à gorge de feu (*Thorichthys*). Il est dédié au naturaliste britannique Osbert Salvin, qui explora le Guatemala au XIXe siècle.\n\nSon corps jaune porte deux rangées de taches noires cerclées de bleu, et son ventre est rouge, surtout chez la femelle prête à pondre. La femelle, plus petite, a aussi une tache sombre au milieu de la dorsale et une autre au bas de l'opercule ; le mâle a des nageoires plus longues et pointues.",
+  "habitat": "Il vit dans les rivières et les lagunes côtières de basse altitude, et préfère les eaux à courant modéré à rapide du cours inférieur et moyen des vallées. Contrairement à beaucoup de cichlidés de la région, il chasse volontiers en plein chenal.\n\nC'est un prédateur d'invertébrés aquatiques et de petits poissons, qu'il saisit près du fond.",
+  "comportement": "Agressif pour sa taille et très territorial, surtout en période de reproduction, il mange tout poisson qui tient dans sa bouche. On ne l'associe qu'à des cichlidés d'Amérique centrale de même taille et de même caractère, avec de nombreuses cachettes et un espace de nage dégagé, sur fond de sable.\n\nUn couple se forme mieux en élevant un groupe de jeunes. La femelle pond jusqu'à 500 œufs sur des pierres nettoyées et les deux parents gardent longtemps les alevins. Il accepte toutes les nourritures, des granulés aux proies vivantes et congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Trichromis-salvini.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/cichlasoma-salvini/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/9321404"
+    }
+  ]
+}
