@@ -52,10 +52,16 @@ function extent (points, countries) {
   };
 }
 
-// Remplissage et contour des pays d'origine, des pays d'introduction (plantes) et des autres pays
-const FILL = { native: 'rgba(45, 212, 191, 0.13)', introduced: 'rgba(251, 191, 36, 0.10)', other: '#0d1a26' };
-const STROKE = { native: 'rgba(94, 234, 212, 0.45)', introduced: 'rgba(251, 191, 36, 0.4)', other: '#1c2e40' };
-const GLOBE_FILL = { native: '#2DD4BF', introduced: '#FBBF24', other: '#1a2c3d' };
+// Remplissage et contour des pays d'origine, des pays d'introduction (plantes) et des autres pays,
+// en couleurs du thème (app/theme.css) pour suivre le thème clair. La teinte est mélangée à la couleur des terres :
+// transparente, elle laissait voir la mer et les pays d'origine ressemblaient à de l'eau
+const FILL = {
+  native: 'fill-[color-mix(in_srgb,rgb(var(--color-accent))_13%,rgb(var(--color-map-land)))]',
+  introduced: 'fill-[color-mix(in_srgb,rgb(var(--color-warning))_10%,rgb(var(--color-map-land)))]',
+  other: 'fill-map-land',
+};
+const STROKE = { native: 'stroke-accent-glow/[.45]', introduced: 'stroke-warning/[.4]', other: 'stroke-map-border' };
+const GLOBE_FILL = { native: 'fill-accent', introduced: 'fill-warning', other: 'fill-map-land-globe' };
 // Ordre de dessin : les pays d'origine en dernier, pour que leur contour reste visible
 const ORDER = { other: 0, introduced: 1, native: 2 };
 // Valeur par défaut stable : un nouveau tableau à chaque rendu relancerait le calcul de la carte
@@ -111,38 +117,38 @@ export default function RangeMap ({ points = NONE, pays = NONE, introduits = NON
   const r = points.length < 5 ? 3.2 : 1.9;
 
   return (
-    <figure className="relative overflow-hidden rounded-xl border border-border bg-[#040a11]">
+    <figure className="relative overflow-hidden rounded-xl border border-border bg-map-sea">
       <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="block h-auto w-full" role="img" aria-label={label}>
         <defs>
           <filter id="dot-glow" x="-100%" y="-100%" width="300%" height="300%">
             <feGaussianBlur stdDeviation="2.4"/>
           </filter>
         </defs>
-        <path d={layers.graticule} fill="none" stroke="#10202e" strokeWidth="0.6"/>
+        <path d={layers.graticule} fill="none" className="stroke-map-graticule" strokeWidth="0.6"/>
         {layers.countries.map((c) => c.d && (
-          <path key={c.id} d={c.d} fill={FILL[c.status]} stroke={STROKE[c.status]}
+          <path key={c.id} d={c.d} className={`${FILL[c.status]} ${STROKE[c.status]}`}
                 strokeWidth={c.status === 'other' ? 0.5 : 0.9}/>
         ))}
         {layers.rivers.map((r) => r.d && (
-          <path key={r.id} d={r.d} fill="none" stroke="#3b8fc2" strokeOpacity="0.85" strokeWidth="1.2"
+          <path key={r.id} d={r.d} fill="none" className="stroke-map-river" strokeOpacity="0.85" strokeWidth="1.2"
                 strokeLinecap="round" strokeLinejoin="round"/>
         ))}
-        {layers.lakes.map((l) => l.d && <path key={l.id} d={l.d} fill="#15496a" stroke="#3b8fc2" strokeWidth="0.5"/>)}
-        <g fill="#5EEAD4">
+        {layers.lakes.map((l) => l.d && <path key={l.id} d={l.d} className="fill-map-lake stroke-map-river" strokeWidth="0.5"/>)}
+        <g className="fill-accent-glow">
           <g filter="url(#dot-glow)" opacity="0.55">
             {layers.dots.map(([x, y], i) => <circle key={i} cx={x} cy={y} r={r * 1.8}/>)}
           </g>
-          {layers.dots.map(([x, y], i) => <circle key={i} cx={x} cy={y} r={r} stroke="#050B12" strokeWidth="0.5"/>)}
+          {layers.dots.map(([x, y], i) => <circle key={i} cx={x} cy={y} r={r} className="stroke-map-on-accent" strokeWidth="0.5"/>)}
         </g>
       </svg>
 
       <svg viewBox={`0 0 ${GLOBE} ${GLOBE}`} aria-hidden="true"
            className="absolute right-3 top-3 w-16 sm:w-[5.75rem]">
-        <circle cx={GLOBE / 2} cy={GLOBE / 2} r={GLOBE / 2 - 2} fill="#07121c" stroke="#1c2e40"/>
+        <circle cx={GLOBE / 2} cy={GLOBE / 2} r={GLOBE / 2 - 2} className="fill-map-ocean stroke-map-border"/>
         {layers.globe.land.map((c) => c.d && (
-          <path key={c.id} d={c.d} fill={GLOBE_FILL[c.status]} fillOpacity={c.status === 'other' ? 1 : 0.7}/>
+          <path key={c.id} d={c.d} className={GLOBE_FILL[c.status]} fillOpacity={c.status === 'other' ? 1 : 0.7}/>
         ))}
-        {layers.globe.frame && <path d={layers.globe.frame} fill="none" stroke="#5EEAD4" strokeWidth="1.2"/>}
+        {layers.globe.frame && <path d={layers.globe.frame} fill="none" className="stroke-accent-glow" strokeWidth="1.2"/>}
       </svg>
     </figure>
   );

@@ -88,7 +88,7 @@ function RangeLegend ({ points, introduits = [] }) {
         </span>
       )}
       <span className="inline-flex items-center gap-2">
-        <span className="h-0.5 w-4 rounded bg-[#3b8fc2]"/> {t('Fleuves et lacs', 'Rivers and lakes', '河川と湖')}
+        <span className="h-0.5 w-4 rounded bg-map-river"/> {t('Fleuves et lacs', 'Rivers and lakes', '河川と湖')}
       </span>
     </p>
   );

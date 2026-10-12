@@ -17,11 +17,16 @@ import {
   zoneFish, zonesByRealm,
 } from '@/lib/globe';
 
-// Couleurs de la carte de répartition des fiches (components/fish/RangeMap.js)
-const COLORS = {
-  ocean: '#07121c', graticule: '#10202e', land: '#0d1a26', border: '#1c2e40', lake: '#15496a', river: '#3b8fc2',
-  accent: '#2DD4BF', accentGlow: '#5EEAD4', background: '#050B12',
-};
+/** Couleurs du thème courant (app/theme.css, les mêmes que les cartes des fiches) pour le dessin du canevas */
+function readPalette () {
+  const css = getComputedStyle(document.documentElement);
+  const rgb = (name) => `rgb(${css.getPropertyValue(`--color-${name}`).trim().split(/\s+/).join(', ')})`;
+  return {
+    ocean: rgb('map-ocean'), graticule: rgb('map-graticule'), land: rgb('map-land'), border: rgb('map-border'),
+    lake: rgb('map-lake'), river: rgb('map-river'), accent: rgb('accent'), accentGlow: rgb('accent-glow'),
+    onAccent: rgb('map-on-accent'), foreground: rgb('foreground'),
+  };
+}
 // Vue de départ : l'Amazonie, la région la plus riche du catalogue
 const START = rotationTo([-58, -6]);
 const SPIN = 4; // degrés par seconde, tant que personne ne touche au globe
@@ -207,6 +212,8 @@ export default function FishGlobe () {
   const pointers = useRef(new Map());
   const drag = useRef({ moved: 0 });
   const font = useRef('sans-serif');
+  const palette = useRef(null);
+  const [wheelHint, setWheelHint] = useState(false);
 
   useEffect(() => {
     view.current.spinning = !reduceMotion;
@@ -218,7 +225,8 @@ export default function FishGlobe () {
   const draw = useCallback(() => {
     const canvas = canvasRef.current;
     const { size, rotation, zoom, hovered: hoveredId } = view.current;
-    if (!canvas || !size || !world)
+    const COLORS = palette.current;
+    if (!canvas || !size || !world || !COLORS)
       return;
     const dpr = pixelRatio();
     const ctx = canvas.getContext('2d');
@@ -256,10 +264,10 @@ export default function FishGlobe () {
       ctx.fill();
       ctx.globalAlpha = 1;
       ctx.lineWidth = active ? 2.5 : 1.5;
-      ctx.strokeStyle = active ? '#ffffff' : COLORS.background;
+      ctx.strokeStyle = active ? COLORS.foreground : COLORS.onAccent;
       ctx.stroke();
       if (r >= 9 && (!zone || active || hovered)) {
-        ctx.fillStyle = COLORS.background;
+        ctx.fillStyle = COLORS.onAccent;
         ctx.font = `600 ${r >= 12 ? 11 : 10}px ${font.current}`;
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
@@ -296,6 +304,41 @@ export default function FishGlobe () {
 
     layer([{ type: 'Sphere' }], { stroke: COLORS.border, width: 1 });
   }, [world, zones, selectedId]);
+
+  // Couleurs relues quand le visiteur change de thème (ThemeToggle modifie data-theme sur <html>)
+  useEffect(() => {
+    const update = () => {
+      palette.current = readPalette();
+      view.current.dirty = true;
+    };
+    update();
+    const observer = new MutationObserver(update);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+    return () => observer.disconnect();
+  }, []);
+
+  // Molette : Ctrl (ou le pincement d'un pavé tactile, que les navigateurs envoient avec Ctrl) zoome le globe ;
+  // sans Ctrl, la page défile normalement et un message indique le geste
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    let timer;
+    const onWheel = (e) => {
+      if (!e.ctrlKey && !e.metaKey) {
+        setWheelHint(true);
+        clearTimeout(timer);
+        timer = setTimeout(() => setWheelHint(false), 1500);
+        return;
+      }
+      e.preventDefault();
+      view.current.spinning = false;
+      view.current.flight = null;
+      view.current.zoom = clampZoom(view.current.zoom * Math.exp(-e.deltaY * 0.003));
+      view.current.dirty = true;
+    };
+    // Écouteur non passif : sans lui, preventDefault n'empêcherait pas le zoom de toute la page
+    canvas.addEventListener('wheel', onWheel, { passive: false });
+    return () => { canvas.removeEventListener('wheel', onWheel); clearTimeout(timer); };
+  }, []);
 
   // Taille du canevas : carré, à la largeur de son conteneur, net sur les écrans haute densité
   useEffect(() => {
@@ -399,8 +442,6 @@ export default function FishGlobe () {
     canvasRef.current.setPointerCapture(e.pointerId);
     pointers.current.set(e.pointerId, local(e));
     drag.current.moved = 0;
-    stopSpin();
-    view.current.flight = null;
   };
 
   const onPointerMove = (e) => {
@@ -416,13 +457,18 @@ export default function FishGlobe () {
       return;
     }
     const previous = active.get(e.pointerId);
+    // Le globe ne s'arrête qu'au premier vrai geste : un doigt qui fait défiler la page ne le fige pas
+    stopSpin();
+    view.current.flight = null;
     if (active.size === 2) {
-      // Pincement à deux doigts : zoom
+      // Deux doigts : l'écart zoome, le milieu fait tourner (le nord et le sud restent accessibles au doigt)
       const other = [...active.entries()].find(([id]) => id !== e.pointerId)[1];
       const before = Math.hypot(previous.x - other.x, previous.y - other.y);
       const after = Math.hypot(p.x - other.x, p.y - other.y);
       if (before > 0)
         view.current.zoom = clampZoom(view.current.zoom * (after / before));
+      view.current.rotation = dragRotation(view.current.rotation, (p.x - previous.x) / 2, (p.y - previous.y) / 2,
+        globeRadius(view.current));
     } else {
       view.current.rotation = dragRotation(view.current.rotation, p.x - previous.x, p.y - previous.y,
         globeRadius(view.current));
@@ -486,10 +532,12 @@ export default function FishGlobe () {
               ref={canvasRef}
               tabIndex={0}
               role="application"
-              aria-label={t('Globe des zones d\'eau douce. Glissez ou utilisez les flèches pour le faire tourner, + et − pour zoomer. '
-                + 'Les zones sont aussi listées à côté.', 'Globe of freshwater zones. Drag or use the arrow keys to spin it, + and − '
-                + 'to zoom. The zones are also listed alongside.', '淡水域ゾーンの地球儀。ドラッグまたは矢印キーで回転、+ と − でズームできます。ゾーンは横の一覧にもあります。')}
-              className="absolute inset-0 h-full w-full cursor-grab touch-none rounded-full active:cursor-grabbing"
+              aria-label={t('Globe des zones d\'eau douce. Glissez ou utilisez les flèches pour le faire tourner ; pincez, Ctrl + molette '
+                + 'ou + et − pour zoomer. Les zones sont aussi listées à côté.', 'Globe of freshwater zones. Drag or use the arrow keys '
+                + 'to spin it; pinch, Ctrl + scroll or + and − to zoom. The zones are also listed alongside.',
+              '淡水域ゾーンの地球儀。ドラッグまたは矢印キーで回転、ピンチ、Ctrl + スクロール、または + と − でズームできます。ゾーンは横の一覧にもあります。')}
+              // pan-y : un doigt qui glisse verticalement fait défiler la page, horizontalement il fait tourner le globe
+              className="absolute inset-0 h-full w-full cursor-grab touch-pan-y rounded-full active:cursor-grabbing"
               style={tooltip ? { cursor: 'pointer' } : undefined}
               onPointerDown={onPointerDown}
               onPointerMove={onPointerMove}
@@ -498,6 +546,11 @@ export default function FishGlobe () {
               onPointerLeave={() => hover(null)}
               onKeyDown={onKeyDown}
             />
+            {wheelHint && (
+              <p role="status" className="pointer-events-none absolute inset-x-0 top-1/2 mx-auto w-max max-w-[90%] -translate-y-1/2 rounded-lg border border-border bg-surface/95 px-3 py-1.5 text-center text-xs shadow-lg">
+                {t('Ctrl + molette ou pincement pour zoomer', 'Ctrl + scroll or pinch to zoom', 'Ctrl + スクロールまたはピンチでズーム')}
+              </p>
+            )}
             {tooltip && (
               <div className="pointer-events-none absolute z-10 -translate-x-1/2 -translate-y-full whitespace-nowrap rounded-lg border border-border bg-surface px-2.5 py-1 text-xs shadow-lg"
                    style={{ left: tooltip.x, top: tooltip.y - tooltip.r - 6 }}>
