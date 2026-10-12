@@ -3,7 +3,7 @@ import { COURS } from '@/content/cours';
 import { localize } from '@/lib/i18n';
 import { BACKEND_URL, SITE_URL } from '@/lib/site';
 
-const PAGES = ['', '/poissons', '/invertebres', '/plantes', '/biotopes', '/simulation', '/cours', '/contact'];
+const PAGES = ['', '/poissons', '/invertebres', '/plantes', '/biotopes', '/simulation', '/cours', '/contact', '/cgu'];
 const CATALOGUES = [['poissons', 'poissons'], ['invertebres', 'invertebres'], ['plantes', 'plantes']];
 
 /** Identifiants des fiches d'un catalogue ; sans API (build hors ligne), le sitemap garde les pages fixes */
