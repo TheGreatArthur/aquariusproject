@@ -1,0 +1,39 @@
+{
+  "nom_scientifique": "Neolamprologus similis",
+  "nom_commun": "Neolamprologus similis",
+  "famille": "Cichlidae africain",
+  "genre": "Neolamprologus",
+  "zone_geo": "Afrique",
+  "type_eau": "douce",
+  "ph_mini": 7.5,
+  "ph_maxi": 9.0,
+  "kh": null,
+  "gh_mini": 8.0,
+  "gh_maxi": 25.0,
+  "temp_mini": 24,
+  "temp_maxi": 27,
+  "taille": 4.5,
+  "litrage_mini": 80,
+  "nb_individus": 5,
+  "points": 5,
+  "regime": "carnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "territorial",
+  "robustesse": "robuste",
+  "dispo": "peu courant",
+  "longevite": 5,
+  "courant": "doux",
+  "photos": [
+    "File:Neolamprologus similis2.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/neolamprologus-similis/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Neolamprologus-similis.html"
+    }
+  ]
+}

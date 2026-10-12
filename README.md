@@ -1,6 +1,6 @@
 # Aquarius
 
-> Browse 304 freshwater aquarium fish, 21 shrimps, crabs, snails and crayfish, and 132 aquarium plants, and check whether the species you pick can live
+> Browse 308 freshwater aquarium fish, 21 shrimps, crabs, snails and crayfish, and 136 aquarium plants, and check whether the species you pick can live
 > together in your tank.
 
 [![CI](https://github.com/TheGreatArthur/aquariusproject/actions/workflows/ci.yml/badge.svg)](https://github.com/TheGreatArthur/aquariusproject/actions/workflows/ci.yml)
@@ -12,7 +12,7 @@
 
 ## Features
 
-- **Fish catalogue** — 304 species with water parameters (pH, GH, temperature), size, behaviour, lifespan and
+- **Fish catalogue** — 308 species with water parameters (pH, GH, temperature), size, behaviour, lifespan and
   free-licensed photos credited to their authors.
 - **Fish profiles** — for each species, a French text on its description and naming, natural habitat and
   behaviour, with a range map (native countries, GBIF observations, rivers and lakes) and its IUCN status,
@@ -21,16 +21,20 @@
 - **Invertebrate catalogue** — 21 shrimps, crabs, snails and crayfish with the same structure as the fish: water
   parameters, size, minimum tank, behaviour, range map, habitat, and maintenance, feeding and reproduction advice
   ([ADR 0012](docs/adr/0012-invertebrates-like-fish.md)).
-- **Plant catalogue** — 132 species, forms and cultivars (Anubias, Java fern, Cryptocoryne, Rotala, Bacopa,
+- **Plant catalogue** — 136 species, forms and cultivars (Anubias, Java fern, Cryptocoryne, Rotala, Bacopa,
   Ludwigia, mosses, floating plants…) with pH, KH, tolerated and ideal temperature, light, growth, height,
   placement and propagation, French texts, and three free-licensed photos each with their credits. The data is
   scraped from Flowgrow, Tropica and GBIF, the photos from Wikimedia Commons and iNaturalist
   ([ADR 0009](docs/adr/0009-plants-scraped-data-and-free-photos.md)). The pages are built like the fish ones, with
   a range map of the native countries (World Checklist of Vascular Plants, Kew), the countries where the plant was
   introduced, and GBIF observations ([ADR 0013](docs/adr/0013-plants-like-fish-native-range.md)).
-- **World globe** on the home page — turn it in any direction, pick one of the 182 freshwater ecoregions where the
+- **World globe** on the home page — turn it in any direction, pick one of the 183 freshwater ecoregions where the
   catalogue fish live (Rio Negro, Lake Malawi, Mekong Delta…) and see its species and their observations
   ([ADR 0010](docs/adr/0010-home-globe-freshwater-ecoregions.md)).
+- **Biotopes** — eleven natural habitats (Rio Negro, Xingu rapids, Lake Malawi, Lake Tanganyika rocks and shell
+  beds, Western Ghats rivers, Usumacinta basin…): their water from published measurements, the catalogue species
+  living there, photos of the wild and of public tanks, YouTube videos of biotope tanks loaded on click, and an
+  example tank checked by the simulator ([ADR 0020](docs/adr/0020-biotopes.md), [ADR 0021](docs/adr/0021-biotope-videos-and-more-habitats.md)).
 - **Instant search** by common name, scientific name, family, genus or behaviour (accents ignored), plus a
   filter by family.
 - **Modern, responsive UI** — dark and light themes (following the system until you pick one) with Tailwind CSS,
@@ -191,6 +195,7 @@ make import && make demo-db   # then commit backend/demo/aquarius.db
 - [0018 — Public demo on Vercel, API reading a versioned database snapshot](docs/adr/0018-demo-on-vercel.md)
 - [0019 — Species pages rendered on the server, one catalogue component](docs/adr/0019-species-pages-rendered-on-the-server.md)
 - [0020 — Biotopes: natural habitats grouping species, written as data from published measurements](docs/adr/0020-biotopes.md)
+- [0021 — Biotope tank videos from YouTube, loaded on click, and five more habitats](docs/adr/0021-biotope-videos-and-more-habitats.md)
 
 ## Roadmap & known limitations
 

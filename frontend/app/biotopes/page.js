@@ -7,15 +7,19 @@ import Reveal from '@/components/Reveal';
 import { BIOTOPES, photosDu, textesDu } from '@/content/biotopes';
 import { getI18n } from '@/lib/i18n-server';
 
+// Nombre de biotopes écrit en chiffres dans les trois langues, pour rester juste quand on en ajoute
+const n = BIOTOPES.length;
+
 export async function generateMetadata () {
   const { t } = await getI18n();
   return {
     title: t('Biotopes', 'Biotopes', 'ビオトープ'),
-    description: t('Six milieux d\'eau douce étudiés à partir de mesures publiées : leur eau, les poissons, plantes et '
-      + 'invertébrés qui y vivent, des photos de la nature et de bacs, et un bac d\'exemple vérifié par le simulateur.',
-    'Six freshwater habitats studied from published measurements: their water, the fish, plants and invertebrates '
-      + 'living there, photos of the wild and of tanks, and an example tank checked by the simulator.',
-    '公表された測定値から調べた6つの淡水の環境：水質、そこに暮らす魚・水草・無脊椎動物、自然と水槽の写真、'
+    description: t(`${n} milieux d'eau douce étudiés à partir de mesures publiées : leur eau, les poissons, plantes et `
+      + 'invertébrés qui y vivent, des photos et des vidéos de la nature et de bacs, et un bac d\'exemple vérifié par le '
+      + 'simulateur.',
+    `${n} freshwater habitats studied from published measurements: their water, the fish, plants and invertebrates `
+      + 'living there, photos and videos of the wild and of tanks, and an example tank checked by the simulator.',
+    `公表された測定値から調べた${n}の淡水の環境：水質、そこに暮らす魚・水草・無脊椎動物、自然と水槽の写真と動画、`
       + 'シミュレーターで確かめた水槽の例。'),
   };
 }
@@ -26,12 +30,14 @@ export default async function BiotopesPage () {
     <>
       <PageHeader eyebrow={t('Biotopes', 'Biotopes', 'ビオトープ')}
                   title={t('Des milieux naturels aux bacs', 'From the wild to the tank', '自然から水槽へ')}>
-        {t('Six milieux d\'eau douce étudiés à partir de mesures publiées : leur eau, les espèces du catalogue qui y '
-          + 'vivent ensemble, des photos de la nature et de bacs, et un bac d\'exemple vérifié par le simulateur.',
-        'Six freshwater habitats studied from published measurements: their water, the catalogue species that live '
-          + 'there together, photos of the wild and of tanks, and an example tank checked by the simulator.',
-        '公表された測定値から調べた6つの淡水の環境。水質、そこで一緒に暮らす図鑑の種、自然と水槽の写真、'
-          + 'そしてシミュレーターで確かめた水槽の例。')}
+        {t(`${n} milieux d'eau douce étudiés à partir de mesures publiées : leur eau, les espèces du catalogue qui y `
+          + 'vivent ensemble, des photos de la nature et de bacs, des vidéos de bacs biotopes et un bac d\'exemple '
+          + 'vérifié par le simulateur.',
+        `${n} freshwater habitats studied from published measurements: their water, the catalogue species that live `
+          + 'there together, photos of the wild and of tanks, videos of biotope tanks and an example tank checked by '
+          + 'the simulator.',
+        `公表された測定値から調べた${n}の淡水の環境。水質、そこで一緒に暮らす図鑑の種、自然と水槽の写真、`
+          + 'ビオトープ水槽の動画、そしてシミュレーターで確かめた水槽の例。')}
       </PageHeader>
 
       <section className="container" aria-label={t('Biotopes', 'Biotopes', 'ビオトープ')}>

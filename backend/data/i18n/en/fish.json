@@ -944,6 +944,15 @@
       "comportement": "It suits a peaceful river tank, with other shoaling cyprinids and loaches, or with any calm fish too large to be swallowed. Keep it in a shoal. An omnivore, it accepts dry food and live or frozen prey."
     }
   },
+  "Dawkinsia filamentosa": {
+    "nom_commun": "Filament barb",
+    "profil": {
+      "repartition": "Southern India: Kerala, Tamil Nadu and southern Karnataka, at the foot of the Western Ghats",
+      "presentation": "The genus *Dawkinsia*, created in 2012, honours the biologist Richard Dawkins for his contribution to the public understanding of evolution. The filament barb, called *poovali paral* in Kerala, was described from Alleppey (Alappuzha), between Vembanad Lake and the Arabian Sea.\n\nJuveniles are almost colourless and marked with black spots. Adults have a broad black blotch on the caudal peduncle and a black band near the tip of each tail lobe; the dorsal-fin rays of males grow into filaments, which may disappear outside the breeding season.",
+      "habitat": "It is most common in coastal floodplains: lower river reaches, estuaries, coastal marshes and reservoirs, in fresh and brackish water. It shares these rivers with the Denison barb, the Arulius barb, the striped panchax and the Malabar pufferfish.\n\nVery abundant during the monsoon, when the rivers flood, it feeds on worms, insects, small crustaceans and plant debris.",
+      "comportement": "Peaceful and very active, it lives in schools: at least 8 to 10 fish, which become bolder and keep their squabbles within the group. It suits a spacious river tank with other cyprinids and loaches, but its activity can bother slow fish.\n\nIt needs clean, well-oxygenated water and a moderate current. An omnivore, it accepts dry food, to be completed with live or frozen prey."
+    }
+  },
   "Dermogenys pusilla": {
     "nom_commun": "Wrestling halfbeak",
     "profil": {
@@ -1808,6 +1817,15 @@
       "comportement": "It lives in large colonies, but each individual fiercely defends its shell and a tiny territory around it; pairs have their shells side by side. It constantly digs in the sand to bury or uncover shells, reshaping the decor.\n\nIt feeds on the plankton passing over the colony. It lives with species from other levels of the tank (small *Julidochromis*, *Cyprichromis*). The female spawns in her shell and guards the fry; provide more shells than fish."
     }
   },
+  "Neolamprologus similis": {
+    "nom_commun": "Neolamprologus similis",
+    "profil": {
+      "repartition": "Endemic to Lake Tanganyika: southern part of the lake, along the coasts of the Democratic Republic of the Congo and Tanzania",
+      "presentation": "Described in 1992 by the Swiss ichthyologist Heinz Büscher, this small lamprologine does not exceed 5 cm. Its copper body is crossed by pale vertical bars that continue onto the head and nape; this sets it apart from the smaller *N. multifasciatus*, whose bars look dark.\n\nMales are clearly larger than females and sometimes develop a small nuchal hump. Each female spawns inside the entrance of an empty shell, then guards her eggs and fry on her own.",
+      "habitat": "It lives on the large beds of empty snail shells (*Neothauma*) that cover the lake's sandy bottom between 10 and 45 m deep, and more rarely among rock rubble below 25 m. It clearly prefers shells to the gaps between stones.\n\nThe water is that of the lake: highly mineralised, alkaline (pH close to 9) and stable, between 24 and 27 °C. It feeds on tiny crustaceans (copepods, ostracods), insect larvae and strands of algae.",
+      "comportement": "It lives in colonies: each fish fiercely defends a territory a few centimetres around its shell, to the point of biting the aquarist's hand. Provide many more shells than fish and more females than males; a male often mates with several females.\n\nIt can share a tank with Tanganyikans that use other zones: small rock dwellers (*Neolamprologus brichardi*, small *Julidochromis*) and open-water fish such as *Cyprichromis*. Live or frozen prey preferably; dry food alone is not enough."
+    }
+  },
   "Nimbochromis venustus": {
     "nom_commun": "Venustus",
     "profil": {
@@ -2112,6 +2130,15 @@
       "presentation": "Described in 1821 by the French naturalist Charles Alexandre Lesueur, the sailfin molly owes its Latin name *latipinna* (“broad fin”) to the huge, sail-shaped dorsal fin of adult males, which they spread during displays.\n\nIt is told apart from the very similar *Poecilia velifera* by the rectangular (not rounded) dark spots on its dorsal fin. Introduced to many countries, from Kenya to New Zealand, it often competes there with local species.",
       "habitat": "It is native to the coastal plains of the south-eastern United States, from North Carolina to Florida, and around the Gulf of Mexico as far as Veracruz.\n\nIt lives in calm, warm water in small streams, ponds, marshes, canals and tidal ditches, often brackish, rich in algae and vegetation. It tolerates hard fresh water as well as seawater.",
       "comportement": "It suits a hard-water community aquarium, but may harass small fish as it grows, and males are aggressive towards each other in the breeding season.\n\nIn the wild it is almost exclusively herbivorous, grazing algae and plants, with a few small crustaceans and insects: vegetables or plant-based flakes are essential in the aquarium. Gestation lasts about two months and produces up to about fifty large fry; one male to two females is recommended."
+    }
+  },
+  "Poecilia mexicana": {
+    "nom_commun": "Atlantic molly",
+    "profil": {
+      "repartition": "Atlantic slope of Central America, from Mexico (Río San Juan) to Guatemala, Belize and as far as Costa Rica; introduced on several Pacific islands",
+      "presentation": "Described in 1863 by Franz Steindachner, this molly was long confused with *Poecilia sphenops* and was only separated from it again in 1973: its inner teeth have a single point, against three in *P. sphenops*. Its shape and colour vary a lot between populations.\n\nThe stockier females exceed 9 cm; the slimmer males mature at several sizes. Two populations live in caves with water laden with hydrogen sulphide, in Tabasco, and are among the best-studied cavefish. A cross between this species and another molly gave rise to the Amazon molly (*P. formosa*), a species made up only of females.",
+      "habitat": "It lives in shallow, calm or still water, fresh or brackish: warm springs and their outflows, canals, weedy ditches, river pools, and even the cenotes of the Yucatán.\n\nIt mainly grazes the algae and detritus covering the bottom and the plants.",
+      "comportement": "Peaceful, it lives in groups; males compete for females without injuring each other. Keep one or two males with several females, in hard, alkaline water, with other calm fish from its habitat (swordtails, platies, small cichlids such as *Thorichthys meeki*).\n\nA livebearer, the female gives birth to fully formed fry. It needs some plant food (algae, spirulina) on top of small prey."
     }
   },
   "Poecilia reticulata": {
@@ -2625,6 +2652,15 @@
       "presentation": "Described in 1831 by Georges Cuvier from fish from Java, the croaking gourami owes its name to its ability to produce audible sounds, “croaks”, thanks to a mechanism of pectoral fin tendons unique in the family Osphronemidae. *Vittata* means “striped” in Latin.\n\nIt is the largest of the *Trichopsis* (up to 8 cm); its filamentous anal fin rays almost reach the tip of the tail. The populations of the Sunda Islands may belong to a separate species.",
       "habitat": "It occurs over much of Indochina (lower Mekong in Laos, Cambodia and Vietnam, Thailand, lower Salween in Myanmar), in Peninsular Malaysia and Singapore. Feral populations exist in the Philippines, India and the United States.\n\nIt occupies all calm lowland habitats: swamp forests, peat swamps, floodplains, irrigation canals, rice paddies and ditches, with a clear preference for still, heavily vegetated water. It must breathe air at the surface.",
       "comportement": "Peaceful except when breeding, it can live in a pair or small group, in which displays and exchanges of “croaks” between males can be observed. It feeds on zooplankton, crustaceans and insect larvae.\n\nThe male builds a bubble nest; the eggs, which sink, are picked up by one or both parents and put back in the nest. Soft, slightly warmer water encourages spawning, and a tight-fitting lid protects the fry's air breathing."
+    }
+  },
+  "Trichromis salvini": {
+    "nom_commun": "Salvin's cichlid",
+    "profil": {
+      "repartition": "Atlantic slope of southern Mexico, Guatemala and Belize (including the Usumacinta basin); introduced in southern Florida",
+      "presentation": "The only member of the genus *Trichromis*, created in 2015; genetic studies show it is a close relative of the firemouth cichlids (*Thorichthys*). It honours the British naturalist Osbert Salvin, who explored Guatemala in the 19th century.\n\nIts yellow body carries two rows of black, blue-ringed blotches, and its belly is red, especially in females ready to spawn. The smaller female also has a dark spot in the middle of the dorsal fin and another at the bottom of the gill cover; the male has longer, more pointed fins.",
+      "habitat": "It lives in lowland rivers and coastal lagoons and prefers the moderate to fast currents of the lower and middle river valleys. Unlike many cichlids of the region, it readily hunts in the open channel.\n\nIt preys on aquatic invertebrates and small fish, which it catches near the bottom.",
+      "comportement": "Aggressive for its size and very territorial, especially when breeding, it eats any fish that fits in its mouth. Keep it only with Central American cichlids of the same size and temperament, with plenty of hiding places and open swimming space over sand.\n\nA pair forms best by raising a group of juveniles. The female lays up to 500 eggs on cleaned stones and both parents guard the fry for a long time. It accepts all foods, from pellets to live and frozen prey."
     }
   },
   "Trigonostigma espei": {

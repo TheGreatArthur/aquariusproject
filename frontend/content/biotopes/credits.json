@@ -33,6 +33,32 @@
       }
     ]
   },
+  "xingu": {
+    "nature": [
+      {
+        "fichier": "xingu-1.jpg",
+        "auteur": "Fred Almeida2016",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rio_Xingu,_Vit%C3%B3ria_do_Xingu_-_Par%C3%A1.jpg"
+      },
+      {
+        "fichier": "xingu-2.jpg",
+        "auteur": "Túllio F",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rio_Xingu_-_Vit%C3%B3ria_do_Xingu_-_PA_01.jpg"
+      },
+      {
+        "fichier": "xingu-3.jpg",
+        "auteur": "Lucyanno S Arriel",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rio_Xingu_a_partir_da_%22Praia_da_Ra%C3%A7a%22.jpg"
+      }
+    ],
+    "bacs": []
+  },
   "afrique-ouest": {
     "nature": [
       {
@@ -100,6 +126,67 @@
       }
     ]
   },
+  "lac-tanganyika": {
+    "nature": [
+      {
+        "fichier": "lac-tanganyika-1.jpg",
+        "auteur": "fabulousfabs",
+        "licence": "CC BY 2.0",
+        "licence_url": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Lake_Tanganyika_at_Gombe_Stream_National_Park.jpg"
+      },
+      {
+        "fichier": "lac-tanganyika-2.jpg",
+        "auteur": "Cethuyghe",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:On_the_hunt_for_Lake_Tanganyika%27s_fishes.jpg"
+      },
+      {
+        "fichier": "lac-tanganyika-3.jpg",
+        "auteur": "Cethuyghe",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Curious_young_cichlids.jpg"
+      }
+    ],
+    "bacs": [
+      {
+        "fichier": "lac-tanganyika-bac-1.jpg",
+        "auteur": "Jarosław Roland Kruk",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:JKRUK_20180524_PALMIARNIA_GLIWICE_TANGANIKA_DSC_3531a.jpg"
+      }
+    ]
+  },
+  "tanganyika-coquilles": {
+    "nature": [
+      {
+        "fichier": "tanganyika-coquilles-1.jpg",
+        "auteur": "Charlotte E. T. Huyghe",
+        "licence": "CC BY 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:If_they_can%27t_see_me,_they_can%27t_catch_me.jpg"
+      }
+    ],
+    "bacs": [
+      {
+        "fichier": "tanganyika-coquilles-bac-1.jpg",
+        "auteur": "Richard Andre Ingebrigtsen, Department of Aquatic Biosciences, University of Tromsø, Rex shock at en.wikipedia",
+        "licence": "Public domain",
+        "licence_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Neolamprologus_multifasciatus_3.jpg"
+      },
+      {
+        "fichier": "tanganyika-coquilles-bac-2.jpg",
+        "auteur": "Richard A. Ingebrigtsen",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Neolamprologus_multifasciatus_male.JPG"
+      }
+    ]
+  },
   "tourbieres-asie": {
     "nature": [
       {
@@ -163,6 +250,58 @@
         "licence": "CC BY 3.0",
         "licence_url": "https://creativecommons.org/licenses/by/3.0",
         "source": "https://commons.wikimedia.org/wiki/File:Kataran_Oya_looking_downstream_from_the_Bridge_-_panoramio.jpg"
+      }
+    ],
+    "bacs": []
+  },
+  "ghats-occidentaux": {
+    "nature": [
+      {
+        "fichier": "ghats-occidentaux-1.jpg",
+        "auteur": "Jan Joseph George",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:The_rocky_river_red_in_the_Vettilapara_Region_of_the_Chalakudy_River.jpg"
+      },
+      {
+        "fichier": "ghats-occidentaux-2.jpg",
+        "auteur": "Shyamal",
+        "licence": "CC0",
+        "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Chaliyar_River_at_Nilambur.jpg"
+      },
+      {
+        "fichier": "ghats-occidentaux-3.jpg",
+        "auteur": "Jaseem Hamza",
+        "licence": "CC BY 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Chalakudy_River_@_Thumboormuzhi_-_panoramio.jpg"
+      }
+    ],
+    "bacs": []
+  },
+  "usumacinta": {
+    "nature": [
+      {
+        "fichier": "usumacinta-1.jpg",
+        "auteur": "ProtoplasmaKid",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:R%C3%ADo_Usumacinta_a_la_altura_de_Boca_del_Cerro_02.jpg"
+      },
+      {
+        "fichier": "usumacinta-2.jpg",
+        "auteur": "Thelmadatter",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:UsumacintaYaxchilan23.jpg"
+      },
+      {
+        "fichier": "usumacinta-3.jpg",
+        "auteur": "Carlos Valenzuela",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Usumacinta_river_202007p3.jpg"
       }
     ],
     "bacs": []

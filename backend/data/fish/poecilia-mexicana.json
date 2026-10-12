@@ -1,0 +1,37 @@
+{
+  "nom_scientifique": "Poecilia mexicana",
+  "nom_commun": "Molly du Mexique",
+  "famille": "Poeciliidae",
+  "genre": "Poecilia",
+  "zone_geo": "Amérique centrale",
+  "type_eau": "douce",
+  "ph_mini": 7.0,
+  "ph_maxi": 7.5,
+  "kh": null,
+  "gh_mini": 20.0,
+  "gh_maxi": 30.0,
+  "temp_mini": 22,
+  "temp_maxi": 28,
+  "taille": 11.0,
+  "litrage_mini": 180,
+  "nb_individus": 4,
+  "points": 20,
+  "regime": "omnivore",
+  "mode_vie": "harem",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "occasionnel",
+  "longevite": 8,
+  "courant": "doux",
+  "photos": [
+    "File:PoeciliaMexicana (cropped).jpg",
+    "File:Poécilo (Poecilia mexicana), cenote Dos Ojos, Yucatán, México, 2025-12-23, DD 47.jpg",
+    "File:Poecilia mexcana crop.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Poecilia-mexicana.html"
+    }
+  ]
+}

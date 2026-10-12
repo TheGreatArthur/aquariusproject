@@ -77,6 +77,9 @@ def clean_author(text: str) -> str:
     # Auteur déduit par Commons : « No machine-readable author provided. Ged~commonswiki assumed (...) » -> « Ged »
     if assumed := re.match(r'No machine-readable author provided\. (.+?) assumed\b', text):
         text = assumed.group(1).removesuffix('~commonswiki')
+    # Attribution demandée : « ... When reusing, please credit me as author: Y » -> « Y »
+    if requested := re.search(r'please credit me as(?: author)?:\s*(.+)$', text, re.IGNORECASE):
+        text = requested.group(1)
     return text.replace(' @ ', ', ').strip()
 
 

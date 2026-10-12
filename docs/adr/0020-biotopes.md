@@ -1,6 +1,6 @@
 # 0020. Biotopes: natural habitats grouping species, written as data from published measurements
 Date: 2026-10-12
-Status: Accepted
+Status: Accepted, extended by [0021](0021-biotope-videos-and-more-habitats.md)
 
 ## Context
 The catalogue lists fish, plants and invertebrates one by one, and the simulator checks whether a chosen group can

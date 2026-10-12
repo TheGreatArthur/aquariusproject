@@ -1824,6 +1824,22 @@
       "source": "https://commons.wikimedia.org/wiki/File:Puntius_arulius.jpg"
     }
   ],
+  "dawkinsia-filamentosa": [
+    {
+      "fichier": "dawkinsia-filamentosa-1.jpg",
+      "auteur": "Sajan. S",
+      "licence": "CC BY 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Dawkinsia_filamentosa.jpg"
+    },
+    {
+      "fichier": "dawkinsia-filamentosa-2.jpg",
+      "auteur": "Manojk",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:%E0%B4%AA%E0%B5%82%E0%B4%B5%E0%B4%BE%E0%B4%B2%E0%B4%BF%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B4%B0%E0%B5%BD_(Puntius_filamentosus)_From_Arattupuzha.jpg"
+    }
+  ],
   "dermogenys-pusilla": [
     {
       "fichier": "dermogenys-pusilla-1.jpg",
@@ -3618,6 +3634,15 @@
       "source": "https://commons.wikimedia.org/wiki/File:Multi_babies.jpg"
     }
   ],
+  "neolamprologus-similis": [
+    {
+      "fichier": "neolamprologus-similis-1.jpg",
+      "auteur": "berzentei, Yvonne Turkans",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Neolamprologus_similis2.jpg"
+    }
+  ],
   "nimbochromis-venustus": [
     {
       "fichier": "nimbochromis-venustus-1.jpg",
@@ -4265,6 +4290,29 @@
       "licence": "CC BY 4.0",
       "licence_url": "https://creativecommons.org/licenses/by/4.0",
       "source": "https://commons.wikimedia.org/wiki/File:Poecilia_latipinna,_Big_Cypress_National_Preserve,_Ochopee,_FL,_US_imported_from_iNaturalist_photo_266948484.jpg"
+    }
+  ],
+  "poecilia-mexicana": [
+    {
+      "fichier": "poecilia-mexicana-1.jpg",
+      "auteur": "Dnoerholm",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:PoeciliaMexicana_(cropped).jpg"
+    },
+    {
+      "fichier": "poecilia-mexicana-2.jpg",
+      "auteur": "Diego Delso",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Po%C3%A9cilo_(Poecilia_mexicana),_cenote_Dos_Ojos,_Yucat%C3%A1n,_M%C3%A9xico,_2025-12-23,_DD_47.jpg"
+    },
+    {
+      "fichier": "poecilia-mexicana-3.jpg",
+      "auteur": "Elfabso",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Poecilia_mexcana_crop.jpg"
     }
   ],
   "poecilia-reticulata": [
@@ -5340,6 +5388,29 @@
       "licence": "CC BY 4.0",
       "licence_url": "https://creativecommons.org/licenses/by/4.0",
       "source": "https://commons.wikimedia.org/wiki/File:Trichopsis_vittata_(10.3897-BDJ.11.e100337)_Figure_27.jpg"
+    }
+  ],
+  "trichromis-salvini": [
+    {
+      "fichier": "trichromis-salvini-1.jpg",
+      "auteur": "Banteo",
+      "licence": "Public domain",
+      "licence_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Salvini4a.jpg"
+    },
+    {
+      "fichier": "trichromis-salvini-2.jpg",
+      "auteur": "HenryC88",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Fich2-4.jpg"
+    },
+    {
+      "fichier": "trichromis-salvini-3.jpg",
+      "auteur": "Banteo",
+      "licence": "Public domain",
+      "licence_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Salpui3.jpg"
     }
   ],
   "trigonostigma-espei": [

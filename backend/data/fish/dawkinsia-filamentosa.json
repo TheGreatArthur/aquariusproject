@@ -1,0 +1,40 @@
+{
+  "nom_scientifique": "Dawkinsia filamentosa",
+  "nom_commun": "Barbu à filaments",
+  "famille": "Cyprinidae",
+  "genre": "Dawkinsia",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 6.0,
+  "ph_maxi": 7.0,
+  "kh": null,
+  "gh_mini": 2.0,
+  "gh_maxi": 15.0,
+  "temp_mini": 20,
+  "temp_maxi": 25,
+  "taille": 12.0,
+  "litrage_mini": 300,
+  "nb_individus": 10,
+  "points": 20,
+  "regime": "omnivore",
+  "mode_vie": "banc",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "courant",
+  "longevite": 8,
+  "courant": "modéré, fort",
+  "photos": [
+    "File:Dawkinsia filamentosa.jpg",
+    "File:പൂവാലിപ്പരൽ (Puntius filamentosus) From Arattupuzha.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/dawkinsia-filamentosa/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Dawkinsia-filamentosa.html"
+    }
+  ]
+}

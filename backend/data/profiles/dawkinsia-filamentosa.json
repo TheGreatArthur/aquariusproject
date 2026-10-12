@@ -1,0 +1,34 @@
+{
+  "nom_scientifique": "Dawkinsia filamentosa",
+  "nom_valide": null,
+  "auteur": "(Valenciennes, 1844)",
+  "classification": "Cypriniformes › Cyprinidae",
+  "uicn": "LC",
+  "repartition": "Inde du Sud : Kerala, Tamil Nadu et sud du Karnataka, au pied des Ghâts occidentaux",
+  "pays": [
+    "IND"
+  ],
+  "emprise": [
+    74.0,
+    8.0,
+    78.5,
+    13.8
+  ],
+  "presentation": "Le genre *Dawkinsia*, créé en 2012, honore le biologiste Richard Dawkins pour sa contribution à la diffusion de la théorie de l'évolution. Le barbu à filaments, appelé *poovali paral* au Kerala, a été décrit d'Alleppey (Alappuzha), entre le lac Vembanad et la mer d'Oman.\n\nLes jeunes sont presque incolores et marqués de taches noires. Adulte, il porte une large tache noire sur le pédoncule et une bande noire près de l'extrémité de chaque lobe de la caudale ; les rayons de la dorsale des mâles s'allongent en filaments, qui peuvent disparaître hors de la saison de reproduction.",
+  "habitat": "Il est surtout commun dans les plaines d'inondation côtières : cours inférieur des rivières, estuaires, marais côtiers et réservoirs, en eau douce comme saumâtre. Il partage ces rivières avec le barbu de Denison, le barbu arulius, le panchax rayé et le tétraodon nain du Kerala.\n\nTrès abondant à la mousson, quand les rivières débordent, il se nourrit de vers, d'insectes, de petits crustacés et de débris végétaux.",
+  "comportement": "Paisible et très actif, il vit en banc : 8 à 10 individus au moins, qui se montrent plus confiants et règlent leurs querelles au sein du groupe. Il convient à un bac de rivière spacieux, avec d'autres cyprinidés et des loches, mais son activité peut gêner les poissons lents.\n\nIl demande une eau propre, bien oxygénée et un courant modéré. Omnivore, il accepte les aliments secs, à compléter de proies vivantes ou congelées.",
+  "sources": [
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Dawkinsia-filamentosa.html"
+    },
+    {
+      "nom": "Seriously Fish",
+      "url": "https://www.seriouslyfish.com/species/dawkinsia-filamentosa/"
+    },
+    {
+      "nom": "GBIF",
+      "url": "https://www.gbif.org/species/7741827"
+    }
+  ]
+}

@@ -53,6 +53,7 @@ SERIOUSLYFISH_SLUGS = {
     'Helostoma temminckii': 'helostoma-temminkii',
     'Fundulopanchax sjostedti': 'fundulopanchax-sjoestedti',
     'Telmatherina ladigesi': 'marosatherina-ladigesi',
+    'Trichromis salvini': 'cichlasoma-salvini',
 }
 
 _last_call: dict[str, float] = {}
