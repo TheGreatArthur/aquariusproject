@@ -6,11 +6,18 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
-- **Biotopes** ([ADR 0020](docs/adr/0020-biotopes.md)): a new section in the navigation with six natural habitats
-  (Rio Negro, Gulf of Guinea forest streams, Lake Malawi, Southeast Asian peat swamps, Sri Lanka wet zone, Florida
-  springs and marshes) in three languages: water measured in the wild with primary sources, the catalogue species
-  living there, free-licensed Commons photos of the habitats and of existing tanks, and an example tank checked by
-  the simulator that opens in it.
+- **Biotopes** ([ADR 0020](docs/adr/0020-biotopes.md), [ADR 0021](docs/adr/0021-biotope-videos-and-more-habitats.md)):
+  a new section in the navigation with eleven natural habitats (Rio Negro, Xingu rapids, Gulf of Guinea forest
+  streams, Lake Malawi, Lake Tanganyika rocky shores and shell beds, Southeast Asian peat swamps, Sri Lanka wet zone,
+  Western Ghats rivers, Usumacinta basin, Florida springs and marshes) in three languages: water measured in the wild
+  with primary sources, the catalogue species living there, free-licensed Commons photos of the habitats and of
+  existing tanks, two YouTube videos of biotope tanks per habitat (the player loads only on click, from
+  youtube-nocookie), and an example tank checked by the simulator that opens in it.
+- Species found in these habitats: four fish (*Neolamprologus similis*, *Trichromis salvini*, *Poecilia mexicana*,
+  *Dawkinsia filamentosa*) and four plants (*Cryptocoryne longicauda*, *Cryptocoryne spiralis*, *Lagenandra
+  meeboldii*, *Aponogeton natans*), each with its profile in three languages, free photos and range map; existing
+  plants join the habitats where GBIF records them (*Ceratopteris cornuta*, *Ottelia ulvifolia*, *Utricularia
+  aurea*, *Rotala rotundifolia*, *Heteranthera dubia*…).
 
 ### Fixed
 - Home page family cards: each photo keeps its fish in view (the angelfish lost its head, the corydoras hid under the
@@ -25,7 +32,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   *Corydoras pygmaeus* "Corydoras pygmée", *Hyphessobrycon bentosi* "Tétra orné"), and eight names were
   capitalised after the first word ("Néon Bleu" → "Néon bleu"). A test on the demo snapshot keeps the common names
   of each catalogue unique.
-- The README counted 121 globe ecoregions; the globe shows 182.
+- The README counted 121 globe ecoregions; the globe shows 183.
+- Commons credits that ask to be credited under another name ("please credit me as author: …") now keep only that
+  name.
 
 ### Changed
 - **Species pages rendered on the server** ([ADR 0019](docs/adr/0019-species-pages-rendered-on-the-server.md)):
