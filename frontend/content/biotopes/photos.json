@@ -1,0 +1,52 @@
+{
+  "rio-negro": {
+    "nature": [
+      "File:Meeting of Waters (Manaus).jpg",
+      "File:Parque Nacional de Anavilhanas GuilhonAmazônia (23).jpg",
+      "File:Parque Nacional de Anavilhanas Carine Emer (01).jpg"
+    ],
+    "bacs": ["File:Biotope aquarium - Pterophyllum sp. Manacapuru.jpg"]
+  },
+  "afrique-ouest": {
+    "nature": [
+      "File:Cour d'eau splendide à Mboué.jpg",
+      "File:Beauty of the crick of idenau.jpg"
+    ],
+    "bacs": []
+  },
+  "lac-malawi": {
+    "nature": [
+      "File:Mitande Rocks mbuna.jpg",
+      "File:Cichlids in the wild - DSCN1965.jpg",
+      "File:Taiwanee rif.JPG",
+      "File:Stony shore at malawi lake.jpg"
+    ],
+    "bacs": ["File:AquariumArtis.jpg", "File:Lac Malawi Cichlid tank Georgia Aquarium.jpg"]
+  },
+  "tourbieres-asie": {
+    "nature": [
+      "File:Rawa-Gambut-TN-Sebangau.jpg",
+      "File:A peat swamp forest in Selangor, Malaysia.JPG",
+      "File:Peat Forest Swamp (10712654875).jpg",
+      "File:Rumput Rasau Ekosistem Air Hitam Taman Nasional Sebangau.jpg"
+    ],
+    "bacs": ["File:Samurai Gourami in Biotope.png"]
+  },
+  "sri-lanka": {
+    "nature": [
+      "File:Small Creek in the Kelani Ganga - panoramio.jpg",
+      "File:Sinharaja Forest stream.JPG",
+      "File:Kataran Oya looking downstream from the Bridge - panoramio.jpg"
+    ],
+    "bacs": []
+  },
+  "floride": {
+    "nature": [
+      "File:Ahinga Trail (1), NPSPhoto (9258021008).jpg",
+      "File:Ichetucknee River 4.jpg",
+      "File:Ahinga Trail (2), NPSPhoto (9258021154).jpg",
+      "File:Ichetucknee River 1.jpg"
+    ],
+    "bacs": []
+  }
+}

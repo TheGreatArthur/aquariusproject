@@ -16,6 +16,9 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   retries: process.env.CI ? 1 : 0,
   reporter: process.env.CI ? 'github' : 'list',
+  // Les tests en parallèle chargent le serveur de production (pages rendues côté serveur, photos redimensionnées) :
+  // une navigation peut y dépasser les 5 s par défaut sans que rien ne soit cassé
+  expect: { timeout: 10_000 },
   use: { baseURL: 'http://127.0.0.1:3055', trace: 'retain-on-failure' },
   projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'] } }],
   webServer: [

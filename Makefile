@@ -7,7 +7,7 @@ BACKEND_PORT  ?= 5001
 FRONTEND_PORT ?= 3000
 
 .DEFAULT_GOAL := help
-.PHONY: help setup install dev backend frontend import demo-db profiles fish fish-photos invertebrates plants plants-fetch ecoregions sources occurrences images audit test lint build clean
+.PHONY: help setup install dev backend frontend import demo-db profiles fish fish-photos biotope-photos invertebrates plants plants-fetch ecoregions sources occurrences images audit test lint build clean
 
 help: ## Show available commands
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  make %-10s %s\n", $$1, $$2}'
@@ -54,6 +54,9 @@ fish: setup ## Load the fish described by files (backend/data/fish) into an impo
 
 fish-photos: setup ## Download the Commons photos picked in backend/data/fish and write their credits
 	cd backend && venv/bin/python -m tools.fetch_fish_photos
+
+biotope-photos: setup ## Download the Commons photos listed in frontend/content/biotopes/photos.json and write their credits
+	cd backend && venv/bin/python -m tools.fetch_biotope_photos
 
 invertebrates: setup ## Load the shrimps, crabs, snails and crayfish (backend/data/invertebrates) into the database
 	cd backend && venv/bin/python invertebrates.py

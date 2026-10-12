@@ -1,0 +1,203 @@
+{
+  "rio-negro": {
+    "nature": [
+      {
+        "fichier": "rio-negro-1.jpg",
+        "auteur": "Ana Claudia Jatahy - MTUR",
+        "licence": "CC0",
+        "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Meeting_of_Waters_(Manaus).jpg"
+      },
+      {
+        "fichier": "rio-negro-2.jpg",
+        "auteur": "GuilhonAmazonia",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_de_Anavilhanas_GuilhonAmaz%C3%B4nia_(23).jpg"
+      },
+      {
+        "fichier": "rio-negro-3.jpg",
+        "auteur": "Carine Emer",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_de_Anavilhanas_Carine_Emer_(01).jpg"
+      }
+    ],
+    "bacs": [
+      {
+        "fichier": "rio-negro-bac-1.jpg",
+        "auteur": "Ewkaa",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Biotope_aquarium_-_Pterophyllum_sp._Manacapuru.jpg"
+      }
+    ]
+  },
+  "afrique-ouest": {
+    "nature": [
+      {
+        "fichier": "afrique-ouest-1.jpg",
+        "auteur": "Florettesokeng",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cour_d%27eau_splendide_%C3%A0_Mbou%C3%A9.jpg"
+      },
+      {
+        "fichier": "afrique-ouest-2.jpg",
+        "auteur": "Kekiwiyi",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Beauty_of_the_crick_of_idenau.jpg"
+      }
+    ],
+    "bacs": []
+  },
+  "lac-malawi": {
+    "nature": [
+      {
+        "fichier": "lac-malawi-1.jpg",
+        "auteur": "Alexandra Tyers",
+        "licence": "CC BY-SA 2.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Mitande_Rocks_mbuna.jpg"
+      },
+      {
+        "fichier": "lac-malawi-2.jpg",
+        "auteur": "Lars Plougmann",
+        "licence": "CC BY 2.0",
+        "licence_url": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cichlids_in_the_wild_-_DSCN1965.jpg"
+      },
+      {
+        "fichier": "lac-malawi-3.jpg",
+        "auteur": "Peter Hofman at Dutch Wikipedia",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Taiwanee_rif.JPG"
+      },
+      {
+        "fichier": "lac-malawi-4.jpg",
+        "auteur": "i_pinz",
+        "licence": "CC BY-SA 2.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Stony_shore_at_malawi_lake.jpg"
+      }
+    ],
+    "bacs": [
+      {
+        "fichier": "lac-malawi-bac-1.jpg",
+        "auteur": "Svdmolen",
+        "licence": "CC BY 2.5",
+        "licence_url": "https://creativecommons.org/licenses/by/2.5",
+        "source": "https://commons.wikimedia.org/wiki/File:AquariumArtis.jpg"
+      },
+      {
+        "fichier": "lac-malawi-bac-2.jpg",
+        "auteur": "Fredlyfish4",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Lac_Malawi_Cichlid_tank_Georgia_Aquarium.jpg"
+      }
+    ]
+  },
+  "tourbieres-asie": {
+    "nature": [
+      {
+        "fichier": "tourbieres-asie-1.jpg",
+        "auteur": "Mankdhay rahman",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rawa-Gambut-TN-Sebangau.jpg"
+      },
+      {
+        "fichier": "tourbieres-asie-2.jpg",
+        "auteur": "Tan Yi Han",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:A_peat_swamp_forest_in_Selangor,_Malaysia.JPG"
+      },
+      {
+        "fichier": "tourbieres-asie-3.jpg",
+        "auteur": "Ruanda Agung Sugardiman/AusAID",
+        "licence": "CC BY 2.0",
+        "licence_url": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Peat_Forest_Swamp_(10712654875).jpg"
+      },
+      {
+        "fichier": "tourbieres-asie-4.jpg",
+        "auteur": "Ariesandy0812",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rumput_Rasau_Ekosistem_Air_Hitam_Taman_Nasional_Sebangau.jpg"
+      }
+    ],
+    "bacs": [
+      {
+        "fichier": "tourbieres-asie-bac-1.jpg",
+        "auteur": "Gouramii",
+        "licence": "CC0",
+        "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Samurai_Gourami_in_Biotope.png"
+      }
+    ]
+  },
+  "sri-lanka": {
+    "nature": [
+      {
+        "fichier": "sri-lanka-1.jpg",
+        "auteur": "Pol van den Scheetek…",
+        "licence": "CC BY 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Small_Creek_in_the_Kelani_Ganga_-_panoramio.jpg"
+      },
+      {
+        "fichier": "sri-lanka-2.jpg",
+        "auteur": "Saqib Qayyum",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Sinharaja_Forest_stream.JPG"
+      },
+      {
+        "fichier": "sri-lanka-3.jpg",
+        "auteur": "Pol van den Scheetek…",
+        "licence": "CC BY 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Kataran_Oya_looking_downstream_from_the_Bridge_-_panoramio.jpg"
+      }
+    ],
+    "bacs": []
+  },
+  "floride": {
+    "nature": [
+      {
+        "fichier": "floride-1.jpg",
+        "auteur": "evergladesnps",
+        "licence": "Public domain",
+        "licence_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Ahinga_Trail_(1),_NPSPhoto_(9258021008).jpg"
+      },
+      {
+        "fichier": "floride-2.jpg",
+        "auteur": "Michael Rivera",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ichetucknee_River_4.jpg"
+      },
+      {
+        "fichier": "floride-3.jpg",
+        "auteur": "evergladesnps",
+        "licence": "Public domain",
+        "licence_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Ahinga_Trail_(2),_NPSPhoto_(9258021154).jpg"
+      },
+      {
+        "fichier": "floride-4.jpg",
+        "auteur": "Michael Rivera",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ichetucknee_River_1.jpg"
+      }
+    ],
+    "bacs": []
+  }
+}

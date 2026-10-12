@@ -5,6 +5,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+- **Biotopes** ([ADR 0020](docs/adr/0020-biotopes.md)): a new section in the navigation with six natural habitats
+  (Rio Negro, Gulf of Guinea forest streams, Lake Malawi, Southeast Asian peat swamps, Sri Lanka wet zone, Florida
+  springs and marshes) in three languages: water measured in the wild with primary sources, the catalogue species
+  living there, free-licensed Commons photos of the habitats and of existing tanks, and an example tank checked by
+  the simulator that opens in it.
+
 ### Fixed
 - Home page family cards: each photo keeps its fish in view (the angelfish lost its head, the corydoras hid under the
   text), and the call-to-action banner no longer reuses the American cichlid card's photo.

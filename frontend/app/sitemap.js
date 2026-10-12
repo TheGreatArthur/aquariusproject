@@ -1,8 +1,9 @@
+import { BIOTOPES } from '@/content/biotopes';
 import { COURS } from '@/content/cours';
 import { localize } from '@/lib/i18n';
 import { BACKEND_URL, SITE_URL } from '@/lib/site';
 
-const PAGES = ['', '/poissons', '/invertebres', '/plantes', '/simulation', '/cours', '/contact'];
+const PAGES = ['', '/poissons', '/invertebres', '/plantes', '/biotopes', '/simulation', '/cours', '/contact'];
 const CATALOGUES = [['poissons', 'poissons'], ['invertebres', 'invertebres'], ['plantes', 'plantes']];
 
 /** Identifiants des fiches d'un catalogue ; sans API (build hors ligne), le sitemap garde les pages fixes */
@@ -18,7 +19,8 @@ async function fiches (route, liste) {
 export default async function sitemap () {
   const especes = (await Promise.all(CATALOGUES.map(([route, liste]) => fiches(route, liste)))).flat();
   // Chaque page en français, avec ses adresses anglaise (/en/...) et japonaise (/ja/...)
-  return [...PAGES, ...COURS.map(({ slug }) => `/cours/${slug}`), ...especes].map((path) => ({
+  return [...PAGES, ...COURS.map(({ slug }) => `/cours/${slug}`), ...BIOTOPES.map(({ slug }) => `/biotopes/${slug}`),
+    ...especes].map((path) => ({
     url: `${SITE_URL}${path}`,
     alternates: { languages: Object.fromEntries(['en', 'ja'].map((l) => [l, `${SITE_URL}${localize(path || '/', l)}`])) },
   }));

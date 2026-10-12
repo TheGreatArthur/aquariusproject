@@ -5,6 +5,7 @@ import Image from 'next/image';
 import clsx from 'clsx';
 
 import { useI18n } from '@/components/I18nProvider';
+import PhotoCredit from '@/components/PhotoCredit';
 
 /**
  * Photo principale et vignettes ; `credits` (facultatif, dans l'ordre des photos) affiche l'auteur et la licence
@@ -29,19 +30,7 @@ export default function PhotoGallery ({ images, alt, credits }) {
         />
       </div>
 
-      {credit && (
-        <p className="mt-2 text-xs text-muted">
-          {t('Photo :', 'Photo:', '写真：')} <a href={credit.source} target="_blank" rel="noopener noreferrer"
-                     className="underline-offset-4 hover:text-accent-glow hover:underline">{credit.auteur}</a>
-          {', '}
-          {credit.licence_url ? (
-            <a href={credit.licence_url} target="_blank" rel="noopener noreferrer license"
-               className="underline-offset-4 hover:text-accent-glow hover:underline">{credit.licence}</a>
-          ) : credit.licence}
-          {credit.source?.startsWith('https://commons.wikimedia.org/') && ', via Wikimedia Commons'}
-          {credit.source?.startsWith('https://www.inaturalist.org/') && ', via iNaturalist'}
-        </p>
-      )}
+      {credit && <PhotoCredit credit={credit}/>}
 
       {images.length > 1 && (
         <div className="mt-3 flex gap-3" role="group" aria-label={t('Photos', 'Photos', '写真')}>
