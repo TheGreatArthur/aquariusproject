@@ -202,6 +202,8 @@ def test_only_free_licences_are_accepted(licence, free):
      'William & Wilma Follette, USDA-NRCS PLANTS Database'),
     ('Krzysztof Ziarnek, Kenraiz', 'Krzysztof Ziarnek, Kenraiz'),
     ('No machine-readable author provided. Ged~commonswiki assumed (based on copyright claims).', 'Ged'),
+    ('This image is a work by Wikipedia and Wikimedia Commons user Jarosław Kruk (Jrkruk) . When reusing, please '
+     'credit me as author: Jarosław Roland Kruk', 'Jarosław Roland Kruk'),
 ])
 def test_clean_author(author, expected):
     assert commons.clean_author(author) == expected
