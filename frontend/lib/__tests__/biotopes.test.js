@@ -34,6 +34,18 @@ describe('biotopes', () => {
     }
   });
 
+  it('montrent des vidéos YouTube de bacs, chacune une seule fois', () => {
+    const ids = BIOTOPES.flatMap((b) => b.videos.map((v) => v.id));
+    expect(new Set(ids).size).toBe(ids.length);
+    for (const b of BIOTOPES) {
+      expect(b.videos.length, b.slug).toBeGreaterThan(0);
+      for (const { id, titre, chaine } of b.videos) {
+        expect(id).toMatch(/^[\w-]{11}$/);
+        expect(titre && chaine, id).toBeTruthy();
+      }
+    }
+  });
+
   it.each(BIOTOPES.map((b) => [b.slug, b]))('%s a ses sources, ses photos et leurs légendes', (slug, b) => {
     for (const { url } of b.sources)
       expect(url).toMatch(/^https:\/\//);

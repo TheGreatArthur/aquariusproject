@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { ArrowLeft, Check, MapPin } from 'lucide-react';
 
 import BiotopePhoto from '@/components/biotopes/BiotopePhoto';
+import BiotopeVideo from '@/components/biotopes/BiotopeVideo';
 import LoadTankButton from '@/components/biotopes/LoadTankButton';
 import Texte from '@/components/cours/Texte';
 import FishCard from '@/components/fish/FishCard';
@@ -172,14 +173,31 @@ export default async function BiotopePage ({ params }) {
         </div>
       </Section>
 
-      {photos.bacs.length > 0 && (
+      {(photos.bacs.length > 0 || biotope.videos.length > 0) && (
         <Section id="bacs" titre={t('Des bacs qui le reproduisent', 'Tanks recreating it', 'このビオトープを再現した水槽')}>
-          <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {photos.bacs.map((photo) => (
-              <BiotopePhoto key={photo.fichier} credit={photo} legende={textes.legendes[photo.fichier]}
-                            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"/>
-            ))}
-          </div>
+          {photos.bacs.length > 0 && (
+            <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {photos.bacs.map((photo) => (
+                <BiotopePhoto key={photo.fichier} credit={photo} legende={textes.legendes[photo.fichier]}
+                              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"/>
+              ))}
+            </div>
+          )}
+          {biotope.videos.length > 0 && (
+            <>
+              <p className="mt-8 max-w-3xl text-sm text-muted">
+                {t('Des aquariophiles présentent leur bac en vidéo, souvent sur un site précis du milieu. Les vidéos '
+                  + 'sont hébergées par YouTube, et le lecteur ne se charge qu\'au clic.',
+                'Aquarists present their tanks on video, often modelled on one precise site. The videos are hosted by '
+                  + 'YouTube, and the player only loads when you click.',
+                'アクアリストが自分の水槽を動画で紹介している。特定の場所を再現したものが多い。動画は YouTube にあり、'
+                  + 'プレーヤーはクリックしたときだけ読み込まれる。')}
+              </p>
+              <div className="mt-4 grid gap-6 sm:grid-cols-2">
+                {biotope.videos.map((v) => <BiotopeVideo key={v.id} {...v}/>)}
+              </div>
+            </>
+          )}
         </Section>
       )}
 

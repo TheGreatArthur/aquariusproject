@@ -61,6 +61,10 @@ test('un biotope réunit ses espèces et ouvre son bac d’exemple dans le simul
 
   await expect(page.getByRole('heading', { level: 1, name: 'Sources et marais de Floride' })).toBeVisible();
   await expect(page.getByRole('heading', { name: 'L\'eau', exact: true })).toBeVisible();
+  // Le lecteur YouTube n'est inséré qu'au clic sur une vidéo
+  await expect(page.locator('iframe')).toHaveCount(0);
+  await page.getByRole('button', { name: /Lire la vidéo/ }).first().click();
+  await expect(page.locator('iframe[src^="https://www.youtube-nocookie.com/embed/"]')).toHaveCount(1);
   await page.getByRole('button', { name: 'Ouvrir dans le simulateur' }).click();
 
   await expect(page).toHaveURL(/\/simulation$/);

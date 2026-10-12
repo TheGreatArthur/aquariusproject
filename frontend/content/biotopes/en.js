@@ -86,7 +86,9 @@ const textes = {
         + 'butterflyfish lies in wait for insects at the surface, and the reedfish, an elongated bichir, searches '
         + 'vegetated bottoms.',
       'Dwarf anubias, *Bolbitis heudelotii* and *Crinum natans*, which grows in the mud of permanent streams, are '
-        + 'recorded in Cameroon according to GBIF; *Crinum calamistratum* is known only from rivers in Cameroon.',
+        + 'recorded in Cameroon according to GBIF; *Crinum calamistratum* is known only from rivers in Cameroon. The '
+        + 'water fern *Ceratopteris cornuta* and *Ottelia ulvifolia*, with broad wavy leaves, grow in the calm waters of '
+        + 'the region.',
     ],
     aquarium: [
       'A sand bottom, stones and roots; anubias and *Bolbitis* are tied to the hardscape rather than planted.',
@@ -178,8 +180,9 @@ const textes = {
       '*Boraras*, which do not exceed 2 cm, and harlequin rasboras shoal among the roots. The chocolate gourami, which '
         + 'broods its eggs in its mouth, and the licorice gourami of Bangka Island stay in the vegetation; kuhli loaches '
         + 'gather by the dozen in the leaf litter. Gouramis breathe air at the surface.',
-      'Plants are mostly *Cryptocoryne* adapted to shade and acidity; the catalogue has no peat-swamp species yet, and '
-        + 'no invertebrate of the catalogue lives there.',
+      'Plants are mostly *Cryptocoryne* adapted to shade and acidity, such as *C. longicauda*, recorded in the forest '
+        + 'streams of Borneo according to GBIF; the bladderwort *Utricularia aurea*, a rootless carnivorous plant, floats '
+        + 'in still water. No invertebrate of the catalogue lives there.',
     ],
     aquarium: [
       'Very soft reverse-osmosis water, pH 5 to 6.5; catappa leaves and a little peat for colour and acidity.',
@@ -188,8 +191,8 @@ const textes = {
       'A stable, well-run-in tank without strong current, with a lid keeping warm, humid air above the water for the '
         + 'gouramis.',
     ],
-    bac: 'A 120 L tank: a shoal of *Boraras merah*, a group of chocolate gouramis and kuhli loaches, in water at pH 5.8 '
-      + 'and 2 °dGH. Kuhlis need at least 120 L, and chocolate gouramis very soft water and a well-established tank.',
+    bac: 'A 120 L tank: a shoal of *Boraras merah*, a group of chocolate gouramis, kuhli loaches and a *Cryptocoryne '
+      + 'longicauda*, in water at pH 5.8 and 2 °dGH. Kuhlis need at least 120 L, and chocolate gouramis very soft water and a well-established tank.',
     legendes: {
       'tourbieres-asie-1.jpg': 'The Sebangau River and its riverside peat forest near Palangka Raya (Central Kalimantan, '
         + 'Borneo).',
@@ -223,8 +226,9 @@ const textes = {
       'Three fish of the catalogue are endemic to this zone: the cherry barb (*Puntius titteya*), the vateria flower '
         + 'rasbora (*Rasboroides vaterifloris*) and the black ruby barb (*Pethia nigrofasciata*). They live in shoals; '
         + 'the vateria flower rasbora eats insects that fall into the water and detritus.',
-      'Wendt\'s cryptocoryne and *Aponogeton crispus*, a plant of seasonal pools, are native to the island. No '
-        + 'invertebrate of the catalogue lives there.',
+      'Wendt\'s cryptocoryne and *Aponogeton crispus*, a plant of seasonal pools, are native to the island, like '
+        + 'other plants of its streams (*Cryptocoryne beckettii*, *C. walkeri*, *Lagenandra thwaitesii*) that do not '
+        + 'yet have a free photo to enter the catalogue. No invertebrate of the catalogue lives there.',
     ],
     aquarium: [
       'A bottom of sand and silt, dead leaves, roots and a few pebbles.',
@@ -238,6 +242,243 @@ const textes = {
       'sri-lanka-1.jpg': 'A small creek of the Kelani basin at Kitulgala: slow, stained water and forested banks.',
       'sri-lanka-2.jpg': 'A stream in the Sinharaja Forest Reserve.',
       'sri-lanka-3.jpg': 'The Kataran Oya at Kitulgala, in the Kelani basin.',
+    },
+  },
+
+  xingu: {
+    nom: 'Xingu rapids, the river of plecos',
+    region: 'Pará, Brazil',
+    type: 'Clear-water rapids',
+    resume: 'A clear-water tributary of the Amazon tumbling over rock slabs, in warm, highly oxygenated water: the Volta '
+      + 'Grande, the only refuge of the zebra pleco.',
+    milieu: [
+      'The Xingu flows down from the Brazilian plateau to the Amazon, which it joins in the state of Pará. Downstream '
+        + 'of Altamira it makes a great bend, the **Volta Grande**, through a series of rapids: channels, rocky islands, '
+        + 'slabs and boulders resting on sand, between which the water speeds up.',
+      'It is a **clear-water** river, transparent and poor in sediment, very different from the black water of the Rio '
+        + 'Negro. Since 2016, the Belo Monte dam has diverted much of the flow of the Volta Grande, the only known '
+        + 'habitat of the zebra pleco, listed as critically endangered by the IUCN.',
+    ],
+    eau: [
+      'Rodrigues-Filho and colleagues (2015) monitored the water quality of the basin from 2012 to 2014, before the '
+        + 'dam was filled. At the river stations, the pH ranged from 5.0 to 8.4 (6.95 on average), conductivity stayed '
+        + 'very low, at 10 to 80 µS/cm (30 on average), and the water was warm: 27 to 33 °C. It is also transparent and '
+        + 'well oxygenated.',
+      'In the aquarium, aim for soft, near-neutral, warm water with strong water movement: rapids fish cope poorly with '
+        + 'a lack of oxygen.',
+    ],
+    vie: [
+      'The Xingu is famous for its loricariids, known to aquarists by "L" numbers. The zebra pleco (*Hypancistrus '
+        + 'zebra*, L46), mostly carnivorous, lives in the cracks of the Volta Grande rocks; *Baryancistrus chrysolomus* '
+        + '(L47) grazes algae under the large slabs; *Scobinancistrus aureatus* and *Pseudacanthicus pirarara* shelter '
+        + 'in deep crevices. *Peckoltia vittata* also lives in other Amazon tributaries. Above them, *Acnodon normani*, '
+        + 'a relative of the pacus that also tears scales off other fish, swims in groups.',
+      'In the current, the only underwater plants are podostemads, which cling flat to the rocks of the rapids and '
+        + 'cannot be grown in aquariums. No plant or invertebrate of the catalogue lives there.',
+    ],
+    aquarium: [
+      'Stacked flat stones with cracks and narrow caves (slate, clay tubes): one shelter per pleco.',
+      'A bottom of pale sand and pebbles, little wood, and no plants, or epiphytes tied to the rocks.',
+      'Soft, warm water (27 to 30 °C), pH 6.5 to 7.5, with a circulation pump and strong oxygenation.',
+      'Protein-rich prey and pellets for the zebra pleco, plant-based food for *Baryancistrus*.',
+    ],
+    bac: 'A 400 L tank, mostly for the floor area, with one zebra pleco and one *Baryancistrus chrysolomus*, which their '
+      + 'profiles describe as solitary and territorial. pH 6.8 and 28 °C lie within their shared ranges.',
+    legendes: {
+      'xingu-1.jpg': 'Xingu rapids near Vitória do Xingu (Pará): rocks, channels and clear water.',
+      'xingu-2.jpg': 'The Xingu between the two sites of the Belo Monte dam.',
+      'xingu-3.jpg': 'A sandy beach on the Xingu: the clear water shows the bottom.',
+    },
+  },
+
+  'lac-tanganyika': {
+    nom: 'Lake Tanganyika, the rocky shores',
+    region: 'Tanzania, DR Congo, Burundi, Zambia',
+    type: 'Great Rift lake',
+    resume: 'One of the oldest lakes in the world: very hard, alkaline water, rock rubble where *Tropheus*, '
+      + '*Julidochromis* and lamprologines live, and shoals of *Cyprichromis* in open water.',
+    milieu: [
+      'Lake Tanganyika stretches for nearly 670 km along the African Rift, between Tanzania, the Democratic Republic of '
+        + 'the Congo, Burundi and Zambia. Nearly 1,500 m deep, it is the second deepest lake in the world after Baikal, '
+        + 'but only its surface waters hold enough oxygen for fish.',
+      'Its shores alternate sandy beaches, plant beds, beds of empty shells and rocky coasts. On the latter, boulders '
+        + 'and slabs pile up to several tens of metres deep, and each species has its own zone: the algae-covered '
+        + 'surface of the rocks, the cracks, the caves or the open water above.',
+    ],
+    eau: [
+      'According to Talling and Talling (1965), the surface water has a conductivity of 606 to 620 µS/cm, three times '
+        + 'that of Lake Malawi. It is very rich in magnesium: 10.4 to 12.5 °dGH for a carbonate hardness of 16.9 to '
+        + '19.1 °dKH. Plisnier and colleagues (1996) measured a mean surface pH of 9.01 to 9.06 over a year, at '
+        + 'Bujumbura, Kigoma and Mpulungu.',
+      'The lake water is also very stable and almost free of nitrate. In the aquarium, the main things to reproduce '
+        + 'are the high pH and the hardness, with regular water changes: these cichlids tolerate nitrogen waste poorly.',
+    ],
+    vie: [
+      '*Tropheus* graze the algae film of shallow rocks in groups. *Julidochromis* and the lemon cichlid '
+        + '(*Neolamprologus leleupi*) slip into the cracks, the fairy cichlid (*N. brichardi*) lives in colonies where '
+        + 'the young of earlier broods help guard the fry, and the very flat *Altolamprologus calvus* hunts in the '
+        + 'crevices. *Cyprichromis leptosoma* shoals in open water along the drop-offs, the frontosa (*Cyphotilapia '
+        + 'frontosa*) lives deeper, and *Synodontis petricola*, a small catfish, hides among the rocks.',
+      'Beds of *Vallisneria* grow in sheltered bays and are recorded around the lake according to GBIF. The lake also '
+        + 'holds endemic shrimps, crabs and snails, but none is in the catalogue.',
+    ],
+    aquarium: [
+      'Rocks stacked securely up to the top of the tank, with narrow cracks for *Julidochromis* and lamprologines, and '
+        + 'fine sand on the bottom.',
+      'Hard, alkaline water, pH 8 to 9, 24 to 27 °C; coral sand or Rift lake salts help hold the pH and hardness.',
+      'Few fish for the volume, and species from different zones (cracks, rock surface, open water) to spread out '
+        + 'the territories.',
+      'Frequent water changes and medium lighting, which lets algae grow on the rocks.',
+    ],
+    bac: 'A 300 L tank: a pair of *Julidochromis regani*, a pair of lemon cichlids, a pair of *Altolamprologus calvus* '
+      + 'and four *Synodontis petricola*, in water at pH 8.5, 12 °dGH and 25 °C. *Vallisneria* is left out: its '
+      + 'profile does not go above pH 8.',
+    legendes: {
+      'lac-tanganyika-1.jpg': 'The lakeshore in Gombe Stream National Park, Tanzania: pebbles, clear water and forest '
+        + 'down to the edge.',
+      'lac-tanganyika-2.jpg': 'Scientific dive over a sand and rock bottom in the lake.',
+      'lac-tanganyika-3.jpg': 'Young *Boulengerochromis microlepis*, the largest cichlid in the world, leave their nest '
+        + 'at night under their parents\' guard.',
+      'lac-tanganyika-bac-1.jpg': 'The large Lake Tanganyika tank of the Gliwice palm house, Poland: stacked rocks and '
+        + 'frontosas.',
+    },
+  },
+
+  'tanganyika-coquilles': {
+    nom: 'Lake Tanganyika, the shell beds',
+    region: 'Tanzania, DR Congo, Zambia',
+    type: 'Shell beds',
+    resume: 'On the sandy floor of the lake, fields of empty snail shells serve as shelter and nest for tiny cichlids, '
+      + 'the shell dwellers.',
+    milieu: [
+      '*Neothauma tanganyicense*, a large snail endemic to the lake, leaves behind a thick shell that does not dissolve '
+        + 'in the alkaline water. On some sandy bottoms, between about 10 and 45 m deep, these shells pile up into vast '
+        + 'beds, where they are almost the only shelter.',
+      'Several lamprologines have specialised in these shells: they hide, spawn and raise their fry in them. Males of '
+        + '*Lamprologus callipterus*, a larger species, even carry shells to build heaps where their females spawn.',
+    ],
+    eau: [
+      'It is Lake Tanganyika water: a conductivity of 606 to 620 µS/cm, 10.4 to 12.5 °dGH and 16.9 to 19.1 °dKH '
+        + 'according to Talling and Talling (1965), and a pH close to 9 at the surface (Plisnier and colleagues, 1996).',
+      'The profiles of these fish give a pH of 7.5 to 9.5 and hard water: Rift lake water suits them.',
+    ],
+    vie: [
+      '*Neolamprologus multifasciatus*, which does not exceed 4 cm, is among the smallest cichlids: its colonies cover '
+        + 'entire beds, each fish defending a few shells and a few centimetres around them. *N. similis*, whose pale '
+        + 'bars continue onto the head, lives the same way. The ocellated shell dweller (*Lamprologus ocellatus*) is '
+        + 'more solitary: it buries its shell and fiercely defends the entrance.',
+      'No plant grows on these bottoms, and no invertebrate of the catalogue lives there.',
+    ],
+    aquarium: [
+      'A fairly deep layer of fine sand, which the fish dig constantly, and many more shells than fish; Roman snail '
+        + '(escargot) shells replace those of *Neothauma*.',
+      'A small tank is enough: 80 to 100 L for a colony of a single species.',
+      'Hard, alkaline water, pH 8 to 9, 24 to 27 °C.',
+      'One shell-dwelling species per tank; in a larger tank, neighbours from other zones, such as *Cyprichromis* in '
+        + 'open water.',
+      'Live or frozen prey (brine shrimp, cyclops): dry food alone is not enough.',
+    ],
+    bac: 'An 80 L tank for a colony of five *Neolamprologus similis*, in water at pH 8.5 and 12 °dGH, with at least two '
+      + 'shells per fish and more females than males.',
+    legendes: {
+      'tanganyika-coquilles-1.jpg': 'A small cichlid hiding in an empty snail shell among the sponges of the lake '
+        + 'floor, in Zambia.',
+      'tanganyika-coquilles-bac-1.jpg': '*Neolamprologus multifasciatus* among a heap of shells, in an aquarium.',
+      'tanganyika-coquilles-bac-2.jpg': 'A male *N. multifasciatus* guarding its territory.',
+    },
+  },
+
+  'ghats-occidentaux': {
+    nom: 'Rivers of the Western Ghats',
+    region: 'Kerala and Karnataka, India',
+    type: 'Monsoon rivers',
+    resume: 'Rocky rivers running down the mountains of southwestern India and swelling with each monsoon: home of '
+      + 'the Denison barb and the Malabar pufferfish.',
+    milieu: [
+      'The Western Ghats form a mountain range parallel to the southwest coast of India, one of the great biodiversity '
+        + 'hotspots of the planet. The southwest monsoon brings most of the rain, from June to September: Kerala '
+        + 'rivers such as the Chaliyar, the Chalakudy or the Periyar swell, then fall again, leaving pools between the '
+        + 'rocks in the dry season.',
+      'In their middle course, clear water runs over slabs, pebbles and sand under dense vegetation. Further down, the '
+        + 'rivers slow down in the coastal plains and the backwaters, where the water turns brackish.',
+    ],
+    eau: [
+      'The profiles of these fish describe clear, highly oxygenated water, soft to moderately hard, pH 6.5 to 7.8, '
+        + 'and cool for the tropics: 15 to 25 °C for the Denison barb.',
+      'The monsoon renews the water every year, with sudden floods; in the dry season, isolated pools warm up.',
+    ],
+    vie: [
+      'The Denison barb (*Sahyadria denisonii*), listed as endangered by the IUCN, gathers in rocky pools; the '
+        + 'filament barb (*Dawkinsia filamentosa*) shoals down to the coastal plains, and the Arulius barb '
+        + '(*D. arulius*) lives on the eastern slope, in the Kaveri basin. The Malabar pufferfish (*Carinotetraodon '
+        + 'travancoricus*) favours slow, densely vegetated water, and the striped panchax (*Aplocheilus lineatus*) '
+        + 'waits for prey just below the surface.',
+      '*Cryptocoryne spiralis* and *Lagenandra meeboldii* grow on the banks and in the riverbeds, spending the dry '
+        + 'season out of the water; *Aponogeton natans* and round-leaf rotala occupy pools and still water. All are '
+        + 'recorded in the region according to GBIF.',
+    ],
+    aquarium: [
+      'A bottom of sand and pebbles, rounded stones and a few roots; plants along the sides and open swimming space '
+        + 'in the middle.',
+      'Clear, soft to moderately hard water, pH 6.5 to 7.5, between 22 and 25 °C, well oxygenated and with a moderate '
+        + 'current.',
+      'A large tank: Denison and filament barbs swim constantly and live in shoals of 8 to 10.',
+      'The Malabar pufferfish, a fin nipper, in its own planted tank.',
+    ],
+    bac: 'A 450 L tank with a shoal of eight Denison barbs and ten filament barbs, *Cryptocoryne spiralis*, a '
+      + '*Lagenandra meeboldii* and rotala, in water at pH 7 and 23 °C. Their profiles ask for at least 300 L for each '
+      + 'of these barbs.',
+    legendes: {
+      'ghats-occidentaux-1.jpg': 'The Chalakudy in the Vettilapara area: boulders, rapids and Ghats forest in the mist.',
+      'ghats-occidentaux-2.jpg': 'The Chaliyar near Nilambur, at the foot of the Ghats.',
+      'ghats-occidentaux-3.jpg': 'Slabs and pools of the Chalakudy at Thumboormuzhi.',
+    },
+  },
+
+  usumacinta: {
+    nom: 'Rivers of the Usumacinta basin',
+    region: 'Mexico (Chiapas, Tabasco), Guatemala',
+    type: 'Large limestone river',
+    resume: 'The largest river in Mesoamerica, with warm, limestone water: the realm of the firemouth cichlid, '
+      + 'Salvin\'s cichlid, swordtails and mollies.',
+    milieu: [
+      'The Usumacinta rises in the highlands of Guatemala, forms part of the border with Chiapas, cuts through the Boca '
+        + 'del Cerro canyon, then spreads out over the marshy plains of Tabasco before joining the Grijalva and the '
+        + 'Gulf of Mexico.',
+      'Its basin largely drains limestone, like the neighbouring Petén and Yucatán. Habitats are very varied: the main '
+        + 'channel and its sandbanks, clear tributaries, lagoons, marshes and weed-choked ditches, where most of the '
+        + 'region\'s aquarium fish live.',
+    ],
+    eau: [
+      'Salcedo-Garduño and colleagues (2022) analysed the water of the lower Usumacinta, in Tabasco, from June 2017 to '
+        + 'May 2018: a pH of 7.5 to 8.9 and a temperature of 23 to 33.9 °C, warmest in May, at the end of the dry '
+        + 'season. Dissolved solids also rose in the dry season.',
+      'The profiles of the region\'s fish call for neutral to alkaline, moderately hard water; the Atlantic molly '
+        + 'wants harder water than the cichlids and swordtails.',
+    ],
+    vie: [
+      'The firemouth cichlid (*Thorichthys meeki*), Salvin\'s cichlid (*Trichromis salvini*) and the Jack Dempsey '
+        + '(*Rocio octofasciata*) defend territories near the bottom; Salvin\'s cichlid also hunts in the current. '
+        + 'Swordtails (*Xiphophorus hellerii*), platies (*X. maculatus*) and the Atlantic molly (*Poecilia mexicana*) '
+        + 'live in groups in calm, vegetated water; the sailfin molly (*P. velifera*) only reaches the lower basin, '
+        + 'near the coastal lagoons.',
+      'The plant beds mix hornwort, southern naiad and water stargrass, with floating plants such as *Ludwigia '
+        + 'helminthorrhiza* and pennyworts on the banks, all recorded in the basin according to GBIF.',
+    ],
+    aquarium: [
+      'A bottom of sand and gravel, a few limestone rocks and roots; the cichlids dig.',
+      'Neutral to alkaline water (pH 7.5 to 8), moderately hard, between 24 and 28 °C.',
+      'Hardy plants in clumps (hornwort, water stargrass) and floating plants, where livebearer fry hide.',
+      'The territorial cichlids apart from the peaceful livebearers: a pair of firemouths in at least 140 L, or a tank '
+        + 'of swordtails and platies.',
+    ],
+    bac: 'A 150 L tank for the livebearers: four swordtails and four platies (one male for three females), with '
+      + 'hornwort, water stargrass and naiad, at pH 7.6 and 14 °dGH. The Atlantic molly is left out: its profile asks '
+      + 'for harder water than the swordtails\'.',
+    legendes: {
+      'usumacinta-1.jpg': 'The Usumacinta canyon at Boca del Cerro, near Tenosique (Tabasco), seen by drone.',
+      'usumacinta-2.jpg': 'The Usumacinta near Yaxchilán: Chiapas (Mexico) on the left, Guatemala on the right.',
+      'usumacinta-3.jpg': 'The river in the plains of Tabasco, at Balancán.',
     },
   },
 
