@@ -1,15 +1,17 @@
-""" API Flask d'Aquarius : catalogue des poissons, familles, invertébrés et plantes
+""" API Flask d'Aquarius : catalogue des poissons, familles, invertébrés et plantes, et formulaire de contact
 
 Chaque route accepte `?lang=en` ou `?lang=ja` pour les noms communs et les textes des espèces (translations.py).
 """
 
 import os
+import smtplib
 from pathlib import Path
 
-from flask import Flask
+from flask import Flask, request
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 
+import contact
 from models import Poisson, Famille, Invertebre, Plante
 from translations import language, translate
 
@@ -110,3 +112,23 @@ def get_invertebre(id: int):
         return 'Invertebrate not found', 404
 
     return translate(invertebre.as_dict(), 'invertebrates', language())
+
+
+@app.post('/contact')
+def envoyer_contact():
+    """ Message du formulaire de contact, remis par e-mail au serveur de l'éditeur (contact.py) """
+    # shortcut: pas de limite de débit (fonctions sans état sur Vercel), si le spam passe le piège : un compteur partagé
+    data = request.get_json(silent=True) or {}
+    if erreurs := contact.erreurs(data):
+        return {'erreurs': erreurs}, 400
+    if contact.robot(data):
+        # Le robot croit avoir réussi : rien ne lui indique le piège
+        return {'ok': True}, 202
+    if not contact.configure():
+        return {'erreur': 'non configuré'}, 503
+    try:
+        contact.envoyer(data)
+    except (OSError, smtplib.SMTPException):
+        app.logger.exception('Envoi du formulaire de contact impossible')
+        return {'erreur': 'envoi'}, 502
+    return {'ok': True}, 202
