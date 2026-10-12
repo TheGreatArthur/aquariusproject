@@ -56,17 +56,18 @@ export default function FamilyGrid () {
                 className="object-cover transition duration-700 group-hover:scale-105"
                 style={f.position ? { objectPosition: f.position } : undefined}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"/>
-              <div className="relative p-4 sm:p-5">
+              {/* Voile sombre dans les deux thèmes : un voile clair (couleur du fond) délavait les photos */}
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/30 to-transparent"/>
+              <div className="relative p-4 text-white sm:p-5">
                 <div className="flex items-center justify-between gap-3">
                   <h3 className={clsx('min-w-0 font-semibold', i === 0 ? 'text-2xl' : 'text-[0.95rem] sm:text-lg')}>
                     {term(f.nom)}
                   </h3>
-                  <ArrowUpRight className="hidden h-5 w-5 shrink-0 text-accent opacity-0 transition group-hover:opacity-100 sm:block"/>
+                  <ArrowUpRight className="hidden h-5 w-5 shrink-0 text-teal-300 opacity-0 transition group-hover:opacity-100 sm:block"/>
                 </div>
-                <p className="mt-1 hidden text-sm text-foreground/75 sm:line-clamp-2">{t(f.description, f.en, f.ja)}</p>
+                <p className="mt-1 hidden text-sm text-white/80 sm:line-clamp-2">{t(f.description, f.en, f.ja)}</p>
                 {counts[f.nom.toLowerCase()] && (
-                  <p className="mt-2 text-xs font-medium text-accent-glow sm:mt-3">
+                  <p className="mt-2 text-xs font-medium text-teal-200 sm:mt-3">
                     {counts[f.nom.toLowerCase()]} {t('espèces', 'species', '種')}
                   </p>
                 )}

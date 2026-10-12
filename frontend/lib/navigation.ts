@@ -12,8 +12,6 @@ export const NAV_LINKS = [
   { href: '/contact', label: 'Contact', en: 'Contact', ja: 'お問い合わせ' },
 ];
 
-export const INSTAGRAM_URL = 'https://www.instagram.com/projet.aquarius.pro';
-
 // Nombre de changements de page faits dans le site depuis le chargement (suivi par <Providers>)
 let inAppNavigations = 0;
 

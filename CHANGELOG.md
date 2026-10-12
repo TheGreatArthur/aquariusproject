@@ -6,6 +6,16 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- **Contact form that works** ([ADR 0022](docs/adr/0022-contact-form-through-the-api.md)): the page posts to the API
+  (`POST /contact`), which validates the message and sends it over SMTP straight to the publisher's own mail server,
+  set by `CONTACT_*` environment variables. EmailJS and its public keys are gone; a hidden field and a minimum fill
+  time stop simple bots.
+- **Terms of use, legal notice and privacy policy** (`/cgu`, in three languages), linked from the footer: publisher,
+  host, licences of the code and photos, what the contact form collects and how long it is kept.
+- A new logo: two waves, like the Aquarius sign, as an SVG mark in the theme colours, with a matching favicon and
+  Apple touch icon.
+- The "Ready to plan your next tank?" banner shows a free (CC0) nature aquarium photo, used nowhere else on the home
+  page.
 - **Biotopes** ([ADR 0020](docs/adr/0020-biotopes.md), [ADR 0021](docs/adr/0021-biotope-videos-and-more-habitats.md)):
   a new section in the navigation with eleven natural habitats (Rio Negro, Xingu rapids, Gulf of Guinea forest
   streams, Lake Malawi, Lake Tanganyika rocky shores and shell beds, Southeast Asian peat swamps, Sri Lanka wet zone,
@@ -20,6 +30,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   aurea*, *Rotala rotundifolia*, *Heteranthera dubia*…).
 
 ### Fixed
+- Home family cards in the light theme: the text scrim took the page colour and washed the photos out in white; it
+  is now dark in both themes, with white text.
 - Home page family cards: each photo keeps its fish in view (the angelfish lost its head, the corydoras hid under the
   text), and the call-to-action banner no longer reuses the American cichlid card's photo.
 - The home globe and the species range maps follow the light theme (map colours are theme tokens).
@@ -37,6 +49,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   name.
 
 ### Changed
+- The Instagram link and icon are removed from the contact page.
 - **Species pages rendered on the server** ([ADR 0019](docs/adr/0019-species-pages-rendered-on-the-server.md)):
   the texts, water parameters and range of every fish, invertebrate and plant are in the HTML instead of being
   fetched by the browser after a skeleton; the page and its metadata share one API request, and an unknown species
