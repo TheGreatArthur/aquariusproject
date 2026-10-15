@@ -1,0 +1,45 @@
+{
+  "nom_scientifique": "Carassius auratus 'Ryukin'",
+  "nom_commun": "Ryukin",
+  "famille": "Cyprinidae",
+  "genre": "Carassius",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 7.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 8.0,
+  "gh_maxi": 18.0,
+  "temp_mini": 15,
+  "temp_maxi": 23,
+  "taille": 20.0,
+  "litrage_mini": 150,
+  "nb_individus": 2,
+  "points": 50,
+  "regime": "omnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "courant",
+  "longevite": 15,
+  "courant": "doux",
+  "photos": [
+    "File:OrangeWhite Ryukin.jpg",
+    "File:Ryukin pair.jpg",
+    "File:Welon.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "OATA",
+      "url": "https://ornamentalfish.org/what-we-do/advice-information/care-sheets/caresheets-coldwater-fish/how-to-look-after-fancy-goldfish/"
+    },
+    {
+      "nom": "Fishkeeper",
+      "url": "https://www.fishkeeper.co.uk/fish/freshwater/coldwater-aquarium-fish/ryukin"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Carassius-auratus.html"
+    }
+  ]
+}

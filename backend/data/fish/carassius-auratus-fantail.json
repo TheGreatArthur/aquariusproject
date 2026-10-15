@@ -1,0 +1,41 @@
+{
+  "nom_scientifique": "Carassius auratus 'Fantail'",
+  "nom_commun": "Queue d'éventail",
+  "famille": "Cyprinidae",
+  "genre": "Carassius",
+  "zone_geo": "Asie",
+  "type_eau": "douce",
+  "ph_mini": 7.0,
+  "ph_maxi": 8.0,
+  "kh": null,
+  "gh_mini": 8.0,
+  "gh_maxi": 18.0,
+  "temp_mini": 15,
+  "temp_maxi": 23,
+  "taille": 20.0,
+  "litrage_mini": 150,
+  "nb_individus": 2,
+  "points": 50,
+  "regime": "omnivore",
+  "mode_vie": "petit groupe",
+  "comportement": "pacifique",
+  "robustesse": "robuste",
+  "dispo": "très courant",
+  "longevite": 15,
+  "courant": "doux",
+  "photos": [
+    "File:Goldfish 2.jpg",
+    "File:Aquarium fish gold fish.jpg",
+    "File:Goldfish Fantail.jpg"
+  ],
+  "sources": [
+    {
+      "nom": "OATA",
+      "url": "https://ornamentalfish.org/what-we-do/advice-information/care-sheets/caresheets-coldwater-fish/how-to-look-after-fancy-goldfish/"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Carassius-auratus.html"
+    }
+  ]
+}

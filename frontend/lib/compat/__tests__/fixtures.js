@@ -95,6 +95,21 @@ export const rasboraNain = (q = 8) => fish({
   temp_mini: 24, temp_maxi: 28, quantite: q,
 });
 
+// Variétés de poisson rouge (data/fish/carassius-auratus-*.json)
+const poissonRouge = (overrides) => fish({
+  nom_famille: 'Cyprinidae', nom_mode_vie: 'petit groupe', nom_zone_geo: 'Asie', taille: 20, nb_individus: 2,
+  points: 50, litrage_mini: 150, ph_mini: 7, ph_maxi: 8, gh_mini: 8, gh_maxi: 18, temp_mini: 15, temp_maxi: 23,
+  ...overrides,
+});
+
+export const oranda = (q = 2) => poissonRouge({
+  id: 100, nom_commun: 'Oranda', nom_scientifique: 'Carassius auratus \'Oranda\'', taille: 30, quantite: q,
+});
+
+export const ryukin = (q = 2) => poissonRouge({
+  id: 101, nom_commun: 'Ryukin', nom_scientifique: 'Carassius auratus \'Ryukin\'', quantite: q,
+});
+
 /** Invertébré et plante au format de l'API, passés par espece() comme dans le simulateur */
 export const invertebre = (overrides = {}, q = 5) => ({
   ...espece('invertebre', {

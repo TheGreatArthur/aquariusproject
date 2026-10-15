@@ -1,0 +1,30 @@
+{
+  "nom_scientifique": "Carassius auratus 'Ryukin'",
+  "nom_valide": "Carassius auratus",
+  "auteur": "(Linnaeus, 1758)",
+  "classification": "Cypriniformes › Cyprinidae",
+  "uicn": "LC",
+  "repartition": "Forme d'élevage de *Carassius auratus* (espèce originaire de Chine)",
+  "pays": [],
+  "presentation": "Le ryukin se reconnaît à son corps très haut, avec une cassure marquée entre la tête et le dos qui forme une bosse, et à sa longue nageoire caudale double en voile.\n\nIl existe en rouge, rouge et blanc et calico.",
+  "habitat": "Forme d'élevage, il n'a pas d'habitat naturel : l'espèce sauvage, le carassin doré, vit dans les rivières, lacs et étangs de Chine, aux eaux calmes, riches en végétation.\n\nC'est un poisson d'eau froide, qui se passe de chauffage : l'eau idéale est entre 15 et 23 °C, neutre à alcaline (pH 7 à 8), moyennement dure. Comptez 100 L pour un adulte et 50 L de plus par poisson supplémentaire, soit 150 L pour deux, avec une filtration puissante mais un courant doux, car ces variétés nagent mal. Décor sans arêtes vives ; les plantes tendres seront mangées.",
+  "comportement": "Paisible et sociable, il vit en petit groupe avec d'autres poissons rouges de fantaisie. Évitez le poisson rouge commun et la comète, plus rapides, qui lui prennent la nourriture et lui mordillent les nageoires.\n\nIl ne cohabite pas avec les poissons tropicaux : il lui faut une eau plus fraîche, il salit beaucoup et avale les petits poissons et les crevettes. Le mieux est un aquarium qui lui est réservé. Omnivore et glouton, il se nourrit de granulés qui coulent : en happant l'air à la surface, il peut perdre son équilibre.",
+  "sources": [
+    {
+      "nom": "OATA",
+      "url": "https://ornamentalfish.org/what-we-do/advice-information/care-sheets/caresheets-coldwater-fish/how-to-look-after-fancy-goldfish/"
+    },
+    {
+      "nom": "Fishkeeper",
+      "url": "https://www.fishkeeper.co.uk/fish/freshwater/coldwater-aquarium-fish/ryukin"
+    },
+    {
+      "nom": "FishBase",
+      "url": "https://www.fishbase.se/summary/Carassius-auratus.html"
+    },
+    {
+      "nom": "Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Carassius_auratus"
+    }
+  ]
+}

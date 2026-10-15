@@ -6,6 +6,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- **Fancy goldfish**: seven aquarium varieties of *Carassius auratus* (fantail, ryukin, oranda, black moor, ranchu,
+  pearlscale, bubble eye) with water values from the OATA fancy goldfish care sheet, Fishkeeper and FishBase,
+  profiles in three languages and free Commons photos. Simulator rule 23 blocks goldfish with warm-water species
+  (temperature range centred on 22 °C or more) and, with any other animal, recommends a tank of their own.
 - **Contact form that works** ([ADR 0022](docs/adr/0022-contact-form-through-the-api.md)): the page posts to the API
   (`POST /contact`), which validates the message and sends it over SMTP straight to the publisher's own mail server,
   set by `CONTACT_*` environment variables. EmailJS and its public keys are gone; a hidden field and a minimum fill
