@@ -8,7 +8,7 @@
 
 ![Home page](docs/screenshots/home.png)
 
-**Live demo:** [aquarius-demo.vercel.app](https://aquarius-demo.vercel.app) (API: [aquarius-api.vercel.app](https://aquarius-api.vercel.app/poissons/familles)) · **Portfolio page:** coming soon
+**Live site:** [aquarius-pro.com](https://aquarius-pro.com) (API: [aquarius-api.vercel.app](https://aquarius-api.vercel.app/poissons/familles)) · **Portfolio page:** coming soon
 
 ## Features
 
@@ -162,8 +162,11 @@ CI runs the same checks on every pull request and on pushes to `main`.
 
 ## Deployment
 
-The demo runs on Vercel as two projects built from this repository ([ADR 0018](docs/adr/0018-demo-on-vercel.md)),
-[aquarius-demo](https://aquarius-demo.vercel.app) for the site and [aquarius-api](https://aquarius-api.vercel.app) for the API:
+The site runs on Vercel as two projects built from this repository ([ADR 0018](docs/adr/0018-demo-on-vercel.md)),
+aquarius-demo for the site, served at [aquarius-pro.com](https://aquarius-pro.com), and
+[aquarius-api](https://aquarius-api.vercel.app) for the API. The domain is registered at Infomaniak, which keeps its
+DNS zone and the `contact@` mailbox: two A records and a `www` CNAME point to Vercel, and `www` and
+`aquarius-demo.vercel.app` redirect to the domain.
 
 | Project | Root directory | Environment variables |
 |---|---|---|
