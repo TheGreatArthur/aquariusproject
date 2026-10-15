@@ -530,6 +530,69 @@
       "comportement": "Active and sociable, it is kept in a group; it can intimidate small fish and nip long fins. It lives well with midwater cyprinids. Mostly carnivorous (molluscs, insects, worms), it takes dry and frozen food and also eats soft plants."
     }
   },
+  "Carassius auratus 'Black Moor'": {
+    "nom_commun": "Black moor",
+    "profil": {
+      "repartition": "Captive-bred form of *Carassius auratus* (a species native to China)",
+      "presentation": "The black moor is the black form of the telescope goldfish: its eyes sit on outgrowths that make them protrude on each side of the head. It is called kuro demekin in Japan and dragon eye in China. Its tail is double.\n\nIts protruding eyes are easily hurt: use smooth decor and avoid fast tankmates.",
+      "habitat": "As a captive-bred form it has no natural habitat: the wild form of the species lives in calm, well-vegetated rivers, lakes and ponds in China.\n\nIt is a coldwater fish that needs no heater: ideal water is 15–23 °C, neutral to alkaline (pH 7–8) and moderately hard. Allow 100 L for one adult plus 50 L for each extra fish, so 150 L for two, with strong filtration but a gentle current, as these varieties are poor swimmers. Use decor without sharp edges; soft plants will be eaten.",
+      "comportement": "Peaceful and sociable, it lives in a small group with other fancy goldfish. Avoid common goldfish and comets, which are faster, steal its food and nip its fins.\n\nIt does not mix with tropical fish: it needs cooler water, produces a lot of waste and swallows small fish and shrimp. A tank of its own is best. An omnivore and a glutton, it should be fed sinking pellets: gulping air at the surface can upset its buoyancy."
+    }
+  },
+  "Carassius auratus 'Bubble Eye'": {
+    "nom_commun": "Bubble eye goldfish",
+    "profil": {
+      "repartition": "Captive-bred form of *Carassius auratus* (a species native to China)",
+      "presentation": "The bubble eye carries under each eye a semi-transparent, fluid-filled sac that wobbles as it swims.\n\nIt is the most fragile variety: a burst sac does not always grow back. It needs a tank without sharp decor, a covered filter intake and tankmates as slow as itself.",
+      "habitat": "As a captive-bred form it has no natural habitat: the wild form of the species lives in calm, well-vegetated rivers, lakes and ponds in China.\n\nIt is a coldwater fish that needs no heater: ideal water is 15–23 °C, neutral to alkaline (pH 7–8) and moderately hard. Allow 100 L for one adult plus 50 L for each extra fish, so 150 L for two, with strong filtration but a gentle current, as these varieties are poor swimmers. Use decor without sharp edges; soft plants will be eaten.",
+      "comportement": "Peaceful and sociable, it lives in a small group with other fancy goldfish. Avoid common goldfish and comets, which are faster, steal its food and nip its fins.\n\nIt does not mix with tropical fish: it needs cooler water, produces a lot of waste and swallows small fish and shrimp. A tank of its own is best. An omnivore and a glutton, it should be fed sinking pellets: gulping air at the surface can upset its buoyancy."
+    }
+  },
+  "Carassius auratus 'Fantail'": {
+    "nom_commun": "Fantail goldfish",
+    "profil": {
+      "repartition": "Captive-bred form of *Carassius auratus* (a species native to China)",
+      "presentation": "The fantail, often sold in France as the “voile de Chine”, is the Western form of the ryukin: egg-shaped body, tall dorsal fin and long double tail spread like a fan, without the ryukin's hump.\n\nLike all fancy varieties, it is more delicate than the common goldfish and is kept in an aquarium rather than a pond.",
+      "habitat": "As a captive-bred form it has no natural habitat: the wild form of the species lives in calm, well-vegetated rivers, lakes and ponds in China.\n\nIt is a coldwater fish that needs no heater: ideal water is 15–23 °C, neutral to alkaline (pH 7–8) and moderately hard. Allow 100 L for one adult plus 50 L for each extra fish, so 150 L for two, with strong filtration but a gentle current, as these varieties are poor swimmers. Use decor without sharp edges; soft plants will be eaten.",
+      "comportement": "Peaceful and sociable, it lives in a small group with other fancy goldfish. Avoid common goldfish and comets, which are faster, steal its food and nip its fins.\n\nIt does not mix with tropical fish: it needs cooler water, produces a lot of waste and swallows small fish and shrimp. A tank of its own is best. An omnivore and a glutton, it should be fed sinking pellets: gulping air at the surface can upset its buoyancy."
+    }
+  },
+  "Carassius auratus 'Oranda'": {
+    "nom_commun": "Oranda",
+    "profil": {
+      "repartition": "Captive-bred form of *Carassius auratus* (a species native to China)",
+      "presentation": "The oranda carries a fleshy growth on top of its head, the “wen”; when it also covers the gill plates the fish is called a Dutch oranda. Its tail is long and double.\n\nIt is one of the largest varieties: well fed in a big tank it can exceed 20 cm. It comes in red, black, blue, chocolate, calico and “red cap” (white with a red wen).",
+      "habitat": "As a captive-bred form it has no natural habitat: the wild form of the species lives in calm, well-vegetated rivers, lakes and ponds in China.\n\nIt is a coldwater fish that needs no heater: ideal water is 15–23 °C, neutral to alkaline (pH 7–8) and moderately hard. Allow 100 L for one adult plus 50 L for each extra fish, so 150 L for two, with strong filtration but a gentle current, as these varieties are poor swimmers. Use decor without sharp edges; soft plants will be eaten.",
+      "comportement": "Peaceful and sociable, it lives in a small group with other fancy goldfish. Avoid common goldfish and comets, which are faster, steal its food and nip its fins.\n\nIt does not mix with tropical fish: it needs cooler water, produces a lot of waste and swallows small fish and shrimp. A tank of its own is best. An omnivore and a glutton, it should be fed sinking pellets: gulping air at the surface can upset its buoyancy."
+    }
+  },
+  "Carassius auratus 'Pearlscale'": {
+    "nom_commun": "Pearlscale goldfish",
+    "profil": {
+      "repartition": "Captive-bred form of *Carassius auratus* (a species native to China)",
+      "presentation": "The pearlscale is named after its domed scales with pale centres, which look like pearls all over the body. Its body is almost spherical, with a double tail; some lines carry a small wen.\n\nIts round body, one of the most extreme among goldfish, makes it prone to buoyancy problems: sinking food and a varied diet matter.",
+      "habitat": "As a captive-bred form it has no natural habitat: the wild form of the species lives in calm, well-vegetated rivers, lakes and ponds in China.\n\nIt is a coldwater fish that needs no heater: ideal water is 15–23 °C, neutral to alkaline (pH 7–8) and moderately hard. Allow 100 L for one adult plus 50 L for each extra fish, so 150 L for two, with strong filtration but a gentle current, as these varieties are poor swimmers. Use decor without sharp edges; soft plants will be eaten.",
+      "comportement": "Peaceful and sociable, it lives in a small group with other fancy goldfish. Avoid common goldfish and comets, which are faster, steal its food and nip its fins.\n\nIt does not mix with tropical fish: it needs cooler water, produces a lot of waste and swallows small fish and shrimp. A tank of its own is best. An omnivore and a glutton, it should be fed sinking pellets: gulping air at the surface can upset its buoyancy."
+    }
+  },
+  "Carassius auratus 'Ranchu'": {
+    "nom_commun": "Ranchu",
+    "profil": {
+      "repartition": "Captive-bred form of *Carassius auratus* (a species native to China)",
+      "presentation": "The ranchu has no dorsal fin, like the lionhead it descends from. It has a smaller head growth, a more triangular head, a more arched back and a tail set lower.\n\nIt comes in red, red and white, black, blue, chocolate, yellow, calico and “red cap”. A slow swimmer, it needs spotless water.",
+      "habitat": "As a captive-bred form it has no natural habitat: the wild form of the species lives in calm, well-vegetated rivers, lakes and ponds in China.\n\nIt is a coldwater fish that needs no heater: ideal water is 15–23 °C, neutral to alkaline (pH 7–8) and moderately hard. Allow 100 L for one adult plus 50 L for each extra fish, so 150 L for two, with strong filtration but a gentle current, as these varieties are poor swimmers. Use decor without sharp edges; soft plants will be eaten.",
+      "comportement": "Peaceful and sociable, it lives in a small group with other fancy goldfish. Avoid common goldfish and comets, which are faster, steal its food and nip its fins.\n\nIt does not mix with tropical fish: it needs cooler water, produces a lot of waste and swallows small fish and shrimp. A tank of its own is best. An omnivore and a glutton, it should be fed sinking pellets: gulping air at the surface can upset its buoyancy."
+    }
+  },
+  "Carassius auratus 'Ryukin'": {
+    "nom_commun": "Ryukin",
+    "profil": {
+      "repartition": "Captive-bred form of *Carassius auratus* (a species native to China)",
+      "presentation": "The ryukin is recognised by its very deep body, with a sharp break between head and back that forms a hump, and its long, veil-like double tail.\n\nIt comes in red, red and white and calico.",
+      "habitat": "As a captive-bred form it has no natural habitat: the wild form of the species lives in calm, well-vegetated rivers, lakes and ponds in China.\n\nIt is a coldwater fish that needs no heater: ideal water is 15–23 °C, neutral to alkaline (pH 7–8) and moderately hard. Allow 100 L for one adult plus 50 L for each extra fish, so 150 L for two, with strong filtration but a gentle current, as these varieties are poor swimmers. Use decor without sharp edges; soft plants will be eaten.",
+      "comportement": "Peaceful and sociable, it lives in a small group with other fancy goldfish. Avoid common goldfish and comets, which are faster, steal its food and nip its fins.\n\nIt does not mix with tropical fish: it needs cooler water, produces a lot of waste and swallows small fish and shrimp. A tank of its own is best. An omnivore and a glutton, it should be fed sinking pellets: gulping air at the surface can upset its buoyancy."
+    }
+  },
   "Carinotetraodon travancoricus": {
     "nom_commun": "Dwarf pufferfish",
     "profil": {
