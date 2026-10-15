@@ -2,7 +2,7 @@
 
 The simulator (`/simulation`) mixes fish, plants and invertebrates. It lists first the species that suit the tank
 (volume, and pH / GH / temperature when given); species that do not suit it can still be shown and added, and rule 0
-then blocks them. 23 rules check the tank. Each species gets an id unique across the three catalogues and the field
+then blocks them. 24 rules check the tank. Each species gets an id unique across the three catalogues and the field
 names of a fish ([`especes.ts`](../frontend/lib/compat/especes.ts)); a parameter a species does not give (the GH of
 plants and of most invertebrates, the size of many snails) is ignored instead of read as 0.
 Code: [`frontend/lib/compat`](../frontend/lib/compat) · tests: `npm test` in `frontend/`.
@@ -34,6 +34,7 @@ Severity: 🔴 **blocking** (the population is incompatible) · 🟠 **to watch*
 | 20 | Shared light | plant light ranges (très faible → très forte) | two plants share no light level | 🟠 |
 | 21 | CO₂ | plant CO₂ need `élevé` | a demanding plant is in the tank | 🔵 |
 | 22 | Plant eaters | herbivorous fish of Serrasalmidae and cichlid families, crayfish of 8 cm or more, omnivorous snails | they live with plants that are not marked as cichlid-proof | 🟠 |
+| 23 | Goldfish | scientific name `Carassius auratus …` (every variety), temperature range | goldfish live with a warm-water animal, whose temperature range is centred on 22 °C or more (🔴), or with any other animal (🟠): a tank of their own is recommended | 🟠 / 🔴 |
 
 Every rule reports **all** the conflicts it finds, with the fish involved. Before a species is added, the
 list shows the new conflicts it would create (`issuesIfAdded`).

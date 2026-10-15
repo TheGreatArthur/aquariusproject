@@ -104,6 +104,49 @@ export function familles (panier: Species[], { locale }: Environment = {}) {
   });
 }
 
+// Toutes les variétés de poisson rouge (Carassius auratus 'Oranda'…)
+export const estPoissonRouge = (p: CatalogueSpecies) => /^Carassius auratus\b/.test(p.nom_scientifique ?? '');
+
+// Espèce d'eau chaude : le milieu de sa plage de température atteint ce seuil (°C)
+export const SEUIL_EAU_CHAUDE = 22;
+const eauChaude = (p: Species) =>
+  p.temp_mini != null && p.temp_maxi != null && (p.temp_mini + p.temp_maxi) / 2 >= SEUIL_EAU_CHAUDE;
+
+/**
+ * 23. Poissons rouges : poissons d'eau froide, ils ne vivent pas avec les espèces d'eau chaude, et un aquarium
+ * qui leur est réservé est conseillé même avec des espèces d'eau fraîche (ils salissent et avalent les petits animaux)
+ */
+export function poissonsRouges (panier: Species[], { locale }: Environment = {}) {
+  const { t } = translator(locale);
+  const rouges = panier.filter(estPoissonRouge);
+  const autres = panier.filter((p) => estAnimal(p) && !estPoissonRouge(p));
+  if (!rouges.length || !autres.length)
+    return [];
+  const noms = (especes: Species[]) => liste(especes.map((p) => p.nom_commun), locale);
+  const chaudes = autres.filter(eauChaude);
+  const fraiches = autres.filter((p) => !eauChaude(p));
+  return [
+    ...(chaudes.length
+      ? [issue('poissonsRouges', 'error',
+        t(`${noms(rouges)} : les poissons rouges sont des poissons d'eau froide, incompatibles avec les espèces d'eau `
+          + `chaude (${noms(chaudes)}). Il est recommandé de leur consacrer un aquarium.`,
+        `${noms(rouges)}: goldfish are coldwater fish and cannot live with warm-water species (${noms(chaudes)}). `
+          + 'A tank of their own is recommended.',
+        `${noms(rouges)}：金魚は冷水魚で、熱帯性の種（${noms(chaudes)}）とは飼えません。金魚だけの水槽がおすすめです。`),
+        [...rouges, ...chaudes].map((p) => p.id))]
+      : []),
+    ...(fraiches.length
+      ? [issue('poissonsRouges', 'warning',
+        t(`Il est recommandé de consacrer un aquarium aux seuls poissons rouges (${noms(rouges)}) : ils salissent `
+          + `beaucoup l'eau et avalent les petits poissons et les crevettes (${noms(fraiches)}).`,
+        `A tank for goldfish only (${noms(rouges)}) is recommended: they produce a lot of waste and swallow small `
+          + `fish and shrimps (${noms(fraiches)}).`,
+        `金魚（${noms(rouges)}）だけの水槽がおすすめです：水をよく汚し、小魚やエビ（${noms(fraiches)}）を飲み込みます。`),
+        [...rouges, ...fraiches].map((p) => p.id))]
+      : []),
+  ];
+}
+
 /** 6. Bac biotope : toutes les espèces viennent de la même région (information positive) */
 export function biotope (tout: Species[], { locale }: Environment = {}) {
   const { t, term } = translator(locale);

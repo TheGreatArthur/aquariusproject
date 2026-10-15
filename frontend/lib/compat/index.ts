@@ -5,7 +5,7 @@
  * l'environnement (volume et eau saisis), et renvoie la liste des problèmes détectés : { rule, severity, message, ids }.
  */
 
-import { agressivite, biotope, bouche, familles, predateur } from './rules/cohabitation';
+import { agressivite, biotope, bouche, familles, poissonsRouges, predateur } from './rules/cohabitation';
 import { commonRanges, courant, parametres, votreEau } from './rules/eau';
 import { aquaterrarium, chasseurs, crevettes, escargots, larves } from './rules/invertebres';
 import { co2, herbivores, lumiere } from './rules/plantes';
@@ -40,6 +40,7 @@ export const RULES: Rule[] = [
   lumiere,        // 20. Éclairage commun aux plantes
   co2,            // 21. Plantes exigeantes en CO2 (information)
   herbivores,     // 22. Animaux qui mangent les plantes tendres
+  poissonsRouges, // 23. Poissons rouges avec d'autres espèces (eau chaude : blocage)
 ];
 
 const GRAVITE: Record<Severity, number> = { error: 2, warning: 1, info: 0 };

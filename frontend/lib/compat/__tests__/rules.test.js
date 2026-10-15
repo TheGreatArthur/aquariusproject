@@ -2,17 +2,18 @@ import { describe, expect, it } from 'vitest';
 
 import { commonRanges, evaluate, issuesIfAdded, RULES } from '@/lib/compat';
 import { espece, pointsInvertebre } from '@/lib/compat/especes';
+import { poissonsRouges } from '@/lib/compat/rules/cohabitation';
 import {
-  cardinalis, channa, combattant, danioRerio, discus, fish, guppy, invertebre, labeo, neon, plante, rasboraNain,
-  scalaire, silureDeVerre,
+  cardinalis, channa, combattant, danioRerio, discus, fish, guppy, invertebre, labeo, neon, oranda, plante,
+  rasboraNain, ryukin, scalaire, silureDeVerre,
 } from './fixtures';
 
 const ENV = { litrage: 400 };
 const rules = (panier, env = ENV) => evaluate(panier, env).issues.map((i) => `${i.rule}:${i.severity}`);
 
 describe('engine', () => {
-  it('exposes the 23 rules', () => {
-    expect(RULES).toHaveLength(23);
+  it('exposes the 24 rules', () => {
+    expect(RULES).toHaveLength(24);
   });
 
   it('is compatible for a peaceful South American school', () => {
@@ -260,5 +261,34 @@ describe('20-22. plants', () => {
     // Les loricariidés broutent les algues, pas les plantes
     expect(rules([fish({ nom_famille: 'Loricariidae', regime: 'herbivore, alguivore' }), plante()]))
       .not.toContain('herbivores:warning');
+  });
+});
+
+describe('23. goldfish', () => {
+  it('blocks goldfish with warm-water species and recommends a tank of their own', () => {
+    const issue = evaluate([oranda(), ryukin(), neon()], ENV).issues.find((i) => i.rule === 'poissonsRouges');
+
+    expect(issue.severity).toBe('error');
+    expect(issue.message).toContain('Oranda et Ryukin');
+    expect(issue.message).toContain('Néon bleu');
+    expect(issue.message).toContain('consacrer un aquarium');
+    expect(rules([oranda(), guppy()])).toContain('poissonsRouges:error');
+  });
+
+  it('only recommends a goldfish tank with coldwater fish and invertebrates', () => {
+    expect(rules([oranda(), danioRerio()])).toContain('poissonsRouges:warning');
+    expect(rules([oranda(), danioRerio()])).not.toContain('poissonsRouges:error');
+    expect(rules([oranda(), invertebre({ temp_mini: 15, temp_maxi: 25 })])).toContain('poissonsRouges:warning');
+  });
+
+  it('accepts goldfish together, and plants with them', () => {
+    expect(rules([oranda(), ryukin()])).not.toContain('poissonsRouges:warning');
+    expect(rules([oranda(), plante()]).filter((r) => r.startsWith('poissonsRouges'))).toEqual([]);
+  });
+
+  it('writes the message in the page language', () => {
+    const [issue] = poissonsRouges([oranda(), neon()], { locale: 'en' });
+
+    expect(issue.message).toContain('goldfish are coldwater fish');
   });
 });
