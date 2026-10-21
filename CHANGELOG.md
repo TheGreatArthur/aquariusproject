@@ -57,6 +57,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   name.
 
 ### Changed
+- **Share image of the site**: a 1200 × 630 card with the logo, the name, the tagline and aquarius-pro.com over the
+  home page aquascape, in the site's fonts and colours, instead of the bare photo (`scripts/og-image.mjs` renders it
+  with Playwright). Species and biotope pages still share their own photo.
 - The Instagram link and icon are removed from the contact page.
 - **Species pages rendered on the server** ([ADR 0019](docs/adr/0019-species-pages-rendered-on-the-server.md)):
   the texts, water parameters and range of every fish, invertebrate and plant are in the HTML instead of being
