@@ -20,7 +20,8 @@ The site serves about 300 MB of photos through `next/image`.
 - **The front end reaches the API through its existing `/api` rewrite**: `BACKEND_URL` is the API's production
   address, `NEXT_PUBLIC_SITE_URL` the site's, for the sitemap and share images.
 - **Image transformations kept for a month** (`images.minimumCacheTTL`) because Vercel counts them against a
-  monthly quota; `IMAGES_UNOPTIMIZED=1` serves the original photos if the quota runs out.
+  monthly quota; `IMAGES_UNOPTIMIZED=1` serves the original photos if the quota runs out. Superseded by
+  [ADR 0023](0023-prebuilt-thumbnails.md): the quota ran out, the site now serves thumbnails made at build time.
 
 ## Alternatives considered
 - **API on Render or Railway**: the usual home for Flask, but the free plans put the service to sleep, so the first
