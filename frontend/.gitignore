@@ -39,3 +39,6 @@ next-env.d.ts
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# miniatures des photos, fabriquées par npm run build (scripts/thumbnails.mjs)
+/public/_thumbs

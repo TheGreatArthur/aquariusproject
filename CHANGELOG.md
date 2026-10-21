@@ -34,6 +34,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   aurea*, *Rotala rotundifolia*, *Heteranthera dubia*…).
 
 ### Fixed
+- **Photos disappeared once Vercel's free image quota was used up** (5,000 transformations a month for about
+  1,300 photos): the build now makes WebP thumbnails of every photo (128 to 1,280 px, `scripts/thumbnails.mjs`) and a
+  custom `next/image` loader serves them as static files, so the site stays on the free plan and the catalogue
+  loads small images again ([ADR 0023](docs/adr/0023-prebuilt-thumbnails.md)).
 - Home family cards in the light theme: the text scrim took the page colour and washed the photos out in white; it
   is now dark in both themes, with white text.
 - Home page family cards: each photo keeps its fish in view (the angelfish lost its head, the corydoras hid under the
