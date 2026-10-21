@@ -1,1 +1,1 @@
-Aquarius, composez un aquarium en harmonie : poissons, plantes, invertébrés, biotopes et simulateur de compatibilité
+Aquarius, build a balanced aquarium: fish, plants, invertebrates, biotopes and a compatibility simulator
