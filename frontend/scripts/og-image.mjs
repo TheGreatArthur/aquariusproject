@@ -1,7 +1,7 @@
 /**
- * Image de partage du site (app/opengraph-image.jpg, 1200 × 630) : photo d'aquarium de l'accueil, logo, nom et
- * accroche, dans les polices et couleurs du site, rendue par Chromium (Playwright). Les fiches partagent leur propre
- * photo (generateMetadata). À relancer après un changement de logo, de couleurs ou d'accroche :
+ * Image de partage du site, en anglais (app/opengraph-image.jpg, 1200 × 630) : photo d'aquarium de l'accueil, logo,
+ * nom et accroche, dans les polices et couleurs du site, rendue par Chromium (Playwright). Les fiches partagent leur
+ * propre photo (generateMetadata). À relancer après un changement de logo, de couleurs ou d'accroche :
  *   node scripts/og-image.mjs
  */
 
@@ -20,7 +20,7 @@ const TEXTE = 'rgb(232 241 247)';
 const DISCRET = 'rgb(137 160 179)';
 
 const page = `<!doctype html>
-<html lang="fr"><head><meta charset="utf-8">
+<html lang="en"><head><meta charset="utf-8">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=block">
 <style>
   * { margin: 0; box-sizing: border-box; }
@@ -47,8 +47,8 @@ const page = `<!doctype html>
               fill="none" stroke="${FOND}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <span class="nom">Aquarius</span>
     </div>
-    <p class="accroche">Composez un aquarium<br>en harmonie</p>
-    <p class="themes">Poissons · Plantes · Invertébrés · Biotopes<br>et un simulateur de compatibilité</p>
+    <p class="accroche">Build a balanced<br>aquarium</p>
+    <p class="themes">Fish · Plants · Invertebrates · Biotopes<br>and a compatibility simulator</p>
   </div>
   <div class="adresse">aquarius-pro.com</div>
 </body></html>`;
