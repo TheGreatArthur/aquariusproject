@@ -6,6 +6,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- **Audience measurement with Vercel Web Analytics** (`<Analytics/>` from `@vercel/analytics` in the root layout):
+  cookieless, anonymous page views; the privacy section of `/cgu` now says so in the three languages instead of
+  "no audience measurement".
 - **Fancy goldfish**: seven aquarium varieties of *Carassius auratus* (fantail, ryukin, oranda, black moor, ranchu,
   pearlscale, bubble eye) with water values from the OATA fancy goldfish care sheet, Fishkeeper and FishBase,
   profiles in three languages and free Commons photos. Simulator rule 23 blocks goldfish with warm-water species

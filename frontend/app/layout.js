@@ -2,6 +2,7 @@
  * Mise en page par défaut
  */
 
+import { Analytics } from '@vercel/analytics/next';
 import { Inter, Space_Grotesk } from 'next/font/google';
 
 import { I18nProvider } from '@/components/I18nProvider';
@@ -64,6 +65,8 @@ export default async function RootLayout ({ children }) {
             <SiteFooter/>
           </Providers>
         </I18nProvider>
+        {/* Mesure d'audience Vercel, sans cookie (voir la page /cgu) */}
+        <Analytics/>
       </body>
     </html>
   );
