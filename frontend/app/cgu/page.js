@@ -71,15 +71,22 @@ const SECTIONS = [
     id: 'donnees',
     titre: ['Données personnelles', 'Personal data', '個人情報'],
     texte: [[
-      'Le site ne crée pas de compte, ne dépose pas de cookie et ne mesure pas l\'audience. Vos choix (thème, bac du '
-        + 'simulateur) sont enregistrés dans votre navigateur et ne quittent pas votre appareil. L\'hébergeur peut '
-        + 'conserver des journaux techniques (adresse IP, pages demandées) pour faire fonctionner et protéger le service.',
-      'The site creates no account, sets no cookie and measures no audience. Your choices (theme, simulator tank) are '
-        + 'saved in your browser and do not leave your device. The host may keep technical logs (IP address, pages '
-        + 'requested) to run and protect the service.',
-      'このサイトはアカウントを作らず、Cookie を使わず、アクセス解析も行いません。テーマやシミュレーターの水槽などの設定は'
-        + 'ブラウザに保存され、端末の外には出ません。ホスティング事業者は、サービスの運用と保護のために技術的なログ（IP '
-        + 'アドレス、表示したページ）を保存することがあります。',
+      'Le site ne crée pas de compte et ne dépose pas de cookie. Vos choix (thème, bac du simulateur) sont enregistrés '
+        + 'dans votre navigateur et ne quittent pas votre appareil. L\'hébergeur peut conserver des journaux techniques '
+        + '(adresse IP, pages demandées) pour faire fonctionner et protéger le service. L\'audience est mesurée par Vercel '
+        + 'Web Analytics, sans cookie : chaque visite est comptée de façon anonyme (page vue, page d\'origine, pays, type '
+        + 'd\'appareil et navigateur), le visiteur n\'étant reconnu que par une empreinte de la requête effacée au bout de '
+        + '24 heures ; seuls des chiffres agrégés sont consultés.',
+      'The site creates no account and sets no cookie. Your choices (theme, simulator tank) are saved in your browser '
+        + 'and do not leave your device. The host may keep technical logs (IP address, pages requested) to run and '
+        + 'protect the service. Visits are measured by Vercel Web Analytics, without cookies: each visit is counted '
+        + 'anonymously (page viewed, referring page, country, device type and browser), the visitor being recognised only '
+        + 'by a hash of the request that is discarded after 24 hours; only aggregated figures are looked at.',
+      'このサイトはアカウントを作らず、Cookie を使いません。テーマやシミュレーターの水槽などの設定はブラウザに保存され、'
+        + '端末の外には出ません。ホスティング事業者は、サービスの運用と保護のために技術的なログ（IP アドレス、表示したページ）を'
+        + '保存することがあります。アクセス数は Vercel Web Analytics で Cookie を使わずに計測します。各訪問は匿名で数えられ'
+        + '（表示したページ、参照元、国、端末の種類とブラウザ）、訪問者はリクエストから作られ 24 時間後に破棄されるハッシュで'
+        + 'のみ識別されます。確認するのは集計した数値だけです。',
     ], [
       'Le formulaire de contact transmet vos nom, prénom, adresse e-mail, sujet et message à l\'éditeur, par e-mail, '
         + 'directement depuis l\'API du site vers sa messagerie, sans service tiers. Ces données servent uniquement à '
