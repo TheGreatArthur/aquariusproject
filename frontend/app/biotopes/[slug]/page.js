@@ -185,15 +185,7 @@ export default async function BiotopePage ({ params }) {
           )}
           {biotope.videos.length > 0 && (
             <>
-              <p className="mt-8 max-w-3xl text-sm text-muted">
-                {t('Des aquariophiles présentent leur bac en vidéo, souvent sur un site précis du milieu. Les vidéos '
-                  + 'sont hébergées par YouTube, et le lecteur ne se charge qu\'au clic.',
-                'Aquarists present their tanks on video, often modelled on one precise site. The videos are hosted by '
-                  + 'YouTube, and the player only loads when you click.',
-                'アクアリストが自分の水槽を動画で紹介している。特定の場所を再現したものが多い。動画は YouTube にあり、'
-                  + 'プレーヤーはクリックしたときだけ読み込まれる。')}
-              </p>
-              <div className="mt-4 grid gap-6 sm:grid-cols-2">
+              <div className="mt-8 grid gap-6 sm:grid-cols-2">
                 {biotope.videos.map((v) => <BiotopeVideo key={v.id} {...v}/>)}
               </div>
             </>
