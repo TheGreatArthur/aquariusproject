@@ -54,9 +54,9 @@ export default async function SiteFooter () {
       <div className="border-t border-border/50">
         <div className="container flex flex-col gap-2 py-5 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {new Date().getFullYear()} {t('Projet Aquarius. Les conseils fournis sont indicatifs : observez toujours vos poissons.',
-              'Aquarius project. This advice is indicative only: always watch your fish.',
-              'Aquarius プロジェクト。ここでのアドバイスは目安です。魚の様子を必ず観察してください。')}
+            © {new Date().getFullYear()} {t('Aquarius. Les conseils fournis sont indicatifs : observez toujours vos poissons.',
+              'Aquarius. This advice is indicative only: always watch your fish.',
+              'Aquarius。ここでのアドバイスは目安です。魚の様子を必ず観察してください。')}
           </p>
           <Link href={to('/cgu')} className="shrink-0 transition hover:text-accent-glow">
             {t('CGU et mentions légales', 'Terms and legal notice', '利用規約・法的表示')}

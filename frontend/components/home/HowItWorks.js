@@ -27,11 +27,11 @@ const STEPS = [
   {
     icon: ShieldCheck,
     title: 'Vérifiez la compatibilité',
-    text: 'Surpopulation, agressivité, prédation ou familles incompatibles : chaque risque est signalé.',
+    text: 'Surpopulation, agressivité, prédation ou familles incompatibles : le simulateur signale les risques connus.',
     titleEn: 'Check compatibility',
-    textEn: 'Overstocking, aggression, predation or incompatible families: every risk is flagged.',
+    textEn: 'Overstocking, aggression, predation or incompatible families: the simulator flags known risks.',
     titleJa: '相性をチェック',
-    textJa: '過密、攻撃性、捕食、相性の悪い科など、あらゆるリスクを知らせます。',
+    textJa: '過密、攻撃性、捕食、相性の悪い科など、既知のリスクをシミュレーターが知らせます。',
   },
 ];
 
@@ -43,7 +43,7 @@ export default async function HowItWorks () {
         <div>
           <Reveal className="max-w-xl">
             <h2 id="how-title" className="text-3xl font-semibold sm:text-4xl">
-              {t('Trois étapes pour un bac équilibré.', 'Three steps to a balanced tank.', 'バランスのよい水槽への3ステップ。')}
+              {t('Comment fonctionne le simulateur', 'How the simulator works', 'シミュレーターのしくみ')}
             </h2>
           </Reveal>
 

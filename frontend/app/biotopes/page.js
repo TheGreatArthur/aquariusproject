@@ -14,13 +14,11 @@ export async function generateMetadata () {
   const { t } = await getI18n();
   return {
     title: t('Biotopes', 'Biotopes', 'ビオトープ'),
-    description: t(`${n} milieux d'eau douce étudiés à partir de mesures publiées : leur eau, les poissons, plantes et `
-      + 'invertébrés qui y vivent, des photos et des vidéos de la nature et de bacs, et un bac d\'exemple vérifié par le '
-      + 'simulateur.',
-    `${n} freshwater habitats studied from published measurements: their water, the fish, plants and invertebrates `
-      + 'living there, photos and videos of the wild and of tanks, and an example tank checked by the simulator.',
-    `公表された測定値から調べた${n}の淡水の環境：水質、そこに暮らす魚・水草・無脊椎動物、自然と水槽の写真と動画、`
-      + 'シミュレーターで確かめた水槽の例。'),
+    description: t(`${n} milieux d'eau douce décrits à partir de mesures publiées, avec les espèces qui y vivent `
+      + 'ensemble et un bac d\'exemple pour les reproduire.',
+    `${n} freshwater habitats described from published measurements, with the species that live there together `
+      + 'and an example tank to recreate them.',
+    `公表された測定値から描いた${n}の淡水の環境。そこで一緒に暮らす種と、再現するための水槽の例を紹介します。`),
   };
 }
 
@@ -30,14 +28,11 @@ export default async function BiotopesPage () {
     <>
       <PageHeader eyebrow={t('Biotopes', 'Biotopes', 'ビオトープ')}
                   title={t('Des milieux naturels aux bacs', 'From the wild to the tank', '自然から水槽へ')}>
-        {t(`${n} milieux d'eau douce étudiés à partir de mesures publiées : leur eau, les espèces du catalogue qui y `
-          + 'vivent ensemble, des photos de la nature et de bacs, des vidéos de bacs biotopes et un bac d\'exemple '
-          + 'vérifié par le simulateur.',
-        `${n} freshwater habitats studied from published measurements: their water, the catalogue species that live `
-          + 'there together, photos of the wild and of tanks, videos of biotope tanks and an example tank checked by '
-          + 'the simulator.',
-        `公表された測定値から調べた${n}の淡水の環境。水質、そこで一緒に暮らす図鑑の種、自然と水槽の写真、`
-          + 'ビオトープ水槽の動画、そしてシミュレーターで確かめた水槽の例。')}
+        {t(`${n} milieux d'eau douce décrits à partir de mesures publiées, avec les espèces qui y vivent ensemble et `
+          + 'un bac d\'exemple pour les reproduire.',
+        `${n} freshwater habitats described from published measurements, with the species that live there `
+          + 'together and an example tank to recreate them.',
+        `公表された測定値から描いた${n}の淡水の環境。そこで一緒に暮らす種と、再現するための水槽の例を紹介します。`)}
       </PageHeader>
 
       <section className="container" aria-label={t('Biotopes', 'Biotopes', 'ビオトープ')}>

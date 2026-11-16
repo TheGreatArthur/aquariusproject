@@ -57,7 +57,7 @@ export default async function GuidePratique () {
         </ol>
 
         <p className="mt-10 max-w-2xl text-sm text-muted">
-          {t('Prêt à composer votre bac\u00a0? Le ', 'Ready to plan your tank? The ', '水槽の計画を始めましょう。')}
+          {t('Le ', 'The ', '')}
           <Link href={href('/simulation')} className="text-accent-glow hover:underline">{t('simulateur', 'simulator', 'シミュレーター')}</Link>
           {t(' vérifie l\'eau, la population et les cohabitations de votre future sélection.',
             ' checks the water, stocking and tankmates of your future selection.',

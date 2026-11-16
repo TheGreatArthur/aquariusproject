@@ -43,9 +43,9 @@ export default function Hero () {
           </motion.p>
 
           <motion.h1 className="mt-5 text-hero font-semibold" {...item(0.08)}>
-            {t('Composez un aquarium qui vit en ', 'Build an aquarium that lives in ', '')}
-            <span className="text-accent">{t('harmonie', 'harmony', '調和')}</span>
-            {t('.', '.', 'のとれた水槽をつくろう。')}
+            {t('Les bons poissons pour ', 'The right fish for ', '')}
+            <span className="text-accent">{t('votre bac', 'your tank', 'あなたの水槽')}</span>
+            {t('.', '.', 'にぴったりの魚を。')}
           </motion.h1>
 
           <motion.p className="mt-6 max-w-xl text-lg text-muted" {...item(0.16)}>

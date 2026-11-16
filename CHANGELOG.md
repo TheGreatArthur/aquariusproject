@@ -41,6 +41,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   aurea*, *Rotala rotundifolia*, *Heteranthera dubia*…).
 
 ### Fixed
+- **Production wording**: catalogue and simulator load errors no longer tell visitors to start the API, the contact
+  form says it is temporarily unavailable instead of "not connected to a mailbox yet", the footer drops "project",
+  and the home page, guide, contact and Biotopes intros lose generic marketing lines and over-promises.
 - **Photos disappeared once Vercel's free image quota was used up** (5,000 transformations a month for about
   1,300 photos): the build now makes WebP thumbnails of every photo (128 to 1,280 px, `scripts/thumbnails.mjs`) and a
   custom `next/image` loader serves them as static files, so the site stays on the free plan and the catalogue

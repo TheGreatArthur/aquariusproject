@@ -61,9 +61,9 @@ export default function Formulaire () {
 
   return <>
     <PageHeader eyebrow="Contact" title={t('Une question, une espèce à ajouter ?', 'A question, a species to add?', 'ご質問や追加してほしい種はありますか？')}>
-      {t('Écrivez-nous : suggestions, erreurs dans une fiche ou simple conseil, nous répondons à chaque message.',
-        'Write to us: suggestions, mistakes in a profile or simple advice, we answer every message.',
-        'ご提案、図鑑の誤り、ちょっとした相談など、お気軽にどうぞ。すべてのメッセージにお返事します。')}
+      {t('Écrivez-nous : suggestions, erreurs dans une fiche ou simple conseil.',
+        'Write to us: suggestions, mistakes in a profile or simple advice.',
+        'ご提案、図鑑の誤り、ちょっとした相談など、お気軽にどうぞ。')}
     </PageHeader>
 
     <div className="container grid gap-8 lg:grid-cols-[1fr_1.4fr]">
@@ -134,9 +134,9 @@ export default function Formulaire () {
               )}
               {status === 'unavailable' && (
                 <span className="text-danger">
-                  {t('Le formulaire n\'est pas encore relié à une boîte mail. Réessayez plus tard.',
-                    'The form is not connected to a mailbox yet. Please try again later.',
-                    'このフォームはまだメールボックスに接続されていません。しばらくしてからお試しください。')}
+                  {t('Le formulaire est momentanément indisponible. Réessayez plus tard.',
+                    'The form is temporarily unavailable. Please try again later.',
+                    'フォームは現在ご利用いただけません。しばらくしてからお試しください。')}
                 </span>
               )}
             </p>

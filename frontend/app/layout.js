@@ -27,8 +27,8 @@ export async function generateMetadata () {
     openGraph: { siteName: 'Aquarius', locale: t('fr_FR', 'en_GB', 'ja_JP'), type: 'website' },
     twitter: { card: 'summary_large_image' },
     title: {
-      default: t('Aquarius · Composez un aquarium en harmonie', 'Aquarius · Build a balanced aquarium',
-        'Aquarius · 調和のとれた水槽づくり'),
+      default: t('Aquarius · Catalogue et simulateur d\'aquarium d\'eau douce',
+        'Aquarius · Freshwater aquarium catalogue and simulator', 'Aquarius · 淡水アクアリウムの図鑑とシミュレーター'),
       template: '%s · Aquarius',
     },
     description: t(
