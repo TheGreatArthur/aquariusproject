@@ -7,6 +7,7 @@ import clsx from 'clsx';
 
 import { useI18n } from '@/components/I18nProvider';
 import { espece, evaluate, TYPES } from '@/lib/compat';
+import { evenement } from '@/lib/analytics';
 import { lsGet, lsSet } from '@/lib/localstorage';
 import Bac from './bac';
 import Especes from './especes';
@@ -64,9 +65,12 @@ export default function Simulator () {
     return item ? [{ ...item, quantite }] : [];
   }), [contenu, catalogue]);
 
-  const ajouter = (p) => setContenu((prev) => (prev.some((c) => c.kind === p.kind && c.ref === p.ref)
+  const ajouter = (p) => {
+    evenement('simulation_espece_ajoutee', { type: p.kind, espece: p.ref });
+    setContenu((prev) => (prev.some((c) => c.kind === p.kind && c.ref === p.ref)
     ? prev.map((c) => (c.kind === p.kind && c.ref === p.ref ? { ...c, quantite: c.quantite + 1 } : c))
     : [...prev, { kind: p.kind, ref: p.ref, quantite: Math.max(1, p.nb_individus ?? 1) }]));
+  };
 
   const changerQuantite = (p, delta) => setContenu((prev) => prev
     .map((c) => (c.kind === p.kind && c.ref === p.ref ? { ...c, quantite: c.quantite + delta } : c))

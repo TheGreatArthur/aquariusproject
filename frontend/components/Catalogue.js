@@ -9,6 +9,7 @@ import { Search, X } from 'lucide-react';
 import { useI18n } from '@/components/I18nProvider';
 import PageHeader from '@/components/PageHeader';
 import Pagination from '@/components/Pagination';
+import { evenement } from '@/lib/analytics';
 import { splitLocale } from '@/lib/i18n';
 
 const PER_PAGE = 24;
@@ -81,6 +82,8 @@ function CatalogueContent ({ api: endpoint, liste, param, filterKey, options, la
 
   const choose = (value) => {
     setTerme('');
+    if (value)
+      evenement('catalogue_filtre', { catalogue: liste, filtre: value });
     setFiltreUrl(value);
   };
 
@@ -126,6 +129,7 @@ function CatalogueContent ({ api: endpoint, liste, param, filterKey, options, la
                 placeholder={t(...texts.placeholder)}
                 value={terme}
                 onChange={(e) => onSearch(e.target.value)}
+                onBlur={() => terme.trim() && evenement('catalogue_recherche', { catalogue: liste })}
               />
             </label>
 

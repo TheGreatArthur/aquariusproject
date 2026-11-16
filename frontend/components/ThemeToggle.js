@@ -3,6 +3,7 @@
 import { Moon, Sun } from 'lucide-react';
 
 import { useI18n } from '@/components/I18nProvider';
+import { evenement } from '@/lib/analytics';
 
 export const THEME_KEY = 'aquarius-theme';
 
@@ -21,6 +22,7 @@ export default function ThemeToggle () {
   const toggle = () => {
     const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
     document.documentElement.dataset.theme = next;
+    evenement('theme_change', { theme: next });
     try {
       localStorage.setItem(THEME_KEY, next);
     } catch {

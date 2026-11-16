@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import { ArrowRight } from 'lucide-react';
 
 import { useI18n } from '@/components/I18nProvider';
+import { evenement } from '@/lib/analytics';
 import { lsGet, lsSet } from '@/lib/localstorage';
 
 /**
@@ -11,7 +12,7 @@ import { lsGet, lsSet } from '@/lib/localstorage';
  * enregistre le bac du visiteur (clés « form_data » et « bac » du stockage local). Un bac déjà composé n'est remplacé
  * qu'après confirmation.
  */
-export default function LoadTankButton ({ eau, contenu }) {
+export default function LoadTankButton ({ biotope, eau, contenu }) {
   const { t, href } = useI18n();
   const router = useRouter();
 
@@ -21,6 +22,7 @@ export default function LoadTankButton ({ eau, contenu }) {
       return;
     lsSet('form_data', Object.fromEntries(Object.entries(eau).map(([k, v]) => [k, String(v)])));
     lsSet('bac', contenu);
+    evenement('bac_charge_simulateur', { biotope });
     router.push(href('/simulation'));
   };
 

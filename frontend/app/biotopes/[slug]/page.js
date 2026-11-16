@@ -165,7 +165,7 @@ export default async function BiotopePage ({ params }) {
             <div>
               <TankPreview eau={biotope.bac.eau} bac={bac}>
                 <p className="mt-4 text-sm text-muted"><Texte>{textes.bac}</Texte></p>
-                <LoadTankButton eau={biotope.bac.eau}
+                <LoadTankButton biotope={slug} eau={biotope.bac.eau}
                                 contenu={bac.map(({ kind, ref, quantite }) => ({ kind, ref, quantite }))}/>
               </TankPreview>
             </div>
@@ -186,7 +186,7 @@ export default async function BiotopePage ({ params }) {
           {biotope.videos.length > 0 && (
             <>
               <div className="mt-8 grid gap-6 sm:grid-cols-2">
-                {biotope.videos.map((v) => <BiotopeVideo key={v.id} {...v}/>)}
+                {biotope.videos.map((v) => <BiotopeVideo key={v.id} {...v} biotope={slug}/>)}
               </div>
             </>
           )}

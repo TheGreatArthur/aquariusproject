@@ -75,17 +75,20 @@ const SECTIONS = [
         + 'dans votre navigateur et ne quittent pas votre appareil. L\'hébergeur peut conserver des journaux techniques '
         + '(adresse IP, pages demandées) pour faire fonctionner et protéger le service. L\'audience est mesurée par Vercel '
         + 'Web Analytics, sans cookie : chaque visite est comptée de façon anonyme (page vue, page d\'origine, pays, type '
-        + 'd\'appareil et navigateur), le visiteur n\'étant reconnu que par une empreinte de la requête effacée au bout de '
+        + 'd\'appareil et navigateur, et quelques actions sur le site comme la lecture d\'une vidéo, l\'ajout d\'une espèce au '
+        + 'simulateur ou le changement de langue, sans rien de ce que vous saisissez), le visiteur n\'étant reconnu que par une empreinte de la requête effacée au bout de '
         + '24 heures ; seuls des chiffres agrégés sont consultés.',
       'The site creates no account and sets no cookie. Your choices (theme, simulator tank) are saved in your browser '
         + 'and do not leave your device. The host may keep technical logs (IP address, pages requested) to run and '
         + 'protect the service. Visits are measured by Vercel Web Analytics, without cookies: each visit is counted '
-        + 'anonymously (page viewed, referring page, country, device type and browser), the visitor being recognised only '
+        + 'anonymously (page viewed, referring page, country, device type and browser, and a few actions on the site such as playing a video, adding a species to the '
+        + 'simulator or changing language, without anything you type), the visitor being recognised only '
         + 'by a hash of the request that is discarded after 24 hours; only aggregated figures are looked at.',
       'このサイトはアカウントを作らず、Cookie を使いません。テーマやシミュレーターの水槽などの設定はブラウザに保存され、'
         + '端末の外には出ません。ホスティング事業者は、サービスの運用と保護のために技術的なログ（IP アドレス、表示したページ）を'
         + '保存することがあります。アクセス数は Vercel Web Analytics で Cookie を使わずに計測します。各訪問は匿名で数えられ'
-        + '（表示したページ、参照元、国、端末の種類とブラウザ）、訪問者はリクエストから作られ 24 時間後に破棄されるハッシュで'
+        + '（表示したページ、参照元、国、端末の種類とブラウザ、動画の再生やシミュレーターへの種の追加、言語の切り替えなどサイト上の一部の操作。入力した'
+        + '内容は含みません）、訪問者はリクエストから作られ 24 時間後に破棄されるハッシュで'
         + 'のみ識別されます。確認するのは集計した数値だけです。',
     ], [
       'Le formulaire de contact transmet vos nom, prénom, adresse e-mail, sujet et message à l\'éditeur, par e-mail, '

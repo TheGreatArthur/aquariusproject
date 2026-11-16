@@ -6,6 +6,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- **Custom Vercel Analytics events** (`lib/analytics.js`): `video_lue`, `bac_charge_simulateur`,
+  `simulation_espece_ajoutee`, `contact_envoye`, `langue_changee`, `theme_change`, `catalogue_filtre` and
+  `catalogue_recherche`, with site identifiers only (biotope, species, catalogue, language), never text typed by the
+  visitor; the privacy section of `/cgu` mentions them.
 - **Audience measurement with Vercel Web Analytics** (`<Analytics/>` from `@vercel/analytics` in the root layout):
   cookieless, anonymous page views; the privacy section of `/cgu` now says so in the three languages instead of
   "no audience measurement".

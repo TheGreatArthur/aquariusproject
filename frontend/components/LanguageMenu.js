@@ -6,6 +6,7 @@ import clsx from 'clsx';
 import { Check, ChevronDown, Languages } from 'lucide-react';
 
 import { useI18n } from '@/components/I18nProvider';
+import { evenement } from '@/lib/analytics';
 import { LANGUAGE_NAMES, localize, LOCALES, splitLocale } from '@/lib/i18n';
 
 /**
@@ -47,7 +48,11 @@ export default function LanguageMenu () {
           {LOCALES.map((l) => (
             <li key={l}>
               <a href={localize(path, l)} hrefLang={l} lang={l} aria-current={l === locale ? 'true' : undefined}
-                 onClick={(e) => { e.currentTarget.href += window.location.search; }}
+                 onClick={(e) => {
+                   e.currentTarget.href += window.location.search;
+                   if (l !== locale)
+                     evenement('langue_changee', { de: locale, vers: l });
+                 }}
                  className={clsx('flex items-center justify-between gap-3 rounded-xl px-3 py-2 text-sm transition',
                    l === locale ? 'text-accent-glow' : 'text-foreground hover:bg-surface-elevated')}>
                 {LANGUAGE_NAMES[l]}

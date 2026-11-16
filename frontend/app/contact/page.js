@@ -8,6 +8,7 @@ import { CheckCircle2, Loader2, Send } from 'lucide-react';
 import { useI18n } from '@/components/I18nProvider';
 import PageHeader from '@/components/PageHeader';
 import Reveal from '@/components/Reveal';
+import { evenement } from '@/lib/analytics';
 
 const FIELDS = [
   { name: 'nom', label: 'Nom', en: 'Last name', ja: '姓', type: 'text', autoComplete: 'family-name', max: 100, half: true },
@@ -45,6 +46,7 @@ export default function Formulaire () {
         setStatus('idle');
       } else if (res.ok) {
         setStatus('sent');
+        evenement('contact_envoye');
         reset();
       } else
         setStatus(res.status === 503 ? 'unavailable' : 'error');
